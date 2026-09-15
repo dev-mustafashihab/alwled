@@ -11,7 +11,7 @@ import { ListSpecificationsQueryDto } from './dto/list-specifications.query.dto'
 import { SetProductSpecificationsDto } from './dto/product-specifications.dto';
 import { ActorAccess, hasPermission } from '../common/utils/permissions.util';
 import { slugify } from '../common/utils/slug.util';
-import { RequestMeta } from '../products/products.service';
+import type { RequestMeta } from '../common/types/request-meta';
 
 const DEFINITION_SELECT = {
   id: true, name: true, key: true, type: true, unit: true, options: true,

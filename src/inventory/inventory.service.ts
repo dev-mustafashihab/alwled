@@ -7,7 +7,7 @@ import { ListInventoryQueryDto } from './dto/list-inventory.query.dto';
 import { UpdateInventoryDto } from './dto/update-inventory.dto';
 import { AdjustInventoryDto } from './dto/adjust-inventory.dto';
 import { ActorAccess } from '../common/utils/permissions.util';
-import { RequestMeta } from '../products/products.service';
+import type { RequestMeta } from '../common/types/request-meta';
 
 const PRODUCT_MINI = {
   select: { id: true, name: true, sku: true, slug: true, isActive: true,

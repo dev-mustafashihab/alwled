@@ -67,6 +67,7 @@ model User {
   verificationTokens  VerificationToken[]
   auditLogs           AuditLog[]
   inventoryMovements  InventoryMovement[]
+  cart                Cart?
 
   @@index([status])
   @@index([createdAt])
@@ -270,6 +271,7 @@ model Product {
   images         ProductImage[]
   specifications ProductSpecification[]
   inventory      Inventory?
+  cartItems      CartItem[]
 
   @@index([categoryId])
   @@index([brandId])
@@ -370,4 +372,38 @@ model InventoryMovement {
   @@index([inventoryId, createdAt])
   @@index([type])
   @@map("inventory_movements")
+}
+
+/// ------------------------- Stage 5: Cart -------------------------
+/// One active cart per user (userId is unique). Cart is "intent" only:
+/// it never reserves inventory and never stores prices as a source of truth.
+model Cart {
+  id        Int      @id @default(autoincrement())
+  userId    String   @unique @map("user_id")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  user  User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  items CartItem[]
+
+  @@index([userId])
+  @@map("carts")
+}
+
+model CartItem {
+  id        Int      @id @default(autoincrement())
+  cartId    Int      @map("cart_id")
+  productId Int      @map("product_id")
+  quantity  Int
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  cart    Cart    @relation(fields: [cartId], references: [id], onDelete: Cascade)
+  /// Cascade is safe here: a cart line is transient intent, not financial history.
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([cartId, productId])
+  @@index([cartId])
+  @@index([productId])
+  @@map("cart_items")
 }

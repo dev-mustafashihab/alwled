@@ -6,6 +6,7 @@ Node.js + TypeScript (strict) + NestJS + PostgreSQL + Prisma + JWT + Argon2 + Do
 > **المرحلة 2:** دورة حساب كاملة (Sessions/Logout/Change-Forgot-Reset Password/Verification foundation + User Management + Audit foundation).
 > **المرحلة 3:** إدارة الموظفين والأدوار والصلاحيات + Effective Permissions + سجل تدقيق قابل للقراءة + قواعد حماية صارمة (Owner/Privilege escalation/Last owner).
 > **المرحلة 4:** كتالوگ كامل (تصنيفات شجرية + علامات + منتجات + صور + مواصفات مرنة) + أساس مخزون (Inventory + Movements) مع قواعد نزاهة على مستوى الكود وقاعدة البيانات.
+> **المرحلة 5:** سلة المشتري (Cart + CartItems) + معاينة إتمام الطلب (Checkout Preview) — بلا حجز مخزون وبلا طلبات أو دفعات.
 
 ## التشغيل
 
@@ -164,3 +165,45 @@ Category (شجرة parent/child حتى 3 مستويات)
 - صورة أساسية واحدة لكل منتج: transaction + partial unique index في Postgres.
 - الحذف النهائي (hard) مرفوض لأي منتج له حركات مخزون، وللتصنيفات المرتبطة بمنتجات، وللعلامات والمواصفات المستخدمة — الافتراضي تعطيل (soft).
 - تعديل مواصفة مستخدمة في منتجات: تغيير النوع مرفوض (409).
+
+
+## المرحلة الخامسة — السلة ومعاينة الطلب
+
+### المبادئ
+
+- **السلة = نيّة شراء**: لا تحجز مخزوناً (`reservedQuantity` لا يُلمس) ولا تُنقص الكمية.
+- **السعر لا يُخزَّن في السلة**: يُقرأ من `Product.price` عند كل طلب، فتغيير السعر يظهر فوراً.
+- **لا ثقة بالعميل**: `userId` من الـJWT فقط، وأي حقل غير معروف (`price`/`unitPrice`/`subtotal`/`userId`) يُرفض بـ400.
+- **الحساب المالي** بـ`Prisma.Decimal` (NUMERIC) و`money.util` مشتركة — لا حسابات عائمة.
+- **سلة واحدة لكل مستخدم** (`carts.user_id` unique) وتُنشأ عند أول إضافة فقط (GET لا ينشئ صفاً).
+
+### Endpoints
+
+| Method | Path | Auth | Purpose |
+| --- | --- | --- | --- |
+| GET | /cart | JWT | سلة المستخدم + لكل سطر: سعر الوحدة، المجموع الجزئي، التوفر، `issues` |
+| POST | /cart/items | JWT | إضافة/ضبط كمية منتج (إضافة نفس المنتج = ضبط الكمية، لا تراكم) |
+| PATCH | /cart/items/:itemId | JWT | تعديل كمية سطر يخص المستخدم الحالي |
+| DELETE | /cart/items/:itemId | JWT | حذف سطر |
+| DELETE | /cart | JWT | تفريغ السلة (يبقي صف السلة) |
+| POST | /checkout/preview | JWT | معاينة إتمام الطلب (قراءة فقط: subtotal/discount/shipping/total) |
+
+لا توجد Permission keys للسلة: الملكية (JWT) هي الحماية. لا checkout مجهول.
+
+### حالات السلة القديمة (Stale cart)
+
+`GET /cart` لا يحذف شيئاً بصمت: كل سطر يحمل `isAvailable`, `availableQuantity`, `issues`:
+`PRODUCT_INACTIVE` · `PRODUCT_UNAVAILABLE` (تصنيف/علامة غير نشطة) · `OUT_OF_STOCK` · `INSUFFICIENT_STOCK`.
+لا يوجد سعر قديم لتُقارن به (السعر غير مخزَّن) — `priceChanged` يصبح ذا معنى في مرحلة الطلبات فقط.
+
+### حدود السلة (env)
+
+`CART_MAX_ITEM_QUANTITY` (افتراضي 20) · `CART_MAX_ITEMS` (افتراضي 50) · `AUDIT_CART_EVENTS` (افتراضي true).
+
+### أحداث التدقيق
+
+`CART_ITEM_ADDED` · `CART_ITEM_UPDATED` · `CART_ITEM_REMOVED` · `CART_CLEARED` · `CHECKOUT_PREVIEW_CREATED` (قابلة للإسكات عبر `AUDIT_CART_EVENTS=false`).
+
+### أخطاء متوقعة
+
+`400` تحقق DTO/حقول غير مسموحة · `401` بلا JWT · `404` منتج غير موجود أو سطر ليس في سلتك · `409` منتج غير نشط، مخزون غير كافٍ، تجاوز الحد، سلة فارغة عند المعاينة.

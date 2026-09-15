@@ -10,18 +10,12 @@ import { UpdateProductDto } from './dto/update-product.dto';
 import { ListProductsQueryDto } from './dto/list-products.query.dto';
 import { ActorAccess, hasPermission } from '../common/utils/permissions.util';
 import { generateSku, slugify, uniqueSlug } from '../common/utils/slug.util';
+import { money, toMoneyString } from '../common/utils/money.util';
+import type { RequestMeta } from '../common/types/request-meta';
 
-export interface RequestMeta {
-  ip?: string;
-  userAgent?: string;
-}
-
-/** Money helper — NUMERIC(12,2) in the DB, string in JSON. Never float arithmetic. */
-export const money = (value: number | string | Prisma.Decimal): Prisma.Decimal =>
-  new Prisma.Decimal(typeof value === 'number' ? value.toFixed(2) : value);
-
-export const toMoneyString = (value: Prisma.Decimal | null | undefined): string | null =>
-  value === null || value === undefined ? null : new Prisma.Decimal(value).toFixed(2);
+// Backwards-compatible re-exports: other modules import these from here.
+export type { RequestMeta };
+export { money, toMoneyString };
 
 const LIST_SELECT: Prisma.ProductSelect = {
   id: true, name: true, slug: true, sku: true, shortDescription: true,

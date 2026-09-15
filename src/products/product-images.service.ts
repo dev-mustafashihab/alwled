@@ -7,7 +7,7 @@ import { AUDIT } from '../audit/audit.actions';
 import { STORAGE_PROVIDER, StorageProvider } from '../common/storage/storage.interface';
 import { CreateProductImageDto, UpdateProductImageDto, ReorderProductImagesDto } from './dto/product-image.dto';
 import { ActorAccess } from '../common/utils/permissions.util';
-import { RequestMeta } from './products.service';
+import type { RequestMeta } from '../common/types/request-meta';
 
 const IMAGE_SELECT = {
   id: true, productId: true, url: true, altText: true, sortOrder: true,

@@ -86,6 +86,18 @@ export const RATE_LIMITS = {
   refresh: { window: num('RATE_REFRESH_WINDOW', 300), max: num('RATE_REFRESH_MAX', 60) },
 } as const;
 
+/**
+ * Cart safeguards — read at request time (env may load after module import).
+ * Defaults suit a home-appliance store: 20 units per line, 50 lines per cart.
+ */
+export const cartLimits = () => ({
+  maxItemQuantity: num('CART_MAX_ITEM_QUANTITY', 20),
+  maxItems: num('CART_MAX_ITEMS', 50),
+});
+
+/** Cart events are audited; set AUDIT_CART_EVENTS=false to silence them in production. */
+export const auditCartEvents = () => process.env.AUDIT_CART_EVENTS !== 'false';
+
 /** Token lifetimes (minutes). */
 export const TOKEN_TTL = {
   passwordResetMinutes: num('PASSWORD_RESET_TTL_MINUTES', 30),

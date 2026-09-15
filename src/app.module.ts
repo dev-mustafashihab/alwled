@@ -15,6 +15,8 @@ import { BrandsModule } from './brands/brands.module';
 import { ProductsModule } from './products/products.module';
 import { SpecificationsModule } from './specifications/specifications.module';
 import { InventoryModule } from './inventory/inventory.module';
+import { CartModule } from './cart/cart.module';
+import { CheckoutModule } from './checkout/checkout.module';
 import { CommonServicesModule } from './common/services/common-services.module';
 import { StorageModule } from './common/storage/storage.module';
 import { HttpExceptionFilter } from './common/filters/http-exception.filter';
@@ -42,6 +44,9 @@ import { JwtAuthGuard, OptionalAuthGuard, RolesGuard, PermissionsGuard } from '.
     ProductsModule,
     SpecificationsModule,
     InventoryModule,
+    // Stage 5 — cart & checkout preview
+    CartModule,
+    CheckoutModule,
     HealthModule,
   ],
   providers: [
