@@ -53,3 +53,14 @@ export const assertCanGrantPermissions = (
     );
   }
 };
+
+/** Builds the actor view from the JWT payload used by the existing guards. */
+export const actorFromPayload = (user: {
+  sub: string;
+  roles?: string[];
+  permissions?: string[];
+}): ActorAccess => ({
+  id: user.sub,
+  roles: user.roles ?? [],
+  permissions: user.permissions ?? [],
+});

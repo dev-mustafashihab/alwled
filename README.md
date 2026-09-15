@@ -6,7 +6,8 @@ Node.js + TypeScript (strict) + NestJS + PostgreSQL + Prisma + JWT + Argon2 + Do
 > **المرحلة 2:** دورة حساب كاملة (Sessions/Logout/Change-Forgot-Reset Password/Verification foundation + User Management + Audit foundation).
 > **المرحلة 3:** إدارة الموظفين والأدوار والصلاحيات + Effective Permissions + سجل تدقيق قابل للقراءة + قواعد حماية صارمة (Owner/Privilege escalation/Last owner).
 > **المرحلة 4:** كتالوگ كامل (تصنيفات شجرية + علامات + منتجات + صور + مواصفات مرنة) + أساس مخزون (Inventory + Movements) مع قواعد نزاهة على مستوى الكود وقاعدة البيانات.
-> **المرحلة 5:** سلة المشتري (Cart + CartItems) + معاينة إتمام الطلب (Checkout Preview) — بلا حجز مخزون وبلا طلبات أو دفعات.
+> **المرحلة 5:** سلة المشتري (Cart + CartItems) + معاينة إتمام الطلب (Checkout Preview).
+> **المرحلة 6:** الطلبات (Orders + OrderItems) مع snapshots تاريخية + حجز مخزون بقفل صفوف (FOR UPDATE) + إلغاء يحرّر الحجز + Idempotency — بلا أي دفعات.
 
 ## التشغيل
 
@@ -207,3 +208,50 @@ Category (شجرة parent/child حتى 3 مستويات)
 ### أخطاء متوقعة
 
 `400` تحقق DTO/حقول غير مسموحة · `401` بلا JWT · `404` منتج غير موجود أو سطر ليس في سلتك · `409` منتج غير نشط، مخزون غير كافٍ، تجاوز الحد، سلة فارغة عند المعاينة.
+
+
+## المرحلة السادسة — الطلبات وحجز المخزون
+
+### المبادئ
+
+- **الطلب snapshot تاريخي**: الاسم/الـSKU/الـslug/الصورة/سعر الوحدة تُنسخ لحظة الإنشاء ولا تُقرأ من Product لاحقاً.
+- **الحجز لا البيع**: `reservedQuantity += qty` و`quantity` **لا تُنقص** (البيع مرحلة لاحقة).
+- **الحساب على السيرفر فقط**: لا أسعار ولا كميات ولا `userId` من العميل.
+- **ذرّية كاملة**: أي فشل = rollback (لا طلب، لا حجز، لا حركة، والسلة كما هي).
+- **Idempotency**: `Idempotency-Key` إلزامي لكل إنشاء طلب، بلا تكرار.
+
+### Endpoints
+
+| Method | Path | Auth | Permission | Purpose |
+| --- | --- | --- | --- | --- |
+| POST | /orders | JWT | — | إنشاء طلب من السلة (Idempotency-Key إلزامي) |
+| GET | /orders | JWT | — | طلبات المستخدم (صفحات + status + sort) |
+| GET | /orders/:id | JWT | — | تفاصيل طلب يخص المستخدم (غير ذلك 404) |
+| POST | /orders/:id/cancel | JWT | — | إلغاء (PENDING فقط للعميل) |
+| GET | /admin/orders | JWT | orders.read | كل الطلبات + فلاتر (status/orderNumber/userId/createdFrom/createdTo) |
+| GET | /admin/orders/:id | JWT | orders.read | تفاصيل أي طلب |
+| PATCH | /admin/orders/:id/status | JWT | orders.update | PENDING→CONFIRMED أو →CANCELLED |
+
+### دورة الحالة
+
+`PENDING → CONFIRMED → CANCELLED` · `PENDING → CANCELLED` · `CANCELLED` نهائية. لا حالات دفع (لا PAID/FAILED/REFUNDED).
+
+### التزامن والحجز
+
+داخل transaction واحدة: `SELECT ... FROM inventory WHERE product_id IN (...) FOR UPDATE` (الصفوف المطلوبة فقط، ليس الجدول) → `available = quantity − reservedQuantity` → التحقق → `reservedQuantity += qty` → حركة `RESERVATION` بـ`referenceType=ORDER`. قيود `reserved_quantity <= quantity` تبقى فعّالة في قاعدة البيانات. اختبار التزامن الحقيقي: طلبان متزامنان على 4 وحدات ⇒ واحد ينجح وواحد 409، والحجز النهائي 3 لا 6.
+
+### الإلغاء
+
+قفل صف الطلب `FOR UPDATE` (يمنع الإلغاء المزدوج) → `reservedQuantity -= qty` (مع clamp دفاعي) → حركة `RELEASE` → `status=CANCELLED` + `cancelledAt` + `cancellationReason`. `quantity` لا تتغير. الإلغاء يعمل حتى لو صار المنتج غير نشط.
+
+### Idempotency
+
+جدول `idempotency_keys` بـ`UNIQUE(userId, key)`: المفتاح يُحجز داخل نفس transaction الطلب، فمحاولة إنشاء مزدوجة تُسلسَل عند الفهرس الفريد. نفس المفتاح + نفس المحتوى ⇒ يُعاد نفس الطلب (`idempotentReplay: true`)؛ نفس المفتاح + محتوى مختلف ⇒ 409. المفاتيح معزولة لكل مستخدم.
+
+### أحداث التدقيق
+
+`ORDER_CREATED` · `ORDER_CANCELLED` · `ORDER_STATUS_UPDATED` · `ORDER_RESERVATION_CREATED` · `ORDER_RESERVATION_RELEASED` — بلا أسرار وبلا ترويسات.
+
+### أخطاء متوقعة
+
+`400` تحقق DTO/حقول غير مسموحة · `401` بلا JWT · `403` بدون orders.read/orders.update · `404` طلب غير موجود أو يخص غيرك · `409` سلة فارغة، منتج غير نشط، مخزون غير كافٍ، إلغاء مزدوج، انتقال حالة غير مسموح، مفتاح مكرر بمحتوى مختلف.

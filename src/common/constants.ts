@@ -84,7 +84,18 @@ export const RATE_LIMITS = {
   reset: { window: num('RATE_RESET_WINDOW', 900), max: num('RATE_RESET_MAX', 10) },
   resendVerification: { window: num('RATE_RESEND_WINDOW', 300), max: num('RATE_RESEND_MAX', 3) },
   refresh: { window: num('RATE_REFRESH_WINDOW', 300), max: num('RATE_REFRESH_MAX', 60) },
+  orders: { window: num('RATE_ORDERS_WINDOW', 300), max: num('RATE_ORDERS_MAX', 30) },
 } as const;
+
+/**
+ * Stage 6 — order safeguards (read at request time, env-overridable).
+ * Limits mirror the cart limits so a cart can always become an order.
+ */
+export const ORDER_LIMITS = () => ({
+  maxItemsPerOrder: num('ORDER_MAX_ITEMS', 50),
+  maxItemQuantity: num('ORDER_MAX_ITEM_QUANTITY', 20),
+  idempotencyKeyMaxLength: num('ORDER_IDEMPOTENCY_KEY_MAX', 128),
+});
 
 /**
  * Cart safeguards — read at request time (env may load after module import).
