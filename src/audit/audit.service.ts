@@ -1,6 +1,8 @@
 import { Injectable, Logger } from '@nestjs/common';
+import { Prisma } from '@prisma/client';
 import { PrismaService } from '../database/prisma.service';
 import { AuditAction } from './audit.actions';
+import { ListAuditQueryDto } from './dto/list-audit.query.dto';
 
 export interface AuditInput {
   action: AuditAction | string;
@@ -10,6 +12,11 @@ export interface AuditInput {
   metadata?: Record<string, unknown>;
   ip?: string;
   userAgent?: string;
+}
+
+export interface PaginatedAudit {
+  items: unknown[];
+  meta: { page: number; limit: number; total: number; totalPages: number };
 }
 
 /** Never log passwords, tokens or secrets — only identifiers and flags. */
@@ -38,15 +45,38 @@ export class AuditService {
     }
   }
 
-  async list(limit = 50, actorId?: string) {
-    return this.prisma.auditLog.findMany({
-      where: actorId ? { actorId } : undefined,
-      orderBy: { createdAt: 'desc' },
-      take: Math.min(limit, 200),
-      select: {
-        id: true, action: true, entity: true, entityId: true,
-        metadata: true, ip: true, createdAt: true, actorId: true,
-      },
-    });
+  async list(query: ListAuditQueryDto): Promise<PaginatedAudit> {
+    const { page, limit, action, actorUserId, targetUserId, from, to } = query;
+    const where: Prisma.AuditLogWhereInput = {};
+    if (action) where.action = action;
+    if (actorUserId) where.actorId = actorUserId;
+    if (targetUserId) where.OR = [{ entityId: targetUserId }, { actorId: targetUserId }];
+    if (from || to) {
+      where.createdAt = {
+        ...(from ? { gte: new Date(from) } : {}),
+        ...(to ? { lte: new Date(to) } : {}),
+      };
+    }
+
+    const [total, items] = await this.prisma.$transaction([
+      this.prisma.auditLog.count({ where }),
+      this.prisma.auditLog.findMany({
+        where,
+        orderBy: { createdAt: 'desc' },
+        skip: (page - 1) * limit,
+        take: limit,
+        select: {
+          id: true, action: true, entity: true, entityId: true,
+          metadata: true, ip: true, userAgent: true, createdAt: true,
+          actorId: true,
+          user: { select: { id: true, firstName: true, lastName: true } },
+        },
+      }),
+    ]);
+
+    return {
+      items,
+      meta: { page, limit, total, totalPages: Math.max(1, Math.ceil(total / limit)) },
+    };
   }
 }

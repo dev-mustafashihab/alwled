@@ -1,11 +1,9 @@
 import { ApiPropertyOptional } from '@nestjs/swagger';
 import { Type } from 'class-transformer';
-import {
-  IsBoolean, IsEnum, IsIn, IsInt, IsOptional, IsString, Max, Min,
-} from 'class-validator';
+import { IsBoolean, IsIn, IsInt, IsOptional, IsString, Max, Min } from 'class-validator';
 import { UserStatus } from '@prisma/client';
 
-export class ListUsersQueryDto {
+export class ListEmployeesQueryDto {
   @ApiPropertyOptional({ default: 1, minimum: 1 })
   @IsOptional() @Type(() => Number) @IsInt() @Min(1)
   page: number = 1;
@@ -18,15 +16,15 @@ export class ListUsersQueryDto {
   @IsOptional() @IsString()
   search?: string;
 
-  @ApiPropertyOptional({ example: 'OWNER', description: 'اسم الدور (نظامي أو مخصص)' })
+  @ApiPropertyOptional({ example: 'EMPLOYEE', description: 'اسم الدور (نظامي أو مخصص)' })
   @IsOptional() @IsString()
   role?: string;
 
   @ApiPropertyOptional({ enum: UserStatus })
-  @IsOptional() @IsEnum(UserStatus)
+  @IsOptional() @IsIn(['ACTIVE', 'SUSPENDED', 'DELETED'])
   status?: UserStatus;
 
-  @ApiPropertyOptional({ description: 'تصفية حسب حالة التوثيق' })
+  @ApiPropertyOptional()
   @IsOptional() @Type(() => Boolean) @IsBoolean()
   isVerified?: boolean;
 

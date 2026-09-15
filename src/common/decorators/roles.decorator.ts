@@ -1,5 +1,4 @@
 import { SetMetadata } from '@nestjs/common';
-import { RoleName } from '@prisma/client';
 
 export interface PermissionRequirement {
   // any of these permissions grants access
@@ -11,7 +10,8 @@ export interface PermissionRequirement {
 export const ROLES_KEY = 'roles';
 export const PERMISSIONS_KEY = 'permissions';
 
-export const Roles = (...roles: RoleName[]) => SetMetadata(ROLES_KEY, roles);
+/** Role names are plain strings (custom roles supported) — see common/roles.constants. */
+export const Roles = (...roles: string[]) => SetMetadata(ROLES_KEY, roles);
 
 export const Permissions = (req: PermissionRequirement) =>
   SetMetadata(PERMISSIONS_KEY, req);

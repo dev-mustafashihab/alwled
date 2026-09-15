@@ -1,36 +1,61 @@
-import { RoleName } from '@prisma/client';
-
-/** Central constants for the Alwled backend. */
+/**
+ * Central constants for the Alwled backend.
+ * NOTE (stage 3): Role.name is a plain string in the schema, so custom roles
+ * (SALES, PRODUCT_MANAGER, ...) can be created without a migration.
+ */
 export const PASSWORD_MIN_LENGTH = 8;
 
-/** Base permission set. Extended in stage 2 with user-management permissions. */
+/** Permission catalogue — single source of truth for the seed and the guards. */
 export const PERMISSION_KEYS = {
+  system: ['*'],
   dashboard: ['dashboard.read'],
   products: ['products.read', 'products.create', 'products.update', 'products.delete'],
-  orders: ['orders.read', 'orders.update'],
+  categories: ['categories.read', 'categories.create', 'categories.update', 'categories.delete'],
+  orders: ['orders.read', 'orders.create', 'orders.update', 'orders.cancel'],
   customers: ['customers.read', 'customers.update'],
-  employees: ['employees.read', 'employees.create', 'employees.update', 'employees.delete'],
+  employees: [
+    'employees.read', 'employees.create', 'employees.update', 'employees.delete',
+  ],
   users: ['users.read', 'users.update'],
+  roles: ['roles.read', 'roles.create', 'roles.update', 'roles.delete'],
+  permissions: ['permissions.read'],
+  payments: ['payments.read', 'payments.update'],
   audit: ['audit.read'],
 } as const;
 
 export const ALL_PERMISSION_KEYS: string[] = Object.values(PERMISSION_KEYS).flat();
 
-/** Role → permission matrix used by the seed (DB is the source of truth at runtime). */
-export const ROLE_PERMISSION_MATRIX: Record<RoleName, string[]> = {
+/**
+ * Role → permission matrix used by the seed. Keys are system role names.
+ * The DB stays the runtime source of truth; this only defines seed defaults.
+ */
+export const ROLE_PERMISSION_MATRIX: Record<string, string[]> = {
   OWNER: ['*'],
   ADMIN: [
     'dashboard.read',
-    'products.read', 'products.create', 'products.update',
-    'orders.read', 'orders.update',
+    'products.read', 'products.create', 'products.update', 'products.delete',
+    'categories.read', 'categories.create', 'categories.update', 'categories.delete',
+    'orders.read', 'orders.create', 'orders.update', 'orders.cancel',
     'customers.read', 'customers.update',
     'employees.read', 'employees.create', 'employees.update',
     'users.read', 'users.update',
+    'roles.read',
+    'permissions.read',
+    'payments.read',
     'audit.read',
   ],
-  EMPLOYEE: ['products.read', 'orders.read', 'orders.update', 'customers.read'],
+  EMPLOYEE: [
+    'dashboard.read',
+    'products.read', 'products.create', 'products.update',
+    'categories.read',
+    'orders.read', 'orders.update',
+    'customers.read',
+  ],
   CUSTOMER: [],
 };
+
+/** Roles that are seeded and protected from deletion. */
+export const SYSTEM_ROLES: string[] = ['OWNER', 'ADMIN', 'EMPLOYEE', 'CUSTOMER'];
 
 /** Rate limits, overridable from env (window seconds / max requests). */
 const num = (name: string, fallback: number): number => {
@@ -47,14 +72,15 @@ export const RATE_LIMITS = {
   refresh: { window: num('RATE_REFRESH_WINDOW', 300), max: num('RATE_REFRESH_MAX', 60) },
 } as const;
 
-/** Token lifetimes (seconds unless noted). */
+/** Token lifetimes (minutes). */
 export const TOKEN_TTL = {
   passwordResetMinutes: num('PASSWORD_RESET_TTL_MINUTES', 30),
   verificationMinutes: num('VERIFICATION_TTL_MINUTES', 15),
 };
 
+/** Fields safe to expose for any user/employee payload. */
 export const PUBLIC_USER_SELECT = {
   id: true, firstName: true, lastName: true, email: true, phone: true,
   status: true, isVerified: true, lastLoginAt: true, createdAt: true,
-  roles: { select: { role: { select: { name: true } } } },
+  roles: { select: { role: { select: { id: true, name: true } } } },
 } as const;

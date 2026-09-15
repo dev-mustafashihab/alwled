@@ -1,7 +1,7 @@
 import { Controller, Get, UseGuards } from '@nestjs/common';
-import { ApiTags, ApiBearerAuth, ApiOperation } from '@nestjs/swagger';
-import { JwtAuthGuard, Permissions } from '../common';
+import { ApiBearerAuth, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { PermissionsService } from './permissions.service';
+import { JwtAuthGuard, Permissions } from '../common';
 
 @ApiTags('permissions')
 @ApiBearerAuth()
@@ -11,8 +11,9 @@ export class PermissionsController {
   constructor(private readonly perms: PermissionsService) {}
 
   @Get()
-  @Permissions({ any: ['dashboard.read'] })
-  @ApiOperation({ summary: 'List all permissions grouped by area' })
+  @Permissions({ any: ['permissions.read'] })
+  @ApiOperation({ summary: 'قائمة الصلاحيات مجمّعة حسب الوحدة (products/orders/roles/...)' })
+  @ApiResponse({ status: 403, description: 'صلاحيات غير كافية — يتطلب permissions.read' })
   list() {
     return this.perms.grouped();
   }

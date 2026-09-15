@@ -8,6 +8,7 @@ import { AuthModule } from './auth/auth.module';
 import { RolesModule } from './roles/roles.module';
 import { HealthModule } from './health/health.module';
 import { UsersModule } from './users/users.module';
+import { EmployeesModule } from './employees/employees.module';
 import { PermissionsModule } from './permissions/permissions.module';
 import { HttpExceptionFilter } from './common/filters/http-exception.filter';
 import { TransformInterceptor } from './common/interceptors/transform.interceptor';
@@ -25,6 +26,7 @@ import { JwtAuthGuard, RolesGuard, PermissionsGuard } from './common/guards';
     RolesModule,
     PermissionsModule,
     UsersModule,
+    EmployeesModule,
     HealthModule,
   ],
   providers: [

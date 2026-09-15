@@ -1,4 +1,4 @@
-// Alwled — Stage 2: users & account lifecycle
+// Alwled — Stage 3: employee & role management
 generator client {
   provider = "prisma-client-js"
 }
@@ -6,13 +6,6 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
-}
-
-enum RoleName {
-  OWNER
-  ADMIN
-  EMPLOYEE
-  CUSTOMER
 }
 
 enum UserStatus {
@@ -48,11 +41,11 @@ model User {
   updatedAt    DateTime   @updatedAt @map("updated_at")
   deletedAt    DateTime?  @map("deleted_at")
 
-  roles                UserRole[]
-  refreshTokens        RefreshToken[]
-  passwordResetTokens  PasswordResetToken[]
-  verificationTokens   VerificationToken[]
-  auditLogs            AuditLog[]
+  roles               UserRole[]
+  refreshTokens       RefreshToken[]
+  passwordResetTokens PasswordResetToken[]
+  verificationTokens  VerificationToken[]
+  auditLogs           AuditLog[]
 
   @@index([status])
   @@index([createdAt])
@@ -60,17 +53,20 @@ model User {
   @@map("users")
 }
 
+/// name is a plain string so custom roles (SALES, PRODUCT_MANAGER, ...) need no schema change.
+/// System roles are protected by isSystem = true.
 model Role {
-  id          Int        @id @default(autoincrement())
-  name        RoleName   @unique
+  id          Int      @id @default(autoincrement())
+  name        String   @unique
   description String?
-  isSystem    Boolean    @default(true) @map("is_system")
-  createdAt   DateTime   @default(now()) @map("created_at")
-  updatedAt   DateTime   @updatedAt @map("updated_at")
+  isSystem    Boolean  @default(false) @map("is_system")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
 
   users       UserRole[]
   permissions RolePermission[]
 
+  @@index([isSystem])
   @@map("roles")
 }
 
@@ -83,6 +79,7 @@ model UserRole {
   role Role @relation(fields: [roleId], references: [id], onDelete: Cascade)
 
   @@id([userId, roleId])
+  @@index([roleId])
   @@map("user_roles")
 }
 
@@ -107,6 +104,7 @@ model RolePermission {
   permission Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
 
   @@id([roleId, permissionId])
+  @@index([permissionId])
   @@map("role_permissions")
 }
 
@@ -178,5 +176,6 @@ model AuditLog {
   @@index([actorId])
   @@index([action])
   @@index([createdAt])
+  @@index([entity, entityId])
   @@map("audit_logs")
 }

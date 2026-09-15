@@ -9,11 +9,23 @@ export class TransformInterceptor<T>
 {
   intercept(context: ExecutionContext, next: CallHandler): Observable<ApiResponse<T>> {
     return next.handle().pipe(
-      map((data) =>
-        typeof data === 'object' && data && 'success' in (data as object)
-          ? (data as ApiResponse<T>)
-          : { success: true, message: 'Success', data } as ApiResponse<T>,
-      ),
+      map((data) => {
+        if (typeof data === 'object' && data && 'success' in (data as object)) {
+          return data as ApiResponse<T>;
+        }
+        const payload = data as { items?: unknown[]; meta?: unknown };
+        // Paginated payloads keep `data.items` (stage 1/2 shape) and ALSO expose
+        // `meta` at the top level, as required by the stage 3 API contract.
+        if (payload && Array.isArray(payload.items) && payload.meta) {
+          return {
+            success: true,
+            message: 'Success',
+            data,
+            meta: payload.meta,
+          } as ApiResponse<T> & { meta: unknown };
+        }
+        return { success: true, message: 'Success', data } as ApiResponse<T>;
+      }),
     );
   }
 }
