@@ -1,4 +1,4 @@
-// Alwled — Prisma foundation: Users / Roles / Permissions (stage 1)
+// Alwled — Stage 2: users & account lifecycle
 generator client {
   provider = "prisma-client-js"
 }
@@ -21,6 +21,19 @@ enum UserStatus {
   DELETED
 }
 
+enum RefreshStatus {
+  ACTIVE
+  USED
+  REVOKED
+}
+
+enum VerificationChannel {
+  EMAIL
+  SMS
+  WHATSAPP
+  OTP
+}
+
 model User {
   id           String     @id @default(cuid())
   firstName    String     @map("first_name")
@@ -30,15 +43,20 @@ model User {
   passwordHash String     @map("password_hash")
   status       UserStatus @default(ACTIVE)
   isVerified   Boolean    @default(false) @map("is_verified")
+  lastLoginAt  DateTime?  @map("last_login_at")
   createdAt    DateTime   @default(now()) @map("created_at")
   updatedAt    DateTime   @updatedAt @map("updated_at")
   deletedAt    DateTime?  @map("deleted_at")
 
-  roles UserRole[]
-  refreshTokens RefreshToken[]
+  roles                UserRole[]
+  refreshTokens        RefreshToken[]
+  passwordResetTokens  PasswordResetToken[]
+  verificationTokens   VerificationToken[]
+  auditLogs            AuditLog[]
 
-  @@index([phone])
   @@index([status])
+  @@index([createdAt])
+  @@index([isVerified])
   @@map("users")
 }
 
@@ -46,19 +64,19 @@ model Role {
   id          Int        @id @default(autoincrement())
   name        RoleName   @unique
   description String?
-  isSystem    Boolean    @default(true) @map("is_system") // system roles cannot be deleted
+  isSystem    Boolean    @default(true) @map("is_system")
   createdAt   DateTime   @default(now()) @map("created_at")
   updatedAt   DateTime   @updatedAt @map("updated_at")
 
-  users         UserRole[]
-  permissions   RolePermission[]
+  users       UserRole[]
+  permissions RolePermission[]
 
   @@map("roles")
 }
 
 model UserRole {
-  userId   String @map("user_id")
-  roleId   Int    @map("role_id")
+  userId     String   @map("user_id")
+  roleId     Int      @map("role_id")
   assignedAt DateTime @default(now()) @map("assigned_at")
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
@@ -69,10 +87,10 @@ model UserRole {
 }
 
 model Permission {
-  id        Int    @id @default(autoincrement())
-  key       String @unique // e.g. "products.create"
-  name      String // Arabic display name
-  group     String // e.g. "products", "orders", "employees"
+  id        Int      @id @default(autoincrement())
+  key       String   @unique
+  name      String
+  group     String
   createdAt DateTime @default(now()) @map("created_at")
 
   roles RolePermission[]
@@ -92,24 +110,73 @@ model RolePermission {
   @@map("role_permissions")
 }
 
-enum RefreshStatus {
-  ACTIVE
-  REVOKED
-  USED
+/// One row = one device/session. Token itself is never stored in clear text.
+model RefreshToken {
+  id                  String        @id @default(cuid())
+  sessionId           String        @unique @default(cuid()) @map("session_id")
+  userId              String        @map("user_id")
+  tokenHash           String        @unique @map("token_hash")
+  status              RefreshStatus @default(ACTIVE)
+  replacedBySessionId String?       @map("replaced_by_session_id")
+  expiresAt           DateTime      @map("expires_at")
+  revokedAt           DateTime?     @map("revoked_at")
+  userAgent           String?       @map("user_agent")
+  ip                  String?
+  createdAt           DateTime      @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, status])
+  @@map("refresh_tokens")
 }
 
-model RefreshToken {
-  id        String       @id @default(cuid())
-  userId    String       @map("user_id")
-  tokenHash String       @unique @map("token_hash")
-  status    RefreshStatus @default(ACTIVE)
-  expiresAt DateTime     @map("expires_at")
-  userAgent String?      @map("user_agent")
-  ip        String?
-  createdAt DateTime     @default(now()) @map("created_at")
+model PasswordResetToken {
+  id        String    @id @default(cuid())
+  userId    String    @map("user_id")
+  tokenHash String    @unique @map("token_hash")
+  expiresAt DateTime  @map("expires_at")
+  usedAt    DateTime? @map("used_at")
+  createdAt DateTime  @default(now()) @map("created_at")
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
-  @@map("refresh_tokens")
+  @@map("password_reset_tokens")
+}
+
+/// Provider-agnostic verification foundation (SMS / Email / WhatsApp / OTP later).
+model VerificationToken {
+  id          String              @id @default(cuid())
+  userId      String              @map("user_id")
+  tokenHash   String              @unique @map("token_hash")
+  channel     VerificationChannel @default(OTP)
+  destination String?
+  expiresAt   DateTime            @map("expires_at")
+  usedAt      DateTime?           @map("used_at")
+  attempts    Int                 @default(0)
+  createdAt   DateTime            @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@map("verification_tokens")
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  actorId   String?  @map("actor_id")
+  action    String
+  entity    String?
+  entityId  String?  @map("entity_id")
+  metadata  Json?
+  ip        String?
+  userAgent String?  @map("user_agent")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user User? @relation(fields: [actorId], references: [id], onDelete: SetNull)
+
+  @@index([actorId])
+  @@index([action])
+  @@index([createdAt])
+  @@map("audit_logs")
 }

@@ -1,7 +1,7 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { IsEmail, IsOptional, IsString, MinLength } from 'class-validator';
+import { IsEmail, IsOptional, IsString, Matches } from 'class-validator';
 
-export class LoginDto {
+export class ForgotPasswordDto {
   @ApiPropertyOptional({ example: 'user@example.com' })
   @IsOptional()
   @IsEmail()
@@ -10,10 +10,6 @@ export class LoginDto {
   @ApiPropertyOptional({ example: '0999111222' })
   @IsOptional()
   @IsString()
+  @Matches(/^[0-9+\s-]{7,20}$/)
   phone?: string;
-
-  @ApiProperty({ minLength: 8 })
-  @IsString()
-  @MinLength(8)
-  password!: string;
 }

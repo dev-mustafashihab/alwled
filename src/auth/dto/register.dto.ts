@@ -1,5 +1,8 @@
-import { IsEmail, IsOptional, IsString, MinLength, MaxLength, Matches } from 'class-validator';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
+import { IsEmail, IsOptional, IsString, Matches, MaxLength, MinLength } from 'class-validator';
+import { IsStrongPassword } from '../../common/validators';
+
+const PHONE_REGEX = /^[0-9+\s-]{7,20}$/;
 
 export class RegisterDto {
   @ApiProperty({ example: 'ahmad' })
@@ -8,7 +11,7 @@ export class RegisterDto {
   @MaxLength(60)
   firstName!: string;
 
-  @ApiProperty()
+  @ApiProperty({ example: 'hassan' })
   @IsString()
   @MinLength(2)
   @MaxLength(60)
@@ -16,16 +19,21 @@ export class RegisterDto {
 
   @ApiPropertyOptional({ example: 'user@example.com' })
   @IsOptional()
-  @IsEmail()
+  @IsEmail({}, { message: 'البريد الإلكتروني غير صالح' })
   email?: string;
 
-  @ApiProperty({ example: '0912345678' })
+  @ApiProperty({ example: '0999111222' })
   @IsString()
-  @Matches(/^[0-9+\s-]{7,20}$/, { message: 'phone is invalid' })
+  @Matches(PHONE_REGEX, { message: 'رقم الهاتف غير صالح' })
   phone!: string;
 
-  @ApiProperty({ minLength: 8 })
+  @ApiProperty({ minLength: 8, example: 'StrongPass123!' })
   @IsString()
-  @MinLength(8, { message: 'password must be at least 8 characters' })
+  @MinLength(8)
+  @IsStrongPassword()
   password!: string;
+
+  @ApiProperty({ example: 'StrongPass123!' })
+  @IsString()
+  confirmPassword!: string;
 }

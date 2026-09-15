@@ -3,6 +3,7 @@ import { APP_FILTER, APP_GUARD, APP_INTERCEPTOR } from '@nestjs/core';
 import { ThrottlerModule, ThrottlerGuard } from '@nestjs/throttler';
 import { ConfigModule } from '@nestjs/config';
 import { DatabaseModule } from './database/database.module';
+import { AuditModule } from './audit/audit.module';
 import { AuthModule } from './auth/auth.module';
 import { RolesModule } from './roles/roles.module';
 import { HealthModule } from './health/health.module';
@@ -16,9 +17,10 @@ import { JwtAuthGuard, RolesGuard, PermissionsGuard } from './common/guards';
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
     ThrottlerModule.forRoot([
-      { name: 'default', ttl: 60_000, limit: 120 }, // 2 req/s baseline
+      { name: 'default', ttl: 60_000, limit: Number(process.env.RATE_GLOBAL_MAX ?? 240) },
     ]),
     DatabaseModule,
+    AuditModule,
     AuthModule,
     RolesModule,
     PermissionsModule,

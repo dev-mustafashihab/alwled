@@ -2,7 +2,9 @@ import { Module } from '@nestjs/common';
 import { JwtModule } from '@nestjs/jwt';
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
+import { SessionService } from './session.service';
 import { JwtStrategy } from './strategies/jwt.strategy';
+import { VerificationService } from './verification/verification.service';
 import { DatabaseModule } from '../database/database.module';
 
 @Module({
@@ -15,7 +17,7 @@ import { DatabaseModule } from '../database/database.module';
     }),
   ],
   controllers: [AuthController],
-  providers: [AuthService, JwtStrategy],
-  exports: [AuthService],
+  providers: [AuthService, SessionService, VerificationService, JwtStrategy],
+  exports: [AuthService, SessionService],
 })
 export class AuthModule {}

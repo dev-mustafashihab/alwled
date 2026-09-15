@@ -1,10 +1,9 @@
 import { createParamDecorator, ExecutionContext } from '@nestjs/common';
 
+/** Lean access-token payload: no email/phone/secrets — roles+permissions for guards. */
 export interface JwtPayload {
-  sub: string; // user id
-  email?: string | null;
-  phone?: string | null;
-  roles: string[]; // role names
+  sub: string;
+  roles: string[];
   permissions?: string[];
 }
 
