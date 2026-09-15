@@ -5,6 +5,7 @@ Node.js + TypeScript (strict) + NestJS + PostgreSQL + Prisma + JWT + Argon2 + Do
 > **المرحلة 1:** أساس البنية (Users/Roles/Permissions + JWT + Guards + Swagger + Health).
 > **المرحلة 2:** دورة حساب كاملة (Sessions/Logout/Change-Forgot-Reset Password/Verification foundation + User Management + Audit foundation).
 > **المرحلة 3:** إدارة الموظفين والأدوار والصلاحيات + Effective Permissions + سجل تدقيق قابل للقراءة + قواعد حماية صارمة (Owner/Privilege escalation/Last owner).
+> **المرحلة 4:** كتالوگ كامل (تصنيفات شجرية + علامات + منتجات + صور + مواصفات مرنة) + أساس مخزون (Inventory + Movements) مع قواعد نزاهة على مستوى الكود وقاعدة البيانات.
 
 ## التشغيل
 
@@ -111,3 +112,55 @@ test/              health/ auth/ employees e2e
 - الأسرار في `.env` فقط؛ `.env.example` يحوي أسماء المتغيرات بلا قيم.
 - `SEED_OWNER_PHONE` / `SEED_OWNER_PASSWORD` تُنشئ/تحدّث حساب المالك عند الـseed.
 - معدلات الطلبات (Rate limits) قابلة للضبط من البيئة (`RATE_*`).
+
+
+## المرحلة الرابعة — الكتالوگ والمخزون
+
+### العلاقات
+
+```
+Category (شجرة parent/child حتى 3 مستويات)
+   └── Product ── Brand
+         ├── ProductImage[]              (صورة Basic واحدة كحد أقصى)
+         ├── ProductSpecification[] ── SpecificationDefinition (TEXT|NUMBER|BOOLEAN|SELECT + unit + options)
+         └── Inventory (1:1) ── InventoryMovement[]
+```
+
+- **الأسعار** `NUMERIC(12,2)` وتُعاد كنصوص في JSON (`"500.50"`) — لا حسابات عائمة على الأموال.
+- **`availableQuantity` = quantity − reservedQuantity** تُحسب دائماً ولا تُخزَّن (لا انحراف ممكن).
+- **المواصفات** بيانات لا أعمدة: إضافة مواصفة جديدة لا تلمس جدول `products`.
+- **الصور** عبر `StorageProvider` abstraction (حالياً URL، لاحقاً S3/Cloudinary بلا تغيير API).
+
+### Endpoints جديدة
+
+| Method | Path | Auth | Permission |
+| --- | --- | --- | --- |
+| GET | /categories, /categories/:idOrSlug | عام | — (النشط فقط) |
+| POST/PATCH/DELETE | /categories[/:id] | JWT | categories.create/update/delete |
+| GET | /brands, /brands/:idOrSlug | عام | — (النشط فقط) |
+| POST/PATCH/DELETE | /brands[/:id] | JWT | brands.create/update/delete |
+| GET | /products, /products/:idOrSlug, /products/slug/:slug | عام | — (النشط فقط) |
+| POST/PATCH/DELETE | /products[/:id] | JWT | products.create/update/delete |
+| GET | /products/:productId/images | عام | — |
+| POST/PATCH/DELETE | /products/:productId/images[/:imageId] | JWT | products.update |
+| PATCH | /products/:productId/images/:imageId/primary | JWT | products.update |
+| PATCH | /products/:productId/images/reorder | JWT | products.update |
+| GET | /specifications, /specifications/:id | عام | — |
+| POST/PATCH/DELETE | /specifications[/:id] | JWT | specifications.create/update/delete |
+| GET | /products/:productId/specifications | عام | — |
+| PUT | /products/:productId/specifications | JWT | products.update |
+| GET | /inventory, /inventory/:productId, /inventory/:productId/movements | JWT | inventory.read |
+| PATCH | /inventory/:productId | JWT | inventory.update |
+| POST | /inventory/:productId/adjust | JWT | inventory.adjust |
+
+**عام مقابل الطاقم:** نفس المسارات العامة تخدم الطاقم أيضاً — حامل `products.read` (أو categories.read/brands.read) يستطيع طلب `includeInactive=true` و`isActive=false`، و`includeInventory=true` يتطلب `inventory.read`. الـBackend هو من يفرض ذلك (OptionalAuth على المسارات العامة).
+
+### قواعد النزاهة
+
+- مسار المنتج **لا** يقبل حقول المخزون أو `id`/`createdAt` (فشل 400 عند الإرسال).
+- نشر منتج يتطلب تصنيفاً وعلامة **نشطين**؛ المسودة (isActive=false) مسموحة مع عناصر غير نشطة.
+- `compareAtPrice ≥ price` و`price ≥ 0` — في الـDTO وفي CHECK constraint بقاعدة البيانات.
+- المخزون: `quantity ≥ 0`، `reservedQuantity ≥ 0`، `reservedQuantity ≤ quantity` — قفل صف `FOR UPDATE` داخل transaction + CHECK constraints.
+- صورة أساسية واحدة لكل منتج: transaction + partial unique index في Postgres.
+- الحذف النهائي (hard) مرفوض لأي منتج له حركات مخزون، وللتصنيفات المرتبطة بمنتجات، وللعلامات والمواصفات المستخدمة — الافتراضي تعطيل (soft).
+- تعديل مواصفة مستخدمة في منتجات: تغيير النوع مرفوض (409).

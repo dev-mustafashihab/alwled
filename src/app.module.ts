@@ -10,9 +10,16 @@ import { HealthModule } from './health/health.module';
 import { UsersModule } from './users/users.module';
 import { EmployeesModule } from './employees/employees.module';
 import { PermissionsModule } from './permissions/permissions.module';
+import { CategoriesModule } from './categories/categories.module';
+import { BrandsModule } from './brands/brands.module';
+import { ProductsModule } from './products/products.module';
+import { SpecificationsModule } from './specifications/specifications.module';
+import { InventoryModule } from './inventory/inventory.module';
+import { CommonServicesModule } from './common/services/common-services.module';
+import { StorageModule } from './common/storage/storage.module';
 import { HttpExceptionFilter } from './common/filters/http-exception.filter';
 import { TransformInterceptor } from './common/interceptors/transform.interceptor';
-import { JwtAuthGuard, RolesGuard, PermissionsGuard } from './common/guards';
+import { JwtAuthGuard, OptionalAuthGuard, RolesGuard, PermissionsGuard } from './common/guards';
 
 @Module({
   imports: [
@@ -21,12 +28,20 @@ import { JwtAuthGuard, RolesGuard, PermissionsGuard } from './common/guards';
       { name: 'default', ttl: 60_000, limit: Number(process.env.RATE_GLOBAL_MAX ?? 240) },
     ]),
     DatabaseModule,
+    CommonServicesModule,
+    StorageModule,
     AuditModule,
     AuthModule,
     RolesModule,
     PermissionsModule,
     UsersModule,
     EmployeesModule,
+    // Stage 4 — catalog + inventory
+    CategoriesModule,
+    BrandsModule,
+    ProductsModule,
+    SpecificationsModule,
+    InventoryModule,
     HealthModule,
   ],
   providers: [
@@ -36,6 +51,7 @@ import { JwtAuthGuard, RolesGuard, PermissionsGuard } from './common/guards';
     { provide: APP_GUARD, useClass: JwtAuthGuard },
     { provide: APP_GUARD, useClass: RolesGuard },
     { provide: APP_GUARD, useClass: PermissionsGuard },
+    { provide: APP_GUARD, useClass: OptionalAuthGuard },
   ],
 })
 export class AppModule {}

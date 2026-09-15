@@ -1,8 +1,8 @@
 import { Injectable, UnauthorizedException, ForbiddenException } from '@nestjs/common';
 import { PassportStrategy } from '@nestjs/passport';
 import { ExtractJwt, Strategy } from 'passport-jwt';
-import { PrismaService } from '../../database/prisma.service';
 import type { JwtPayload } from '../../common/decorators/current-user.decorator';
+import { ActorService } from '../../common/services/actor.service';
 
 /**
  * Validates the access token AND re-checks the live account on every request:
@@ -11,7 +11,7 @@ import type { JwtPayload } from '../../common/decorators/current-user.decorator'
  */
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {
-  constructor(private readonly prisma: PrismaService) {
+  constructor(private readonly actors: ActorService) {
     super({
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
       ignoreExpiration: false,
@@ -22,34 +22,10 @@ export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {
   async validate(payload: JwtPayload): Promise<JwtPayload> {
     if (!payload?.sub) throw new UnauthorizedException('جلسة غير صالحة');
 
-    const user = await this.prisma.user.findUnique({
-      where: { id: payload.sub },
-      select: {
-        id: true,
-        status: true,
-        roles: {
-          select: {
-            role: {
-              select: {
-                name: true,
-                permissions: { select: { permission: { select: { key: true } } } },
-              },
-            },
-          },
-        },
-      },
-    });
+    const actor = await this.actors.resolve(payload.sub);
+    if (!actor) throw new UnauthorizedException('جلسة غير صالحة');
+    if (actor.status !== 'ACTIVE') throw new ForbiddenException('الحساب غير مفعّل');
 
-    if (!user) throw new UnauthorizedException('جلسة غير صالحة');
-    if (user.status !== 'ACTIVE') throw new ForbiddenException('الحساب غير مفعّل');
-
-    const roles = user.roles.map((r) => r.role.name);
-    const permissions = new Set<string>();
-    user.roles.forEach((r) =>
-      r.role.permissions.forEach((p) => permissions.add(p.permission.key)),
-    );
-    if (roles.includes('OWNER')) permissions.add('*');
-
-    return { sub: user.id, roles, permissions: Array.from(permissions) };
+    return { sub: actor.id, roles: actor.roles, permissions: actor.permissions };
   }
 }
