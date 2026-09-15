@@ -1,0 +1,37 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: alwled-db
+    environment:
+      POSTGRES_USER: alwled
+      POSTGRES_PASSWORD: alwled_dev_only
+      POSTGRES_DB: alwled
+    ports:
+      - "5434:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U alwled"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    volumes:
+      - alwled_pgdata:/var/lib/postgresql/data
+
+  backend:
+    build: .
+    container_name: alwled-api
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://alwled:alwled_dev_only@db:5432/alwled?schema=public
+      JWT_SECRET: replace-in-prod
+      JWT_EXPIRES_IN: 15m
+      JWT_REFRESH_EXPIRES_IN: 7d
+      PORT: 3100
+      NODE_ENV: development
+    ports:
+      - "3100:3100"
+
+volumes:
+  alwled_pgdata:

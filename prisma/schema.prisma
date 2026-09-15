@@ -1,0 +1,115 @@
+// Alwled — Prisma foundation: Users / Roles / Permissions (stage 1)
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum RoleName {
+  OWNER
+  ADMIN
+  EMPLOYEE
+  CUSTOMER
+}
+
+enum UserStatus {
+  ACTIVE
+  SUSPENDED
+  DELETED
+}
+
+model User {
+  id           String     @id @default(cuid())
+  firstName    String     @map("first_name")
+  lastName     String     @map("last_name")
+  email        String?    @unique
+  phone        String?    @unique
+  passwordHash String     @map("password_hash")
+  status       UserStatus @default(ACTIVE)
+  isVerified   Boolean    @default(false) @map("is_verified")
+  createdAt    DateTime   @default(now()) @map("created_at")
+  updatedAt    DateTime   @updatedAt @map("updated_at")
+  deletedAt    DateTime?  @map("deleted_at")
+
+  roles UserRole[]
+  refreshTokens RefreshToken[]
+
+  @@index([phone])
+  @@index([status])
+  @@map("users")
+}
+
+model Role {
+  id          Int        @id @default(autoincrement())
+  name        RoleName   @unique
+  description String?
+  isSystem    Boolean    @default(true) @map("is_system") // system roles cannot be deleted
+  createdAt   DateTime   @default(now()) @map("created_at")
+  updatedAt   DateTime   @updatedAt @map("updated_at")
+
+  users         UserRole[]
+  permissions   RolePermission[]
+
+  @@map("roles")
+}
+
+model UserRole {
+  userId   String @map("user_id")
+  roleId   Int    @map("role_id")
+  assignedAt DateTime @default(now()) @map("assigned_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role Role @relation(fields: [roleId], references: [id], onDelete: Cascade)
+
+  @@id([userId, roleId])
+  @@map("user_roles")
+}
+
+model Permission {
+  id        Int    @id @default(autoincrement())
+  key       String @unique // e.g. "products.create"
+  name      String // Arabic display name
+  group     String // e.g. "products", "orders", "employees"
+  createdAt DateTime @default(now()) @map("created_at")
+
+  roles RolePermission[]
+
+  @@index([group])
+  @@map("permissions")
+}
+
+model RolePermission {
+  roleId       Int @map("role_id")
+  permissionId Int @map("permission_id")
+
+  role       Role       @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  permission Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+
+  @@id([roleId, permissionId])
+  @@map("role_permissions")
+}
+
+enum RefreshStatus {
+  ACTIVE
+  REVOKED
+  USED
+}
+
+model RefreshToken {
+  id        String       @id @default(cuid())
+  userId    String       @map("user_id")
+  tokenHash String       @unique @map("token_hash")
+  status    RefreshStatus @default(ACTIVE)
+  expiresAt DateTime     @map("expires_at")
+  userAgent String?      @map("user_agent")
+  ip        String?
+  createdAt DateTime     @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@map("refresh_tokens")
+}
