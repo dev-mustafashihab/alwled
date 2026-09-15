@@ -52,7 +52,7 @@ export const ROLE_PERMISSION_MATRIX: Record<string, string[]> = {
     'users.read', 'users.update',
     'roles.read',
     'permissions.read',
-    'payments.read',
+    'payments.read', 'payments.update',
     'audit.read',
   ],
   EMPLOYEE: [
@@ -86,6 +86,9 @@ export const RATE_LIMITS = {
   refresh: { window: num('RATE_REFRESH_WINDOW', 300), max: num('RATE_REFRESH_MAX', 60) },
   orders: { window: num('RATE_ORDERS_WINDOW', 300), max: num('RATE_ORDERS_MAX', 30) },
 } as const;
+
+/** Idempotency namespaces: the same client key may be reused across domains. */
+export const IDEMPOTENCY_SCOPES = { ORDER: 'ORDER', PAYMENT: 'PAYMENT' } as const;
 
 /**
  * Stage 6 — order safeguards (read at request time, env-overridable).

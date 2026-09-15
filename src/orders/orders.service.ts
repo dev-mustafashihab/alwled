@@ -6,7 +6,7 @@ import { createHash } from 'crypto';
 import { PrismaService } from '../database/prisma.service';
 import { AuditService } from '../audit/audit.service';
 import { AUDIT } from '../audit/audit.actions';
-import { ORDER_LIMITS } from '../common/constants';
+import { IDEMPOTENCY_SCOPES, ORDER_LIMITS } from '../common/constants';
 import { money, multiplyMoney, sumMoney, toMoneyString } from '../common/utils/money.util';
 import type { RequestMeta } from '../common/types/request-meta';
 import { CART_PRODUCT_SELECT, CartProductRow, availableQuantityOf, isProductPublishable } from '../cart/cart.constants';
@@ -152,7 +152,7 @@ export class OrdersService {
     // Replay check runs BEFORE the empty-cart rule: after a successful order the
     // cart is empty, yet the same Idempotency-Key must still return the same order.
     const existing = await this.prisma.idempotencyKey.findUnique({
-      where: { userId_key: { userId, key } },
+      where: { userId_scope_key: { userId, scope: IDEMPOTENCY_SCOPES.ORDER, key } },
       select: { requestHash: true, orderId: true },
     });
     if (existing) {
@@ -184,7 +184,9 @@ export class OrdersService {
     try {
       created = await this.prisma.$transaction(async (tx) => {
         // 1) Claim the idempotency key first: the unique index serialises double submits.
-        await tx.idempotencyKey.create({ data: { userId, key, requestHash } });
+        await tx.idempotencyKey.create({
+          data: { userId, key, requestHash, scope: IDEMPOTENCY_SCOPES.ORDER },
+        });
 
         const productIds = cart.items.map((i) => i.productId);
         // 2) Row-level locks — concurrent orders for the same product serialise here.
@@ -283,7 +285,7 @@ export class OrdersService {
         await tx.cartItem.deleteMany({ where: { cartId: cart.id } });
 
         await tx.idempotencyKey.update({
-          where: { userId_key: { userId, key } },
+          where: { userId_scope_key: { userId, scope: IDEMPOTENCY_SCOPES.ORDER, key } },
           data: { orderId: order.id, statusCode: 201 },
         });
 
@@ -297,7 +299,7 @@ export class OrdersService {
       // Lost the idempotency race against a concurrent identical request: replay it.
       if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === 'P2002') {
         const winner = await this.prisma.idempotencyKey.findUnique({
-          where: { userId_key: { userId, key } },
+          where: { userId_scope_key: { userId, scope: IDEMPOTENCY_SCOPES.ORDER, key } },
           select: { requestHash: true, orderId: true },
         });
         if (winner?.orderId && winner.requestHash === requestHash) {

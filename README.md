@@ -7,7 +7,8 @@ Node.js + TypeScript (strict) + NestJS + PostgreSQL + Prisma + JWT + Argon2 + Do
 > **المرحلة 3:** إدارة الموظفين والأدوار والصلاحيات + Effective Permissions + سجل تدقيق قابل للقراءة + قواعد حماية صارمة (Owner/Privilege escalation/Last owner).
 > **المرحلة 4:** كتالوگ كامل (تصنيفات شجرية + علامات + منتجات + صور + مواصفات مرنة) + أساس مخزون (Inventory + Movements) مع قواعد نزاهة على مستوى الكود وقاعدة البيانات.
 > **المرحلة 5:** سلة المشتري (Cart + CartItems) + معاينة إتمام الطلب (Checkout Preview).
-> **المرحلة 6:** الطلبات (Orders + OrderItems) مع snapshots تاريخية + حجز مخزون بقفل صفوف (FOR UPDATE) + إلغاء يحرّر الحجز + Idempotency — بلا أي دفعات.
+> **المرحلة 6:** الطلبات (Orders + OrderItems) مع snapshots تاريخية + حجز مخزون بقفل صفوف (FOR UPDATE) + إلغاء يحرّر الحجز + Idempotency.
+> **المرحلة 7:** مجال الدفعات (Payments) — مستقل عن أي مزوّد، بلا أي اتصال خارجي وبلا نجاح وهمي.
 
 ## التشغيل
 
@@ -255,3 +256,41 @@ Category (شجرة parent/child حتى 3 مستويات)
 ### أخطاء متوقعة
 
 `400` تحقق DTO/حقول غير مسموحة · `401` بلا JWT · `403` بدون orders.read/orders.update · `404` طلب غير موجود أو يخص غيرك · `409` سلة فارغة، منتج غير نشط، مخزون غير كافٍ، إلغاء مزدوج، انتقال حالة غير مسموح، مفتاح مكرر بمحتوى مختلف.
+
+
+## المرحلة السابعة — الدفعات (بنية مستقلة عن المزوّد)
+
+### المبادئ
+
+- **المبلغ والعملة من الطلب** (`Order.total` / `Order.currency`) — لا تُقبل من العميل إطلاقاً.
+- **لا نجاح وهمي**: لا يوجد أي مسار HTTP يمكنه تعليم دفعة `SUCCEEDED`؛ الوصول لهذه الحالة يحتاج نتيجة مزوّد **موثّقة** في مرحلة لاحقة.
+- **لا مزوّد مربوط**: `PaymentProviderRegistry` فارغة عمداً (لا استدعاء خارجي، ولا مفاتيح API).
+- **دفعة واحدة لكل طلب**: قيد فريد على `payments.order_id` + 409 عند التكرار.
+- **الدفع لا يلمس المخزون/السلة/الطلبات**: الحجز حصل عند إنشاء الطلب فقط.
+
+### Endpoints
+
+| Method | Path | Auth | Permission | Purpose |
+| --- | --- | --- | --- | --- |
+| POST | /payments | JWT | — | إنشاء دفعة PENDING لطلب يخص المستخدم (`Idempotency-Key` إلزامي) |
+| GET | /payments | JWT | — | دفعات المستخدم (صفحات + status/method) |
+| GET | /payments/:id | JWT | — | تفاصيل دفعة تخصه (غير ذلك 404) |
+| GET | /admin/payments | JWT | payments.read | كل الدفعات + فلاتر (status/method/orderId/userId) |
+| GET | /admin/payments/:id | JWT | payments.read | تفاصيل أي دفعة |
+| POST | /admin/payments/:id/cancel | JWT | payments.update | إلغاء (PENDING/PROCESSING فقط) — لا يوجد أي مسار لتعديل الحالة عشوائياً |
+
+### آلة الحالة
+
+`PENDING → PROCESSING | CANCELLED` · `PROCESSING → SUCCEEDED | FAILED | CANCELLED` · `SUCCEEDED/FAILED/CANCELLED` نهائية. الانتقالات غير المسموحة = 409.
+
+### Idempotency (مشتركة مع الطلبات)
+
+`idempotency_keys` أصبحت بنطاقات: `UNIQUE(userId, scope, key)` مع `scope ∈ {ORDER, PAYMENT}` — لا تكرار لآلية ثانية. بصمة الطلب = `sha256({orderId})` فقط (لا مبالغ). نفس المفتاح + نفس الطلب ⇒ نفس الدفعة (`idempotentReplay: true`)؛ نفس المفتاح + طلب مختلف ⇒ 409؛ طلبات متزامنة ⇒ دفعة واحدة.
+
+### أحداث التدقيق
+
+`PAYMENT_CREATED` · `PAYMENT_CANCELLED` · `PAYMENT_STATUS_UPDATED` — بلا أسرار وبلا ترويسات، مع `paymentId/orderId/status/amount/currency` و`source` (ADMIN/PROVIDER/SYSTEM).
+
+### حدود المرحلة
+
+غير منفّذ عمداً: Sham Cash API · أي مزوّد حقيقي · Webhooks · نجاح وهمي · Refunds · Returns · نهائي المخزون (SALE) · Coupons · Shipping · Tax · Notifications · Variants.
