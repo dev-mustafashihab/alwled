@@ -335,6 +335,20 @@ Order → POST /payments → PENDING
 
 ---
 
+## تشغيل المشروع من نسخة نظيفة
+
+```bash
+git clone <repo> alwled && cd alwled
+cp .env.example .env      # ثم املأ القيم (لا أسرار داخل الكود)
+npm ci                    # يثبّت الحزم ثم يولّد Prisma Client تلقائياً (postinstall)
+npx prisma migrate deploy # تطبيق الترحيلات
+npm run db:seed           # الأدوار والصلاحيات + المالك
+npm run build && npm start
+```
+اختبارات: `npm test` (وحدة) · `npm run test:e2e` (شامل، يحتاج قاعدة بيانات).
+
+---
+
 ## المرحلة التاسعة — التحقق من هوية الزبون (Customer Verification)
 
 نطاق مستقل عن تحقّق الحساب (Stage 2). **لا مزوّد خارجي في هذه المرحلة**: المزوّد الوحيد `LOG` داخلي.
