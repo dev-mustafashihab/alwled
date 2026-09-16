@@ -58,8 +58,12 @@
         if (createButton) createButton.dataset.can = cfg.form.permission || '';
       }
 
+      var columns = (cfg.columns || []).slice();
+      var hasActions = (cfg.rowActions && cfg.rowActions.length) || cfg.detail || (cfg.form && cfg.form.editable);
+      if (hasActions) columns.push(actionsColumnDef());
+
       dt = global.ALW.datatable.create({
-        columns: cfg.columns,
+        columns: columns,
         filters: cfg.filters,
         search: cfg.search,
         searchPlaceholder: cfg.searchPlaceholder,
@@ -68,7 +72,7 @@
         initialFilters: cfg.initialFilters,
         emptyText: cfg.emptyText,
         emptyTitle: cfg.emptyTitle,
-        onRowClick: cfg.onRowClick,
+        onRowClick: cfg.onRowClick || (cfg.detail ? function (row) { openDetail(row); } : undefined),
         actions: createButton ? [createButton] : [],
         load: function (params) {
           var query = cfg.query ? cfg.query(params) : params;
@@ -325,6 +329,26 @@
     }
 
     /* ---------------------------- row action bar ---------------------------- */
+    /** editing needs <domain>.update — derived from the create permission unless declared */
+    function editPermissionOf(formDef) {
+      if (!formDef) return null;
+      if (formDef.editPermission) return formDef.editPermission;
+      var base = formDef.permission || '';
+      return base.replace(/\.create$/, '.update') || null;
+    }
+
+    function actionsColumnDef() {
+      return {
+        key: '__actions',
+        label: 'إجراءات',
+        sortable: false,
+        width: '150px',
+        render: function (row) {
+          return actionButtons(row);
+        },
+      };
+    }
+
     function actionButtons(row) {
       var wrap = document.createElement('div');
       wrap.className = 'table__cell-actions';
@@ -350,7 +374,9 @@
         });
         if (detailBtn) wrap.appendChild(detailBtn);
       }
-      if (cfg.form && cfg.form.editable && cfg.form.editable(row) !== false) {
+      var canEditRow = cfg.form && (!cfg.form.editable || cfg.form.editable(row) !== false) &&
+        global.ALW.can.can(editPermissionOf(cfg.form));
+      if (canEditRow) {
         var edit = ui().iconButton('edit', {
           title: cfg.form.editLabel || 'تعديل',
           onClick: function (event) {
@@ -373,17 +399,7 @@
       table: function () {
         return dt;
       },
-      actionsColumn: function () {
-        return {
-          key: '__actions',
-          label: 'إجراءات',
-          sortable: false,
-          width: '150px',
-          render: function (row) {
-            return actionButtons(row);
-          },
-        };
-      },
+      actionsColumn: actionsColumnDef,
     };
 
     return api;
