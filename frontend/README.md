@@ -14,7 +14,9 @@ python3 frontend/tools/serve.py --port 5173        # أو: npm run frontend:serv
 
 ## ربط الـAPI
 
-الافتراضي: نفس الأصل (`/api/v1`) — مثالي عند تقديم الواجهة خلف reverse proxy مع الـBackend.
+الافتراضي ذكي: عند تقديم الواجهة من الجذر ⇒ `/api/v1`، وعند تقديمها من مسار فرعي (مثل `/alwled/`)
+⇒ الـAPI يُستنتج من المسار نفسه (`/alwled-api/api/v1`) — وهو ما يطابق النشر الحالي على
+`https://panel.fahd-car.cloud/alwled/`.
 
 عند تقديمها من أصل آخر (مثلًا GitHub Pages أو خادم ثابت منفصل)، حدّد العنوان بإحدى الطرق:
 

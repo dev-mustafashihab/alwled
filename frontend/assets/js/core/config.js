@@ -7,9 +7,20 @@
 
   var STORAGE_KEY = 'alwled.settings';
 
+  function defaultApiBase() {
+    // same-origin by default; when the panel is served from a sub-path (e.g. /alwled/)
+    // the API defaults to the sibling "<dir>-api/api/v1" (matching the deployment convention).
+    if (!global.location) return '/api/v1';
+    var path = String(global.location.pathname || '/');
+    var match = path.match(/^(.*\/)(?:index\.html)?$/);
+    var dir = match ? match[1] : '/';
+    if (!dir || dir === '/') return '/api/v1';
+    return dir.replace(/\/+$/, '') + '-api/api/v1';
+  }
+
   var DEFAULTS = {
     // نفس الأصل افتراضيًا (مثالي عند تقديم الواجهة من الخادم عبر reverse proxy).
-    apiBaseUrl: '/api/v1',
+    apiBaseUrl: defaultApiBase(),
     apiVersionPath: '',
     requestTimeoutMs: 20000,
     defaultPageSize: 20,

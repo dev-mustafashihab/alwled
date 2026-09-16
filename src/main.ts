@@ -19,6 +19,15 @@ async function bootstrap() {
       transformOptions: { enableImplicitConversion: true },
     }),
   );
+  // Behind a reverse proxy the client IP must come from the proxy hop (rate limiting, audit).
+  // Opt-in only: TRUST_PROXY=1|true|2... — never trust arbitrary X-Forwarded-For headers by default.
+  const trustProxy = (process.env.TRUST_PROXY ?? '').trim();
+  if (trustProxy) {
+    const hops = /^\d+$/.test(trustProxy) ? Number(trustProxy) : 1;
+    // the express instance behind Nest's http adapter
+    (app.getHttpAdapter().getInstance() as { set: (key: string, value: unknown) => void }).set('trust proxy', hops);
+    new Logger('Bootstrap').log(`trust proxy: ${hops} hop(s)`);
+  }
   app.use(helmet({ crossOriginResourcePolicy: { policy: 'same-site' } }));
   const origins = (process.env.CORS_ORIGINS ?? '')
     .split(',')
