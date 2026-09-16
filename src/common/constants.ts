@@ -28,6 +28,7 @@ export const PERMISSION_KEYS = {
   roles: ['roles.read', 'roles.create', 'roles.update', 'roles.delete'],
   permissions: ['permissions.read'],
   payments: ['payments.read', 'payments.update'],
+  verification: ['verification.read', 'verification.update'],
   audit: ['audit.read'],
 } as const;
 
@@ -53,6 +54,7 @@ export const ROLE_PERMISSION_MATRIX: Record<string, string[]> = {
     'roles.read',
     'permissions.read',
     'payments.read', 'payments.update',
+    'verification.read', 'verification.update',
     'audit.read',
   ],
   EMPLOYEE: [
@@ -85,10 +87,14 @@ export const RATE_LIMITS = {
   resendVerification: { window: num('RATE_RESEND_WINDOW', 300), max: num('RATE_RESEND_MAX', 3) },
   refresh: { window: num('RATE_REFRESH_WINDOW', 300), max: num('RATE_REFRESH_MAX', 60) },
   orders: { window: num('RATE_ORDERS_WINDOW', 300), max: num('RATE_ORDERS_MAX', 30) },
+  paymentCreate: { window: num('RATE_PAYMENT_CREATE_WINDOW', 300), max: num('RATE_PAYMENT_CREATE_MAX', 60) },
+  paymentSubmit: { window: num('RATE_PAYMENT_SUBMIT_WINDOW', 900), max: num('RATE_PAYMENT_SUBMIT_MAX', 10) },
+  verificationStart: { window: num('RATE_VERIFICATION_START_WINDOW', 900), max: num('RATE_VERIFICATION_START_MAX', 10) },
+  verificationCancel: { window: num('RATE_VERIFICATION_CANCEL_WINDOW', 900), max: num('RATE_VERIFICATION_CANCEL_MAX', 10) },
 } as const;
 
 /** Idempotency namespaces: the same client key may be reused across domains. */
-export const IDEMPOTENCY_SCOPES = { ORDER: 'ORDER', PAYMENT: 'PAYMENT' } as const;
+export const IDEMPOTENCY_SCOPES = { ORDER: 'ORDER', PAYMENT: 'PAYMENT', VERIFICATION: 'VERIFICATION' } as const;
 
 /**
  * Stage 6 — order safeguards (read at request time, env-overridable).

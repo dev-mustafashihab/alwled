@@ -1,5 +1,5 @@
 import {
-  ConflictException, Injectable, Logger, NotFoundException,
+  ConflictException, Inject, Injectable, Logger, NotFoundException,
 } from '@nestjs/common';
 import { PaymentMethod, PaymentStatus, Prisma } from '@prisma/client';
 import { createHash } from 'crypto';
@@ -13,9 +13,12 @@ import { CreatePaymentDto } from './dto/create-payment.dto';
 import { ListPaymentsQueryDto } from './dto/list-payments.query.dto';
 import { AdminListPaymentsQueryDto } from './dto/admin-list-payments.query.dto';
 import {
-  ADMIN_CANCELLABLE_PAYMENT_STATUSES, DEFAULT_PAYMENT_METHOD, PAYABLE_ORDER_STATUSES,
-  PAYMENT_SELECT, PAYMENT_STATUS, PaymentRow, PaymentStatusValue, canTransitionPayment,
+  ADMIN_CANCELLABLE_PAYMENT_STATUSES, CUSTOMER_SUBMITTABLE_PAYMENT_STATUSES, DEFAULT_PAYMENT_METHOD,
+  PAYABLE_ORDER_STATUSES, PAYMENT_SELECT, PAYMENT_STATUS, PaymentRow, PaymentStatusValue,
+  REVIEWABLE_PAYMENT_STATUSES, canTransitionPayment, shamCashAccountConfig,
 } from './payments.constants';
+import { STORAGE_PROVIDER, StorageProvider } from '../common/storage/storage.interface';
+import { SubmitPaymentProofDto } from './dto/submit-payment-proof.dto';
 
 export interface ActorRef {
   id: string;
@@ -39,6 +42,7 @@ export class PaymentsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
+    @Inject(STORAGE_PROVIDER) private readonly storage: StorageProvider,
   ) {}
 
   /* ------------------------------ serializers ----------------------------- */
@@ -56,8 +60,15 @@ export class PaymentsService {
       currency: row.currency,
       provider: row.provider,
       providerPaymentId: row.providerPaymentId,
+      transactionReference: row.transactionReference ?? null,
+      proofUrl: row.proofUrl ?? null,
+      proofNote: row.proofNote ?? null,
+      submittedAt: row.submittedAt ?? null,
+      reviewedAt: row.reviewedAt ?? null,
+      rejectionReason: row.rejectionReason ?? null,
       createdAt: row.createdAt,
       updatedAt: row.updatedAt,
+      awaitsReview: row.status === PAYMENT_STATUS.PENDING_REVIEW,
     };
   }
 
@@ -267,9 +278,13 @@ export class PaymentsService {
   async transition(
     paymentId: string,
     to: PaymentStatusValue,
-    context: { actorId: string | null; source: 'ADMIN' | 'PROVIDER' | 'SYSTEM'; providerPatch?: {
-      provider?: string | null; providerPaymentId?: string | null;
-    } },
+    context: {
+      actorId: string | null;
+      source: 'CUSTOMER' | 'ADMIN' | 'PROVIDER' | 'SYSTEM';
+      providerPatch?: { provider?: string | null; providerPaymentId?: string | null };
+      /** Review metadata (reference/proof/reviewer) applied atomically with the status. */
+      extraData?: Prisma.PaymentUncheckedUpdateInput;
+    },
     meta: RequestMeta = {},
   ) {
     const outcome = await this.prisma.$transaction(async (tx) => {
@@ -288,6 +303,7 @@ export class PaymentsService {
         data: {
           status: to as PaymentStatus,
           ...(context.providerPatch ?? {}),
+          ...(context.extraData ?? {}),
         },
         select: PAYMENT_SELECT,
       });
@@ -312,6 +328,192 @@ export class PaymentsService {
     });
 
     return this.serialize(outcome.payment);
+  }
+
+  /* ------------------- Manual Sham Cash flow (Stage 8) ------------------- */
+
+  /** Receiving account the customer must transfer to (never secret, never fake). */
+  getShamCashAccount() {
+    const account = shamCashAccountConfig();
+    const configured = !!(account.walletNumber && account.accountName);
+    return {
+      method: DEFAULT_PAYMENT_METHOD,
+      configured,
+      walletNumber: account.walletNumber,
+      accountName: account.accountName,
+      instructions: account.instructions,
+      currency: account.currency,
+      // The customer uploads proof + declares the transfer reference in step 2.
+      submitPath: 'POST /api/v1/payments/:id/submit',
+    };
+  }
+
+  /**
+   * POST /payments/:id/submit — the customer declares the manual transfer:
+   * transaction reference + proof URL. PENDING → PENDING_REVIEW, then a human
+   * decides. Never touches inventory, cart or the order.
+   */
+  async submitProof(
+    paymentId: string,
+    userId: string,
+    dto: SubmitPaymentProofDto,
+    meta: RequestMeta = {},
+  ) {
+    const payment = await this.prisma.payment.findFirst({
+      where: { id: paymentId, userId },
+      select: { id: true, status: true, orderId: true, amount: true, currency: true },
+    });
+    // 404 (not 403): another customer's payment must look nonexistent.
+    if (!payment) throw new NotFoundException('الدفعة غير موجودة');
+
+    if (!CUSTOMER_SUBMITTABLE_PAYMENT_STATUSES.includes(payment.status)) {
+      throw new ConflictException(
+        payment.status === PAYMENT_STATUS.PENDING_REVIEW
+          ? 'تم إرسال إثبات الدفع مسبقاً وهو قيد المراجعة'
+          : `لا يمكن إرسال إثبات لدفعة بحالة ${payment.status}`,
+      );
+    }
+
+    const reference = dto.transactionReference.trim().toUpperCase();
+    const duplicate = await this.prisma.payment.findUnique({
+      where: { transactionReference: reference },
+      select: { id: true },
+    });
+    if (duplicate && duplicate.id !== paymentId) {
+      throw new ConflictException('رقم العملية مستخدم مسبقاً في دفعة أخرى');
+    }
+
+    const stored = await this.storage.put(dto.proofUrl);
+
+    const serialized = await this.transition(
+      paymentId,
+      PAYMENT_STATUS.PENDING_REVIEW,
+      {
+        actorId: userId,
+        source: 'CUSTOMER', // customer-declared evidence, not a decision
+        extraData: {
+          transactionReference: reference,
+          proofUrl: stored.url,
+          proofNote: dto.proofNote ?? null,
+          submittedAt: new Date(),
+        },
+      },
+      meta,
+    );
+
+    await this.audit.log({
+      action: AUDIT.PAYMENT_SUBMITTED_FOR_REVIEW,
+      actorId: userId,
+      entity: 'payment',
+      entityId: paymentId,
+      metadata: {
+        paymentId,
+        orderId: payment.orderId,
+        status: PAYMENT_STATUS.PENDING_REVIEW,
+        amount: toMoneyString(payment.amount),
+        currency: payment.currency,
+        transactionReference: reference,
+        source: 'CUSTOMER',
+      },
+      ...meta,
+    });
+
+    return serialized;
+  }
+
+  /**
+   * POST /admin/payments/:id/confirm — employee verified the transfer against the
+   * Sham Cash statement. PENDING_REVIEW → SUCCEEDED (row-locked, so a concurrent
+   * reject/confirm cannot corrupt the outcome).
+   */
+  async confirm(paymentId: string, actor: ActorRef, meta: RequestMeta = {}) {
+    const payment = await this.prisma.payment.findUnique({
+      where: { id: paymentId },
+      select: { id: true, status: true, orderId: true, transactionReference: true, amount: true, currency: true },
+    });
+    if (!payment) throw new NotFoundException('الدفعة غير موجودة');
+    if (!REVIEWABLE_PAYMENT_STATUSES.includes(payment.status)) {
+      throw new ConflictException(`لا يمكن تأكيد دفعة بحالة ${payment.status}`);
+    }
+    if (!payment.transactionReference) {
+      // Defence in depth: the DB CHECK enforces this too.
+      throw new ConflictException('لا يوجد رقم عملية لهذه الدفعة');
+    }
+
+    const serialized = await this.transition(
+      paymentId,
+      PAYMENT_STATUS.SUCCEEDED,
+      {
+        actorId: actor.id,
+        source: 'ADMIN',
+        extraData: { reviewedAt: new Date(), reviewedBy: actor.id, rejectionReason: null },
+      },
+      meta,
+    );
+
+    await this.audit.log({
+      action: AUDIT.PAYMENT_CONFIRMED,
+      actorId: actor.id,
+      entity: 'payment',
+      entityId: paymentId,
+      metadata: {
+        paymentId,
+        orderId: payment.orderId,
+        status: PAYMENT_STATUS.SUCCEEDED,
+        amount: toMoneyString(payment.amount),
+        currency: payment.currency,
+        transactionReference: payment.transactionReference,
+        source: 'ADMIN',
+      },
+      ...meta,
+    });
+
+    return serialized;
+  }
+
+  /**
+   * POST /admin/payments/:id/reject — the declared transfer could not be verified.
+   * PENDING_REVIEW → FAILED with a mandatory reason.
+   */
+  async reject(paymentId: string, actor: ActorRef, reason: string, meta: RequestMeta = {}) {
+    const payment = await this.prisma.payment.findUnique({
+      where: { id: paymentId },
+      select: { id: true, status: true, orderId: true, amount: true, currency: true },
+    });
+    if (!payment) throw new NotFoundException('الدفعة غير موجودة');
+    if (!REVIEWABLE_PAYMENT_STATUSES.includes(payment.status)) {
+      throw new ConflictException(`لا يمكن رفض دفعة بحالة ${payment.status}`);
+    }
+
+    const serialized = await this.transition(
+      paymentId,
+      PAYMENT_STATUS.FAILED,
+      {
+        actorId: actor.id,
+        source: 'ADMIN',
+        extraData: { reviewedAt: new Date(), reviewedBy: actor.id, rejectionReason: reason },
+      },
+      meta,
+    );
+
+    await this.audit.log({
+      action: AUDIT.PAYMENT_REJECTED,
+      actorId: actor.id,
+      entity: 'payment',
+      entityId: paymentId,
+      metadata: {
+        paymentId,
+        orderId: payment.orderId,
+        status: PAYMENT_STATUS.FAILED,
+        amount: toMoneyString(payment.amount),
+        currency: payment.currency,
+        reason,
+        source: 'ADMIN',
+      },
+      ...meta,
+    });
+
+    return serialized;
   }
 
   /**

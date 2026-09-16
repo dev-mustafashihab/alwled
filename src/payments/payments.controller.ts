@@ -6,6 +6,7 @@ import { ApiBearerAuth, ApiHeader, ApiOperation, ApiResponse, ApiTags } from '@n
 import { Request } from 'express';
 import { PaymentsService } from './payments.service';
 import { CreatePaymentDto } from './dto/create-payment.dto';
+import { SubmitPaymentProofDto } from './dto/submit-payment-proof.dto';
 import { ListPaymentsQueryDto } from './dto/list-payments.query.dto';
 import { CurrentUser, JwtAuthGuard, JwtPayload } from '../common';
 import { requestMeta } from '../common/types/request-meta';
@@ -27,7 +28,7 @@ export class PaymentsController {
   constructor(private readonly payments: PaymentsService) {}
 
   @Post()
-  @Throttle({ default: { limit: RATE_LIMITS.orders.max, ttl: RATE_LIMITS.orders.window * 1000 } })
+  @Throttle({ default: { limit: RATE_LIMITS.paymentCreate.max, ttl: RATE_LIMITS.paymentCreate.window * 1000 } })
   @ApiOperation({
     summary: 'إنشاء دفعة PENDING لطلب يخص المستخدم الحالي',
     description:
@@ -55,11 +56,45 @@ export class PaymentsController {
     return { ...result.payment, idempotentReplay: result.replayed };
   }
 
+  @Get('sham-cash/account')
+  @ApiOperation({
+    summary: 'بيانات حساب شام كاش التي يحوّل إليها الزبون',
+    description:
+      'تُقرأ من إعدادات الخادم (SHAMCASH_WALLET_NUMBER / SHAMCASH_ACCOUNT_NAME). ' +
+      'إذا لم تكن مضبوطة يعيد configured=false — ولا يخترع أي بيانات.',
+  })
+  @ApiResponse({ status: 200, description: '{ method, configured, walletNumber, accountName, instructions, currency }' })
+  account() {
+    return this.payments.getShamCashAccount();
+  }
+
   @Get()
   @ApiOperation({ summary: 'دفعات المستخدم الحالي (صفحات + فلترة status/method)' })
   @ApiResponse({ status: 200, description: 'items + meta { page, limit, total, totalPages }' })
   list(@Query() query: ListPaymentsQueryDto, @CurrentUser() user: JwtPayload) {
     return this.payments.listMine(user.sub, query);
+  }
+
+  @Post(':id/submit')
+  @Throttle({ default: { limit: RATE_LIMITS.paymentSubmit.max, ttl: RATE_LIMITS.paymentSubmit.window * 1000 } })
+  @ApiOperation({
+    summary: 'إرسال إثبات التحويل (رقم العملية + صورة الحوالة)',
+    description:
+      'الدفعة تنتقل PENDING → PENDING_REVIEW ثم يقرّر الموظف. ' +
+      'المبلغ والعملة يبقيان من الطلب؛ ولا يُلمس المخزون ولا السلة. ' +
+      'رقم العملية فريد: إعادة استخدامه في دفعة أخرى = 409.',
+  })
+  @ApiResponse({ status: 200, description: 'الدفعة بعد الإرسال (PENDING_REVIEW)' })
+  @ApiResponse({ status: 400, description: 'رقم عملية/رابط إثبات غير صالح' })
+  @ApiResponse({ status: 404, description: 'الدفعة غير موجودة أو تخص مستخدماً آخر' })
+  @ApiResponse({ status: 409, description: 'الدفعة ليست PENDING أو الرقم مستخدم مسبقاً' })
+  submit(
+    @Param('id') id: string,
+    @Body() dto: SubmitPaymentProofDto,
+    @CurrentUser() user: JwtPayload,
+    @Req() req: Request,
+  ) {
+    return this.payments.submitProof(id, user.sub, dto, requestMeta(req));
   }
 
   @Get(':id')

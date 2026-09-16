@@ -70,8 +70,10 @@ const build = (options: {
   if (options.createError) paymentCreate.mockRejectedValue(options.createError);
 
   const audit = { log: jest.fn().mockResolvedValue(undefined) };
-  const service = new PaymentsService(prisma as never, audit as never);
-  return { service, prisma, tx, audit, paymentCreate, paymentUpdate, inventoryUpdate, inventoryMovementCreate };
+  // URL-only storage stub: proof URLs are validated by the storage abstraction.
+  const storage = { name: 'url', put: jest.fn().mockImplementation(async (url: string) => ({ url, provider: 'url' })) };
+  const service = new PaymentsService(prisma as never, audit as never, storage as never);
+  return { service, prisma, tx, audit, storage, paymentCreate, paymentUpdate, inventoryUpdate, inventoryMovementCreate };
 };
 
 const dto = { orderId: 77 };
@@ -220,6 +222,130 @@ describe('PaymentsService', () => {
       );
       await expect(service.cancel('pay-1', { id: 'admin-1', isStaff: true }, undefined))
         .rejects.toBeInstanceOf(ConflictException);
+    });
+  });
+
+  describe('manual Sham Cash flow', () => {
+    const proof = { transactionReference: 'sc-2026-0098231', proofUrl: 'https://cdn.example.com/proof.webp', proofNote: 'حوّلت المبلغ' };
+
+    it('moves PENDING → PENDING_REVIEW with reference, proof and timestamp, and audits it', async () => {
+      const { service, paymentUpdate, audit, storage } = build({ currentStatus: 'PENDING' });
+      const result = (await service.submitProof('pay-1', 'user-a', proof)) as unknown as { status: string };
+
+      expect(storage.put).toHaveBeenCalledWith(proof.proofUrl);
+      expect(paymentUpdate).toHaveBeenCalledWith(
+        expect.objectContaining({
+          data: expect.objectContaining({
+            status: 'PENDING_REVIEW',
+            transactionReference: 'SC-2026-0098231',
+            proofUrl: proof.proofUrl,
+            proofNote: 'حوّلت المبلغ',
+          }),
+        }),
+      );
+      expect(result.status).toBe('PENDING_REVIEW');
+      expect(audit.log).toHaveBeenCalledWith(
+        expect.objectContaining({
+          action: 'PAYMENT_SUBMITTED_FOR_REVIEW',
+          actorId: 'user-a',
+          metadata: expect.objectContaining({ status: 'PENDING_REVIEW', source: 'CUSTOMER' }),
+        }),
+      );
+    });
+
+    it('never touches inventory while declaring or deciding a transfer', async () => {
+      const { service, inventoryUpdate, inventoryMovementCreate } = build({ currentStatus: 'PENDING' });
+      await service.submitProof('pay-1', 'user-a', proof);
+      expect(inventoryUpdate).not.toHaveBeenCalled();
+      expect(inventoryMovementCreate).not.toHaveBeenCalled();
+    });
+
+    it('404s when the payment is not the caller\'s', async () => {
+      const { service, prisma } = build();
+      prisma.payment.findFirst = jest.fn().mockResolvedValue(null);
+      await expect(service.submitProof('pay-9', 'user-b', proof)).rejects.toBeInstanceOf(NotFoundException);
+    });
+
+    it('refuses a second submission while one is already under review', async () => {
+      const { service, prisma } = build();
+      prisma.payment.findFirst = jest.fn().mockResolvedValue(paymentRow({ status: 'PENDING_REVIEW' }));
+      await expect(service.submitProof('pay-1', 'user-a', proof)).rejects.toBeInstanceOf(ConflictException);
+    });
+
+    it('refuses a reference already used by another payment', async () => {
+      const { service, prisma } = build();
+      prisma.payment.findUnique = jest.fn().mockResolvedValue({ id: 'other-payment' });
+      await expect(service.submitProof('pay-1', 'user-a', proof)).rejects.toBeInstanceOf(ConflictException);
+    });
+
+    it('propagates storage validation errors for a bad proof URL', async () => {
+      const { service, storage } = build({ currentStatus: 'PENDING' });
+      storage.put.mockRejectedValueOnce(new Error('رابط غير صالح'));
+      await expect(service.submitProof('pay-1', 'user-a', proof)).rejects.toThrow('رابط غير صالح');
+    });
+
+    it('confirm: PENDING_REVIEW → SUCCEEDED with reviewer metadata and audit', async () => {
+      const { service, prisma, tx, audit } = build({ currentStatus: 'PENDING_REVIEW' });
+      prisma.payment.findUnique = jest.fn().mockResolvedValue(
+        paymentRow({ status: 'PENDING_REVIEW', transactionReference: 'SC-1' }),
+      );
+      tx.$queryRaw.mockResolvedValue([{ id: 'pay-1', status: 'PENDING_REVIEW', order_id: 77 }]);
+
+      const result = (await service.confirm('pay-1', { id: 'admin-1', isStaff: true })) as unknown as { status: string };
+      expect(result.status).toBe('SUCCEEDED');
+      expect(audit.log).toHaveBeenCalledWith(
+        expect.objectContaining({ action: 'PAYMENT_CONFIRMED', actorId: 'admin-1', metadata: expect.objectContaining({ source: 'ADMIN' }) }),
+      );
+    });
+
+    it('confirm: refuses when the payment is not under review', async () => {
+      const { service, prisma } = build();
+      prisma.payment.findUnique = jest.fn().mockResolvedValue(paymentRow({ status: 'PENDING' }));
+      await expect(service.confirm('pay-1', { id: 'admin-1', isStaff: true })).rejects.toBeInstanceOf(ConflictException);
+    });
+
+    it('confirm: refuses a review with no transaction reference', async () => {
+      const { service, prisma } = build();
+      prisma.payment.findUnique = jest.fn().mockResolvedValue(
+        paymentRow({ status: 'PENDING_REVIEW', transactionReference: null }),
+      );
+      await expect(service.confirm('pay-1', { id: 'admin-1', isStaff: true })).rejects.toBeInstanceOf(ConflictException);
+    });
+
+    it('reject: PENDING_REVIEW → FAILED with the mandatory reason', async () => {
+      const { service, prisma, tx, audit } = build({ currentStatus: 'PENDING_REVIEW' });
+      prisma.payment.findUnique = jest.fn().mockResolvedValue(paymentRow({ status: 'PENDING_REVIEW' }));
+      tx.$queryRaw.mockResolvedValue([{ id: 'pay-1', status: 'PENDING_REVIEW', order_id: 77 }]);
+
+      const result = (await service.reject('pay-1', { id: 'admin-1', isStaff: true }, 'رقم غير مطابق')) as unknown as { status: string };
+      expect(result.status).toBe('FAILED');
+      expect(audit.log).toHaveBeenCalledWith(
+        expect.objectContaining({ action: 'PAYMENT_REJECTED', metadata: expect.objectContaining({ reason: 'رقم غير مطابق' }) }),
+      );
+    });
+
+    it('reject: refuses a payment that is not under review', async () => {
+      const { service, prisma } = build();
+      prisma.payment.findUnique = jest.fn().mockResolvedValue(paymentRow({ status: 'SUCCEEDED' }));
+      await expect(service.reject('pay-1', { id: 'admin-1', isStaff: true }, 'سبب')).rejects.toBeInstanceOf(ConflictException);
+    });
+
+    it('exposes the receiving account from configuration without inventing data', () => {
+      const { service } = build();
+      delete process.env.SHAMCASH_WALLET_NUMBER;
+      delete process.env.SHAMCASH_ACCOUNT_NAME;
+      const unconfigured = service.getShamCashAccount();
+      expect(unconfigured.configured).toBe(false);
+      expect(unconfigured.walletNumber).toBeNull();
+
+      process.env.SHAMCASH_WALLET_NUMBER = '0999-000-000';
+      process.env.SHAMCASH_ACCOUNT_NAME = 'Alwled Store';
+      const configured = service.getShamCashAccount();
+      expect(configured).toMatchObject({
+        configured: true, walletNumber: '0999-000-000', accountName: 'Alwled Store', method: 'SHAM_CASH',
+      });
+      delete process.env.SHAMCASH_WALLET_NUMBER;
+      delete process.env.SHAMCASH_ACCOUNT_NAME;
     });
   });
 

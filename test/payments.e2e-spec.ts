@@ -131,8 +131,9 @@ describe('Payments (e2e)', () => {
       await prisma.product.deleteMany({ where: { sku: { contains: stamp } } });
       await prisma.category.deleteMany({ where: { slug: { contains: stamp } } });
       await prisma.brand.deleteMany({ where: { slug: { contains: stamp } } });
-      await prisma.role.deleteMany({ where: { name: `PAYNOPERM_${stamp}`, isSystem: false, users: { none: {} } } });
+      // Users first: a role cannot be deleted while a user still references it.
       await prisma.user.deleteMany({ where: { id: { in: userIds } } });
+      await prisma.role.deleteMany({ where: { name: `PAYNOPERM_${stamp}`, isSystem: false } });
       await prisma.$disconnect();
     } catch (error) {
       console.warn('cleanup skipped:', (error as Error).message);
@@ -421,6 +422,226 @@ describe('Payments (e2e)', () => {
 
       const detail = await http().get(`/api/v1/payments/${paymentIds.a}`).set(auth('a'));
       expect(detail.body.data.status).not.toBe('SUCCEEDED');
+    });
+  });
+
+
+  /* --------------------- Manual Sham Cash flow (Stage 8) ------------------- */
+
+  describe('Manual Sham Cash flow', () => {
+    const proofUrl = `https://cdn.example.com/proofs/${stamp}.webp`;
+
+    /** Creates order + PENDING payment for user 'a' and returns both. */
+    const freshPayment = async (qty = 1, who = 'a') => {
+      const order = await createOrder(who, ids.product, qty);
+      const created = await pay(who, { orderId: order.id });
+      expect(created.status).toBe(201);
+      return { order, paymentId: created.body.data.id as string, amount: order.total };
+    };
+
+    it('exposes the receiving account and never invents data when unconfigured', async () => {
+      delete process.env.SHAMCASH_WALLET_NUMBER;
+      delete process.env.SHAMCASH_ACCOUNT_NAME;
+      const res = await http().get('/api/v1/payments/sham-cash/account').set(auth('a'));
+      expect(res.status).toBe(200);
+      expect(res.body.data).toMatchObject({ method: 'SHAM_CASH', configured: false, walletNumber: null });
+      expect(res.body.data.submitPath).toContain('/submit');
+    });
+
+    it('serves the configured receiving account from the environment', async () => {
+      process.env.SHAMCASH_WALLET_NUMBER = '0999-111-222';
+      process.env.SHAMCASH_ACCOUNT_NAME = 'متجر الوليد';
+      const res = await http().get('/api/v1/payments/sham-cash/account').set(auth('a'));
+      expect(res.body.data).toMatchObject({
+        configured: true, walletNumber: '0999-111-222', accountName: 'متجر الوليد',
+      });
+      delete process.env.SHAMCASH_WALLET_NUMBER;
+      delete process.env.SHAMCASH_ACCOUNT_NAME;
+    });
+
+    it('lets the customer declare the transfer (PENDING → PENDING_REVIEW)', async () => {
+      const { paymentId } = await freshPayment(2);
+      const res = await http().post(`/api/v1/payments/${paymentId}/submit`).set(auth('a')).send({
+        transactionReference: `SC-${stamp}-0001`,
+        proofUrl,
+        proofNote: 'حوّلت المبلغ الساعة 14:20',
+      });
+      expect(res.status).toBe(201);
+      expect(res.body.data.status).toBe('PENDING_REVIEW');
+      expect(res.body.data.transactionReference).toBe(`SC-${stamp}-0001`);
+      expect(res.body.data.proofUrl).toBe(proofUrl);
+      expect(res.body.data.submittedAt).toBeDefined();
+      expect(res.body.data.awaitsReview).toBe(true);
+      paymentIds.review = res.body.data.id as string;
+      ids.orderReview = res.body.data.orderId as number;
+    });
+
+    it('shows the declared transfer to the customer detail', async () => {
+      const res = await http().get(`/api/v1/payments/${paymentIds.review}`).set(auth('a'));
+      expect(res.status).toBe(200);
+      expect(res.body.data.transactionReference).toBe(`SC-${stamp}-0001`);
+      expect(res.body.data.proofNote).toBe('حوّلت المبلغ الساعة 14:20');
+    });
+
+    it('refuses a second submission and a reference already used elsewhere', async () => {
+      const again = await http().post(`/api/v1/payments/${paymentIds.review}/submit`).set(auth('a')).send({
+        transactionReference: `SC-${stamp}-0002`, proofUrl,
+      });
+      expect(again.status).toBe(409);
+
+      const { paymentId: other } = await freshPayment(1);
+      const duplicate = await http().post(`/api/v1/payments/${other}/submit`).set(auth('a')).send({
+        transactionReference: `sc-${stamp}-0001`, // same reference, different case
+        proofUrl,
+      });
+      expect(duplicate.status).toBe(409);
+      expect(JSON.stringify(duplicate.body)).toContain('مسبقاً');
+    });
+
+    it('validates the proof DTO (bad url, short reference, unknown fields)', async () => {
+      const { paymentId } = await freshPayment(1);
+      expect((await http().post(`/api/v1/payments/${paymentId}/submit`).set(auth('a')).send({
+        transactionReference: `SC-${stamp}-x1`, proofUrl: 'not-a-url',
+      })).status).toBe(400);
+      expect((await http().post(`/api/v1/payments/${paymentId}/submit`).set(auth('a')).send({
+        transactionReference: 'ab', proofUrl,
+      })).status).toBe(400);
+      expect((await http().post(`/api/v1/payments/${paymentId}/submit`).set(auth('a')).send({
+        transactionReference: `SC-${stamp}-x2`, proofUrl, amount: 1,
+      })).status).toBe(400);
+      // nothing was changed by the failed attempts
+      const detail = await http().get(`/api/v1/payments/${paymentId}`).set(auth('a'));
+      expect(detail.body.data.status).toBe('PENDING');
+    });
+
+    it('keeps the flow private: another customer cannot submit or read it', async () => {
+      const foreign = await http().post(`/api/v1/payments/${paymentIds.review}/submit`).set(auth('b')).send({
+        transactionReference: `SC-${stamp}-9999`, proofUrl,
+      });
+      expect(foreign.status).toBe(404);
+      expect((await http().get(`/api/v1/payments/${paymentIds.review}`).set(auth('b'))).status).toBe(404);
+    });
+
+    it('only staff with payments.update can decide the outcome', async () => {
+      const customer = await http().post(`/api/v1/admin/payments/${paymentIds.review}/confirm`).set(auth('a')).send({});
+      expect(customer.status).toBe(403);
+      const noPerm = await http().post(`/api/v1/admin/payments/${paymentIds.review}/confirm`)
+        .set(auth('staffNoPerm')).send({});
+      expect(noPerm.status).toBe(403);
+      const rejectNoPerm = await http().post(`/api/v1/admin/payments/${paymentIds.review}/reject`)
+        .set(auth('staffNoPerm')).send({ reason: 'لا' });
+      expect(rejectNoPerm.status).toBe(403);
+    });
+
+    it('shows the pending review to staff and filters it in the admin list', async () => {
+      const detail = await http().get(`/api/v1/admin/payments/${paymentIds.review}`).set(auth('staffReader'));
+      expect(detail.status).toBe(200);
+      expect(detail.body.data.transactionReference).toBe(`SC-${stamp}-0001`);
+      expect(detail.body.data.proofUrl).toBe(proofUrl);
+
+      const list = await http().get('/api/v1/admin/payments?status=PENDING_REVIEW&limit=100').set(auth('staffReader'));
+      expect(list.status).toBe(200);
+      expect(list.body.data.items.every((p: { status: string }) => p.status === 'PENDING_REVIEW')).toBe(true);
+      expect(list.body.data.items.some((p: { id: string }) => p.id === paymentIds.review)).toBe(true);
+    });
+
+    it('confirms the transfer → SUCCEEDED without touching inventory or the order', async () => {
+      const stockBefore = await stockOf();
+      const orderBefore = await http().get(`/api/v1/orders/${ids.orderReview}`).set(auth('a'));
+
+      const res = await http().post(`/api/v1/admin/payments/${paymentIds.review}/confirm`)
+        .set(auth('staffReader')).send({});
+      expect(res.status).toBe(200);
+      expect(res.body.data.status).toBe('SUCCEEDED');
+      expect(res.body.data.reviewedAt).toBeDefined();
+      expect(res.body.data.transactionReference).toBe(`SC-${stamp}-0001`);
+
+      expect(await stockOf()).toEqual(stockBefore);           // no SALE, no release
+      const orderAfter = await http().get(`/api/v1/orders/${ids.orderReview}`).set(auth('a'));
+      expect(orderAfter.body.data.status).toBe(orderBefore.body.data.status);
+    });
+
+    it('rejects a bad transfer with a mandatory reason → FAILED', async () => {
+      const { paymentId } = await freshPayment(1);
+      expect((await http().post(`/api/v1/payments/${paymentId}/submit`).set(auth('a')).send({
+        transactionReference: `SC-${stamp}-REJECT`, proofUrl,
+      })).status).toBe(201);
+
+      expect((await http().post(`/api/v1/admin/payments/${paymentId}/reject`)
+        .set(auth('staffReader')).send({})).status).toBe(400);
+
+      const rejected = await http().post(`/api/v1/admin/payments/${paymentId}/reject`)
+        .set(auth('staffReader')).send({ reason: 'رقم العملية غير مطابق' });
+      expect(rejected.status).toBe(200);
+      expect(rejected.body.data.status).toBe('FAILED');
+      expect(rejected.body.data.rejectionReason).toBe('رقم العملية غير مطابق');
+
+      const customerView = await http().get(`/api/v1/payments/${paymentId}`).set(auth('a'));
+      expect(customerView.body.data.status).toBe('FAILED');
+      expect(customerView.body.data.rejectionReason).toBe('رقم العملية غير مطابق');
+    });
+
+    it('refuses decisions on terminal payments', async () => {
+      expect((await http().post(`/api/v1/admin/payments/${paymentIds.review}/confirm`)
+        .set(auth('staffReader')).send({})).status).toBe(409);
+      expect((await http().post(`/api/v1/admin/payments/${paymentIds.review}/reject`)
+        .set(auth('staffReader')).send({ reason: 'متأخر' })).status).toBe(409);
+    });
+
+    it('produces exactly one outcome when confirm and reject race', async () => {
+      const { paymentId } = await freshPayment(1);
+      await http().post(`/api/v1/payments/${paymentId}/submit`).set(auth('a')).send({
+        transactionReference: `SC-${stamp}-RACE`, proofUrl,
+      });
+
+      const [confirm, reject] = await Promise.all([
+        http().post(`/api/v1/admin/payments/${paymentId}/confirm`).set(auth('staffReader')).send({}),
+        http().post(`/api/v1/admin/payments/${paymentId}/reject`).set(auth('staffReader')).send({ reason: 'سباق' }),
+      ]);
+      const statuses = [confirm.status, reject.status].sort();
+      expect(statuses).toEqual([200, 409]);
+
+      const final = await http().get(`/api/v1/admin/payments/${paymentId}`).set(auth('staffReader'));
+      expect(['SUCCEEDED', 'FAILED']).toContain(final.body.data.status);
+      const winner = final.body.data.status === 'SUCCEEDED' ? confirm : reject;
+      expect(winner.body.data.status).toBe(final.body.data.status);
+    });
+
+    it('has a database guard: no SUCCEEDED payment without transfer evidence', async () => {
+      const { paymentId } = await freshPayment(1); // PENDING, no reference yet
+      const { PrismaClient } = await import('@prisma/client');
+      const prisma = new PrismaClient();
+      await expect(
+        prisma.$executeRaw`UPDATE payments SET status = 'SUCCEEDED' WHERE id = ${paymentId}`,
+      ).rejects.toThrow();
+      const still = await http().get(`/api/v1/payments/${paymentId}`).set(auth('a'));
+      expect(still.body.data.status).toBe('PENDING');
+      await prisma.$disconnect();
+    });
+
+    it('audits submission, confirmation and rejection with the acting user', async () => {
+      for (const action of ['PAYMENT_SUBMITTED_FOR_REVIEW', 'PAYMENT_CONFIRMED', 'PAYMENT_REJECTED']) {
+        const res = await http().get(`/api/v1/audit?action=${action}&limit=5`).set(auth('owner'));
+        expect(res.status).toBe(200);
+        expect(res.body.meta.total).toBeGreaterThanOrEqual(1);
+      }
+      const confirmed = await http().get('/api/v1/audit?action=PAYMENT_CONFIRMED&limit=1').set(auth('owner'));
+      expect(confirmed.body.data.items[0].metadata).toMatchObject({ source: 'ADMIN', status: 'SUCCEEDED' });
+      expect(confirmed.body.data.items[0].metadata.transactionReference).toBeDefined();
+
+      const submitted = await http().get('/api/v1/audit?action=PAYMENT_SUBMITTED_FOR_REVIEW&limit=1').set(auth('owner'));
+      expect(submitted.body.data.items[0].metadata.source).toBe('CUSTOMER');
+    });
+
+    it('never leaks credentials or provider secrets in the manual flow payloads', async () => {
+      const account = await http().get('/api/v1/payments/sham-cash/account').set(auth('a'));
+      const detail = await http().get(`/api/v1/admin/payments/${paymentIds.review}`).set(auth('staffReader'));
+      [account.body, detail.body].forEach((body) => {
+        const raw = JSON.stringify(body).toLowerCase();
+        ['apikey', 'api_key', 'secret', 'authorization', 'passwordhash', 'tokenhash'].forEach((needle) =>
+          expect(raw).not.toContain(needle),
+        );
+      });
     });
   });
 

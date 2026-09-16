@@ -6,6 +6,7 @@ import { Request } from 'express';
 import { PaymentsService } from './payments.service';
 import { AdminListPaymentsQueryDto } from './dto/admin-list-payments.query.dto';
 import { CancelPaymentDto } from './dto/cancel-payment.dto';
+import { RejectPaymentDto } from './dto/reject-payment.dto';
 import { CurrentUser, JwtAuthGuard, JwtPayload, Permissions } from '../common';
 import { requestMeta } from '../common/types/request-meta';
 
@@ -39,6 +40,47 @@ export class AdminPaymentsController {
   @ApiOperation({ summary: 'تفاصيل أي دفعة (يتطلب payments.read)' })
   findOne(@Param('id') id: string, @CurrentUser() user: JwtPayload) {
     return this.payments.findOne(id, { id: user.sub, isStaff: true });
+  }
+
+  @Post(':id/confirm')
+  @HttpCode(200)
+  @Permissions({ any: ['payments.update'] })
+  @ApiOperation({
+    summary: 'تأكيد الدفع اليدوي (يتطلب payments.update)',
+    description:
+      'PENDING_REVIEW → SUCCEEDED: يستخدمه الموظف بعد مطابقة رقم العملية مع كشف شام كاش. ' +
+      'قفل صف + تحقق انتقال صارم (تأكيد ورفض متزامنان ⇒ نتيجة واحدة حاسمة). ' +
+      'لا يلمس المخزون ولا حالة الطلب. يوجد قيد قاعدة بيانات يمنع SUCCEEDED بلا رقم عملية.',
+  })
+  @ApiResponse({ status: 200, description: 'الدفعة بعد التأكيد' })
+  @ApiResponse({ status: 403, description: 'بدون صلاحية payments.update' })
+  @ApiResponse({ status: 404, description: 'الدفعة غير موجودة' })
+  @ApiResponse({ status: 409, description: 'الدفعة ليست قيد المراجعة أو بلا رقم عملية' })
+  confirm(
+    @Param('id') id: string,
+    @CurrentUser() user: JwtPayload,
+    @Req() req: Request,
+  ) {
+    return this.payments.confirm(id, { id: user.sub, isStaff: true }, requestMeta(req));
+  }
+
+  @Post(':id/reject')
+  @HttpCode(200)
+  @Permissions({ any: ['payments.update'] })
+  @ApiOperation({
+    summary: 'رفض إثبات الدفع (يتطلب payments.update)',
+    description: 'PENDING_REVIEW → FAILED مع سبب إلزامي يُسجَّل في الدفعة وفي سجل التدقيق.',
+  })
+  @ApiResponse({ status: 200, description: 'الدفعة بعد الرفض (FAILED)' })
+  @ApiResponse({ status: 400, description: 'السبب مفقود أو قصير' })
+  @ApiResponse({ status: 409, description: 'الدفعة ليست قيد المراجعة' })
+  reject(
+    @Param('id') id: string,
+    @Body() dto: RejectPaymentDto,
+    @CurrentUser() user: JwtPayload,
+    @Req() req: Request,
+  ) {
+    return this.payments.reject(id, { id: user.sub, isStaff: true }, dto.reason, requestMeta(req));
   }
 
   @Post(':id/cancel')

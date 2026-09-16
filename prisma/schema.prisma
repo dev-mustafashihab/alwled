@@ -47,10 +47,31 @@ enum PaymentMethod {
 /// Stage 7 — provider-independent payment lifecycle. No refund states exist yet.
 enum PaymentStatus {
   PENDING
+  PENDING_REVIEW
   PROCESSING
   SUCCEEDED
   FAILED
   CANCELLED
+}
+
+/// Stage 9 — identity verification workflow. NOT_STARTED is a virtual state:
+/// it is returned when a user has no record yet and is never stored.
+enum VerificationStatus {
+  NOT_STARTED
+  PENDING
+  IN_REVIEW
+  VERIFIED
+  REJECTED
+  EXPIRED
+  CANCELLED
+}
+
+/// Who produced the outcome. MANUAL means a human reviewed it — never claim
+/// provider verification for a manual decision.
+enum VerificationSource {
+  MANUAL
+  PROVIDER
+  SYSTEM
 }
 
 /// Stage 6 — order lifecycle. No payment-specific states exist in this stage.
@@ -95,6 +116,9 @@ model User {
   cart                Cart?
   orders              Order[]
   payments            Payment[]
+  paymentsReviewed    Payment[]        @relation("PaymentReviewedBy")
+  verifications       CustomerVerification[] @relation("UserVerifications")
+  verificationsReviewed CustomerVerification[] @relation("VerificationReviewedBy")
   idempotencyKeys     IdempotencyKey[]
 
   @@index([status])
@@ -497,13 +521,15 @@ model IdempotencyKey {
   scope       String   @default("ORDER")
   key         String
   requestHash String   @map("request_hash")
-  orderId     Int?     @map("order_id")
-  paymentId   String?  @map("payment_id")
-  statusCode  Int?     @map("status_code")
-  createdAt   DateTime @default(now()) @map("created_at")
+  orderId        Int?     @map("order_id")
+  paymentId      String?  @map("payment_id")
+  verificationId String?  @map("verification_id")
+  statusCode     Int?     @map("status_code")
+  createdAt      DateTime @default(now()) @map("created_at")
 
-  user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  payment Payment? @relation(fields: [paymentId], references: [id], onDelete: SetNull)
+  user         User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  payment      Payment?             @relation(fields: [paymentId], references: [id], onDelete: SetNull)
+  verification CustomerVerification? @relation(fields: [verificationId], references: [id], onDelete: SetNull)
 
   @@unique([userId, scope, key])
   @@index([userId])
@@ -525,16 +551,65 @@ model Payment {
   currency          String        @default("USD")
   provider          String?
   providerPaymentId String?       @map("provider_payment_id")
-  createdAt         DateTime      @default(now()) @map("created_at")
-  updatedAt         DateTime      @updatedAt @map("updated_at")
+
+  /// Manual Sham Cash flow: customer-declared transfer + attached proof, then a
+  /// human decision (PENDING_REVIEW → SUCCEEDED | FAILED).
+  transactionReference String?   @unique @map("transaction_reference")
+  proofUrl             String?   @map("proof_url")
+  proofNote            String?   @map("proof_note")
+  submittedAt          DateTime? @map("submitted_at")
+  reviewedAt           DateTime? @map("reviewed_at")
+  reviewedBy           String?   @map("reviewed_by")
+  rejectionReason      String?   @map("rejection_reason")
+
+  createdAt        DateTime      @default(now()) @map("created_at")
+  updatedAt        DateTime      @updatedAt @map("updated_at")
 
   order            Order             @relation(fields: [orderId], references: [id], onDelete: Restrict)
   user             User              @relation(fields: [userId], references: [id], onDelete: Restrict)
+  reviewer         User?             @relation("PaymentReviewedBy", fields: [reviewedBy], references: [id], onDelete: SetNull)
   idempotencyKeys  IdempotencyKey[]
 
   @@index([userId, createdAt])
   @@index([status])
   @@index([method])
   @@index([createdAt])
+  @@index([submittedAt])
   @@map("payments")
+}
+
+/// ------------------- Stage 9: Customer Verification -------------------
+/// Identity-verification workflow. NO identity documents, no provider secrets:
+/// a future real provider is reached exclusively through VerificationProvider,
+/// and any reference it issues is stored as an opaque string.
+model CustomerVerification {
+  id                String             @id @default(cuid())
+  userId            String             @map("user_id")
+  status            VerificationStatus @default(PENDING)
+  /// Which provider produced this request (LOG in Stage 9). Nothing external.
+  provider          String?
+  /// Opaque reference issued by the provider only — never client-supplied.
+  providerReference String?            @map("provider_reference")
+  /// How the outcome was reached: MANUAL (human review) / PROVIDER / SYSTEM.
+  source            VerificationSource @default(SYSTEM)
+  attempt           Int                @default(1)
+  startedAt         DateTime           @default(now()) @map("started_at")
+  submittedAt       DateTime?          @map("submitted_at")
+  completedAt       DateTime?          @map("completed_at")
+  expiresAt         DateTime?          @map("expires_at")
+  rejectionReason   String?            @map("rejection_reason")
+  reviewedBy        String?            @map("reviewed_by")
+  reviewedAt        DateTime?          @map("reviewed_at")
+  createdAt         DateTime           @default(now()) @map("created_at")
+  updatedAt         DateTime           @updatedAt @map("updated_at")
+
+  user            User             @relation("UserVerifications", fields: [userId], references: [id], onDelete: Cascade)
+  reviewer        User?            @relation("VerificationReviewedBy", fields: [reviewedBy], references: [id], onDelete: SetNull)
+  idempotencyKeys IdempotencyKey[]
+
+  @@index([userId, createdAt])
+  @@index([status])
+  @@index([createdAt])
+  @@index([expiresAt])
+  @@map("customer_verifications")
 }

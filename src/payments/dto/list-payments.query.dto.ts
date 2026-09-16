@@ -2,7 +2,7 @@ import { ApiPropertyOptional } from '@nestjs/swagger';
 import { Type } from 'class-transformer';
 import { IsIn, IsInt, IsOptional, Max, Min } from 'class-validator';
 import { PaymentStatus } from '@prisma/client';
-import { SUPPORTED_PAYMENT_METHODS } from '../payments.constants';
+import { PAYMENT_STATUS_VALUES, SUPPORTED_PAYMENT_METHODS } from '../payments.constants';
 
 export class ListPaymentsQueryDto {
   @ApiPropertyOptional({ default: 1, minimum: 1 })
@@ -13,8 +13,8 @@ export class ListPaymentsQueryDto {
   @IsOptional() @Type(() => Number) @IsInt() @Min(1) @Max(100)
   limit: number = 20;
 
-  @ApiPropertyOptional({ enum: PaymentStatus })
-  @IsOptional() @IsIn(['PENDING', 'PROCESSING', 'SUCCEEDED', 'FAILED', 'CANCELLED'])
+  @ApiPropertyOptional({ enum: PaymentStatus, description: 'PENDING | PENDING_REVIEW | PROCESSING | SUCCEEDED | FAILED | CANCELLED' })
+  @IsOptional() @IsIn(PAYMENT_STATUS_VALUES)
   status?: PaymentStatus;
 
   @ApiPropertyOptional({ enum: SUPPORTED_PAYMENT_METHODS })

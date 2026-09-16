@@ -9,6 +9,7 @@ Node.js + TypeScript (strict) + NestJS + PostgreSQL + Prisma + JWT + Argon2 + Do
 > **المرحلة 5:** سلة المشتري (Cart + CartItems) + معاينة إتمام الطلب (Checkout Preview).
 > **المرحلة 6:** الطلبات (Orders + OrderItems) مع snapshots تاريخية + حجز مخزون بقفل صفوف (FOR UPDATE) + إلغاء يحرّر الحجز + Idempotency.
 > **المرحلة 7:** مجال الدفعات (Payments) — مستقل عن أي مزوّد، بلا أي اتصال خارجي وبلا نجاح وهمي.
+> **المرحلة 8:** دفع شام كاش **يدوي** — عرض محفظة الإدارة للزبون + رفع إثبات التحويل ورقم العملية → `PENDING_REVIEW` → قرار الموظف (تأكيد → `SUCCEEDED` / رفض → `FAILED`). لا يوجد أي API خارجي ولا مفاتيح.
 
 ## التشغيل
 
@@ -294,3 +295,86 @@ Category (شجرة parent/child حتى 3 مستويات)
 ### حدود المرحلة
 
 غير منفّذ عمداً: Sham Cash API · أي مزوّد حقيقي · Webhooks · نجاح وهمي · Refunds · Returns · نهائي المخزون (SALE) · Coupons · Shipping · Tax · Notifications · Variants.
+
+
+## المرحلة الثامنة — شام كاش (دفع يدوي + مراجعة إدارية)
+
+```
+Order → POST /payments → PENDING
+      → GET /payments/sham-cash/account   (بيانات محفظة الإدارة)
+      → الزبون يحوّل يدوياً من تطبيق شام كاش
+      → POST /payments/:id/submit         (رقم العملية + صورة الإثبات)
+      → PENDING_REVIEW
+      → POST /admin/payments/:id/confirm  → SUCCEEDED
+        POST /admin/payments/:id/reject   → FAILED (سبب إلزامي)
+```
+
+### Endpoints
+
+| Method | Path | Auth | الصلاحية | الوظيفة |
+| --- | --- | --- | --- | --- |
+| GET | /payments/sham-cash/account | JWT | — | رقم محفظة الإدارة + الاسم + التعليمات (`configured:false` إذا غير مضبوطة) |
+| POST | /payments/:id/submit | JWT | — | إرسال رقم العملية + رابط إثبات التحويل → `PENDING_REVIEW` |
+| POST | /admin/payments/:id/confirm | JWT | payments.update | تأكيد الاستلام → `SUCCEEDED` |
+| POST | /admin/payments/:id/reject | JWT | payments.update | رفض الإثبات بسبب إلزامي → `FAILED` |
+| GET | /admin/payments?status=PENDING_REVIEW | JWT | payments.read | طابور المراجعة |
+
+### آلة الحالة (محدَّثة)
+
+`PENDING → PENDING_REVIEW | PROCESSING | CANCELLED` · `PENDING_REVIEW → SUCCEEDED | FAILED | CANCELLED` · `PROCESSING → SUCCEEDED | FAILED | CANCELLED` · النهائية: `SUCCEEDED/FAILED/CANCELLED`.
+
+### ضمانات
+- **رقم العملية فريد** على مستوى النظام: إعادة استخدامه في دفعة أخرى = 409 (منع الاحتيال).
+- **إثبات إلزامي**: قيدا قاعدة بيانات يمنعان `PENDING_REVIEW` بلا رقم/إثبات، و**يمنعان `SUCCEEDED` بلا دليل** (رقم عملية أو معرّف مزوّد).
+- **قرار واحد حاسم**: تأكيد/رفض متزامنان لقفل الصف ⇒ واحد ينجح والثاني 409.
+- **حدود المرحلة**: نجاح الدفع **لا** يستهلك المخزون ولا يغيّر حالة الطلب (البيع النهائي مرحلة لاحقة).
+- الإعداد بالبيئة فقط: `SHAMCASH_WALLET_NUMBER` · `SHAMCASH_ACCOUNT_NAME` · `SHAMCASH_INSTRUCTIONS` · `SHAMCASH_CURRENCY` (لا مفاتيح API ولا أسرار).
+
+### أحداث التدقيق
+`PAYMENT_SUBMITTED_FOR_REVIEW` (source=CUSTOMER) · `PAYMENT_CONFIRMED` (source=ADMIN) · `PAYMENT_REJECTED` (source=ADMIN مع السبب).
+
+---
+
+## المرحلة التاسعة — التحقق من هوية الزبون (Customer Verification)
+
+نطاق مستقل عن تحقّق الحساب (Stage 2). **لا مزوّد خارجي في هذه المرحلة**: المزوّد الوحيد `LOG` داخلي.
+
+### آلة الحالة
+
+```
+NOT_STARTED → PENDING → IN_REVIEW → VERIFIED
+                  ↓           ↓
+             CANCELLED    REJECTED → PENDING (إعادة محاولة)
+                  ↓
+              EXPIRED → PENDING (إعادة محاولة)
+```
+
+- نهائية: `VERIFIED` · `CANCELLED`. `NOT_STARTED` حالة افتراضية غير مخزَّنة.
+- كل انتقال غير مذكور ⇒ `409` (يُختبَر كل انتقال مسموح وممنوع).
+
+### Endpoints
+
+| Method | Path | Auth | الصلاحية | الوظيفة |
+| --- | --- | --- | --- | --- |
+| GET | /verification/me | JWT | — | حالة الزبون الحالي (`NOT_STARTED` إن لم يبدأ) |
+| GET | /verification/:id | JWT | — | سجله فقط، وإلا `404` |
+| POST | /verification/start | JWT + `Idempotency-Key` | — | بدء/إعادة بدء طلب → `PENDING` |
+| POST | /verification/cancel | JWT | — | إلغاء طلب نشط → `CANCELLED` |
+| GET | /admin/verifications | JWT | verification.read | طابور المراجعة (فلاتر + صفحات) |
+| GET | /admin/verifications/:id | JWT | verification.read | تفاصيل الطلب |
+| POST | /admin/verifications/:id/review | JWT | verification.update | `PENDING → IN_REVIEW` |
+| POST | /admin/verifications/:id/verify | JWT | verification.update | `IN_REVIEW → VERIFIED` (يُسجَّل `source=MANUAL`) |
+| POST | /admin/verifications/:id/reject | JWT | verification.update | `IN_REVIEW → REJECTED` + سبب إلزامي |
+
+### ضمانات
+- **مزوّد LOG فقط**: لا HTTP/SMS/Email/KYC، ولا يستطيع تحويل أحد إلى `VERIFIED`؛ ولو أبلغ مزوّد بذلك تُتجاهل النتيجة.
+- **لا واجهة وهمية للعميل**: `POST /verification/success|verify|mock-success` غير موجودة (404)، وإرسال `status/verified/userId/providerReference` ⇒ `400`.
+- **طلب نشط واحد لكل مستخدم** مفروض بفهرس فريد جزئي في PostgreSQL (سباق البدء المتوازي ⇒ 201 + 409).
+- **Idempotency** بنفس بنية الطلبات/الدفعات (نطاق `VERIFICATION`).
+- **Rate limiting**: start/cancel (افتراضياً 10/15د، قابلة للضبط بالبيئة).
+- **انتهاء كسول** عند القراءة/البدء (`VERIFICATION_REQUEST_TTL_HOURS`، افتراضياً 72).
+- **لا تخزين وثائق هوية** ولا أسرار، ولا يُكتب `User.isVerified` (مصدر الحقيقة هو `CustomerVerification.status`).
+- تفاصيل كاملة: `docs/verification-architecture.md`.
+
+### أحداث التدقيق
+`VERIFICATION_STARTED` · `VERIFICATION_SUBMITTED` · `VERIFICATION_REVIEWED` · `VERIFICATION_VERIFIED` · `VERIFICATION_REJECTED` · `VERIFICATION_CANCELLED` · `VERIFICATION_EXPIRED`.

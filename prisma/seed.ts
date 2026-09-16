@@ -49,6 +49,8 @@ const PERMISSION_LABELS: Record<string, string> = {
   'inventory.adjust': 'تعديل كميات المخزون',
   'payments.read': 'عرض المدفوعات',
   'payments.update': 'تعديل المدفوعات',
+  'verification.read': 'عرض طلبات التحقق',
+  'verification.update': 'مراجعة طلبات التحقق وتأكيدها',
   'audit.read': 'عرض سجل التدقيق',
 };
 

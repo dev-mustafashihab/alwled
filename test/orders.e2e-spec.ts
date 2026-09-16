@@ -142,8 +142,9 @@ describe('Orders (e2e)', () => {
       await prisma.product.deleteMany({ where: { sku: { contains: stamp } } });
       await prisma.category.deleteMany({ where: { slug: { contains: stamp } } });
       await prisma.brand.deleteMany({ where: { slug: { contains: stamp } } });
-      await prisma.role.deleteMany({ where: { name: `ORDNOPERM_${stamp}`, isSystem: false, users: { none: {} } } });
       await prisma.user.deleteMany({ where: { id: { in: testUsers.map((u) => u.id) } } });
+      // Users first: a role cannot be deleted while a user still references it.
+      await prisma.role.deleteMany({ where: { name: `ORDNOPERM_${stamp}`, isSystem: false } });
       await prisma.$disconnect();
     } catch (error) {
       console.warn('cleanup skipped:', (error as Error).message);
