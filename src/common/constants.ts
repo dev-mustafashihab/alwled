@@ -9,6 +9,8 @@ export const PASSWORD_MIN_LENGTH = 8;
 export const PERMISSION_KEYS = {
   system: ['*'],
   dashboard: ['dashboard.read'],
+  analytics: ['analytics.read'],
+  notifications: ['notifications.admin.read'],
   products: ['products.read', 'products.create', 'products.update', 'products.delete'],
   categories: ['categories.read', 'categories.create', 'categories.update', 'categories.delete'],
   brands: ['brands.read', 'brands.create', 'brands.update', 'brands.delete'],
@@ -55,6 +57,8 @@ export const ROLE_PERMISSION_MATRIX: Record<string, string[]> = {
     'permissions.read',
     'payments.read', 'payments.update',
     'verification.read', 'verification.update',
+    'analytics.read',
+    'notifications.admin.read',
     'audit.read',
   ],
   EMPLOYEE: [
@@ -91,6 +95,7 @@ export const RATE_LIMITS = {
   paymentSubmit: { window: num('RATE_PAYMENT_SUBMIT_WINDOW', 900), max: num('RATE_PAYMENT_SUBMIT_MAX', 10) },
   verificationStart: { window: num('RATE_VERIFICATION_START_WINDOW', 900), max: num('RATE_VERIFICATION_START_MAX', 10) },
   verificationCancel: { window: num('RATE_VERIFICATION_CANCEL_WINDOW', 900), max: num('RATE_VERIFICATION_CANCEL_MAX', 10) },
+  notifications: { window: num('RATE_NOTIFICATIONS_WINDOW', 900), max: num('RATE_NOTIFICATIONS_MAX', 30) },
 } as const;
 
 /** Idempotency namespaces: the same client key may be reused across domains. */

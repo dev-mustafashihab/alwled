@@ -20,6 +20,8 @@ import { CheckoutModule } from './checkout/checkout.module';
 import { OrdersModule } from './orders/orders.module';
 import { PaymentsModule } from './payments/payments.module';
 import { CustomerVerificationModule } from './customer-verification/customer-verification.module';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { NotificationsModule } from './notifications/notifications.module';
 import { CommonServicesModule } from './common/services/common-services.module';
 import { StorageModule } from './common/storage/storage.module';
 import { HttpExceptionFilter } from './common/filters/http-exception.filter';
@@ -55,6 +57,8 @@ import { JwtAuthGuard, OptionalAuthGuard, RolesGuard, PermissionsGuard } from '.
     // Stage 7 — payments (architecture only, no provider integration)
     PaymentsModule,
     CustomerVerificationModule,
+    DashboardModule,
+    NotificationsModule,
     HealthModule,
   ],
   providers: [

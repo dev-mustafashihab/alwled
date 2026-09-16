@@ -1,6 +1,8 @@
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { InventoryMovementType, Prisma } from '@prisma/client';
 import { PrismaService } from '../database/prisma.service';
+import { NotificationsService } from '../notifications/notifications.service';
+import { NOTIFICATION_TYPE } from '../notifications/notifications.constants';
 import { AuditService } from '../audit/audit.service';
 import { AUDIT } from '../audit/audit.actions';
 import { ListInventoryQueryDto } from './dto/list-inventory.query.dto';
@@ -19,6 +21,7 @@ export class InventoryService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
+    private readonly notifications: NotificationsService,
   ) {}
 
   /** availableQuantity is always computed — never stored, so it cannot drift. */
@@ -222,8 +225,38 @@ export class InventoryService {
         },
         select: { id: true, type: true, quantity: true, reason: true, createdAt: true },
       });
+
+      // Threshold-crossing alerts only — never one per adjustment (no spam):
+      // available = quantity - reservedQuantity, and a notification is enqueued
+      // only when the record CROSSES its own low-stock threshold or hits zero.
+      const beforeAvailable = current.quantity - current.reservedQuantity;
+      const afterAvailable = updated.quantity - updated.reservedQuantity;
+      const product = await tx.product.findUnique({
+        where: { id: productId }, select: { name: true, sku: true },
+      });
+      const crossing = (type: string) => ({
+        type,
+        aggregateType: 'inventory',
+        // the movement id makes each genuine crossing its own deterministic event
+        aggregateId: `${productId}:mv${movement.id}`,
+        permissionKey: 'inventory.read',
+        payload: {
+          productName: product?.name,
+          sku: product?.sku,
+          available: afterAvailable,
+          threshold: updated.lowStockThreshold,
+        },
+      });
+      if (beforeAvailable > 0 && afterAvailable <= 0) {
+        await this.notifications.enqueue(tx, crossing(NOTIFICATION_TYPE.OUT_OF_STOCK) as never);
+      } else if (beforeAvailable > updated.lowStockThreshold && afterAvailable <= updated.lowStockThreshold) {
+        await this.notifications.enqueue(tx, crossing(NOTIFICATION_TYPE.LOW_STOCK) as never);
+      }
+
       return { updated, movement, previousQuantity: current.quantity };
     });
+
+    await this.notifications.dispatchSafely();
 
     await this.audit.log({
       action: AUDIT.INVENTORY_ADJUSTED,

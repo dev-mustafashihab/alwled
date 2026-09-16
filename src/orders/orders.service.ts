@@ -5,6 +5,8 @@ import { OrderStatus, Prisma } from '@prisma/client';
 import { createHash } from 'crypto';
 import { PrismaService } from '../database/prisma.service';
 import { AuditService } from '../audit/audit.service';
+import { NotificationsService } from '../notifications/notifications.service';
+import { NOTIFICATION_TYPE } from '../notifications/notifications.constants';
 import { AUDIT } from '../audit/audit.actions';
 import { IDEMPOTENCY_SCOPES, ORDER_LIMITS } from '../common/constants';
 import { money, multiplyMoney, sumMoney, toMoneyString } from '../common/utils/money.util';
@@ -52,6 +54,7 @@ export class OrdersService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
+    private readonly notifications: NotificationsService,
   ) {}
 
   /* ------------------------------ serializers ----------------------------- */
@@ -289,6 +292,19 @@ export class OrdersService {
           data: { orderId: order.id, statusCode: 201 },
         });
 
+        // written with the order itself: a committed order can never lose its notification
+        await this.notifications.enqueue(tx, {
+          type: NOTIFICATION_TYPE.ORDER_CREATED,
+          aggregateType: 'order',
+          aggregateId: order.id,
+          recipientUserId: userId,
+          payload: {
+            orderNumber,
+            amount: toMoneyString(total) ?? undefined,
+            currency: 'USD',
+          },
+        });
+
         return {
           id: order.id,
           orderNumber: order.orderNumber,
@@ -316,6 +332,10 @@ export class OrdersService {
     const order = await this.prisma.order.findUnique({
       where: { id: created.id }, select: ORDER_DETAIL_SELECT,
     });
+
+    // the order is committed: in-app notifications are dispatched now, and a
+    // notification problem can never undo the order
+    await this.notifications.dispatchSafely();
 
     await this.audit.log({
       action: AUDIT.ORDER_CREATED,
@@ -487,7 +507,16 @@ export class OrdersService {
           cancelledAt: new Date(),
           cancellationReason: reason ?? null,
         },
-        select: ORDER_DETAIL_SELECT,
+        select: { ...ORDER_DETAIL_SELECT, userId: true },
+      });
+
+      // customer notification, written with the cancellation itself
+      await this.notifications.enqueue(tx, {
+        type: NOTIFICATION_TYPE.ORDER_CANCELLED,
+        aggregateType: 'order',
+        aggregateId: orderId,
+        recipientUserId: (updated as unknown as { userId: string }).userId,
+        payload: { orderNumber: order.order_number },
       });
 
       return {
@@ -497,6 +526,10 @@ export class OrdersService {
         cancelledByStaff: actor.isStaff,
       };
     }, { timeout: 20000 });
+
+    // in-app notifications are dispatched after the business commit and can never
+    // fail the cancellation itself
+    await this.notifications.dispatchSafely();
 
     await this.audit.log({
       action: AUDIT.ORDER_CANCELLED,
@@ -543,11 +576,24 @@ export class OrdersService {
       throw new ConflictException(`انتقال غير مسموح: ${order.status} → ${dto.status}`);
     }
 
-    const updated = await this.prisma.order.update({
-      where: { id: orderId },
-      data: { status: dto.status },
-      select: ORDER_DETAIL_SELECT,
+    const { updated, ownerId } = await this.prisma.$transaction(async (tx) => {
+      const row = await tx.order.update({
+        where: { id: orderId },
+        data: { status: dto.status },
+        select: { ...ORDER_DETAIL_SELECT, userId: true },
+      });
+      if (dto.status === OrderStatus.CONFIRMED) {
+        await this.notifications.enqueue(tx, {
+          type: NOTIFICATION_TYPE.ORDER_CONFIRMED,
+          aggregateType: 'order',
+          aggregateId: orderId,
+          recipientUserId: row.userId,
+          payload: { orderNumber: row.orderNumber },
+        });
+      }
+      return { updated: row, ownerId: row.userId };
     });
+    await this.notifications.dispatchSafely();
 
     await this.audit.log({
       action: AUDIT.ORDER_STATUS_UPDATED,

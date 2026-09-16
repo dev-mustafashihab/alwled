@@ -121,9 +121,11 @@ describe('Catalog & Inventory (e2e)', () => {
     });
 
     it('auto-generates a slug when none is provided', async () => {
-      const res = await http().post('/api/v1/categories').set(auth('owner')).send({ name: 'Auto Slug Category' });
+      // the name carries this run's stamp so the suite-level cleanup can remove it again
+      const res = await http().post('/api/v1/categories').set(auth('owner')).send({ name: `Auto Slug Category ${stamp}` });
       expect(res.status).toBe(201);
       expect(res.body.data.slug).toContain('auto-slug-category');
+      expect(res.body.data.slug).toContain(stamp);
     });
 
     it('rejects duplicate slugs and duplicate parent refs', async () => {

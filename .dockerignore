@@ -1,5 +1,14 @@
-node_modules/
-dist/
+node_modules
+dist
+coverage
+.git
+.gitignore
 .env
+.env.*
+!.env.example
 *.log
-coverage/
+npm-debug.log*
+.DS_Store
+tmp
+scripts/*.log
+test/**/*.snap

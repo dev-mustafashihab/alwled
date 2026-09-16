@@ -24,13 +24,32 @@ async function bootstrap() {
     .split(',')
     .map((s) => s.trim())
     .filter(Boolean);
+  // Secure by default: no CORS reflection unless origins are explicitly configured.
+  // "*" reflects any origin but never together with credentials.
+  const allowAll = origins.includes('*');
   app.enableCors({
-    origin: origins.includes('*') ? true : origins.length ? origins : true,
-    credentials: true,
+    origin: allowAll ? true : origins.length ? origins : false,
+    credentials: !allowAll,
+    methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'Idempotency-Key'],
+    exposedHeaders: ['X-Request-Id'],
+    maxAge: 600,
   });
+  if (!origins.length) {
+    new Logger('Bootstrap').warn('CORS_ORIGINS is not configured — cross-origin requests are denied.');
+  }
   app.use('/api/v1/auth', rateLimit({ windowMs: 60_000, max: 40, standardHeaders: true, legacyHeaders: false }));
   app.useGlobalFilters(new HttpExceptionFilter());
   app.useGlobalInterceptors(new LoggingInterceptor());
+  // Swagger is a development tool: in production it must be opted in explicitly.
+  const swaggerEnabled =
+    process.env.NODE_ENV !== 'production' || process.env.SWAGGER_ENABLED === 'true';
+  if (!swaggerEnabled) {
+    new Logger('Bootstrap').log('Swagger disabled (set SWAGGER_ENABLED=true to expose /api/docs).');
+    await app.listen(process.env.PORT ?? 3100, '0.0.0.0');
+    new Logger('Bootstrap').log(`API :${process.env.PORT ?? 3100}`);
+    return;
+  }
   const config = new DocumentBuilder()
     .setTitle('Alwled Store API')
     .setDescription('متجر الأجهزة الكهربائية — الواجهة الخلفية (المرحلة الأولى)')

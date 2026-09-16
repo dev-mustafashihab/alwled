@@ -1,4 +1,5 @@
 import { Module } from '@nestjs/common';
+import { NotificationsModule } from '../notifications/notifications.module';
 import { PaymentsController } from './payments.controller';
 import { AdminPaymentsController } from './admin-payments.controller';
 import { PaymentsService } from './payments.service';
@@ -11,6 +12,7 @@ import { PAYMENT_PROVIDER_REGISTRY } from './interfaces/payment-provider.interfa
  * this array — nothing else in the module (or in Orders/Cart/Inventory) changes.
  */
 @Module({
+  imports: [NotificationsModule],
   controllers: [PaymentsController, AdminPaymentsController],
   providers: [
     PaymentsService,

@@ -31,6 +31,7 @@ const p2002 = (target = 'customer_verifications') =>
 describe('CustomerVerificationService', () => {
   let prisma: any;
   let audit: { log: jest.Mock };
+  const notifications = { enqueue: jest.fn(), dispatch: jest.fn(), dispatchSafely: jest.fn() };
   let provider: LogCustomerVerificationProvider & { startVerification: jest.Mock; cancelVerification: jest.Mock };
   let service: CustomerVerificationService;
   /** Stateful fake row so create/update behave like the database. */
@@ -55,7 +56,11 @@ describe('CustomerVerificationService', () => {
         findMany: jest.fn().mockResolvedValue([]),
       },
       idempotencyKey: { findUnique: jest.fn().mockResolvedValue(null), create: jest.fn().mockResolvedValue({}) },
-      $transaction: jest.fn().mockImplementation((ops: unknown) => Promise.all(ops as Promise<unknown>[])),
+      // supports both forms used by the service: array (batch) and callback (atomic work)
+      $transaction: jest.fn().mockImplementation((arg: unknown) =>
+        typeof arg === 'function'
+          ? (arg as (t: unknown) => unknown)(prisma)
+          : Promise.all(arg as Promise<unknown>[])),
     };
     audit = { log: jest.fn().mockResolvedValue(undefined) };
     const log = new LogCustomerVerificationProvider();
@@ -65,7 +70,7 @@ describe('CustomerVerificationService', () => {
       cancelVerification: jest.fn(log.cancelVerification.bind(log)),
     } as typeof provider;
     const registry = { provider, name: 'LOG', isExternal: false } as unknown as VerificationProviderRegistry;
-    service = new CustomerVerificationService(prisma, audit as never, registry);
+    service = new CustomerVerificationService(prisma, audit as never, notifications as never, registry);
   });
 
   const actions = () => audit.log.mock.calls.map((c) => c[0].action);

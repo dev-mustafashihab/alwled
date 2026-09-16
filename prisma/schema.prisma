@@ -118,6 +118,8 @@ model User {
   payments            Payment[]
   paymentsReviewed    Payment[]        @relation("PaymentReviewedBy")
   verifications       CustomerVerification[] @relation("UserVerifications")
+  notifications       Notification[]
+  notificationPreferences NotificationPreference[]
   verificationsReviewed CustomerVerification[] @relation("VerificationReviewedBy")
   idempotencyKeys     IdempotencyKey[]
 
@@ -487,6 +489,8 @@ model Order {
   @@index([userId, createdAt])
   @@index([status])
   @@index([createdAt])
+  /// Stage 10 — dashboard analytics: status filter + date-range aggregation
+  @@index([status, createdAt])
   @@map("orders")
 }
 
@@ -575,7 +579,125 @@ model Payment {
   @@index([method])
   @@index([createdAt])
   @@index([submittedAt])
+  /// Stage 10 — dashboard analytics: status filter + date-range aggregation
+  @@index([status, createdAt])
   @@map("payments")
+}
+
+
+/// ===================== Stage 11 — Notifications =====================
+
+/// Every notification type that is actually produced by a real domain event.
+enum NotificationType {
+  ORDER_CREATED
+  ORDER_CONFIRMED
+  ORDER_CANCELLED
+  PAYMENT_CREATED
+  PAYMENT_SUBMITTED_FOR_REVIEW
+  PAYMENT_CONFIRMED
+  PAYMENT_REJECTED
+  VERIFICATION_STARTED
+  VERIFICATION_REVIEWED
+  VERIFICATION_VERIFIED
+  VERIFICATION_REJECTED
+  LOW_STOCK
+  OUT_OF_STOCK
+  PAYMENT_REVIEW_REQUIRED
+}
+
+/// Only IN_APP exists in Stage 11 — no external channel is implemented and no
+/// provider exists for one, so none is declared.
+enum NotificationChannel {
+  IN_APP
+}
+
+/// Delivery state of the notification itself (separate from read state).
+enum NotificationDeliveryStatus {
+  PENDING
+  DELIVERED
+  FAILED
+}
+
+enum NotificationOutboxStatus {
+  PENDING
+  PROCESSED
+  FAILED
+}
+
+/// A user-facing notification. `readAt` is the ONLY read indicator:
+/// delivery success never implies the user read it.
+model Notification {
+  id             String                     @id @default(cuid())
+  userId         String                     @map("user_id")
+  type           NotificationType
+  channel        NotificationChannel        @default(IN_APP)
+  deliveryStatus NotificationDeliveryStatus @default(PENDING) @map("delivery_status")
+  title          String
+  body           String
+  /// safe, server-generated context only (ids/amounts/codes — never secrets)
+  data           Json?
+  /// deterministic identity of the event that produced it (dedup key)
+  eventKey       String                     @map("event_key")
+  provider       String?
+  deliveredAt    DateTime?                  @map("delivered_at")
+  failedAt       DateTime?                  @map("failed_at")
+  failureReason  String?                    @map("failure_reason")
+  readAt         DateTime?                  @map("read_at")
+  createdAt      DateTime                   @default(now()) @map("created_at")
+  updatedAt      DateTime                   @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  /// database-enforced deduplication: one notification per user per event
+  @@unique([userId, eventKey])
+  @@index([userId, createdAt])
+  @@index([userId, readAt])
+  @@index([type])
+  @@index([eventKey])
+  @@map("notifications")
+}
+
+/// Per-user, per-type in-app preference. A missing row means the default
+/// (enabled) — see notifications.constants for the deterministic policy.
+model NotificationPreference {
+  id            String           @id @default(cuid())
+  userId        String           @map("user_id")
+  type          NotificationType
+  inAppEnabled  Boolean          @default(true) @map("in_app_enabled")
+  createdAt     DateTime         @default(now()) @map("created_at")
+  updatedAt     DateTime         @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, type])
+  @@index([userId])
+  @@map("notification_preferences")
+}
+
+/// Transactional outbox: written inside the business transaction, processed
+/// in-process when it commits. A notification failure never rolls back business.
+model NotificationOutbox {
+  id              String                  @id @default(cuid())
+  eventType       NotificationType        @map("event_type")
+  aggregateType   String                  @map("aggregate_type")
+  aggregateId     String                  @map("aggregate_id")
+  /// resolved at dispatch time: a single user (customer events) or every user
+  /// holding a permission (staff events)
+  recipientUserId String?                 @map("recipient_user_id")
+  permissionKey   String?                 @map("permission_key")
+  payload         Json
+  eventKey        String                  @map("event_key")
+  status          NotificationOutboxStatus @default(PENDING)
+  attempts        Int                     @default(0)
+  availableAt     DateTime                @default(now()) @map("available_at")
+  processedAt     DateTime?               @map("processed_at")
+  lastError       String?                 @map("last_error")
+  createdAt       DateTime                @default(now()) @map("created_at")
+
+  /// the same event can only be enqueued once (idempotent generation)
+  @@unique([eventType, aggregateType, aggregateId])
+  @@index([status, availableAt])
+  @@map("notification_outbox")
 }
 
 /// ------------------- Stage 9: Customer Verification -------------------

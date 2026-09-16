@@ -22,6 +22,8 @@ const paymentRow = (over: Record<string, unknown> = {}) => ({
   id: 'pay-1',
   orderId: 77,
   userId: 'user-a',
+  // the order relation is selected by the manual Sham Cash flow (notification payload)
+  order: { orderNumber: 'ORD-2026-000077' },
   method: 'SHAM_CASH',
   status: 'PENDING',
   amount: new Prisma.Decimal('400.19'),
@@ -72,8 +74,10 @@ const build = (options: {
   const audit = { log: jest.fn().mockResolvedValue(undefined) };
   // URL-only storage stub: proof URLs are validated by the storage abstraction.
   const storage = { name: 'url', put: jest.fn().mockImplementation(async (url: string) => ({ url, provider: 'url' })) };
-  const service = new PaymentsService(prisma as never, audit as never, storage as never);
-  return { service, prisma, tx, audit, storage, paymentCreate, paymentUpdate, inventoryUpdate, inventoryMovementCreate };
+  // notifications stub: the outbox write happens in the business transaction
+  const notifications = { enqueue: jest.fn().mockResolvedValue(undefined), dispatch: jest.fn().mockResolvedValue({ processed: 0, failed: 0 }), dispatchSafely: jest.fn().mockResolvedValue(undefined) };
+  const service = new PaymentsService(prisma as never, audit as never, notifications as never, storage as never);
+  return { service, prisma, tx, audit, storage, notifications, paymentCreate, paymentUpdate, inventoryUpdate, inventoryMovementCreate };
 };
 
 const dto = { orderId: 77 };

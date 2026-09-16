@@ -1,4 +1,5 @@
 import { Module } from '@nestjs/common';
+import { NotificationsModule } from '../notifications/notifications.module';
 import { VerificationController } from './verification.controller';
 import { AdminVerificationsController } from './admin-verifications.controller';
 import { CustomerVerificationService } from './customer-verification.service';
@@ -12,6 +13,7 @@ import { VERIFICATION_PROVIDER_REGISTRY } from './interfaces/verification-provid
  * to this array and setting VERIFICATION_PROVIDER — no other module changes.
  */
 @Module({
+  imports: [NotificationsModule],
   controllers: [VerificationController, AdminVerificationsController],
   providers: [
     CustomerVerificationService,

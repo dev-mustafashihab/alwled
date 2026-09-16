@@ -6,6 +6,8 @@ import { InventoryService } from './inventory.service';
  * quantity. The DB enforces the same rules with CHECK constraints; these tests
  * pin the service-level behaviour (and the movement log).
  */
+const notifications = { enqueue: jest.fn(), dispatch: jest.fn(), dispatchSafely: jest.fn() };
+
 describe('InventoryService — integrity', () => {
   const actor = { id: 'owner-1', roles: ['OWNER'], permissions: ['*'] };
 
@@ -17,6 +19,7 @@ describe('InventoryService — integrity', () => {
       createdAt: new Date(), updatedAt: new Date(),
     }));
     const tx = {
+  product: { findUnique: jest.fn().mockResolvedValue({ name: 'P', sku: 'S' }) },
       $queryRaw: jest.fn().mockResolvedValue([
         {
           id: 7,
@@ -30,7 +33,7 @@ describe('InventoryService — integrity', () => {
     };
     const prisma = { $transaction: (fn: (t: unknown) => unknown) => fn(tx) };
     const audit = { log: jest.fn() };
-    const service = new InventoryService(prisma as never, audit as never);
+    const service = new InventoryService(prisma as never, audit as never, notifications as never);
     return { service, inventoryUpdate, movementCreate, audit };
   };
 

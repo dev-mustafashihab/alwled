@@ -392,3 +392,99 @@ NOT_STARTED → PENDING → IN_REVIEW → VERIFIED
 
 ### أحداث التدقيق
 `VERIFICATION_STARTED` · `VERIFICATION_SUBMITTED` · `VERIFICATION_REVIEWED` · `VERIFICATION_VERIFIED` · `VERIFICATION_REJECTED` · `VERIFICATION_CANCELLED` · `VERIFICATION_EXPIRED`.
+
+
+---
+
+## المرحلة العاشرة — لوحة التحكم والتحليلات (Dashboard and Analytics)
+
+قراءة فقط بالكامل: لا يوجد أي POST/PUT/PATCH/DELETE في هذه الوحدة.
+
+### الصلاحيات
+- `dashboard.read` → OWNER/ADMIN/EMPLOYEE — كل مسارات `/admin/dashboard/*`
+- `analytics.read` → OWNER/ADMIN — `/admin/analytics/timeseries` (صلاحية مستقلة لأن التجميع أغلى)
+
+### Endpoints
+| Method | Path | الصلاحية | الوظيفة |
+| --- | --- | --- | --- |
+| GET | /admin/dashboard/overview | dashboard.read | لقطة كلية (مستخدمون/منتجات/مخزون/طلبات/دفعات/تحقق) |
+| GET | /admin/dashboard/catalog | dashboard.read | المنتجات + أعلى التصنيفات والعلامات |
+| GET | /admin/dashboard/orders | dashboard.read | الطلبات حسب الحالة + القيم خلال مدى |
+| GET | /admin/dashboard/payments | dashboard.read | الدفعات حسب الحالة + المبالغ + شام كاش اليدوي |
+| GET | /admin/dashboard/inventory | dashboard.read | الكميات/المحجوز/المتاح + المنخفض/المنتهي |
+| GET | /admin/dashboard/verifications | dashboard.read | طلبات التحقق حسب الحالة |
+| GET | /admin/dashboard/recent-orders | dashboard.read | أحدث الطلبات (limit حتى 50) |
+| GET | /admin/dashboard/recent-payments | dashboard.read | أحدث الدفعات (بلا إثباتات/أسرار) |
+| GET | /admin/dashboard/payment-review | dashboard.read | طابور مراجعة شام كاش (PENDING_REVIEW فقط) |
+| GET | /admin/analytics/timeseries | analytics.read | سلسلة زمنية (day/week/month) |
+
+### قواعد موحّدة
+- **المدى:** `from` شامل و`to` غير شامل (بلا 23:59:59.999) · الافتراضي آخر 30 يوماً UTC مصفوفة على بداية اليوم ·
+  الحد الأقصى 366 يوماً · كل الاستجابات تحمل `range.from/to/timezone/days/boundary`.
+- **المال:** يُجمَّع NUMERIC في PostgreSQL ويُعاد نصاً (`"399.98"`) — صفر floating point.
+- **المحصَّل = SUCCEEDED فقط**؛ PENDING/PENDING_REVIEW/PROCESSING مبالغ معلّقة وليست مبيعات.
+- **شام كاش:** `manuallyConfirmed`/`manuallyRejected` قرار موظف (Stage 8) — لا يُوصف كتحقق مزوّد.
+- **المخزون:** `available = quantity - reservedQuantity` · المنخفض حسب `lowStockThreshold` لكل سجل · المنتهي عند `available <= 0`.
+- **التحقق:** نطاق مستقل عن الدفعات (`inReview` = طابور المراجعة).
+- **الحدود:** لا unbounded lists · ترتيب من قائمة مسموحة فقط · لا `proofUrl` ولا أي سرّ في أي استجابة.
+- تفاصيل كاملة: `docs/dashboard-analytics.md`.
+
+
+---
+
+## المرحلة الحادية عشرة — الإشعارات (Notifications, in-app)
+
+إشعارات داخل التطبيق فقط: لا بريد/SMS/واتساب/Push، ولا أي اتصال خارجي، ولا مفاتيح.
+
+### المسارات
+| Method | Path | Auth | الصلاحية | الوظيفة |
+| --- | --- | --- | --- | --- |
+| GET | /notifications | JWT | — | صندوق المستخدم الحالي (صفحات ≤ 50 + فلاتر type/read/from/to) |
+| GET | /notifications/unread-count | JWT | — | عدد غير المقروء (COUNT في قاعدة البيانات) |
+| GET | /notifications/preferences | JWT | — | التفضيلات (الإلزامي معلَّم mandatory) |
+| PATCH | /notifications/preferences | JWT | — | تعديل تفضيل قابل للتعطيل فقط |
+| POST | /notifications/read-all | JWT | — | تعليم إشعاراتي كمقروءة (محدود بـuserId) |
+| GET | /notifications/:id | JWT | — | إشعار لي فقط (غيره 404) |
+| POST | /notifications/:id/read | JWT | — | تعليم كمقروء (Idempotent عبر قيد شرطي) |
+| GET | /admin/notifications | JWT | notifications.admin.read | طابور الإدارة + فلاتر + userId |
+| GET | /admin/notifications/summary | JWT | notifications.admin.read | ملخّص (إجمالي/غير مقروء/حسب النوع) |
+| GET | /admin/notifications/:id | JWT | notifications.admin.read | تفاصيل |
+| POST | /admin/notifications/outbox/process | JWT | notifications.admin.read | معالجة صندوق الصادر (دفعة محدودة) |
+
+### الفكرة
+- **Transactional Outbox**: كل حدث إشعار يُكتب داخل نفس transaction العملية ⇒ لا يضيع حدث بعد COMMIT،
+  وفشل الإشعار لا يُبطل الطلب/الدفع/التحقق.
+- **منع التكرار بقيد قاعدة بيانات**: `(userId, eventKey)` — نفس الحدث = إشعار واحد دائماً.
+- **حالة التسليم منفصلة عن القراءة**: `deliveryStatus` (PENDING/DELIVERED/FAILED) و`readAt` مستقل.
+- **الأحداث المربوطة فعلياً**: إنشاء/تأكيد/إلغاء الطلب · إنشاء الدفعة · إرسال الإثبات (العميل + طابور المراجعة) ·
+  تأكيد/رفض الدفع · مسار التحقق كاملاً · تنبيهات المخزون **عند عبور الحد فقط**.
+- **التفضيلات**: الإشعارات المعاملاتية إلزامية (محاولة تعطيلها ⇒ 400)، والتنبيهات التشغيلية قابلة للتعطيل.
+- تفاصيل كاملة: `docs/notifications-architecture.md`.
+
+---
+
+## المرحلة الثانية عشرة — Testing + Security Hardening
+
+مراجعة أمنية كاملة + إصلاح + اختبارات انحدار (لا ميزات جديدة).
+
+### ما أُضيف
+- `test/security.e2e-spec.ts` — **69 اختباراً أمنياً**: مصادقة (تعطيل فوري، تدوير وإعادة استخدام refresh، رموز إعادة تعيين/تحقق لمرة واحدة، حدود)، مصفوفة تصريح (مجهول/زبون/موظف/أدمن/مالك × 17 مساراً)، تصعيد امتياز (حماية OWNER، الأدوار النظامية)، IDOR/BOLA (404 للغير)، mass assignment (حقول مميزة/حالة/مبلغ/مزوّد/مدقق)، prototype pollution، SQL injection، rate limiting (وتجاهل `X-Forwarded-For`)، تسريب الأخطاء، تلاعب الدفع، تزامن (overselling/idempotency/مخزون)، سلامة قاعدة البيانات، حدود/فَزّ (inputs متطرفة)، أسطح الإدارة (outbox، dashboard للقراءة فقط، audit).
+- `docs/security.md` — ضوابط المصادقة/التصريح/JWT/Hashing/Rate limiting/CORS/Helmet/التحقق/الملكية/التدقيق/المزوّدين + قائمة إنتاج.
+- `docs/security-findings.md` — Threat model + جدول النتائج (F1–F15) + أرقام الاختبارات + snapshot قاعدة البيانات.
+- `.dockerignore` (يمنع نسخ `.env` داخل الصورة)، وتحديث `.gitignore` (`.env.*`).
+
+### ما أُصلح (كل إصلاح باختبار انحدار)
+| # | المشكلة | الإصلاح |
+| --- | --- | --- |
+| F1 | جسم طلب أكبر من الحد ⇒ 500 | `HttpExceptionFilter`: `PayloadTooLargeError` ⇒ **413** |
+| F2 | مدخلات عددية خارج النطاق / أخطاء Prisma عن مدخل غير صالح ⇒ 500 | خرائط أكواد Prisma/Postgres + أنماط رسائل ⇒ **400** (بلا تفاصيل داخلية) |
+| F3 | محارف غير صالحة (NUL) ⇒ 500 | نفس المعالج ⇒ **400** |
+| F4 | CORS كان يعكس أي origin مع credentials عند غياب الإعداد | deny-by-default + `*` بلا credentials + methods/headers صريحة |
+| F5 | Swagger متاح في الإنتاج | يحتاج `SWAGGER_ENABLED=true` في production |
+| F6/F7 | إرشادات DoS في `multer`/`lodash`/`picomatch`/`qs` | `overrides` إلى إصدارات مُصلَحة (High: 8 ⇒ 4، كلها dev-only) |
+| F11 | `.gitignore` لا يستثني `.env.*` | استُثني مع إبقاء `.env.example` |
+
+### ما تُرِك موثَّقًا (بلا إصلاح الآن)
+- `js-yaml` عبر `@nestjs/swagger` + أدوات البناء (`@nestjs/cli`, `glob`, `tmp`): تحتاج ترقية major (Nest 11 / CLI 12) ⇒ مرحلة تبعيات مخصّصة.
+- Dockerfile للتطوير (root + `start:dev`): أُبقي كما هو لعدم كسر بيئة التطوير؛ الإنتاج موثَّق في `docs/security.md` §11.
+- سجلات الإشعارات/التدقيق نمت من الاختبارات، ولا حذف لأي مستخدم أو بيانات غير مثبت أنها اختبارية.

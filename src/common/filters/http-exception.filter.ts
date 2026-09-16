@@ -24,6 +24,36 @@ export interface ApiResponse<T = null> {
 export class HttpExceptionFilter implements ExceptionFilter {
   private readonly logger = new Logger('Exceptions');
 
+  /** Prisma/Postgres errors that mean "the client sent something invalid", not a server fault. */
+  private static readonly INVALID_INPUT_CODES = new Set([
+    'P2000', // value too long for the column
+    'P2005', // stored value has the wrong type for the field
+    'P2006', // provided value is not valid for the field
+    'P2007', // data validation error
+    'P2010', // raw query failed
+    'P2011', // null constraint violation
+    'P2019', // input error
+    'P2020', // value out of range for the type (e.g. integer overflow)
+    'P2023', // inconsistent column data
+    'P2033', // number larger than a 64-bit signed integer
+    '22003', // numeric_value_out_of_range (postgres)
+    '22P02', // invalid_text_representation (postgres)
+    '22001', // string_data_right_truncation (postgres)
+    '22021', // character_not_in_repertoire (e.g. NUL byte in text)
+    '22018', // invalid_character_value_for_cast
+  ]);
+
+  /** Driver messages that always mean bad client input (never leak them verbatim). */
+  private static readonly INVALID_INPUT_PATTERNS = [
+    /out of range/i,
+    /invalid byte sequence/i,
+    /invalid input syntax/i,
+    /value too long/i,
+    /numeric field overflow/i,
+    /incorrect binary data/i,
+    /unsupported character/i,
+  ];
+
   catch(exception: unknown, host: ArgumentsHost) {
     const ctx = host.switchToHttp();
     const res = ctx.getResponse<Response>();
@@ -47,7 +77,26 @@ export class HttpExceptionFilter implements ExceptionFilter {
         }
       }
     } else if (exception instanceof Error) {
-      this.logger.error(exception.message, exception.stack);
+      const name = exception.name;
+      const code = (exception as { code?: string }).code;
+      const tooLarge = name === 'PayloadTooLargeError' || (exception as { status?: number }).status === 413;
+      if (tooLarge) {
+        // body-parser rejects oversized payloads with a plain error, never leak it as a 500
+        status = HttpStatus.PAYLOAD_TOO_LARGE;
+        message = 'حجم البيانات المُرسلة كبير جداً';
+      } else if (
+        name === 'PrismaClientValidationError' ||
+        name === 'PrismaClientKnownRequestError' && Boolean(code && HttpExceptionFilter.INVALID_INPUT_CODES.has(code)) ||
+        (code && HttpExceptionFilter.INVALID_INPUT_CODES.has(code)) ||
+        HttpExceptionFilter.INVALID_INPUT_PATTERNS.some((re) => re.test(exception.message)) ||
+        /Invalid value provided|Argument .* is missing|Unknown argument/i.test(exception.message)
+      ) {
+        status = HttpStatus.BAD_REQUEST;
+        message = 'قيمة غير صالحة في الطلب';
+        this.logger.warn(`${req.method} ${req.url} → 400 (${name}/${code})`);
+      } else {
+        this.logger.error(exception.message, exception.stack);
+      }
     }
 
     res.status(status).json({

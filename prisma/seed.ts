@@ -51,6 +51,8 @@ const PERMISSION_LABELS: Record<string, string> = {
   'payments.update': 'تعديل المدفوعات',
   'verification.read': 'عرض طلبات التحقق',
   'verification.update': 'مراجعة طلبات التحقق وتأكيدها',
+  'analytics.read': 'عرض تحليلات لوحة التحكم',
+  'notifications.admin.read': 'عرض إشعارات الإدارة',
   'audit.read': 'عرض سجل التدقيق',
 };
 

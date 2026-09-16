@@ -5,6 +5,9 @@ import { PaymentMethod, PaymentStatus, Prisma } from '@prisma/client';
 import { createHash } from 'crypto';
 import { PrismaService } from '../database/prisma.service';
 import { AuditService } from '../audit/audit.service';
+import { NotificationsService } from '../notifications/notifications.service';
+import { EnqueueEventInput } from '../notifications/notifications.service';
+import { NOTIFICATION_TYPE } from '../notifications/notifications.constants';
 import { AUDIT } from '../audit/audit.actions';
 import { IDEMPOTENCY_SCOPES, ORDER_LIMITS } from '../common/constants';
 import { toMoneyString } from '../common/utils/money.util';
@@ -42,6 +45,7 @@ export class PaymentsService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
+    private readonly notifications: NotificationsService,
     @Inject(STORAGE_PROVIDER) private readonly storage: StorageProvider,
   ) {}
 
@@ -156,6 +160,19 @@ export class PaymentsService {
           data: { paymentId: payment.id, statusCode: 201 },
         });
 
+        // customer notification, written with the payment itself
+        await this.notifications.enqueue(tx, {
+          type: NOTIFICATION_TYPE.PAYMENT_CREATED,
+          aggregateType: 'payment',
+          aggregateId: payment.id,
+          recipientUserId: userId,
+          payload: {
+            orderNumber: order.orderNumber,
+            amount: toMoneyString(payment.amount) ?? undefined,
+            currency: payment.currency,
+          },
+        });
+
         return payment as unknown as PaymentRow;
       }, { timeout: 20000 });
 
@@ -175,6 +192,9 @@ export class PaymentsService {
         },
         ...meta,
       });
+
+      // the payment is committed: dispatch its in-app notification now
+      await this.notifications.dispatchSafely();
 
       return { payment: this.serialize(created), replayed: false };
     } catch (error) {
@@ -284,6 +304,8 @@ export class PaymentsService {
       providerPatch?: { provider?: string | null; providerPaymentId?: string | null };
       /** Review metadata (reference/proof/reviewer) applied atomically with the status. */
       extraData?: Prisma.PaymentUncheckedUpdateInput;
+      /** Notification event enqueued in the SAME transaction as the status change. */
+      notification?: EnqueueEventInput;
     },
     meta: RequestMeta = {},
   ) {
@@ -307,6 +329,11 @@ export class PaymentsService {
         },
         select: PAYMENT_SELECT,
       });
+      if (context.notification) {
+        // transactional outbox: the event is written with the status change, so a
+        // committed payment change can never lose its notification
+        await this.notifications.enqueue(tx, context.notification);
+      }
       return { previous: current.status, payment: updated as unknown as PaymentRow };
     }, { timeout: 20000 });
 
@@ -361,10 +388,14 @@ export class PaymentsService {
   ) {
     const payment = await this.prisma.payment.findFirst({
       where: { id: paymentId, userId },
-      select: { id: true, status: true, orderId: true, amount: true, currency: true },
+      select: {
+        id: true, status: true, orderId: true, amount: true, currency: true,
+        order: { select: { orderNumber: true } },
+      },
     });
     // 404 (not 403): another customer's payment must look nonexistent.
     if (!payment) throw new NotFoundException('الدفعة غير موجودة');
+    const orderNumber = payment.order.orderNumber;
 
     if (!CUSTOMER_SUBMITTABLE_PAYMENT_STATUSES.includes(payment.status)) {
       throw new ConflictException(
@@ -397,9 +428,36 @@ export class PaymentsService {
           proofNote: dto.proofNote ?? null,
           submittedAt: new Date(),
         },
+        notification: {
+          type: NOTIFICATION_TYPE.PAYMENT_SUBMITTED_FOR_REVIEW,
+          aggregateType: 'payment',
+          aggregateId: paymentId,
+          recipientUserId: userId,
+          payload: {
+            orderNumber,
+            amount: toMoneyString(payment.amount) ?? undefined,
+            currency: payment.currency,
+            transactionReference: reference,
+          },
+        },
       },
       meta,
     );
+
+    // staff queue event (resolved by permission payments.update at dispatch time)
+    await this.notifications.enqueue(this.prisma, {
+      type: NOTIFICATION_TYPE.PAYMENT_REVIEW_REQUIRED,
+      aggregateType: 'payment',
+      aggregateId: `${paymentId}:review`,
+      permissionKey: 'payments.update',
+      payload: {
+        orderNumber,
+        amount: toMoneyString(payment.amount) ?? undefined,
+        currency: payment.currency,
+        transactionReference: reference,
+      },
+    });
+    await this.notifications.dispatchSafely();
 
     await this.audit.log({
       action: AUDIT.PAYMENT_SUBMITTED_FOR_REVIEW,
@@ -429,7 +487,11 @@ export class PaymentsService {
   async confirm(paymentId: string, actor: ActorRef, meta: RequestMeta = {}) {
     const payment = await this.prisma.payment.findUnique({
       where: { id: paymentId },
-      select: { id: true, status: true, orderId: true, transactionReference: true, amount: true, currency: true },
+      select: {
+        id: true, status: true, orderId: true, transactionReference: true,
+        amount: true, currency: true, userId: true,
+        order: { select: { orderNumber: true } },
+      },
     });
     if (!payment) throw new NotFoundException('الدفعة غير موجودة');
     if (!REVIEWABLE_PAYMENT_STATUSES.includes(payment.status)) {
@@ -447,9 +509,21 @@ export class PaymentsService {
         actorId: actor.id,
         source: 'ADMIN',
         extraData: { reviewedAt: new Date(), reviewedBy: actor.id, rejectionReason: null },
+        notification: {
+          type: NOTIFICATION_TYPE.PAYMENT_CONFIRMED,
+          aggregateType: 'payment',
+          aggregateId: paymentId,
+          recipientUserId: payment.userId,
+          payload: {
+            orderNumber: payment.order.orderNumber,
+            amount: toMoneyString(payment.amount) ?? undefined,
+            currency: payment.currency,
+          },
+        },
       },
       meta,
     );
+    await this.notifications.dispatchSafely();
 
     await this.audit.log({
       action: AUDIT.PAYMENT_CONFIRMED,
@@ -478,7 +552,7 @@ export class PaymentsService {
   async reject(paymentId: string, actor: ActorRef, reason: string, meta: RequestMeta = {}) {
     const payment = await this.prisma.payment.findUnique({
       where: { id: paymentId },
-      select: { id: true, status: true, orderId: true, amount: true, currency: true },
+      select: {id: true, status: true, orderId: true, transactionReference: true, amount: true, currency: true, userId: true, order: { select: { orderNumber: true } }},
     });
     if (!payment) throw new NotFoundException('الدفعة غير موجودة');
     if (!REVIEWABLE_PAYMENT_STATUSES.includes(payment.status)) {
@@ -492,9 +566,21 @@ export class PaymentsService {
         actorId: actor.id,
         source: 'ADMIN',
         extraData: { reviewedAt: new Date(), reviewedBy: actor.id, rejectionReason: reason },
+        notification: {
+          type: NOTIFICATION_TYPE.PAYMENT_REJECTED,
+          aggregateType: 'payment',
+          aggregateId: paymentId,
+          recipientUserId: payment.userId,
+          payload: {
+            orderNumber: payment.order.orderNumber,
+            amount: toMoneyString(payment.amount) ?? undefined,
+            currency: payment.currency,
+          },
+        },
       },
       meta,
     );
+    await this.notifications.dispatchSafely();
 
     await this.audit.log({
       action: AUDIT.PAYMENT_REJECTED,

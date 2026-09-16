@@ -7,3 +7,11 @@ coverage/
 .nest/
 tsconfig.tsbuildinfo
 /tmp/
+
+.env.*
+!.env.example
+
+# Frontend QA artifacts (screenshots/reports are local evidence, not source)
+frontend/tools/qa/
+*.png
+

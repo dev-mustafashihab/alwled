@@ -5,6 +5,8 @@ import { Prisma } from '@prisma/client';
 import { createHash } from 'crypto';
 import { PrismaService } from '../database/prisma.service';
 import { AuditService } from '../audit/audit.service';
+import { NotificationsService } from '../notifications/notifications.service';
+import { NOTIFICATION_TYPE } from '../notifications/notifications.constants';
 import { AUDIT } from '../audit/audit.actions';
 import { IDEMPOTENCY_SCOPES, ORDER_LIMITS } from '../common/constants';
 import type { RequestMeta } from '../common/types/request-meta';
@@ -37,6 +39,7 @@ export class CustomerVerificationService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
+    private readonly notifications: NotificationsService,
     private readonly providers: VerificationProviderRegistry,
   ) {}
 
@@ -237,40 +240,61 @@ export class CustomerVerificationService {
 
     try {
     if (!current) {
-      created = await this.prisma.customerVerification.create({
-        data: {
-          userId,
-          status: VERIFICATION_STATUS.PENDING,
-          provider: this.providers.name,
-          source: VERIFICATION_SOURCE.SYSTEM,
-          attempt: 1,
-          startedAt: new Date(),
-          submittedAt: new Date(),
-          expiresAt: verificationExpiryFrom(),
-        },
-        select: VERIFICATION_SELECT,
-      }) as unknown as VerificationRow;
+      // record + outbox event in ONE transaction: a committed request always notifies
+      created = await this.prisma.$transaction(async (tx) => {
+        const row = (await tx.customerVerification.create({
+          data: {
+            userId,
+            status: VERIFICATION_STATUS.PENDING,
+            provider: this.providers.name,
+            source: VERIFICATION_SOURCE.SYSTEM,
+            attempt: 1,
+            startedAt: new Date(),
+            submittedAt: new Date(),
+            expiresAt: verificationExpiryFrom(),
+          },
+          select: VERIFICATION_SELECT,
+        })) as unknown as VerificationRow;
+        await this.notifications.enqueue(tx, {
+          type: NOTIFICATION_TYPE.VERIFICATION_STARTED,
+          aggregateType: 'verification',
+          aggregateId: `${row.id}:a${row.attempt}`,
+          recipientUserId: userId,
+          payload: { status: row.status },
+        });
+        return row;
+      });
     } else if (ACTIVE_VERIFICATION_STATUSES.includes(current.status)) {
       throw new ConflictException('لديك طلب تحقق قيد المعالجة بالفعل');
     } else if (RETRYABLE_VERIFICATION_STATUSES.includes(current.status)) {
       restarted = true;
-      created = await this.prisma.customerVerification.update({
-        where: { id: current.id },
-        data: {
-          status: VERIFICATION_STATUS.PENDING,
-          provider: this.providers.name,
-          source: VERIFICATION_SOURCE.SYSTEM,
-          attempt,
-          startedAt: new Date(),
-          submittedAt: new Date(),
-          expiresAt: verificationExpiryFrom(),
-          completedAt: null,
-          rejectionReason: null,
-          reviewedAt: null,
-          reviewedBy: null,
-        },
-        select: VERIFICATION_SELECT,
-      }) as unknown as VerificationRow;
+      created = await this.prisma.$transaction(async (tx) => {
+        const row = (await tx.customerVerification.update({
+          where: { id: current.id },
+          data: {
+            status: VERIFICATION_STATUS.PENDING,
+            provider: this.providers.name,
+            source: VERIFICATION_SOURCE.SYSTEM,
+            attempt,
+            startedAt: new Date(),
+            submittedAt: new Date(),
+            expiresAt: verificationExpiryFrom(),
+            completedAt: null,
+            rejectionReason: null,
+            reviewedAt: null,
+            reviewedBy: null,
+          },
+          select: VERIFICATION_SELECT,
+        })) as unknown as VerificationRow;
+        await this.notifications.enqueue(tx, {
+          type: NOTIFICATION_TYPE.VERIFICATION_STARTED,
+          aggregateType: 'verification',
+          aggregateId: `${row.id}:a${row.attempt}`,
+          recipientUserId: userId,
+          payload: { status: row.status },
+        });
+        return row;
+      });
     } else if (current.status === VERIFICATION_STATUS.VERIFIED) {
       throw new ConflictException('حسابك موثَّق بالفعل');
     } else {
@@ -353,6 +377,8 @@ export class CustomerVerificationService {
       action: AUDIT.VERIFICATION_STARTED,
       actorId: userId, entity: 'verification', entityId: created.id, metadata, ...meta,
     });
+    await this.notifications.dispatchSafely();
+
     await this.audit.log({
       action: AUDIT.VERIFICATION_SUBMITTED,
       actorId: userId, entity: 'verification', entityId: created.id,
@@ -412,11 +438,22 @@ export class CustomerVerificationService {
       throw new ConflictException(`لا يمكن بدء المراجعة من الحالة ${row.status}`);
     }
 
-    const updated = await this.prisma.customerVerification.update({
-      where: { id },
-      data: { status: 'IN_REVIEW', reviewedAt: new Date(), reviewedBy: actor.id },
-      select: VERIFICATION_SELECT,
-    });
+    const updated = (await this.prisma.$transaction(async (tx) => {
+      const row = await tx.customerVerification.update({
+        where: { id },
+        data: { status: 'IN_REVIEW', reviewedAt: new Date(), reviewedBy: actor.id },
+        select: VERIFICATION_SELECT,
+      });
+      await this.notifications.enqueue(tx, {
+        type: NOTIFICATION_TYPE.VERIFICATION_REVIEWED,
+        aggregateType: 'verification',
+        aggregateId: `${id}:a${row.attempt}`,
+        recipientUserId: row.userId,
+        payload: { status: 'IN_REVIEW' },
+      });
+      return row;
+    })) as unknown as VerificationRow;
+    await this.notifications.dispatchSafely();
 
     await this.audit.log({
       action: AUDIT.VERIFICATION_REVIEWED,
@@ -444,18 +481,30 @@ export class CustomerVerificationService {
       throw new ConflictException(`لا يمكن تأكيد طلب بحالة ${row.status}`);
     }
 
-    const updated = await this.prisma.customerVerification.update({
-      where: { id },
-      data: {
-        status: VERIFICATION_STATUS.VERIFIED,
-        source: VERIFICATION_SOURCE.MANUAL,
-        completedAt: new Date(),
-        reviewedAt: new Date(),
-        reviewedBy: actor.id,
-        rejectionReason: null,
-      },
-      select: VERIFICATION_SELECT,
-    });
+    const updated = (await this.prisma.$transaction(async (tx) => {
+      const row = await tx.customerVerification.update({
+        where: { id },
+        data: {
+          status: VERIFICATION_STATUS.VERIFIED,
+          source: VERIFICATION_SOURCE.MANUAL,
+          completedAt: new Date(),
+          reviewedAt: new Date(),
+          reviewedBy: actor.id,
+          rejectionReason: null,
+        },
+        select: VERIFICATION_SELECT,
+      });
+      await this.notifications.enqueue(tx, {
+        // manual decision by an employee — never presented as provider verification
+        type: NOTIFICATION_TYPE.VERIFICATION_VERIFIED,
+        aggregateType: 'verification',
+        aggregateId: `${id}:a${row.attempt}`,
+        recipientUserId: row.userId,
+        payload: { status: VERIFICATION_STATUS.VERIFIED },
+      });
+      return row;
+    })) as unknown as VerificationRow;
+    await this.notifications.dispatchSafely();
 
     await this.audit.log({
       action: AUDIT.VERIFICATION_VERIFIED,
@@ -479,18 +528,30 @@ export class CustomerVerificationService {
       throw new ConflictException(`لا يمكن رفض طلب بحالة ${row.status}`);
     }
 
-    const updated = await this.prisma.customerVerification.update({
-      where: { id },
-      data: {
-        status: VERIFICATION_STATUS.REJECTED,
-        source: VERIFICATION_SOURCE.MANUAL,
-        completedAt: new Date(),
-        reviewedAt: new Date(),
-        reviewedBy: actor.id,
-        rejectionReason: reason,
-      },
-      select: VERIFICATION_SELECT,
-    });
+    const updated = (await this.prisma.$transaction(async (tx) => {
+      const row = await tx.customerVerification.update({
+        where: { id },
+        data: {
+          status: VERIFICATION_STATUS.REJECTED,
+          source: VERIFICATION_SOURCE.MANUAL,
+          completedAt: new Date(),
+          reviewedAt: new Date(),
+          reviewedBy: actor.id,
+          rejectionReason: reason,
+        },
+        select: VERIFICATION_SELECT,
+      });
+      await this.notifications.enqueue(tx, {
+        // the internal rejection reason is NOT copied into the customer notification
+        type: NOTIFICATION_TYPE.VERIFICATION_REJECTED,
+        aggregateType: 'verification',
+        aggregateId: `${id}:a${row.attempt}`,
+        recipientUserId: row.userId,
+        payload: { status: VERIFICATION_STATUS.REJECTED },
+      });
+      return row;
+    })) as unknown as VerificationRow;
+    await this.notifications.dispatchSafely();
 
     await this.audit.log({
       action: AUDIT.VERIFICATION_REJECTED,

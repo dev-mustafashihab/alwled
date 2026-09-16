@@ -375,14 +375,37 @@ export class AuthService {
   }
 
   async me(userId: string) {
+    // `permissions` is the effective permission-key set of the authenticated user.
+    // It is additive to the existing contract and exists so the Admin UI can gate
+    // actions by permission (never by role name). Authorization itself is still
+    // enforced server-side on every request.
     const user = await this.prisma.user.findUnique({
       where: { id: userId },
-      select: { ...PUBLIC_USER_SELECT, status: true, updatedAt: true },
+      select: {
+        ...PUBLIC_USER_SELECT,
+        status: true,
+        updatedAt: true,
+        roles: {
+          select: {
+            role: {
+              select: {
+                name: true,
+                permissions: { select: { permission: { select: { key: true } } } },
+              },
+            },
+          },
+        },
+      },
     });
     if (!user) throw new UnauthorizedException('جلسة غير صالحة');
+    const permissions = new Set<string>();
+    user.roles.forEach((binding) =>
+      binding.role.permissions.forEach((entry) => permissions.add(entry.permission.key)),
+    );
     return {
       ...user,
       roles: user.roles.map((r) => r.role.name),
+      permissions: Array.from(permissions).sort(),
       isActive: user.status === 'ACTIVE',
     };
   }
