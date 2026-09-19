@@ -943,6 +943,58 @@
 
 .shop-body { --hdrmenu-top: calc(var(--shop-header-height) + 1px); }
 
+/* ---------------------------------------------- MOBILE COMPACT HEADER GEOMETRY FIX
+   المشكلة المثبتة: في حالة is-scrolled على الجوال كان صف التحكم (.shop-header__inner)
+   يُطوى إلى height/min-height = 0 مع overflow:hidden و align-items:center
+   ⇒ صناديق الأزرار تتمركز حول خط ارتفاعه 0 فتخرج أعلى الـviewport (burger y=-23)
+   والشريط السريع يجلس فوقها ⇒ focus-scroll/tap يُعيد scrollY إلى 0 ⇒ رجّة الهيدر.
+   الإصلاح: يُبقى الصف ظاهرًا بأبعاده وتوكناته الحالية داخل الـviewport، والشريط السريع تحته.
+   لا تغيير في الشكل/الأيقونات/الألوان/الدُرج — فقط هندسة الحالة المضغوطة. */
+@media (max-width: 768px) {
+  .shop-header.is-scrolled .shop-header__inner {
+    height: var(--shop-header-height);
+    min-height: var(--shop-header-height);
+    overflow: visible;
+    align-items: center;
+  }
+}
+
+/* ---------------------------------------------- TRUE COMPACT HEADER ON SCROLL (كل العروض)
+   المشكلة المثبتة (قياس فعلي): قاعدة السلوك اللاصق الموحّد في shop.tw.css — ومصدرها
+   frontend/tailwind/input.css:1151 — تختصر حالة النزول إلى:
+     html.stw-scroll-down .shop-header__inner { block-size:0; min-block-size:0;
+                                                opacity:0; padding-block:0; overflow:hidden }
+   والمشغّل shop.reveal.js:93-102 يضيف .stw-scroll-down على <html> عند النزول >6px.
+   النتيجتان المقيسة قبل الإصلاح:
+     ≥769px : ارتفاع الهيدر 73px → 1px  (اختفاء كامل — لا انكماش) ✗
+     ≤768px : الارتفاع 123→111 لكن صف التحكم opacity:0 ⇒ المكونات شفافة تمامًا ✗
+   الإصلاح: انكماش حقيقي إلى توكن compact واحد + إبقاء الصف ظاهرًا (opacity:1) مع أهداف
+   لمس سليمة داخل الـviewport. بلا !important وبلا JS وبلا تعديل على الدُرج.
+   المقاسات المتوقعة: ≥1024: 73→57 · 769–1023: 77→57 · ≤768: 123→103. */
+.shop-body { --shop-header-compact: 56px; }
+
+html.stw-scroll-down .shop-header .shop-header__inner {
+  height: var(--shop-header-compact);
+  min-height: var(--shop-header-compact);
+  block-size: var(--shop-header-compact);
+  min-block-size: var(--shop-header-compact);
+  padding-block: var(--space-1);
+  opacity: 1;
+  overflow: visible;
+  align-items: center;
+  transition: height var(--duration-base) var(--stw-ease-out),
+              min-height var(--duration-base) var(--stw-ease-out),
+              block-size var(--duration-base) var(--stw-ease-out),
+              min-block-size var(--duration-base) var(--stw-ease-out),
+              padding-block var(--duration-base) var(--stw-ease-out),
+              opacity var(--duration-fast) var(--stw-ease-out);
+}
+
+/* الاستخدام لا يعتمد على الحركة */
+@media (prefers-reduced-motion: reduce) {
+  html.stw-scroll-down .shop-header .shop-header__inner { transition: none; }
+}
+
 /* --- (PHASE 2 · STEP 2B) هدف لمس رابط الشعار ≥44px (بلا تغيير حجم الصورة) --- */
 .shop-header .shop-brand {
   min-height: 44px;

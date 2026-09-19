@@ -71,9 +71,27 @@ with sync_playwright() as pw:
     p.evaluate('window.scrollTo(0, 1200)'); p.wait_for_timeout(700)
     sc = p.evaluate(PROBE); M['390_scrolled'] = sc
     p.screenshot(path=OUT + '/qn-390-light-scrolled.png', clip={'x': 0, 'y': 0, 'width': 390, 'height': 420})
-    chk('[390] بعد التمرير: الهيدر ينكمش والشريط السريع يبقى',
-        sc['scrollDownClass'] and sc['qnVisible'] and sc['hdrH'] <= 52,
-        'hdr=%d qn=%d scrolled=%s' % (sc['hdrH'], sc['qnH'], sc['scrollDownClass']))
+    # ---- عقد سلوكي هندسي (يستبدل التوقّع القديم hdrH <= 52 — أُلغيت هندسة inner height:0 لأنها تسبب touch scroll-to-view) ----
+    GEO = """(() => { const de=document.documentElement;
+      const b=(s)=>{const e=document.querySelector(s); if(!e) return null; const r=e.getBoundingClientRect();
+        return {top:Math.round(r.top),bottom:Math.round(r.bottom),h:Math.round(r.height),w:Math.round(r.width)};};
+      const hit=(s)=>{const e=document.querySelector(s); if(!e) return null; const r=e.getBoundingClientRect();
+        const t=document.elementFromPoint(Math.round(r.left+r.width/2), Math.round(r.top+r.height/2));
+        return !!(t && (t===e || e.contains(t)));};
+      return { hdr:b('.shop-header'), inner:b('.shop-header__inner'), qn:b('#shop-quicknav'), burger:b('#shop-burger'),
+        hitBurger:hit('#shop-burger'), ov:Math.max(de.scrollWidth, document.body.scrollWidth)-de.clientWidth }; })()"""
+    g = p.evaluate(GEO); M['390_scrolled_geo'] = g
+    tol = 1  # تسامح تقريب subpixel فقط — بلا أي ارتفاع مكتوب يدويًا
+    chk('[390] بعد التمرير: مضغوط + صف التحكم داخل الـviewport + بلا تراكب مع الشريط السريع',
+        sc['scrollDownClass'] and sc['qnVisible']
+        and bool(g['inner']) and g['inner']['h'] > 0
+        and bool(g['qn']) and g['qn']['h'] > 0
+        and bool(g['inner']) and bool(g['qn']) and g['inner']['bottom'] <= g['qn']['top'] + tol
+        and bool(g['hdr']) and bool(g['qn']) and g['hdr']['bottom'] >= g['qn']['bottom'] - tol
+        and bool(g['burger']) and bool(g['hdr']) and g['burger']['top'] >= g['hdr']['top'] - tol
+        and bool(g['burger']) and bool(g['inner']) and g['burger']['bottom'] <= g['inner']['bottom'] + tol
+        and g['hitBurger'] is True and g['ov'] == 0,
+        'inner=%s qn=%s burger=%s hit=%s ov=%s' % (g['inner'], g['qn'], g['burger'], g['hitBurger'], g['ov']))
     p.evaluate('window.scrollTo(0, 0)'); p.wait_for_timeout(700)
     back = p.evaluate(PROBE)
     chk('[390] عند العودة للأعلى: الهيدر يُستعاد', (not back['scrollDownClass']) and back['hdrH'] >= 110, 'hdr=%d' % back['hdrH'])

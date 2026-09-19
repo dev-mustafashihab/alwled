@@ -19,8 +19,8 @@
   "scrollDownClass": false
  },
  "390_scrolled": {
-  "hdrH": 47,
-  "headerRowH": 0,
+  "hdrH": 103,
+  "headerRowH": 56,
   "qnH": 46,
   "qnVisible": true,
   "qnRows": 1,
@@ -36,6 +36,34 @@
   "tickerHidden": true,
   "ov": 0,
   "scrollDownClass": true
+ },
+ "390_scrolled_geo": {
+  "hdr": {
+   "top": 0,
+   "bottom": 103,
+   "h": 103,
+   "w": 390
+  },
+  "inner": {
+   "top": 0,
+   "bottom": 56,
+   "h": 56,
+   "w": 390
+  },
+  "qn": {
+   "top": 56,
+   "bottom": 102,
+   "h": 46,
+   "w": 390
+  },
+  "burger": {
+   "top": 5,
+   "bottom": 51,
+   "h": 46,
+   "w": 46
+  },
+  "hitBurger": true,
+  "ov": 0
  },
  "390_combined": 123,
  "390_dark": {
