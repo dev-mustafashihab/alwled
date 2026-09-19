@@ -1,0 +1,197 @@
+{
+ "base": {
+  "hash": "#/products",
+  "cards": 2,
+  "names": [
+   "منتج تجريبي — ثلاجة 300 لتر",
+   "منتج تجريبي — ثلاجة 500 لتر"
+  ],
+  "prices": [
+   "350.00 $",
+   "500.00 $"
+  ],
+  "count": "2 منتج",
+  "empty": false,
+  "stateTitle": null,
+  "pagination": false,
+  "h1": "كل المنتجات"
+ },
+ "minPrice_99999 (فوق كل الأسعار)": {
+  "hash": "#/products?minPrice=99999",
+  "cards": 2,
+  "names": [
+   "منتج تجريبي — ثلاجة 300 لتر",
+   "منتج تجريبي — ثلاجة 500 لتر"
+  ],
+  "prices": [
+   "350.00 $",
+   "500.00 $"
+  ],
+  "count": "2 منتج",
+  "empty": false,
+  "stateTitle": null,
+  "pagination": false,
+  "h1": "كل المنتجات"
+ },
+ "maxPrice_1 (تحت كل الأسعار)": {
+  "hash": "#/products?maxPrice=1",
+  "cards": 2,
+  "names": [
+   "منتج تجريبي — ثلاجة 300 لتر",
+   "منتج تجريبي — ثلاجة 500 لتر"
+  ],
+  "prices": [
+   "350.00 $",
+   "500.00 $"
+  ],
+  "count": "2 منتج",
+  "empty": false,
+  "stateTitle": null,
+  "pagination": false,
+  "h1": "كل المنتجات"
+ },
+ "minPrice_400": {
+  "hash": "#/products?minPrice=400",
+  "cards": 2,
+  "names": [
+   "منتج تجريبي — ثلاجة 300 لتر",
+   "منتج تجريبي — ثلاجة 500 لتر"
+  ],
+  "prices": [
+   "350.00 $",
+   "500.00 $"
+  ],
+  "count": "2 منتج",
+  "empty": false,
+  "stateTitle": null,
+  "pagination": false,
+  "h1": "كل المنتجات"
+ },
+ "inStock_1": {
+  "hash": "#/products?inStock=1",
+  "cards": 2,
+  "names": [
+   "منتج تجريبي — ثلاجة 300 لتر",
+   "منتج تجريبي — ثلاجة 500 لتر"
+  ],
+  "prices": [
+   "350.00 $",
+   "500.00 $"
+  ],
+  "count": "2 منتج",
+  "empty": false,
+  "stateTitle": null,
+  "pagination": false,
+  "h1": "كل المنتجات"
+ },
+ "offers_1": {
+  "hash": "#/products?offers=1",
+  "cards": 1,
+  "names": [
+   "منتج تجريبي — ثلاجة 500 لتر"
+  ],
+  "prices": [
+   "500.00 $"
+  ],
+  "count": "1 منتج",
+  "empty": false,
+  "stateTitle": null,
+  "pagination": false,
+  "h1": "كل المنتجات"
+ },
+ "isFeatured_1": {
+  "hash": "#/products?isFeatured=1",
+  "cards": 2,
+  "names": [
+   "منتج تجريبي — ثلاجة 300 لتر",
+   "منتج تجريبي — ثلاجة 500 لتر"
+  ],
+  "prices": [
+   "350.00 $",
+   "500.00 $"
+  ],
+  "count": "2 منتج",
+  "empty": false,
+  "stateTitle": null,
+  "pagination": false,
+  "h1": "كل المنتجات"
+ },
+ "search_ثلاجة": {
+  "hash": "#/products?search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9",
+  "cards": 2,
+  "names": [
+   "منتج تجريبي — ثلاجة 300 لتر",
+   "منتج تجريبي — ثلاجة 500 لتر"
+  ],
+  "prices": [
+   "350.00 $",
+   "500.00 $"
+  ],
+  "count": "2 منتج",
+  "empty": false,
+  "stateTitle": null,
+  "pagination": false,
+  "h1": "كل المنتجات"
+ },
+ "search_zzz": {
+  "hash": "#/products?search=zzzznothing",
+  "cards": 0,
+  "names": [],
+  "prices": [],
+  "count": "0 منتج",
+  "empty": true,
+  "stateTitle": "لا توجد منتجات مطابقة",
+  "pagination": false,
+  "h1": "كل المنتجات"
+ },
+ "categoryId_292 (فارغ)": {
+  "hash": "#/products?categoryId=292",
+  "cards": 0,
+  "names": [],
+  "prices": [],
+  "count": "0 منتج",
+  "empty": true,
+  "stateTitle": "لا توجد منتجات مطابقة",
+  "pagination": false,
+  "h1": "كل المنتجات"
+ },
+ "categoryId_99999 (غير موجود)": {
+  "hash": "#/products?categoryId=99999",
+  "cards": 0,
+  "names": [],
+  "prices": [],
+  "count": "0 منتج",
+  "empty": true,
+  "stateTitle": "لا توجد منتجات مطابقة",
+  "pagination": false,
+  "h1": "كل المنتجات"
+ },
+ "page_2": {
+  "hash": "#/products?page=2",
+  "cards": 0,
+  "names": [],
+  "prices": [],
+  "count": "2 منتج",
+  "empty": true,
+  "stateTitle": "لا توجد منتجات مطابقة",
+  "pagination": false,
+  "h1": "كل المنتجات"
+ },
+ "limit_48": {
+  "hash": "#/products?limit=48",
+  "cards": 2,
+  "names": [
+   "منتج تجريبي — ثلاجة 300 لتر",
+   "منتج تجريبي — ثلاجة 500 لتر"
+  ],
+  "prices": [
+   "350.00 $",
+   "500.00 $"
+  ],
+  "count": "2 منتج",
+  "empty": false,
+  "stateTitle": null,
+  "pagination": false,
+  "h1": "كل المنتجات"
+ }
+}

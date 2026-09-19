@@ -1,0 +1,866 @@
+{
+  "stage": "14.3",
+  "scope": "customer store flow — UI level",
+  "total": 157,
+  "passed": 154,
+  "failed": 3,
+  "results": [
+    {
+      "step": "guest on #/orders gets the login-required guard (no redirect loop)",
+      "status": "PASS",
+      "expected": "hash=#/orders"
+    },
+    {
+      "step": "guest on #/orders/1 gets the login-required guard (no redirect loop)",
+      "status": "PASS",
+      "expected": "hash=#/orders/1"
+    },
+    {
+      "step": "guest on #/orders/1/payment gets the login-required guard (no redirect loop)",
+      "status": "PASS",
+      "expected": "hash=#/orders/1/payment"
+    },
+    {
+      "step": "guest on #/notifications gets the login-required guard (no redirect loop)",
+      "status": "PASS",
+      "expected": "hash=#/notifications"
+    },
+    {
+      "step": "guest on #/account gets the login-required guard (no redirect loop)",
+      "status": "PASS",
+      "expected": "hash=#/account"
+    },
+    {
+      "step": "guest on #/verification gets the login-required guard (no redirect loop)",
+      "status": "PASS",
+      "expected": "hash=#/verification"
+    },
+    {
+      "step": "a real in-stock product is available for the journey",
+      "status": "PASS",
+      "expected": "{\"id\": 632, \"name\": \"منتج تجريبي — ثلاجة 500 لتر\", \"availableQuantity\": null}"
+    },
+    {
+      "step": "store shows a real product from the backend",
+      "status": "PASS"
+    },
+    {
+      "step": "customer logs in from the store UI",
+      "status": "PASS",
+      "expected": "#/"
+    },
+    {
+      "step": "add to cart works as an authenticated customer",
+      "status": "PASS",
+      "expected": 1
+    },
+    {
+      "step": "cart page renders the real cart",
+      "status": "PASS"
+    },
+    {
+      "step": "checkout preview shows backend totals",
+      "status": "PASS",
+      "expected": "500.00 $"
+    },
+    {
+      "step": "order success screen appears with a real order number",
+      "status": "PASS",
+      "expected": "✅ | تم إنشاء طلبك بنجاح | رقم الطلب | ORD-2026-001328 | الإجمالي | 500.00 $ | عدد الأصناف | 1 | الحالة | قيد الانتظار |  | الخطوة التالية: إنش"
+    },
+    {
+      "step": "the success screen matches the backend order",
+      "status": "PASS",
+      "expected": "api=ORD-2026-001328 500.00"
+    },
+    {
+      "step": "cart is emptied after the order is created",
+      "status": "PASS"
+    },
+    {
+      "step": "orders list shows the new order with status and total",
+      "status": "PASS",
+      "expected": "الرئيسية | ‹ | طلباتي | طلباتي |  | 21 طلب |  | ORD-2026-001328 | قيد الانتظار | التاريخ: 16 أيلول 2026، 15:51عدد الأصناف: 1 | 500.00 $عرض ا"
+    },
+    {
+      "step": "order details show items, totals and the real timeline",
+      "status": "PASS"
+    },
+    {
+      "step": "order details never expose the customer's internal id or any token",
+      "status": "PASS"
+    },
+    {
+      "step": "payment page starts with a create-payment CTA state",
+      "status": "PASS"
+    },
+    {
+      "step": "payment amount is displayed from the backend",
+      "status": "PASS"
+    },
+    {
+      "step": "unconfigured sham cash shows the honest notice (no invented wallet)",
+      "status": "PASS"
+    },
+    {
+      "step": "exactly one payment exists for the order",
+      "status": "PASS"
+    },
+    {
+      "step": "the submit form is available while the payment is PENDING",
+      "status": "PASS"
+    },
+    {
+      "step": "empty reference is refused client-side with an Arabic message",
+      "status": "PASS"
+    },
+    {
+      "step": "a malformed proof link is refused client-side",
+      "status": "PASS"
+    },
+    {
+      "step": "payment moves to PENDING_REVIEW in the UI",
+      "status": "PASS",
+      "expected": "الرئيسية | ‹ | طلباتي | ‹ | الدفع | دفع الطلب |  | ORD-2026-001328 • 500.00 $ |  | تفاصيل الطلب | حالة الدفعة | قيد المراجعة | شام كاش | المبلغ | 500.00 $ | العملة | USD | أُ"
+    },
+    {
+      "step": "the backend agrees the payment is PENDING_REVIEW",
+      "status": "PASS",
+      "expected": "PENDING_REVIEW"
+    },
+    {
+      "step": "the store never wrote a SUCCEEDED status or a fake success",
+      "status": "PASS"
+    },
+    {
+      "step": "no upload endpoint was invented (proof travels as a link field)",
+      "status": "PASS",
+      "expected": "file_inputs=0 link_label=True"
+    },
+    {
+      "step": "no second submit panel is offered once the payment is under review",
+      "status": "PASS"
+    },
+    {
+      "step": "owner logs into the admin panel",
+      "status": "PASS",
+      "expected": "#/dashboard"
+    },
+    {
+      "step": "admin review queue lists the customer's payment",
+      "status": "PASS",
+      "expected": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "step": "admin confirms the payment from the panel review queue (via ui)",
+      "status": "PASS",
+      "expected": "ui"
+    },
+    {
+      "step": "store reflects the admin decision (SUCCEEDED)",
+      "status": "FAIL",
+      "expected": "الرئيسية | ‹ | طلباتي | ‹ | الدفع | دفع الطلب |  | ORD-2026-001328 • 500.00 $ |  | تفاصيل الطلب | حالة الدفعة | قيد المراجعة | شام كاش | المبلغ | 500.00 $ | العملة | USD | أُنشئت في | 16 أيلول 202",
+      "detail": "backend status=SUCCEEDED"
+    },
+    {
+      "step": "admin rejects a payment from the panel review queue (via panel-api (form path failed: Locator.wait_for: Timeout 8000ms exceeded.\nCall log:\n  - waiting for locator(\"tr\").filter(has_text=\"cmu497mgr002\").first))",
+      "status": "PASS",
+      "expected": "panel-api (form path failed: Locator.wait_for: Timeout 8000ms exceeded.\nCall log:\n  - waiting for locator(\"tr\").filter(has_text=\"cmu497mgr002\").first)"
+    },
+    {
+      "step": "rejected payment becomes FAILED with a stored reason",
+      "status": "PASS",
+      "expected": "FAILED | إثبات غير مطابق للكشف — اختبار Stage 14.3"
+    },
+    {
+      "step": "store shows the rejection and its reason to the customer",
+      "status": "PASS",
+      "expected": "الرئيسية | ‹ | طلباتي | ‹ | الدفع | دفع الطلب |  | ORD-2026-001321 • 350.00 $ |  | تفاصيل الطلب | حالة الدفعة | مرفوضة | شام كاش | المبلغ | 350.00 $ | العملة | USD | أُنشئت في | 16 أيلول 2026، 15:"
+    },
+    {
+      "step": "store offers no fake retry-success button on a rejected payment",
+      "status": "PASS"
+    },
+    {
+      "step": "cancel CTA is offered for a PENDING order",
+      "status": "PASS"
+    },
+    {
+      "step": "cancel confirmation modal opens with Escape support",
+      "status": "PASS"
+    },
+    {
+      "step": "order shows the cancelled state after confirmation",
+      "status": "PASS",
+      "expected": "الرئيسية | ‹ | طلباتي | ‹ | تفاصيل الطلب | ORD-2026-001329 |  | أُنشئ في 16 أيلول 2026، 15:53 |  | ملغى | أصناف الطلب | من"
+    },
+    {
+      "step": "backend confirms the order is CANCELLED",
+      "status": "PASS",
+      "expected": "CANCELLED"
+    },
+    {
+      "step": "cancel CTA disappears on a cancelled order",
+      "status": "PASS"
+    },
+    {
+      "step": "a triple click on confirm creates exactly one order",
+      "status": "PASS",
+      "expected": "22 -> 23"
+    },
+    {
+      "step": "notifications page lists real notifications",
+      "status": "PASS",
+      "expected": "الرئيسية | ‹ | إشعاراتي | إشعاراتي |  | 65 إشعار |  | غير المقروء فقط | تعليم الكل كمقروء | تم إنشاء طلبك | جديد |  | تم إنشاء الطلب ORD-2026-001330 بمبلغ 500.00 US"
+    },
+    {
+      "step": "notification cards contain no executable markup",
+      "status": "PASS"
+    },
+    {
+      "step": "header bell shows the backend unread count",
+      "status": "FAIL",
+      "expected": "badge=6 api=7",
+      "detail": "rendered badge='6' api count=7"
+    },
+    {
+      "step": "unread count updates from the source after marking one as read",
+      "status": "PASS",
+      "expected": "badge=6 api=6"
+    },
+    {
+      "step": "read-all clears the unread count at the source",
+      "status": "PASS",
+      "expected": 0
+    },
+    {
+      "step": "account page shows profile, password, sessions and shortcuts",
+      "status": "PASS"
+    },
+    {
+      "step": "account page exposes no tokens or hashes",
+      "status": "PASS"
+    },
+    {
+      "step": "wrong current password is refused with an Arabic message",
+      "status": "PASS",
+      "expected": "⚠️\nكلمة المرور الجديدة لا تحقق متطلبات الأمان.",
+      "detail": "error text='⚠️\\nكلمة المرور الجديدة لا تحقق متطلبات الأمان.'"
+    },
+    {
+      "step": "no password ever lands in browser storage",
+      "status": "PASS",
+      "expected": "[\"alwled.session\"]",
+      "detail": "keys=['alwled.session']"
+    },
+    {
+      "step": "verification page shows the real status and the LOG provider",
+      "status": "PASS",
+      "expected": "الرئيسية | ‹ | توثيق الحساب | توثيق الحساب |  | التوثيق يُراجَع يدويًا من فريق المتجر. |  | ملغى | حالة الطلب | الحالة | ملغى | المحاولة | 1 | المزوّد | LOG | بدأ في | 16 أ"
+    },
+    {
+      "step": "second customer logs in for the isolation check",
+      "status": "PASS"
+    },
+    {
+      "step": "second customer sees 'order not found' for the first customer's order",
+      "status": "PASS",
+      "expected": "الرئيسية | ‹ | طلباتي | ‹ | تفاصيل الطلب | 📦 | الطلب غير موجود | هذا الطلب غير متاح لحسابك. | عرض طلباتي"
+    },
+    {
+      "step": "first customer's order never appears in the second customer's list",
+      "status": "PASS",
+      "expected": "الرئيسية | ‹ | طلباتي | طلباتي |  | لا توجد طلبات بعد |  | 📦 | لا توجد طلبات بعد | عند إتمام طلبك سيظهر هنا مع حالته وحالة دفعه. | تصفّح الم"
+    },
+    {
+      "step": "second customer sees no notifications from the first customer",
+      "status": "PASS"
+    },
+    {
+      "step": "store traffic never targets an admin endpoint",
+      "status": "PASS",
+      "expected": "[]",
+      "detail": "store_calls=75 admin_calls_in_store=0"
+    },
+    {
+      "step": "no store request body carries a userId or a client-side amount/status",
+      "status": "PASS",
+      "expected": "[]",
+      "detail": "bodies_scanned=75"
+    },
+    {
+      "step": "1920x1080: orders renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1920x1080: orders has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1920x1080: order renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1920x1080: order has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1920x1080: payment renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1920x1080: payment has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1920x1080: notifications renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1920x1080: notifications has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1920x1080: account renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1920x1080: account has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1920x1080: verification renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1920x1080: verification has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1440x900: orders renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1440x900: orders has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1440x900: order renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1440x900: order has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1440x900: payment renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1440x900: payment has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1440x900: notifications renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1440x900: notifications has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1440x900: account renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1440x900: account has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1440x900: verification renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1440x900: verification has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1280x800: orders renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1280x800: orders has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1280x800: order renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1280x800: order has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1280x800: payment renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1280x800: payment has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1280x800: notifications renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1280x800: notifications has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1280x800: account renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1280x800: account has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1280x800: verification renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1280x800: verification has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1024x768: orders renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1024x768: orders has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1024x768: order renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1024x768: order has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1024x768: payment renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1024x768: payment has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1024x768: notifications renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1024x768: notifications has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1024x768: account renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1024x768: account has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "1024x768: verification renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "1024x768: verification has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "768x1024: orders renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "768x1024: orders has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "768x1024: order renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "768x1024: order has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "768x1024: payment renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "768x1024: payment has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "768x1024: notifications renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "768x1024: notifications has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "768x1024: account renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "768x1024: account has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "768x1024: verification renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "768x1024: verification has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "430x932: orders renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "430x932: orders has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "430x932: order renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "430x932: order has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "430x932: payment renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "430x932: payment has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "430x932: notifications renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "430x932: notifications has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "430x932: account renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "430x932: account has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "430x932: verification renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "430x932: verification has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "390x844: orders renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "390x844: orders has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "390x844: order renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "390x844: order has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "390x844: payment renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "390x844: payment has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "390x844: notifications renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "390x844: notifications has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "390x844: account renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "390x844: account has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "390x844: verification renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "390x844: verification has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "375x812: orders renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "375x812: orders has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "375x812: order renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "375x812: order has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "375x812: payment renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "375x812: payment has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "375x812: notifications renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "375x812: notifications has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "375x812: account renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "375x812: account has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "375x812: verification renders without horizontal overflow",
+      "status": "PASS",
+      "expected": "overflow=0"
+    },
+    {
+      "step": "375x812: verification has no clipped CTA",
+      "status": "PASS",
+      "expected": "clipped=0"
+    },
+    {
+      "step": "no unexpected console errors during the whole 14.3 journey",
+      "status": "FAIL",
+      "expected": "[\"Failed to load resource: the server responded with a status of 409 (Conflict)\", \"Failed to load resource: the server responded with a status of 400 (Bad Request)\", \"Failed to load resource: the server responded with a status of 404 (Not Found)\"]"
+    }
+  ],
+  "state": {
+    "order": {
+      "id": "1464",
+      "number": "ORD-2026-001328",
+      "total": "500.00",
+      "cancelled": "1465"
+    },
+    "payment": {
+      "id": "cmu4a405j00162xaae3bo1jtn"
+    },
+    "rejected": {
+      "orderId": 1457,
+      "paymentId": "cmu497mgr002j5l7yifnbl53b"
+    },
+    "product": {
+      "id": 632,
+      "name": "منتج تجريبي — ثلاجة 500 لتر",
+      "availableQuantity": null
+    }
+  },
+  "screenshots": [
+    "/root/alwled/frontend/tools/qa/shop143/shots/01-cart.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/02-checkout-preview.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/03-order-success.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/04-orders-list.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/05-order-details.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/06-payment-page-empty.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/07-payment-created.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/08-payment-pending-review.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/09-admin-review-queue.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/09b-admin-row.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/09c-admin-confirm-modal.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/10-payment-succeeded.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/11-payment-rejected.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/12-cancel-modal.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/13-double-click-safety.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/14-notifications.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/15-notifications-read.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/16-account.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/17-verification.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1024-account.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1024-notifications.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1024-order.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1024-orders.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1024-payment.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1024-verification.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1280-account.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1280-notifications.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1280-order.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1280-orders.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1280-payment.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1280-verification.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1440-account.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1440-notifications.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1440-order.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1440-orders.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1440-payment.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1440-verification.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1920-account.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1920-notifications.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1920-order.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1920-orders.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1920-payment.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp1920-verification.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp375-account.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp375-notifications.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp375-order.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp375-orders.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp375-payment.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp375-verification.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp390-account.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp390-notifications.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp390-order.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp390-orders.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp390-payment.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp390-verification.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp430-account.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp430-notifications.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp430-order.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp430-orders.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp430-payment.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp430-verification.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp768-account.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp768-notifications.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp768-order.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp768-orders.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp768-payment.png",
+    "/root/alwled/frontend/tools/qa/shop143/shots/vp768-verification.png"
+  ]
+}

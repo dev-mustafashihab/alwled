@@ -1,0 +1,51 @@
+{
+  "mode": "post-cleanup",
+  "fingerprint": {
+    "users": "123",
+    "roles": "14",
+    "permissions": "45",
+    "products": "2",
+    "categories": "2",
+    "brands": "2",
+    "specifications": "ERROR: ERROR:  relation \"specifications\" does not exist\nLINE 1: select count(*) from specifications\n                           ",
+    "inventory": "2",
+    "inventory_movements": "0",
+    "product_images": "0",
+    "carts": "6",
+    "cart_items": "0",
+    "orders": "0",
+    "order_items": "0",
+    "payments": "0",
+    "idempotency_keys": "0",
+    "customer_verifications": "0",
+    "notifications": "4048",
+    "notification_outbox": "1357",
+    "audit_logs": "18350",
+    "refresh_tokens": "589",
+    "user_roles": "127",
+    "role_permissions": "95"
+  },
+  "integrity": {
+    "bad_order_totals": "0",
+    "order_total_mismatch": "0",
+    "bad_payment_amounts": "0",
+    "payment_amount_mismatch": "0",
+    "orphan_order_items": "0",
+    "orphan_notifications": "0",
+    "duplicate_notifications": "0",
+    "duplicate_outbox": "0",
+    "duplicate_order_numbers": "0",
+    "inventory_violations": "ERROR: ERROR:  column \"reserved\" does not exist\nLINE 1: ...ect count(*) from inventory where quantity < 0 or reserved <...\n    ",
+    "shamcash_provider_leak": "ERROR: ERROR:  column \"provider_reference\" does not exist\nLINE 1: ...nt(*) from payments where provider is not null or provider",
+    "fake_success": "0",
+    "orphan_verifications": "0",
+    "users_without_password_hash": "0",
+    "stage14_leftovers": "ERROR: ERROR:  column \"name\" does not exist\nLINE 1: ...hone like 'stage14%' or email like '%stage14%' or name like ...\n        "
+  },
+  "audit": {
+    "password_in_audit": "155",
+    "token_in_audit": "0",
+    "hash_in_audit": "0",
+    "proof_leak_in_audit": "0"
+  }
+}

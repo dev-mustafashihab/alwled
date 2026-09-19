@@ -1,0 +1,6425 @@
+{
+ "mode": "after",
+ "console": [],
+ "failed": [],
+ "shots": [
+  "/root/alwled/frontend/tools/qa/stage3f/after-products-390-light.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-products-390-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-products-769-light.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-products-1024-light.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-products-1366-light.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-products-1366-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-products-1920-light.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-filters-390-light.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-filters-390-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-categories-390-light.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-categories-390-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-categories-1366-light.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-categories-1366-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-brands-390-light.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-brands-390-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-brands-1366-light.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-brands-1366-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-empty-light.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-error-light.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-empty-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-error-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3f/after-loading-1366.png"
+ ],
+ "products_390_light": {
+  "theme": "light",
+  "vw": 390,
+  "overflow": 0,
+  "pageBg": "rgb(248, 250, 252)",
+  "items": {
+   "toolbar": {
+    "label": "الشريط",
+    "text": "بحثالتصنيفكل التصنيفاتتصنيف تج",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 390,
+     "h": 130.39
+    }
+   },
+   "toolbarLabel": {
+    "label": "تسمية الحقل",
+    "text": "بحث",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "13px",
+    "fontWeight": "500",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 358,
+     "h": 20.8
+    }
+   },
+   "count": {
+    "label": "عدّاد النتائج",
+    "text": "2 منتج",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 36,
+     "h": 21.59
+    }
+   },
+   "input": {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 358,
+     "h": 44
+    }
+   },
+   "select": {
+    "label": "قائمة التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجه",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "priceMin": {
+    "label": "حقل السعر",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "check": {
+    "label": "شريحة اختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "10px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    },
+    "checked": false,
+    "accent": "rgb(31, 95, 191)"
+   },
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 42,
+     "h": 20.8
+    }
+   },
+   "sectionLink": null,
+   "cardName": {
+    "label": "اسم المنتج",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "14.5px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 150,
+     "h": 48.02
+    }
+   },
+   "cardBadge": {
+    "label": "شارة الخصم",
+    "text": "-16.67%",
+    "color": "rgb(153, 27, 27)",
+    "bgColor": "rgb(254, 242, 242)",
+    "effBg": "rgb(254,242,242)",
+    "border": "rgb(254, 226, 226)",
+    "ratio": 7.6,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 55,
+     "h": 22
+    }
+   },
+   "cardFootBadge": {
+    "label": "شارة التوفير",
+    "text": "وفّر 16.67%",
+    "color": "rgb(22, 101, 52)",
+    "bgColor": "rgb(236, 253, 243)",
+    "effBg": "rgb(236,253,243)",
+    "border": "rgb(209, 250, 223)",
+    "ratio": 6.76,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 71,
+     "h": 22
+    }
+   },
+   "cardAdd": {
+    "label": "زر أضف للسلة",
+    "text": "أضف للسلة",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+    "geom": {
+     "w": 151,
+     "h": 44
+    }
+   },
+   "cardDetails": {
+    "label": "زر التفاصيل",
+    "text": "عرض التفاصيل",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 4.76,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 151,
+     "h": 44
+    }
+   },
+   "cardMeta": {
+    "label": "ميتا البطاقة",
+    "text": "علامة تجريبية ب",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 80,
+     "h": 20
+    }
+   },
+   "cardPrice": {
+    "label": "السعر",
+    "text": "350.00 $",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "17px",
+    "fontWeight": "700",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 62,
+     "h": 27.19
+    }
+   },
+   "cardPriceWas": {
+    "label": "السعر القديم",
+    "text": "600.00 $",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 2.56,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 54,
+     "h": 21.59
+    }
+   },
+   "taxo": null,
+   "taxoName": null,
+   "taxoCount": null,
+   "toggle": {
+    "label": "زر الفلاتر",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 366,
+     "h": 44
+    }
+   },
+   "sheet": {
+    "label": "اللوحة",
+    "text": "الفلاتر والترتيب✕بحثالتصنيفكل ",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "20px",
+    "shadow": "rgba(15, 23, 42, 0.22) 0px -12px 34px 0px",
+    "geom": {
+     "w": 390,
+     "h": 295.39
+    }
+   },
+   "sheetHead": {
+    "label": "رأس اللوحة",
+    "text": "الفلاتر والترتيب✕",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 390,
+     "h": 73
+    }
+   },
+   "sheetFoot": {
+    "label": "قدم اللوحة",
+    "text": "تفريغ الفلاترعرض النتائج",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 390,
+     "h": 63
+    }
+   },
+   "sheetDone": {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+    "geom": {
+     "w": 173,
+     "h": 46
+    }
+   },
+   "sheetClear": {
+    "label": "زر تفريغ الفلاتر",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 4.76,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 175,
+     "h": 46
+    }
+   },
+   "scrim": {
+    "label": "الطبقة الخلفية",
+    "text": "",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(6, 13, 26, 0.55)",
+    "effBg": "rgb(115,120,128)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 2.32,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 390,
+     "h": 900
+    }
+   },
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 130,
+   "toolbarRows": 2,
+   "toolbarCols": "minmax(0px, 1fr)",
+   "card": {
+    "w": 177,
+    "h": 504
+   },
+   "taxo": null,
+   "badge": {
+    "w": 55,
+    "h": 22
+   },
+   "add": {
+    "w": 151,
+    "h": 44
+   },
+   "check": {
+    "w": 0,
+    "h": 0
+   },
+   "controlH": [
+    44,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "state": null,
+   "gridCols": "177px 177px",
+   "cards": 2
+  },
+  "focus": {
+   "tag": "A",
+   "cls": "",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "outlineOffset": "2px"
+  }
+ },
+ "products_390_light_checked": {
+  "error": "not-interactable"
+ },
+ "products_390_dark": {
+  "theme": "dark",
+  "vw": 390,
+  "overflow": 0,
+  "pageBg": "rgb(10, 18, 32)",
+  "items": {
+   "toolbar": {
+    "label": "الشريط",
+    "text": "بحثالتصنيفكل التصنيفاتتصنيف تج",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(203, 213, 225)",
+    "ratio": 11.62,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 390,
+     "h": 130.39
+    }
+   },
+   "toolbarLabel": {
+    "label": "تسمية الحقل",
+    "text": "بحث",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "13px",
+    "fontWeight": "500",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 358,
+     "h": 20.8
+    }
+   },
+   "count": {
+    "label": "عدّاد النتائج",
+    "text": "2 منتج",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 36,
+     "h": 21.59
+    }
+   },
+   "input": {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 358,
+     "h": 44
+    }
+   },
+   "select": {
+    "label": "قائمة التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجه",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "priceMin": {
+    "label": "حقل السعر",
+    "text": "",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "check": {
+    "label": "شريحة اختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 11.62,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "10px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    },
+    "checked": false,
+    "accent": "rgb(31, 95, 191)"
+   },
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 7.31,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 42,
+     "h": 20.8
+    }
+   },
+   "sectionLink": null,
+   "cardName": {
+    "label": "اسم المنتج",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(241, 245, 249)",
+    "ratio": 15.75,
+    "fontSize": "14.5px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 150,
+     "h": 48.02
+    }
+   },
+   "cardBadge": {
+    "label": "شارة الخصم",
+    "text": "-16.67%",
+    "color": "rgb(254, 226, 226)",
+    "bgColor": "rgba(220, 38, 38, 0.16)",
+    "effBg": "rgb(48,26,38)",
+    "border": "rgb(220, 38, 38)",
+    "ratio": 13.2,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 55,
+     "h": 22
+    }
+   },
+   "cardFootBadge": {
+    "label": "شارة التوفير",
+    "text": "وفّر 16.67%",
+    "color": "rgb(209, 250, 223)",
+    "bgColor": "rgba(22, 163, 74, 0.16)",
+    "effBg": "rgb(19,49,48)",
+    "border": "rgb(22, 163, 74)",
+    "ratio": 12.26,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 71,
+     "h": 22
+    }
+   },
+   "cardAdd": {
+    "label": "زر أضف للسلة",
+    "text": "أضف للسلة",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+    "geom": {
+     "w": 151,
+     "h": 44
+    }
+   },
+   "cardDetails": {
+    "label": "زر التفاصيل",
+    "text": "عرض التفاصيل",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 6.73,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 151,
+     "h": 44
+    }
+   },
+   "cardMeta": {
+    "label": "ميتا البطاقة",
+    "text": "علامة تجريبية ب",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 80,
+     "h": 20
+    }
+   },
+   "cardPrice": {
+    "label": "السعر",
+    "text": "350.00 $",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(241, 245, 249)",
+    "ratio": 15.75,
+    "fontSize": "17px",
+    "fontWeight": "700",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 62,
+     "h": 27.19
+    }
+   },
+   "cardPriceWas": {
+    "label": "السعر القديم",
+    "text": "600.00 $",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 3.62,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 54,
+     "h": 21.59
+    }
+   },
+   "taxo": null,
+   "taxoName": null,
+   "taxoCount": null,
+   "toggle": {
+    "label": "زر الفلاتر",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 366,
+     "h": 44
+    }
+   },
+   "sheet": {
+    "label": "اللوحة",
+    "text": "الفلاتر والترتيب✕بحثالتصنيفكل ",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 11.62,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "20px",
+    "shadow": "rgba(15, 23, 42, 0.22) 0px -12px 34px 0px",
+    "geom": {
+     "w": 390,
+     "h": 295.39
+    }
+   },
+   "sheetHead": {
+    "label": "رأس اللوحة",
+    "text": "الفلاتر والترتيب✕",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(203, 213, 225)",
+    "ratio": 11.62,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 390,
+     "h": 73
+    }
+   },
+   "sheetFoot": {
+    "label": "قدم اللوحة",
+    "text": "تفريغ الفلاترعرض النتائج",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 11.62,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 390,
+     "h": 63
+    }
+   },
+   "sheetDone": {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+    "geom": {
+     "w": 173,
+     "h": 46
+    }
+   },
+   "sheetClear": {
+    "label": "زر تفريغ الفلاتر",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 6.73,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 175,
+     "h": 46
+    }
+   },
+   "scrim": {
+    "label": "الطبقة الخلفية",
+    "text": "",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgba(2, 6, 16, 0.7)",
+    "effBg": "rgb(4,10,21)",
+    "border": "rgb(203, 213, 225)",
+    "ratio": 13.37,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 390,
+     "h": 900
+    }
+   },
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 130,
+   "toolbarRows": 2,
+   "toolbarCols": "minmax(0px, 1fr)",
+   "card": {
+    "w": 177,
+    "h": 504
+   },
+   "taxo": null,
+   "badge": {
+    "w": 55,
+    "h": 22
+   },
+   "add": {
+    "w": 151,
+    "h": 44
+   },
+   "check": {
+    "w": 0,
+    "h": 0
+   },
+   "controlH": [
+    44,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "state": null,
+   "gridCols": "177px 177px",
+   "cards": 2
+  },
+  "focus": {
+   "tag": "A",
+   "cls": "",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "outlineOffset": "2px"
+  }
+ },
+ "products_390_dark_checked": {
+  "error": "not-interactable"
+ },
+ "products_769_light": {
+  "theme": "light",
+  "vw": 769,
+  "overflow": 0,
+  "pageBg": "rgb(248, 250, 252)",
+  "items": {
+   "toolbar": {
+    "label": "الشريط",
+    "text": "بحثالتصنيفكل التصنيفاتتصنيف تج",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 737,
+     "h": 262
+    }
+   },
+   "toolbarLabel": {
+    "label": "تسمية الحقل",
+    "text": "بحث",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "500",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 226.33,
+     "h": 20
+    }
+   },
+   "count": {
+    "label": "عدّاد النتائج",
+    "text": "2 منتج",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 36,
+     "h": 21.59
+    }
+   },
+   "input": {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 226.33,
+     "h": 44
+    }
+   },
+   "select": {
+    "label": "قائمة التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجه",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 226.33,
+     "h": 44
+    }
+   },
+   "priceMin": {
+    "label": "حقل السعر",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 99.67,
+     "h": 44
+    }
+   },
+   "check": {
+    "label": "شريحة اختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "10px",
+    "shadow": "none",
+    "geom": {
+     "w": 226.33,
+     "h": 44
+    },
+    "checked": false,
+    "accent": "rgb(31, 95, 191)"
+   },
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.55,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 44,
+     "h": 21.59
+    }
+   },
+   "sectionLink": null,
+   "cardName": {
+    "label": "اسم المنتج",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 170,
+     "h": 29
+    }
+   },
+   "cardBadge": {
+    "label": "شارة الخصم",
+    "text": "-16.67%",
+    "color": "rgb(153, 27, 27)",
+    "bgColor": "rgb(254, 242, 242)",
+    "effBg": "rgb(254,242,242)",
+    "border": "rgb(254, 226, 226)",
+    "ratio": 7.6,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 55,
+     "h": 22
+    }
+   },
+   "cardFootBadge": {
+    "label": "شارة التوفير",
+    "text": "وفّر 16.67%",
+    "color": "rgb(22, 101, 52)",
+    "bgColor": "rgb(236, 253, 243)",
+    "effBg": "rgb(236,253,243)",
+    "border": "rgb(209, 250, 223)",
+    "ratio": 6.76,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 71,
+     "h": 22
+    }
+   },
+   "cardAdd": {
+    "label": "زر أضف للسلة",
+    "text": "أضف للسلة",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+    "geom": {
+     "w": 92.33,
+     "h": 44
+    }
+   },
+   "cardDetails": {
+    "label": "زر التفاصيل",
+    "text": "عرض التفاصيل",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 4.76,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 111.33,
+     "h": 44
+    }
+   },
+   "cardMeta": {
+    "label": "ميتا البطاقة",
+    "text": "علامة تجريبية ب",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 80,
+     "h": 20
+    }
+   },
+   "cardPrice": {
+    "label": "السعر",
+    "text": "350.00 $",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 68,
+     "h": 28.8
+    }
+   },
+   "cardPriceWas": {
+    "label": "السعر القديم",
+    "text": "600.00 $",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 2.56,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 54,
+     "h": 21.59
+    }
+   },
+   "taxo": null,
+   "taxoName": null,
+   "taxoCount": null,
+   "toggle": {
+    "label": "زر الفلاتر",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheet": {
+    "label": "اللوحة",
+    "text": "الفلاتر والترتيب✕بحثالتصنيفكل ",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetHead": {
+    "label": "رأس اللوحة",
+    "text": "الفلاتر والترتيب✕",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetFoot": {
+    "label": "قدم اللوحة",
+    "text": "تفريغ الفلاترعرض النتائج",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetDone": {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetClear": {
+    "label": "زر تفريغ الفلاتر",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "scrim": {
+    "label": "الطبقة الخلفية",
+    "text": "",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 262,
+   "toolbarRows": 3,
+   "toolbarCols": "226.328px 226.328px 226.328px",
+   "card": {
+    "w": 238,
+    "h": 491
+   },
+   "taxo": null,
+   "badge": {
+    "w": 55,
+    "h": 22
+   },
+   "add": {
+    "w": 92,
+    "h": 44
+   },
+   "check": {
+    "w": 226,
+    "h": 44
+   },
+   "controlH": [
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    18,
+    18
+   ],
+   "state": null,
+   "gridCols": "237.656px 237.672px 237.672px",
+   "cards": 2
+  },
+  "focus": {
+   "tag": "A",
+   "cls": "",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "outlineOffset": "2px"
+  }
+ },
+ "products_769_light_checked": {
+  "checked": false,
+  "bg": "rgb(255, 255, 255)",
+  "color": "rgb(51, 65, 85)",
+  "border": "rgb(230, 236, 243)"
+ },
+ "products_1024_light": {
+  "theme": "light",
+  "vw": 1024,
+  "overflow": 0,
+  "pageBg": "rgb(248, 250, 252)",
+  "items": {
+   "toolbar": {
+    "label": "الشريط",
+    "text": "بحثالتصنيفكل التصنيفاتتصنيف تج",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 992,
+     "h": 182
+    }
+   },
+   "toolbarLabel": {
+    "label": "تسمية الحقل",
+    "text": "بحث",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "500",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 345.73,
+     "h": 20
+    }
+   },
+   "count": {
+    "label": "عدّاد النتائج",
+    "text": "2 منتج",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 36,
+     "h": 21.59
+    }
+   },
+   "input": {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 345.73,
+     "h": 44
+    }
+   },
+   "select": {
+    "label": "قائمة التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجه",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 192.09,
+     "h": 44
+    }
+   },
+   "priceMin": {
+    "label": "حقل السعر",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 159.38,
+     "h": 44
+    }
+   },
+   "check": {
+    "label": "شريحة اختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "10px",
+    "shadow": "none",
+    "geom": {
+     "w": 192.09,
+     "h": 44
+    },
+    "checked": false,
+    "accent": "rgb(31, 95, 191)"
+   },
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.55,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 44,
+     "h": 21.59
+    }
+   },
+   "sectionLink": null,
+   "cardName": {
+    "label": "اسم المنتج",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 170,
+     "h": 29
+    }
+   },
+   "cardBadge": {
+    "label": "شارة الخصم",
+    "text": "-16.67%",
+    "color": "rgb(153, 27, 27)",
+    "bgColor": "rgb(254, 242, 242)",
+    "effBg": "rgb(254,242,242)",
+    "border": "rgb(254, 226, 226)",
+    "ratio": 7.6,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 55,
+     "h": 22
+    }
+   },
+   "cardFootBadge": {
+    "label": "شارة التوفير",
+    "text": "وفّر 16.67%",
+    "color": "rgb(22, 101, 52)",
+    "bgColor": "rgb(236, 253, 243)",
+    "effBg": "rgb(236,253,243)",
+    "border": "rgb(209, 250, 223)",
+    "ratio": 6.76,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 71,
+     "h": 22
+    }
+   },
+   "cardAdd": {
+    "label": "زر أضف للسلة",
+    "text": "أضف للسلة",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+    "geom": {
+     "w": 133.5,
+     "h": 44
+    }
+   },
+   "cardDetails": {
+    "label": "زر التفاصيل",
+    "text": "عرض التفاصيل",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 4.76,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 152.5,
+     "h": 44
+    }
+   },
+   "cardMeta": {
+    "label": "ميتا البطاقة",
+    "text": "علامة تجريبية ب",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 80,
+     "h": 20
+    }
+   },
+   "cardPrice": {
+    "label": "السعر",
+    "text": "350.00 $",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 68,
+     "h": 28.8
+    }
+   },
+   "cardPriceWas": {
+    "label": "السعر القديم",
+    "text": "600.00 $",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 2.56,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 54,
+     "h": 21.59
+    }
+   },
+   "taxo": null,
+   "taxoName": null,
+   "taxoCount": null,
+   "toggle": {
+    "label": "زر الفلاتر",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheet": {
+    "label": "اللوحة",
+    "text": "الفلاتر والترتيب✕بحثالتصنيفكل ",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetHead": {
+    "label": "رأس اللوحة",
+    "text": "الفلاتر والترتيب✕",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetFoot": {
+    "label": "قدم اللوحة",
+    "text": "تفريغ الفلاترعرض النتائج",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetDone": {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetClear": {
+    "label": "زر تفريغ الفلاتر",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "scrim": {
+    "label": "الطبقة الخلفية",
+    "text": "",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 182,
+   "toolbarRows": 2,
+   "toolbarCols": "345.734px 192.094px 192.078px 192.078px",
+   "card": {
+    "w": 320,
+    "h": 552
+   },
+   "taxo": null,
+   "badge": {
+    "w": 55,
+    "h": 22
+   },
+   "add": {
+    "w": 134,
+    "h": 44
+   },
+   "check": {
+    "w": 192,
+    "h": 44
+   },
+   "controlH": [
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    18,
+    18
+   ],
+   "state": null,
+   "gridCols": "320px 320px 320px",
+   "cards": 2
+  },
+  "focus": {
+   "tag": "A",
+   "cls": "",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "outlineOffset": "2px"
+  }
+ },
+ "products_1024_light_checked": {
+  "checked": false,
+  "bg": "rgb(255, 255, 255)",
+  "color": "rgb(51, 65, 85)",
+  "border": "rgb(230, 236, 243)"
+ },
+ "products_1366_light": {
+  "theme": "light",
+  "vw": 1366,
+  "overflow": 0,
+  "pageBg": "rgb(248, 250, 252)",
+  "items": {
+   "toolbar": {
+    "label": "الشريط",
+    "text": "بحثالتصنيفكل التصنيفاتتصنيف تج",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 1168,
+     "h": 182
+    }
+   },
+   "toolbarLabel": {
+    "label": "تسمية الحقل",
+    "text": "بحث",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "500",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 411.73,
+     "h": 20
+    }
+   },
+   "count": {
+    "label": "عدّاد النتائج",
+    "text": "2 منتج",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 36,
+     "h": 21.59
+    }
+   },
+   "input": {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 411.73,
+     "h": 44
+    }
+   },
+   "select": {
+    "label": "قائمة التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجه",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 228.75,
+     "h": 44
+    }
+   },
+   "priceMin": {
+    "label": "حقل السعر",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 192.38,
+     "h": 44
+    }
+   },
+   "check": {
+    "label": "شريحة اختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "10px",
+    "shadow": "none",
+    "geom": {
+     "w": 228.75,
+     "h": 44
+    },
+    "checked": false,
+    "accent": "rgb(31, 95, 191)"
+   },
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.55,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 44,
+     "h": 21.59
+    }
+   },
+   "sectionLink": null,
+   "cardName": {
+    "label": "اسم المنتج",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 170,
+     "h": 29
+    }
+   },
+   "cardBadge": {
+    "label": "شارة الخصم",
+    "text": "-16.67%",
+    "color": "rgb(153, 27, 27)",
+    "bgColor": "rgb(254, 242, 242)",
+    "effBg": "rgb(254,242,242)",
+    "border": "rgb(254, 226, 226)",
+    "ratio": 7.6,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 55,
+     "h": 22
+    }
+   },
+   "cardFootBadge": {
+    "label": "شارة التوفير",
+    "text": "وفّر 16.67%",
+    "color": "rgb(22, 101, 52)",
+    "bgColor": "rgb(236, 253, 243)",
+    "effBg": "rgb(236,253,243)",
+    "border": "rgb(209, 250, 223)",
+    "ratio": 6.76,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 71,
+     "h": 22
+    }
+   },
+   "cardAdd": {
+    "label": "زر أضف للسلة",
+    "text": "أضف للسلة",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+    "geom": {
+     "w": 113.5,
+     "h": 44
+    }
+   },
+   "cardDetails": {
+    "label": "زر التفاصيل",
+    "text": "عرض التفاصيل",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 4.76,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 132.5,
+     "h": 44
+    }
+   },
+   "cardMeta": {
+    "label": "ميتا البطاقة",
+    "text": "علامة تجريبية ب",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 80,
+     "h": 20
+    }
+   },
+   "cardPrice": {
+    "label": "السعر",
+    "text": "350.00 $",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 68,
+     "h": 28.8
+    }
+   },
+   "cardPriceWas": {
+    "label": "السعر القديم",
+    "text": "600.00 $",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 2.56,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 54,
+     "h": 21.59
+    }
+   },
+   "taxo": null,
+   "taxoName": null,
+   "taxoCount": null,
+   "toggle": {
+    "label": "زر الفلاتر",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheet": {
+    "label": "اللوحة",
+    "text": "الفلاتر والترتيب✕بحثالتصنيفكل ",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetHead": {
+    "label": "رأس اللوحة",
+    "text": "الفلاتر والترتيب✕",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetFoot": {
+    "label": "قدم اللوحة",
+    "text": "تفريغ الفلاترعرض النتائج",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetDone": {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetClear": {
+    "label": "زر تفريغ الفلاتر",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "scrim": {
+    "label": "الطبقة الخلفية",
+    "text": "",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 182,
+   "toolbarRows": 2,
+   "toolbarCols": "411.734px 228.75px 228.75px 228.75px",
+   "card": {
+    "w": 280,
+    "h": 512
+   },
+   "taxo": null,
+   "badge": {
+    "w": 55,
+    "h": 22
+   },
+   "add": {
+    "w": 114,
+    "h": 44
+   },
+   "check": {
+    "w": 229,
+    "h": 44
+   },
+   "controlH": [
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    18,
+    18
+   ],
+   "state": null,
+   "gridCols": "280px 280px 280px 280px",
+   "cards": 2
+  },
+  "focus": {
+   "tag": "A",
+   "cls": "",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "outlineOffset": "2px"
+  }
+ },
+ "products_1366_light_checked": {
+  "checked": false,
+  "bg": "rgb(255, 255, 255)",
+  "color": "rgb(51, 65, 85)",
+  "border": "rgb(230, 236, 243)"
+ },
+ "products_1366_dark": {
+  "theme": "dark",
+  "vw": 1366,
+  "overflow": 0,
+  "pageBg": "rgb(10, 18, 32)",
+  "items": {
+   "toolbar": {
+    "label": "الشريط",
+    "text": "بحثالتصنيفكل التصنيفاتتصنيف تج",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 11.62,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 1168,
+     "h": 182
+    }
+   },
+   "toolbarLabel": {
+    "label": "تسمية الحقل",
+    "text": "بحث",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "12.5px",
+    "fontWeight": "500",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 411.73,
+     "h": 20
+    }
+   },
+   "count": {
+    "label": "عدّاد النتائج",
+    "text": "2 منتج",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 36,
+     "h": 21.59
+    }
+   },
+   "input": {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 411.73,
+     "h": 44
+    }
+   },
+   "select": {
+    "label": "قائمة التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجه",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 228.75,
+     "h": 44
+    }
+   },
+   "priceMin": {
+    "label": "حقل السعر",
+    "text": "",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 192.38,
+     "h": 44
+    }
+   },
+   "check": {
+    "label": "شريحة اختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 11.62,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "10px",
+    "shadow": "none",
+    "geom": {
+     "w": 228.75,
+     "h": 44
+    },
+    "checked": false,
+    "accent": "rgb(31, 95, 191)"
+   },
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 7.31,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 44,
+     "h": 21.59
+    }
+   },
+   "sectionLink": null,
+   "cardName": {
+    "label": "اسم المنتج",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(241, 245, 249)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 170,
+     "h": 29
+    }
+   },
+   "cardBadge": {
+    "label": "شارة الخصم",
+    "text": "-16.67%",
+    "color": "rgb(254, 226, 226)",
+    "bgColor": "rgba(220, 38, 38, 0.16)",
+    "effBg": "rgb(48,26,38)",
+    "border": "rgb(220, 38, 38)",
+    "ratio": 13.2,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 55,
+     "h": 22
+    }
+   },
+   "cardFootBadge": {
+    "label": "شارة التوفير",
+    "text": "وفّر 16.67%",
+    "color": "rgb(209, 250, 223)",
+    "bgColor": "rgba(22, 163, 74, 0.16)",
+    "effBg": "rgb(19,49,48)",
+    "border": "rgb(22, 163, 74)",
+    "ratio": 12.26,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 71,
+     "h": 22
+    }
+   },
+   "cardAdd": {
+    "label": "زر أضف للسلة",
+    "text": "أضف للسلة",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+    "geom": {
+     "w": 113.5,
+     "h": 44
+    }
+   },
+   "cardDetails": {
+    "label": "زر التفاصيل",
+    "text": "عرض التفاصيل",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 6.73,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 132.5,
+     "h": 44
+    }
+   },
+   "cardMeta": {
+    "label": "ميتا البطاقة",
+    "text": "علامة تجريبية ب",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 80,
+     "h": 20
+    }
+   },
+   "cardPrice": {
+    "label": "السعر",
+    "text": "350.00 $",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(241, 245, 249)",
+    "ratio": 15.75,
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 68,
+     "h": 28.8
+    }
+   },
+   "cardPriceWas": {
+    "label": "السعر القديم",
+    "text": "600.00 $",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 3.62,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 54,
+     "h": 21.59
+    }
+   },
+   "taxo": null,
+   "taxoName": null,
+   "taxoCount": null,
+   "toggle": {
+    "label": "زر الفلاتر",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheet": {
+    "label": "اللوحة",
+    "text": "الفلاتر والترتيب✕بحثالتصنيفكل ",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(203, 213, 225)",
+    "ratio": 12.63,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetHead": {
+    "label": "رأس اللوحة",
+    "text": "الفلاتر والترتيب✕",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(203, 213, 225)",
+    "ratio": 12.63,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetFoot": {
+    "label": "قدم اللوحة",
+    "text": "تفريغ الفلاترعرض النتائج",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(203, 213, 225)",
+    "ratio": 12.63,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetDone": {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetClear": {
+    "label": "زر تفريغ الفلاتر",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 7.31,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "scrim": {
+    "label": "الطبقة الخلفية",
+    "text": "",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(203, 213, 225)",
+    "ratio": 12.63,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 182,
+   "toolbarRows": 2,
+   "toolbarCols": "411.734px 228.75px 228.75px 228.75px",
+   "card": {
+    "w": 280,
+    "h": 512
+   },
+   "taxo": null,
+   "badge": {
+    "w": 55,
+    "h": 22
+   },
+   "add": {
+    "w": 114,
+    "h": 44
+   },
+   "check": {
+    "w": 229,
+    "h": 44
+   },
+   "controlH": [
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    18,
+    18
+   ],
+   "state": null,
+   "gridCols": "280px 280px 280px 280px",
+   "cards": 2
+  },
+  "focus": {
+   "tag": "A",
+   "cls": "",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "outlineOffset": "2px"
+  }
+ },
+ "products_1366_dark_checked": {
+  "checked": false,
+  "bg": "rgb(18, 27, 43)",
+  "color": "rgb(203, 213, 225)",
+  "border": "rgb(30, 42, 61)"
+ },
+ "products_1920_light": {
+  "theme": "light",
+  "vw": 1920,
+  "overflow": 0,
+  "pageBg": "rgb(248, 250, 252)",
+  "items": {
+   "toolbar": {
+    "label": "الشريط",
+    "text": "بحثالتصنيفكل التصنيفاتتصنيف تج",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 1168,
+     "h": 182
+    }
+   },
+   "toolbarLabel": {
+    "label": "تسمية الحقل",
+    "text": "بحث",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "500",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 411.73,
+     "h": 20
+    }
+   },
+   "count": {
+    "label": "عدّاد النتائج",
+    "text": "2 منتج",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 36,
+     "h": 21.59
+    }
+   },
+   "input": {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 411.73,
+     "h": 44
+    }
+   },
+   "select": {
+    "label": "قائمة التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجه",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 228.75,
+     "h": 44
+    }
+   },
+   "priceMin": {
+    "label": "حقل السعر",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 192.38,
+     "h": 44
+    }
+   },
+   "check": {
+    "label": "شريحة اختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "10px",
+    "shadow": "none",
+    "geom": {
+     "w": 228.75,
+     "h": 44
+    },
+    "checked": false,
+    "accent": "rgb(31, 95, 191)"
+   },
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.55,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 44,
+     "h": 21.59
+    }
+   },
+   "sectionLink": null,
+   "cardName": {
+    "label": "اسم المنتج",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 170,
+     "h": 29
+    }
+   },
+   "cardBadge": {
+    "label": "شارة الخصم",
+    "text": "-16.67%",
+    "color": "rgb(153, 27, 27)",
+    "bgColor": "rgb(254, 242, 242)",
+    "effBg": "rgb(254,242,242)",
+    "border": "rgb(254, 226, 226)",
+    "ratio": 7.6,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 55,
+     "h": 22
+    }
+   },
+   "cardFootBadge": {
+    "label": "شارة التوفير",
+    "text": "وفّر 16.67%",
+    "color": "rgb(22, 101, 52)",
+    "bgColor": "rgb(236, 253, 243)",
+    "effBg": "rgb(236,253,243)",
+    "border": "rgb(209, 250, 223)",
+    "ratio": 6.76,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 71,
+     "h": 22
+    }
+   },
+   "cardAdd": {
+    "label": "زر أضف للسلة",
+    "text": "أضف للسلة",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+    "geom": {
+     "w": 113.5,
+     "h": 44
+    }
+   },
+   "cardDetails": {
+    "label": "زر التفاصيل",
+    "text": "عرض التفاصيل",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 4.76,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 132.5,
+     "h": 44
+    }
+   },
+   "cardMeta": {
+    "label": "ميتا البطاقة",
+    "text": "علامة تجريبية ب",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 80,
+     "h": 20
+    }
+   },
+   "cardPrice": {
+    "label": "السعر",
+    "text": "350.00 $",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 68,
+     "h": 28.8
+    }
+   },
+   "cardPriceWas": {
+    "label": "السعر القديم",
+    "text": "600.00 $",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 2.56,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 54,
+     "h": 21.59
+    }
+   },
+   "taxo": null,
+   "taxoName": null,
+   "taxoCount": null,
+   "toggle": {
+    "label": "زر الفلاتر",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheet": {
+    "label": "اللوحة",
+    "text": "الفلاتر والترتيب✕بحثالتصنيفكل ",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetHead": {
+    "label": "رأس اللوحة",
+    "text": "الفلاتر والترتيب✕",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetFoot": {
+    "label": "قدم اللوحة",
+    "text": "تفريغ الفلاترعرض النتائج",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetDone": {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetClear": {
+    "label": "زر تفريغ الفلاتر",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "scrim": {
+    "label": "الطبقة الخلفية",
+    "text": "",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 182,
+   "toolbarRows": 2,
+   "toolbarCols": "411.734px 228.75px 228.75px 228.75px",
+   "card": {
+    "w": 280,
+    "h": 512
+   },
+   "taxo": null,
+   "badge": {
+    "w": 55,
+    "h": 22
+   },
+   "add": {
+    "w": 114,
+    "h": 44
+   },
+   "check": {
+    "w": 229,
+    "h": 44
+   },
+   "controlH": [
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    18,
+    18
+   ],
+   "state": null,
+   "gridCols": "280px 280px 280px 280px",
+   "cards": 2
+  },
+  "focus": {
+   "tag": "A",
+   "cls": "",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "outlineOffset": "2px"
+  }
+ },
+ "products_1920_light_checked": {
+  "checked": false,
+  "bg": "rgb(255, 255, 255)",
+  "color": "rgb(51, 65, 85)",
+  "border": "rgb(230, 236, 243)"
+ },
+ "sheet_390_light": {
+  "theme": "light",
+  "vw": 390,
+  "overflow": 0,
+  "pageBg": "rgb(248, 250, 252)",
+  "items": {
+   "toolbar": {
+    "label": "الشريط",
+    "text": "بحثالتصنيفكل التصنيفاتتصنيف تج",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 390,
+     "h": 615.17
+    }
+   },
+   "toolbarLabel": {
+    "label": "تسمية الحقل",
+    "text": "بحث",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "13px",
+    "fontWeight": "500",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 358,
+     "h": 20.8
+    }
+   },
+   "count": {
+    "label": "عدّاد النتائج",
+    "text": "2 منتج",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 36,
+     "h": 21.59
+    }
+   },
+   "input": {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 358,
+     "h": 44
+    }
+   },
+   "select": {
+    "label": "قائمة التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجه",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 358,
+     "h": 44
+    }
+   },
+   "priceMin": {
+    "label": "حقل السعر",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 165.5,
+     "h": 44
+    }
+   },
+   "check": {
+    "label": "شريحة اختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "10px",
+    "shadow": "none",
+    "geom": {
+     "w": 358,
+     "h": 44
+    },
+    "checked": false,
+    "accent": "rgb(31, 95, 191)"
+   },
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 42,
+     "h": 20.8
+    }
+   },
+   "sectionLink": null,
+   "cardName": {
+    "label": "اسم المنتج",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "14.5px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 150,
+     "h": 48.02
+    }
+   },
+   "cardBadge": {
+    "label": "شارة الخصم",
+    "text": "-16.67%",
+    "color": "rgb(153, 27, 27)",
+    "bgColor": "rgb(254, 242, 242)",
+    "effBg": "rgb(254,242,242)",
+    "border": "rgb(254, 226, 226)",
+    "ratio": 7.6,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 55,
+     "h": 22
+    }
+   },
+   "cardFootBadge": {
+    "label": "شارة التوفير",
+    "text": "وفّر 16.67%",
+    "color": "rgb(22, 101, 52)",
+    "bgColor": "rgb(236, 253, 243)",
+    "effBg": "rgb(236,253,243)",
+    "border": "rgb(209, 250, 223)",
+    "ratio": 6.76,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 71,
+     "h": 22
+    }
+   },
+   "cardAdd": {
+    "label": "زر أضف للسلة",
+    "text": "أضف للسلة",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+    "geom": {
+     "w": 151,
+     "h": 44
+    }
+   },
+   "cardDetails": {
+    "label": "زر التفاصيل",
+    "text": "عرض التفاصيل",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 4.76,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 151,
+     "h": 44
+    }
+   },
+   "cardMeta": {
+    "label": "ميتا البطاقة",
+    "text": "علامة تجريبية ب",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 80,
+     "h": 20
+    }
+   },
+   "cardPrice": {
+    "label": "السعر",
+    "text": "350.00 $",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "17px",
+    "fontWeight": "700",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 62,
+     "h": 27.19
+    }
+   },
+   "cardPriceWas": {
+    "label": "السعر القديم",
+    "text": "600.00 $",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 2.56,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 54,
+     "h": 21.59
+    }
+   },
+   "taxo": null,
+   "taxoName": null,
+   "taxoCount": null,
+   "toggle": {
+    "label": "زر الفلاتر",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 366,
+     "h": 44
+    }
+   },
+   "sheet": {
+    "label": "اللوحة",
+    "text": "الفلاتر والترتيب✕بحثالتصنيفكل ",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "20px",
+    "shadow": "rgba(15, 23, 42, 0.22) 0px -12px 34px 0px",
+    "geom": {
+     "w": 390,
+     "h": 692.08
+    }
+   },
+   "sheetHead": {
+    "label": "رأس اللوحة",
+    "text": "الفلاتر والترتيب✕",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 390,
+     "h": 73
+    }
+   },
+   "sheetFoot": {
+    "label": "قدم اللوحة",
+    "text": "تفريغ الفلاترعرض النتائج",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 390,
+     "h": 63
+    }
+   },
+   "sheetDone": {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+    "geom": {
+     "w": 173,
+     "h": 46
+    }
+   },
+   "sheetClear": {
+    "label": "زر تفريغ الفلاتر",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 4.76,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 175,
+     "h": 46
+    }
+   },
+   "scrim": {
+    "label": "الطبقة الخلفية",
+    "text": "",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(6, 13, 26, 0.55)",
+    "effBg": "rgb(115,120,128)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 2.32,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 390,
+     "h": 844
+    }
+   },
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 615,
+   "toolbarRows": 7,
+   "toolbarCols": "minmax(0px, 1fr)",
+   "card": {
+    "w": 177,
+    "h": 504
+   },
+   "taxo": null,
+   "badge": {
+    "w": 55,
+    "h": 22
+   },
+   "add": {
+    "w": 151,
+    "h": 44
+   },
+   "check": {
+    "w": 358,
+    "h": 44
+   },
+   "controlH": [
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    18,
+    18
+   ],
+   "state": null,
+   "gridCols": "177px 177px",
+   "cards": 2
+  },
+  "focus": null
+ },
+ "sheet_390_dark": {
+  "theme": "dark",
+  "vw": 390,
+  "overflow": 0,
+  "pageBg": "rgb(10, 18, 32)",
+  "items": {
+   "toolbar": {
+    "label": "الشريط",
+    "text": "بحثالتصنيفكل التصنيفاتتصنيف تج",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(203, 213, 225)",
+    "ratio": 11.62,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 390,
+     "h": 615.17
+    }
+   },
+   "toolbarLabel": {
+    "label": "تسمية الحقل",
+    "text": "بحث",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "13px",
+    "fontWeight": "500",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 358,
+     "h": 20.8
+    }
+   },
+   "count": {
+    "label": "عدّاد النتائج",
+    "text": "2 منتج",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 36,
+     "h": 21.59
+    }
+   },
+   "input": {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 358,
+     "h": 44
+    }
+   },
+   "select": {
+    "label": "قائمة التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجه",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 358,
+     "h": 44
+    }
+   },
+   "priceMin": {
+    "label": "حقل السعر",
+    "text": "",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 165.5,
+     "h": 44
+    }
+   },
+   "check": {
+    "label": "شريحة اختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 11.62,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "10px",
+    "shadow": "none",
+    "geom": {
+     "w": 358,
+     "h": 44
+    },
+    "checked": false,
+    "accent": "rgb(31, 95, 191)"
+   },
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 7.31,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 42,
+     "h": 20.8
+    }
+   },
+   "sectionLink": null,
+   "cardName": {
+    "label": "اسم المنتج",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(241, 245, 249)",
+    "ratio": 15.75,
+    "fontSize": "14.5px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 150,
+     "h": 48.02
+    }
+   },
+   "cardBadge": {
+    "label": "شارة الخصم",
+    "text": "-16.67%",
+    "color": "rgb(254, 226, 226)",
+    "bgColor": "rgba(220, 38, 38, 0.16)",
+    "effBg": "rgb(48,26,38)",
+    "border": "rgb(220, 38, 38)",
+    "ratio": 13.2,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 55,
+     "h": 22
+    }
+   },
+   "cardFootBadge": {
+    "label": "شارة التوفير",
+    "text": "وفّر 16.67%",
+    "color": "rgb(209, 250, 223)",
+    "bgColor": "rgba(22, 163, 74, 0.16)",
+    "effBg": "rgb(19,49,48)",
+    "border": "rgb(22, 163, 74)",
+    "ratio": 12.26,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 71,
+     "h": 22
+    }
+   },
+   "cardAdd": {
+    "label": "زر أضف للسلة",
+    "text": "أضف للسلة",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+    "geom": {
+     "w": 151,
+     "h": 44
+    }
+   },
+   "cardDetails": {
+    "label": "زر التفاصيل",
+    "text": "عرض التفاصيل",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 6.73,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 151,
+     "h": 44
+    }
+   },
+   "cardMeta": {
+    "label": "ميتا البطاقة",
+    "text": "علامة تجريبية ب",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 80,
+     "h": 20
+    }
+   },
+   "cardPrice": {
+    "label": "السعر",
+    "text": "350.00 $",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(241, 245, 249)",
+    "ratio": 15.75,
+    "fontSize": "17px",
+    "fontWeight": "700",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 62,
+     "h": 27.19
+    }
+   },
+   "cardPriceWas": {
+    "label": "السعر القديم",
+    "text": "600.00 $",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 3.62,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 54,
+     "h": 21.59
+    }
+   },
+   "taxo": null,
+   "taxoName": null,
+   "taxoCount": null,
+   "toggle": {
+    "label": "زر الفلاتر",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 366,
+     "h": 44
+    }
+   },
+   "sheet": {
+    "label": "اللوحة",
+    "text": "الفلاتر والترتيب✕بحثالتصنيفكل ",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 11.62,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "20px",
+    "shadow": "rgba(15, 23, 42, 0.22) 0px -12px 34px 0px",
+    "geom": {
+     "w": 390,
+     "h": 692.08
+    }
+   },
+   "sheetHead": {
+    "label": "رأس اللوحة",
+    "text": "الفلاتر والترتيب✕",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(203, 213, 225)",
+    "ratio": 11.62,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 390,
+     "h": 73
+    }
+   },
+   "sheetFoot": {
+    "label": "قدم اللوحة",
+    "text": "تفريغ الفلاترعرض النتائج",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 11.62,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 390,
+     "h": 63
+    }
+   },
+   "sheetDone": {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+    "geom": {
+     "w": 173,
+     "h": 46
+    }
+   },
+   "sheetClear": {
+    "label": "زر تفريغ الفلاتر",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 6.73,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 175,
+     "h": 46
+    }
+   },
+   "scrim": {
+    "label": "الطبقة الخلفية",
+    "text": "",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgba(2, 6, 16, 0.7)",
+    "effBg": "rgb(4,10,21)",
+    "border": "rgb(203, 213, 225)",
+    "ratio": 13.37,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 390,
+     "h": 844
+    }
+   },
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 615,
+   "toolbarRows": 7,
+   "toolbarCols": "minmax(0px, 1fr)",
+   "card": {
+    "w": 177,
+    "h": 504
+   },
+   "taxo": null,
+   "badge": {
+    "w": 55,
+    "h": 22
+   },
+   "add": {
+    "w": 151,
+    "h": 44
+   },
+   "check": {
+    "w": 358,
+    "h": 44
+   },
+   "controlH": [
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    18,
+    18
+   ],
+   "state": null,
+   "gridCols": "177px 177px",
+   "cards": 2
+  },
+  "focus": null
+ },
+ "categories_390_light": {
+  "theme": "light",
+  "vw": 390,
+  "overflow": 0,
+  "pageBg": "rgb(248, 250, 252)",
+  "items": {
+   "toolbar": null,
+   "toolbarLabel": null,
+   "count": null,
+   "input": null,
+   "select": null,
+   "priceMin": null,
+   "check": null,
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 42,
+     "h": 20.8
+    }
+   },
+   "sectionLink": null,
+   "cardName": null,
+   "cardBadge": null,
+   "cardFootBadge": null,
+   "cardAdd": null,
+   "cardDetails": null,
+   "cardMeta": null,
+   "cardPrice": null,
+   "cardPriceWas": null,
+   "taxo": {
+    "label": "بطاقة تصنيف",
+    "text": "تصنيف تجريبي — أجهزة منزلية0 م",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 226.19,
+     "h": 79.19
+    }
+   },
+   "taxoName": {
+    "label": "اسم التصنيف",
+    "text": "تصنيف تجريبي — أجهزة منزلية",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 185,
+     "h": 29
+    }
+   },
+   "taxoCount": {
+    "label": "عدّاد التصنيف",
+    "text": "0 منتج",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 34,
+     "h": 19.19
+    }
+   },
+   "toggle": null,
+   "sheet": null,
+   "sheetHead": null,
+   "sheetFoot": null,
+   "sheetDone": null,
+   "sheetClear": null,
+   "scrim": null,
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 0,
+   "toolbarRows": 0,
+   "toolbarCols": null,
+   "card": null,
+   "taxo": {
+    "w": 226,
+    "h": 79
+   },
+   "badge": null,
+   "add": null,
+   "check": null,
+   "controlH": [],
+   "state": null,
+   "gridCols": null,
+   "cards": 0
+  },
+  "focus": {
+   "outline": "2px solid rgb(31, 95, 191)",
+   "border": "rgb(230, 236, 243)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0)"
+  }
+ },
+ "categories_390_dark": {
+  "theme": "dark",
+  "vw": 390,
+  "overflow": 0,
+  "pageBg": "rgb(10, 18, 32)",
+  "items": {
+   "toolbar": null,
+   "toolbarLabel": null,
+   "count": null,
+   "input": null,
+   "select": null,
+   "priceMin": null,
+   "check": null,
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 7.31,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 42,
+     "h": 20.8
+    }
+   },
+   "sectionLink": null,
+   "cardName": null,
+   "cardBadge": null,
+   "cardFootBadge": null,
+   "cardAdd": null,
+   "cardDetails": null,
+   "cardMeta": null,
+   "cardPrice": null,
+   "cardPriceWas": null,
+   "taxo": {
+    "label": "بطاقة تصنيف",
+    "text": "تصنيف تجريبي — أجهزة منزلية0 م",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 226.19,
+     "h": 79.19
+    }
+   },
+   "taxoName": {
+    "label": "اسم التصنيف",
+    "text": "تصنيف تجريبي — أجهزة منزلية",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(241, 245, 249)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 185,
+     "h": 29
+    }
+   },
+   "taxoCount": {
+    "label": "عدّاد التصنيف",
+    "text": "0 منتج",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 34,
+     "h": 19.19
+    }
+   },
+   "toggle": null,
+   "sheet": null,
+   "sheetHead": null,
+   "sheetFoot": null,
+   "sheetDone": null,
+   "sheetClear": null,
+   "scrim": null,
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 0,
+   "toolbarRows": 0,
+   "toolbarCols": null,
+   "card": null,
+   "taxo": {
+    "w": 226,
+    "h": 79
+   },
+   "badge": null,
+   "add": null,
+   "check": null,
+   "controlH": [],
+   "state": null,
+   "gridCols": null,
+   "cards": 0
+  },
+  "focus": {
+   "outline": "2px solid rgb(31, 95, 191)",
+   "border": "rgb(30, 42, 61)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+  }
+ },
+ "categories_1366_light": {
+  "theme": "light",
+  "vw": 1366,
+  "overflow": 0,
+  "pageBg": "rgb(248, 250, 252)",
+  "items": {
+   "toolbar": null,
+   "toolbarLabel": null,
+   "count": null,
+   "input": null,
+   "select": null,
+   "priceMin": null,
+   "check": null,
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.55,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 44,
+     "h": 21.59
+    }
+   },
+   "sectionLink": null,
+   "cardName": null,
+   "cardBadge": null,
+   "cardFootBadge": null,
+   "cardAdd": null,
+   "cardDetails": null,
+   "cardMeta": null,
+   "cardPrice": null,
+   "cardPriceWas": null,
+   "taxo": {
+    "label": "بطاقة تصنيف",
+    "text": "تصنيف تجريبي — أجهزة منزلية0 م",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 184.66,
+     "h": 82
+    }
+   },
+   "taxoName": {
+    "label": "اسم التصنيف",
+    "text": "تصنيف تجريبي — أجهزة منزلية",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 96,
+     "h": 53
+    }
+   },
+   "taxoCount": {
+    "label": "عدّاد التصنيف",
+    "text": "0 منتج",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 34,
+     "h": 20
+    }
+   },
+   "toggle": null,
+   "sheet": null,
+   "sheetHead": null,
+   "sheetFoot": null,
+   "sheetDone": null,
+   "sheetClear": null,
+   "scrim": null,
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 0,
+   "toolbarRows": 0,
+   "toolbarCols": null,
+   "card": null,
+   "taxo": {
+    "w": 185,
+    "h": 82
+   },
+   "badge": null,
+   "add": null,
+   "check": null,
+   "controlH": [],
+   "state": null,
+   "gridCols": null,
+   "cards": 0
+  },
+  "focus": {
+   "outline": "2px solid rgb(31, 95, 191)",
+   "border": "rgb(230, 236, 243)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0)"
+  }
+ },
+ "categories_1366_dark": {
+  "theme": "dark",
+  "vw": 1366,
+  "overflow": 0,
+  "pageBg": "rgb(10, 18, 32)",
+  "items": {
+   "toolbar": null,
+   "toolbarLabel": null,
+   "count": null,
+   "input": null,
+   "select": null,
+   "priceMin": null,
+   "check": null,
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 7.31,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 44,
+     "h": 21.59
+    }
+   },
+   "sectionLink": null,
+   "cardName": null,
+   "cardBadge": null,
+   "cardFootBadge": null,
+   "cardAdd": null,
+   "cardDetails": null,
+   "cardMeta": null,
+   "cardPrice": null,
+   "cardPriceWas": null,
+   "taxo": {
+    "label": "بطاقة تصنيف",
+    "text": "تصنيف تجريبي — أجهزة منزلية0 م",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 184.66,
+     "h": 82
+    }
+   },
+   "taxoName": {
+    "label": "اسم التصنيف",
+    "text": "تصنيف تجريبي — أجهزة منزلية",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(241, 245, 249)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 96,
+     "h": 53
+    }
+   },
+   "taxoCount": {
+    "label": "عدّاد التصنيف",
+    "text": "0 منتج",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 34,
+     "h": 20
+    }
+   },
+   "toggle": null,
+   "sheet": null,
+   "sheetHead": null,
+   "sheetFoot": null,
+   "sheetDone": null,
+   "sheetClear": null,
+   "scrim": null,
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 0,
+   "toolbarRows": 0,
+   "toolbarCols": null,
+   "card": null,
+   "taxo": {
+    "w": 185,
+    "h": 82
+   },
+   "badge": null,
+   "add": null,
+   "check": null,
+   "controlH": [],
+   "state": null,
+   "gridCols": null,
+   "cards": 0
+  },
+  "focus": {
+   "outline": "2px solid rgb(31, 95, 191)",
+   "border": "rgb(30, 42, 61)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+  }
+ },
+ "brands_390_light": {
+  "theme": "light",
+  "vw": 390,
+  "overflow": 0,
+  "pageBg": "rgb(248, 250, 252)",
+  "items": {
+   "toolbar": null,
+   "toolbarLabel": null,
+   "count": null,
+   "input": null,
+   "select": null,
+   "priceMin": null,
+   "check": null,
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 42,
+     "h": 20.8
+    }
+   },
+   "sectionLink": null,
+   "cardName": null,
+   "cardBadge": null,
+   "cardFootBadge": null,
+   "cardAdd": null,
+   "cardDetails": null,
+   "cardMeta": null,
+   "cardPrice": null,
+   "cardPriceWas": null,
+   "taxo": {
+    "label": "بطاقة تصنيف",
+    "text": "علامة تجريبية أ1 منتج",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 226.19,
+     "h": 79.19
+    }
+   },
+   "taxoName": {
+    "label": "اسم التصنيف",
+    "text": "علامة تجريبية أ",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 90,
+     "h": 29
+    }
+   },
+   "taxoCount": {
+    "label": "عدّاد التصنيف",
+    "text": "1 منتج",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 34,
+     "h": 19.19
+    }
+   },
+   "toggle": null,
+   "sheet": null,
+   "sheetHead": null,
+   "sheetFoot": null,
+   "sheetDone": null,
+   "sheetClear": null,
+   "scrim": null,
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 0,
+   "toolbarRows": 0,
+   "toolbarCols": null,
+   "card": null,
+   "taxo": {
+    "w": 226,
+    "h": 79
+   },
+   "badge": null,
+   "add": null,
+   "check": null,
+   "controlH": [],
+   "state": null,
+   "gridCols": null,
+   "cards": 0
+  },
+  "focus": {
+   "outline": "2px solid rgb(31, 95, 191)",
+   "border": "rgb(230, 236, 243)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0)"
+  }
+ },
+ "brands_390_dark": {
+  "theme": "dark",
+  "vw": 390,
+  "overflow": 0,
+  "pageBg": "rgb(10, 18, 32)",
+  "items": {
+   "toolbar": null,
+   "toolbarLabel": null,
+   "count": null,
+   "input": null,
+   "select": null,
+   "priceMin": null,
+   "check": null,
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 7.31,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 42,
+     "h": 20.8
+    }
+   },
+   "sectionLink": null,
+   "cardName": null,
+   "cardBadge": null,
+   "cardFootBadge": null,
+   "cardAdd": null,
+   "cardDetails": null,
+   "cardMeta": null,
+   "cardPrice": null,
+   "cardPriceWas": null,
+   "taxo": {
+    "label": "بطاقة تصنيف",
+    "text": "علامة تجريبية أ1 منتج",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 226.19,
+     "h": 79.19
+    }
+   },
+   "taxoName": {
+    "label": "اسم التصنيف",
+    "text": "علامة تجريبية أ",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(241, 245, 249)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 90,
+     "h": 29
+    }
+   },
+   "taxoCount": {
+    "label": "عدّاد التصنيف",
+    "text": "1 منتج",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 34,
+     "h": 19.19
+    }
+   },
+   "toggle": null,
+   "sheet": null,
+   "sheetHead": null,
+   "sheetFoot": null,
+   "sheetDone": null,
+   "sheetClear": null,
+   "scrim": null,
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 0,
+   "toolbarRows": 0,
+   "toolbarCols": null,
+   "card": null,
+   "taxo": {
+    "w": 226,
+    "h": 79
+   },
+   "badge": null,
+   "add": null,
+   "check": null,
+   "controlH": [],
+   "state": null,
+   "gridCols": null,
+   "cards": 0
+  },
+  "focus": {
+   "outline": "2px solid rgb(31, 95, 191)",
+   "border": "rgb(30, 42, 61)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+  }
+ },
+ "brands_1366_light": {
+  "theme": "light",
+  "vw": 1366,
+  "overflow": 0,
+  "pageBg": "rgb(248, 250, 252)",
+  "items": {
+   "toolbar": null,
+   "toolbarLabel": null,
+   "count": null,
+   "input": null,
+   "select": null,
+   "priceMin": null,
+   "check": null,
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.55,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 44,
+     "h": 21.59
+    }
+   },
+   "sectionLink": null,
+   "cardName": null,
+   "cardBadge": null,
+   "cardFootBadge": null,
+   "cardAdd": null,
+   "cardDetails": null,
+   "cardMeta": null,
+   "cardPrice": null,
+   "cardPriceWas": null,
+   "taxo": {
+    "label": "بطاقة تصنيف",
+    "text": "علامة تجريبية أ1 منتج",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 184.66,
+     "h": 64
+    }
+   },
+   "taxoName": {
+    "label": "اسم التصنيف",
+    "text": "علامة تجريبية أ",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 90,
+     "h": 29
+    }
+   },
+   "taxoCount": {
+    "label": "عدّاد التصنيف",
+    "text": "1 منتج",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 34,
+     "h": 20
+    }
+   },
+   "toggle": null,
+   "sheet": null,
+   "sheetHead": null,
+   "sheetFoot": null,
+   "sheetDone": null,
+   "sheetClear": null,
+   "scrim": null,
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 0,
+   "toolbarRows": 0,
+   "toolbarCols": null,
+   "card": null,
+   "taxo": {
+    "w": 185,
+    "h": 64
+   },
+   "badge": null,
+   "add": null,
+   "check": null,
+   "controlH": [],
+   "state": null,
+   "gridCols": null,
+   "cards": 0
+  },
+  "focus": {
+   "outline": "2px solid rgb(31, 95, 191)",
+   "border": "rgb(230, 236, 243)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0)"
+  }
+ },
+ "brands_1366_dark": {
+  "theme": "dark",
+  "vw": 1366,
+  "overflow": 0,
+  "pageBg": "rgb(10, 18, 32)",
+  "items": {
+   "toolbar": null,
+   "toolbarLabel": null,
+   "count": null,
+   "input": null,
+   "select": null,
+   "priceMin": null,
+   "check": null,
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 7.31,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 44,
+     "h": 21.59
+    }
+   },
+   "sectionLink": null,
+   "cardName": null,
+   "cardBadge": null,
+   "cardFootBadge": null,
+   "cardAdd": null,
+   "cardDetails": null,
+   "cardMeta": null,
+   "cardPrice": null,
+   "cardPriceWas": null,
+   "taxo": {
+    "label": "بطاقة تصنيف",
+    "text": "علامة تجريبية أ1 منتج",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 184.66,
+     "h": 64
+    }
+   },
+   "taxoName": {
+    "label": "اسم التصنيف",
+    "text": "علامة تجريبية أ",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(241, 245, 249)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 90,
+     "h": 29
+    }
+   },
+   "taxoCount": {
+    "label": "عدّاد التصنيف",
+    "text": "1 منتج",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 34,
+     "h": 20
+    }
+   },
+   "toggle": null,
+   "sheet": null,
+   "sheetHead": null,
+   "sheetFoot": null,
+   "sheetDone": null,
+   "sheetClear": null,
+   "scrim": null,
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 0,
+   "toolbarRows": 0,
+   "toolbarCols": null,
+   "card": null,
+   "taxo": {
+    "w": 185,
+    "h": 64
+   },
+   "badge": null,
+   "add": null,
+   "check": null,
+   "controlH": [],
+   "state": null,
+   "gridCols": null,
+   "cards": 0
+  },
+  "focus": {
+   "outline": "2px solid rgb(31, 95, 191)",
+   "border": "rgb(30, 42, 61)",
+   "shadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px"
+  }
+ },
+ "state_empty_light": {
+  "theme": "light",
+  "vw": 1366,
+  "overflow": 0,
+  "pageBg": "rgb(248, 250, 252)",
+  "items": {
+   "toolbar": {
+    "label": "الشريط",
+    "text": "بحثالتصنيفكل التصنيفاتتصنيف تج",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 1168,
+     "h": 182
+    }
+   },
+   "toolbarLabel": {
+    "label": "تسمية الحقل",
+    "text": "بحث",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "500",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 411.73,
+     "h": 20
+    }
+   },
+   "count": {
+    "label": "عدّاد النتائج",
+    "text": "0 منتج",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 36,
+     "h": 21.59
+    }
+   },
+   "input": {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 411.73,
+     "h": 44
+    }
+   },
+   "select": {
+    "label": "قائمة التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجه",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 228.75,
+     "h": 44
+    }
+   },
+   "priceMin": {
+    "label": "حقل السعر",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 192.38,
+     "h": 44
+    }
+   },
+   "check": {
+    "label": "شريحة اختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "10px",
+    "shadow": "none",
+    "geom": {
+     "w": 228.75,
+     "h": 44
+    },
+    "checked": false,
+    "accent": "rgb(31, 95, 191)"
+   },
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.55,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 44,
+     "h": 21.59
+    }
+   },
+   "sectionLink": null,
+   "cardName": null,
+   "cardBadge": null,
+   "cardFootBadge": null,
+   "cardAdd": null,
+   "cardDetails": null,
+   "cardMeta": null,
+   "cardPrice": null,
+   "cardPriceWas": null,
+   "taxo": null,
+   "taxoName": null,
+   "taxoCount": null,
+   "toggle": {
+    "label": "زر الفلاتر",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheet": {
+    "label": "اللوحة",
+    "text": "الفلاتر والترتيب✕بحثالتصنيفكل ",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetHead": {
+    "label": "رأس اللوحة",
+    "text": "الفلاتر والترتيب✕",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetFoot": {
+    "label": "قدم اللوحة",
+    "text": "تفريغ الفلاترعرض النتائج",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetDone": {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetClear": {
+    "label": "زر تفريغ الفلاتر",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "scrim": {
+    "label": "الطبقة الخلفية",
+    "text": "",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "state": {
+    "label": "كتلة الحالة",
+    "text": "📦لا توجد منتجات مطابقةلا توجد",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 560,
+     "h": 197.98
+    }
+   },
+   "stateIcon": {
+    "label": "أيقونة الحالة",
+    "text": "📦",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgb(248, 250, 252)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 2.45,
+    "fontSize": "24px",
+    "fontWeight": "400",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 56,
+     "h": 56
+    }
+   },
+   "stateTitle": {
+    "label": "عنوان الحالة",
+    "text": "لا توجد منتجات مطابقة",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "19px",
+    "fontWeight": "700",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 192,
+     "h": 30.39
+    }
+   },
+   "stateText": {
+    "label": "نص الحالة",
+    "text": "لا توجد منتجات معروضة حاليًا ف",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 219,
+     "h": 21.59
+    }
+   },
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 182,
+   "toolbarRows": 2,
+   "toolbarCols": "411.734px 228.75px 228.75px 228.75px",
+   "card": null,
+   "taxo": null,
+   "badge": null,
+   "add": null,
+   "check": {
+    "w": 229,
+    "h": 44
+   },
+   "controlH": [
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    18,
+    18
+   ],
+   "state": {
+    "w": 560,
+    "h": 198
+   },
+   "gridCols": null,
+   "cards": 0
+  },
+  "focus": null
+ },
+ "state_error_light": {
+  "theme": "light",
+  "vw": 1366,
+  "overflow": 0,
+  "pageBg": "rgb(248, 250, 252)",
+  "items": {
+   "toolbar": null,
+   "toolbarLabel": null,
+   "count": null,
+   "input": null,
+   "select": null,
+   "priceMin": null,
+   "check": null,
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.55,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 44,
+     "h": 21.59
+    }
+   },
+   "sectionLink": null,
+   "cardName": null,
+   "cardBadge": null,
+   "cardFootBadge": null,
+   "cardAdd": null,
+   "cardDetails": null,
+   "cardMeta": null,
+   "cardPrice": null,
+   "cardPriceWas": null,
+   "taxo": null,
+   "taxoName": null,
+   "taxoCount": null,
+   "toggle": null,
+   "sheet": null,
+   "sheetHead": null,
+   "sheetFoot": null,
+   "sheetDone": null,
+   "sheetClear": null,
+   "scrim": null,
+   "state": {
+    "label": "كتلة الحالة",
+    "text": "⚠️تعذّر تحميل البياناتتعذّر ال",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgb(255, 255, 255)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(230, 236, 243)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 560,
+     "h": 263.98
+    }
+   },
+   "stateIcon": {
+    "label": "أيقونة الحالة",
+    "text": "⚠️",
+    "color": "rgb(185, 28, 28)",
+    "bgColor": "rgb(254, 242, 242)",
+    "effBg": "rgb(254,242,242)",
+    "border": "rgb(254, 226, 226)",
+    "ratio": 5.91,
+    "fontSize": "24px",
+    "fontWeight": "400",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 56,
+     "h": 56
+    }
+   },
+   "stateTitle": {
+    "label": "عنوان الحالة",
+    "text": "تعذّر تحميل البيانات",
+    "color": "rgb(15, 23, 42)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(15, 23, 42)",
+    "ratio": 17.85,
+    "fontSize": "19px",
+    "fontWeight": "700",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 159,
+     "h": 30.39
+    }
+   },
+   "stateText": {
+    "label": "نص الحالة",
+    "text": "تعذّر الاتصال بالخادم. تحقّق م",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(255,255,255)",
+    "border": "rgb(100, 116, 139)",
+    "ratio": 4.76,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 307,
+     "h": 21.59
+    }
+   },
+   "stateBtn": {
+    "label": "زر الحالة",
+    "text": "إعادة المحاولة",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+    "geom": {
+     "w": 124,
+     "h": 42
+    }
+   },
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 0,
+   "toolbarRows": 0,
+   "toolbarCols": null,
+   "card": null,
+   "taxo": null,
+   "badge": null,
+   "add": null,
+   "check": null,
+   "controlH": [],
+   "state": {
+    "w": 560,
+    "h": 264
+   },
+   "gridCols": null,
+   "cards": 0
+  },
+  "focus": null
+ },
+ "state_empty_dark": {
+  "theme": "dark",
+  "vw": 1366,
+  "overflow": 0,
+  "pageBg": "rgb(10, 18, 32)",
+  "items": {
+   "toolbar": {
+    "label": "الشريط",
+    "text": "بحثالتصنيفكل التصنيفاتتصنيف تج",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 11.62,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 1168,
+     "h": 182
+    }
+   },
+   "toolbarLabel": {
+    "label": "تسمية الحقل",
+    "text": "بحث",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "12.5px",
+    "fontWeight": "500",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 411.73,
+     "h": 20
+    }
+   },
+   "count": {
+    "label": "عدّاد النتائج",
+    "text": "0 منتج",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 36,
+     "h": 21.59
+    }
+   },
+   "input": {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 411.73,
+     "h": 44
+    }
+   },
+   "select": {
+    "label": "قائمة التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجه",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 228.75,
+     "h": 44
+    }
+   },
+   "priceMin": {
+    "label": "حقل السعر",
+    "text": "",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 192.38,
+     "h": 44
+    }
+   },
+   "check": {
+    "label": "شريحة اختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 11.62,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "radius": "10px",
+    "shadow": "none",
+    "geom": {
+     "w": 228.75,
+     "h": 44
+    },
+    "checked": false,
+    "accent": "rgb(31, 95, 191)"
+   },
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 7.31,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 44,
+     "h": 21.59
+    }
+   },
+   "sectionLink": null,
+   "cardName": null,
+   "cardBadge": null,
+   "cardFootBadge": null,
+   "cardAdd": null,
+   "cardDetails": null,
+   "cardMeta": null,
+   "cardPrice": null,
+   "cardPriceWas": null,
+   "taxo": null,
+   "taxoName": null,
+   "taxoCount": null,
+   "toggle": {
+    "label": "زر الفلاتر",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheet": {
+    "label": "اللوحة",
+    "text": "الفلاتر والترتيب✕بحثالتصنيفكل ",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(203, 213, 225)",
+    "ratio": 12.63,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetHead": {
+    "label": "رأس اللوحة",
+    "text": "الفلاتر والترتيب✕",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(203, 213, 225)",
+    "ratio": 12.63,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetFoot": {
+    "label": "قدم اللوحة",
+    "text": "تفريغ الفلاترعرض النتائج",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(203, 213, 225)",
+    "ratio": 12.63,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetDone": {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "sheetClear": {
+    "label": "زر تفريغ الفلاتر",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgba(0, 0, 0, 0)",
+    "ratio": 7.31,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "scrim": {
+    "label": "الطبقة الخلفية",
+    "text": "",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(203, 213, 225)",
+    "ratio": 12.63,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   "state": {
+    "label": "كتلة الحالة",
+    "text": "📦لا توجد منتجات مطابقةلا توجد",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 11.62,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 560,
+     "h": 197.98
+    }
+   },
+   "stateIcon": {
+    "label": "أيقونة الحالة",
+    "text": "📦",
+    "color": "rgb(100, 116, 139)",
+    "bgColor": "rgb(15, 24, 38)",
+    "effBg": "rgb(15,24,38)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 3.74,
+    "fontSize": "24px",
+    "fontWeight": "400",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 56,
+     "h": 56
+    }
+   },
+   "stateTitle": {
+    "label": "عنوان الحالة",
+    "text": "لا توجد منتجات مطابقة",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(241, 245, 249)",
+    "ratio": 15.75,
+    "fontSize": "19px",
+    "fontWeight": "700",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 192,
+     "h": 30.39
+    }
+   },
+   "stateText": {
+    "label": "نص الحالة",
+    "text": "لا توجد منتجات معروضة حاليًا ف",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 219,
+     "h": 21.59
+    }
+   },
+   "stateBtn": null,
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 182,
+   "toolbarRows": 2,
+   "toolbarCols": "411.734px 228.75px 228.75px 228.75px",
+   "card": null,
+   "taxo": null,
+   "badge": null,
+   "add": null,
+   "check": {
+    "w": 229,
+    "h": 44
+   },
+   "controlH": [
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    18,
+    18
+   ],
+   "state": {
+    "w": 560,
+    "h": 198
+   },
+   "gridCols": null,
+   "cards": 0
+  },
+  "focus": null
+ },
+ "state_error_dark": {
+  "theme": "dark",
+  "vw": 1366,
+  "overflow": 0,
+  "pageBg": "rgb(10, 18, 32)",
+  "items": {
+   "toolbar": null,
+   "toolbarLabel": null,
+   "count": null,
+   "input": null,
+   "select": null,
+   "priceMin": null,
+   "check": null,
+   "crumbsLink": {
+    "label": "رابط المسار",
+    "text": "الرئيسية",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(10,18,32)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 7.31,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 44,
+     "h": 21.59
+    }
+   },
+   "sectionLink": null,
+   "cardName": null,
+   "cardBadge": null,
+   "cardFootBadge": null,
+   "cardAdd": null,
+   "cardDetails": null,
+   "cardMeta": null,
+   "cardPrice": null,
+   "cardPriceWas": null,
+   "taxo": null,
+   "taxoName": null,
+   "taxoCount": null,
+   "toggle": null,
+   "sheet": null,
+   "sheetHead": null,
+   "sheetFoot": null,
+   "sheetDone": null,
+   "sheetClear": null,
+   "scrim": null,
+   "state": {
+    "label": "كتلة الحالة",
+    "text": "⚠️تعذّر تحميل البياناتتعذّر ال",
+    "color": "rgb(203, 213, 225)",
+    "bgColor": "rgb(18, 27, 43)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(30, 42, 61)",
+    "ratio": 11.62,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "14px",
+    "shadow": "none",
+    "geom": {
+     "w": 560,
+     "h": 263.98
+    }
+   },
+   "stateIcon": {
+    "label": "أيقونة الحالة",
+    "text": "⚠️",
+    "color": "rgb(185, 28, 28)",
+    "bgColor": "rgba(220, 38, 38, 0.16)",
+    "effBg": "rgb(50,29,42)",
+    "border": "rgb(254, 226, 226)",
+    "ratio": 2.41,
+    "fontSize": "24px",
+    "fontWeight": "400",
+    "radius": "999px",
+    "shadow": "none",
+    "geom": {
+     "w": 56,
+     "h": 56
+    }
+   },
+   "stateTitle": {
+    "label": "عنوان الحالة",
+    "text": "تعذّر تحميل البيانات",
+    "color": "rgb(241, 245, 249)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(241, 245, 249)",
+    "ratio": 15.75,
+    "fontSize": "19px",
+    "fontWeight": "700",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 159,
+     "h": 30.39
+    }
+   },
+   "stateText": {
+    "label": "نص الحالة",
+    "text": "تعذّر الاتصال بالخادم. تحقّق م",
+    "color": "rgb(148, 163, 184)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(18,27,43)",
+    "border": "rgb(148, 163, 184)",
+    "ratio": 6.73,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "radius": "0px",
+    "shadow": "none",
+    "geom": {
+     "w": 307,
+     "h": 21.59
+    }
+   },
+   "stateBtn": {
+    "label": "زر الحالة",
+    "text": "إعادة المحاولة",
+    "color": "rgb(255, 255, 255)",
+    "bgColor": "rgb(31, 95, 191)",
+    "effBg": "rgb(31,95,191)",
+    "border": "rgb(31, 95, 191)",
+    "ratio": 6.09,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "radius": "8px",
+    "shadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+    "geom": {
+     "w": 124,
+     "h": 42
+    }
+   },
+   "skeleton": null,
+   "skeletonTitle": null
+  },
+  "geom": {
+   "toolbarH": 0,
+   "toolbarRows": 0,
+   "toolbarCols": null,
+   "card": null,
+   "taxo": null,
+   "badge": null,
+   "add": null,
+   "check": null,
+   "controlH": [],
+   "state": {
+    "w": 560,
+    "h": 264
+   },
+   "gridCols": null,
+   "cards": 0
+  },
+  "focus": null
+ },
+ "loading_1366": {
+  "theme": "light",
+  "vw": 1366,
+  "overflow": 0,
+  "pageBg": "rgb(248, 250, 252)",
+  "items": {
+   "toolbar": null,
+   "toolbarLabel": null,
+   "count": null,
+   "input": null,
+   "select": null,
+   "priceMin": null,
+   "check": null,
+   "crumbsLink": null,
+   "sectionLink": null,
+   "cardName": null,
+   "cardBadge": null,
+   "cardFootBadge": null,
+   "cardAdd": null,
+   "cardDetails": null,
+   "cardMeta": null,
+   "cardPrice": null,
+   "cardPriceWas": null,
+   "taxo": null,
+   "taxoName": null,
+   "taxoCount": null,
+   "toggle": null,
+   "sheet": null,
+   "sheetHead": null,
+   "sheetFoot": null,
+   "sheetDone": null,
+   "sheetClear": null,
+   "scrim": null,
+   "state": null,
+   "stateIcon": null,
+   "stateTitle": null,
+   "stateText": null,
+   "stateBtn": null,
+   "skeleton": {
+    "label": "هيكل البطاقة",
+    "text": "",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "10px",
+    "shadow": "none",
+    "geom": {
+     "w": 280,
+     "h": 320
+    }
+   },
+   "skeletonTitle": {
+    "label": "هيكل العنوان",
+    "text": "",
+    "color": "rgb(51, 65, 85)",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "effBg": "rgb(248,250,252)",
+    "border": "rgb(51, 65, 85)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "radius": "10px",
+    "shadow": "none",
+    "geom": {
+     "w": 220,
+     "h": 18
+    }
+   }
+  },
+  "geom": {
+   "toolbarH": 0,
+   "toolbarRows": 0,
+   "toolbarCols": null,
+   "card": null,
+   "taxo": null,
+   "badge": null,
+   "add": null,
+   "check": null,
+   "controlH": [],
+   "state": null,
+   "gridCols": "280px 280px 280px 280px",
+   "cards": 0
+  },
+  "focus": null
+ },
+ "overflow": {
+  "products_360": 0,
+  "categories_360": 0,
+  "brands_360": 0,
+  "empty_360": 0,
+  "products_390": 0,
+  "categories_390": 0,
+  "brands_390": 0,
+  "empty_390": 0,
+  "products_430": 0,
+  "categories_430": 0,
+  "brands_430": 0,
+  "empty_430": 0,
+  "products_600": 0,
+  "categories_600": 0,
+  "brands_600": 0,
+  "empty_600": 0,
+  "products_768": 0,
+  "categories_768": 0,
+  "brands_768": 0,
+  "empty_768": 0,
+  "products_769": 0,
+  "categories_769": 0,
+  "brands_769": 0,
+  "empty_769": 0,
+  "products_900": 0,
+  "categories_900": 0,
+  "brands_900": 0,
+  "empty_900": 0,
+  "products_1024": 0,
+  "categories_1024": 0,
+  "brands_1024": 0,
+  "empty_1024": 0,
+  "products_1280": 0,
+  "categories_1280": 0,
+  "brands_1280": 0,
+  "empty_1280": 0,
+  "products_1366": 0,
+  "categories_1366": 0,
+  "brands_1366": 0,
+  "empty_1366": 0,
+  "products_1440": 0,
+  "categories_1440": 0,
+  "brands_1440": 0,
+  "empty_1440": 0,
+  "products_1920": 0,
+  "categories_1920": 0,
+  "brands_1920": 0,
+  "empty_1920": 0
+ },
+ "reg3c": {
+  "none": {
+   "hash": "#/products",
+   "cards": 2,
+   "count": "2 منتج"
+  },
+  "minPrice400": {
+   "hash": "#/products?minPrice=400",
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "maxPrice400": {
+   "hash": "#/products?maxPrice=400",
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "min99999": {
+   "hash": "#/products?minPrice=99999",
+   "cards": 0,
+   "count": "0 منتج"
+  },
+  "offers": {
+   "hash": "#/products?offers=1",
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "instock": {
+   "hash": "#/products?inStock=1",
+   "cards": 2,
+   "count": "2 منتج"
+  },
+  "page2": {
+   "hash": "#/products",
+   "cards": 2,
+   "count": "2 منتج"
+  }
+ },
+ "reg390": {
+  "homeCards": 5,
+  "hero": true,
+  "headerH": 65,
+  "overflow": 0,
+  "listingCard": {
+   "w": 177,
+   "h": 504
+  },
+  "searchSheet": {
+   "top": 65,
+   "bg": "rgb(255, 255, 255)"
+  },
+  "menu": {
+   "rowH": 50,
+   "drawerTop": 65
+  }
+ }
+}

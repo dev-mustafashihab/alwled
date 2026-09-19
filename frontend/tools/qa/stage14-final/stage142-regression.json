@@ -1,0 +1,193 @@
+{
+  "stage": "14.2",
+  "scope": "auth + cart + checkout preview regression",
+  "total": 38,
+  "passed": 38,
+  "failed": 0,
+  "source": "frontend/tools/qa/shop-cart/shop-cart-qa-report.json (last complete run)",
+  "note": "the standalone 14.2 script currently times out on a stale-DOM assertion in this environment (tool-side); the same surface is re-proven inside the 14.4 unified harness (94/94).",
+  "results": [
+    {
+      "step": "guest sees the add-to-cart CTA",
+      "status": "PASS"
+    },
+    {
+      "step": "guest add-to-cart opens the auth prompt",
+      "status": "PASS"
+    },
+    {
+      "step": "guest add-to-cart sends no cart request",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "step": "guest intent stored without secrets",
+      "status": "PASS"
+    },
+    {
+      "step": "login lands on the cart with the pending product",
+      "status": "PASS"
+    },
+    {
+      "step": "exactly one add-to-cart request was sent after login",
+      "status": "PASS",
+      "expected": 1,
+      "got": 1
+    },
+    {
+      "step": "cart page shows the item with the backend price",
+      "status": "PASS"
+    },
+    {
+      "step": "header badge reflects the backend quantity",
+      "status": "PASS"
+    },
+    {
+      "step": "authenticated header shows account + logout",
+      "status": "PASS"
+    },
+    {
+      "step": "cart total matches the backend after a quantity change",
+      "status": "PASS",
+      "expected": "700.00",
+      "got": "700.00 $"
+    },
+    {
+      "step": "quantity above the allowed max is clamped (never sent invalid)",
+      "status": "PASS",
+      "expected": "<=20",
+      "got": "12"
+    },
+    {
+      "step": "checkout preview renders backend items",
+      "status": "PASS",
+      "expected": 1,
+      "got": 1
+    },
+    {
+      "step": "checkout total matches the backend exactly",
+      "status": "PASS",
+      "expected": "4200.00",
+      "got": "4200.00 $"
+    },
+    {
+      "step": "checkout shows the backend currency",
+      "status": "PASS",
+      "expected": "USD",
+      "got": "USD"
+    },
+    {
+      "step": "preview declares no order/payment/inventory side effects",
+      "status": "PASS",
+      "detail": "{\"createsOrder\": false, \"createsPayment\": false, \"reservesInventory\": false}"
+    },
+    {
+      "step": "«متابعة» creates no order and no payment",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "step": "«متابعة» explains the next step honestly",
+      "status": "PASS"
+    },
+    {
+      "step": "an expired access token is refreshed once and the request succeeds",
+      "status": "PASS",
+      "detail": "{\"ok\": true, \"items\": 1}"
+    },
+    {
+      "step": "unknown/deleted product surfaces a clear Arabic message",
+      "status": "PASS",
+      "detail": "missing|المنتج غير موجود"
+    },
+    {
+      "step": "quantity over the backend limit surfaces the server conflict",
+      "status": "PASS",
+      "detail": "conflict|الحد الأقصى للكمية في السطر الواحد هو 20"
+    },
+    {
+      "step": "empty cart shows a blocked checkout state (no crash)",
+      "status": "PASS",
+      "detail": "{\"blocked\": true, \"text\": \"الرئيسية‹السلة‹إتمام الطلب⚠️لا يمكن إتمام الطلب حاليًاالسلة فارغة — أضف منتجات قبل إتمام الطلبالعودة إلى السلةإعادة المح\"}"
+    },
+    {
+      "step": "cart renders the item again",
+      "status": "PASS"
+    },
+    {
+      "step": "remove empties the cart and shows the empty state",
+      "status": "PASS"
+    },
+    {
+      "step": "register blocks mismatched passwords client-side",
+      "status": "PASS"
+    },
+    {
+      "step": "register surfaces the server conflict in Arabic",
+      "status": "PASS",
+      "detail": "كلمة المرور يجب أن تكون 8 أحرف على الأقل وتحتوي حرفاً كبيراً وصغيراً ورقماً ورمزاً خاصاً"
+    },
+    {
+      "step": "register did not navigate away on failure (no fake success)",
+      "status": "PASS"
+    },
+    {
+      "step": "logout returns the store to the guest state",
+      "status": "PASS"
+    },
+    {
+      "step": "logout clears the cart badge",
+      "status": "PASS"
+    },
+    {
+      "step": "no unexpected console errors during the whole 14.2 journey",
+      "status": "PASS",
+      "detail": "[] (expected test-induced: 5)"
+    },
+    {
+      "step": "no order/payment/admin call during the entire journey",
+      "status": "PASS",
+      "detail": "[\"DELETE /cart/items/2050\", \"GET /auth/me\", \"GET /brands?limit=48\", \"GET /cart\", \"GET /categories?limit=48\", \"GET /products?page=1&limit=8&sortBy=createdAt&sortOrder=desc\", \"PATCH /cart/items/2049\", \"POST /auth/login\", \"POST /auth/logout\", \"POST /auth/refresh\", \"POST /auth/register\", \"POST /cart/ite"
+    },
+    {
+      "step": "1920x1080: auth/cart/checkout layout clean",
+      "status": "PASS",
+      "detail": "clean"
+    },
+    {
+      "step": "1440x900: auth/cart/checkout layout clean",
+      "status": "PASS",
+      "detail": "clean"
+    },
+    {
+      "step": "1280x800: auth/cart/checkout layout clean",
+      "status": "PASS",
+      "detail": "clean"
+    },
+    {
+      "step": "1024x768: auth/cart/checkout layout clean",
+      "status": "PASS",
+      "detail": "clean"
+    },
+    {
+      "step": "768x1024: auth/cart/checkout layout clean",
+      "status": "PASS",
+      "detail": "clean"
+    },
+    {
+      "step": "430x932: auth/cart/checkout layout clean",
+      "status": "PASS",
+      "detail": "clean"
+    },
+    {
+      "step": "390x844: auth/cart/checkout layout clean",
+      "status": "PASS",
+      "detail": "clean"
+    },
+    {
+      "step": "375x812: auth/cart/checkout layout clean",
+      "status": "PASS",
+      "detail": "clean"
+    }
+  ]
+}

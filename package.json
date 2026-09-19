@@ -8,17 +8,18 @@
     "postinstall": "prisma generate",
     "start": "nest start",
     "start:dev": "nest start --watch",
-    "start:prod": "node dist/main.js",
+    "start:prod": "node dist/src/main.js",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:deploy": "prisma migrate deploy",
     "db:seed": "prisma db seed",
     "test": "jest",
     "test:e2e": "jest --config test/jest-e2e.json",
-    "health": "curl -s http://localhost:3000/api/v1/health",
+    "health": "curl -s http://localhost:3100/api/v1/health",
     "frontend:serve": "python3 frontend/tools/serve.py",
     "frontend:test": "jest --config frontend/tests/jest.config.js",
-    "frontend:check": "node frontend/tools/check.js"
+    "frontend:check": "node frontend/tools/check.js",
+    "health:ready": "curl -s http://localhost:3100/api/v1/health/ready"
   },
   "dependencies": {
     "@nestjs/common": "^10.4.15",
@@ -39,7 +40,8 @@
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",
     "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "sharp": "0.34.4"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.4.9",

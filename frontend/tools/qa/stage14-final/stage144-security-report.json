@@ -1,0 +1,129 @@
+{
+  "stage": "14.4",
+  "scope": "isolation · permissions · concurrency · payment integrity · sessions",
+  "total": 25,
+  "passed": 25,
+  "failed": 0,
+  "results": [
+    {
+      "check": "test identities: two customers + owner",
+      "status": "PASS"
+    },
+    {
+      "check": "isolation fixtures created (order + payment for customer A)",
+      "status": "PASS",
+      "got": "order=1550 payment=cmu4fint6000yhcyrwfibtbej"
+    },
+    {
+      "check": "the two customers are distinct identities",
+      "status": "PASS"
+    },
+    {
+      "check": "cross-customer access is denied for every resource (no IDOR/BOLA)",
+      "status": "PASS",
+      "got": "{\"B reads A order\": 404, \"B cancels A order\": 404, \"B reads A payment\": 404, \"B submits A payment proof\": 404, \"B reads own cart (control)\": 200}"
+    },
+    {
+      "check": "isolation uses 404 (not 403) so existence is not leaked",
+      "status": "PASS",
+      "got": "{\"B reads A order\": 404, \"B cancels A order\": 404, \"B reads A payment\": 404, \"B submits A payment proof\": 404, \"B reads own cart (control)\": 200}"
+    },
+    {
+      "check": "order lists are disjoint between customers",
+      "status": "PASS",
+      "got": "a=61 b=0 overlap=set()"
+    },
+    {
+      "check": "customer A cannot mark customer B's notification (404/401)",
+      "status": "PASS",
+      "got": "404"
+    },
+    {
+      "check": "verification records are per customer",
+      "status": "PASS",
+      "got": "a=cmu482gr9004gmcxj8vrz0j8k b=None"
+    },
+    {
+      "check": "customer is blocked from every admin surface (401/403/404 — never 200)",
+      "status": "PASS",
+      "got": "{\"customer \\u2192 /admin/payments\": 403, \"customer \\u2192 /admin/dashboard/summary\": 404, \"customer \\u2192 /admin/orders\": 403, \"customer \\u2192 /employees\": 403, \"customer \\u2192 /roles\": 403, \"customer \\u2192 /admin/payments/{id}/confirm\": 403}"
+    },
+    {
+      "check": "restricted employee created with only products.read",
+      "status": "PASS",
+      "got": "role=507 employee=cmu4fiole0019hcyrgo74tll3 code=201"
+    },
+    {
+      "check": "restricted employee can log in",
+      "status": "PASS",
+      "got": "status=200 code=201"
+    },
+    {
+      "check": "restricted employee is blocked outside the granted permission (401/403/404 — never 200)",
+      "status": "PASS",
+      "got": "{\"employee POST /products (no permission)\": 403, \"employee \\u2192 /admin/payments\": 403, \"employee \\u2192 /employees\": 403, \"employee \\u2192 /roles\": 403, \"employee \\u2192 /audit-logs\": 404, \"employee POST /admin/payments/{id}/confirm\": 403}"
+    },
+    {
+      "check": "restricted employee can still read the granted surface",
+      "status": "PASS",
+      "got": "200"
+    },
+    {
+      "check": "owner can read the admin surface (control)",
+      "status": "PASS"
+    },
+    {
+      "check": "client cannot force amount/status/provider (DTO whitelist + backend owns money)",
+      "status": "PASS",
+      "got": "tamper=400 amount=500.00 status=PENDING provider=None"
+    },
+    {
+      "check": "submitted payment lands in PENDING_REVIEW only (no fake success)",
+      "status": "PASS",
+      "got": "PENDING_REVIEW"
+    },
+    {
+      "check": "parallel cart quantity updates leave one consistent line (no duplicate line)",
+      "status": "PASS",
+      "got": "codes=[200, 200, 200, 200] final=1"
+    },
+    {
+      "check": "5 parallel order requests with one idempotency key produce exactly one order",
+      "status": "PASS",
+      "got": "['1551']"
+    },
+    {
+      "check": "4 parallel payment requests with one key produce exactly one payment",
+      "status": "PASS",
+      "got": "['cmu4fipx1003ghcyriq1856pq']"
+    },
+    {
+      "check": "parallel proof submits produce one accepted state (others 409) with PENDING_REVIEW settled",
+      "status": "PASS",
+      "got": "codes=[409, 409, 409, 201] status=PENDING_REVIEW"
+    },
+    {
+      "check": "parallel mark-read calls are idempotent (notification stays read)",
+      "status": "PASS",
+      "got": "codes=[200, 200, 200, 200] read=True"
+    },
+    {
+      "check": "read-all leaves the unread counter at zero",
+      "status": "PASS"
+    },
+    {
+      "check": "refresh endpoint rejects a missing refresh token (contract)",
+      "status": "PASS",
+      "got": "code=400"
+    },
+    {
+      "check": "session list is token-free",
+      "status": "PASS",
+      "got": "count=4 keys=['createdAt', 'expiresAt', 'ip', 'sessionId', 'userAgent']"
+    },
+    {
+      "check": "logout-all is accepted for the customer",
+      "status": "PASS"
+    }
+  ]
+}

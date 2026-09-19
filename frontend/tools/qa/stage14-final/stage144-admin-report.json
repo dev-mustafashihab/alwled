@@ -1,0 +1,141 @@
+{
+  "stage": "14.4",
+  "scope": "admin panel full regression",
+  "total": 23,
+  "passed": 23,
+  "failed": 0,
+  "results": [
+    {
+      "check": "anonymous visitor opening the panel still lands on login",
+      "status": "PASS",
+      "got": "#/login"
+    },
+    {
+      "check": "owner login reaches the dashboard",
+      "status": "PASS",
+      "got": "#/dashboard"
+    },
+    {
+      "check": "panel API base is unchanged (/alwled-api/api/v1)",
+      "status": "PASS"
+    },
+    {
+      "check": "admin dashboard renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "admin analytics renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "admin products renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "admin categories renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "admin brands renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "admin specifications renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "admin inventory renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "admin orders renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "admin payments renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "admin payments_review renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "admin customers renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "admin verification renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "admin notifications renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "admin employees renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "admin roles renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "admin audit renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "admin account renders real content",
+      "status": "PASS",
+      "got": "markers=True workArea=True",
+      "detail": "تخطَّ إلى المحتوى | الوليد | لوحة إدارة المتجر | الرئيسية | لوحة التحكم | التحليلات | الكتالوج | المنتجات | التصنيفات | العلامات | المواصفات"
+    },
+    {
+      "check": "panel navigation is intact and contains no store links",
+      "status": "PASS",
+      "got": "{\"storeLinks\": 0, \"adminNav\": 18}"
+    },
+    {
+      "check": "no console errors across the whole admin sweep",
+      "status": "PASS",
+      "got": "[]",
+      "detail": "errors=0"
+    },
+    {
+      "check": "store shows no admin navigation for any visitor",
+      "status": "PASS",
+      "got": "{\"adminLinks\": 0, \"navItems\": 4}"
+    }
+  ]
+}

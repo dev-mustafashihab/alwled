@@ -1,0 +1,117 @@
+{
+  "pages": [
+    {
+      "route": "#/orders",
+      "width": 390,
+      "overflow": 0,
+      "count": 20,
+      "buttons": 20,
+      "text": "الرئيسية | ‹ | طلباتي | طلباتي |  | 62 طلب |  | ORD-2026-001410 | قيد الانتظار | الدفع: ",
+      "shot": "/root/alwled/frontend/tools/qa/stage15.1/orders-390.png"
+    },
+    {
+      "route": "#/notifications",
+      "width": 390,
+      "overflow": 0,
+      "count": 11,
+      "buttons": 26,
+      "text": "الرئيسية | ‹ | إشعاراتي | إشعاراتي |  | 198 إشعار |  | غير المقروء فقط | تعليم الكل كم",
+      "shot": "/root/alwled/frontend/tools/qa/stage15.1/notifications-390.png"
+    },
+    {
+      "route": "#/account",
+      "width": 390,
+      "overflow": 0,
+      "count": 13,
+      "buttons": 0,
+      "text": "الرئيسية | ‹ | حسابي | حسابي |  | Stage142 QA |  | نشط | غير موثّق | البيانات الأساسية | ا",
+      "shot": "/root/alwled/frontend/tools/qa/stage15.1/account-390.png"
+    },
+    {
+      "route": "#/verification",
+      "width": 390,
+      "overflow": 0,
+      "count": 2,
+      "buttons": 0,
+      "text": "الرئيسية | ‹ | توثيق الحساب | توثيق الحساب |  | التوثيق يُراجَع يدويًا من فريق ا",
+      "shot": "/root/alwled/frontend/tools/qa/stage15.1/verification-390.png"
+    },
+    {
+      "route": "dark-home",
+      "width": 390,
+      "overflow": 0,
+      "bg": "rgb(10, 18, 32)",
+      "card": "rgb(18, 27, 43)",
+      "shot": "/root/alwled/frontend/tools/qa/stage15.1/dark-390.png"
+    },
+    {
+      "route": "#/orders/1551",
+      "width": 390,
+      "overflow": 0,
+      "count": 9,
+      "text": "الرئيسية | ‹ | طلباتي | ‹ | تفاصيل الطلب | ORD-2026-001410 |  | أُنشئ في 16 أيلول 2026، 18:23 | ",
+      "shot": "/root/alwled/frontend/tools/qa/stage15.1/order-detail-390.png"
+    },
+    {
+      "route": "#/orders",
+      "width": 1440,
+      "overflow": 0,
+      "count": 20,
+      "buttons": 20,
+      "text": "الرئيسية | ‹ | طلباتي | طلباتي |  | 62 طلب |  | ORD-2026-001410 | قيد الانتظار | الدفع: ",
+      "shot": "/root/alwled/frontend/tools/qa/stage15.1/orders-1440.png"
+    },
+    {
+      "route": "#/notifications",
+      "width": 1440,
+      "overflow": 0,
+      "count": 11,
+      "buttons": 26,
+      "text": "الرئيسية | ‹ | إشعاراتي | إشعاراتي |  | 198 إشعار |  | غير المقروء فقط | تعليم الكل كم",
+      "shot": "/root/alwled/frontend/tools/qa/stage15.1/notifications-1440.png"
+    },
+    {
+      "route": "#/account",
+      "width": 1440,
+      "overflow": 0,
+      "count": 13,
+      "buttons": 0,
+      "text": "الرئيسية | ‹ | حسابي | حسابي |  | Stage142 QA |  | نشط | غير موثّق | البيانات الأساسية | ا",
+      "shot": "/root/alwled/frontend/tools/qa/stage15.1/account-1440.png"
+    },
+    {
+      "route": "#/verification",
+      "width": 1440,
+      "overflow": 0,
+      "count": 2,
+      "buttons": 0,
+      "text": "الرئيسية | ‹ | توثيق الحساب | توثيق الحساب |  | التوثيق يُراجَع يدويًا من فريق ا",
+      "shot": "/root/alwled/frontend/tools/qa/stage15.1/verification-1440.png"
+    },
+    {
+      "route": "dark-home",
+      "width": 1440,
+      "overflow": 0,
+      "bg": "rgb(10, 18, 32)",
+      "card": "rgb(18, 27, 43)",
+      "shot": "/root/alwled/frontend/tools/qa/stage15.1/dark-1440.png"
+    },
+    {
+      "route": "#/orders/1551",
+      "width": 1440,
+      "overflow": 0,
+      "count": 9,
+      "text": "الرئيسية | ‹ | طلباتي | ‹ | تفاصيل الطلب | ORD-2026-001410 |  | أُنشئ في 16 أيلول 2026، 18:23 | ",
+      "shot": "/root/alwled/frontend/tools/qa/stage15.1/order-detail-1440.png"
+    }
+  ],
+  "failures": [],
+  "console_errors_390": [
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  ],
+  "console_errors_1440": [
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  ]
+}

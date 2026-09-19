@@ -1,0 +1,75 @@
+{
+ "customer": {
+  "created": {
+   "phone": "07779556788",
+   "id": "cmu3zwo18002jbo6525uheiym",
+   "registerStatus": 200
+  },
+  "allowed": {
+   "GET /auth/me": 200,
+   "GET /users/me": 200,
+   "GET /orders": 200,
+   "GET /payments": 200,
+   "GET /notifications": 200,
+   "GET /verification/me": 200,
+   "GET /cart": 200,
+   "GET /notifications/preferences": 200
+  },
+  "forbidden": {
+   "GET /admin/dashboard/overview": 403,
+   "GET /admin/orders": 403,
+   "GET /employees": 403,
+   "GET /roles": 403,
+   "GET /audit": 403,
+   "POST /products": 403,
+   "POST /roles": 403
+  },
+  "navItems": [
+   "إشعاراتي",
+   "حسابي"
+  ],
+  "forbiddenPage": "لا تملك صلاحية الوصول",
+  "cleanup": {
+   "deactivated": 200
+  }
+ },
+ "restricted": {
+  "allowedRead": {
+   "GET /admin/dashboard/overview": 200,
+   "GET /products": 200,
+   "GET /inventory": 200,
+   "GET /admin/orders": 200,
+   "GET /admin/payments": 200,
+   "GET /admin/notifications/summary": 200,
+   "GET /employees": 200,
+   "GET /roles": 200,
+   "GET /audit": 200
+  },
+  "forbidden": {
+   "POST /roles": 403,
+   "PATCH /admin/orders/1/status": 403,
+   "POST /admin/payments/1/confirm": 403,
+   "PATCH /users/1/status": 403,
+   "POST /admin/verifications/1/verify": 403,
+   "DELETE /products/1": 403
+  },
+  "uiGates": {
+   "roles_create_button": 0,
+   "products_create_button": 0,
+   "delete_buttons_anywhere": 0
+  }
+ },
+ "performance": {
+  "dashboardRequests": 5,
+  "duplicateRequests": [],
+  "domNodes": {
+   "before": 636,
+   "after": 636,
+   "growth": 0
+  },
+  "idleRequests": 0,
+  "bellPanels": 1,
+  "consoleErrors": []
+ },
+ "issues": []
+}

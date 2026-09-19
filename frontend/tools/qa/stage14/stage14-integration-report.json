@@ -1,0 +1,833 @@
+{
+  "runId": "stage14-9dd2b3",
+  "results": [
+    {
+      "step": "register customerA",
+      "status": "PASS",
+      "expected": "201 (or reuse on 409/429)",
+      "got": 409
+    },
+    {
+      "step": "register customerB",
+      "status": "PASS",
+      "expected": "201 (or reuse on 409/429)",
+      "got": 409
+    },
+    {
+      "step": "GET /auth/me (admin)",
+      "status": "PASS",
+      "expected": 200,
+      "got": 200
+    },
+    {
+      "step": "admin permissions include wildcard or every domain",
+      "status": "PASS",
+      "detail": "1 permissions"
+    },
+    {
+      "step": "POST /categories",
+      "status": "PASS",
+      "expected": 201,
+      "got": 201
+    },
+    {
+      "step": "POST /brands",
+      "status": "PASS",
+      "expected": 201,
+      "got": 201
+    },
+    {
+      "step": "POST /specifications",
+      "status": "PASS",
+      "expected": 201,
+      "got": 201
+    },
+    {
+      "step": "POST /products",
+      "status": "PASS",
+      "expected": 201,
+      "got": 201
+    },
+    {
+      "step": "product price stored as Decimal string/number",
+      "status": "PASS",
+      "detail": "100.00"
+    },
+    {
+      "step": "POST /products/{id}/images",
+      "status": "PASS",
+      "expected": "200/201",
+      "got": 201,
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": {\"id\": 133, \"productId\": 861, \"url\": \"/uploads/stage14/stage14-9dd2b3.jpg\", \"altText\": \"صورة اختبار Stage14\", \"sortOrder\": 0, \"isPrimary\": true, \"create"
+    },
+    {
+      "step": "PUT /products/{id}/specifications",
+      "status": "PASS",
+      "expected": "200/201",
+      "got": 200,
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": [{\"id\": 148, \"specificationId\": 227, \"key\": \"stage14_spec_stage14_9dd2b3\", \"name\": \"Stage14-Spec-stage14-9dd2b3\", \"type\": \"NUMBER\", \"unit\": \"كغ\", \"options\": [], \"value\": \"1"
+    },
+    {
+      "step": "GET /inventory/{productId}",
+      "status": "PASS",
+      "expected": 200,
+      "got": 200
+    },
+    {
+      "step": "POST /inventory/{id}/adjust (STOCK_IN 10)",
+      "status": "PASS",
+      "expected": "200/201",
+      "got": 201,
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": {\"id\": 861, \"productId\": 861, \"quantity\": 10, \"reservedQuantity\": 0, \"lowStockThreshold\": 5, \"createdAt\": \"2026-09-16T12:10:29.992Z\", \"updatedAt\": \"2026"
+    },
+    {
+      "step": "POST /cart/items",
+      "status": "PASS",
+      "expected": 201,
+      "got": 201
+    },
+    {
+      "step": "GET /cart",
+      "status": "PASS",
+      "expected": 200,
+      "got": 200
+    },
+    {
+      "step": "cart holds the real product with the real price",
+      "status": "PASS",
+      "detail": "[{\"id\": 1828, \"productId\": 861, \"product\": {\"id\": 861, \"name\": \"منتج تكامل Stage14 stage14-9dd2b3\", \"slug\": \"stage14-product-stage14-9dd2b3\", \"sku\": \"STAGE14-STAGE14-9DD2B3\", \"price\": \"100.00\", \"isAct"
+    },
+    {
+      "step": "cart total is server-computed (200.00 for qty 2 × 100)",
+      "status": "PASS",
+      "detail": "total=200.00"
+    },
+    {
+      "step": "POST /checkout/preview",
+      "status": "PASS",
+      "expected": 200,
+      "got": 200
+    },
+    {
+      "step": "preview total matches cart total",
+      "status": "PASS",
+      "detail": "200.00"
+    },
+    {
+      "step": "preview reports availability from the server",
+      "status": "PASS",
+      "detail": "{\"cartId\": 315, \"items\": [{\"id\": 1828, \"productId\": 861, \"product\": {\"id\": 861, \"name\": \"منتج تكامل Stage14 stage14-9dd2b3\", \"slug\": \"stage14-product-stage14-9dd2b3\", \"sku\": \"STAGE14-STAGE14-9DD2B3\", \"price\": \"100.00\", \"isActive\": true, \"primaryImage"
+    },
+    {
+      "step": "POST /orders (Idempotency-Key)",
+      "status": "PASS",
+      "expected": 201,
+      "got": 201
+    },
+    {
+      "step": "order total equals preview total",
+      "status": "PASS",
+      "detail": "200.00"
+    },
+    {
+      "step": "order item snapshot keeps product name",
+      "status": "PASS"
+    },
+    {
+      "step": "order item snapshot keeps sku",
+      "status": "PASS"
+    },
+    {
+      "step": "order item snapshot keeps unit price 100",
+      "status": "PASS",
+      "detail": "100.00"
+    },
+    {
+      "step": "order item quantity",
+      "status": "PASS",
+      "expected": "2",
+      "got": "2"
+    },
+    {
+      "step": "cart is cleared after checkout",
+      "status": "PASS",
+      "detail": "0 items"
+    },
+    {
+      "step": "inventory quantity unchanged by reservation",
+      "status": "PASS",
+      "detail": "before=10 after=10"
+    },
+    {
+      "step": "inventory reserved increased by the ordered quantity",
+      "status": "PASS",
+      "detail": "before=0 after=2"
+    },
+    {
+      "step": "RESERVATION movement written",
+      "status": "PASS",
+      "detail": "1 movements"
+    },
+    {
+      "step": "PATCH /products/{id} (price → 175.50)",
+      "status": "PASS",
+      "expected": 200,
+      "got": 200
+    },
+    {
+      "step": "historical order total unchanged after a price change",
+      "status": "PASS",
+      "detail": "200.00"
+    },
+    {
+      "step": "historical order unit price unchanged (product price ≠ order price)",
+      "status": "PASS",
+      "detail": "None"
+    },
+    {
+      "step": "product price did change in the catalog",
+      "status": "PASS",
+      "detail": "175.50"
+    },
+    {
+      "step": "GET /payments/sham-cash/account",
+      "status": "PASS",
+      "expected": 200,
+      "got": 200
+    },
+    {
+      "step": "instructions come from the backend (no invented provider)",
+      "status": "PASS",
+      "detail": "{\"method\": \"SHAM_CASH\", \"configured\": false, \"walletNumber\": null, \"accountName\": null, \"instructions\": null, \"currency\": \"USD\", \"submitPath\": \"POST /api/v1/payments/:id/submit\"}"
+    },
+    {
+      "step": "POST /payments",
+      "status": "PASS",
+      "expected": 201,
+      "got": 201
+    },
+    {
+      "step": "payment status PENDING",
+      "status": "PASS",
+      "expected": "PENDING",
+      "got": "PENDING"
+    },
+    {
+      "step": "payment amount equals order total",
+      "status": "PASS",
+      "detail": "200.00"
+    },
+    {
+      "step": "payment currency",
+      "status": "PASS",
+      "expected": "USD",
+      "got": "USD"
+    },
+    {
+      "step": "payment provider is null (manual workflow only)",
+      "status": "PASS",
+      "detail": "None"
+    },
+    {
+      "step": "same Idempotency-Key + same request ⇒ same payment",
+      "status": "PASS",
+      "detail": "cmu42705x001jyy74obs1p2yc vs cmu42705x001jyy74obs1p2yc"
+    },
+    {
+      "step": "POST /payments/{id}/submit",
+      "status": "PASS",
+      "expected": "200/201",
+      "got": 201,
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": {\"id\": \"cmu42705x001jyy74obs1p2yc\", \"orderId\": 1301, \"userId\": \"cmu41oa5f0000zwtct8r13xid\", \"method\": \"SHAM_CASH\", \"status\": \"PENDING_REVIEW\", \"amount\": \"200.00\", \"currency\": \"USD\", \"provider\": null, \"p"
+    },
+    {
+      "step": "payment → PENDING_REVIEW",
+      "status": "PASS",
+      "expected": "PENDING_REVIEW",
+      "got": "PENDING_REVIEW"
+    },
+    {
+      "step": "evidence stored (proofUrl + transactionReference + submittedAt)",
+      "status": "PASS",
+      "detail": "https://proof.alwled.local/STAGE14-REF-D6DB2D1569.jpg|STAGE14-REF-D6DB2D1569|2026-09-16 12:10:31.245"
+    },
+    {
+      "step": "transaction reference is unique in the table",
+      "status": "PASS"
+    },
+    {
+      "step": "audit event written for the submission",
+      "status": "PASS",
+      "detail": "PAYMENT_CREATED,PAYMENT_STATUS_UPDATED,PAYMENT_SUBMITTED_FOR_REVIEW"
+    },
+    {
+      "step": "notification created for the customer",
+      "status": "PASS",
+      "detail": "PAYMENT_CONFIRMED:PAYMENT_CONFIRMED:payment:cmu41objm001pzwtcav6itq50 | PAYMENT_CONFIRMED:PAYMENT_CONFIRMED:payment:cmu41rxqv00bfzwtc2ks5psmr | PAYMENT_CONFIRMED:PAYMENT_CONFIRMED:payment:cmu41skz400k1zwtcn6riwvzg | PAYMENT_CONFIRMED:PAYMENT_CONFIRMED:payment:cmu41wzui001jwrn63ylr3ojc | PAYMENT_CONFIRMED:PAYMENT_CONFIRMED:payment:cmu4224dn001j126xvx2dwhvi | PAYMENT_CREATED:PAYMENT_CREATED:payment:"
+    },
+    {
+      "step": "GET /admin/payments?status=PENDING_REVIEW",
+      "status": "PASS",
+      "expected": 200,
+      "got": 200
+    },
+    {
+      "step": "admin queue contains the submitted payment",
+      "status": "PASS",
+      "detail": "1 items"
+    },
+    {
+      "step": "POST /admin/payments/{id}/confirm",
+      "status": "PASS",
+      "expected": "200/201",
+      "got": 200,
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": {\"id\": \"cmu42705x001jyy74obs1p2yc\", \"orderId\": 1301, \"userId\": \"cmu41oa5f0000zwtct8r13xid\", \"method\": \"SHAM_CASH\", \"status\": \"SUCCEEDED\", \"amount\": \"200.00\", \"currency\": \"USD\", \"provider\": null, \"provid"
+    },
+    {
+      "step": "payment → SUCCEEDED",
+      "status": "PASS",
+      "expected": "SUCCEEDED",
+      "got": "SUCCEEDED"
+    },
+    {
+      "step": "reviewedAt + reviewedBy recorded",
+      "status": "PASS",
+      "detail": "SUCCEEDED|2026-09-16 12:10:31.898|cmu3786n70000i7zf85hpxkii"
+    },
+    {
+      "step": "PAYMENT_CONFIRMED audit present",
+      "status": "PASS"
+    },
+    {
+      "step": "confirmation notification present",
+      "status": "PASS"
+    },
+    {
+      "step": "repeated confirmation ⇒ 409",
+      "status": "PASS",
+      "expected": 409,
+      "got": 409
+    },
+    {
+      "step": "inventory untouched by confirmation (no invented SALE)",
+      "status": "PASS"
+    },
+    {
+      "step": "POST /cart/items (order 2)",
+      "status": "PASS",
+      "expected": 201,
+      "got": 201
+    },
+    {
+      "step": "POST /orders (order 2)",
+      "status": "PASS",
+      "expected": 201,
+      "got": 201
+    },
+    {
+      "step": "POST /payments (payment 2)",
+      "status": "PASS",
+      "expected": 201,
+      "got": 201
+    },
+    {
+      "step": "reject before submission ⇒ 409 (state machine)",
+      "status": "PASS",
+      "expected": 409,
+      "got": 409
+    },
+    {
+      "step": "submit payment 2",
+      "status": "PASS",
+      "expected": "200/201",
+      "got": 201
+    },
+    {
+      "step": "reject without reason ⇒ 400",
+      "status": "PASS",
+      "expected": 400,
+      "got": 400
+    },
+    {
+      "step": "POST /admin/payments/{id}/reject",
+      "status": "PASS",
+      "expected": "200/201",
+      "got": 200,
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": {\"id\": \"cmu4271dt003cyy743x2u7vep\", \"orderId\": 1302, \"userId\": \"cmu41oa5f0000zwtct8r13xid\", \"method\": \"SHAM_CASH\", \"status\": \"FAILED\", \"amount\": \"175.50"
+    },
+    {
+      "step": "payment → FAILED",
+      "status": "PASS",
+      "expected": "FAILED",
+      "got": "FAILED"
+    },
+    {
+      "step": "rejectionReason + reviewer recorded",
+      "status": "PASS"
+    },
+    {
+      "step": "PAYMENT_REJECTED audit present",
+      "status": "PASS"
+    },
+    {
+      "step": "repeated rejection ⇒ 409",
+      "status": "PASS",
+      "expected": 409,
+      "got": 409
+    },
+    {
+      "step": "same Idempotency-Key + different request ⇒ 409",
+      "status": "PASS",
+      "expected": 409,
+      "got": 409
+    },
+    {
+      "step": "duplicate transactionReference ⇒ 409",
+      "status": "PASS",
+      "expected": 409,
+      "got": 409
+    },
+    {
+      "step": "POST /orders/{id}/cancel",
+      "status": "PASS",
+      "expected": "200/201",
+      "got": 200,
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": {\"id\": 1303, \"orderNumber\": \"ORD-2026-001182\", \"status\": \"CANCELLED\", \"subtotal\": \"175.50\", \"shippingAmount\": \"0.00\", \"discountAmount\": \"0.00\", \"total\":"
+    },
+    {
+      "step": "cancellation released the reservation",
+      "status": "PASS",
+      "detail": "4 → 3"
+    },
+    {
+      "step": "RELEASE movement written",
+      "status": "PASS"
+    },
+    {
+      "step": "repeated cancellation ⇒ 409",
+      "status": "PASS",
+      "expected": 409,
+      "got": 409
+    },
+    {
+      "step": "admin status change on a cancelled order ⇒ 409",
+      "status": "PASS",
+      "expected": 409,
+      "got": 409
+    },
+    {
+      "step": "race product created",
+      "status": "PASS",
+      "expected": 201,
+      "got": 201,
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": {\"id\": 862, \"name\": \"منتج سباق Stage14 stage14-9dd2b3\", \"slug\": \"stage14-race-stage14-9dd2b3\", \"sku\": \"STAGE1-STAGE1-017\", \"shortDes"
+    },
+    {
+      "step": "race product stocked with exactly 1 unit",
+      "status": "PASS",
+      "expected": "200/201",
+      "got": 201,
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": {\"id\": 862, \"productId\": 862, \"quantity\": 1, \"reservedQuantity\": 0, \"lowStockThreshold\": 5, \"createdAt\": \"2026-09-16T12:10:33.833Z\","
+    },
+    {
+      "step": "inventory race: exactly one order accepted",
+      "status": "PASS",
+      "detail": "[201, 409]"
+    },
+    {
+      "step": "no overselling: reserved never exceeds quantity",
+      "status": "PASS"
+    },
+    {
+      "step": "dedicated order for the parallel payment test",
+      "status": "PASS",
+      "expected": 201,
+      "got": 201,
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": {\"id\": 1305, \"orderNumber\": \"ORD-2026-001184\", \"status\": \"PENDING\", \"subtotal\": \"175.50\", \"shippingAmo"
+    },
+    {
+      "step": "parallel identical idempotent payments ⇒ one payment row",
+      "status": "PASS",
+      "detail": "statuses=[201, 201, 201] ids={'cmu4272w5006ryy74383ye3k6'} rows=1"
+    },
+    {
+      "step": "a rejected action adds no notification (one event → one notification)",
+      "status": "PASS",
+      "detail": "85 → 85"
+    },
+    {
+      "step": "no duplicate notifications in the whole table",
+      "status": "PASS",
+      "expected": "0",
+      "got": "0"
+    },
+    {
+      "step": "outbox processing responds for both workers",
+      "status": "PASS",
+      "detail": "[201, 201]"
+    },
+    {
+      "step": "no stuck/looping outbox entries",
+      "status": "PASS",
+      "expected": "0",
+      "got": "0"
+    },
+    {
+      "step": "no duplicate outbox entries",
+      "status": "PASS",
+      "expected": "0",
+      "got": "0"
+    },
+    {
+      "step": "notifications table still consistent after double processing",
+      "status": "PASS"
+    },
+    {
+      "step": "POST /verification/start (a)",
+      "status": "PASS",
+      "expected": "200/201/409",
+      "got": 409,
+      "detail": "{\"success\": false, \"message\": \"حسابك موثَّق بالفعل\"}"
+    },
+    {
+      "step": "verification exists for customer A",
+      "status": "PASS",
+      "detail": "id=cmu41og6g006vzwtca8nh77hl status=VERIFIED"
+    },
+    {
+      "step": "customer A verification was already decided in an earlier Stage14 attempt",
+      "status": "PASS",
+      "expected": "VERIFIED",
+      "got": "VERIFIED",
+      "detail": "current status = VERIFIED (re-submission follows the platform contract)"
+    },
+    {
+      "step": "verification audit trail present",
+      "status": "PASS",
+      "detail": "VERIFICATION_REVIEWED,VERIFICATION_STARTED,VERIFICATION_SUBMITTED,VERIFICATION_VERIFIED"
+    },
+    {
+      "step": "verification decision notification present",
+      "status": "PASS",
+      "detail": "3"
+    },
+    {
+      "step": "GET /verification/me (customer A)",
+      "status": "PASS",
+      "expected": 200,
+      "got": 200
+    },
+    {
+      "step": "customer sees only their own verification",
+      "status": "PASS",
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": {\"id\": \"cmu41og6g006vzwtca8nh77hl\", \"userId\": \"cmu41oa5f0000zwtct8r13xid\", \"status\": \"VERIFIED\", \"prov"
+    },
+    {
+      "step": "POST /verification/start (b)",
+      "status": "PASS",
+      "expected": "200/201/409",
+      "got": 409,
+      "detail": "{\"success\": false, \"message\": \"لديك طلب تحقق قيد المعالجة بالفعل\"}"
+    },
+    {
+      "step": "verification exists for customer B",
+      "status": "PASS",
+      "detail": "id=cmu41oguz007jzwtc5ofpy1lu status=PENDING"
+    },
+    {
+      "step": "review B",
+      "status": "PASS",
+      "expected": "200/201",
+      "got": 200
+    },
+    {
+      "step": "reject verification without reason ⇒ 400",
+      "status": "PASS",
+      "expected": 400,
+      "got": 400
+    },
+    {
+      "step": "POST /admin/verifications/{id}/reject",
+      "status": "PASS",
+      "expected": "200/201",
+      "got": 200,
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": {\"id\": \"cmu41oguz007jzwtc5ofpy1lu\", \"userId\": \"cmu41oaft0009zwtcokte8gv6\", \"status\": \"REJECTED\", \"provider\": \"LO"
+    },
+    {
+      "step": "status → REJECTED (DB truth)",
+      "status": "PASS",
+      "detail": "REJECTED"
+    },
+    {
+      "step": "rejection evidence recorded",
+      "status": "PASS",
+      "detail": "REJECTED|وثائق غير واضحة — Stage 14"
+    },
+    {
+      "step": "re-submission after rejection follows the implemented contract",
+      "status": "PASS",
+      "detail": "status=201"
+    },
+    {
+      "step": "no external verification provider is involved (LOG only)",
+      "status": "PASS",
+      "detail": "provider column = LOG"
+    },
+    {
+      "step": "GET /permissions",
+      "status": "PASS",
+      "expected": 200,
+      "got": 200
+    },
+    {
+      "step": "products.read + products.create permissions exist",
+      "status": "PASS",
+      "detail": "2/3"
+    },
+    {
+      "step": "POST /roles",
+      "status": "PASS",
+      "expected": "200/201 (409 = reuse)",
+      "got": 201,
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": {\"id\": 459, \"name\": \"STAGE14R449828\", \"description\": \"دور اختبار تكامل\", \"isSystemRole\": false, \"isOwnerRole\": false, \"createdAt\": \"2026-09-16T12:10:36."
+    },
+    {
+      "step": "POST /employees",
+      "status": "PASS",
+      "expected": "200/201 (409 = reuse)",
+      "got": 201,
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": {\"id\": \"cmu4274xi007qyy740mtmnw2r\", \"firstName\": \"Stage14-Emp\", \"lastName\": \"Stage14\", \"email\": \"stage14.emp.stage14-9dd2b3@alwled.test\", \"phone\": \"0955"
+    },
+    {
+      "step": "assign this run's role (effective permissions = products.read only)",
+      "status": "PASS",
+      "expected": "200/201/409",
+      "got": 409,
+      "detail": "{\"success\": false, \"message\": \"الدور مُسند للموظف مسبقاً\"}"
+    },
+    {
+      "step": "employee can log in",
+      "status": "PASS",
+      "detail": "True"
+    },
+    {
+      "step": "effective permissions reach /auth/me.permissions[]",
+      "status": "PASS",
+      "detail": "[\"products.read\"]"
+    },
+    {
+      "step": "write permission is absent for this role",
+      "status": "PASS",
+      "detail": "[\"products.read\"]"
+    },
+    {
+      "step": "employee GET /products ⇒ 200",
+      "status": "PASS",
+      "expected": 200,
+      "got": 200
+    },
+    {
+      "step": "employee POST /products ⇒ 403 (valid body, blocked by the guard)",
+      "status": "PASS",
+      "expected": 403,
+      "got": 403
+    },
+    {
+      "step": "employee GET /admin/orders ⇒ 403",
+      "status": "PASS",
+      "expected": 403,
+      "got": 403
+    },
+    {
+      "step": "PUT /roles/{id}/permissions (add products.create)",
+      "status": "PASS",
+      "expected": "200/201",
+      "got": 200
+    },
+    {
+      "step": "role change surfaces after refresh",
+      "status": "PASS",
+      "detail": "[\"products.create\", \"products.read\"]"
+    },
+    {
+      "step": "employee POST /products after the grant",
+      "status": "PASS",
+      "expected": 201,
+      "got": 201,
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": {\"id\": 863, \"name\": \"Stage14-EmpProduct-stage14-9dd2b3\", \"slug\": \"stage14-emp-stage14-9dd2b3\", \"sku\": \"STAGE1-STAGE1-018\", \"shortDescription\": null, \"pr"
+    },
+    {
+      "step": "PATCH /employees/{id}/status (disable)",
+      "status": "PASS",
+      "expected": "200/201",
+      "got": 200
+    },
+    {
+      "step": "disabled employee: old access token rejected",
+      "status": "PASS",
+      "detail": "status=403"
+    },
+    {
+      "step": "disabled employee: refresh rejected",
+      "status": "PASS",
+      "detail": "status=403"
+    },
+    {
+      "step": "disabled employee cannot log in",
+      "status": "PASS",
+      "detail": "status=403"
+    },
+    {
+      "step": "customer B reading A's order ⇒ 404 (no existence leak)",
+      "status": "PASS",
+      "detail": "status=404 body={\"success\": false, \"message\": \"الطلب غير موجود\"}"
+    },
+    {
+      "step": "customer B reading A's payment ⇒ 404 (no existence leak)",
+      "status": "PASS",
+      "detail": "status=404 body={\"success\": false, \"message\": \"الدفعة غير موجودة\"}"
+    },
+    {
+      "step": "customer B never sees A's notifications",
+      "status": "PASS",
+      "detail": "19 items, foreign=0"
+    },
+    {
+      "step": "customer B cannot mark a foreign notification as read",
+      "status": "PASS",
+      "detail": "status=404"
+    },
+    {
+      "step": "customer B sees only their own verification",
+      "status": "PASS",
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": {\"id\": \"cmu41oguz007jzwtc5ofpy1lu\", \"userId\": \"cmu41oaft0009zwtcokte8gv6\", \"status\": \"PENDING\", \"provi"
+    },
+    {
+      "step": "customer B cannot fetch A's verification by id",
+      "status": "PASS",
+      "detail": "status=404"
+    },
+    {
+      "step": "customer B has an isolated cart",
+      "status": "PASS",
+      "detail": "6 items"
+    },
+    {
+      "step": "GET /admin/dashboard/overview",
+      "status": "PASS",
+      "expected": 200,
+      "got": 200
+    },
+    {
+      "step": "dashboard order count matches SQL",
+      "status": "PASS",
+      "detail": "ui=33 sql=33"
+    },
+    {
+      "step": "dashboard succeeded payments match SQL",
+      "status": "PASS",
+      "detail": "ui=6 sql=6"
+    },
+    {
+      "step": "dashboard review queue matches SQL",
+      "status": "PASS",
+      "detail": "ui=0 sql=0"
+    },
+    {
+      "step": "recent orders include the stage14 order",
+      "status": "PASS",
+      "detail": "[\"ORD-2026-001184\", \"ORD-2026-001183\", \"ORD-2026-001182\", \"ORD-2026-001181\", \"ORD-2026-001180\", \"ORD-2026-001179\", \"ORD-2026-001178\", \"ORD-2026-001177\", \"ORD-2026-001176\", \"ORD-2026-001175\", \"ORD-2026"
+    },
+    {
+      "step": "GET /admin/analytics/timeseries",
+      "status": "PASS",
+      "expected": "200",
+      "got": 200,
+      "detail": "{\"success\": true, \"message\": \"Success\", \"data\": {\"range\": {\"from\": \"2026-08-17T00:00:00.000Z\", \"to\": \"2026-09-16T00:00:00.000Z\", \"timezone\": \"UTC\", \"days\": 30, \"boundary\": \"from inclusive / to exclusi"
+    },
+    {
+      "step": "timeseries is a list of UTC buckets",
+      "status": "PASS",
+      "detail": "[{\"date\": \"2026-08-17\", \"orders\": 0, \"orderValue\": \"0.00\", \"succeededPayments\": 0, \"succeededPaymentAmount\": \"0.00\"}, {\"date\": \"2026-08-18\", \"orders\": 0, \"orderValue\": \"0.00\", \"succeededPayments\": 0, "
+    },
+    {
+      "step": "GET /audit",
+      "status": "PASS",
+      "expected": 200,
+      "got": 200
+    },
+    {
+      "step": "audit returns actor/action/resource/timestamp",
+      "status": "PASS",
+      "detail": "{\"id\": \"cmu4275tr008cyy74myp3opcg\", \"action\": \"USER_LOGIN_FAILED\", \"entity\": \"user\", \"entityId\": \"cmu4274xi007qyy740mtmnw2r\", \"metadata\": {\"reason\": \"status_SUSPENDED\"}, \"ip\": \"168.231.107.171\", \"userAgent\": \"Python-urllib/3.11\", \"createdAt\": \"2026-0"
+    },
+    {
+      "step": "audit entries carry no secrets",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "step": "notification reads do not spam the audit log",
+      "status": "PASS",
+      "detail": "0 rows"
+    },
+    {
+      "step": "POST /auth/refresh",
+      "status": "PASS",
+      "expected": 200,
+      "got": 200
+    },
+    {
+      "step": "refresh returns a usable access token",
+      "status": "PASS",
+      "detail": "expiresIn=15m"
+    },
+    {
+      "step": "the refreshed access token authorizes requests",
+      "status": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "step": "refresh rotates the refresh token",
+      "status": "PASS"
+    },
+    {
+      "step": "consumed refresh token cannot be reused (reuse detection)",
+      "status": "PASS",
+      "detail": "status=401"
+    },
+    {
+      "step": "GET /auth/sessions",
+      "status": "PASS",
+      "expected": 200,
+      "got": 200
+    },
+    {
+      "step": "session list is not empty for a logged-in user",
+      "status": "PASS",
+      "detail": "2 sessions"
+    },
+    {
+      "step": "POST /auth/logout",
+      "status": "PASS",
+      "expected": "200/204",
+      "got": 200
+    },
+    {
+      "step": "refresh token revoked after logout",
+      "status": "PASS",
+      "detail": "status=401"
+    },
+    {
+      "step": "POST /auth/logout-all",
+      "status": "PASS",
+      "expected": "200/204",
+      "got": 200
+    },
+    {
+      "step": "logout-all revokes every refresh token",
+      "status": "PASS",
+      "detail": "status=401"
+    }
+  ]
+}

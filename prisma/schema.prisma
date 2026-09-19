@@ -1,6 +1,8 @@
 // Alwled — Stage 4: Catalog (categories, brands, products, images, specs) + Inventory foundation
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
+  // صور الإنتاج Debian/glibc: تحديد الهدف صريحاً يمنع اختيار musl خطأً أثناء التشغيل
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
 }
 
 datasource db {
@@ -734,4 +736,26 @@ model CustomerVerification {
   @@index([createdAt])
   @@index([expiresAt])
   @@map("customer_verifications")
+}
+
+
+/// شرائح سلايدر الواجهة الرئيسية — تُدار بالكامل من لوحة الإدارة.
+/// كل شريحة: صورة سطح مكتب (إلزامية) + صورة جوال اختيارية + نص بديل + رابط اختياري.
+/// حقول النص اختيارية عن قصد: الشريحة قد تكون صورة فقط (النص داخل التصميم).
+model SliderSlide {
+  id              Int      @id @default(autoincrement())
+  desktopImageUrl String   @map("desktop_image_url")
+  mobileImageUrl  String?  @map("mobile_image_url")
+  altText         String?  @map("alt_text")
+  linkUrl         String?  @map("link_url")
+  title           String?
+  subtitle        String?
+  ctaLabel        String?  @map("cta_label")
+  isEnabled       Boolean  @default(true) @map("is_enabled")
+  sortOrder       Int      @default(0) @map("sort_order")
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+
+  @@index([isEnabled, sortOrder])
+  @@map("slider_slides")
 }

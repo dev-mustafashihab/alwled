@@ -1,0 +1,1164 @@
+/* ============================================================================
+ * alwled — NEW STOREFRONT · TAILWIND v4 FOUNDATION  (PHASE 1)
+ * ----------------------------------------------------------------------------
+ * • Tailwind v4 · CSS-first (@theme) · بلا preflight (حماية CSS القديم والأدمن)
+ * • المصدر: هذه الطبقة تُولّد shop.tw.css كملف ثابت يُقدَّم عبر nginx.
+ * • الطبقات: theme → base(مقيّدة بـ.stw) → components(.stw-*) → utilities
+ *   ⇒ الأدوات في @layer utilities ⇒ لا تتغلّب على CSS القديم غير المُطبَّق في طبقة
+ *   ⇒ صفر حرب أولويات أثناء الترحيل المرحلي.
+ * • الداكن: [data-theme="dark"] (نفس عقد الثيم الحالي) عبر @custom-variant.
+ * • RTL: خصائص منطقية فقط.
+ * ========================================================================== */
+
+/* ملاحظة معمارية مهمة (مُثبتة بالقياس):
+   base.css القديم يحتوي قواعد non-layered مثل  button { background: none }
+   وقواعد الطبقات تخسر دائمًا أمام أي CSS غير مُطبَّق في طبقة — حتى لو كانت أولويتها أعلى.
+   لذلك: طبقة theme فقط، وكل أساس/مكوّنات/أدوات المتجر الجديد تُصدَّر **غير مُطبَّقة**
+   (unlayered) ⇒ تتنافس بالأولوية والترتيب العادي، وملفنا يُحمَّل أخيرًا ⇒ يفوز داخل نطاقه.
+   كل محدّداتنا مسبوقة بـ.stw أو أسماء stw-* ⇒ لا تلمس الواجهة القديمة ولا لوحة الإدارة. */
+@layer theme;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css";
+
+/* مسح المصادر: الـDOM مُولَّد من JS ⇒ إلزامي مسح JS لا HTML فقط */
+@source "../shop/**/*.{html,js}";
+@source "../assets/js/**/*.js";
+@source "../../tools/qa/**/*.js";
+
+/* ============================ 1) DESIGN TOKENS ============================ */
+@theme static {
+  /* --- الهوية: ACCENT/ACTION (لا جدار أصفر) --- */
+  --color-primary: #FFBF17;
+  --color-primary-hover: #E9AA00;
+  --color-primary-active: #D39900;
+  --color-primary-soft: #FFF6D8;
+  --color-on-primary: #171717;
+
+  /* --- محايدات فاتحة --- */
+  --color-bg: #F7F7F5;
+  --color-surface: #FFFFFF;
+  --color-elevated: #FFFFFF;
+  --color-surface-muted: #F2F2EF;
+  --color-ink: #171717;
+  --color-ink-muted: #626262;
+  --color-ink-subtle: #8A8A8A;
+  --color-line: #E5E5E2;
+  --color-line-strong: #D4D4CF;
+
+  /* --- دلالية (لا تُصبغ بالأصفر) --- */
+  --color-success: #16A34A;
+  --color-success-soft: #ECFDF3;
+  --color-danger: #DC2626;
+  --color-danger-soft: #FEF2F2;
+  --color-warning: #D97706;
+  --color-warning-soft: #FFF7ED;
+  --color-info: #2563EB;
+  --color-info-soft: #EFF6FF;
+  --color-focus: #D39900;
+
+  /* --- الطباعة: Cairo أولًا (مُضمَّن محليًا) --- */
+  --font-store: 'Cairo', Tahoma, 'Segoe UI', 'Noto Naskh Arabic', 'Helvetica Neue', Arial, sans-serif;
+
+  --stw-text-caption: 0.75rem;          --stw-text-caption--line-height: 1.5;
+  --stw-text-meta: 0.8125rem;           --stw-text-meta--line-height: 1.55;
+  --stw-text-label: 0.8125rem;          --stw-text-label--line-height: 1.4;
+  --stw-text-body: 0.875rem;            --stw-text-body--line-height: 1.65;
+  --stw-text-body-lg: 0.9375rem;        --stw-text-body-lg--line-height: 1.6;
+  --stw-text-button: 0.875rem;          --stw-text-button--line-height: 1.25;
+  --stw-text-product-title: 0.9375rem;  --stw-text-product-title--line-height: 1.45;
+  --stw-text-section-title: 1.25rem;    --stw-text-section-title--line-height: 1.35;
+  --stw-text-page-title: clamp(1.375rem, 1.15rem + 1.1vw, 1.875rem);
+  --stw-text-page-title--line-height: 1.25;
+  --stw-text-display: clamp(1.75rem, 1.15rem + 2.2vw, 2.75rem);
+  --stw-text-display--line-height: 1.15;
+  --stw-text-price-sm: 0.9375rem;       --stw-text-price-sm--line-height: 1.3;
+  --stw-text-price: 1.125rem;           --stw-text-price--line-height: 1.25;
+  --stw-text-price-lg: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  --stw-text-price-lg--line-height: 1.2;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* --- الأنصاف: معمارية لا فقاعية --- */
+  --stw-radius-sm: 6px;
+  --stw-radius-md: 10px;
+  --stw-radius-lg: 14px;
+  --stw-radius-xl: 20px;
+
+  /* --- الظلال: مقتصدة (للطبقات فقط) --- */
+  --stw-shadow-xs: 0 1px 2px rgba(23, 23, 23, 0.05);
+  --stw-shadow-sm: 0 1px 3px rgba(23, 23, 23, 0.07), 0 1px 2px rgba(23, 23, 23, 0.04);
+  --stw-shadow-md: 0 8px 24px rgba(23, 23, 23, 0.10), 0 2px 6px rgba(23, 23, 23, 0.05);
+  --stw-shadow-overlay: 0 24px 60px rgba(23, 23, 23, 0.20);
+
+  /* --- الحركة --- */
+  --stw-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --stw-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* --- الحاوية --- */
+  --container-store: 1360px;
+}
+
+/* عقد الحركة الموحّد (Phase 0: توقيت JS↔CSS 240/60ms — لا يُكسر)
+   يُصدَر في :root صراحةً (لا يعتمد على tree-shaking) حتى يبقى مرجعًا للـJS والـCSS. */
+:root {
+  --duration-instant: 90ms;
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --duration-slow: 240ms;   /* = القيمة التي يعتمدها JS لإغلاق لوحة البحث */
+  --duration-panel: 240ms;  /* لوحات/دُرج/مودال */
+  --duration-focus-return: 60ms; /* مهلة إرجاع التركيز في البحث */
+}
+
+/* ============================ 2) DARK THEME ==============================
+   نفس عقد الثيم الحالي: data-theme على <html> (light|dark|system).
+   التوكنز الدلالية تُقلب ⇒ كل الأدوات (bg-surface …) تنقلب تلقائيًا. */
+[data-theme='dark'] {
+  --color-bg: #101112;
+  --color-surface: #18191B;
+  --color-elevated: #1E1F22;
+  --color-surface-muted: #202124;
+  --color-ink: #F5F5F4;
+  --color-ink-muted: #A3A3A0;
+  --color-ink-subtle: #7C7C79;
+  --color-line: #2A2B2E;
+  --color-line-strong: #3A3B3F;
+  --color-primary: #FFBF17;
+  --color-primary-hover: #E9AA00;
+  --color-primary-active: #D39900;
+  --color-primary-soft: rgba(255, 191, 23, 0.14);
+  --color-on-primary: #171717;
+  --color-success-soft: rgba(22, 163, 74, 0.16);
+  --color-danger-soft: rgba(220, 38, 38, 0.16);
+  --color-warning-soft: rgba(217, 119, 6, 0.16);
+  --color-info-soft: rgba(37, 99, 235, 0.16);
+  --color-focus: #FFBF17;
+  --stw-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --stw-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.45);
+  --stw-shadow-md: 0 10px 28px rgba(0, 0, 0, 0.5);
+  --stw-shadow-overlay: 0 28px 70px rgba(0, 0, 0, 0.6);
+}
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/* ============================ 3) BASE (مقيّدة) ============================
+   كل القواعد داخل نطاق .stw ⇒ لا تلمس الواجهة القديمة ولا لوحة الإدارة.
+   :where() ⇒ أولوية صفرية ⇒ الأدوات والمكوّنات تتغلّب بسهولة. */
+/* ===== BASE (غير مُطبَّق — مقيّد بـ.stw) ===== */
+.stw {
+    font-family: var(--font-store);
+    font-size: var(--stw-text-body);
+    line-height: 1.65;
+    color: var(--color-ink);
+    background: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  .stw :where(h1, h2, h3, h4, h5, h6) { margin: 0; font-weight: var(--font-weight-bold); color: var(--color-ink); }
+  .stw :where(p, figure, blockquote) { margin: 0; }
+  .stw :where(a) { color: inherit; text-decoration: none; }
+  .stw :where(ul, ol) { margin: 0; padding: 0; list-style: none; }
+  .stw :where(img, svg, video) { display: block; max-width: 100%; }
+  .stw :where(button, input, select, textarea) { font: inherit; color: inherit; }
+  .stw :where(::selection) { background: var(--color-primary-soft); color: var(--color-ink); }
+  .stw :where(:focus-visible) {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  .stw :where([disabled], [aria-disabled='true']) { cursor: not-allowed; }
+  /* عزل الاتجاه للأرقام/الأسعار (RTL) */
+  .stw :where(.stw-num) { unicode-bidi: isolate; font-variant-numeric: tabular-nums; }
+  /* مخفي عن البصر */
+  .stw .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0;
+  }
+  .stw .skip-link {
+    position: absolute; inset-block-start: -100px; inset-inline-start: 12px; z-index: 100;
+    padding: 10px 16px; border-radius: var(--stw-radius-md);
+    background: var(--color-ink); color: #fff; font-weight: var(--font-weight-semibold);
+    transition: inset-block-start var(--duration-fast) var(--stw-ease-out);
+  }
+  .stw .skip-link:focus { inset-block-start: 12px; }
+
+/* ============================ 4) COMPONENTS ============================== */
+/* ===== COMPONENTS (غير مُطبَّق — بأسماء stw-*) ===== */
+  /* ---------- الحاوية ---------- */
+  .stw-container {
+    width: 100%;
+    max-width: var(--container-store);
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+  @media (min-width: 768px) { .stw-container { padding-inline: 1.5rem; } }
+  @media (min-width: 1280px) { .stw-container { padding-inline: 2rem; } }
+
+  /* ---------- الأزرار (نظام Phase 1) ---------- */
+  .stw-btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    min-height: 2.75rem;                 /* 44px — هدف لمس */
+    height: auto;                        /* ينمو مع النص بدل قصّه */
+    padding-block: 0.4375rem;
+    padding-inline: 1.125rem;
+    border: 1px solid transparent;
+    border-radius: var(--stw-radius-md);
+    font-size: var(--stw-text-button); font-weight: var(--font-weight-semibold);
+    line-height: 1.25; text-align: center; white-space: normal;
+    transition: background-color var(--duration-fast) var(--stw-ease-out),
+                border-color var(--duration-fast) var(--stw-ease-out),
+                color var(--duration-fast) var(--stw-ease-out),
+                box-shadow var(--duration-fast) var(--stw-ease-out);
+  }
+  .stw-btn--sm { min-height: 2.25rem; padding-inline: 0.875rem; font-size: var(--stw-text-meta); }
+  .stw-btn--lg { min-height: 3rem; padding-inline: 1.5rem; font-size: var(--stw-text-body-lg); }
+  .stw-btn--block { width: 100%; }
+
+  .stw-btn--primary { background: var(--color-primary); color: var(--color-on-primary); }
+  .stw-btn--primary:hover { background: var(--color-primary-hover); }
+  .stw-btn--primary:active { background: var(--color-primary-active); }
+
+  .stw-btn--secondary { background: var(--color-ink); color: var(--color-surface); }
+  .stw-btn--secondary:hover { background: #2B2B2B; }
+  [data-theme='dark'] .stw-btn--secondary { background: var(--color-ink); color: #101112; }
+  [data-theme='dark'] .stw-btn--secondary:hover { background: #FFFFFF; }
+
+  .stw-btn--outline { background: transparent; border-color: var(--color-line-strong); color: var(--color-ink); }
+  .stw-btn--outline:hover { background: var(--color-surface-muted); border-color: var(--color-ink-subtle); }
+
+  .stw-btn--ghost { background: transparent; color: var(--color-ink-muted); }
+  .stw-btn--ghost:hover { background: var(--color-surface-muted); color: var(--color-ink); }
+
+  .stw-btn--danger { background: var(--color-danger); color: #FFFFFF; }
+  .stw-btn--danger:hover { background: #B91C1C; }
+
+  .stw-btn:disabled,
+  .stw-btn[aria-disabled='true'] {
+    background: var(--color-surface-muted);
+    border-color: var(--color-line);
+    color: var(--color-ink-subtle);
+    box-shadow: none;
+  }
+  .stw-btn--icon { min-width: 2.75rem; padding-inline: 0; }
+
+  /* ---------- الحقول ---------- */
+  .stw-label {
+    display: block; margin-block-end: 0.375rem;
+    font-size: var(--stw-text-label); font-weight: var(--font-weight-medium); color: var(--color-ink-muted);
+  }
+  .stw-field {
+    width: 100%; min-height: 2.75rem;
+    padding: 0.625rem 0.875rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    border-radius: var(--stw-radius-md);
+    color: var(--color-ink);
+    font-size: 1rem;                       /* ≥16px ⇒ لا تكبير تلقائي في iOS */
+    line-height: 1.5;
+    transition: border-color var(--duration-fast) var(--stw-ease-out),
+                box-shadow var(--duration-fast) var(--stw-ease-out),
+                background-color var(--duration-fast) var(--stw-ease-out);
+  }
+  .stw-field::placeholder { color: var(--color-ink-subtle); }
+  .stw-field:hover { border-color: var(--color-line-strong); }
+  .stw-field:focus {
+    outline: none;
+    border-color: var(--color-primary-active);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 35%, transparent);
+  }
+  .stw-field[disabled] { background: var(--color-surface-muted); color: var(--color-ink-subtle); }
+  .stw-field[aria-invalid='true'] { border-color: var(--color-danger); }
+  .stw-select {
+    appearance: none;
+    padding-inline-end: 2.25rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23626262' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: left 0.75rem center;   /* RTL: السهم يسار */
+    background-size: 1rem;
+  }
+  .stw-help { margin-block-start: 0.375rem; font-size: var(--stw-text-caption); color: var(--color-ink-muted); }
+  .stw-error { margin-block-start: 0.375rem; font-size: var(--stw-text-caption); color: var(--color-danger); font-weight: var(--font-weight-medium); }
+
+  /* اختيار/راديو */
+  .stw-choice {
+    display: flex; align-items: center; gap: 0.625rem;
+    min-height: 2.75rem; padding-inline: 0.75rem;
+    border: 1px solid var(--color-line); border-radius: var(--stw-radius-md);
+    background: var(--color-surface); cursor: pointer;
+    font-size: var(--stw-text-meta); color: var(--color-ink);
+  }
+  .stw-choice:hover { border-color: var(--color-line-strong); }
+  .stw-choice:has(input:checked) { border-color: var(--color-primary-active); background: var(--color-primary-soft); }
+  .stw-choice input { accent-color: var(--color-primary-active); width: 1.125rem; height: 1.125rem; }
+
+  /* ---------- أنماط نصية دلالية ---------- */
+  .stw-t-display     { font-size: var(--stw-text-display);     line-height: 1.15; font-weight: var(--font-weight-bold); }
+  .stw-t-page        { font-size: var(--stw-text-page-title);  line-height: 1.25; font-weight: var(--font-weight-bold); }
+  .stw-t-section     { font-size: var(--stw-text-section-title); line-height: 1.35; font-weight: var(--font-weight-bold); }
+  .stw-t-product     { font-size: var(--stw-text-product-title); line-height: 1.45; font-weight: var(--font-weight-semibold); }
+  .stw-t-body        { font-size: var(--stw-text-body);        line-height: 1.65; }
+  .stw-t-body-lg     { font-size: var(--stw-text-body-lg);     line-height: 1.6; }
+  .stw-t-label       { font-size: var(--stw-text-label);       line-height: 1.4; font-weight: var(--font-weight-medium); }
+  .stw-t-meta        { font-size: var(--stw-text-meta);        line-height: 1.55; }
+  .stw-t-caption     { font-size: var(--stw-text-caption);     line-height: 1.5; }
+  .stw-t-price-lg    { font-size: var(--stw-text-price-lg);    line-height: 1.2; font-weight: var(--font-weight-bold); unicode-bidi: isolate; }
+  .stw-t-price       { font-size: var(--stw-text-price);       line-height: 1.25; font-weight: var(--font-weight-bold); unicode-bidi: isolate; }
+  .stw-t-price-sm    { font-size: var(--stw-text-price-sm);    line-height: 1.3; font-weight: var(--font-weight-bold); unicode-bidi: isolate; }
+
+  /* ---------- سطح/بطاقة أساسية ---------- */
+  .stw-surface { background: var(--color-surface); border: 1px solid var(--color-line); border-radius: var(--stw-radius-lg); }
+  .stw-elevated { background: var(--color-elevated); border: 1px solid var(--color-line); border-radius: var(--stw-radius-lg); box-shadow: var(--stw-shadow-md); }
+
+/* ============================ 5) UTILITIES (إضافات) ====================== */
+@utility stw-price {
+  font-size: var(--stw-text-price);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--stw-text-price--line-height);
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ============================ 6) REDUCED MOTION ========================== */
+@media (prefers-reduced-motion: reduce) {
+  .stw *,
+  .stw *::before,
+  .stw *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* ============================================================================
+ * PHASE 2 — PREMIUM HEADER · NAVIGATION · SEARCH  (التصميم الجديد)
+ * ----------------------------------------------------------------------------
+ * يستهدف نفس هوكات Phase 0/1 (بلا أي تغيير DOM/JS) ⇒ تصميم جديد بسلوك محفوظ.
+ * غير مُطبَّق في طبقة ⇒ يتغلّب على CSS القديم بترتيب التحميل (ملفنا آخر ملف).
+ * الأصفر #FFBF17 استراتيجي: مؤشّر التنقّل النشط · شارة السلة · حلقة التركيز ·
+ * حالة الثيم المختارة · تمييز القسم النشط — لا خلفيات صفراء كبيرة.
+ * ========================================================================== */
+
+/* ---------------------------- 1) الهيدر (الهيكل) -------------------------- */
+.shop-header {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 60;
+  background: var(--color-surface);
+  border-block-end: 1px solid var(--color-line);
+  box-shadow: none;
+  transition: box-shadow var(--duration-base) var(--stw-ease-out),
+              border-color var(--duration-base) var(--stw-ease-out),
+              background-color var(--duration-base) var(--stw-ease-out);
+}
+.shop-header__inner {
+  max-width: var(--container-store);
+  min-height: 4.5rem;              /* 72px */
+  height: auto;
+  padding: 0.5rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.shop-header.is-scrolled {
+  border-block-end-color: var(--color-line-strong);
+  box-shadow: var(--stw-shadow-sm);
+  background: var(--color-surface);
+}
+.shop-header__divider {
+  inline-size: 1px;
+  block-size: 26px;
+  background: var(--color-line);
+  flex: 0 0 auto;
+  margin-inline: 0.25rem;
+}
+.shop-header__spacer { flex: 1 1 auto; }
+
+/* ---------------------------- 2) الشعار ---------------------------------- */
+.shop-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding-inline: 0.25rem;
+  flex: 0 0 auto;
+  color: var(--color-ink);
+}
+.shop-brand__logo {
+  inline-size: 36px; block-size: 36px;
+  flex: 0 0 auto;
+  border-radius: 0;
+}
+.shop-brand__text { display: flex; flex-direction: column; line-height: 1.15; }
+.shop-brand__text strong {
+  font-size: 1rem;                  /* 16px */
+  font-weight: var(--font-weight-bold);
+  letter-spacing: normal;
+  color: var(--color-ink);
+}
+.shop-brand__text small {
+  font-size: 0.6875rem;             /* 11px */
+  font-weight: var(--font-weight-regular);
+  color: var(--color-ink-muted);
+}
+
+/* ---------------------------- 3) التنقّل (ديسكتوب) ------------------------ */
+.shop-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.125rem;
+  flex: 0 0 auto;
+}
+.shop-nav__link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.5rem;
+  padding-inline: 0.75rem;
+  border-radius: var(--stw-radius-sm);
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-ink-muted);
+  white-space: nowrap;
+  transition: color var(--duration-fast) var(--stw-ease-out),
+              background-color var(--duration-fast) var(--stw-ease-out);
+}
+.shop-nav__link:hover { color: var(--color-ink); background: var(--color-surface-muted); }
+.shop-header .shop-nav__link[aria-current='page'],
+.shop-nav__link[aria-current='page'] {
+  color: var(--color-ink);
+  font-weight: var(--font-weight-semibold);
+  background: transparent;
+}
+.shop-header .shop-nav__link[aria-current='page']::after,
+.shop-nav__link[aria-current='page']::after {
+  content: '';
+  position: absolute;
+  inset-block-end: 0.25rem;
+  inset-inline: 0.75rem;
+  block-size: 2px;
+  border-radius: 2px;
+  background: var(--color-primary);
+}
+
+/* ---------------------------- 4) البحث (ديسكتوب) ------------------------- */
+.shop-search {
+  flex: 1 1 auto;
+  max-width: 34rem;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-inline: 0.875rem;
+}
+.shop-search__input,
+.shop-header .shop-search__input {
+  flex: 1 1 auto;
+  min-height: 2.75rem;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-surface-muted);
+  border: 1px solid var(--color-line);
+  border-start-start-radius: var(--stw-radius-lg);
+  border-end-start-radius: var(--stw-radius-lg);
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
+  font-size: 1rem;
+  color: var(--color-ink);
+  transition: border-color var(--duration-fast) var(--stw-ease-out),
+              background-color var(--duration-fast) var(--stw-ease-out),
+              box-shadow var(--duration-fast) var(--stw-ease-out);
+}
+.shop-search__input::placeholder { color: var(--color-ink-subtle); }
+.shop-search__input:hover { border-color: var(--color-line-strong); }
+.shop-header .shop-search__input:focus,
+.shop-search__input:focus {
+  outline: none;
+  background-color: var(--color-surface);
+  border-color: var(--color-primary-active);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 32%, transparent);
+}
+.shop-search__input::-webkit-search-cancel-button { display: none; }
+.shop-search__btn,
+.shop-header .shop-search__btn {
+  inline-size: 2.75rem;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0;
+  font-size: 0;                     /* النص يُخفى — الأيقونة تتكلّم */
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-start-start-radius: 0;
+  border-end-start-radius: 0;
+  border-start-end-radius: var(--stw-radius-lg);
+  border-end-end-radius: var(--stw-radius-lg);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23171717' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.34-4.34'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.25rem;
+  flex: 0 0 auto;
+  transition: background-color var(--duration-fast) var(--stw-ease-out);
+}
+.shop-header .shop-search__btn:hover { background-color: var(--color-primary-hover); border-color: var(--color-primary-hover); }
+.shop-header .shop-search__btn:active { background-color: var(--color-primary-active); }
+
+/* زر البحث الأيقوني: للجوال فقط (الديسكتوب له حقل بحث مضمّن) */
+@media (min-width: 1024px) {
+  #shop-search-btn, .shop-searchbtn { display: none; }
+}
+
+/* ---------------------------- 5) أزرار الأيقونات -------------------------- */
+.shop-iconbtn {
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
+  min-width: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: var(--stw-radius-md);
+  background: transparent;
+  color: var(--color-ink-muted);
+  transition: background-color var(--duration-fast) var(--stw-ease-out),
+              color var(--duration-fast) var(--stw-ease-out),
+              box-shadow var(--duration-fast) var(--stw-ease-out);
+}
+.shop-iconbtn svg { inline-size: 21px; block-size: 21px; }
+.shop-iconbtn:hover { background: var(--color-surface-muted); color: var(--color-ink); }
+.shop-iconbtn:active { background: var(--color-line); }
+.shop-iconbtn:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+  color: var(--color-ink);
+}
+.shop-searchbtn { position: relative; }
+
+/* السلة + العدّاد */
+.shop-cartbtn {
+  position: relative;
+  inline-size: auto;
+  min-width: 2.75rem;
+  gap: 0.5rem;
+  padding-inline: 0.625rem;
+  color: var(--color-ink);
+}
+.shop-cartbtn__label { font-size: 0.875rem; font-weight: var(--font-weight-semibold); }
+.shop-cartbtn__badge,
+.shop-bell__badge,
+.shop-menu__badge {
+  position: absolute;
+  inset-block-start: 0.25rem;
+  inset-inline-start: 0.25rem;
+  min-inline-size: 1.25rem;
+  block-size: 1.25rem;
+  padding-inline: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--color-primary);          /* الأصفر: مؤشّر السلة */
+  color: var(--color-on-primary);
+  font-size: 0.6875rem;
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  border: 2px solid var(--color-surface);
+}
+.shop-bell { position: relative; }
+.shop-bell__badge { inset-inline-start: auto; inset-inline-end: 0.25rem; }
+.shop-user { inline-size: 2.75rem; block-size: 2.75rem; min-width: 2.75rem; border-radius: 999px; }
+.shop-user__avatar { inline-size: 2rem; block-size: 2rem; border-radius: 999px; background: var(--color-surface-muted); color: var(--color-ink); display: grid; place-items: center; }
+.shop-user__avatar svg { inline-size: 18px; block-size: 18px; }
+.shop-actions { display: flex; align-items: center; gap: 0.375rem; flex: 0 0 auto; margin-inline-start: 1.25rem; }
+.shop-actions > a[href='#/login'],
+.shop-actions > a[href='#/register'] {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.5rem;
+  padding-inline: 0.875rem;
+  border-radius: var(--stw-radius-md);
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-ink);
+  border: 1px solid var(--color-line-strong);
+  background: transparent;
+}
+.shop-actions > a[href='#/login'] { border-color: transparent; color: var(--color-ink-muted); font-weight: var(--font-weight-medium); }
+.shop-actions > a[href='#/login']:hover { background: var(--color-surface-muted); color: var(--color-ink); }
+.shop-actions > a[href='#/register'] {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+.shop-actions > a[href='#/register']:hover { background: var(--color-primary-hover); border-color: var(--color-primary-hover); }
+
+
+/* ---------------------------- 6) هيدر الجوال (≤1023) --------------------- */
+@media (max-width: 1023px) {
+  .shop-header__inner { min-height: 3.75rem; padding: 0.375rem 0.75rem; gap: 0.25rem; }
+  .shop-nav, .shop-search, .shop-header__divider { display: none; }
+  .shop-searchbtn { display: inline-flex; }
+  .shop-brand__logo { inline-size: 30px; block-size: 30px; }
+  .shop-brand__text strong { font-size: 0.875rem; }
+  .shop-brand__text small { font-size: 0.625rem; }
+  .shop-cartbtn__label { display: none; }
+  .shop-actions { gap: 0.125rem; }
+  .shop-iconbtn { inline-size: 2.75rem; block-size: 2.75rem; }
+}
+
+/* ---------------------------- 8) لوحة البحث ------------------------------ */
+.shop-search-sheet {
+  background: var(--color-bg);
+  padding: 0;
+}
+.shop-search-sheet__head {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 0.875rem;
+  background: var(--color-surface);
+  border-block-end: 1px solid var(--color-line);
+}
+.shop-search-sheet__field {
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+}
+.shop-search-sheet__field-icon {
+  position: absolute;
+  inset-inline-end: 0.875rem;
+  display: inline-grid;
+  place-items: center;
+  color: var(--color-ink-subtle);
+  pointer-events: none;
+}
+.shop-search-sheet__field-icon svg { inline-size: 18px; block-size: 18px; }
+.shop-search-sheet__input,
+.input.shop-search-sheet__input {
+  inline-size: 100%;
+  min-height: 3rem;
+  padding: 0.625rem 2.75rem 0.625rem 2.75rem;
+  background: var(--color-surface-muted);
+  border: 1px solid var(--color-line);
+  border-radius: var(--stw-radius-md);
+  font-size: 1rem;
+  color: var(--color-ink);
+}
+.shop-search-sheet__input:focus {
+  outline: none;
+  background: var(--color-surface);
+  border-color: var(--color-primary-active);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 32%, transparent);
+}
+.shop-search-sheet__input::-webkit-search-cancel-button { display: none; }
+.shop-search-sheet__clear,
+.shop-search-sheet__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 2.75rem;
+  block-size: 2.75rem;
+  min-width: 2.75rem;
+  border: 0;
+  border-radius: var(--stw-radius-md);
+  background: transparent;
+  color: var(--color-ink-muted);
+}
+.shop-search-sheet__clear { position: absolute; inset-inline-start: 0.375rem; inline-size: 2.25rem; block-size: 2.25rem; min-width: 2.25rem; }
+.shop-search-sheet__clear svg, .shop-search-sheet__close svg { inline-size: 18px; block-size: 18px; }
+.shop-search-sheet__clear:hover, .shop-search-sheet__close:hover { background: var(--color-surface-muted); color: var(--color-ink); }
+.shop-search-sheet__clear[hidden] { display: none; }
+.shop-search-sheet__body { padding: 1rem 0.875rem 2rem; }
+.shop-search-sheet__label {
+  font-size: 0.6875rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-ink-subtle);
+  margin: 0 0 0.625rem;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.shop-search-sheet__section { margin-block-end: 1.25rem; }
+.shop-search-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.shop-search-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  padding-inline: 0.875rem;
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  background: var(--color-surface);
+  color: var(--color-ink-muted);
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-medium);
+  transition: border-color var(--duration-fast) var(--stw-ease-out), color var(--duration-fast) var(--stw-ease-out), background-color var(--duration-fast) var(--stw-ease-out);
+}
+.shop-search-chip:hover { border-color: var(--color-primary-active); color: var(--color-ink); background: var(--color-primary-soft); }
+
+/* نتائج البحث: بطاقات صف مريحة لا جدول */
+.shop-search-results { display: flex; flex-direction: column; gap: 0.5rem; }
+.shop-search-row {
+  display: grid;
+  grid-template-columns: 3.5rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.875rem;
+  min-height: 4.5rem;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--stw-radius-lg);
+  background: var(--color-surface);
+  transition: border-color var(--duration-fast) var(--stw-ease-out), background-color var(--duration-fast) var(--stw-ease-out);
+}
+.shop-search-row:hover, .shop-search-row:focus-visible {
+  border-color: var(--color-line-strong);
+  background: var(--color-surface-muted);
+  outline: none;
+}
+.shop-search-row:focus-visible { box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 32%, transparent); }
+.shop-search-row__media {
+  inline-size: 3.5rem;
+  block-size: 3.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--stw-radius-md);
+  background: var(--color-surface-muted);
+  border: 1px solid var(--color-line);
+  overflow: hidden;
+  color: var(--color-ink-subtle);
+}
+.shop-search-row__media img { inline-size: 100%; block-size: 100%; object-fit: contain; }
+.shop-search-row__media svg { inline-size: 22px; block-size: 22px; }
+.shop-search-row__main { display: flex; flex-direction: column; gap: 0.1875rem; min-width: 0; }
+.shop-search-row__name {
+  font-size: 0.9375rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-ink);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.shop-search-row__meta { font-size: 0.75rem; color: var(--color-ink-subtle); }
+.shop-search-row__price {
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-ink);
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.shop-search-skeleton {
+  block-size: 4.5rem;
+  border-radius: var(--stw-radius-lg);
+  border: 1px solid var(--color-line);
+  background: linear-gradient(90deg, var(--color-surface-muted) 25%, var(--color-surface) 37%, var(--color-surface-muted) 63%);
+  background-size: 400% 100%;
+  animation: stw-shimmer 1.4s var(--stw-ease-in-out) infinite;
+}
+@keyframes stw-shimmer { 0% { background-position: 100% 0; } 100% { background-position: 0 0; } }
+.shop-search-state { display: flex; flex-direction: column; align-items: center; gap: 0.375rem; padding: 2.5rem 1rem; text-align: center; }
+.shop-search-state__icon { color: var(--color-ink-subtle); }
+.shop-search-state__icon svg { inline-size: 30px; block-size: 30px; }
+.shop-search-state__title { font-size: 0.9375rem; font-weight: var(--font-weight-semibold); color: var(--color-ink); margin: 0; }
+.shop-search-state__text { font-size: 0.8125rem; color: var(--color-ink-muted); margin: 0; }
+
+/* ديسكتوب: لوحة بحث متمركزة (نمط palette) */
+@media (min-width: 1024px) {
+  .shop-search-sheet { background: rgba(17, 17, 17, 0.42); display: flex; justify-content: center; padding-block-start: 8vh; }
+  .shop-search-sheet > * { max-width: 44rem; width: 100%; }
+  .shop-search-sheet__head { border-radius: var(--stw-radius-lg) var(--stw-radius-lg) 0 0; border: 1px solid var(--color-line); border-block-end: 0; }
+  .shop-search-sheet__body { background: var(--color-surface); border: 1px solid var(--color-line); border-block-start: 0; border-radius: 0 0 var(--stw-radius-lg) var(--stw-radius-lg); box-shadow: var(--stw-shadow-overlay); max-height: 62vh; overflow-y: auto; }
+}
+
+
+/* ============================================================================
+ * PHASE 2.1 — MOTION: كشف متلاشي لكل عنصر (fade-in-up) بنمط unblocksyria.com
+ * ----------------------------------------------------------------------------
+ * المرجع: @keyframes fade-in-up { 0%{opacity:0;transform:translateY(10px)} 100%{opacity:1;transform:none} }
+ * • بلا JS ⇒ العناصر مرئية دائمًا (لا محتوى مخفي أبدًا) ✓
+ * • prefers-reduced-motion ⇒ إلغاء كامل ✓
+ * • transform/opacity فقط ⇒ بلا إزاحة تخطيط (لا CLS) ✓
+ * ========================================================================== */
+@keyframes stw-reveal {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes stw-reveal-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* الافتراضي: مرئي. التعتيم يُفعَّل فقط عندما يضيف السكربت stw-reveal-on على <html> */
+html.stw-reveal-on .stw-reveal { opacity: 0; }
+html.stw-reveal-on .stw-reveal.is-revealed {
+  animation: stw-reveal 440ms var(--stw-ease-out) both;
+  animation-delay: var(--stw-reveal-delay, 0ms);
+}
+html.stw-reveal-on .stw-reveal--fade.is-revealed { animation-name: stw-reveal-fade; }
+
+@media (prefers-reduced-motion: reduce) {
+  html.stw-reveal-on .stw-reveal,
+  html.stw-reveal-on .stw-reveal.is-revealed {
+    opacity: 1 !important;
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+
+/* ============================================================================
+ * PHASE 2 · REFERENCE CORRECTION — هيدر الجوال + الدُرج الجانبي
+ * المرجع المعتمد: unblocksyria.com (هندسة/تفاعل فقط — بلا هوية/ألوان/محتوى)
+ * ========================================================================== */
+
+/* ---------------------------- A) الهيدر الجوال (≤1023px) ------------------ */
+@media (max-width: 1023px) {
+  .shop-header__inner {
+    min-height: 4.75rem;              /* 76px — داخل نطاق 72–84 */
+    padding-inline: 0.875rem;          /* 14px — داخل نطاق 12–16 */
+    gap: 0.625rem;                     /* 10px — داخل نطاق 8–12 */
+    align-items: center;
+  }
+  /* أزرار مربّعة ناعمة 46px بسطح محايد — لا مربّع أصفر دائم */
+  .shop-header .shop-iconbtn,
+  .shop-header .shop-searchbtn,
+  .shop-header .shop-cart__btn,
+  .shop-header #shop-burger {
+    inline-size: 2.875rem;
+    block-size: 2.875rem;
+    min-width: 2.875rem;
+    min-height: 2.875rem;
+    padding: 0;
+    border-radius: 0.75rem;
+    background: var(--color-surface-muted);
+    border: 1px solid var(--color-line);
+    color: var(--color-ink);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 150ms var(--stw-ease-out), border-color 150ms var(--stw-ease-out), color 150ms var(--stw-ease-out);
+  }
+  .shop-header .shop-iconbtn svg, .shop-header .shop-cart__btn svg { inline-size: 1.25rem; block-size: 1.25rem; }
+  .shop-header .shop-iconbtn:hover, .shop-header .shop-cart__btn:hover { background: var(--color-primary-soft); border-color: var(--color-primary); color: var(--color-ink); }
+  .shop-header .shop-iconbtn:active, .shop-header .shop-cart__btn:active { background: var(--color-primary-soft); }
+  .shop-header .shop-iconbtn:focus-visible, .shop-header .shop-cart__btn:focus-visible, .shop-header #shop-burger:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+  /* الشعار: أولوية بصرية مع مساحة تنفّس */
+  .shop-header .shop-brand { gap: 0.5rem; min-height: 2.75rem; }
+  .shop-header .shop-brand__logo { inline-size: 2.125rem; block-size: 2.125rem; }
+  .shop-header .shop-brand__text strong { font-size: 1.0625rem; }
+  /* الشارة الذهبية على السلة */
+  .shop-header .shop-cart__badge, .shop-header .shop-badge {
+    background: var(--color-primary); color: var(--color-on-primary);
+    font-size: 0.6875rem; font-weight: 700; border-radius: 999px;
+  }
+}
+
+/* الإتاحة: بلا حركة عند طلب المستخدم */
+@media (prefers-reduced-motion: reduce) {
+  .shop-drawer__panel, .shop-drawer__scrim { transition: none; }
+}
+
+
+/* ============================================================================
+ * PHASE 2.2 — حركة اكتمال ظهور القائمة السابقة (لكل عنصر) — بلا أي تغيير JS
+ * القائمة نفسها (تصميمها وسلوكها السابق) لم تُمسّ؛ أُضيف فقط تلاشٍ متدرّج.
+ * ========================================================================== */
+@keyframes stw-menu-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+.shop-drawer.is-open .shop-menu__scroll > *,
+.shop-drawer.is-open .shop-drawer__nav > *,
+.shop-drawer.is-open .shop-menu__theme,
+.shop-drawer.is-open .shop-drawer__foot {
+  animation: stw-menu-in 340ms var(--stw-ease-out) both;
+}
+/* تدرّج الظهور: عنصر بعد عنصر حتى تكتمل القائمة */
+.shop-drawer.is-open .shop-menu__scroll > *:nth-child(1) { animation-delay: 30ms; }
+.shop-drawer.is-open .shop-menu__scroll > *:nth-child(2) { animation-delay: 65ms; }
+.shop-drawer.is-open .shop-menu__scroll > *:nth-child(3) { animation-delay: 100ms; }
+.shop-drawer.is-open .shop-menu__scroll > *:nth-child(4) { animation-delay: 135ms; }
+.shop-drawer.is-open .shop-menu__scroll > *:nth-child(5) { animation-delay: 170ms; }
+.shop-drawer.is-open .shop-menu__scroll > *:nth-child(6) { animation-delay: 205ms; }
+.shop-drawer.is-open .shop-menu__scroll > *:nth-child(n+7) { animation-delay: 240ms; }
+.shop-drawer.is-open .shop-drawer__nav > *:nth-child(1) { animation-delay: 60ms; }
+.shop-drawer.is-open .shop-drawer__nav > *:nth-child(2) { animation-delay: 95ms; }
+.shop-drawer.is-open .shop-drawer__nav > *:nth-child(3) { animation-delay: 130ms; }
+.shop-drawer.is-open .shop-drawer__nav > *:nth-child(4) { animation-delay: 165ms; }
+.shop-drawer.is-open .shop-drawer__nav > *:nth-child(5) { animation-delay: 200ms; }
+.shop-drawer.is-open .shop-drawer__nav > *:nth-child(6) { animation-delay: 235ms; }
+.shop-drawer.is-open .shop-drawer__nav > *:nth-child(n+7) { animation-delay: 270ms; }
+.shop-drawer.is-open .shop-menu__theme { animation-delay: 300ms; }
+.shop-drawer.is-open .shop-drawer__foot { animation-delay: 340ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  .shop-drawer.is-open .shop-menu__scroll > *,
+  .shop-drawer.is-open .shop-drawer__nav > *,
+  .shop-drawer.is-open .shop-menu__theme,
+  .shop-drawer.is-open .shop-drawer__foot { animation: none !important; opacity: 1 !important; transform: none !important; }
+}
+
+/* عناصر منطقة الزبون (تسجيل الدخول / إنشاء حساب) — تدرّج فردي أيضًا */
+.shop-drawer.is-open #shop-menu-guest > *:nth-child(1),
+.shop-drawer.is-open #shop-menu-account > *:nth-child(1) { animation-delay: 210ms; }
+.shop-drawer.is-open #shop-menu-guest > *:nth-child(2),
+.shop-drawer.is-open #shop-menu-account > *:nth-child(2) { animation-delay: 245ms; }
+.shop-drawer.is-open #shop-menu-guest > *:nth-child(n+3),
+.shop-drawer.is-open #shop-menu-account > *:nth-child(n+3) { animation-delay: 280ms; }
+.shop-drawer.is-open #shop-menu-guest > .shop-drawer__link,
+.shop-drawer.is-open #shop-menu-account > .shop-drawer__link,
+.shop-drawer.is-open #shop-menu-user > * {
+  animation: stw-menu-in 340ms var(--stw-ease-out) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .shop-drawer.is-open #shop-menu-guest > *,
+  .shop-drawer.is-open #shop-menu-account > *,
+  .shop-drawer.is-open #shop-menu-user > * { animation: none !important; opacity: 1 !important; }
+}
+
+
+/* الهيدر: يلتفّ تلقائيًا عند ضيق المساحة (200% تكبير) — بلا أثر عند العرض الطبيعي */
+.shop-header__inner { flex-wrap: wrap; row-gap: 0.5rem; }
+.shop-header .shop-search { flex: 1 1 14rem; min-width: 0; }
+.shop-header .shop-nav { flex-wrap: wrap; }
+
+
+/* ============================================================================
+ * الهوية — الشعار الرسمي (logo-alwaleed.png) بديلًا عن الأيقونة القديمة
+ * الشعار يحتوي الاسم «الوليد» ⇒ يُخفى النص المكرّر بصريًا (الرابط يحمل aria-label)
+ * ========================================================================== */
+.shop-brand { gap: 0.375rem; align-items: center; }
+/* أسبقية أعلى من قواعد shop.css (‎.shop-header .shop-brand__logo‎) */
+.shop-header .shop-brand__logo,
+.shop-footer .shop-brand__logo,
+.shop-brand .shop-brand__logo,
+.shop-brand__logo {
+  width: auto;                  /* الصورة كاملة دائمًا — لا قصّ */
+  height: 3.5rem;               /* 56px ≈ 77% من ارتفاع الهيدر */
+  max-width: none;
+  max-height: 3.5rem;
+  object-fit: contain;          /* يحفظ النسبة كاملة */
+  border-radius: 0;
+}
+@media (max-width: 1023px) {
+  .shop-header .shop-brand__logo { height: 3rem; max-height: 3rem; max-width: none; }
+}
+/* التذييل: مقاس أكبر لتُقرأ التصنيفات داخل الصورة (أسبقية عالية) */
+.footer .shop-footer__logo,
+footer .shop-footer__logo,
+.shop-footer .shop-footer__brand .shop-footer__logo,
+.shop-footer .shop-footer__brand img,
+.shop-footer .shop-brand__logo,
+.shop-footer__logo {
+  width: 11rem;
+  height: auto;
+  max-width: min(60vw, 13rem);
+  max-height: none;
+  object-fit: contain;
+}
+@media (min-width: 1024px) {
+  /* تماسك: تقليل الفراغ بين الهوية والتنقّل */
+  .shop-header__inner { column-gap: 0.875rem; }
+  .shop-header .shop-brand { padding-inline-end: 0.5rem; }
+  .shop-header .shop-nav { margin-inline-start: 0.25rem; }
+}
+.shop-brand__text { display: none; }
+.shop-footer__logo { block-size: 3rem; inline-size: auto; max-inline-size: 6rem; object-fit: contain; }
+.shop-footer__brand .shop-brand__text { display: none; }
+html[data-theme='dark'] .shop-brand__logo,
+html[data-theme='dark'] .shop-footer__logo { filter: brightness(1.06); }
+
+
+/* ============================================================================
+ * ضبط الهيدر للعروض المتوسطة (1024–1151px) — يمنع نزول الأزرار لسطر ثانٍ
+ * السبب: الشعار الأكبر (173×56) + البحث الواسع ⇒ الأزرار كانت تلتف.
+ * ========================================================================== */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .shop-header__inner { column-gap: 0.4375rem; }
+  .shop-header .shop-brand__logo { height: 2.5rem; max-height: 2.5rem; }
+  .shop-header .shop-brand { padding-inline-end: 0.25rem; }
+  .shop-header .shop-search-form { flex: 1 1 7rem; min-width: 5rem; }
+  .shop-header .shop-nav__link { padding-inline: 0.5rem; font-size: 0.875rem; }
+  .shop-header .shop-iconbtn, .shop-header .shop-cart__btn, .shop-header .shop-cartbtn {
+    inline-size: 2.375rem; block-size: 2.375rem; min-inline-size: 2.375rem; min-block-size: 2.375rem;
+  }
+  .shop-header #shop-actions { column-gap: 0.25rem; }
+  .shop-header #shop-actions .btn { padding-inline: 0.625rem; font-size: 0.8125rem; }
+}
+
+
+/* محاذاة رأسية موحّدة لكل عناصر الهيدر (مركز عمودي واحد) */
+.shop-header__inner { align-items: center; }
+.shop-header .shop-brand,
+.shop-header .shop-nav,
+.shop-header .shop-nav__link,
+.shop-header .shop-search-form,
+.shop-header .shop-search,
+.shop-header #shop-actions,
+.shop-header .shop-header__spacer,
+.shop-header .shop-header__divider { align-items: center; }
+.shop-header .shop-nav__link { display: inline-flex; align-items: center; }
+.shop-header #shop-actions > * { align-self: center; }
+
+
+/* ============================================================================
+ * MOBILE HEADER HOTFIX — سطر واحد إجباري (بلا التفاف) لكل العرض < 1024
+ * السبب الجذري: مجموع عرض الشعار + الأزرار تجاوز المتاح عند 360px ⇒ التفاف.
+ * الحل: بنية flex صحيحة (nowrap + انكماش الشعار + مجموعة إجراءات واحدة).
+ * ========================================================================== */
+@media (max-width: 1023px) {
+  .shop-header__inner {
+    flex-wrap: nowrap;              /* سطر واحد دائمًا */
+    align-items: center;
+    column-gap: 0.4375rem;          /* 7px بين عناصر الصف */
+    padding-inline: 0.875rem;       /* 14px */
+    min-height: 4.75rem;            /* 76px */
+    min-width: 0;
+  }
+  /* الشعار: ينكمش بأمان بلا تشويه ولا قصّ */
+  .shop-header .shop-brand {
+    flex: 0 1 auto;
+    min-width: 0;
+    order: 1;
+    padding: 0;
+  }
+  .shop-header .shop-brand__logo {
+    width: auto;
+    height: auto;
+    max-height: 3rem;               /* 48px سقف */
+    max-width: min(42vw, 9.5rem);
+    object-fit: contain;
+    flex-shrink: 1;
+  }
+  /* مساحة مرنة واحدة تفصل الشعار عن الإجراءات */
+  .shop-header .shop-header__spacer { flex: 1 1 auto; min-width: 0; order: 2; }
+  /* مجموعة الإجراءات (بحث + سلة + قائمة) — صف واحد غير قابل للالتفاف */
+  .shop-header .shop-searchbtn,
+  .shop-header #shop-actions,
+  .shop-header #shop-burger { flex: 0 0 auto; }
+  .shop-header .shop-searchbtn { order: 3; }
+  .shop-header #shop-actions { order: 4; }
+  .shop-header #shop-burger { order: 5; align-self: center; }
+  /* حجم موحّد للأزرار 46×46 + فراغ 7px */
+  .shop-header .shop-iconbtn,
+  .shop-header .shop-searchbtn,
+  .shop-header .shop-cart__btn,
+  .shop-header .shop-cartbtn,
+  .shop-header #shop-burger {
+    inline-size: 2.875rem;
+    block-size: 2.875rem;
+    min-inline-size: 2.875rem;
+    min-block-size: 2.875rem;
+    border-radius: 0.75rem;
+    background: var(--color-surface-muted);
+    border: 1px solid var(--color-line);
+    color: var(--color-ink);
+  }
+  .shop-header #shop-actions { column-gap: 0.4375rem; align-items: center; }
+  /* شارة السلة: ذهبية مضغوطة بلا تأثير على مقاس الزر */
+  .shop-header .shop-cart__badge, .shop-header .shop-badge, .shop-header .shop-cartbtn__badge {
+    position: absolute;
+    inset-inline-end: 0.125rem;
+    inset-block-start: 0.125rem;
+    min-inline-size: 1.125rem;
+    block-size: 1.125rem;
+    padding: 0 0.1875rem;
+    font-size: 0.625rem;
+    font-weight: 700;
+    line-height: 1.125rem;
+    text-align: center;
+    border-radius: 999px;
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+  }
+}
+/* الشاشات الضيقة جدًا (≤379): تصغير مضمون */
+@media (max-width: 379px) {
+  .shop-header__inner { column-gap: 0.375rem; padding-inline: 0.75rem; }
+  .shop-header .shop-brand__logo { max-height: 2.625rem; max-width: min(36vw, 8.25rem); }
+  .shop-header .shop-iconbtn,
+  .shop-header .shop-searchbtn,
+  .shop-header .shop-cart__btn,
+  .shop-header .shop-cartbtn,
+  .shop-header #shop-burger {
+    inline-size: 2.75rem; block-size: 2.75rem;
+    min-inline-size: 2.75rem; min-block-size: 2.75rem;
+  }
+  .shop-header #shop-actions { column-gap: 0.375rem; }
+}
+
+
+/* ============================================================================
+ * QUICK NAV (جوال/تابلت) — شريط تنقّل سريع ثانوي تحت الهيدر الأساسي
+ * • صف واحد · 46px · سطح محايد · حدّ سفلي رفيع · Cairo 14/600
+ * • النشط: مؤشّر #FFBF17 رفيع (لا كتلة ملوّنة)
+ * • ديسكتوب: مخفي (تنقّل الديسكتوب كافٍ — لا تكرار)
+ * ========================================================================== */
+.shop-quicknav { display: none; }
+
+@media (max-width: 1023px) {
+  .shop-quicknav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    block-size: 2.875rem;                 /* 46px */
+    background: var(--color-surface);
+    border-block-start: 1px solid var(--color-line);
+    border-block-end: 1px solid var(--color-line);
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .shop-quicknav::-webkit-scrollbar { display: none; }
+  .shop-quicknav__link {
+    flex: 1 1 0;
+    min-inline-size: 5.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 0.75rem;
+    font-size: 0.875rem;                  /* 14px */
+    font-weight: 600;
+    color: var(--color-ink-muted);
+    text-decoration: none;
+    white-space: nowrap;
+    position: relative;
+    transition: color 150ms var(--stw-ease-out);
+  }
+  .shop-quicknav__link:hover { color: var(--color-ink); }
+  .shop-quicknav__link:focus-visible { outline: 2px solid var(--color-primary); outline-offset: -3px; }
+  .shop-quicknav__link[aria-current='page'] { color: var(--color-ink); }
+  .shop-quicknav__link[aria-current='page']::after {
+    content: '';
+    position: absolute;
+    inset-inline: 0.75rem;
+    inset-block-end: 0;
+    block-size: 2px;
+    border-radius: 999px;
+    background: var(--color-primary);
+  }
+}
+
+/* ---------- السلوك اللاصق الموحّد: هيدر + شريط سريع كنظام واحد ---------- */
+.shop-header__inner { transition: block-size 200ms var(--stw-ease-out), min-block-size 200ms var(--stw-ease-out), opacity 160ms var(--stw-ease-out); }
+html.stw-scroll-down .shop-header__inner {
+  block-size: 0;
+  min-block-size: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding-block: 0;
+}
+html.stw-scroll-down .shop-header { box-shadow: 0 1px 0 var(--color-line); }
+@media (prefers-reduced-motion: reduce) {
+  .shop-header__inner { transition: none; }
+}
+
+/* ---------- إزالة الشريط الإعلاني من بين التنقّل والواجهة (حُفظت نصوصه) ---------- */
+.shop-home-ticker { display: none; }

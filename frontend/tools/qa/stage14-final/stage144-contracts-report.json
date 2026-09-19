@@ -1,0 +1,70 @@
+{
+  "stage": "14.4",
+  "scope": "api contract verification + no url drift",
+  "total": 12,
+  "passed": 12,
+  "failed": 0,
+  "results": [
+    {
+      "check": "live swagger is reachable and documents the customer surface",
+      "status": "PASS",
+      "got": "paths=97"
+    },
+    {
+      "check": "store endpoint inventory extracted",
+      "status": "PASS",
+      "got": "count=37"
+    },
+    {
+      "check": "dynamic (interpolated) store calls are enumerated explicitly",
+      "status": "PASS",
+      "got": "count=8",
+      "detail": "[{\"file\": \"shop.js\", \"method\": \"get\", \"pattern\": \"/products/\"}, {\"file\": \"shop.js\", \"method\": \"patch\", \"pattern\": \"/cart/items/\"}, {\"file\": \"shop.js\", \"method\": \"del\", \"pattern\": \"/cart/items/\"}, {\"file\": \"shop.js\", \"method\": \"get\", \"pattern\": \"/orders/\"}, {\"file\": \"shop.js\", \"method\": \"post\", \"pattern\": \"/orders/\"}, {\"file\": \"shop.js\", \"method\": \"get\", \"pattern\": \"/payments/\"}, {\"file\": \"shop.js\""
+    },
+    {
+      "check": "every store call is documented in OpenAPI or proven live (undocumented = documentation gap, non-blocker)",
+      "status": "PASS",
+      "got": "documented=39 of 45",
+      "detail": "undocumented-but-live: [\"PATCH /cart/items/1 → live HTTP 400 (غير موثّق في OpenAPI)\", \"DELETE /cart/items/1 → live HTTP 400 (غير موثّق في OpenAPI)\", \"POST /notifications/1/read → live HTTP 400 (غير موثّق في OpenAPI)\", \"PATCH /cart/items/1 → live HTTP 400 (غير موثّق في OpenAPI)\", \"DEL /cart/items/1 → live HTTP 400 (غير موثّق في OpenAPI)\", \"POST /notifications/1/read → live HTTP 400 (غير موثّق في OpenAPI)\"]"
+    },
+    {
+      "check": "no store call points at a non-existent endpoint (undocumented ones are proven live)",
+      "status": "PASS",
+      "got": "[]"
+    },
+    {
+      "check": "undocumented-but-live store endpoints (documentation gap → non-blocker)",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[\"PATCH /cart/items/1 → live HTTP 400 (غير موثّق في OpenAPI)\", \"DELETE /cart/items/1 → live HTTP 400 (غير موثّق في OpenAPI)\", \"POST /notifications/1/read → live HTTP 400 (غير موثّق في OpenAPI)\", \"PATCH /cart/items/1 → live HTTP 400 (غير موثّق في OpenAPI)\", \"DEL /cart/items/1 → live HTTP 400 (غير موثّق في OpenAPI)\", \"POST /notifications/1/read → live HTTP 400 (غير موثّق في OpenAPI)\"]"
+    },
+    {
+      "check": "live probes of the store's private endpoints return 401 anonymously (endpoints exist)",
+      "status": "PASS",
+      "detail": "{\"PATCH /cart/items/1\": 401, \"DELETE /cart/items/1\": 401, \"POST /notifications/1/read\": 401, \"GET /cart\": 401, \"GET /orders\": 401, \"GET /notifications/unread-count\": 401}"
+    },
+    {
+      "check": "store never targets /admin paths",
+      "status": "PASS",
+      "got": "[]"
+    },
+    {
+      "check": "private customer endpoints are documented in the contract",
+      "status": "PASS",
+      "got": "[\"/auth/sessions\", \"/users/me\", \"/notifications\", \"/cart\", \"/orders\", \"/payments\", \"/verification/me\"]"
+    },
+    {
+      "check": "config.js contains no legacy shop-api derivation",
+      "status": "PASS"
+    },
+    {
+      "check": "config.js derives /alwled-api/api/v1 for the store path",
+      "status": "PASS",
+      "detail": "checked in frontend/assets/js/core/config.js"
+    },
+    {
+      "check": "published store page loads the central config and never references shop-api",
+      "status": "PASS"
+    }
+  ]
+}

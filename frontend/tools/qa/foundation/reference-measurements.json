@@ -1,0 +1,76 @@
+{
+ "390_closed": {
+  "hdr": 77,
+  "inner": 76,
+  "pad": "14px",
+  "burger": {
+   "w": 46,
+   "h": 46,
+   "x": 14,
+   "y": 15
+  },
+  "search": {
+   "w": 46,
+   "h": 46,
+   "x": 144,
+   "y": 15
+  },
+  "cart": null,
+  "brand": {
+   "w": 94,
+   "h": 44,
+   "x": 282,
+   "y": 16
+  },
+  "close": {
+   "w": 0,
+   "h": 0,
+   "x": 0,
+   "y": 0
+  },
+  "ov": 0
+ },
+ "390_open": {
+  "w": 328,
+  "left": 62,
+  "right": 390,
+  "vw": 390,
+  "radiusTL": "20px",
+  "trans": "0.22s",
+  "transform": "matrix(1, 0, 0, 1, 0, 0)",
+  "backdrop": "rgba(0, 0, 0, 0.42)",
+  "backdropOp": "1",
+  "close": {
+   "w": 44,
+   "h": 44
+  },
+  "rowH": 50,
+  "rows": 7,
+  "activeBg": "rgb(255, 246, 216)",
+  "activeBefore": "3px",
+  "hdrX": 0,
+  "bodyOverflow": "hidden",
+  "panelBg": "rgb(255, 255, 255)"
+ },
+ "390_dark": {
+  "bg": "rgb(24, 25, 27)",
+  "backdrop": "rgba(0, 0, 0, 0.55)",
+  "text": "rgb(245, 245, 244)"
+ },
+ "430": {
+  "w": 360,
+  "right": 430,
+  "vw": 430,
+  "hdr": 77
+ },
+ "768": {
+  "w": 360,
+  "vw": 768
+ },
+ "1366": {
+  "burgerVisible": false,
+  "navVisible": true,
+  "drawerHidden": true,
+  "hdr": 73
+ }
+}

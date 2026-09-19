@@ -1,0 +1,3403 @@
+{
+ "console": [],
+ "failed": [],
+ "net": {
+  "home": [
+   "products?page=1&limit=24&sortBy=createdAt&sortOrd",
+   "products?page=1&limit=8",
+   "categories?limit=48",
+   "brands?limit=48"
+  ],
+  "products_1": [
+   "products?page=1&limit=12",
+   "categories?limit=48",
+   "brands?limit=48"
+  ],
+  "products_filter": [
+   "products?page=1&limit=12&categoryId=293",
+   "categories?limit=48",
+   "brands?limit=48"
+  ],
+  "categories": [
+   "categories?limit=48"
+  ],
+  "brands": [
+   "brands?limit=48"
+  ]
+ },
+ "shots": [],
+ "products_light390": {
+  "light": [
+   {
+    "label": "h1 الصفحة",
+    "text": "كل المنتجات",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 17.06,
+    "fontSize": "19px",
+    "fontWeight": "700",
+    "cls": "shop-section__title"
+   },
+   {
+    "label": "وصف الصفحة",
+    "text": "تصفّح، ابحث، وفلتر — كل البيانات م",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": "shop-section__sub"
+   },
+   {
+    "label": "رابط مسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "فاصل المسار",
+    "text": "‹",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "تسمية فلتر",
+    "text": "بحث",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "cls": "shop-toolbar__label"
+   },
+   {
+    "label": "عدّاد النتائج",
+    "text": "2 منتج",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": "shop-toolbar__count"
+   },
+   {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "cls": "input"
+   },
+   {
+    "label": "select التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجهزة م",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "cls": "select"
+   },
+   {
+    "label": "نص خيار الاختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(51, 65, 85)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "فاصل نطاق السعر",
+    "text": "—",
+    "color": "rgb(107, 114, 128)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.83,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": "shop-price-range__sep"
+   },
+   {
+    "label": "اسم المنتج",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 17.85,
+    "fontSize": "14.5px",
+    "fontWeight": "600",
+    "cls": ""
+   },
+   {
+    "label": "ميتا البطاقة",
+    "text": "علامة تجريبية ب",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "السعر",
+    "text": "350.00 $",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 17.85,
+    "fontSize": "17px",
+    "fontWeight": "700",
+    "cls": "shop-price__now"
+   },
+   {
+    "label": "شارة (خصم/توفّر)",
+    "text": "-16.67%",
+    "color": "rgb(153, 27, 27)",
+    "bg": "rgb(254,242,242)",
+    "ratio": 7.6,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "cls": "badge badge--danger badge--sm"
+   },
+   {
+    "label": "زر أضف للسلة",
+    "text": "أضف للسلة",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(15,118,110)",
+    "ratio": 5.47,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "cls": "btn btn--primary shop-card__add"
+   },
+   {
+    "label": "زر التفاصيل",
+    "text": "عرض التفاصيل",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "cls": "btn btn--ghost shop-card__details"
+   }
+  ],
+  "state": [],
+  "sheet": [
+   {
+    "label": "عنوان اللوحة",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(51, 65, 85)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "cls": ""
+   },
+   {
+    "label": "تسمية داخل اللوحة",
+    "text": "بحث",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "cls": "shop-toolbar__label"
+   },
+   {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(15,118,110)",
+    "ratio": 5.47,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "cls": "btn btn--primary shop-filters__done"
+   },
+   {
+    "label": "زر تفريغ",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "cls": "btn btn--ghost shop-filters__clear"
+   },
+   {
+    "label": "زر إغلاق اللوحة",
+    "text": "✕",
+    "color": "rgb(15, 118, 110)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 5.23,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": "shop-iconbtn shop-filters__sheet-close"
+   }
+  ],
+  "smallTargets": [
+   {
+    "tag": "A",
+    "cls": "",
+    "text": "الرئيسية",
+    "w": 42,
+    "h": 21,
+    "id": "",
+    "type": null
+   },
+   {
+    "tag": "LABEL",
+    "cls": "shop-toolbar__label",
+    "text": "بحث",
+    "w": 358,
+    "h": 22,
+    "id": "",
+    "type": null
+   }
+  ],
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "كل المنتجات",
+    "cls": "shop-section__title"
+   },
+   {
+    "tag": "H3",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "cls": "shop-card__name"
+   },
+   {
+    "tag": "H3",
+    "text": "منتج تجريبي — ثلاجة 500 لتر",
+    "cls": "shop-card__name"
+   }
+  ],
+  "live": [
+   {
+    "cls": "shop-container",
+    "live": "polite",
+    "text": "الرئيسية‹المنتجاتكل المنتجاتتصفّح، ابحث،"
+   },
+   {
+    "cls": "toast-stack",
+    "live": "polite",
+    "text": ""
+   }
+  ],
+  "busy": [],
+  "roleSearch": true,
+  "ariaCurrent": [
+   {
+    "cls": "shop-nav__link",
+    "v": "page"
+   },
+   {
+    "cls": "shop-drawer__link",
+    "v": "page"
+   }
+  ],
+  "images": [],
+  "placeholders": 2,
+  "domNodes": 352,
+  "pageBg": "rgb(248, 250, 252)",
+  "theme": "light"
+ },
+ "tab_light390": [
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "الرئيسية",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    42,
+    21
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "shop-filters__toggle",
+   "id": "shop-filters-toggle",
+   "text": "الفلاتر والترتيب",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    366,
+    44
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "shop-iconbtn shop-filters__sheet-close",
+   "id": "",
+   "text": "✕",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    44,
+    44
+   ]
+  },
+  {
+   "tag": "INPUT",
+   "cls": "input",
+   "id": "shop-filter-search",
+   "text": "",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.32) 0px 0px 0px 2.77619px",
+   "rect": [
+    358,
+    44
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "btn btn--ghost shop-filters__clear",
+   "id": "",
+   "text": "تفريغ الفلاتر",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.32) 0px 0px 0px 2.77605px",
+   "rect": [
+    175,
+    46
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "btn btn--primary shop-filters__done",
+   "id": "",
+   "text": "عرض النتائج",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+   "rect": [
+    173,
+    46
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "shop-card__media",
+   "id": "",
+   "text": "",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    175,
+    175
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "منتج تجريبي — ثلاجة 300 لت",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    150,
+    48
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "btn btn--primary shop-card__add",
+   "id": "",
+   "text": "أضف للسلة",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+   "rect": [
+    151,
+    44
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "btn btn--ghost shop-card__details",
+   "id": "",
+   "text": "عرض التفاصيل",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.337) 0px 0px 0px 2.90134px",
+   "rect": [
+    151,
+    44
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "shop-card__media",
+   "id": "",
+   "text": "-16.67%",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    175,
+    175
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "منتج تجريبي — ثلاجة 500 لت",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    150,
+    48
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "btn btn--primary shop-card__add",
+   "id": "",
+   "text": "أضف للسلة",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+   "rect": [
+    151,
+    44
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "btn btn--ghost shop-card__details",
+   "id": "",
+   "text": "عرض التفاصيل",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.337) 0px 0px 0px 2.90119px",
+   "rect": [
+    151,
+    44
+   ]
+  },
+  {
+   "tag": "SUMMARY",
+   "cls": "",
+   "id": "",
+   "text": "تسوّق",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    366,
+    48
+   ]
+  },
+  {
+   "tag": "SUMMARY",
+   "cls": "",
+   "id": "",
+   "text": "حسابك",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    366,
+    48
+   ]
+  },
+  {
+   "tag": "SUMMARY",
+   "cls": "",
+   "id": "",
+   "text": "الدفع والتوصيل",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    366,
+    48
+   ]
+  },
+  {
+   "tag": "BODY",
+   "cls": "shop-body",
+   "id": "",
+   "text": "تخطي إلى المحتوى\n\n  \n    \n",
+   "outline": "3px none rgb(51, 65, 85)",
+   "shadow": "none",
+   "rect": [
+    390,
+    1136
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "skip-link",
+   "id": "",
+   "text": "تخطي إلى المحتوى",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    140,
+    38
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "shop-brand",
+   "id": "",
+   "text": "الوليد\n          للأجهزة ا",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    77,
+    44
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "shop-iconbtn shop-searchbtn",
+   "id": "shop-search-btn",
+   "text": "",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    44,
+    44
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "shop-cartbtn",
+   "id": "shop-cart-button",
+   "text": "السلة",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    44,
+    44
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "shop-iconbtn shop-header__burger",
+   "id": "shop-burger",
+   "text": "",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    44,
+    44
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "الرئيسية",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    42,
+    21
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "shop-filters__toggle",
+   "id": "shop-filters-toggle",
+   "text": "الفلاتر والترتيب",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    366,
+    44
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "shop-iconbtn shop-filters__sheet-close",
+   "id": "",
+   "text": "✕",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    44,
+    44
+   ]
+  }
+ ],
+ "products_light1366": {
+  "light": [
+   {
+    "label": "h1 الصفحة",
+    "text": "كل المنتجات",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 17.06,
+    "fontSize": "19px",
+    "fontWeight": "700",
+    "cls": "shop-section__title"
+   },
+   {
+    "label": "وصف الصفحة",
+    "text": "تصفّح، ابحث، وفلتر — كل البيانات م",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": "shop-section__sub"
+   },
+   {
+    "label": "رابط مسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "فاصل المسار",
+    "text": "‹",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "تسمية فلتر",
+    "text": "بحث",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "500",
+    "cls": "shop-toolbar__label"
+   },
+   {
+    "label": "عدّاد النتائج",
+    "text": "2 منتج",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": "shop-toolbar__count"
+   },
+   {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "cls": "input"
+   },
+   {
+    "label": "select التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجهزة م",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "cls": "select"
+   },
+   {
+    "label": "نص خيار الاختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(51, 65, 85)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "فاصل نطاق السعر",
+    "text": "—",
+    "color": "rgb(107, 114, 128)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.83,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": "shop-price-range__sep"
+   },
+   {
+    "label": "اسم المنتج",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "cls": ""
+   },
+   {
+    "label": "ميتا البطاقة",
+    "text": "علامة تجريبية ب",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "السعر",
+    "text": "350.00 $",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 17.85,
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "cls": "shop-price__now"
+   },
+   {
+    "label": "شارة (خصم/توفّر)",
+    "text": "-16.67%",
+    "color": "rgb(153, 27, 27)",
+    "bg": "rgb(254,242,242)",
+    "ratio": 7.6,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "cls": "badge badge--danger badge--sm"
+   },
+   {
+    "label": "زر أضف للسلة",
+    "text": "أضف للسلة",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(15,118,110)",
+    "ratio": 5.47,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "cls": "btn btn--primary shop-card__add"
+   },
+   {
+    "label": "زر التفاصيل",
+    "text": "عرض التفاصيل",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "cls": "btn btn--ghost shop-card__details"
+   }
+  ],
+  "state": [],
+  "sheet": [
+   {
+    "label": "عنوان اللوحة",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(51, 65, 85)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 9.9,
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "cls": ""
+   },
+   {
+    "label": "تسمية داخل اللوحة",
+    "text": "بحث",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "500",
+    "cls": "shop-toolbar__label"
+   },
+   {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(15,118,110)",
+    "ratio": 5.47,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "cls": "btn btn--primary shop-filters__done"
+   },
+   {
+    "label": "زر تفريغ",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "cls": "btn btn--ghost shop-filters__clear"
+   },
+   {
+    "label": "زر إغلاق اللوحة",
+    "text": "✕",
+    "color": "rgb(15, 118, 110)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 5.23,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": "shop-iconbtn shop-filters__sheet-close"
+   }
+  ],
+  "smallTargets": [
+   {
+    "tag": "A",
+    "cls": "",
+    "text": "الرئيسية",
+    "w": 44,
+    "h": 22,
+    "id": "",
+    "type": null
+   },
+   {
+    "tag": "A",
+    "cls": "",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "w": 170,
+    "h": 29,
+    "id": "",
+    "type": null
+   },
+   {
+    "tag": "A",
+    "cls": "",
+    "text": "منتج تجريبي — ثلاجة 500 لتر",
+    "w": 170,
+    "h": 29,
+    "id": "",
+    "type": null
+   }
+  ],
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "كل المنتجات",
+    "cls": "shop-section__title"
+   },
+   {
+    "tag": "H3",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "cls": "shop-card__name"
+   },
+   {
+    "tag": "H3",
+    "text": "منتج تجريبي — ثلاجة 500 لتر",
+    "cls": "shop-card__name"
+   }
+  ],
+  "live": [
+   {
+    "cls": "shop-container",
+    "live": "polite",
+    "text": "الرئيسية‹المنتجاتكل المنتجاتتصفّح، ابحث،"
+   },
+   {
+    "cls": "toast-stack",
+    "live": "polite",
+    "text": ""
+   }
+  ],
+  "busy": [],
+  "roleSearch": true,
+  "ariaCurrent": [
+   {
+    "cls": "shop-nav__link",
+    "v": "page"
+   },
+   {
+    "cls": "shop-drawer__link",
+    "v": "page"
+   }
+  ],
+  "images": [],
+  "placeholders": 2,
+  "domNodes": 352,
+  "pageBg": "rgb(248, 250, 252)",
+  "theme": "light"
+ },
+ "tab_light1366": [
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "الرئيسية",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    44,
+    22
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "shop-card__media",
+   "id": "",
+   "text": "",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    278,
+    278
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "منتج تجريبي — ثلاجة 300 لت",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    170,
+    29
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "btn btn--primary shop-card__add",
+   "id": "",
+   "text": "أضف للسلة",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+   "rect": [
+    114,
+    44
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "btn btn--ghost shop-card__details",
+   "id": "",
+   "text": "عرض التفاصيل",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.337) 0px 0px 0px 2.90119px",
+   "rect": [
+    133,
+    44
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "shop-card__media",
+   "id": "",
+   "text": "-16.67%",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    278,
+    278
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "منتج تجريبي — ثلاجة 500 لت",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    170,
+    29
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "btn btn--primary shop-card__add",
+   "id": "",
+   "text": "أضف للسلة",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+   "rect": [
+    114,
+    44
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "btn btn--ghost shop-card__details",
+   "id": "",
+   "text": "عرض التفاصيل",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.337) 0px 0px 0px 2.90119px",
+   "rect": [
+    133,
+    44
+   ]
+  },
+  {
+   "tag": "SUMMARY",
+   "cls": "",
+   "id": "",
+   "text": "تسوّق",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    255,
+    22
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "الرئيسية",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    44,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "كل المنتجات",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    68,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "التصنيفات",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    56,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "العلامات",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    50,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "العروض والخصومات",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    114,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "سلة المشتريات",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    83,
+    26
+   ]
+  },
+  {
+   "tag": "SUMMARY",
+   "cls": "",
+   "id": "",
+   "text": "حسابك",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    255,
+    22
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "حسابي",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    40,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "طلباتي",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    38,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "الإشعارات",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    56,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "توثيق الحساب",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    78,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "تسجيل الدخول",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    80,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "إنشاء حساب",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    69,
+    26
+   ]
+  },
+  {
+   "tag": "SUMMARY",
+   "cls": "",
+   "id": "",
+   "text": "الدفع والتوصيل",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    255,
+    22
+   ]
+  },
+  {
+   "tag": "BODY",
+   "cls": "shop-body",
+   "id": "",
+   "text": "تخطي إلى المحتوى\n\n  \n    \n",
+   "outline": "3px none rgb(51, 65, 85)",
+   "shadow": "none",
+   "rect": [
+    1366,
+    1060
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "skip-link",
+   "id": "",
+   "text": "تخطي إلى المحتوى",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    140,
+    38
+   ]
+  }
+ ],
+ "products_dark1366": {
+  "light": [
+   {
+    "label": "h1 الصفحة",
+    "text": "كل المنتجات",
+    "color": "rgb(241, 245, 249)",
+    "bg": "rgb(10,18,32)",
+    "ratio": 17.11,
+    "fontSize": "19px",
+    "fontWeight": "700",
+    "cls": "shop-section__title"
+   },
+   {
+    "label": "وصف الصفحة",
+    "text": "تصفّح، ابحث، وفلتر — كل البيانات م",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(10,18,32)",
+    "ratio": 7.31,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": "shop-section__sub"
+   },
+   {
+    "label": "رابط مسار",
+    "text": "الرئيسية",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(10,18,32)",
+    "ratio": 7.31,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "فاصل المسار",
+    "text": "‹",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(10,18,32)",
+    "ratio": 7.31,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "تسمية فلتر",
+    "text": "بحث",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(18,27,43)",
+    "ratio": 6.73,
+    "fontSize": "12.5px",
+    "fontWeight": "500",
+    "cls": "shop-toolbar__label"
+   },
+   {
+    "label": "عدّاد النتائج",
+    "text": "2 منتج",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(18,27,43)",
+    "ratio": 6.73,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": "shop-toolbar__count"
+   },
+   {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(241, 245, 249)",
+    "bg": "rgb(18,27,43)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "cls": "input"
+   },
+   {
+    "label": "select التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجهزة م",
+    "color": "rgb(241, 245, 249)",
+    "bg": "rgb(18,27,43)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "cls": "select"
+   },
+   {
+    "label": "نص خيار الاختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.48,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "فاصل نطاق السعر",
+    "text": "—",
+    "color": "rgb(107, 114, 128)",
+    "bg": "rgb(18,27,43)",
+    "ratio": 3.57,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": "shop-price-range__sep"
+   },
+   {
+    "label": "اسم المنتج",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "color": "rgb(241, 245, 249)",
+    "bg": "rgb(18,27,43)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "cls": ""
+   },
+   {
+    "label": "ميتا البطاقة",
+    "text": "علامة تجريبية ب",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(18,27,43)",
+    "ratio": 6.73,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "السعر",
+    "text": "350.00 $",
+    "color": "rgb(241, 245, 249)",
+    "bg": "rgb(18,27,43)",
+    "ratio": 15.75,
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "cls": "shop-price__now"
+   },
+   {
+    "label": "شارة (خصم/توفّر)",
+    "text": "-16.67%",
+    "color": "rgb(153, 27, 27)",
+    "bg": "rgb(48,26,38)",
+    "ratio": 1.94,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "cls": "badge badge--danger badge--sm"
+   },
+   {
+    "label": "زر أضف للسلة",
+    "text": "أضف للسلة",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(20,184,166)",
+    "ratio": 2.49,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "cls": "btn btn--primary shop-card__add"
+   },
+   {
+    "label": "زر التفاصيل",
+    "text": "عرض التفاصيل",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(18,27,43)",
+    "ratio": 6.73,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "cls": "btn btn--ghost shop-card__details"
+   }
+  ],
+  "state": [],
+  "sheet": [
+   {
+    "label": "عنوان اللوحة",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(203, 213, 225)",
+    "bg": "rgb(10,18,32)",
+    "ratio": 12.63,
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "cls": ""
+   },
+   {
+    "label": "تسمية داخل اللوحة",
+    "text": "بحث",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(18,27,43)",
+    "ratio": 6.73,
+    "fontSize": "12.5px",
+    "fontWeight": "500",
+    "cls": "shop-toolbar__label"
+   },
+   {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(20,184,166)",
+    "ratio": 2.49,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "cls": "btn btn--primary shop-filters__done"
+   },
+   {
+    "label": "زر تفريغ",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(10,18,32)",
+    "ratio": 7.31,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "cls": "btn btn--ghost shop-filters__clear"
+   },
+   {
+    "label": "زر إغلاق اللوحة",
+    "text": "✕",
+    "color": "rgb(15, 118, 110)",
+    "bg": "rgb(15,24,38)",
+    "ratio": 3.25,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": "shop-iconbtn shop-filters__sheet-close"
+   }
+  ],
+  "smallTargets": [
+   {
+    "tag": "A",
+    "cls": "",
+    "text": "الرئيسية",
+    "w": 44,
+    "h": 22,
+    "id": "",
+    "type": null
+   },
+   {
+    "tag": "A",
+    "cls": "",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "w": 170,
+    "h": 29,
+    "id": "",
+    "type": null
+   },
+   {
+    "tag": "A",
+    "cls": "",
+    "text": "منتج تجريبي — ثلاجة 500 لتر",
+    "w": 170,
+    "h": 29,
+    "id": "",
+    "type": null
+   }
+  ],
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "كل المنتجات",
+    "cls": "shop-section__title"
+   },
+   {
+    "tag": "H3",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "cls": "shop-card__name"
+   },
+   {
+    "tag": "H3",
+    "text": "منتج تجريبي — ثلاجة 500 لتر",
+    "cls": "shop-card__name"
+   }
+  ],
+  "live": [
+   {
+    "cls": "shop-container",
+    "live": "polite",
+    "text": "الرئيسية‹المنتجاتكل المنتجاتتصفّح، ابحث،"
+   },
+   {
+    "cls": "toast-stack",
+    "live": "polite",
+    "text": ""
+   }
+  ],
+  "busy": [],
+  "roleSearch": true,
+  "ariaCurrent": [
+   {
+    "cls": "shop-nav__link",
+    "v": "page"
+   },
+   {
+    "cls": "shop-drawer__link",
+    "v": "page"
+   }
+  ],
+  "images": [],
+  "placeholders": 2,
+  "domNodes": 352,
+  "pageBg": "rgb(10, 18, 32)",
+  "theme": "dark"
+ },
+ "tab_dark1366": [
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "الرئيسية",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    44,
+    22
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "shop-card__media",
+   "id": "",
+   "text": "",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    278,
+    278
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "منتج تجريبي — ثلاجة 300 لت",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    170,
+    29
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "btn btn--primary shop-card__add",
+   "id": "",
+   "text": "أضف للسلة",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+   "rect": [
+    114,
+    44
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "btn btn--ghost shop-card__details",
+   "id": "",
+   "text": "عرض التفاصيل",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.337) 0px 0px 0px 2.90119px",
+   "rect": [
+    133,
+    44
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "shop-card__media",
+   "id": "",
+   "text": "-16.67%",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    278,
+    278
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "منتج تجريبي — ثلاجة 500 لت",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    170,
+    29
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "btn btn--primary shop-card__add",
+   "id": "",
+   "text": "أضف للسلة",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+   "rect": [
+    114,
+    44
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "btn btn--ghost shop-card__details",
+   "id": "",
+   "text": "عرض التفاصيل",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.337) 0px 0px 0px 2.90119px",
+   "rect": [
+    133,
+    44
+   ]
+  },
+  {
+   "tag": "SUMMARY",
+   "cls": "",
+   "id": "",
+   "text": "تسوّق",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    255,
+    22
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "الرئيسية",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    44,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "كل المنتجات",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    68,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "التصنيفات",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    56,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "العلامات",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    50,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "العروض والخصومات",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    114,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "سلة المشتريات",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    83,
+    26
+   ]
+  },
+  {
+   "tag": "SUMMARY",
+   "cls": "",
+   "id": "",
+   "text": "حسابك",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    255,
+    22
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "حسابي",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    40,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "طلباتي",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    38,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "الإشعارات",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    56,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "توثيق الحساب",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    78,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "تسجيل الدخول",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    80,
+    26
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "إنشاء حساب",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    69,
+    26
+   ]
+  },
+  {
+   "tag": "SUMMARY",
+   "cls": "",
+   "id": "",
+   "text": "الدفع والتوصيل",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    255,
+    22
+   ]
+  },
+  {
+   "tag": "BODY",
+   "cls": "shop-body",
+   "id": "",
+   "text": "تخطي إلى المحتوى\n\n  \n    \n",
+   "outline": "3px none rgb(203, 213, 225)",
+   "shadow": "none",
+   "rect": [
+    1366,
+    1060
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "skip-link",
+   "id": "",
+   "text": "تخطي إلى المحتوى",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    140,
+    38
+   ]
+  }
+ ],
+ "products_dark390": {
+  "light": [
+   {
+    "label": "h1 الصفحة",
+    "text": "كل المنتجات",
+    "color": "rgb(241, 245, 249)",
+    "bg": "rgb(10,18,32)",
+    "ratio": 17.11,
+    "fontSize": "19px",
+    "fontWeight": "700",
+    "cls": "shop-section__title"
+   },
+   {
+    "label": "وصف الصفحة",
+    "text": "تصفّح، ابحث، وفلتر — كل البيانات م",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(10,18,32)",
+    "ratio": 7.31,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": "shop-section__sub"
+   },
+   {
+    "label": "رابط مسار",
+    "text": "الرئيسية",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(10,18,32)",
+    "ratio": 7.31,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "فاصل المسار",
+    "text": "‹",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(10,18,32)",
+    "ratio": 7.31,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "تسمية فلتر",
+    "text": "بحث",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.56,
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "cls": "shop-toolbar__label"
+   },
+   {
+    "label": "عدّاد النتائج",
+    "text": "2 منتج",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.56,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": "shop-toolbar__count"
+   },
+   {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(241, 245, 249)",
+    "bg": "rgb(18,27,43)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "cls": "input"
+   },
+   {
+    "label": "select التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجهزة م",
+    "color": "rgb(241, 245, 249)",
+    "bg": "rgb(18,27,43)",
+    "ratio": 15.75,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "cls": "select"
+   },
+   {
+    "label": "نص خيار الاختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.48,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "فاصل نطاق السعر",
+    "text": "—",
+    "color": "rgb(107, 114, 128)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.83,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": "shop-price-range__sep"
+   },
+   {
+    "label": "اسم المنتج",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "color": "rgb(241, 245, 249)",
+    "bg": "rgb(18,27,43)",
+    "ratio": 15.75,
+    "fontSize": "14.5px",
+    "fontWeight": "600",
+    "cls": ""
+   },
+   {
+    "label": "ميتا البطاقة",
+    "text": "علامة تجريبية ب",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(18,27,43)",
+    "ratio": 6.73,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "السعر",
+    "text": "350.00 $",
+    "color": "rgb(241, 245, 249)",
+    "bg": "rgb(18,27,43)",
+    "ratio": 15.75,
+    "fontSize": "17px",
+    "fontWeight": "700",
+    "cls": "shop-price__now"
+   },
+   {
+    "label": "شارة (خصم/توفّر)",
+    "text": "-16.67%",
+    "color": "rgb(153, 27, 27)",
+    "bg": "rgb(48,26,38)",
+    "ratio": 1.94,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "cls": "badge badge--danger badge--sm"
+   },
+   {
+    "label": "زر أضف للسلة",
+    "text": "أضف للسلة",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(20,184,166)",
+    "ratio": 2.49,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "cls": "btn btn--primary shop-card__add"
+   },
+   {
+    "label": "زر التفاصيل",
+    "text": "عرض التفاصيل",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(18,27,43)",
+    "ratio": 6.73,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "cls": "btn btn--ghost shop-card__details"
+   }
+  ],
+  "state": [],
+  "sheet": [
+   {
+    "label": "عنوان اللوحة",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(203, 213, 225)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 1.48,
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "cls": ""
+   },
+   {
+    "label": "تسمية داخل اللوحة",
+    "text": "بحث",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.56,
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "cls": "shop-toolbar__label"
+   },
+   {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(20,184,166)",
+    "ratio": 2.49,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "cls": "btn btn--primary shop-filters__done"
+   },
+   {
+    "label": "زر تفريغ",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 2.56,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "cls": "btn btn--ghost shop-filters__clear"
+   },
+   {
+    "label": "زر إغلاق اللوحة",
+    "text": "✕",
+    "color": "rgb(15, 118, 110)",
+    "bg": "rgb(15,24,38)",
+    "ratio": 3.25,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": "shop-iconbtn shop-filters__sheet-close"
+   }
+  ],
+  "smallTargets": [
+   {
+    "tag": "A",
+    "cls": "",
+    "text": "الرئيسية",
+    "w": 42,
+    "h": 21,
+    "id": "",
+    "type": null
+   },
+   {
+    "tag": "LABEL",
+    "cls": "shop-toolbar__label",
+    "text": "بحث",
+    "w": 358,
+    "h": 22,
+    "id": "",
+    "type": null
+   }
+  ],
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "كل المنتجات",
+    "cls": "shop-section__title"
+   },
+   {
+    "tag": "H3",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "cls": "shop-card__name"
+   },
+   {
+    "tag": "H3",
+    "text": "منتج تجريبي — ثلاجة 500 لتر",
+    "cls": "shop-card__name"
+   }
+  ],
+  "live": [
+   {
+    "cls": "shop-container",
+    "live": "polite",
+    "text": "الرئيسية‹المنتجاتكل المنتجاتتصفّح، ابحث،"
+   },
+   {
+    "cls": "toast-stack",
+    "live": "polite",
+    "text": ""
+   }
+  ],
+  "busy": [],
+  "roleSearch": true,
+  "ariaCurrent": [
+   {
+    "cls": "shop-nav__link",
+    "v": "page"
+   },
+   {
+    "cls": "shop-drawer__link",
+    "v": "page"
+   }
+  ],
+  "images": [],
+  "placeholders": 2,
+  "domNodes": 352,
+  "pageBg": "rgb(10, 18, 32)",
+  "theme": "dark"
+ },
+ "tab_dark390": [
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "الرئيسية",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    42,
+    21
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "shop-filters__toggle",
+   "id": "shop-filters-toggle",
+   "text": "الفلاتر والترتيب",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    366,
+    44
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "shop-iconbtn shop-filters__sheet-close",
+   "id": "",
+   "text": "✕",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    44,
+    44
+   ]
+  },
+  {
+   "tag": "INPUT",
+   "cls": "input",
+   "id": "shop-filter-search",
+   "text": "",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 2.99777px",
+   "rect": [
+    358,
+    44
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "btn btn--ghost shop-filters__clear",
+   "id": "",
+   "text": "تفريغ الفلاتر",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.345) 0px 0px 0px 2.96982px",
+   "rect": [
+    175,
+    46
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "btn btn--primary shop-filters__done",
+   "id": "",
+   "text": "عرض النتائج",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+   "rect": [
+    173,
+    46
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "shop-card__media",
+   "id": "",
+   "text": "",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    175,
+    175
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "منتج تجريبي — ثلاجة 300 لت",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    150,
+    48
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "btn btn--primary shop-card__add",
+   "id": "",
+   "text": "أضف للسلة",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+   "rect": [
+    151,
+    44
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "btn btn--ghost shop-card__details",
+   "id": "",
+   "text": "عرض التفاصيل",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.337) 0px 0px 0px 2.90119px",
+   "rect": [
+    151,
+    44
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "shop-card__media",
+   "id": "",
+   "text": "-16.67%",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    175,
+    175
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "منتج تجريبي — ثلاجة 500 لت",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    150,
+    48
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "btn btn--primary shop-card__add",
+   "id": "",
+   "text": "أضف للسلة",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+   "rect": [
+    151,
+    44
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "btn btn--ghost shop-card__details",
+   "id": "",
+   "text": "عرض التفاصيل",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 2.99776px",
+   "rect": [
+    151,
+    44
+   ]
+  },
+  {
+   "tag": "SUMMARY",
+   "cls": "",
+   "id": "",
+   "text": "تسوّق",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    366,
+    48
+   ]
+  },
+  {
+   "tag": "SUMMARY",
+   "cls": "",
+   "id": "",
+   "text": "حسابك",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    366,
+    48
+   ]
+  },
+  {
+   "tag": "SUMMARY",
+   "cls": "",
+   "id": "",
+   "text": "الدفع والتوصيل",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    366,
+    48
+   ]
+  },
+  {
+   "tag": "BODY",
+   "cls": "shop-body",
+   "id": "",
+   "text": "تخطي إلى المحتوى\n\n  \n    \n",
+   "outline": "3px none rgb(203, 213, 225)",
+   "shadow": "none",
+   "rect": [
+    390,
+    1136
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "skip-link",
+   "id": "",
+   "text": "تخطي إلى المحتوى",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    140,
+    38
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "shop-brand",
+   "id": "",
+   "text": "الوليد\n          للأجهزة ا",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    77,
+    44
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "shop-iconbtn shop-searchbtn",
+   "id": "shop-search-btn",
+   "text": "",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    44,
+    44
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "shop-cartbtn",
+   "id": "shop-cart-button",
+   "text": "السلة",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    44,
+    44
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "shop-iconbtn shop-header__burger",
+   "id": "shop-burger",
+   "text": "",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    44,
+    44
+   ]
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "text": "الرئيسية",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    42,
+    21
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "shop-filters__toggle",
+   "id": "shop-filters-toggle",
+   "text": "الفلاتر والترتيب",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    366,
+    44
+   ]
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "shop-iconbtn shop-filters__sheet-close",
+   "id": "",
+   "text": "✕",
+   "outline": "2px solid rgb(13, 148, 136)",
+   "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+   "rect": [
+    44,
+    44
+   ]
+  }
+ ],
+ "state_empty": {
+  "light": [
+   {
+    "label": "h1 الصفحة",
+    "text": "كل المنتجات",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 17.06,
+    "fontSize": "19px",
+    "fontWeight": "700",
+    "cls": "shop-section__title"
+   },
+   {
+    "label": "وصف الصفحة",
+    "text": "تصفّح، ابحث، وفلتر — كل البيانات م",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": "shop-section__sub"
+   },
+   {
+    "label": "رابط مسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "فاصل المسار",
+    "text": "‹",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "تسمية فلتر",
+    "text": "بحث",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "cls": "shop-toolbar__label"
+   },
+   {
+    "label": "عدّاد النتائج",
+    "text": "0 منتج",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": "shop-toolbar__count"
+   },
+   {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "cls": "input"
+   },
+   {
+    "label": "select التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجهزة م",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "cls": "select"
+   },
+   {
+    "label": "نص خيار الاختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(51, 65, 85)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "فاصل نطاق السعر",
+    "text": "—",
+    "color": "rgb(107, 114, 128)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.83,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": "shop-price-range__sep"
+   }
+  ],
+  "state": [
+   {
+    "label": "عنوان الحالة",
+    "text": "لا توجد منتجات مطابقة",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 17.06,
+    "fontSize": "19px",
+    "fontWeight": "700",
+    "cls": "state__title"
+   },
+   {
+    "label": "نص الحالة",
+    "text": "جرّب تعديل البحث أو إزالة الفلاتر.",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": "state__text"
+   },
+   {
+    "label": "أيقونة الحالة",
+    "text": "📦",
+    "color": "rgb(148, 163, 184)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 2.45,
+    "fontSize": "34px",
+    "fontWeight": "400",
+    "cls": "state__icon"
+   }
+  ],
+  "sheet": [
+   {
+    "label": "عنوان اللوحة",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(51, 65, 85)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "cls": ""
+   },
+   {
+    "label": "تسمية داخل اللوحة",
+    "text": "بحث",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "cls": "shop-toolbar__label"
+   },
+   {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(15,118,110)",
+    "ratio": 5.47,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "cls": "btn btn--primary shop-filters__done"
+   },
+   {
+    "label": "زر تفريغ",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "cls": "btn btn--ghost shop-filters__clear"
+   },
+   {
+    "label": "زر إغلاق اللوحة",
+    "text": "✕",
+    "color": "rgb(15, 118, 110)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 5.23,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": "shop-iconbtn shop-filters__sheet-close"
+   }
+  ],
+  "smallTargets": [
+   {
+    "tag": "A",
+    "cls": "",
+    "text": "الرئيسية",
+    "w": 42,
+    "h": 21,
+    "id": "",
+    "type": null
+   },
+   {
+    "tag": "BUTTON",
+    "cls": "btn btn--ghost btn--sm",
+    "text": "تفريغ الفلاتر",
+    "w": 88,
+    "h": 36,
+    "id": "",
+    "type": "button"
+   },
+   {
+    "tag": "LABEL",
+    "cls": "shop-toolbar__label",
+    "text": "بحث",
+    "w": 358,
+    "h": 22,
+    "id": "",
+    "type": null
+   }
+  ],
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "كل المنتجات",
+    "cls": "shop-section__title"
+   }
+  ],
+  "live": [
+   {
+    "cls": "shop-container",
+    "live": "polite",
+    "text": "الرئيسية‹المنتجاتكل المنتجاتتصفّح، ابحث،"
+   },
+   {
+    "cls": "toast-stack",
+    "live": "polite",
+    "text": ""
+   }
+  ],
+  "busy": [],
+  "roleSearch": true,
+  "ariaCurrent": [
+   {
+    "cls": "shop-nav__link",
+    "v": "page"
+   },
+   {
+    "cls": "shop-drawer__link",
+    "v": "page"
+   }
+  ],
+  "images": [],
+  "placeholders": 0,
+  "domNodes": 310,
+  "pageBg": "rgb(248, 250, 252)",
+  "theme": "light"
+ },
+ "state_error": {
+  "light": [
+   {
+    "label": "رابط مسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "فاصل المسار",
+    "text": "‹",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "cls": ""
+   }
+  ],
+  "state": [
+   {
+    "label": "عنوان الحالة",
+    "text": "تعذّر تحميل البيانات",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 17.06,
+    "fontSize": "19px",
+    "fontWeight": "700",
+    "cls": "state__title"
+   },
+   {
+    "label": "نص الحالة",
+    "text": "تعذّر الاتصال بالخادم. تحقّق من ال",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": "state__text"
+   },
+   {
+    "label": "أيقونة الحالة",
+    "text": "⚠️",
+    "color": "rgb(185, 28, 28)",
+    "bg": "rgb(254,242,242)",
+    "ratio": 5.91,
+    "fontSize": "34px",
+    "fontWeight": "400",
+    "cls": "state__icon"
+   },
+   {
+    "label": "زر الحالة",
+    "text": "إعادة المحاولة",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(15,118,110)",
+    "ratio": 5.47,
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "cls": "btn btn--primary"
+   }
+  ],
+  "sheet": [],
+  "smallTargets": [
+   {
+    "tag": "A",
+    "cls": "",
+    "text": "الرئيسية",
+    "w": 42,
+    "h": 21,
+    "id": "",
+    "type": null
+   },
+   {
+    "tag": "BUTTON",
+    "cls": "btn btn--primary",
+    "text": "إعادة المحاولة",
+    "w": 124,
+    "h": 42,
+    "id": "",
+    "type": "button"
+   }
+  ],
+  "headings": [],
+  "live": [
+   {
+    "cls": "shop-container",
+    "live": "polite",
+    "text": "الرئيسية‹المنتجات⚠️تعذّر تحميل البياناتت"
+   },
+   {
+    "cls": "toast-stack",
+    "live": "polite",
+    "text": ""
+   }
+  ],
+  "busy": [],
+  "roleSearch": true,
+  "ariaCurrent": [
+   {
+    "cls": "shop-nav__link",
+    "v": "page"
+   },
+   {
+    "cls": "shop-drawer__link",
+    "v": "page"
+   }
+  ],
+  "images": [],
+  "placeholders": 0,
+  "domNodes": 253,
+  "pageBg": "rgb(248, 250, 252)",
+  "theme": "light"
+ },
+ "sheet_390": {
+  "light": [
+   {
+    "label": "h1 الصفحة",
+    "text": "كل المنتجات",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 17.06,
+    "fontSize": "19px",
+    "fontWeight": "700",
+    "cls": "shop-section__title"
+   },
+   {
+    "label": "وصف الصفحة",
+    "text": "تصفّح، ابحث، وفلتر — كل البيانات م",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": "shop-section__sub"
+   },
+   {
+    "label": "رابط مسار",
+    "text": "الرئيسية",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "فاصل المسار",
+    "text": "‹",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 4.55,
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "تسمية فلتر",
+    "text": "بحث",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "cls": "shop-toolbar__label"
+   },
+   {
+    "label": "عدّاد النتائج",
+    "text": "2 منتج",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "13.5px",
+    "fontWeight": "400",
+    "cls": "shop-toolbar__count"
+   },
+   {
+    "label": "حقل البحث",
+    "text": "",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "cls": "input"
+   },
+   {
+    "label": "select التصنيف",
+    "text": "كل التصنيفاتتصنيف تجريبي — أجهزة م",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 17.85,
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "cls": "select"
+   },
+   {
+    "label": "نص خيار الاختيار",
+    "text": "المتوفر فقط",
+    "color": "rgb(51, 65, 85)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "فاصل نطاق السعر",
+    "text": "—",
+    "color": "rgb(107, 114, 128)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.83,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": "shop-price-range__sep"
+   },
+   {
+    "label": "اسم المنتج",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 17.85,
+    "fontSize": "14.5px",
+    "fontWeight": "600",
+    "cls": ""
+   },
+   {
+    "label": "ميتا البطاقة",
+    "text": "علامة تجريبية ب",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "12.5px",
+    "fontWeight": "400",
+    "cls": ""
+   },
+   {
+    "label": "السعر",
+    "text": "350.00 $",
+    "color": "rgb(15, 23, 42)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 17.85,
+    "fontSize": "17px",
+    "fontWeight": "700",
+    "cls": "shop-price__now"
+   },
+   {
+    "label": "شارة (خصم/توفّر)",
+    "text": "-16.67%",
+    "color": "rgb(153, 27, 27)",
+    "bg": "rgb(254,242,242)",
+    "ratio": 7.6,
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "cls": "badge badge--danger badge--sm"
+   },
+   {
+    "label": "زر أضف للسلة",
+    "text": "أضف للسلة",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(15,118,110)",
+    "ratio": 5.47,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "cls": "btn btn--primary shop-card__add"
+   },
+   {
+    "label": "زر التفاصيل",
+    "text": "عرض التفاصيل",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "cls": "btn btn--ghost shop-card__details"
+   }
+  ],
+  "state": [],
+  "sheet": [
+   {
+    "label": "عنوان اللوحة",
+    "text": "الفلاتر والترتيب",
+    "color": "rgb(51, 65, 85)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 10.35,
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "cls": ""
+   },
+   {
+    "label": "تسمية داخل اللوحة",
+    "text": "بحث",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "cls": "shop-toolbar__label"
+   },
+   {
+    "label": "زر عرض النتائج",
+    "text": "عرض النتائج",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(15,118,110)",
+    "ratio": 5.47,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "cls": "btn btn--primary shop-filters__done"
+   },
+   {
+    "label": "زر تفريغ",
+    "text": "تفريغ الفلاتر",
+    "color": "rgb(100, 116, 139)",
+    "bg": "rgb(255,255,255)",
+    "ratio": 4.76,
+    "fontSize": "13px",
+    "fontWeight": "600",
+    "cls": "btn btn--ghost shop-filters__clear"
+   },
+   {
+    "label": "زر إغلاق اللوحة",
+    "text": "✕",
+    "color": "rgb(15, 118, 110)",
+    "bg": "rgb(248,250,252)",
+    "ratio": 5.23,
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "cls": "shop-iconbtn shop-filters__sheet-close"
+   }
+  ],
+  "smallTargets": [
+   {
+    "tag": "A",
+    "cls": "",
+    "text": "الرئيسية",
+    "w": 42,
+    "h": 21,
+    "id": "",
+    "type": null
+   },
+   {
+    "tag": "LABEL",
+    "cls": "shop-toolbar__label",
+    "text": "بحث",
+    "w": 358,
+    "h": 22,
+    "id": "",
+    "type": null
+   },
+   {
+    "tag": "LABEL",
+    "cls": "shop-toolbar__label",
+    "text": "التصنيف",
+    "w": 358,
+    "h": 22,
+    "id": "",
+    "type": null
+   },
+   {
+    "tag": "LABEL",
+    "cls": "shop-toolbar__label",
+    "text": "العلامة",
+    "w": 358,
+    "h": 22,
+    "id": "",
+    "type": null
+   },
+   {
+    "tag": "LABEL",
+    "cls": "shop-toolbar__label",
+    "text": "الترتيب",
+    "w": 358,
+    "h": 22,
+    "id": "",
+    "type": null
+   },
+   {
+    "tag": "INPUT",
+    "cls": "",
+    "text": "",
+    "w": 18,
+    "h": 18,
+    "id": "shop-filter-instock",
+    "type": "checkbox"
+   },
+   {
+    "tag": "INPUT",
+    "cls": "",
+    "text": "",
+    "w": 18,
+    "h": 18,
+    "id": "shop-filter-offers",
+    "type": "checkbox"
+   }
+  ],
+  "headings": [
+   {
+    "tag": "H1",
+    "text": "كل المنتجات",
+    "cls": "shop-section__title"
+   },
+   {
+    "tag": "H3",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "cls": "shop-card__name"
+   },
+   {
+    "tag": "H3",
+    "text": "منتج تجريبي — ثلاجة 500 لتر",
+    "cls": "shop-card__name"
+   }
+  ],
+  "live": [
+   {
+    "cls": "shop-container",
+    "live": "polite",
+    "text": "الرئيسية‹المنتجاتكل المنتجاتتصفّح، ابحث،"
+   },
+   {
+    "cls": "toast-stack",
+    "live": "polite",
+    "text": ""
+   }
+  ],
+  "busy": [],
+  "roleSearch": true,
+  "ariaCurrent": [
+   {
+    "cls": "shop-nav__link",
+    "v": "page"
+   },
+   {
+    "cls": "shop-drawer__link",
+    "v": "page"
+   }
+  ],
+  "images": [],
+  "placeholders": 2,
+  "domNodes": 352,
+  "pageBg": "rgb(248, 250, 252)",
+  "theme": "light"
+ },
+ "tab_sheet": [
+  {
+   "tag": "BUTTON",
+   "id": "",
+   "cls": "shop-iconbtn shop-filters__sheet-close",
+   "inSheet": true,
+   "outline": "2px rgb(13, 148, 136)"
+  },
+  {
+   "tag": "INPUT",
+   "id": "shop-filter-search",
+   "cls": "input",
+   "inSheet": true,
+   "outline": "2px rgb(13, 148, 136)"
+  },
+  {
+   "tag": "SELECT",
+   "id": "shop-filter-category",
+   "cls": "select",
+   "inSheet": true,
+   "outline": "2px rgb(13, 148, 136)"
+  },
+  {
+   "tag": "SELECT",
+   "id": "shop-filter-brand",
+   "cls": "select",
+   "inSheet": true,
+   "outline": "2px rgb(13, 148, 136)"
+  },
+  {
+   "tag": "SELECT",
+   "id": "shop-filter-sort",
+   "cls": "select",
+   "inSheet": true,
+   "outline": "2px rgb(13, 148, 136)"
+  },
+  {
+   "tag": "INPUT",
+   "id": "shop-filter-minprice",
+   "cls": "input",
+   "inSheet": true,
+   "outline": "2px rgb(13, 148, 136)"
+  },
+  {
+   "tag": "INPUT",
+   "id": "shop-filter-maxprice",
+   "cls": "input",
+   "inSheet": true,
+   "outline": "2px rgb(13, 148, 136)"
+  },
+  {
+   "tag": "INPUT",
+   "id": "shop-filter-instock",
+   "cls": "",
+   "inSheet": true,
+   "outline": "2px rgb(13, 148, 136)"
+  },
+  {
+   "tag": "INPUT",
+   "id": "shop-filter-offers",
+   "cls": "",
+   "inSheet": true,
+   "outline": "2px rgb(13, 148, 136)"
+  },
+  {
+   "tag": "BUTTON",
+   "id": "",
+   "cls": "btn btn--ghost shop-filters__clear",
+   "inSheet": true,
+   "outline": "2px rgb(13, 148, 136)"
+  },
+  {
+   "tag": "BUTTON",
+   "id": "",
+   "cls": "btn btn--primary shop-filters__done",
+   "inSheet": true,
+   "outline": "2px rgb(13, 148, 136)"
+  },
+  {
+   "tag": "A",
+   "id": "",
+   "cls": "shop-card__media",
+   "inSheet": false,
+   "outline": "2px rgb(13, 148, 136)"
+  },
+  {
+   "tag": "A",
+   "id": "",
+   "cls": "",
+   "inSheet": false,
+   "outline": "2px rgb(13, 148, 136)"
+  },
+  {
+   "tag": "BUTTON",
+   "id": "",
+   "cls": "btn btn--primary shop-card__add",
+   "inSheet": false,
+   "outline": "2px rgb(13, 148, 136)"
+  }
+ ],
+ "hover": {
+  "details": {
+   "color": "rgb(100, 116, 139)",
+   "borderColor": "rgba(0, 0, 0, 0)",
+   "bg": "rgba(0, 0, 0, 0)"
+  },
+  "card": {
+   "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+   "transform": "none"
+  },
+  "detailsHover": {
+   "color": "rgb(51, 65, 85)",
+   "borderColor": "rgb(51, 65, 85)",
+   "bg": "rgb(241, 245, 249)"
+  },
+  "nameHover": {
+   "color": "rgb(15, 118, 110)"
+  },
+  "cardHover": {
+   "shadow": "rgba(15, 23, 42, 0.08) 0px 6px 16px 0px, rgba(15, 23, 42, 0.04) 0px 2p",
+   "transform": "matrix(1, 0, 0, 1, 0, -3)",
+   "mediaBg": "rgb(248, 250, 252)"
+  },
+  "mediaHitTest": {
+   "topElement": "A",
+   "isInsideMediaLink": false
+  }
+ },
+ "darkdetail_dark390": {
+  "sheet": {
+   "background-color": "rgb(255, 255, 255)",
+   "border-top-left-radius": "18px",
+   "box-shadow": "rgba(15, 23, 42, 0.22) 0px -12px 34px 0px"
+  },
+  "check": {
+   "background-color": "rgb(255, 255, 255)",
+   "color": "rgb(203, 213, 225)",
+   "border-top-color": "rgb(229, 231, 235)"
+  },
+  "checkSpan": {
+   "color": "rgb(203, 213, 225)"
+  },
+  "badgeDanger": {
+   "background-color": "rgba(220, 38, 38, 0.16)",
+   "color": "rgb(153, 27, 27)",
+   "border-top-color": "rgb(254, 226, 226)"
+  },
+  "badgeSuccess": {
+   "background-color": "rgba(22, 163, 74, 0.16)",
+   "color": "rgb(22, 101, 52)"
+  },
+  "btnPrimary": {
+   "background-color": "rgb(20, 184, 166)",
+   "color": "rgb(255, 255, 255)"
+  },
+  "btnGhost": {
+   "background-color": "rgba(0, 0, 0, 0)",
+   "color": "rgb(148, 163, 184)",
+   "border-top-color": "rgba(0, 0, 0, 0)"
+  },
+  "toolbarLabel": {
+   "color": "rgb(148, 163, 184)"
+  },
+  "cardBg": {
+   "background-color": "rgb(18, 27, 43)",
+   "border-top-color": "rgb(30, 42, 61)"
+  },
+  "input": {
+   "background-color": "rgb(18, 27, 43)",
+   "color": "rgb(241, 245, 249)",
+   "border-top-color": "rgb(34, 48, 74)"
+  },
+  "select": {
+   "background-color": "rgb(18, 27, 43)",
+   "color": "rgb(241, 245, 249)",
+   "border-top-color": "rgb(34, 48, 74)"
+  },
+  "priceSep": {
+   "color": "rgb(107, 114, 128)"
+  },
+  "sheetHead": {
+   "background-color": "rgb(255, 255, 255)",
+   "border-bottom-color": "rgb(229, 231, 235)"
+  },
+  "sheetFoot": {
+   "background-color": "rgb(255, 255, 255)",
+   "border-top-color": "rgb(229, 231, 235)"
+  },
+  "scrim": {
+   "background-color": "rgba(15, 23, 42, 0.45)"
+  },
+  "placeholder": {
+   "background-image": "linear-gradient(rgb(15, 24, 38) 0%, rgb(18, 27, 43) 100%)",
+   "color": "rgb(100, 116, 139)"
+  },
+  "count": {
+   "color": "rgb(148, 163, 184)"
+  }
+ },
+ "darkdetail_dark1366": {
+  "sheet": {
+   "background-color": "rgba(0, 0, 0, 0)",
+   "border-top-left-radius": "0px",
+   "box-shadow": "none"
+  },
+  "check": {
+   "background-color": "rgb(255, 255, 255)",
+   "color": "rgb(203, 213, 225)",
+   "border-top-color": "rgb(229, 231, 235)"
+  },
+  "checkSpan": {
+   "color": "rgb(203, 213, 225)"
+  },
+  "badgeDanger": {
+   "background-color": "rgba(220, 38, 38, 0.16)",
+   "color": "rgb(153, 27, 27)",
+   "border-top-color": "rgb(254, 226, 226)"
+  },
+  "badgeSuccess": {
+   "background-color": "rgba(22, 163, 74, 0.16)",
+   "color": "rgb(22, 101, 52)"
+  },
+  "btnPrimary": {
+   "background-color": "rgb(20, 184, 166)",
+   "color": "rgb(255, 255, 255)"
+  },
+  "btnGhost": {
+   "background-color": "rgba(0, 0, 0, 0)",
+   "color": "rgb(148, 163, 184)",
+   "border-top-color": "rgba(0, 0, 0, 0)"
+  },
+  "toolbarLabel": {
+   "color": "rgb(148, 163, 184)"
+  },
+  "cardBg": {
+   "background-color": "rgb(18, 27, 43)",
+   "border-top-color": "rgb(30, 42, 61)"
+  },
+  "input": {
+   "background-color": "rgb(18, 27, 43)",
+   "color": "rgb(241, 245, 249)",
+   "border-top-color": "rgb(34, 48, 74)"
+  },
+  "select": {
+   "background-color": "rgb(18, 27, 43)",
+   "color": "rgb(241, 245, 249)",
+   "border-top-color": "rgb(34, 48, 74)"
+  },
+  "priceSep": {
+   "color": "rgb(107, 114, 128)"
+  },
+  "sheetHead": {
+   "background-color": "rgba(0, 0, 0, 0)",
+   "border-bottom-color": "rgb(203, 213, 225)"
+  },
+  "sheetFoot": {
+   "background-color": "rgba(0, 0, 0, 0)",
+   "border-top-color": "rgb(203, 213, 225)"
+  },
+  "scrim": {
+   "background-color": "rgba(0, 0, 0, 0)"
+  },
+  "placeholder": {
+   "background-image": "linear-gradient(rgb(15, 24, 38) 0%, rgb(18, 27, 43) 100%)",
+   "color": "rgb(100, 116, 139)"
+  },
+  "count": {
+   "color": "rgb(148, 163, 184)"
+  }
+ }
+}

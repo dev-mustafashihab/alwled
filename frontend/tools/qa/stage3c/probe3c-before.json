@@ -1,0 +1,1903 @@
+{
+ "mode": "before",
+ "console": [],
+ "failed": [],
+ "shots": [
+  "/root/alwled/frontend/tools/qa/stage3c/before-ui-end-1366.png"
+ ],
+ "scenarios": {
+  "none": {
+   "hash": "#/products",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": false,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "minPrice_400": {
+   "hash": "#/products?minPrice=400",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "400",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "maxPrice_400": {
+   "hash": "#/products?maxPrice=400",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "",
+    "max": "400",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "range_400_550": {
+   "hash": "#/products?minPrice=400&maxPrice=550",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "400",
+    "max": "550",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "minPrice_99999": {
+   "hash": "#/products?minPrice=99999",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "99999",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "maxPrice_1": {
+   "hash": "#/products?maxPrice=1",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "",
+    "max": "1",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "minPrice_0": {
+   "hash": "#/products?minPrice=0",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "0",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "maxPrice_0": {
+   "hash": "#/products?maxPrice=0",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "",
+    "max": "0",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "empty_values": {
+   "hash": "#/products?minPrice=&maxPrice=",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": false,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "malformed": {
+   "hash": "#/products?minPrice=abc",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "negative": {
+   "hash": "#/products?minPrice=-5",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "-5",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "decimal": {
+   "hash": "#/products?minPrice=350.5",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "350.5",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "invalid_range": {
+   "hash": "#/products?minPrice=600&maxPrice=100",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "600",
+    "max": "100",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "offers_1": {
+   "hash": "#/products?offers=1",
+   "cards": 1,
+   "count": "1 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": true,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "instock_1": {
+   "hash": "#/products?inStock=1",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": true
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "cat_brand": {
+   "hash": "#/products?categoryId=293&brandId=254",
+   "cards": 1,
+   "count": "1 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "",
+    "cat": "293",
+    "brand": "254",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12&categoryId=293&brandId=254",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12&categoryId=293&brandId=254",
+     "status": 200,
+     "total": 1,
+     "items": 1,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "brand_minPrice": {
+   "hash": "#/products?brandId=254&minPrice=400",
+   "cards": 1,
+   "count": "1 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "400",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "254",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12&brandId=254",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12&brandId=254",
+     "status": 200,
+     "total": 1,
+     "items": 1,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "search_maxPrice": {
+   "hash": "#/products?search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&maxPrice=400",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "",
+    "max": "400",
+    "search": "ثلاجة",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "offers_minPrice": {
+   "hash": "#/products?offers=1&minPrice=400",
+   "cards": 1,
+   "count": "1 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "400",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": true,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "instock_brand": {
+   "hash": "#/products?inStock=1&brandId=254",
+   "cards": 1,
+   "count": "1 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "254",
+    "offers": false,
+    "instock": true
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12&brandId=254",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12&brandId=254",
+     "status": 200,
+     "total": 1,
+     "items": 1,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "page_2": {
+   "hash": "#/products?page=2",
+   "cards": 0,
+   "count": "2 منتج",
+   "empty": true,
+   "stateTitle": "لا توجد منتجات مطابقة",
+   "page": 2,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": false,
+   "overflow": 0,
+   "requests": [
+    "products?page=2&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=2&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 0,
+     "itemKeys": null
+    }
+   ]
+  },
+  "page_3": {
+   "hash": "#/products?page=3",
+   "cards": 0,
+   "count": "2 منتج",
+   "empty": true,
+   "stateTitle": "لا توجد منتجات مطابقة",
+   "page": 3,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": false,
+   "overflow": 0,
+   "requests": [
+    "products?page=3&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=3&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 0,
+     "itemKeys": null
+    }
+   ]
+  }
+ },
+ "journey": {
+  "start": {
+   "hash": "#/products?page=1",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": 1,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": false,
+   "overflow": 0
+  },
+  "after_category": {
+   "hash": "#/products?page=1&categoryId=293",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": 1,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "",
+    "cat": "293",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0
+  },
+  "after_minPrice": {
+   "hash": "#/products?page=1&categoryId=293&minPrice=400",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": 1,
+   "inputs": {
+    "min": "400",
+    "max": "",
+    "search": "",
+    "cat": "293",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0
+  },
+  "after_reload": {
+   "hash": "#/products?page=1&categoryId=293&minPrice=400",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": 1,
+   "inputs": {
+    "min": "400",
+    "max": "",
+    "search": "",
+    "cat": "293",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0
+  },
+  "after_back": {
+   "hash": "#/products?page=1&categoryId=293",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": 1,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "",
+    "cat": "293",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0
+  },
+  "after_forward": {
+   "hash": "#/products?page=1&categoryId=293&minPrice=400",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": 1,
+   "inputs": {
+    "min": "400",
+    "max": "",
+    "search": "",
+    "cat": "293",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0
+  }
+ },
+ "ui": {
+  "search": {
+   "hash": "#/products?search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&page=1",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": 1,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "ثلاجة",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "category": {
+   "hash": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": 1,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "ثلاجة",
+    "cat": "293",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "brand": {
+   "hash": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254",
+   "cards": 1,
+   "count": "1 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": 1,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "ثلاجة",
+    "cat": "293",
+    "brand": "254",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254",
+     "status": 200,
+     "total": 1,
+     "items": 1,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "sort": {
+   "hash": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+   "cards": 1,
+   "count": "1 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": 1,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "ثلاجة",
+    "cat": "293",
+    "brand": "254",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+     "status": 200,
+     "total": 1,
+     "items": 1,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "minPrice_ui": {
+   "hash": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc&minPrice=400",
+   "cards": 1,
+   "count": "1 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": 1,
+   "inputs": {
+    "min": "400",
+    "max": "",
+    "search": "ثلاجة",
+    "cat": "293",
+    "brand": "254",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+     "status": 200,
+     "total": 1,
+     "items": 1,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "maxPrice_ui": {
+   "hash": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc&minPrice=400&maxPrice=500",
+   "cards": 1,
+   "count": "1 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": 1,
+   "inputs": {
+    "min": "400",
+    "max": "500",
+    "search": "ثلاجة",
+    "cat": "293",
+    "brand": "254",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+     "status": 200,
+     "total": 1,
+     "items": 1,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "instock_ui": {
+   "hash": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc&minPrice=400&maxPrice=500&inStock=1",
+   "cards": 1,
+   "count": "1 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": 1,
+   "inputs": {
+    "min": "400",
+    "max": "500",
+    "search": "ثلاجة",
+    "cat": "293",
+    "brand": "254",
+    "offers": false,
+    "instock": true
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+     "status": 200,
+     "total": 1,
+     "items": 1,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "offers_ui": {
+   "hash": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc&minPrice=400&maxPrice=500&inStock=1&offers=1",
+   "cards": 0,
+   "count": "0 منتج",
+   "empty": true,
+   "stateTitle": "لا توجد منتجات مطابقة",
+   "page": 1,
+   "inputs": {
+    "min": "400",
+    "max": "500",
+    "search": "ثلاجة",
+    "cat": "293",
+    "brand": "254",
+    "offers": true,
+    "instock": true
+   },
+   "pagination": false,
+   "headClear": true,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+     "status": 200,
+     "total": 1,
+     "items": 1,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  },
+  "reset": {
+   "hash": "#/products",
+   "cards": 2,
+   "count": "2 منتج",
+   "empty": false,
+   "stateTitle": null,
+   "page": null,
+   "inputs": {
+    "min": "",
+    "max": "",
+    "search": "",
+    "cat": "",
+    "brand": "",
+    "offers": false,
+    "instock": false
+   },
+   "pagination": false,
+   "headClear": false,
+   "overflow": 0,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "productResponses": [
+    {
+     "url": "products?page=1&limit=12",
+     "status": 200,
+     "total": 2,
+     "items": 2,
+     "itemKeys": [
+      "brand",
+      "category",
+      "compareAtPrice",
+      "createdAt",
+      "discountPercentage",
+      "hasDiscount",
+      "id",
+      "images",
+      "isActive",
+      "isFeatured",
+      "name",
+      "price",
+      "primaryImage",
+      "shortDescription",
+      "sku",
+      "slug",
+      "updatedAt"
+     ]
+    }
+   ]
+  }
+ },
+ "parity": {
+  "#/products?minPrice=400": {
+   "w390": {
+    "cards": 2,
+    "count": "2 منتج",
+    "empty": false,
+    "hashAfter": "#/products?minPrice=400",
+    "overflow": 0
+   },
+   "w1024": {
+    "cards": 2,
+    "count": "2 منتج",
+    "empty": false,
+    "hashAfter": "#/products?minPrice=400",
+    "overflow": 0
+   },
+   "w1366": {
+    "cards": 2,
+    "count": "2 منتج",
+    "empty": false,
+    "hashAfter": "#/products?minPrice=400",
+    "overflow": 0
+   }
+  },
+  "#/products?maxPrice=400": {
+   "w390": {
+    "cards": 2,
+    "count": "2 منتج",
+    "empty": false,
+    "hashAfter": "#/products?maxPrice=400",
+    "overflow": 0
+   },
+   "w1024": {
+    "cards": 2,
+    "count": "2 منتج",
+    "empty": false,
+    "hashAfter": "#/products?maxPrice=400",
+    "overflow": 0
+   },
+   "w1366": {
+    "cards": 2,
+    "count": "2 منتج",
+    "empty": false,
+    "hashAfter": "#/products?maxPrice=400",
+    "overflow": 0
+   }
+  },
+  "#/products?offers=1": {
+   "w390": {
+    "cards": 1,
+    "count": "1 منتج",
+    "empty": false,
+    "hashAfter": "#/products?offers=1",
+    "overflow": 0
+   },
+   "w1024": {
+    "cards": 1,
+    "count": "1 منتج",
+    "empty": false,
+    "hashAfter": "#/products?offers=1",
+    "overflow": 0
+   },
+   "w1366": {
+    "cards": 1,
+    "count": "1 منتج",
+    "empty": false,
+    "hashAfter": "#/products?offers=1",
+    "overflow": 0
+   }
+  },
+  "#/products?page=2": {
+   "w390": {
+    "cards": 0,
+    "count": "2 منتج",
+    "empty": true,
+    "hashAfter": "#/products?page=2",
+    "overflow": 0
+   },
+   "w1024": {
+    "cards": 0,
+    "count": "2 منتج",
+    "empty": true,
+    "hashAfter": "#/products?page=2",
+    "overflow": 0
+   },
+   "w1366": {
+    "cards": 0,
+    "count": "2 منتج",
+    "empty": true,
+    "hashAfter": "#/products?page=2",
+    "overflow": 0
+   }
+  }
+ },
+ "reg": {
+  "w390": {
+   "toolbarVisible": true,
+   "sheetDisplay": "block",
+   "toggleVisible": true,
+   "toolbarRows": 2,
+   "toolbarH": 132,
+   "cols": "minmax(0px, 1fr)",
+   "controlsVisible": 1,
+   "countVisible": true,
+   "card": {
+    "w": 177,
+    "h": 504
+   },
+   "headerH": 65,
+   "overflow": 0
+  },
+  "w768": {
+   "toolbarVisible": true,
+   "sheetDisplay": "block",
+   "toggleVisible": true,
+   "toolbarRows": 2,
+   "toolbarH": 132,
+   "cols": "minmax(0px, 1fr)",
+   "controlsVisible": 1,
+   "countVisible": true,
+   "card": {
+    "w": 237,
+    "h": 491
+   },
+   "headerH": 65,
+   "overflow": 0
+  },
+  "w769": {
+   "toolbarVisible": true,
+   "sheetDisplay": "contents",
+   "toggleVisible": false,
+   "toolbarRows": 3,
+   "toolbarH": 262,
+   "cols": "226.328px 226.328px 226.328px",
+   "controlsVisible": 8,
+   "countVisible": true,
+   "card": {
+    "w": 238,
+    "h": 491
+   },
+   "headerH": 65,
+   "overflow": 0
+  },
+  "w1024": {
+   "toolbarVisible": true,
+   "sheetDisplay": "contents",
+   "toggleVisible": false,
+   "toolbarRows": 2,
+   "toolbarH": 182,
+   "cols": "345.734px 192.094px 192.078px 192.078px",
+   "controlsVisible": 8,
+   "countVisible": true,
+   "card": {
+    "w": 320,
+    "h": 552
+   },
+   "headerH": 74,
+   "overflow": 0
+  },
+  "w1366": {
+   "toolbarVisible": true,
+   "sheetDisplay": "contents",
+   "toggleVisible": false,
+   "toolbarRows": 2,
+   "toolbarH": 182,
+   "cols": "411.734px 228.75px 228.75px 228.75px",
+   "controlsVisible": 8,
+   "countVisible": true,
+   "card": {
+    "w": 280,
+    "h": 512
+   },
+   "headerH": 74,
+   "overflow": 0
+  }
+ },
+ "reg390home": {
+  "homeCards": 5,
+  "hero": true,
+  "overflow": 0,
+  "listingCard": {
+   "w": 177,
+   "h": 504
+  },
+  "searchSheet": {
+   "top": 65,
+   "bg": "rgb(255, 255, 255)"
+  },
+  "menu": {
+   "rowH": 50,
+   "drawerTop": 65
+  }
+ }
+}

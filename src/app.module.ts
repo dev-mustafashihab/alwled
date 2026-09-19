@@ -12,6 +12,7 @@ import { EmployeesModule } from './employees/employees.module';
 import { PermissionsModule } from './permissions/permissions.module';
 import { CategoriesModule } from './categories/categories.module';
 import { BrandsModule } from './brands/brands.module';
+import { SliderModule } from './slider/slider.module';
 import { ProductsModule } from './products/products.module';
 import { SpecificationsModule } from './specifications/specifications.module';
 import { InventoryModule } from './inventory/inventory.module';
@@ -46,6 +47,7 @@ import { JwtAuthGuard, OptionalAuthGuard, RolesGuard, PermissionsGuard } from '.
     // Stage 4 — catalog + inventory
     CategoriesModule,
     BrandsModule,
+    SliderModule,
     ProductsModule,
     SpecificationsModule,
     InventoryModule,

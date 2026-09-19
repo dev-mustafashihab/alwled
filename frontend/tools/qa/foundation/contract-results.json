@@ -1,0 +1,295 @@
+{
+ "checks": [
+  {
+   "name": "المسارات الـ11 تعمل وترسم داخل #shop-view",
+   "pass": true,
+   "detail": "#/=7; #/products=4; #/products/632=4; #/login=2; #/register=2"
+  },
+  {
+   "name": "لا فائض أفقي على أي مسار",
+   "pass": true,
+   "detail": "{}"
+  },
+  {
+   "name": "معرّفات الرئيسية (جوال) موجودة",
+   "pass": true,
+   "detail": "ناقص: []"
+  },
+  {
+   "name": "هوكات الهيدر متاحة (user-btn أو actions + حالة الزائر)",
+   "pass": true,
+   "detail": "{\"user\": false, \"actions\": true, \"guest\": true}"
+  },
+  {
+   "name": "الدُرج يُفتح + معرّفاته وهوك الإغلاق",
+   "pass": true,
+   "detail": "{\"open\": true, \"ids\": [], \"closeHook\": true, \"theme\": 3, \"overflow\": \"hidden\"}"
+  },
+  {
+   "name": "قفل التمرير أثناء فتح الدُرج",
+   "pass": true,
+   "detail": "overflow=hidden"
+  },
+  {
+   "name": "أزرار الثيم الثلاثة موجودة",
+   "pass": true,
+   "detail": "count=3"
+  },
+  {
+   "name": "لوحة البحث تُفتح + معرّفاتها كاملة",
+   "pass": true,
+   "detail": "{\"open\": true, \"ids\": [], \"expanded\": null}"
+  },
+  {
+   "name": "البحث يرجّع نتائج (صفوف)",
+   "pass": true,
+   "detail": "rows=2"
+  },
+  {
+   "name": "أدوات الكتالوج + الفلاتر موجودة (جوال)",
+   "pass": true,
+   "detail": "ناقص: []"
+  },
+  {
+   "name": "زر الفلاتر يحمل aria-expanded",
+   "pass": true,
+   "detail": "expanded=false"
+  },
+  {
+   "name": "عدّاد النتائج موجود",
+   "pass": true,
+   "detail": "count=2 منتج"
+  },
+  {
+   "name": "لوحة الفلاتر: dialog + aria-modal + تركيز داخلها + قفل تمرير",
+   "pass": true,
+   "detail": "{\"found\": true, \"dlg\": true, \"modal\": \"true\", \"labelled\": true, \"focusInside\": true, \"bodyOverflow\": \"hidden\"}"
+  },
+  {
+   "name": "Escape يغلق اللوحة ويعيد التركيز للزر",
+   "pass": true,
+   "detail": "focus=shop-filters-toggle"
+  },
+  {
+   "name": "لا تحكّم inStock مرئي/قابل للتركيز (قرار 3G.1)",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "name": "‎?inStock=1‎ لا يكسر الصفحة",
+   "pass": true,
+   "detail": "cards=2"
+  },
+  {
+   "name": "633 (غير متوفر): CTA معطّل أصلي + نص صادق",
+   "pass": true,
+   "detail": "{\"exists\": true, \"disabled\": true, \"text\": \"غير متوفر حاليًا\", \"qty\": true}"
+  },
+  {
+   "name": "632 (متوفر): CTA مفعّل",
+   "pass": true,
+   "detail": "{\"disabled\": false, \"text\": \"أضف إلى السلة\", \"qty\": true, \"pressed\": 0, \"crumbs\": 1, \"related\": 1}"
+  },
+  {
+   "name": "الكمية + aria-current + المشابهة (المصغّرات تتبع توفّر الصور)",
+   "pass": true,
+   "detail": "{\"disabled\": false, \"text\": \"أضف إلى السلة\", \"qty\": true, \"pressed\": 0, \"crumbs\": 1, \"related\": 1}"
+  },
+  {
+   "name": "حالة المشابهة/الوصف موجودة ولو بلا بيانات",
+   "pass": true,
+   "detail": "PDP rendered"
+  },
+  {
+   "name": "مودال المصادقة: role=dialog + aria-modal + aria-labelledby + تركيز داخله",
+   "pass": true,
+   "detail": "{\"found\": true, \"role\": \"dialog\", \"modal\": \"true\", \"labelled\": true, \"focusInside\": true, \"close\": true, \"esc\": true}"
+  },
+  {
+   "name": "Escape يغلق ويعيد التركيز للفاعل",
+   "pass": true,
+   "detail": "focus=shop-add-to-cart"
+  },
+  {
+   "name": "633: لا مودال ولا طلب سلة",
+   "pass": true,
+   "detail": "dlg=False cartReqs=0"
+  },
+  {
+   "name": "ديسكتوب: شريط الفلاتر inline + حقول موجودة + toggle مخفي",
+   "pass": true,
+   "detail": "{\"toolbar\": true, \"toggleVisible\": false, \"fields\": [], \"tbH\": 180, \"ov\": 0}"
+  },
+  {
+   "name": "مفتاح الثيم: data-theme=dark + localStorage + is-active",
+   "pass": true,
+   "detail": "{\"attr\": \"dark\", \"stored\": \"dark\", \"active\": 1, \"expanded\": \"true\"}"
+  },
+  {
+   "name": "aria-expanded على زر القائمة متزامن",
+   "pass": true,
+   "detail": "expanded=true"
+  },
+  {
+   "name": "الثيم يُحفظ بعد إعادة التحميل",
+   "pass": true,
+   "detail": "attr=dark"
+  },
+  {
+   "name": "طبقة Tailwind محمّلة (light)",
+   "pass": true,
+   "detail": "{\"loaded\": true, \"rules\": 342, \"theme\": \"light\"}"
+  },
+  {
+   "name": "الأساس يُركَّب + Cairo + أحجام دلالية (light)",
+   "pass": true,
+   "detail": "ff=Cairo secTitle=20px caption=12px"
+  },
+  {
+   "name": "الزر الأساسي = #FFBF17 ونصه داكن (light)",
+   "pass": true,
+   "detail": "bg=rgb(255, 191, 23) col=rgb(23, 23, 23)"
+  },
+  {
+   "name": "هدف اللمس 44px + نصف قطر معتدل (light)",
+   "pass": true,
+   "detail": "h=44/46 r=10px"
+  },
+  {
+   "name": "الحقل ≥16px (منع تكبير iOS) (light)",
+   "pass": true,
+   "detail": "fs=16px"
+  },
+  {
+   "name": "الداكن يقلب الأسطح دلاليًا (light)",
+   "pass": true,
+   "detail": "surface=rgb(255, 255, 255)"
+  },
+  {
+   "name": "الزر المعطّل محايد وواضح (light)",
+   "pass": true,
+   "detail": "bg=rgb(242, 242, 239) col=rgb(138, 138, 138)"
+  },
+  {
+   "name": "تباين الزر الأساسي ≥ 4.5 (light)",
+   "pass": true,
+   "detail": "ratio=10.86"
+  },
+  {
+   "name": "تباين المتن/الخافت ≥ 4.5 (light)",
+   "pass": true,
+   "detail": "{\"primary\": 10.86, \"body\": 16.71, \"muted\": null}"
+  },
+  {
+   "name": "تكبير 200 بالمئة: الزر ينمو بلا قصّ (light)",
+   "pass": true,
+   "detail": "{\"h\": 135, \"fs\": \"28px\", \"clipped\": false, \"ov\": 0}"
+  },
+  {
+   "name": "reduced-motion: الانتقالات مُعطَّلة (light)",
+   "pass": true,
+   "detail": "{\"dur\": \"1e-05s\", \"hasMedia\": true}"
+  },
+  {
+   "name": "الخط: WOFF2 محمّل وليس TTF (light)",
+   "pass": true,
+   "detail": "{\"faces\": [\"Cairo/400 700/loaded\"], \"req\": [\"Cairo-Regular.woff2:114KB\"]}"
+  },
+  {
+   "name": "لا console errors (light)",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "name": "طبقة Tailwind محمّلة (dark)",
+   "pass": true,
+   "detail": "{\"loaded\": true, \"rules\": 342, \"theme\": \"dark\"}"
+  },
+  {
+   "name": "الأساس يُركَّب + Cairo + أحجام دلالية (dark)",
+   "pass": true,
+   "detail": "ff=Cairo secTitle=20px caption=12px"
+  },
+  {
+   "name": "الزر الأساسي = #FFBF17 ونصه داكن (dark)",
+   "pass": true,
+   "detail": "bg=rgb(255, 191, 23) col=rgb(23, 23, 23)"
+  },
+  {
+   "name": "هدف اللمس 44px + نصف قطر معتدل (dark)",
+   "pass": true,
+   "detail": "h=44/46 r=10px"
+  },
+  {
+   "name": "الحقل ≥16px (منع تكبير iOS) (dark)",
+   "pass": true,
+   "detail": "fs=16px"
+  },
+  {
+   "name": "الداكن يقلب الأسطح دلاليًا (dark)",
+   "pass": true,
+   "detail": "surface=rgb(30, 31, 34)"
+  },
+  {
+   "name": "الزر المعطّل محايد وواضح (dark)",
+   "pass": true,
+   "detail": "bg=rgb(32, 33, 36) col=rgb(124, 124, 121)"
+  },
+  {
+   "name": "تباين الزر الأساسي ≥ 4.5 (dark)",
+   "pass": true,
+   "detail": "ratio=10.86"
+  },
+  {
+   "name": "تباين المتن/الخافت ≥ 4.5 (dark)",
+   "pass": true,
+   "detail": "{\"primary\": 10.86, \"body\": 17.33, \"muted\": null}"
+  },
+  {
+   "name": "تكبير 200 بالمئة: الزر ينمو بلا قصّ (dark)",
+   "pass": true,
+   "detail": "{\"h\": 135, \"fs\": \"28px\", \"clipped\": false, \"ov\": 0}"
+  },
+  {
+   "name": "reduced-motion: الانتقالات مُعطَّلة (dark)",
+   "pass": true,
+   "detail": "{\"dur\": \"1e-05s\", \"hasMedia\": true}"
+  },
+  {
+   "name": "الخط: WOFF2 محمّل وليس TTF (dark)",
+   "pass": true,
+   "detail": "{\"faces\": [\"Cairo/400 700/loaded\"], \"req\": [\"Cairo-Regular.woff2:114KB\"]}"
+  },
+  {
+   "name": "لا console errors (dark)",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "name": "لا فائض أفقي في 15 عرضًا",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "name": "الحاوية تحترم 1360 كحد أقصى",
+   "pass": true,
+   "detail": "max=520"
+  },
+  {
+   "name": "هدف اللمس ≥44 في كل العروض",
+   "pass": true,
+   "detail": "min=44"
+  },
+  {
+   "name": "الأدمن يعمل (توكنز مشتركة سليمة)",
+   "pass": true,
+   "detail": "{\"ff\": \"Tahoma\", \"bg\": \"rgb(248, 250, 252)\", \"primary\": \"#0f766e\", \"store\": \"#1F5FBF\", \"ov\": 0, \"body\": 32}"
+  },
+  {
+   "name": "لا console errors في الأدمن",
+   "pass": true,
+   "detail": "[]"
+  }
+ ],
+ "failures": []
+}

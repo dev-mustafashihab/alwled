@@ -1,0 +1,3946 @@
+{
+  "tag": "before",
+  "states": {
+    "initial": {
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "sheet": {
+        "top": 65,
+        "bottom": 844,
+        "h": 779,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "sheetCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "background-color": "rgb(248, 250, 252)",
+        "opacity": "1",
+        "z-index": "80"
+      },
+      "head": {
+        "top": 65,
+        "bottom": 138,
+        "h": 73,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "headCss": {
+        "padding": "12px",
+        "gap": "8px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)"
+      },
+      "field": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "icon": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "iconCss": {
+        "color": "rgb(100, 116, 139)",
+        "inset-inline-start": "12px"
+      },
+      "iconSvg": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "input": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "inputCss": {
+        "height": "48px",
+        "font-size": "16px",
+        "padding-inline-start": "44px",
+        "padding-inline-end": "44px",
+        "background-color": "rgb(255, 255, 255)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(20, 184, 166)",
+        "border-radius": "8px",
+        "outline-style": "solid"
+      },
+      "clear": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "hidden": true,
+        "css": {
+          "width": "40px",
+          "height": "40px",
+          "color": "rgb(100, 116, 139)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "border-radius": "10px",
+          "inset-inline-end": "4px"
+        }
+      },
+      "close": {
+        "top": 79,
+        "bottom": 123,
+        "h": 44,
+        "w": 44,
+        "x": 12,
+        "y": 79
+      },
+      "closeCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "body": {
+        "top": 138,
+        "bottom": 844,
+        "h": 706,
+        "w": 390,
+        "x": 0,
+        "y": 138
+      },
+      "bodyCss": {
+        "overflow-y": "auto",
+        "padding": "16px 12px 24px",
+        "background-color": "rgba(0, 0, 0, 0)"
+      },
+      "bodyScroll": {
+        "clientH": 706,
+        "contentH": 706,
+        "maxScroll": 0
+      },
+      "label": {
+        "rect": {
+          "top": 154,
+          "bottom": 176,
+          "h": 22,
+          "w": 366,
+          "x": 12,
+          "y": 154
+        },
+        "css": {
+          "font-size": "12px",
+          "font-weight": "700",
+          "color": "rgb(15, 118, 110)",
+          "letter-spacing": "1px",
+          "text-transform": "uppercase",
+          "margin": "0px 0px 8px"
+        }
+      },
+      "sugSection": {
+        "hidden": false,
+        "rect": {
+          "top": 154,
+          "bottom": 321,
+          "h": 167,
+          "w": 366,
+          "x": 12,
+          "y": 154
+        }
+      },
+      "chips": 5,
+      "chip0": {
+        "rect": {
+          "top": 184,
+          "bottom": 225,
+          "h": 40,
+          "w": 228,
+          "x": 150,
+          "y": 184
+        },
+        "css": {
+          "min-height": "40px",
+          "padding": "8px 16px",
+          "background-color": "rgb(255, 255, 255)",
+          "color": "rgb(51, 65, 85)",
+          "border-radius": "999px",
+          "font-size": "14px",
+          "border-top-color": "rgb(230, 236, 243)"
+        }
+      },
+      "resultsCount": 0,
+      "visibleRowsInBody": 0,
+      "row0": null,
+      "rowGap": null,
+      "media": null,
+      "mediaImg": null,
+      "mediaSvg": null,
+      "name": null,
+      "meta": null,
+      "price": null,
+      "oldPrice": false,
+      "skeletons": 0,
+      "skel0": null,
+      "state": null,
+      "liveRegions": [],
+      "overflow": {
+        "doc": 0,
+        "sheet": 0,
+        "body": 0
+      },
+      "pageScrollY": 0,
+      "bodyLock": {
+        "body": "hidden",
+        "html": "hidden"
+      },
+      "activeEl": "shop-search-sheet-input"
+    },
+    "results_multi": {
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "sheet": {
+        "top": 65,
+        "bottom": 844,
+        "h": 779,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "sheetCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "background-color": "rgb(248, 250, 252)",
+        "opacity": "1",
+        "z-index": "80"
+      },
+      "head": {
+        "top": 65,
+        "bottom": 138,
+        "h": 73,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "headCss": {
+        "padding": "12px",
+        "gap": "8px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)"
+      },
+      "field": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "icon": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "iconCss": {
+        "color": "rgb(100, 116, 139)",
+        "inset-inline-start": "12px"
+      },
+      "iconSvg": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "input": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "inputCss": {
+        "height": "48px",
+        "font-size": "16px",
+        "padding-inline-start": "44px",
+        "padding-inline-end": "44px",
+        "background-color": "rgb(255, 255, 255)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(20, 184, 166)",
+        "border-radius": "8px",
+        "outline-style": "solid"
+      },
+      "clear": {
+        "rect": {
+          "top": 81,
+          "bottom": 121,
+          "h": 40,
+          "w": 40,
+          "x": 68,
+          "y": 81
+        },
+        "hidden": false,
+        "css": {
+          "width": "40px",
+          "height": "40px",
+          "color": "rgb(100, 116, 139)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "border-radius": "10px",
+          "inset-inline-end": "4px"
+        }
+      },
+      "close": {
+        "top": 79,
+        "bottom": 123,
+        "h": 44,
+        "w": 44,
+        "x": 12,
+        "y": 79
+      },
+      "closeCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "body": {
+        "top": 138,
+        "bottom": 844,
+        "h": 706,
+        "w": 390,
+        "x": 0,
+        "y": 138
+      },
+      "bodyCss": {
+        "overflow-y": "auto",
+        "padding": "16px 12px 24px",
+        "background-color": "rgba(0, 0, 0, 0)"
+      },
+      "bodyScroll": {
+        "clientH": 706,
+        "contentH": 706,
+        "maxScroll": 0
+      },
+      "label": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "font-size": "12px",
+          "font-weight": "700",
+          "color": "rgb(15, 118, 110)",
+          "letter-spacing": "1px",
+          "text-transform": "uppercase",
+          "margin": "0px 0px 8px"
+        }
+      },
+      "sugSection": {
+        "hidden": true,
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "chips": 5,
+      "chip0": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "min-height": "40px",
+          "padding": "8px 16px",
+          "background-color": "rgb(255, 255, 255)",
+          "color": "rgb(51, 65, 85)",
+          "border-radius": "999px",
+          "font-size": "14px",
+          "border-top-color": "rgb(230, 236, 243)"
+        }
+      },
+      "resultsCount": 2,
+      "visibleRowsInBody": 2,
+      "row0": {
+        "rect": {
+          "top": 192,
+          "bottom": 279,
+          "h": 87,
+          "w": 366,
+          "x": 12,
+          "y": 192
+        },
+        "css": {
+          "min-height": "72px",
+          "grid-template-columns": "56px 205px 55px",
+          "gap": "12px",
+          "padding": "8px 12px",
+          "border-top-width": "1px",
+          "border-top-color": "rgb(230, 236, 243)",
+          "border-radius": "14px",
+          "background-color": "rgb(255, 255, 255)",
+          "box-shadow": "none",
+          "text-decoration-line": "none"
+        }
+      },
+      "rowGap": 8,
+      "media": {
+        "rect": {
+          "top": 208,
+          "bottom": 264,
+          "h": 56,
+          "w": 56,
+          "x": 309,
+          "y": 208
+        },
+        "css": {
+          "width": "56px",
+          "height": "56px",
+          "background-color": "rgb(248, 250, 252)",
+          "border-radius": "10px",
+          "object-fit": "fill",
+          "overflow": "hidden"
+        }
+      },
+      "mediaImg": null,
+      "mediaSvg": {
+        "top": 223,
+        "bottom": 249,
+        "h": 26,
+        "w": 26,
+        "x": 324,
+        "y": 223
+      },
+      "name": {
+        "text": "منتج تجريبي — ثلاجة 300 لتر",
+        "rect": {
+          "top": 201,
+          "bottom": 225,
+          "h": 24,
+          "w": 205,
+          "x": 92,
+          "y": 201
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "600",
+          "color": "rgb(15, 23, 42)",
+          "line-clamp": "",
+          "-webkit-line-clamp": "2",
+          "display": "flow-root"
+        }
+      },
+      "meta": {
+        "text": "علامة تجريبية ب · تصنيف تجريبي — ثلاجات",
+        "rect": {
+          "top": 225,
+          "bottom": 271,
+          "h": 45,
+          "w": 177,
+          "x": 120,
+          "y": 225
+        },
+        "css": {
+          "font-size": "12.5px",
+          "color": "rgb(100, 116, 139)",
+          "white-space": "normal",
+          "overflow": "visible"
+        }
+      },
+      "price": {
+        "text": "350.00 $",
+        "rect": {
+          "top": 224,
+          "bottom": 248,
+          "h": 24,
+          "w": 55,
+          "x": 25,
+          "y": 224
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "700",
+          "color": "rgb(15, 23, 42)"
+        }
+      },
+      "oldPrice": false,
+      "skeletons": 0,
+      "skel0": null,
+      "state": null,
+      "liveRegions": [
+        {
+          "cls": "shop-search-sheet__label",
+          "live": "polite",
+          "atomic": "true",
+          "text": "نتائج (2)"
+        }
+      ],
+      "overflow": {
+        "doc": 0,
+        "sheet": 0,
+        "body": 0
+      },
+      "pageScrollY": 0,
+      "bodyLock": {
+        "body": "hidden",
+        "html": "hidden"
+      },
+      "activeEl": "shop-search-sheet-input"
+    },
+    "results_scrolled": {
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "sheet": {
+        "top": 65,
+        "bottom": 844,
+        "h": 779,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "sheetCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "background-color": "rgb(248, 250, 252)",
+        "opacity": "1",
+        "z-index": "80"
+      },
+      "head": {
+        "top": 65,
+        "bottom": 138,
+        "h": 73,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "headCss": {
+        "padding": "12px",
+        "gap": "8px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)"
+      },
+      "field": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "icon": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "iconCss": {
+        "color": "rgb(100, 116, 139)",
+        "inset-inline-start": "12px"
+      },
+      "iconSvg": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "input": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "inputCss": {
+        "height": "48px",
+        "font-size": "16px",
+        "padding-inline-start": "44px",
+        "padding-inline-end": "44px",
+        "background-color": "rgb(255, 255, 255)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(20, 184, 166)",
+        "border-radius": "8px",
+        "outline-style": "solid"
+      },
+      "clear": {
+        "rect": {
+          "top": 81,
+          "bottom": 121,
+          "h": 40,
+          "w": 40,
+          "x": 68,
+          "y": 81
+        },
+        "hidden": false,
+        "css": {
+          "width": "40px",
+          "height": "40px",
+          "color": "rgb(100, 116, 139)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "border-radius": "10px",
+          "inset-inline-end": "4px"
+        }
+      },
+      "close": {
+        "top": 79,
+        "bottom": 123,
+        "h": 44,
+        "w": 44,
+        "x": 12,
+        "y": 79
+      },
+      "closeCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "body": {
+        "top": 138,
+        "bottom": 844,
+        "h": 706,
+        "w": 390,
+        "x": 0,
+        "y": 138
+      },
+      "bodyCss": {
+        "overflow-y": "auto",
+        "padding": "16px 12px 24px",
+        "background-color": "rgba(0, 0, 0, 0)"
+      },
+      "bodyScroll": {
+        "clientH": 706,
+        "contentH": 706,
+        "maxScroll": 0
+      },
+      "label": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "font-size": "12px",
+          "font-weight": "700",
+          "color": "rgb(15, 118, 110)",
+          "letter-spacing": "1px",
+          "text-transform": "uppercase",
+          "margin": "0px 0px 8px"
+        }
+      },
+      "sugSection": {
+        "hidden": true,
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "chips": 5,
+      "chip0": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "min-height": "40px",
+          "padding": "8px 16px",
+          "background-color": "rgb(255, 255, 255)",
+          "color": "rgb(51, 65, 85)",
+          "border-radius": "999px",
+          "font-size": "14px",
+          "border-top-color": "rgb(230, 236, 243)"
+        }
+      },
+      "resultsCount": 2,
+      "visibleRowsInBody": 2,
+      "row0": {
+        "rect": {
+          "top": 192,
+          "bottom": 279,
+          "h": 87,
+          "w": 366,
+          "x": 12,
+          "y": 192
+        },
+        "css": {
+          "min-height": "72px",
+          "grid-template-columns": "56px 205px 55px",
+          "gap": "12px",
+          "padding": "8px 12px",
+          "border-top-width": "1px",
+          "border-top-color": "rgb(230, 236, 243)",
+          "border-radius": "14px",
+          "background-color": "rgb(255, 255, 255)",
+          "box-shadow": "none",
+          "text-decoration-line": "none"
+        }
+      },
+      "rowGap": 8,
+      "media": {
+        "rect": {
+          "top": 208,
+          "bottom": 264,
+          "h": 56,
+          "w": 56,
+          "x": 309,
+          "y": 208
+        },
+        "css": {
+          "width": "56px",
+          "height": "56px",
+          "background-color": "rgb(248, 250, 252)",
+          "border-radius": "10px",
+          "object-fit": "fill",
+          "overflow": "hidden"
+        }
+      },
+      "mediaImg": null,
+      "mediaSvg": {
+        "top": 223,
+        "bottom": 249,
+        "h": 26,
+        "w": 26,
+        "x": 324,
+        "y": 223
+      },
+      "name": {
+        "text": "منتج تجريبي — ثلاجة 300 لتر",
+        "rect": {
+          "top": 201,
+          "bottom": 225,
+          "h": 24,
+          "w": 205,
+          "x": 92,
+          "y": 201
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "600",
+          "color": "rgb(15, 23, 42)",
+          "line-clamp": "",
+          "-webkit-line-clamp": "2",
+          "display": "flow-root"
+        }
+      },
+      "meta": {
+        "text": "علامة تجريبية ب · تصنيف تجريبي — ثلاجات",
+        "rect": {
+          "top": 225,
+          "bottom": 271,
+          "h": 45,
+          "w": 177,
+          "x": 120,
+          "y": 225
+        },
+        "css": {
+          "font-size": "12.5px",
+          "color": "rgb(100, 116, 139)",
+          "white-space": "normal",
+          "overflow": "visible"
+        }
+      },
+      "price": {
+        "text": "350.00 $",
+        "rect": {
+          "top": 224,
+          "bottom": 248,
+          "h": 24,
+          "w": 55,
+          "x": 25,
+          "y": 224
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "700",
+          "color": "rgb(15, 23, 42)"
+        }
+      },
+      "oldPrice": false,
+      "skeletons": 0,
+      "skel0": null,
+      "state": null,
+      "liveRegions": [
+        {
+          "cls": "shop-search-sheet__label",
+          "live": "polite",
+          "atomic": "true",
+          "text": "نتائج (2)"
+        }
+      ],
+      "overflow": {
+        "doc": 0,
+        "sheet": 0,
+        "body": 0
+      },
+      "pageScrollY": 0,
+      "bodyLock": {
+        "body": "hidden",
+        "html": "hidden"
+      },
+      "activeEl": "shop-search-sheet-input"
+    },
+    "results_single": {
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "sheet": {
+        "top": 65,
+        "bottom": 844,
+        "h": 779,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "sheetCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "background-color": "rgb(248, 250, 252)",
+        "opacity": "1",
+        "z-index": "80"
+      },
+      "head": {
+        "top": 65,
+        "bottom": 138,
+        "h": 73,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "headCss": {
+        "padding": "12px",
+        "gap": "8px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)"
+      },
+      "field": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "icon": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "iconCss": {
+        "color": "rgb(100, 116, 139)",
+        "inset-inline-start": "12px"
+      },
+      "iconSvg": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "input": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "inputCss": {
+        "height": "48px",
+        "font-size": "16px",
+        "padding-inline-start": "44px",
+        "padding-inline-end": "44px",
+        "background-color": "rgb(255, 255, 255)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(20, 184, 166)",
+        "border-radius": "8px",
+        "outline-style": "solid"
+      },
+      "clear": {
+        "rect": {
+          "top": 81,
+          "bottom": 121,
+          "h": 40,
+          "w": 40,
+          "x": 68,
+          "y": 81
+        },
+        "hidden": false,
+        "css": {
+          "width": "40px",
+          "height": "40px",
+          "color": "rgb(15, 23, 42)",
+          "background-color": "rgb(248, 250, 252)",
+          "border-radius": "10px",
+          "inset-inline-end": "4px"
+        }
+      },
+      "close": {
+        "top": 79,
+        "bottom": 123,
+        "h": 44,
+        "w": 44,
+        "x": 12,
+        "y": 79
+      },
+      "closeCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "body": {
+        "top": 138,
+        "bottom": 844,
+        "h": 706,
+        "w": 390,
+        "x": 0,
+        "y": 138
+      },
+      "bodyCss": {
+        "overflow-y": "auto",
+        "padding": "16px 12px 24px",
+        "background-color": "rgba(0, 0, 0, 0)"
+      },
+      "bodyScroll": {
+        "clientH": 706,
+        "contentH": 706,
+        "maxScroll": 0
+      },
+      "label": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "font-size": "12px",
+          "font-weight": "700",
+          "color": "rgb(15, 118, 110)",
+          "letter-spacing": "1px",
+          "text-transform": "uppercase",
+          "margin": "0px 0px 8px"
+        }
+      },
+      "sugSection": {
+        "hidden": true,
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "chips": 5,
+      "chip0": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "min-height": "40px",
+          "padding": "8px 16px",
+          "background-color": "rgb(255, 255, 255)",
+          "color": "rgb(51, 65, 85)",
+          "border-radius": "999px",
+          "font-size": "14px",
+          "border-top-color": "rgb(230, 236, 243)"
+        }
+      },
+      "resultsCount": 1,
+      "visibleRowsInBody": 1,
+      "row0": {
+        "rect": {
+          "top": 192,
+          "bottom": 266,
+          "h": 74,
+          "w": 366,
+          "x": 12,
+          "y": 192
+        },
+        "css": {
+          "min-height": "72px",
+          "grid-template-columns": "56px 205px 55px",
+          "gap": "12px",
+          "padding": "8px 12px",
+          "border-top-width": "1px",
+          "border-top-color": "rgb(230, 236, 243)",
+          "border-radius": "14px",
+          "background-color": "rgb(255, 255, 255)",
+          "box-shadow": "none",
+          "text-decoration-line": "none"
+        }
+      },
+      "rowGap": null,
+      "media": {
+        "rect": {
+          "top": 201,
+          "bottom": 257,
+          "h": 56,
+          "w": 56,
+          "x": 309,
+          "y": 201
+        },
+        "css": {
+          "width": "56px",
+          "height": "56px",
+          "background-color": "rgb(248, 250, 252)",
+          "border-radius": "10px",
+          "object-fit": "fill",
+          "overflow": "hidden"
+        }
+      },
+      "mediaImg": null,
+      "mediaSvg": {
+        "top": 216,
+        "bottom": 242,
+        "h": 26,
+        "w": 26,
+        "x": 324,
+        "y": 216
+      },
+      "name": {
+        "text": "منتج تجريبي — ثلاجة 500 لتر",
+        "rect": {
+          "top": 206,
+          "bottom": 230,
+          "h": 24,
+          "w": 205,
+          "x": 92,
+          "y": 206
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "600",
+          "color": "rgb(15, 23, 42)",
+          "line-clamp": "",
+          "-webkit-line-clamp": "2",
+          "display": "flow-root"
+        }
+      },
+      "meta": {
+        "text": "علامة تجريبية أ · تصنيف تجريبي — ثلاجات",
+        "rect": {
+          "top": 230,
+          "bottom": 253,
+          "h": 23,
+          "w": 205,
+          "x": 92,
+          "y": 230
+        },
+        "css": {
+          "font-size": "12.5px",
+          "color": "rgb(100, 116, 139)",
+          "white-space": "normal",
+          "overflow": "visible"
+        }
+      },
+      "price": {
+        "text": "500.00 $",
+        "rect": {
+          "top": 217,
+          "bottom": 241,
+          "h": 24,
+          "w": 55,
+          "x": 25,
+          "y": 217
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "700",
+          "color": "rgb(15, 23, 42)"
+        }
+      },
+      "oldPrice": false,
+      "skeletons": 0,
+      "skel0": null,
+      "state": null,
+      "liveRegions": [
+        {
+          "cls": "shop-search-sheet__label",
+          "live": "polite",
+          "atomic": "true",
+          "text": "نتائج (1)"
+        }
+      ],
+      "overflow": {
+        "doc": 0,
+        "sheet": 0,
+        "body": 0
+      },
+      "pageScrollY": 0,
+      "bodyLock": {
+        "body": "hidden",
+        "html": "hidden"
+      },
+      "activeEl": "shop-search-sheet-input"
+    },
+    "empty": {
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "sheet": {
+        "top": 65,
+        "bottom": 844,
+        "h": 779,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "sheetCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "background-color": "rgb(248, 250, 252)",
+        "opacity": "1",
+        "z-index": "80"
+      },
+      "head": {
+        "top": 65,
+        "bottom": 138,
+        "h": 73,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "headCss": {
+        "padding": "12px",
+        "gap": "8px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)"
+      },
+      "field": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "icon": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "iconCss": {
+        "color": "rgb(100, 116, 139)",
+        "inset-inline-start": "12px"
+      },
+      "iconSvg": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "input": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "inputCss": {
+        "height": "48px",
+        "font-size": "16px",
+        "padding-inline-start": "44px",
+        "padding-inline-end": "44px",
+        "background-color": "rgb(255, 255, 255)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(20, 184, 166)",
+        "border-radius": "8px",
+        "outline-style": "solid"
+      },
+      "clear": {
+        "rect": {
+          "top": 81,
+          "bottom": 121,
+          "h": 40,
+          "w": 40,
+          "x": 68,
+          "y": 81
+        },
+        "hidden": false,
+        "css": {
+          "width": "40px",
+          "height": "40px",
+          "color": "rgb(15, 23, 42)",
+          "background-color": "rgb(248, 250, 252)",
+          "border-radius": "10px",
+          "inset-inline-end": "4px"
+        }
+      },
+      "close": {
+        "top": 79,
+        "bottom": 123,
+        "h": 44,
+        "w": 44,
+        "x": 12,
+        "y": 79
+      },
+      "closeCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "body": {
+        "top": 138,
+        "bottom": 844,
+        "h": 706,
+        "w": 390,
+        "x": 0,
+        "y": 138
+      },
+      "bodyCss": {
+        "overflow-y": "auto",
+        "padding": "16px 12px 24px",
+        "background-color": "rgba(0, 0, 0, 0)"
+      },
+      "bodyScroll": {
+        "clientH": 706,
+        "contentH": 706,
+        "maxScroll": 0
+      },
+      "label": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "font-size": "12px",
+          "font-weight": "700",
+          "color": "rgb(15, 118, 110)",
+          "letter-spacing": "1px",
+          "text-transform": "uppercase",
+          "margin": "0px 0px 8px"
+        }
+      },
+      "sugSection": {
+        "hidden": true,
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "chips": 5,
+      "chip0": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "min-height": "40px",
+          "padding": "8px 16px",
+          "background-color": "rgb(255, 255, 255)",
+          "color": "rgb(51, 65, 85)",
+          "border-radius": "999px",
+          "font-size": "14px",
+          "border-top-color": "rgb(230, 236, 243)"
+        }
+      },
+      "resultsCount": 0,
+      "visibleRowsInBody": 0,
+      "row0": null,
+      "rowGap": null,
+      "media": null,
+      "mediaImg": null,
+      "mediaSvg": null,
+      "name": null,
+      "meta": null,
+      "price": null,
+      "oldPrice": false,
+      "skeletons": 0,
+      "skel0": null,
+      "state": {
+        "rect": {
+          "top": 154,
+          "bottom": 382,
+          "h": 228,
+          "w": 366,
+          "x": 12,
+          "y": 154
+        },
+        "css": {
+          "padding": "24px 16px",
+          "border-top-width": "1px",
+          "border-top-style": "dashed",
+          "border-top-color": "rgb(230, 236, 243)",
+          "border-radius": "14px",
+          "background-color": "rgb(255, 255, 255)",
+          "text-align": "center"
+        },
+        "title": {
+          "text": "لا نتائج مطابقة",
+          "css": {
+            "font-size": "16px",
+            "font-weight": "600",
+            "color": "rgb(15, 23, 42)"
+          }
+        },
+        "text": {
+          "text": "لم نجد منتجات تطابق «لمبة». جرّب كلمة أخرى أو تصفّح كل المنت",
+          "css": {
+            "font-size": "13.5px",
+            "color": "rgb(100, 116, 139)"
+          }
+        },
+        "icon": {
+          "rect": {
+            "top": 179,
+            "bottom": 209,
+            "h": 30,
+            "w": 30,
+            "x": 180,
+            "y": 179
+          },
+          "color": "rgb(148, 163, 184)",
+          "svgCls": {}
+        },
+        "cta": {
+          "text": "تصفّح كل المنتجات",
+          "rect": {
+            "top": 313,
+            "bottom": 357,
+            "h": 44,
+            "w": 135,
+            "x": 128,
+            "y": 313
+          },
+          "css": {
+            "min-height": "44px",
+            "background-color": "rgb(15, 118, 110)",
+            "color": "rgb(255, 255, 255)",
+            "border-radius": "8px",
+            "font-size": "13px"
+          }
+        }
+      },
+      "liveRegions": [
+        {
+          "cls": "shop-search-state",
+          "live": "polite",
+          "atomic": "true",
+          "text": "لا نتائج مطابقةلم نجد منتجات تطابق «لمبة"
+        }
+      ],
+      "overflow": {
+        "doc": 0,
+        "sheet": 0,
+        "body": 0
+      },
+      "pageScrollY": 0,
+      "bodyLock": {
+        "body": "hidden",
+        "html": "hidden"
+      },
+      "activeEl": "shop-search-sheet-input"
+    },
+    "loading": {
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "sheet": {
+        "top": 65,
+        "bottom": 844,
+        "h": 779,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "sheetCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "background-color": "rgb(248, 250, 252)",
+        "opacity": "1",
+        "z-index": "80"
+      },
+      "head": {
+        "top": 65,
+        "bottom": 138,
+        "h": 73,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "headCss": {
+        "padding": "12px",
+        "gap": "8px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)"
+      },
+      "field": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "icon": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "iconCss": {
+        "color": "rgb(100, 116, 139)",
+        "inset-inline-start": "12px"
+      },
+      "iconSvg": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "input": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "inputCss": {
+        "height": "48px",
+        "font-size": "16px",
+        "padding-inline-start": "44px",
+        "padding-inline-end": "44px",
+        "background-color": "rgb(255, 255, 255)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(20, 184, 166)",
+        "border-radius": "8px",
+        "outline-style": "solid"
+      },
+      "clear": {
+        "rect": {
+          "top": 81,
+          "bottom": 121,
+          "h": 40,
+          "w": 40,
+          "x": 68,
+          "y": 81
+        },
+        "hidden": false,
+        "css": {
+          "width": "40px",
+          "height": "40px",
+          "color": "rgb(100, 116, 139)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "border-radius": "10px",
+          "inset-inline-end": "4px"
+        }
+      },
+      "close": {
+        "top": 79,
+        "bottom": 123,
+        "h": 44,
+        "w": 44,
+        "x": 12,
+        "y": 79
+      },
+      "closeCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "body": {
+        "top": 138,
+        "bottom": 844,
+        "h": 706,
+        "w": 390,
+        "x": 0,
+        "y": 138
+      },
+      "bodyCss": {
+        "overflow-y": "auto",
+        "padding": "16px 12px 24px",
+        "background-color": "rgba(0, 0, 0, 0)"
+      },
+      "bodyScroll": {
+        "clientH": 706,
+        "contentH": 706,
+        "maxScroll": 0
+      },
+      "label": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "font-size": "12px",
+          "font-weight": "700",
+          "color": "rgb(15, 118, 110)",
+          "letter-spacing": "1px",
+          "text-transform": "uppercase",
+          "margin": "0px 0px 8px"
+        }
+      },
+      "sugSection": {
+        "hidden": true,
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "chips": 5,
+      "chip0": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "min-height": "40px",
+          "padding": "8px 16px",
+          "background-color": "rgb(255, 255, 255)",
+          "color": "rgb(51, 65, 85)",
+          "border-radius": "999px",
+          "font-size": "14px",
+          "border-top-color": "rgb(230, 236, 243)"
+        }
+      },
+      "resultsCount": 0,
+      "visibleRowsInBody": 0,
+      "row0": null,
+      "rowGap": null,
+      "media": null,
+      "mediaImg": null,
+      "mediaSvg": null,
+      "name": null,
+      "meta": null,
+      "price": null,
+      "oldPrice": false,
+      "skeletons": 3,
+      "skel0": {
+        "rect": {
+          "top": 154,
+          "bottom": 226,
+          "h": 72,
+          "w": 366,
+          "x": 12,
+          "y": 154
+        },
+        "css": {
+          "height": "72px",
+          "border-radius": "14px",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "background-image": "linear-gradient(90deg, rgb(248, 250, 252) 25%, rgb(255, 255, 255) 37%, rgb(248, 250, 252) 63%)",
+          "animation-name": "shop-search-shimmer",
+          "border-top-width": "0px"
+        }
+      },
+      "state": null,
+      "liveRegions": [],
+      "overflow": {
+        "doc": 0,
+        "sheet": 0,
+        "body": 0
+      },
+      "pageScrollY": 0,
+      "bodyLock": {
+        "body": "hidden",
+        "html": "hidden"
+      },
+      "activeEl": "shop-search-sheet-input"
+    },
+    "error": {
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "sheet": {
+        "top": 65,
+        "bottom": 844,
+        "h": 779,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "sheetCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "background-color": "rgb(248, 250, 252)",
+        "opacity": "1",
+        "z-index": "80"
+      },
+      "head": {
+        "top": 65,
+        "bottom": 138,
+        "h": 73,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "headCss": {
+        "padding": "12px",
+        "gap": "8px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)"
+      },
+      "field": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "icon": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "iconCss": {
+        "color": "rgb(100, 116, 139)",
+        "inset-inline-start": "12px"
+      },
+      "iconSvg": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "input": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "inputCss": {
+        "height": "48px",
+        "font-size": "16px",
+        "padding-inline-start": "44px",
+        "padding-inline-end": "44px",
+        "background-color": "rgb(255, 255, 255)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(20, 184, 166)",
+        "border-radius": "8px",
+        "outline-style": "solid"
+      },
+      "clear": {
+        "rect": {
+          "top": 81,
+          "bottom": 121,
+          "h": 40,
+          "w": 40,
+          "x": 68,
+          "y": 81
+        },
+        "hidden": false,
+        "css": {
+          "width": "40px",
+          "height": "40px",
+          "color": "rgb(100, 116, 139)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "border-radius": "10px",
+          "inset-inline-end": "4px"
+        }
+      },
+      "close": {
+        "top": 79,
+        "bottom": 123,
+        "h": 44,
+        "w": 44,
+        "x": 12,
+        "y": 79
+      },
+      "closeCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "body": {
+        "top": 138,
+        "bottom": 844,
+        "h": 706,
+        "w": 390,
+        "x": 0,
+        "y": 138
+      },
+      "bodyCss": {
+        "overflow-y": "auto",
+        "padding": "16px 12px 24px",
+        "background-color": "rgba(0, 0, 0, 0)"
+      },
+      "bodyScroll": {
+        "clientH": 706,
+        "contentH": 706,
+        "maxScroll": 0
+      },
+      "label": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "font-size": "12px",
+          "font-weight": "700",
+          "color": "rgb(15, 118, 110)",
+          "letter-spacing": "1px",
+          "text-transform": "uppercase",
+          "margin": "0px 0px 8px"
+        }
+      },
+      "sugSection": {
+        "hidden": true,
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "chips": 5,
+      "chip0": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "min-height": "40px",
+          "padding": "8px 16px",
+          "background-color": "rgb(255, 255, 255)",
+          "color": "rgb(51, 65, 85)",
+          "border-radius": "999px",
+          "font-size": "14px",
+          "border-top-color": "rgb(230, 236, 243)"
+        }
+      },
+      "resultsCount": 0,
+      "visibleRowsInBody": 0,
+      "row0": null,
+      "rowGap": null,
+      "media": null,
+      "mediaImg": null,
+      "mediaSvg": null,
+      "name": null,
+      "meta": null,
+      "price": null,
+      "oldPrice": false,
+      "skeletons": 0,
+      "skel0": null,
+      "state": {
+        "rect": {
+          "top": 154,
+          "bottom": 357,
+          "h": 203,
+          "w": 366,
+          "x": 12,
+          "y": 154
+        },
+        "css": {
+          "padding": "24px 16px",
+          "border-top-width": "1px",
+          "border-top-style": "dashed",
+          "border-top-color": "rgb(230, 236, 243)",
+          "border-radius": "14px",
+          "background-color": "rgb(255, 255, 255)",
+          "text-align": "center"
+        },
+        "title": {
+          "text": "حدث خطأ أثناء البحث",
+          "css": {
+            "font-size": "16px",
+            "font-weight": "600",
+            "color": "rgb(15, 23, 42)"
+          }
+        },
+        "text": {
+          "text": "تعذّر الاتصال بالخادم.",
+          "css": {
+            "font-size": "13.5px",
+            "color": "rgb(100, 116, 139)"
+          }
+        },
+        "icon": {
+          "rect": {
+            "top": 179,
+            "bottom": 209,
+            "h": 30,
+            "w": 30,
+            "x": 180,
+            "y": 179
+          },
+          "color": "rgb(148, 163, 184)",
+          "svgCls": {}
+        },
+        "cta": {
+          "text": "إعادة المحاولة",
+          "rect": {
+            "top": 288,
+            "bottom": 332,
+            "h": 44,
+            "w": 115,
+            "x": 138,
+            "y": 288
+          },
+          "css": {
+            "min-height": "44px",
+            "background-color": "rgb(15, 118, 110)",
+            "color": "rgb(255, 255, 255)",
+            "border-radius": "8px",
+            "font-size": "13px"
+          }
+        }
+      },
+      "liveRegions": [
+        {
+          "cls": "shop-search-state",
+          "live": "polite",
+          "atomic": "true",
+          "text": "حدث خطأ أثناء البحثتعذّر الاتصال بالخادم"
+        }
+      ],
+      "overflow": {
+        "doc": 0,
+        "sheet": 0,
+        "body": 0
+      },
+      "pageScrollY": 0,
+      "bodyLock": {
+        "body": "hidden",
+        "html": "hidden"
+      },
+      "activeEl": "shop-search-sheet-input"
+    },
+    "dark_results": {
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "sheet": {
+        "top": 65,
+        "bottom": 844,
+        "h": 779,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "sheetCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "background-color": "rgb(10, 18, 32)",
+        "opacity": "1",
+        "z-index": "80"
+      },
+      "head": {
+        "top": 65,
+        "bottom": 138,
+        "h": 73,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "headCss": {
+        "padding": "12px",
+        "gap": "8px",
+        "background-color": "rgb(18, 27, 43)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(30, 42, 61)"
+      },
+      "field": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "icon": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "iconCss": {
+        "color": "rgb(148, 163, 184)",
+        "inset-inline-start": "12px"
+      },
+      "iconSvg": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "input": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "inputCss": {
+        "height": "48px",
+        "font-size": "16px",
+        "padding-inline-start": "44px",
+        "padding-inline-end": "44px",
+        "background-color": "rgb(18, 27, 43)",
+        "color": "rgb(241, 245, 249)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(20, 184, 166)",
+        "border-radius": "8px",
+        "outline-style": "solid"
+      },
+      "clear": {
+        "rect": {
+          "top": 81,
+          "bottom": 121,
+          "h": 40,
+          "w": 40,
+          "x": 68,
+          "y": 81
+        },
+        "hidden": false,
+        "css": {
+          "width": "40px",
+          "height": "40px",
+          "color": "rgb(148, 163, 184)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "border-radius": "10px",
+          "inset-inline-end": "4px"
+        }
+      },
+      "close": {
+        "top": 79,
+        "bottom": 123,
+        "h": 44,
+        "w": 44,
+        "x": 12,
+        "y": 79
+      },
+      "closeCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(15, 24, 38)",
+        "color": "rgb(241, 245, 249)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(30, 42, 61)",
+        "border-radius": "12px"
+      },
+      "body": {
+        "top": 138,
+        "bottom": 844,
+        "h": 706,
+        "w": 390,
+        "x": 0,
+        "y": 138
+      },
+      "bodyCss": {
+        "overflow-y": "auto",
+        "padding": "16px 12px 24px",
+        "background-color": "rgba(0, 0, 0, 0)"
+      },
+      "bodyScroll": {
+        "clientH": 706,
+        "contentH": 706,
+        "maxScroll": 0
+      },
+      "label": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "font-size": "12px",
+          "font-weight": "700",
+          "color": "rgb(15, 118, 110)",
+          "letter-spacing": "1px",
+          "text-transform": "uppercase",
+          "margin": "0px 0px 8px"
+        }
+      },
+      "sugSection": {
+        "hidden": true,
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "chips": 5,
+      "chip0": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "min-height": "40px",
+          "padding": "8px 16px",
+          "background-color": "rgb(18, 27, 43)",
+          "color": "rgb(203, 213, 225)",
+          "border-radius": "999px",
+          "font-size": "14px",
+          "border-top-color": "rgb(30, 42, 61)"
+        }
+      },
+      "resultsCount": 2,
+      "visibleRowsInBody": 2,
+      "row0": {
+        "rect": {
+          "top": 192,
+          "bottom": 279,
+          "h": 87,
+          "w": 366,
+          "x": 12,
+          "y": 192
+        },
+        "css": {
+          "min-height": "72px",
+          "grid-template-columns": "56px 205px 55px",
+          "gap": "12px",
+          "padding": "8px 12px",
+          "border-top-width": "1px",
+          "border-top-color": "rgb(30, 42, 61)",
+          "border-radius": "14px",
+          "background-color": "rgb(18, 27, 43)",
+          "box-shadow": "none",
+          "text-decoration-line": "none"
+        }
+      },
+      "rowGap": 8,
+      "media": {
+        "rect": {
+          "top": 208,
+          "bottom": 264,
+          "h": 56,
+          "w": 56,
+          "x": 309,
+          "y": 208
+        },
+        "css": {
+          "width": "56px",
+          "height": "56px",
+          "background-color": "rgb(15, 24, 38)",
+          "border-radius": "10px",
+          "object-fit": "fill",
+          "overflow": "hidden"
+        }
+      },
+      "mediaImg": null,
+      "mediaSvg": {
+        "top": 223,
+        "bottom": 249,
+        "h": 26,
+        "w": 26,
+        "x": 324,
+        "y": 223
+      },
+      "name": {
+        "text": "منتج تجريبي — ثلاجة 300 لتر",
+        "rect": {
+          "top": 201,
+          "bottom": 225,
+          "h": 24,
+          "w": 205,
+          "x": 92,
+          "y": 201
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "600",
+          "color": "rgb(241, 245, 249)",
+          "line-clamp": "",
+          "-webkit-line-clamp": "2",
+          "display": "flow-root"
+        }
+      },
+      "meta": {
+        "text": "علامة تجريبية ب · تصنيف تجريبي — ثلاجات",
+        "rect": {
+          "top": 225,
+          "bottom": 271,
+          "h": 45,
+          "w": 177,
+          "x": 120,
+          "y": 225
+        },
+        "css": {
+          "font-size": "12.5px",
+          "color": "rgb(148, 163, 184)",
+          "white-space": "normal",
+          "overflow": "visible"
+        }
+      },
+      "price": {
+        "text": "350.00 $",
+        "rect": {
+          "top": 224,
+          "bottom": 248,
+          "h": 24,
+          "w": 55,
+          "x": 25,
+          "y": 224
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "700",
+          "color": "rgb(241, 245, 249)"
+        }
+      },
+      "oldPrice": false,
+      "skeletons": 0,
+      "skel0": null,
+      "state": null,
+      "liveRegions": [
+        {
+          "cls": "shop-search-sheet__label",
+          "live": "polite",
+          "atomic": "true",
+          "text": "نتائج (2)"
+        }
+      ],
+      "overflow": {
+        "doc": 0,
+        "sheet": 0,
+        "body": 0
+      },
+      "pageScrollY": 0,
+      "bodyLock": {
+        "body": "hidden",
+        "html": "hidden"
+      },
+      "activeEl": "shop-search-sheet-input"
+    },
+    "dark_initial": {
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "sheet": {
+        "top": 65,
+        "bottom": 844,
+        "h": 779,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "sheetCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "background-color": "rgb(10, 18, 32)",
+        "opacity": "1",
+        "z-index": "80"
+      },
+      "head": {
+        "top": 65,
+        "bottom": 138,
+        "h": 73,
+        "w": 390,
+        "x": 0,
+        "y": 65
+      },
+      "headCss": {
+        "padding": "12px",
+        "gap": "8px",
+        "background-color": "rgb(18, 27, 43)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(30, 42, 61)"
+      },
+      "field": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "icon": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "iconCss": {
+        "color": "rgb(148, 163, 184)",
+        "inset-inline-start": "12px"
+      },
+      "iconSvg": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 346,
+        "y": 91
+      },
+      "input": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 314,
+        "x": 64,
+        "y": 77
+      },
+      "inputCss": {
+        "height": "48px",
+        "font-size": "16px",
+        "padding-inline-start": "44px",
+        "padding-inline-end": "44px",
+        "background-color": "rgb(18, 27, 43)",
+        "color": "rgb(241, 245, 249)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(20, 184, 166)",
+        "border-radius": "8px",
+        "outline-style": "solid"
+      },
+      "clear": {
+        "rect": {
+          "top": 81,
+          "bottom": 121,
+          "h": 40,
+          "w": 40,
+          "x": 68,
+          "y": 81
+        },
+        "hidden": false,
+        "css": {
+          "width": "40px",
+          "height": "40px",
+          "color": "rgb(148, 163, 184)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "border-radius": "10px",
+          "inset-inline-end": "4px"
+        }
+      },
+      "close": {
+        "top": 79,
+        "bottom": 123,
+        "h": 44,
+        "w": 44,
+        "x": 12,
+        "y": 79
+      },
+      "closeCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(15, 24, 38)",
+        "color": "rgb(241, 245, 249)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(30, 42, 61)",
+        "border-radius": "12px"
+      },
+      "body": {
+        "top": 138,
+        "bottom": 844,
+        "h": 706,
+        "w": 390,
+        "x": 0,
+        "y": 138
+      },
+      "bodyCss": {
+        "overflow-y": "auto",
+        "padding": "16px 12px 24px",
+        "background-color": "rgba(0, 0, 0, 0)"
+      },
+      "bodyScroll": {
+        "clientH": 706,
+        "contentH": 706,
+        "maxScroll": 0
+      },
+      "label": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "font-size": "12px",
+          "font-weight": "700",
+          "color": "rgb(15, 118, 110)",
+          "letter-spacing": "1px",
+          "text-transform": "uppercase",
+          "margin": "0px 0px 8px"
+        }
+      },
+      "sugSection": {
+        "hidden": true,
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "chips": 5,
+      "chip0": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "min-height": "40px",
+          "padding": "8px 16px",
+          "background-color": "rgb(18, 27, 43)",
+          "color": "rgb(203, 213, 225)",
+          "border-radius": "999px",
+          "font-size": "14px",
+          "border-top-color": "rgb(30, 42, 61)"
+        }
+      },
+      "resultsCount": 2,
+      "visibleRowsInBody": 2,
+      "row0": {
+        "rect": {
+          "top": 192,
+          "bottom": 279,
+          "h": 87,
+          "w": 366,
+          "x": 12,
+          "y": 192
+        },
+        "css": {
+          "min-height": "72px",
+          "grid-template-columns": "56px 205px 55px",
+          "gap": "12px",
+          "padding": "8px 12px",
+          "border-top-width": "1px",
+          "border-top-color": "rgb(30, 42, 61)",
+          "border-radius": "14px",
+          "background-color": "rgb(18, 27, 43)",
+          "box-shadow": "none",
+          "text-decoration-line": "none"
+        }
+      },
+      "rowGap": 8,
+      "media": {
+        "rect": {
+          "top": 208,
+          "bottom": 264,
+          "h": 56,
+          "w": 56,
+          "x": 309,
+          "y": 208
+        },
+        "css": {
+          "width": "56px",
+          "height": "56px",
+          "background-color": "rgb(15, 24, 38)",
+          "border-radius": "10px",
+          "object-fit": "fill",
+          "overflow": "hidden"
+        }
+      },
+      "mediaImg": null,
+      "mediaSvg": {
+        "top": 223,
+        "bottom": 249,
+        "h": 26,
+        "w": 26,
+        "x": 324,
+        "y": 223
+      },
+      "name": {
+        "text": "منتج تجريبي — ثلاجة 300 لتر",
+        "rect": {
+          "top": 201,
+          "bottom": 225,
+          "h": 24,
+          "w": 205,
+          "x": 92,
+          "y": 201
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "600",
+          "color": "rgb(241, 245, 249)",
+          "line-clamp": "",
+          "-webkit-line-clamp": "2",
+          "display": "flow-root"
+        }
+      },
+      "meta": {
+        "text": "علامة تجريبية ب · تصنيف تجريبي — ثلاجات",
+        "rect": {
+          "top": 225,
+          "bottom": 271,
+          "h": 45,
+          "w": 177,
+          "x": 120,
+          "y": 225
+        },
+        "css": {
+          "font-size": "12.5px",
+          "color": "rgb(148, 163, 184)",
+          "white-space": "normal",
+          "overflow": "visible"
+        }
+      },
+      "price": {
+        "text": "350.00 $",
+        "rect": {
+          "top": 224,
+          "bottom": 248,
+          "h": 24,
+          "w": 55,
+          "x": 25,
+          "y": 224
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "700",
+          "color": "rgb(241, 245, 249)"
+        }
+      },
+      "oldPrice": false,
+      "skeletons": 0,
+      "skel0": null,
+      "state": null,
+      "liveRegions": [
+        {
+          "cls": "shop-search-sheet__label",
+          "live": "polite",
+          "atomic": "true",
+          "text": "نتائج (2)"
+        }
+      ],
+      "overflow": {
+        "doc": 0,
+        "sheet": 0,
+        "body": 0
+      },
+      "pageScrollY": 0,
+      "bodyLock": {
+        "body": "hidden",
+        "html": "hidden"
+      },
+      "activeEl": "shop-search-sheet-input"
+    },
+    "results_360x780": {
+      "viewport": {
+        "w": 360,
+        "h": 780
+      },
+      "sheet": {
+        "top": 65,
+        "bottom": 780,
+        "h": 715,
+        "w": 360,
+        "x": 0,
+        "y": 65
+      },
+      "sheetCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "background-color": "rgb(248, 250, 252)",
+        "opacity": "1",
+        "z-index": "80"
+      },
+      "head": {
+        "top": 65,
+        "bottom": 138,
+        "h": 73,
+        "w": 360,
+        "x": 0,
+        "y": 65
+      },
+      "headCss": {
+        "padding": "12px",
+        "gap": "8px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)"
+      },
+      "field": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 284,
+        "x": 64,
+        "y": 77
+      },
+      "icon": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 316,
+        "y": 91
+      },
+      "iconCss": {
+        "color": "rgb(100, 116, 139)",
+        "inset-inline-start": "12px"
+      },
+      "iconSvg": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 316,
+        "y": 91
+      },
+      "input": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 284,
+        "x": 64,
+        "y": 77
+      },
+      "inputCss": {
+        "height": "48px",
+        "font-size": "16px",
+        "padding-inline-start": "44px",
+        "padding-inline-end": "44px",
+        "background-color": "rgb(255, 255, 255)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(20, 184, 166)",
+        "border-radius": "8px",
+        "outline-style": "solid"
+      },
+      "clear": {
+        "rect": {
+          "top": 81,
+          "bottom": 121,
+          "h": 40,
+          "w": 40,
+          "x": 68,
+          "y": 81
+        },
+        "hidden": false,
+        "css": {
+          "width": "40px",
+          "height": "40px",
+          "color": "rgb(100, 116, 139)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "border-radius": "10px",
+          "inset-inline-end": "4px"
+        }
+      },
+      "close": {
+        "top": 79,
+        "bottom": 123,
+        "h": 44,
+        "w": 44,
+        "x": 12,
+        "y": 79
+      },
+      "closeCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "body": {
+        "top": 138,
+        "bottom": 780,
+        "h": 642,
+        "w": 360,
+        "x": 0,
+        "y": 138
+      },
+      "bodyCss": {
+        "overflow-y": "auto",
+        "padding": "16px 12px 24px",
+        "background-color": "rgba(0, 0, 0, 0)"
+      },
+      "bodyScroll": {
+        "clientH": 642,
+        "contentH": 642,
+        "maxScroll": 0
+      },
+      "label": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "font-size": "12px",
+          "font-weight": "700",
+          "color": "rgb(15, 118, 110)",
+          "letter-spacing": "1px",
+          "text-transform": "uppercase",
+          "margin": "0px 0px 8px"
+        }
+      },
+      "sugSection": {
+        "hidden": true,
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "chips": 5,
+      "chip0": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "min-height": "40px",
+          "padding": "8px 16px",
+          "background-color": "rgb(255, 255, 255)",
+          "color": "rgb(51, 65, 85)",
+          "border-radius": "999px",
+          "font-size": "14px",
+          "border-top-color": "rgb(230, 236, 243)"
+        }
+      },
+      "resultsCount": 2,
+      "visibleRowsInBody": 2,
+      "row0": {
+        "rect": {
+          "top": 192,
+          "bottom": 279,
+          "h": 87,
+          "w": 336,
+          "x": 12,
+          "y": 192
+        },
+        "css": {
+          "min-height": "72px",
+          "grid-template-columns": "56px 175px 55px",
+          "gap": "12px",
+          "padding": "8px 12px",
+          "border-top-width": "1px",
+          "border-top-color": "rgb(230, 236, 243)",
+          "border-radius": "14px",
+          "background-color": "rgb(255, 255, 255)",
+          "box-shadow": "none",
+          "text-decoration-line": "none"
+        }
+      },
+      "rowGap": 8,
+      "media": {
+        "rect": {
+          "top": 208,
+          "bottom": 264,
+          "h": 56,
+          "w": 56,
+          "x": 279,
+          "y": 208
+        },
+        "css": {
+          "width": "56px",
+          "height": "56px",
+          "background-color": "rgb(248, 250, 252)",
+          "border-radius": "10px",
+          "object-fit": "fill",
+          "overflow": "hidden"
+        }
+      },
+      "mediaImg": null,
+      "mediaSvg": {
+        "top": 223,
+        "bottom": 249,
+        "h": 26,
+        "w": 26,
+        "x": 294,
+        "y": 223
+      },
+      "name": {
+        "text": "منتج تجريبي — ثلاجة 300 لتر",
+        "rect": {
+          "top": 201,
+          "bottom": 225,
+          "h": 24,
+          "w": 175,
+          "x": 92,
+          "y": 201
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "600",
+          "color": "rgb(15, 23, 42)",
+          "line-clamp": "",
+          "-webkit-line-clamp": "2",
+          "display": "flow-root"
+        }
+      },
+      "meta": {
+        "text": "علامة تجريبية ب · تصنيف تجريبي — ثلاجات",
+        "rect": {
+          "top": 225,
+          "bottom": 271,
+          "h": 45,
+          "w": 160,
+          "x": 107,
+          "y": 225
+        },
+        "css": {
+          "font-size": "12.5px",
+          "color": "rgb(100, 116, 139)",
+          "white-space": "normal",
+          "overflow": "visible"
+        }
+      },
+      "price": {
+        "text": "350.00 $",
+        "rect": {
+          "top": 224,
+          "bottom": 248,
+          "h": 24,
+          "w": 55,
+          "x": 25,
+          "y": 224
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "700",
+          "color": "rgb(15, 23, 42)"
+        }
+      },
+      "oldPrice": false,
+      "skeletons": 0,
+      "skel0": null,
+      "state": null,
+      "liveRegions": [
+        {
+          "cls": "shop-search-sheet__label",
+          "live": "polite",
+          "atomic": "true",
+          "text": "نتائج (2)"
+        }
+      ],
+      "overflow": {
+        "doc": 0,
+        "sheet": 0,
+        "body": 0
+      },
+      "pageScrollY": 0,
+      "bodyLock": {
+        "body": "hidden",
+        "html": "hidden"
+      },
+      "activeEl": "shop-search-sheet-input"
+    },
+    "results_430x900": {
+      "viewport": {
+        "w": 430,
+        "h": 900
+      },
+      "sheet": {
+        "top": 65,
+        "bottom": 900,
+        "h": 835,
+        "w": 430,
+        "x": 0,
+        "y": 65
+      },
+      "sheetCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "background-color": "rgb(248, 250, 252)",
+        "opacity": "1",
+        "z-index": "80"
+      },
+      "head": {
+        "top": 65,
+        "bottom": 138,
+        "h": 73,
+        "w": 430,
+        "x": 0,
+        "y": 65
+      },
+      "headCss": {
+        "padding": "12px",
+        "gap": "8px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)"
+      },
+      "field": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 354,
+        "x": 64,
+        "y": 77
+      },
+      "icon": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 386,
+        "y": 91
+      },
+      "iconCss": {
+        "color": "rgb(100, 116, 139)",
+        "inset-inline-start": "12px"
+      },
+      "iconSvg": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 386,
+        "y": 91
+      },
+      "input": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 354,
+        "x": 64,
+        "y": 77
+      },
+      "inputCss": {
+        "height": "48px",
+        "font-size": "16px",
+        "padding-inline-start": "44px",
+        "padding-inline-end": "44px",
+        "background-color": "rgb(255, 255, 255)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(20, 184, 166)",
+        "border-radius": "8px",
+        "outline-style": "solid"
+      },
+      "clear": {
+        "rect": {
+          "top": 81,
+          "bottom": 121,
+          "h": 40,
+          "w": 40,
+          "x": 68,
+          "y": 81
+        },
+        "hidden": false,
+        "css": {
+          "width": "40px",
+          "height": "40px",
+          "color": "rgb(100, 116, 139)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "border-radius": "10px",
+          "inset-inline-end": "4px"
+        }
+      },
+      "close": {
+        "top": 79,
+        "bottom": 123,
+        "h": 44,
+        "w": 44,
+        "x": 12,
+        "y": 79
+      },
+      "closeCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "body": {
+        "top": 138,
+        "bottom": 900,
+        "h": 762,
+        "w": 430,
+        "x": 0,
+        "y": 138
+      },
+      "bodyCss": {
+        "overflow-y": "auto",
+        "padding": "16px 12px 24px",
+        "background-color": "rgba(0, 0, 0, 0)"
+      },
+      "bodyScroll": {
+        "clientH": 762,
+        "contentH": 762,
+        "maxScroll": 0
+      },
+      "label": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "font-size": "12px",
+          "font-weight": "700",
+          "color": "rgb(15, 118, 110)",
+          "letter-spacing": "1px",
+          "text-transform": "uppercase",
+          "margin": "0px 0px 8px"
+        }
+      },
+      "sugSection": {
+        "hidden": true,
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "chips": 5,
+      "chip0": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "min-height": "40px",
+          "padding": "8px 16px",
+          "background-color": "rgb(255, 255, 255)",
+          "color": "rgb(51, 65, 85)",
+          "border-radius": "999px",
+          "font-size": "14px",
+          "border-top-color": "rgb(230, 236, 243)"
+        }
+      },
+      "resultsCount": 2,
+      "visibleRowsInBody": 2,
+      "row0": {
+        "rect": {
+          "top": 192,
+          "bottom": 266,
+          "h": 74,
+          "w": 406,
+          "x": 12,
+          "y": 192
+        },
+        "css": {
+          "min-height": "72px",
+          "grid-template-columns": "56px 245px 55px",
+          "gap": "12px",
+          "padding": "8px 12px",
+          "border-top-width": "1px",
+          "border-top-color": "rgb(230, 236, 243)",
+          "border-radius": "14px",
+          "background-color": "rgb(255, 255, 255)",
+          "box-shadow": "none",
+          "text-decoration-line": "none"
+        }
+      },
+      "rowGap": 8,
+      "media": {
+        "rect": {
+          "top": 201,
+          "bottom": 257,
+          "h": 56,
+          "w": 56,
+          "x": 349,
+          "y": 201
+        },
+        "css": {
+          "width": "56px",
+          "height": "56px",
+          "background-color": "rgb(248, 250, 252)",
+          "border-radius": "10px",
+          "object-fit": "fill",
+          "overflow": "hidden"
+        }
+      },
+      "mediaImg": null,
+      "mediaSvg": {
+        "top": 216,
+        "bottom": 242,
+        "h": 26,
+        "w": 26,
+        "x": 364,
+        "y": 216
+      },
+      "name": {
+        "text": "منتج تجريبي — ثلاجة 300 لتر",
+        "rect": {
+          "top": 206,
+          "bottom": 230,
+          "h": 24,
+          "w": 245,
+          "x": 92,
+          "y": 206
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "600",
+          "color": "rgb(15, 23, 42)",
+          "line-clamp": "",
+          "-webkit-line-clamp": "2",
+          "display": "flow-root"
+        }
+      },
+      "meta": {
+        "text": "علامة تجريبية ب · تصنيف تجريبي — ثلاجات",
+        "rect": {
+          "top": 230,
+          "bottom": 253,
+          "h": 23,
+          "w": 212,
+          "x": 125,
+          "y": 230
+        },
+        "css": {
+          "font-size": "12.5px",
+          "color": "rgb(100, 116, 139)",
+          "white-space": "normal",
+          "overflow": "visible"
+        }
+      },
+      "price": {
+        "text": "350.00 $",
+        "rect": {
+          "top": 217,
+          "bottom": 241,
+          "h": 24,
+          "w": 55,
+          "x": 25,
+          "y": 217
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "700",
+          "color": "rgb(15, 23, 42)"
+        }
+      },
+      "oldPrice": false,
+      "skeletons": 0,
+      "skel0": null,
+      "state": null,
+      "liveRegions": [
+        {
+          "cls": "shop-search-sheet__label",
+          "live": "polite",
+          "atomic": "true",
+          "text": "نتائج (2)"
+        }
+      ],
+      "overflow": {
+        "doc": 0,
+        "sheet": 0,
+        "body": 0
+      },
+      "pageScrollY": 0,
+      "bodyLock": {
+        "body": "hidden",
+        "html": "hidden"
+      },
+      "activeEl": "shop-search-sheet-input"
+    },
+    "results_600x900": {
+      "viewport": {
+        "w": 600,
+        "h": 900
+      },
+      "sheet": {
+        "top": 65,
+        "bottom": 900,
+        "h": 835,
+        "w": 600,
+        "x": 0,
+        "y": 65
+      },
+      "sheetCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "background-color": "rgb(248, 250, 252)",
+        "opacity": "1",
+        "z-index": "80"
+      },
+      "head": {
+        "top": 65,
+        "bottom": 138,
+        "h": 73,
+        "w": 600,
+        "x": 0,
+        "y": 65
+      },
+      "headCss": {
+        "padding": "12px",
+        "gap": "8px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)"
+      },
+      "field": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 524,
+        "x": 64,
+        "y": 77
+      },
+      "icon": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 556,
+        "y": 91
+      },
+      "iconCss": {
+        "color": "rgb(100, 116, 139)",
+        "inset-inline-start": "12px"
+      },
+      "iconSvg": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 556,
+        "y": 91
+      },
+      "input": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 524,
+        "x": 64,
+        "y": 77
+      },
+      "inputCss": {
+        "height": "48px",
+        "font-size": "16px",
+        "padding-inline-start": "44px",
+        "padding-inline-end": "44px",
+        "background-color": "rgb(255, 255, 255)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(20, 184, 166)",
+        "border-radius": "8px",
+        "outline-style": "solid"
+      },
+      "clear": {
+        "rect": {
+          "top": 81,
+          "bottom": 121,
+          "h": 40,
+          "w": 40,
+          "x": 68,
+          "y": 81
+        },
+        "hidden": false,
+        "css": {
+          "width": "40px",
+          "height": "40px",
+          "color": "rgb(100, 116, 139)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "border-radius": "10px",
+          "inset-inline-end": "4px"
+        }
+      },
+      "close": {
+        "top": 79,
+        "bottom": 123,
+        "h": 44,
+        "w": 44,
+        "x": 12,
+        "y": 79
+      },
+      "closeCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "body": {
+        "top": 138,
+        "bottom": 900,
+        "h": 762,
+        "w": 600,
+        "x": 0,
+        "y": 138
+      },
+      "bodyCss": {
+        "overflow-y": "auto",
+        "padding": "16px 12px 24px",
+        "background-color": "rgba(0, 0, 0, 0)"
+      },
+      "bodyScroll": {
+        "clientH": 762,
+        "contentH": 762,
+        "maxScroll": 0
+      },
+      "label": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "font-size": "12px",
+          "font-weight": "700",
+          "color": "rgb(15, 118, 110)",
+          "letter-spacing": "1px",
+          "text-transform": "uppercase",
+          "margin": "0px 0px 8px"
+        }
+      },
+      "sugSection": {
+        "hidden": true,
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "chips": 5,
+      "chip0": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "min-height": "40px",
+          "padding": "8px 16px",
+          "background-color": "rgb(255, 255, 255)",
+          "color": "rgb(51, 65, 85)",
+          "border-radius": "999px",
+          "font-size": "14px",
+          "border-top-color": "rgb(230, 236, 243)"
+        }
+      },
+      "resultsCount": 2,
+      "visibleRowsInBody": 2,
+      "row0": {
+        "rect": {
+          "top": 192,
+          "bottom": 266,
+          "h": 74,
+          "w": 576,
+          "x": 12,
+          "y": 192
+        },
+        "css": {
+          "min-height": "72px",
+          "grid-template-columns": "56px 415px 55px",
+          "gap": "12px",
+          "padding": "8px 12px",
+          "border-top-width": "1px",
+          "border-top-color": "rgb(230, 236, 243)",
+          "border-radius": "14px",
+          "background-color": "rgb(255, 255, 255)",
+          "box-shadow": "none",
+          "text-decoration-line": "none"
+        }
+      },
+      "rowGap": 8,
+      "media": {
+        "rect": {
+          "top": 201,
+          "bottom": 257,
+          "h": 56,
+          "w": 56,
+          "x": 519,
+          "y": 201
+        },
+        "css": {
+          "width": "56px",
+          "height": "56px",
+          "background-color": "rgb(248, 250, 252)",
+          "border-radius": "10px",
+          "object-fit": "fill",
+          "overflow": "hidden"
+        }
+      },
+      "mediaImg": null,
+      "mediaSvg": {
+        "top": 216,
+        "bottom": 242,
+        "h": 26,
+        "w": 26,
+        "x": 534,
+        "y": 216
+      },
+      "name": {
+        "text": "منتج تجريبي — ثلاجة 300 لتر",
+        "rect": {
+          "top": 206,
+          "bottom": 230,
+          "h": 24,
+          "w": 415,
+          "x": 92,
+          "y": 206
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "600",
+          "color": "rgb(15, 23, 42)",
+          "line-clamp": "",
+          "-webkit-line-clamp": "2",
+          "display": "flow-root"
+        }
+      },
+      "meta": {
+        "text": "علامة تجريبية ب · تصنيف تجريبي — ثلاجات",
+        "rect": {
+          "top": 230,
+          "bottom": 253,
+          "h": 23,
+          "w": 212,
+          "x": 295,
+          "y": 230
+        },
+        "css": {
+          "font-size": "12.5px",
+          "color": "rgb(100, 116, 139)",
+          "white-space": "normal",
+          "overflow": "visible"
+        }
+      },
+      "price": {
+        "text": "350.00 $",
+        "rect": {
+          "top": 217,
+          "bottom": 241,
+          "h": 24,
+          "w": 55,
+          "x": 25,
+          "y": 217
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "700",
+          "color": "rgb(15, 23, 42)"
+        }
+      },
+      "oldPrice": false,
+      "skeletons": 0,
+      "skel0": null,
+      "state": null,
+      "liveRegions": [
+        {
+          "cls": "shop-search-sheet__label",
+          "live": "polite",
+          "atomic": "true",
+          "text": "نتائج (2)"
+        }
+      ],
+      "overflow": {
+        "doc": 0,
+        "sheet": 0,
+        "body": 0
+      },
+      "pageScrollY": 0,
+      "bodyLock": {
+        "body": "hidden",
+        "html": "hidden"
+      },
+      "activeEl": "shop-search-sheet-input"
+    },
+    "results_768x1000": {
+      "viewport": {
+        "w": 768,
+        "h": 1000
+      },
+      "sheet": {
+        "top": 65,
+        "bottom": 1000,
+        "h": 935,
+        "w": 768,
+        "x": 0,
+        "y": 65
+      },
+      "sheetCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "background-color": "rgb(248, 250, 252)",
+        "opacity": "1",
+        "z-index": "80"
+      },
+      "head": {
+        "top": 65,
+        "bottom": 138,
+        "h": 73,
+        "w": 768,
+        "x": 0,
+        "y": 65
+      },
+      "headCss": {
+        "padding": "12px 16px",
+        "gap": "8px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)"
+      },
+      "field": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 684,
+        "x": 68,
+        "y": 77
+      },
+      "icon": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 720,
+        "y": 91
+      },
+      "iconCss": {
+        "color": "rgb(100, 116, 139)",
+        "inset-inline-start": "12px"
+      },
+      "iconSvg": {
+        "top": 91,
+        "bottom": 111,
+        "h": 20,
+        "w": 20,
+        "x": 720,
+        "y": 91
+      },
+      "input": {
+        "top": 77,
+        "bottom": 125,
+        "h": 48,
+        "w": 684,
+        "x": 68,
+        "y": 77
+      },
+      "inputCss": {
+        "height": "48px",
+        "font-size": "16px",
+        "padding-inline-start": "44px",
+        "padding-inline-end": "44px",
+        "background-color": "rgb(255, 255, 255)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(20, 184, 166)",
+        "border-radius": "8px",
+        "outline-style": "solid"
+      },
+      "clear": {
+        "rect": {
+          "top": 81,
+          "bottom": 121,
+          "h": 40,
+          "w": 40,
+          "x": 72,
+          "y": 81
+        },
+        "hidden": false,
+        "css": {
+          "width": "40px",
+          "height": "40px",
+          "color": "rgb(100, 116, 139)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "border-radius": "10px",
+          "inset-inline-end": "4px"
+        }
+      },
+      "close": {
+        "top": 79,
+        "bottom": 123,
+        "h": 44,
+        "w": 44,
+        "x": 16,
+        "y": 79
+      },
+      "closeCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "body": {
+        "top": 138,
+        "bottom": 1000,
+        "h": 862,
+        "w": 768,
+        "x": 0,
+        "y": 138
+      },
+      "bodyCss": {
+        "overflow-y": "auto",
+        "padding": "16px 16px 24px",
+        "background-color": "rgba(0, 0, 0, 0)"
+      },
+      "bodyScroll": {
+        "clientH": 862,
+        "contentH": 862,
+        "maxScroll": 0
+      },
+      "label": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "font-size": "12px",
+          "font-weight": "700",
+          "color": "rgb(15, 118, 110)",
+          "letter-spacing": "1px",
+          "text-transform": "uppercase",
+          "margin": "0px 0px 8px"
+        }
+      },
+      "sugSection": {
+        "hidden": true,
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        }
+      },
+      "chips": 5,
+      "chip0": {
+        "rect": {
+          "top": 0,
+          "bottom": 0,
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "css": {
+          "min-height": "40px",
+          "padding": "8px 16px",
+          "background-color": "rgb(255, 255, 255)",
+          "color": "rgb(51, 65, 85)",
+          "border-radius": "999px",
+          "font-size": "14px",
+          "border-top-color": "rgb(230, 236, 243)"
+        }
+      },
+      "resultsCount": 2,
+      "visibleRowsInBody": 2,
+      "row0": {
+        "rect": {
+          "top": 192,
+          "bottom": 266,
+          "h": 74,
+          "w": 736,
+          "x": 16,
+          "y": 192
+        },
+        "css": {
+          "min-height": "72px",
+          "grid-template-columns": "56px 575px 55px",
+          "gap": "12px",
+          "padding": "8px 12px",
+          "border-top-width": "1px",
+          "border-top-color": "rgb(230, 236, 243)",
+          "border-radius": "14px",
+          "background-color": "rgb(255, 255, 255)",
+          "box-shadow": "none",
+          "text-decoration-line": "none"
+        }
+      },
+      "rowGap": 8,
+      "media": {
+        "rect": {
+          "top": 201,
+          "bottom": 257,
+          "h": 56,
+          "w": 56,
+          "x": 683,
+          "y": 201
+        },
+        "css": {
+          "width": "56px",
+          "height": "56px",
+          "background-color": "rgb(248, 250, 252)",
+          "border-radius": "10px",
+          "object-fit": "fill",
+          "overflow": "hidden"
+        }
+      },
+      "mediaImg": null,
+      "mediaSvg": {
+        "top": 216,
+        "bottom": 242,
+        "h": 26,
+        "w": 26,
+        "x": 698,
+        "y": 216
+      },
+      "name": {
+        "text": "منتج تجريبي — ثلاجة 300 لتر",
+        "rect": {
+          "top": 206,
+          "bottom": 230,
+          "h": 24,
+          "w": 575,
+          "x": 96,
+          "y": 206
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "600",
+          "color": "rgb(15, 23, 42)",
+          "line-clamp": "",
+          "-webkit-line-clamp": "2",
+          "display": "flow-root"
+        }
+      },
+      "meta": {
+        "text": "علامة تجريبية ب · تصنيف تجريبي — ثلاجات",
+        "rect": {
+          "top": 230,
+          "bottom": 253,
+          "h": 23,
+          "w": 212,
+          "x": 459,
+          "y": 230
+        },
+        "css": {
+          "font-size": "12.5px",
+          "color": "rgb(100, 116, 139)",
+          "white-space": "normal",
+          "overflow": "visible"
+        }
+      },
+      "price": {
+        "text": "350.00 $",
+        "rect": {
+          "top": 217,
+          "bottom": 241,
+          "h": 24,
+          "w": 55,
+          "x": 29,
+          "y": 217
+        },
+        "css": {
+          "font-size": "15px",
+          "font-weight": "700",
+          "color": "rgb(15, 23, 42)"
+        }
+      },
+      "oldPrice": false,
+      "skeletons": 0,
+      "skel0": null,
+      "state": null,
+      "liveRegions": [
+        {
+          "cls": "shop-search-sheet__label",
+          "live": "polite",
+          "atomic": "true",
+          "text": "نتائج (2)"
+        }
+      ],
+      "overflow": {
+        "doc": 0,
+        "sheet": 0,
+        "body": 0
+      },
+      "pageScrollY": 0,
+      "bodyLock": {
+        "body": "hidden",
+        "html": "hidden"
+      },
+      "activeEl": "shop-search-sheet-input"
+    },
+    "desktop_1024": {
+      "sheetHidden": true,
+      "sheetTop": 0,
+      "searchBtnDisplay": "none",
+      "formDisplay": "none",
+      "headerH": 74,
+      "overflow": 0
+    },
+    "desktop_1366": {
+      "sheetHidden": true,
+      "sheetTop": 0,
+      "searchBtnDisplay": "none",
+      "formDisplay": "flex",
+      "headerH": 74,
+      "overflow": 0
+    }
+  },
+  "functional": {
+    "autofocus": "shop-search-sheet-input",
+    "debounce_first_request_ms": 681,
+    "clear_visible": {
+      "hidden": false,
+      "rect": {
+        "w": 40,
+        "h": 40
+      }
+    },
+    "after_clear": {
+      "value": "",
+      "clearHidden": true,
+      "chipsBack": true,
+      "resultsCount": 0,
+      "focused": "shop-search-sheet-input"
+    },
+    "escape": {
+      "hidden": true,
+      "open": false,
+      "active": "shop-search-btn",
+      "bodyLock": "visible",
+      "pageScrollY": 0
+    },
+    "focus_visible": {
+      "cls": "shop-search-row",
+      "id": "",
+      "outline": "solid 2px",
+      "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+      "border": "rgb(82, 199, 189)"
+    },
+    "regression": {
+      "menu_open": {
+        "open": true,
+        "drawerTop": 65,
+        "headerBottom": 65,
+        "rowH": 50
+      },
+      "menu_closed": true,
+      "cart": {
+        "href": "#/cart",
+        "w": 44
+      },
+      "home": {
+        "cards": 5,
+        "hero": true,
+        "ticker": false
+      },
+      "header": {
+        "h": 65,
+        "brand": 34
+      },
+      "search_resize_1024": {
+        "hidden": true,
+        "open": false,
+        "bodyLock": "visible"
+      }
+    }
+  },
+  "net": {},
+  "console_errors": [],
+  "shots": [
+    "/root/alwled/frontend/tools/qa/stage2e/before-390-initial.png",
+    "/root/alwled/frontend/tools/qa/stage2e/before-390-results.png",
+    "/root/alwled/frontend/tools/qa/stage2e/before-390-results-scrolled.png",
+    "/root/alwled/frontend/tools/qa/stage2e/before-390-results-single.png",
+    "/root/alwled/frontend/tools/qa/stage2e/before-390-empty.png",
+    "/root/alwled/frontend/tools/qa/stage2e/before-390-loading.png",
+    "/root/alwled/frontend/tools/qa/stage2e/before-390-error.png",
+    "/root/alwled/frontend/tools/qa/stage2e/before-390-dark-results.png",
+    "/root/alwled/frontend/tools/qa/stage2e/before-390-focus.png",
+    "/root/alwled/frontend/tools/qa/stage2e/before-360x780-results.png",
+    "/root/alwled/frontend/tools/qa/stage2e/before-430x900-results.png",
+    "/root/alwled/frontend/tools/qa/stage2e/before-600x900-results.png",
+    "/root/alwled/frontend/tools/qa/stage2e/before-768x1000-results.png",
+    "/root/alwled/frontend/tools/qa/stage2e/before-1366-desktop.png"
+  ]
+}

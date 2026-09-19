@@ -93,6 +93,24 @@
     return deps.session || (global.ALW && global.ALW.session) || null;
   }
 
+  // تجديد واحد فقط عند تزامن عدة 401 (بدل عدة نداءات refresh متوازية تُبطل بعضها)
+  var refreshInFlight = null;
+
+  function sharedRefresh() {
+    if (!refreshInFlight) {
+      refreshInFlight = Promise.resolve(deps.refresh())
+        .then(function (result) {
+          refreshInFlight = null;
+          return result;
+        })
+        .catch(function (error) {
+          refreshInFlight = null;
+          throw error;
+        });
+    }
+    return refreshInFlight;
+  }
+
   function request(method, path, options) {
     var opts = options || {};
     var settings = currentConfig();
@@ -155,7 +173,7 @@
 
         // ---- 401: one transparent refresh attempt, then surface the session expiry ----
         if (response.status === 401 && !opts.skipAuth && attempt === 0 && typeof deps.refresh === 'function') {
-          return Promise.resolve(deps.refresh())
+          return sharedRefresh()
             .then(function (refreshed) {
               if (!refreshed) throw ApiError(ERROR_MESSAGES.unauthorized, { status: 401, code: 'unauthorized' });
               var next = Object.assign({}, opts, { _attempt: 1 });

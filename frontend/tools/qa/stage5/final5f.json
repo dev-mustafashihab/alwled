@@ -1,0 +1,702 @@
+{
+ "matrix": {
+  "360": {
+   "home": {
+    "ov": 0,
+    "docH": 2767,
+    "clipped": [
+     "shop-section shop-home-s|تسوّق حسب التص"
+    ]
+   },
+   "products": {
+    "ov": 0,
+    "docH": 957,
+    "clipped": []
+   },
+   "categories": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "brands": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1796,
+    "clipped": [
+     "shop-product|علامة تجريبية ",
+     "shop-buy|علامة تجريبية "
+    ]
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1796,
+    "clipped": [
+     "shop-product|علامة تجريبية ",
+     "shop-buy|علامة تجريبية "
+    ]
+   }
+  },
+  "390": {
+   "home": {
+    "ov": 0,
+    "docH": 2754,
+    "clipped": [
+     "shop-section shop-home-s|تسوّق حسب التص"
+    ]
+   },
+   "products": {
+    "ov": 0,
+    "docH": 957,
+    "clipped": []
+   },
+   "categories": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "brands": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1799,
+    "clipped": [
+     "shop-product|علامة تجريبية ",
+     "shop-buy|علامة تجريبية "
+    ]
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1799,
+    "clipped": [
+     "shop-product|علامة تجريبية ",
+     "shop-buy|علامة تجريبية "
+    ]
+   }
+  },
+  "430": {
+   "home": {
+    "ov": 0,
+    "docH": 2729,
+    "clipped": [
+     "shop-section shop-home-s|تسوّق حسب التص"
+    ]
+   },
+   "products": {
+    "ov": 0,
+    "docH": 936,
+    "clipped": []
+   },
+   "categories": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "brands": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1819,
+    "clipped": [
+     "shop-product|علامة تجريبية ",
+     "shop-buy|علامة تجريبية "
+    ]
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1819,
+    "clipped": [
+     "shop-product|علامة تجريبية ",
+     "shop-buy|علامة تجريبية "
+    ]
+   }
+  },
+  "600": {
+   "home": {
+    "ov": 0,
+    "docH": 2729,
+    "clipped": [
+     "shop-section shop-home-s|تسوّق حسب التص"
+    ]
+   },
+   "products": {
+    "ov": 0,
+    "docH": 936,
+    "clipped": []
+   },
+   "categories": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "brands": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1964,
+    "clipped": [
+     "shop-product|علامة تجريبية ",
+     "shop-buy|علامة تجريبية "
+    ]
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1964,
+    "clipped": [
+     "shop-product|علامة تجريبية ",
+     "shop-buy|علامة تجريبية "
+    ]
+   }
+  },
+  "768": {
+   "home": {
+    "ov": 0,
+    "docH": 3220,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 948,
+    "clipped": []
+   },
+   "categories": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "brands": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1997,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1997,
+    "clipped": []
+   }
+  },
+  "769": {
+   "home": {
+    "ov": 0,
+    "docH": 3221,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1124,
+    "clipped": []
+   },
+   "categories": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "brands": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1997,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1997,
+    "clipped": []
+   }
+  },
+  "900": {
+   "home": {
+    "ov": 0,
+    "docH": 3276,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1085,
+    "clipped": []
+   },
+   "categories": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "brands": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1962,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1962,
+    "clipped": []
+   }
+  },
+  "1023": {
+   "home": {
+    "ov": 0,
+    "docH": 3369,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1085,
+    "clipped": []
+   },
+   "categories": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "brands": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1966,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1966,
+    "clipped": []
+   }
+  },
+  "1024": {
+   "home": {
+    "ov": 0,
+    "docH": 3379,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1095,
+    "clipped": []
+   },
+   "categories": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "brands": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 2007,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 2007,
+    "clipped": []
+   }
+  },
+  "1280": {
+   "home": {
+    "ov": 0,
+    "docH": 3276,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1095,
+    "clipped": []
+   },
+   "categories": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "brands": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   }
+  },
+  "1366": {
+   "home": {
+    "ov": 0,
+    "docH": 3276,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1095,
+    "clipped": []
+   },
+   "categories": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "brands": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   }
+  },
+  "1440": {
+   "home": {
+    "ov": 0,
+    "docH": 3276,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1095,
+    "clipped": []
+   },
+   "categories": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "brands": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   }
+  },
+  "1920": {
+   "home": {
+    "ov": 0,
+    "docH": 3276,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1095,
+    "clipped": []
+   },
+   "categories": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "brands": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   }
+  }
+ },
+ "dark": {
+  "390": {
+   "theme": "dark",
+   "home": {
+    "ov": 0,
+    "docH": 2754,
+    "clipped": [
+     "shop-section shop-home-s|تسوّق حسب التص"
+    ]
+   },
+   "products": {
+    "ov": 0,
+    "docH": 957,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1799,
+    "clipped": [
+     "shop-product|علامة تجريبية ",
+     "shop-buy|علامة تجريبية "
+    ]
+   }
+  },
+  "768": {
+   "theme": "dark",
+   "home": {
+    "ov": 0,
+    "docH": 3220,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 948,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1997,
+    "clipped": []
+   }
+  },
+  "1024": {
+   "theme": "dark",
+   "home": {
+    "ov": 0,
+    "docH": 3379,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1095,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 2007,
+    "clipped": []
+   }
+  },
+  "1366": {
+   "theme": "dark",
+   "home": {
+    "ov": 0,
+    "docH": 3276,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1095,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   }
+  }
+ },
+ "zoom": {
+  "390_products": {
+   "before": 0,
+   "after": {
+    "ov": 0,
+    "docH": 1521,
+    "clipped": []
+   }
+  },
+  "390_pdp": {
+   "before": 0,
+   "after": {
+    "ov": 0,
+    "docH": 2052,
+    "clipped": []
+   }
+  },
+  "390_home": {
+   "before": 0,
+   "after": {
+    "ov": 0,
+    "docH": 5104,
+    "clipped": []
+   }
+  },
+  "dark_390_products": {
+   "before": 0,
+   "after": {
+    "ov": 0,
+    "docH": 1463,
+    "clipped": []
+   }
+  },
+  "dark_768_products": {
+   "before": 0,
+   "after": {
+    "ov": 0,
+    "docH": 1761,
+    "clipped": []
+   }
+  },
+  "dark_1024_products": {
+   "before": 0,
+   "after": {
+    "ov": 0,
+    "docH": 1746,
+    "clipped": []
+   }
+  },
+  "dark_1366_products": {
+   "before": 0,
+   "after": {
+    "ov": 0,
+    "docH": 1621,
+    "clipped": []
+   }
+  }
+ },
+ "fonts": {
+  "390": {
+   "body": "Cairo",
+   "hdr_nav": "Cairo",
+   "menu": "Cairo",
+   "search": "Cairo",
+   "card": "Cairo",
+   "pdp": null,
+   "btn": null,
+   "input": "Cairo",
+   "footer": "Cairo",
+   "cairo": true,
+   "faces": [
+    "Cairo/400 700/loaded"
+   ]
+  },
+  "dark_390": {
+   "body": "Cairo",
+   "hdr_nav": "Cairo",
+   "menu": "Cairo",
+   "search": "Cairo",
+   "card": "Cairo",
+   "pdp": "Cairo",
+   "btn": "Cairo",
+   "input": null,
+   "footer": "Cairo",
+   "cairo": true,
+   "faces": [
+    "Cairo/400 700/loaded"
+   ]
+  },
+  "dark_768": {
+   "body": "Cairo",
+   "hdr_nav": "Cairo",
+   "menu": "Cairo",
+   "search": "Cairo",
+   "card": "Cairo",
+   "pdp": "Cairo",
+   "btn": "Cairo",
+   "input": null,
+   "footer": "Cairo",
+   "cairo": true,
+   "faces": [
+    "Cairo/400 700/loaded"
+   ]
+  },
+  "dark_1024": {
+   "body": "Cairo",
+   "hdr_nav": "Cairo",
+   "menu": "Cairo",
+   "search": "Cairo",
+   "card": "Cairo",
+   "pdp": "Cairo",
+   "btn": "Cairo",
+   "input": null,
+   "footer": "Cairo",
+   "cairo": true,
+   "faces": [
+    "Cairo/400 700/loaded"
+   ]
+  },
+  "dark_1366": {
+   "body": "Cairo",
+   "hdr_nav": "Cairo",
+   "menu": "Cairo",
+   "search": "Cairo",
+   "card": "Cairo",
+   "pdp": "Cairo",
+   "btn": "Cairo",
+   "input": null,
+   "footer": "Cairo",
+   "cairo": true,
+   "faces": [
+    "Cairo/400 700/loaded"
+   ]
+  }
+ },
+ "targets": {
+  "390": {
+   "crumb_box": [
+    42,
+    21
+   ],
+   "crumb_hit44": [
+    1,
+    1,
+    1
+   ],
+   "footer_link": [
+    42,
+    24
+   ],
+   "cta": null
+  },
+  "390_authdlg": [
+   0,
+   0
+  ]
+ },
+ "contrast": {
+  "bg": "rgb(31, 95, 191)",
+  "fg": "rgb(255, 255, 255)",
+  "ratio": 6.09
+ },
+ "console": [],
+ "failed": [],
+ "teal_dark": {
+  "390_authdlg": [],
+  "390": [],
+  "768": [],
+  "1024": [],
+  "1366": []
+ }
+}

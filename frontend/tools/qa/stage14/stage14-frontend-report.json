@@ -1,0 +1,167 @@
+{
+  "results": [
+    {
+      "step": "admin login from the static frontend",
+      "status": "PASS"
+    },
+    {
+      "step": "dashboard shows the Stage14 order number",
+      "status": "PASS",
+      "detail": "searched ORD-2026-001180"
+    },
+    {
+      "step": "dashboard shows the succeeded payment amount 200.00",
+      "status": "PASS"
+    },
+    {
+      "step": "orders page lists the integration order",
+      "status": "PASS"
+    },
+    {
+      "step": "orders page shows the server total",
+      "status": "PASS"
+    },
+    {
+      "step": "payments page renders the Stage14 payments",
+      "status": "PASS",
+      "detail": "الدفعات  دفعات الطلبات. الدفع عبر شام كاش يدوي: تأكيد/رفض بموجب مراجعة موظف موثّقة.  الحالة بانتظار الدفع بانتظار المراج"
+    },
+    {
+      "step": "review queue page renders with real data",
+      "status": "PASS",
+      "detail": "مراجعة شام كاش  الدفعات المرسلة بمرجع تحويل وإثبات — بانتظار قرار موظف.  التأكيد هنا تسجيل يدوي لوصو"
+    },
+    {
+      "step": "catalog shows the Stage14 product",
+      "status": "PASS"
+    },
+    {
+      "step": "catalog shows the updated price 175.50",
+      "status": "PASS"
+    },
+    {
+      "step": "inventory page renders the Stage14 product row",
+      "status": "PASS"
+    },
+    {
+      "step": "notifications page renders",
+      "status": "PASS"
+    },
+    {
+      "step": "verification page shows the Stage14 decisions",
+      "status": "PASS",
+      "detail": "تحقق العملاء  طلبات توثيق العملاء. لا يوجد مزوّد خارجي — التوثيق بقرار موظف موثّق.  المزوّد الحالي (LOG) لا يوثّق أحدًا "
+    },
+    {
+      "step": "analytics page renders server data",
+      "status": "PASS",
+      "detail": "التحليلات  اتجاهات الطلبات والتحصيل والمخزون (قراءة فقط).  آخر 7 يومًا آخر 30 يومًا آخر 90 يومًا يوم"
+    },
+    {
+      "step": "deep link after a hard refresh #/dashboard",
+      "status": "PASS",
+      "detail": "لوحة التحكم  نظرة شاملة على المتجر — كل الأرقام مباشرة من قا"
+    },
+    {
+      "step": "deep link after a hard refresh #/products",
+      "status": "PASS",
+      "detail": "المنتجات  كتالوج المنتجات: الأسعار والتصنيفات والعلامات والص"
+    },
+    {
+      "step": "deep link after a hard refresh #/orders",
+      "status": "PASS",
+      "detail": "الطلبات  طلبات العملاء مع الحجز على المخزون وتغيير الحالة.  "
+    },
+    {
+      "step": "deep link after a hard refresh #/payments/review",
+      "status": "PASS",
+      "detail": "مراجعة شام كاش  الدفعات المرسلة بمرجع تحويل وإثبات — بانتظار"
+    },
+    {
+      "step": "deep link after a hard refresh #/notifications",
+      "status": "PASS",
+      "detail": "الإشعارات  صندوق إشعاراتك: الحالة، القراءة، والتفضيلات.  تعل"
+    },
+    {
+      "step": "unknown route renders the not-found state",
+      "status": "PASS"
+    },
+    {
+      "step": "network loss shows an in-app error state (no crash)",
+      "status": "PASS",
+      "detail": "المنتجات  كتالوج المنتجات: الأسعار والتصنيفات والعلامات والصور والمخزون.  التصنيف Stage14-Cat-stage14-7b05a4 Stage14-Cat"
+    },
+    {
+      "step": "customer navigation is limited to their own pages",
+      "status": "PASS",
+      "detail": "[\"إشعاراتي\", \"حسابي\"]"
+    },
+    {
+      "step": "customer hitting an admin route sees the forbidden state",
+      "status": "PASS",
+      "detail": "لا تملك صلاحية الوصول هذه الصفحة تتطلب صلاحية لا يملكها حسابك. إن كنت تعتقد أن ذلك خطأ، را"
+    },
+    {
+      "step": "backend refuses the forbidden call (403) even from the browser",
+      "status": "PASS",
+      "expected": 403,
+      "got": 403
+    },
+    {
+      "step": "customer notifications page renders their own notifications",
+      "status": "PASS"
+    },
+    {
+      "step": "customer sees a Stage14 payment/verification notification",
+      "status": "PASS",
+      "detail": "الإشعارات  صندوق إشعاراتك: الحالة، القراءة، والتفضيلات.  تعليم الكل كمقروء التفضيلات القراءة غير مقروء مقروء تفريغ الفلاتر الإشعار \t النوع \t"
+    },
+    {
+      "step": "390px: no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "step": "390px: mobile menu button available",
+      "status": "PASS"
+    },
+    {
+      "step": "390px: drawer opens",
+      "status": "PASS"
+    },
+    {
+      "step": "390px: notifications page usable",
+      "status": "PASS"
+    },
+    {
+      "step": "430px: no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "step": "430px: mobile menu button available",
+      "status": "PASS"
+    },
+    {
+      "step": "430px: drawer opens",
+      "status": "PASS"
+    },
+    {
+      "step": "430px: notifications page usable",
+      "status": "PASS"
+    },
+    {
+      "step": "no unexpected console errors during the whole UI journey",
+      "status": "PASS",
+      "detail": "[] (expected test-induced: 2)"
+    },
+    {
+      "step": "cross-origin preflight is not wildcard",
+      "status": "PASS",
+      "detail": "{\"status\": 204, \"allowOrigin\": null, \"allowCredentials\": \"true\"}"
+    },
+    {
+      "step": "CORS does not allow an arbitrary origin with credentials",
+      "status": "PASS",
+      "detail": "{\"status\": 204, \"allowOrigin\": null, \"allowCredentials\": \"true\"}"
+    }
+  ]
+}

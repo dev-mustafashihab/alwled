@@ -1,0 +1,109 @@
+{
+ "read_only": {
+  "add": null,
+  "actions": [],
+  "readonly_hint": [
+   "لديك صلاحية العرض فقط."
+  ],
+  "calls": [],
+  "cards": 1,
+  "mutation_attempt": "none-clickable",
+  "calls_after_attempt": []
+ },
+ "no_create": {
+  "add": null,
+  "actions": [
+   {
+    "act": "edit",
+    "disabled": false,
+    "hidden": false,
+    "vis": true
+   },
+   {
+    "act": "toggle",
+    "disabled": false,
+    "hidden": false,
+    "vis": true
+   },
+   {
+    "act": "up",
+    "disabled": true,
+    "hidden": false,
+    "vis": true
+   },
+   {
+    "act": "down",
+    "disabled": true,
+    "hidden": false,
+    "vis": true
+   },
+   {
+    "act": "delete",
+    "disabled": false,
+    "hidden": false,
+    "vis": true
+   }
+  ],
+  "readonly_hint": [],
+  "calls": [],
+  "cards": 1,
+  "mutation_attempt": "clicked:edit",
+  "calls_after_attempt": []
+ },
+ "no_update": {
+  "add": {
+   "disabled": false,
+   "vis": true
+  },
+  "actions": [
+   {
+    "act": "delete",
+    "disabled": false,
+    "hidden": false,
+    "vis": true
+   }
+  ],
+  "readonly_hint": [],
+  "calls": [],
+  "cards": 1,
+  "mutation_attempt": "clicked:delete",
+  "calls_after_attempt": []
+ },
+ "no_delete": {
+  "add": {
+   "disabled": false,
+   "vis": true
+  },
+  "actions": [
+   {
+    "act": "edit",
+    "disabled": false,
+    "hidden": false,
+    "vis": true
+   },
+   {
+    "act": "toggle",
+    "disabled": false,
+    "hidden": false,
+    "vis": true
+   },
+   {
+    "act": "up",
+    "disabled": true,
+    "hidden": false,
+    "vis": true
+   },
+   {
+    "act": "down",
+    "disabled": true,
+    "hidden": false,
+    "vis": true
+   }
+  ],
+  "readonly_hint": [],
+  "calls": [],
+  "cards": 1,
+  "mutation_attempt": "clicked:edit",
+  "calls_after_attempt": []
+ }
+}

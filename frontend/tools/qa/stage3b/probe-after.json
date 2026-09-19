@@ -1,0 +1,9049 @@
+{
+ "mode": "after",
+ "console": [],
+ "failed": [],
+ "shots": [
+  "/root/alwled/frontend/tools/qa/stage3b/after-products-768.png",
+  "/root/alwled/frontend/tools/qa/stage3b/after-products-769.png",
+  "/root/alwled/frontend/tools/qa/stage3b/after-products-900.png",
+  "/root/alwled/frontend/tools/qa/stage3b/after-products-1024.png",
+  "/root/alwled/frontend/tools/qa/stage3b/after-products-1366.png",
+  "/root/alwled/frontend/tools/qa/stage3b/after-filters-open-390.png",
+  "/root/alwled/frontend/tools/qa/stage3b/after-filters-open-768.png",
+  "/root/alwled/frontend/tools/qa/stage3b/after-toolbar-interaction-1024.png",
+  "/root/alwled/frontend/tools/qa/stage3b/after-toolbar-interaction-1366.png",
+  "/root/alwled/frontend/tools/qa/stage3b/after-products-1366-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3b/after-category-result-1024.png",
+  "/root/alwled/frontend/tools/qa/stage3b/after-brand-result-1024.png",
+  "/root/alwled/frontend/tools/qa/stage3b/after-home-390.png",
+  "/root/alwled/frontend/tools/qa/stage3b/after-search-390.png"
+ ],
+ "w360": {
+  "vw": 360,
+  "docOverflow": 0,
+  "docSW": 360,
+  "docCW": 360,
+  "pageH": 1121,
+  "headerH": 65,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 0,
+    "y": 978.92,
+    "w": 360,
+    "h": 131.98,
+    "top": 978.92,
+    "bottom": 1110.9
+   },
+   "css": {
+    "display": "flex",
+    "grid-template-columns": "minmax(0px, 1fr)",
+    "gap": "12px",
+    "padding": "14px 16px",
+    "border-top-color": "rgb(51, 65, 85)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 2,
+  "rowYs": [
+   993,
+   0
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 16,
+     "y": 992.92,
+     "w": 328,
+     "h": 70.39,
+     "top": 992.92,
+     "bottom": 1063.31
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   }
+  ],
+  "toggle": {
+   "visible": true,
+   "rect": {
+    "x": 12,
+    "y": 200.41,
+    "w": 336,
+    "h": 44,
+    "top": 200.41,
+    "bottom": 244.41
+   },
+   "display": "flex",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": true,
+   "display": "block",
+   "position": "fixed",
+   "transform": "matrix(1, 0, 0, 1, 0, 301.904)",
+   "rect": {
+    "x": 0,
+    "y": 905.92,
+    "w": 360,
+    "h": 295.98,
+    "top": 905.92,
+    "bottom": 1201.9
+   },
+   "bg": "rgb(255, 255, 255)",
+   "headVisible": true,
+   "footVisible": true
+  },
+  "scrim": {
+   "visible": true,
+   "display": "block"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 308,
+    "y": 1075.31,
+    "w": 36,
+    "h": 21.59,
+    "top": 1075.31,
+    "bottom": 1096.9
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 1019.31,
+     "w": 328,
+     "h": 44,
+     "top": 1019.31,
+     "bottom": 1063.31
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "18px",
+     "min-height": "0px",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "18px",
+     "min-height": "0px",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 1,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 252.41,
+  "gridCols": "162px 162px",
+  "card": {
+   "x": 186,
+   "y": 252.41,
+   "w": 162,
+   "h": 489.22,
+   "top": 252.41,
+   "bottom": 741.63
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 65
+ },
+ "w390": {
+  "vw": 390,
+  "docOverflow": 0,
+  "docSW": 390,
+  "docCW": 390,
+  "pageH": 1136,
+  "headerH": 65,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 0,
+    "y": 978.92,
+    "w": 390,
+    "h": 131.98,
+    "top": 978.92,
+    "bottom": 1110.9
+   },
+   "css": {
+    "display": "flex",
+    "grid-template-columns": "minmax(0px, 1fr)",
+    "gap": "12px",
+    "padding": "14px 16px",
+    "border-top-color": "rgb(51, 65, 85)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 2,
+  "rowYs": [
+   993,
+   0
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 16,
+     "y": 992.92,
+     "w": 358,
+     "h": 70.39,
+     "top": 992.92,
+     "bottom": 1063.31
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   }
+  ],
+  "toggle": {
+   "visible": true,
+   "rect": {
+    "x": 12,
+    "y": 200.41,
+    "w": 366,
+    "h": 44,
+    "top": 200.41,
+    "bottom": 244.41
+   },
+   "display": "flex",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": true,
+   "display": "block",
+   "position": "fixed",
+   "transform": "matrix(1, 0, 0, 1, 0, 301.904)",
+   "rect": {
+    "x": 0,
+    "y": 905.92,
+    "w": 390,
+    "h": 295.98,
+    "top": 905.92,
+    "bottom": 1201.9
+   },
+   "bg": "rgb(255, 255, 255)",
+   "headVisible": true,
+   "footVisible": true
+  },
+  "scrim": {
+   "visible": true,
+   "display": "block"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 338,
+    "y": 1075.31,
+    "w": 36,
+    "h": 21.59,
+    "top": 1075.31,
+    "bottom": 1096.9
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 1019.31,
+     "w": 358,
+     "h": 44,
+     "top": 1019.31,
+     "bottom": 1063.31
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "18px",
+     "min-height": "0px",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "18px",
+     "min-height": "0px",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 1,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 252.41,
+  "gridCols": "177px 177px",
+  "card": {
+   "x": 201,
+   "y": 252.41,
+   "w": 177,
+   "h": 504.22,
+   "top": 252.41,
+   "bottom": 756.63
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 65
+ },
+ "w430": {
+  "vw": 430,
+  "docOverflow": 0,
+  "docSW": 430,
+  "docCW": 430,
+  "pageH": 1135,
+  "headerH": 65,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 0,
+    "y": 978.92,
+    "w": 430,
+    "h": 131.98,
+    "top": 978.92,
+    "bottom": 1110.9
+   },
+   "css": {
+    "display": "flex",
+    "grid-template-columns": "minmax(0px, 1fr)",
+    "gap": "12px",
+    "padding": "14px 16px",
+    "border-top-color": "rgb(51, 65, 85)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 2,
+  "rowYs": [
+   993,
+   0
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 16,
+     "y": 992.92,
+     "w": 398,
+     "h": 70.39,
+     "top": 992.92,
+     "bottom": 1063.31
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   }
+  ],
+  "toggle": {
+   "visible": true,
+   "rect": {
+    "x": 12,
+    "y": 200.41,
+    "w": 406,
+    "h": 44,
+    "top": 200.41,
+    "bottom": 244.41
+   },
+   "display": "flex",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": true,
+   "display": "block",
+   "position": "fixed",
+   "transform": "matrix(1, 0, 0, 1, 0, 301.904)",
+   "rect": {
+    "x": 0,
+    "y": 905.92,
+    "w": 430,
+    "h": 295.98,
+    "top": 905.92,
+    "bottom": 1201.9
+   },
+   "bg": "rgb(255, 255, 255)",
+   "headVisible": true,
+   "footVisible": true
+  },
+  "scrim": {
+   "visible": true,
+   "display": "block"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 378,
+    "y": 1075.31,
+    "w": 36,
+    "h": 21.59,
+    "top": 1075.31,
+    "bottom": 1096.9
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 1019.31,
+     "w": 398,
+     "h": 44,
+     "top": 1019.31,
+     "bottom": 1063.31
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "18px",
+     "min-height": "0px",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "18px",
+     "min-height": "0px",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 1,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 252.41,
+  "gridCols": "197px 197px",
+  "card": {
+   "x": 221,
+   "y": 252.41,
+   "w": 197,
+   "h": 503.2,
+   "top": 252.41,
+   "bottom": 755.61
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 65
+ },
+ "w600": {
+  "vw": 600,
+  "docOverflow": 0,
+  "docSW": 600,
+  "docCW": 600,
+  "pageH": 1112,
+  "headerH": 65,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 0,
+    "y": 978.92,
+    "w": 600,
+    "h": 131.98,
+    "top": 978.92,
+    "bottom": 1110.9
+   },
+   "css": {
+    "display": "flex",
+    "grid-template-columns": "minmax(0px, 1fr)",
+    "gap": "12px",
+    "padding": "14px 16px",
+    "border-top-color": "rgb(51, 65, 85)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 2,
+  "rowYs": [
+   993,
+   0
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 16,
+     "y": 992.92,
+     "w": 568,
+     "h": 70.39,
+     "top": 992.92,
+     "bottom": 1063.31
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   }
+  ],
+  "toggle": {
+   "visible": true,
+   "rect": {
+    "x": 12,
+    "y": 200.41,
+    "w": 576,
+    "h": 44,
+    "top": 200.41,
+    "bottom": 244.41
+   },
+   "display": "flex",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": true,
+   "display": "block",
+   "position": "fixed",
+   "transform": "matrix(1, 0, 0, 1, 0, 301.904)",
+   "rect": {
+    "x": 0,
+    "y": 905.92,
+    "w": 600,
+    "h": 295.98,
+    "top": 905.92,
+    "bottom": 1201.9
+   },
+   "bg": "rgb(255, 255, 255)",
+   "headVisible": true,
+   "footVisible": true
+  },
+  "scrim": {
+   "visible": true,
+   "display": "block"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 548,
+    "y": 1075.31,
+    "w": 36,
+    "h": 21.59,
+    "top": 1075.31,
+    "bottom": 1096.9
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 1019.31,
+     "w": 568,
+     "h": 44,
+     "top": 1019.31,
+     "bottom": 1063.31
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "18px",
+     "min-height": "0px",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "18px",
+     "min-height": "0px",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 1,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 252.41,
+  "gridCols": "282px 282px",
+  "card": {
+   "x": 306,
+   "y": 252.41,
+   "w": 282,
+   "h": 480.2,
+   "top": 252.41,
+   "bottom": 732.61
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 65
+ },
+ "w640": {
+  "vw": 640,
+  "docOverflow": 0,
+  "docSW": 640,
+  "docCW": 640,
+  "pageH": 1132,
+  "headerH": 65,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 0,
+    "y": 978.92,
+    "w": 640,
+    "h": 131.98,
+    "top": 978.92,
+    "bottom": 1110.9
+   },
+   "css": {
+    "display": "flex",
+    "grid-template-columns": "minmax(0px, 1fr)",
+    "gap": "12px",
+    "padding": "14px 16px",
+    "border-top-color": "rgb(51, 65, 85)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 2,
+  "rowYs": [
+   993,
+   0
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 16,
+     "y": 992.92,
+     "w": 608,
+     "h": 70.39,
+     "top": 992.92,
+     "bottom": 1063.31
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   }
+  ],
+  "toggle": {
+   "visible": true,
+   "rect": {
+    "x": 12,
+    "y": 200.41,
+    "w": 616,
+    "h": 44,
+    "top": 200.41,
+    "bottom": 244.41
+   },
+   "display": "flex",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": true,
+   "display": "block",
+   "position": "fixed",
+   "transform": "matrix(1, 0, 0, 1, 0, 301.904)",
+   "rect": {
+    "x": 0,
+    "y": 905.92,
+    "w": 640,
+    "h": 295.98,
+    "top": 905.92,
+    "bottom": 1201.9
+   },
+   "bg": "rgb(255, 255, 255)",
+   "headVisible": true,
+   "footVisible": true
+  },
+  "scrim": {
+   "visible": true,
+   "display": "block"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 588,
+    "y": 1075.31,
+    "w": 36,
+    "h": 21.59,
+    "top": 1075.31,
+    "bottom": 1096.9
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 1019.31,
+     "w": 608,
+     "h": 44,
+     "top": 1019.31,
+     "bottom": 1063.31
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "18px",
+     "min-height": "0px",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "18px",
+     "min-height": "0px",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 1,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 252.41,
+  "gridCols": "302px 302px",
+  "card": {
+   "x": 326,
+   "y": 252.41,
+   "w": 302,
+   "h": 500.2,
+   "top": 252.41,
+   "bottom": 752.61
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 65
+ },
+ "w641": {
+  "vw": 641,
+  "docOverflow": 0,
+  "docSW": 641,
+  "docCW": 641,
+  "pageH": 1206,
+  "headerH": 65,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 0,
+    "y": 978.92,
+    "w": 641,
+    "h": 131.98,
+    "top": 978.92,
+    "bottom": 1110.9
+   },
+   "css": {
+    "display": "flex",
+    "grid-template-columns": "minmax(0px, 1fr)",
+    "gap": "12px",
+    "padding": "14px 16px",
+    "border-top-color": "rgb(51, 65, 85)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 2,
+  "rowYs": [
+   993,
+   0
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 16,
+     "y": 992.92,
+     "w": 609,
+     "h": 70.39,
+     "top": 992.92,
+     "bottom": 1063.31
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   }
+  ],
+  "toggle": {
+   "visible": true,
+   "rect": {
+    "x": 16,
+    "y": 205.2,
+    "w": 609,
+    "h": 44,
+    "top": 205.2,
+    "bottom": 249.2
+   },
+   "display": "flex",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": true,
+   "display": "block",
+   "position": "fixed",
+   "transform": "matrix(1, 0, 0, 1, 0, 301.904)",
+   "rect": {
+    "x": 0,
+    "y": 905.92,
+    "w": 641,
+    "h": 295.98,
+    "top": 905.92,
+    "bottom": 1201.9
+   },
+   "bg": "rgb(255, 255, 255)",
+   "headVisible": true,
+   "footVisible": true
+  },
+  "scrim": {
+   "visible": true,
+   "display": "block"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 589,
+    "y": 1075.31,
+    "w": 36,
+    "h": 21.59,
+    "top": 1075.31,
+    "bottom": 1096.9
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 1019.31,
+     "w": 609,
+     "h": 44,
+     "top": 1019.31,
+     "bottom": 1063.31
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "18px",
+     "min-height": "0px",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "18px",
+     "min-height": "0px",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 1,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 257.2,
+  "gridCols": "298.5px 298.5px",
+  "card": {
+   "x": 326.5,
+   "y": 257.2,
+   "w": 298.5,
+   "h": 530.64,
+   "top": 257.2,
+   "bottom": 787.84
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 65
+ },
+ "w700": {
+  "vw": 700,
+  "docOverflow": 0,
+  "docSW": 700,
+  "docCW": 700,
+  "pageH": 1180,
+  "headerH": 65,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 0,
+    "y": 978.92,
+    "w": 700,
+    "h": 131.98,
+    "top": 978.92,
+    "bottom": 1110.9
+   },
+   "css": {
+    "display": "flex",
+    "grid-template-columns": "minmax(0px, 1fr)",
+    "gap": "12px",
+    "padding": "14px 16px",
+    "border-top-color": "rgb(51, 65, 85)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 2,
+  "rowYs": [
+   993,
+   0
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 16,
+     "y": 992.92,
+     "w": 668,
+     "h": 70.39,
+     "top": 992.92,
+     "bottom": 1063.31
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   }
+  ],
+  "toggle": {
+   "visible": true,
+   "rect": {
+    "x": 16,
+    "y": 205.2,
+    "w": 668,
+    "h": 44,
+    "top": 205.2,
+    "bottom": 249.2
+   },
+   "display": "flex",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": true,
+   "display": "block",
+   "position": "fixed",
+   "transform": "matrix(1, 0, 0, 1, 0, 301.904)",
+   "rect": {
+    "x": 0,
+    "y": 905.92,
+    "w": 700,
+    "h": 295.98,
+    "top": 905.92,
+    "bottom": 1201.9
+   },
+   "bg": "rgb(255, 255, 255)",
+   "headVisible": true,
+   "footVisible": true
+  },
+  "scrim": {
+   "visible": true,
+   "display": "block"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 648,
+    "y": 1075.31,
+    "w": 36,
+    "h": 21.59,
+    "top": 1075.31,
+    "bottom": 1096.9
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 1019.31,
+     "w": 668,
+     "h": 44,
+     "top": 1019.31,
+     "bottom": 1063.31
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "18px",
+     "min-height": "0px",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "18px",
+     "min-height": "0px",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 1,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 257.2,
+  "gridCols": "214.656px 214.672px 214.672px",
+  "card": {
+   "x": 469.34,
+   "y": 257.2,
+   "w": 214.66,
+   "h": 526,
+   "top": 257.2,
+   "bottom": 783.2
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 65
+ },
+ "w768": {
+  "vw": 768,
+  "docOverflow": 0,
+  "docSW": 768,
+  "docCW": 768,
+  "pageH": 1123,
+  "headerH": 65,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 0,
+    "y": 978.92,
+    "w": 768,
+    "h": 131.98,
+    "top": 978.92,
+    "bottom": 1110.9
+   },
+   "css": {
+    "display": "flex",
+    "grid-template-columns": "minmax(0px, 1fr)",
+    "gap": "12px",
+    "padding": "14px 16px",
+    "border-top-color": "rgb(51, 65, 85)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 2,
+  "rowYs": [
+   993,
+   0
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 16,
+     "y": 992.92,
+     "w": 736,
+     "h": 70.39,
+     "top": 992.92,
+     "bottom": 1063.31
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "visible": false
+   }
+  ],
+  "toggle": {
+   "visible": true,
+   "rect": {
+    "x": 16,
+    "y": 205.2,
+    "w": 736,
+    "h": 44,
+    "top": 205.2,
+    "bottom": 249.2
+   },
+   "display": "flex",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": true,
+   "display": "block",
+   "position": "fixed",
+   "transform": "matrix(1, 0, 0, 1, 0, 301.904)",
+   "rect": {
+    "x": 0,
+    "y": 905.92,
+    "w": 768,
+    "h": 295.98,
+    "top": 905.92,
+    "bottom": 1201.9
+   },
+   "bg": "rgb(255, 255, 255)",
+   "headVisible": true,
+   "footVisible": true
+  },
+  "scrim": {
+   "visible": true,
+   "display": "block"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 716,
+    "y": 1075.31,
+    "w": 36,
+    "h": 21.59,
+    "top": 1075.31,
+    "bottom": 1096.9
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 1019.31,
+     "w": 736,
+     "h": 44,
+     "top": 1019.31,
+     "bottom": 1063.31
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "18px",
+     "min-height": "0px",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "h": 0,
+    "css": {
+     "height": "18px",
+     "min-height": "0px",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 1,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": false,
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0,
+     "top": 0,
+     "bottom": 0
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 257.2,
+  "gridCols": "237.328px 237.328px 237.328px",
+  "card": {
+   "x": 514.67,
+   "y": 257.2,
+   "w": 237.33,
+   "h": 491.06,
+   "top": 257.2,
+   "bottom": 748.27
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 65
+ },
+ "w769": {
+  "vw": 769,
+  "docOverflow": 0,
+  "docSW": 769,
+  "docCW": 769,
+  "pageH": 1349,
+  "headerH": 65,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 16,
+    "y": 205.2,
+    "w": 737,
+    "h": 262,
+    "top": 205.2,
+    "bottom": 467.2
+   },
+   "css": {
+    "display": "grid",
+    "grid-template-columns": "226.328px 226.328px 226.328px",
+    "gap": "12px",
+    "padding": "16px",
+    "border-top-color": "rgb(230, 236, 243)",
+    "background-color": "rgb(255, 255, 255)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 3,
+  "rowYs": [
+   222,
+   302,
+   382
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 509.67,
+     "y": 222.2,
+     "w": 226.33,
+     "h": 68,
+     "top": 222.2,
+     "bottom": 290.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 271.34,
+     "y": 222.2,
+     "w": 226.33,
+     "h": 68,
+     "top": 222.2,
+     "bottom": 290.2
+    },
+    "visible": true
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 33.02,
+     "y": 222.2,
+     "w": 226.33,
+     "h": 68,
+     "top": 222.2,
+     "bottom": 290.2
+    },
+    "visible": true
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 509.67,
+     "y": 302.2,
+     "w": 226.33,
+     "h": 68,
+     "top": 302.2,
+     "bottom": 370.2
+    },
+    "visible": true
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 271.34,
+     "y": 302.2,
+     "w": 226.33,
+     "h": 68,
+     "top": 302.2,
+     "bottom": 370.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 33.02,
+     "y": 302.2,
+     "w": 226.33,
+     "h": 68,
+     "top": 302.2,
+     "bottom": 370.2
+    },
+    "visible": true
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 509.67,
+     "y": 382.2,
+     "w": 226.33,
+     "h": 68,
+     "top": 382.2,
+     "bottom": 450.2
+    },
+    "visible": true
+   }
+  ],
+  "toggle": {
+   "visible": false,
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "display": "none",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": false,
+   "display": "contents",
+   "position": "static",
+   "transform": "none",
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "bg": "rgba(0, 0, 0, 0)",
+   "headVisible": false,
+   "footVisible": false
+  },
+  "scrim": {
+   "visible": false,
+   "display": "none"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 461.67,
+    "y": 405.41,
+    "w": 36,
+    "h": 21.59,
+    "top": 405.41,
+    "bottom": 427
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 509.67,
+     "y": 246.2,
+     "w": 226.33,
+     "h": 44,
+     "top": 246.2,
+     "bottom": 290.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 271.34,
+     "y": 246.2,
+     "w": 226.33,
+     "h": 44,
+     "top": 246.2,
+     "bottom": 290.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 33.02,
+     "y": 246.2,
+     "w": 226.33,
+     "h": 44,
+     "top": 246.2,
+     "bottom": 290.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 509.67,
+     "y": 326.2,
+     "w": 226.33,
+     "h": 44,
+     "top": 326.2,
+     "bottom": 370.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 398.5,
+     "y": 326.2,
+     "w": 99.17,
+     "h": 44,
+     "top": 326.2,
+     "bottom": 370.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 271.34,
+     "y": 326.2,
+     "w": 99.16,
+     "h": 44,
+     "top": 326.2,
+     "bottom": 370.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 230.34,
+     "y": 339.2,
+     "w": 18,
+     "h": 18,
+     "top": 339.2,
+     "bottom": 357.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 707,
+     "y": 419.2,
+     "w": 18,
+     "h": 18,
+     "top": 419.2,
+     "bottom": 437.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 8,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": true,
+    "rect": {
+     "x": 33.02,
+     "y": 326.2,
+     "w": 226.33,
+     "h": 44,
+     "top": 326.2,
+     "bottom": 370.2
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": true,
+    "rect": {
+     "x": 509.67,
+     "y": 406.2,
+     "w": 226.33,
+     "h": 44,
+     "top": 406.2,
+     "bottom": 450.2
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 483.2,
+  "gridCols": "237.656px 237.672px 237.672px",
+  "card": {
+   "x": 515.34,
+   "y": 483.2,
+   "w": 237.66,
+   "h": 491.41,
+   "top": 483.2,
+   "bottom": 974.61
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 65
+ },
+ "w800": {
+  "vw": 800,
+  "docOverflow": 0,
+  "docSW": 800,
+  "docCW": 800,
+  "pageH": 1360,
+  "headerH": 65,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 16,
+    "y": 205.2,
+    "w": 768,
+    "h": 262,
+    "top": 205.2,
+    "bottom": 467.2
+   },
+   "css": {
+    "display": "grid",
+    "grid-template-columns": "236.656px 236.672px 236.672px",
+    "gap": "12px",
+    "padding": "16px",
+    "border-top-color": "rgb(230, 236, 243)",
+    "background-color": "rgb(255, 255, 255)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 3,
+  "rowYs": [
+   222,
+   302,
+   382
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 530.34,
+     "y": 222.2,
+     "w": 236.66,
+     "h": 68,
+     "top": 222.2,
+     "bottom": 290.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 281.67,
+     "y": 222.2,
+     "w": 236.67,
+     "h": 68,
+     "top": 222.2,
+     "bottom": 290.2
+    },
+    "visible": true
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 33,
+     "y": 222.2,
+     "w": 236.67,
+     "h": 68,
+     "top": 222.2,
+     "bottom": 290.2
+    },
+    "visible": true
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 530.34,
+     "y": 302.2,
+     "w": 236.66,
+     "h": 68,
+     "top": 302.2,
+     "bottom": 370.2
+    },
+    "visible": true
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 281.67,
+     "y": 302.2,
+     "w": 236.67,
+     "h": 68,
+     "top": 302.2,
+     "bottom": 370.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 33,
+     "y": 302.2,
+     "w": 236.67,
+     "h": 68,
+     "top": 302.2,
+     "bottom": 370.2
+    },
+    "visible": true
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 530.34,
+     "y": 382.2,
+     "w": 236.66,
+     "h": 68,
+     "top": 382.2,
+     "bottom": 450.2
+    },
+    "visible": true
+   }
+  ],
+  "toggle": {
+   "visible": false,
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "display": "none",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": false,
+   "display": "contents",
+   "position": "static",
+   "transform": "none",
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "bg": "rgba(0, 0, 0, 0)",
+   "headVisible": false,
+   "footVisible": false
+  },
+  "scrim": {
+   "visible": false,
+   "display": "none"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 482.34,
+    "y": 405.41,
+    "w": 36,
+    "h": 21.59,
+    "top": 405.41,
+    "bottom": 427
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 530.34,
+     "y": 246.2,
+     "w": 236.66,
+     "h": 44,
+     "top": 246.2,
+     "bottom": 290.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 281.67,
+     "y": 246.2,
+     "w": 236.67,
+     "h": 44,
+     "top": 246.2,
+     "bottom": 290.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 33,
+     "y": 246.2,
+     "w": 236.67,
+     "h": 44,
+     "top": 246.2,
+     "bottom": 290.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 530.34,
+     "y": 326.2,
+     "w": 236.66,
+     "h": 44,
+     "top": 326.2,
+     "bottom": 370.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 414,
+     "y": 326.2,
+     "w": 104.34,
+     "h": 44,
+     "top": 326.2,
+     "bottom": 370.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 281.67,
+     "y": 326.2,
+     "w": 104.33,
+     "h": 44,
+     "top": 326.2,
+     "bottom": 370.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 240.67,
+     "y": 339.2,
+     "w": 18,
+     "h": 18,
+     "top": 339.2,
+     "bottom": 357.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 738,
+     "y": 419.2,
+     "w": 18,
+     "h": 18,
+     "top": 419.2,
+     "bottom": 437.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 8,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": true,
+    "rect": {
+     "x": 33,
+     "y": 326.2,
+     "w": 236.67,
+     "h": 44,
+     "top": 326.2,
+     "bottom": 370.2
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": true,
+    "rect": {
+     "x": 530.34,
+     "y": 406.2,
+     "w": 236.66,
+     "h": 44,
+     "top": 406.2,
+     "bottom": 450.2
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 483.2,
+  "gridCols": "248px 248px 248px",
+  "card": {
+   "x": 536,
+   "y": 483.2,
+   "w": 248,
+   "h": 501.73,
+   "top": 483.2,
+   "bottom": 984.94
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 65
+ },
+ "w900": {
+  "vw": 900,
+  "docOverflow": 0,
+  "docSW": 900,
+  "docCW": 900,
+  "pageH": 1331,
+  "headerH": 65,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 16,
+    "y": 205.2,
+    "w": 868,
+    "h": 262,
+    "top": 205.2,
+    "bottom": 467.2
+   },
+   "css": {
+    "display": "grid",
+    "grid-template-columns": "270px 270px 270px",
+    "gap": "12px",
+    "padding": "16px",
+    "border-top-color": "rgb(230, 236, 243)",
+    "background-color": "rgb(255, 255, 255)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 3,
+  "rowYs": [
+   222,
+   302,
+   382
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 597,
+     "y": 222.2,
+     "w": 270,
+     "h": 68,
+     "top": 222.2,
+     "bottom": 290.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 315,
+     "y": 222.2,
+     "w": 270,
+     "h": 68,
+     "top": 222.2,
+     "bottom": 290.2
+    },
+    "visible": true
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 33,
+     "y": 222.2,
+     "w": 270,
+     "h": 68,
+     "top": 222.2,
+     "bottom": 290.2
+    },
+    "visible": true
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 597,
+     "y": 302.2,
+     "w": 270,
+     "h": 68,
+     "top": 302.2,
+     "bottom": 370.2
+    },
+    "visible": true
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 315,
+     "y": 302.2,
+     "w": 270,
+     "h": 68,
+     "top": 302.2,
+     "bottom": 370.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 33,
+     "y": 302.2,
+     "w": 270,
+     "h": 68,
+     "top": 302.2,
+     "bottom": 370.2
+    },
+    "visible": true
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 597,
+     "y": 382.2,
+     "w": 270,
+     "h": 68,
+     "top": 382.2,
+     "bottom": 450.2
+    },
+    "visible": true
+   }
+  ],
+  "toggle": {
+   "visible": false,
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "display": "none",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": false,
+   "display": "contents",
+   "position": "static",
+   "transform": "none",
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "bg": "rgba(0, 0, 0, 0)",
+   "headVisible": false,
+   "footVisible": false
+  },
+  "scrim": {
+   "visible": false,
+   "display": "none"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 549,
+    "y": 405.41,
+    "w": 36,
+    "h": 21.59,
+    "top": 405.41,
+    "bottom": 427
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 597,
+     "y": 246.2,
+     "w": 270,
+     "h": 44,
+     "top": 246.2,
+     "bottom": 290.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 315,
+     "y": 246.2,
+     "w": 270,
+     "h": 44,
+     "top": 246.2,
+     "bottom": 290.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 33,
+     "y": 246.2,
+     "w": 270,
+     "h": 44,
+     "top": 246.2,
+     "bottom": 290.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 597,
+     "y": 326.2,
+     "w": 270,
+     "h": 44,
+     "top": 326.2,
+     "bottom": 370.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 464,
+     "y": 326.2,
+     "w": 121,
+     "h": 44,
+     "top": 326.2,
+     "bottom": 370.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 315,
+     "y": 326.2,
+     "w": 121,
+     "h": 44,
+     "top": 326.2,
+     "bottom": 370.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 274,
+     "y": 339.2,
+     "w": 18,
+     "h": 18,
+     "top": 339.2,
+     "bottom": 357.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 838,
+     "y": 419.2,
+     "w": 18,
+     "h": 18,
+     "top": 419.2,
+     "bottom": 437.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 8,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": true,
+    "rect": {
+     "x": 33,
+     "y": 326.2,
+     "w": 270,
+     "h": 44,
+     "top": 326.2,
+     "bottom": 370.2
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": true,
+    "rect": {
+     "x": 597,
+     "y": 406.2,
+     "w": 270,
+     "h": 44,
+     "top": 406.2,
+     "bottom": 450.2
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 483.2,
+  "gridCols": "281.328px 281.328px 281.344px",
+  "card": {
+   "x": 602.67,
+   "y": 483.2,
+   "w": 281.33,
+   "h": 513.47,
+   "top": 483.2,
+   "bottom": 996.67
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 65
+ },
+ "w1023": {
+  "vw": 1023,
+  "docOverflow": 0,
+  "docSW": 1023,
+  "docCW": 1023,
+  "pageH": 1369,
+  "headerH": 65,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 16,
+    "y": 205.2,
+    "w": 991,
+    "h": 262,
+    "top": 205.2,
+    "bottom": 467.2
+   },
+   "css": {
+    "display": "grid",
+    "grid-template-columns": "311px 311px 311px",
+    "gap": "12px",
+    "padding": "16px",
+    "border-top-color": "rgb(230, 236, 243)",
+    "background-color": "rgb(255, 255, 255)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 3,
+  "rowYs": [
+   222,
+   302,
+   382
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 679,
+     "y": 222.2,
+     "w": 311,
+     "h": 68,
+     "top": 222.2,
+     "bottom": 290.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 356,
+     "y": 222.2,
+     "w": 311,
+     "h": 68,
+     "top": 222.2,
+     "bottom": 290.2
+    },
+    "visible": true
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 33,
+     "y": 222.2,
+     "w": 311,
+     "h": 68,
+     "top": 222.2,
+     "bottom": 290.2
+    },
+    "visible": true
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 679,
+     "y": 302.2,
+     "w": 311,
+     "h": 68,
+     "top": 302.2,
+     "bottom": 370.2
+    },
+    "visible": true
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 356,
+     "y": 302.2,
+     "w": 311,
+     "h": 68,
+     "top": 302.2,
+     "bottom": 370.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 33,
+     "y": 302.2,
+     "w": 311,
+     "h": 68,
+     "top": 302.2,
+     "bottom": 370.2
+    },
+    "visible": true
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 679,
+     "y": 382.2,
+     "w": 311,
+     "h": 68,
+     "top": 382.2,
+     "bottom": 450.2
+    },
+    "visible": true
+   }
+  ],
+  "toggle": {
+   "visible": false,
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "display": "none",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": false,
+   "display": "contents",
+   "position": "static",
+   "transform": "none",
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "bg": "rgba(0, 0, 0, 0)",
+   "headVisible": false,
+   "footVisible": false
+  },
+  "scrim": {
+   "visible": false,
+   "display": "none"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 631,
+    "y": 405.41,
+    "w": 36,
+    "h": 21.59,
+    "top": 405.41,
+    "bottom": 427
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 679,
+     "y": 246.2,
+     "w": 311,
+     "h": 44,
+     "top": 246.2,
+     "bottom": 290.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 356,
+     "y": 246.2,
+     "w": 311,
+     "h": 44,
+     "top": 246.2,
+     "bottom": 290.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 33,
+     "y": 246.2,
+     "w": 311,
+     "h": 44,
+     "top": 246.2,
+     "bottom": 290.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 679,
+     "y": 326.2,
+     "w": 311,
+     "h": 44,
+     "top": 326.2,
+     "bottom": 370.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 525.5,
+     "y": 326.2,
+     "w": 141.5,
+     "h": 44,
+     "top": 326.2,
+     "bottom": 370.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 356,
+     "y": 326.2,
+     "w": 141.5,
+     "h": 44,
+     "top": 326.2,
+     "bottom": 370.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 315,
+     "y": 339.2,
+     "w": 18,
+     "h": 18,
+     "top": 339.2,
+     "bottom": 357.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 961,
+     "y": 419.2,
+     "w": 18,
+     "h": 18,
+     "top": 419.2,
+     "bottom": 437.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 8,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": true,
+    "rect": {
+     "x": 33,
+     "y": 326.2,
+     "w": 311,
+     "h": 44,
+     "top": 326.2,
+     "bottom": 370.2
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": true,
+    "rect": {
+     "x": 679,
+     "y": 406.2,
+     "w": 311,
+     "h": 44,
+     "top": 406.2,
+     "bottom": 450.2
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 483.2,
+  "gridCols": "319.656px 319.672px 319.656px",
+  "card": {
+   "x": 687.34,
+   "y": 483.2,
+   "w": 319.66,
+   "h": 551.81,
+   "top": 483.2,
+   "bottom": 1035.02
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 65
+ },
+ "w1024": {
+  "vw": 1024,
+  "docOverflow": 0,
+  "docSW": 1024,
+  "docCW": 1024,
+  "pageH": 1298,
+  "headerH": 74,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 16,
+    "y": 214.2,
+    "w": 992,
+    "h": 182,
+    "top": 214.2,
+    "bottom": 396.2
+   },
+   "css": {
+    "display": "grid",
+    "grid-template-columns": "345.734px 192.094px 192.078px 192.078px",
+    "gap": "12px",
+    "padding": "16px",
+    "border-top-color": "rgb(230, 236, 243)",
+    "background-color": "rgb(255, 255, 255)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 2,
+  "rowYs": [
+   231,
+   311
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 645.27,
+     "y": 231.2,
+     "w": 345.73,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 441.17,
+     "y": 231.2,
+     "w": 192.09,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 237.09,
+     "y": 231.2,
+     "w": 192.08,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 33.02,
+     "y": 231.2,
+     "w": 192.08,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 645.27,
+     "y": 311.2,
+     "w": 345.73,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 441.17,
+     "y": 311.2,
+     "w": 192.09,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 237.09,
+     "y": 311.2,
+     "w": 192.08,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   }
+  ],
+  "toggle": {
+   "visible": false,
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "display": "none",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": false,
+   "display": "contents",
+   "position": "static",
+   "transform": "none",
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "bg": "rgba(0, 0, 0, 0)",
+   "headVisible": false,
+   "footVisible": false
+  },
+  "scrim": {
+   "visible": false,
+   "display": "none"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 189.09,
+    "y": 334.41,
+    "w": 36,
+    "h": 21.59,
+    "top": 334.41,
+    "bottom": 356
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 645.27,
+     "y": 255.2,
+     "w": 345.73,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 441.17,
+     "y": 255.2,
+     "w": 192.09,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 237.09,
+     "y": 255.2,
+     "w": 192.08,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 33.02,
+     "y": 255.2,
+     "w": 192.08,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 832.13,
+     "y": 335.2,
+     "w": 158.88,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 645.27,
+     "y": 335.2,
+     "w": 158.86,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 604.27,
+     "y": 348.2,
+     "w": 18,
+     "h": 18,
+     "top": 348.2,
+     "bottom": 366.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 400.17,
+     "y": 348.2,
+     "w": 18,
+     "h": 18,
+     "top": 348.2,
+     "bottom": 366.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 8,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": true,
+    "rect": {
+     "x": 441.17,
+     "y": 335.2,
+     "w": 192.09,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": true,
+    "rect": {
+     "x": 237.09,
+     "y": 335.2,
+     "w": 192.08,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 412.2,
+  "gridCols": "320px 320px 320px",
+  "card": {
+   "x": 688,
+   "y": 412.2,
+   "w": 320,
+   "h": 552.14,
+   "top": 412.2,
+   "bottom": 964.34
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 74
+ },
+ "w1280": {
+  "vw": 1280,
+  "docOverflow": 0,
+  "docSW": 1280,
+  "docCW": 1280,
+  "pageH": 1258,
+  "headerH": 74,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 56,
+    "y": 214.2,
+    "w": 1168,
+    "h": 182,
+    "top": 214.2,
+    "bottom": 396.2
+   },
+   "css": {
+    "display": "grid",
+    "grid-template-columns": "411.734px 228.75px 228.75px 228.75px",
+    "gap": "12px",
+    "padding": "16px",
+    "border-top-color": "rgb(230, 236, 243)",
+    "background-color": "rgb(255, 255, 255)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 2,
+  "rowYs": [
+   231,
+   311
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 795.27,
+     "y": 231.2,
+     "w": 411.73,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 554.52,
+     "y": 231.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 313.77,
+     "y": 231.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 73.02,
+     "y": 231.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 795.27,
+     "y": 311.2,
+     "w": 411.73,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 554.52,
+     "y": 311.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 313.77,
+     "y": 311.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   }
+  ],
+  "toggle": {
+   "visible": false,
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "display": "none",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": false,
+   "display": "contents",
+   "position": "static",
+   "transform": "none",
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "bg": "rgba(0, 0, 0, 0)",
+   "headVisible": false,
+   "footVisible": false
+  },
+  "scrim": {
+   "visible": false,
+   "display": "none"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 265.77,
+    "y": 334.41,
+    "w": 36,
+    "h": 21.59,
+    "top": 334.41,
+    "bottom": 356
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 795.27,
+     "y": 255.2,
+     "w": 411.73,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 554.52,
+     "y": 255.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 313.77,
+     "y": 255.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 73.02,
+     "y": 255.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 1015.13,
+     "y": 335.2,
+     "w": 191.88,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 795.27,
+     "y": 335.2,
+     "w": 191.86,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 754.27,
+     "y": 348.2,
+     "w": 18,
+     "h": 18,
+     "top": 348.2,
+     "bottom": 366.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 513.52,
+     "y": 348.2,
+     "w": 18,
+     "h": 18,
+     "top": 348.2,
+     "bottom": 366.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 8,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": true,
+    "rect": {
+     "x": 554.52,
+     "y": 335.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": true,
+    "rect": {
+     "x": 313.77,
+     "y": 335.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 412.2,
+  "gridCols": "280px 280px 280px 280px",
+  "card": {
+   "x": 944,
+   "y": 412.2,
+   "w": 280,
+   "h": 512.14,
+   "top": 412.2,
+   "bottom": 924.34
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 74
+ },
+ "w1366": {
+  "vw": 1366,
+  "docOverflow": 0,
+  "docSW": 1366,
+  "docCW": 1366,
+  "pageH": 1258,
+  "headerH": 74,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 99,
+    "y": 214.2,
+    "w": 1168,
+    "h": 182,
+    "top": 214.2,
+    "bottom": 396.2
+   },
+   "css": {
+    "display": "grid",
+    "grid-template-columns": "411.734px 228.75px 228.75px 228.75px",
+    "gap": "12px",
+    "padding": "16px",
+    "border-top-color": "rgb(230, 236, 243)",
+    "background-color": "rgb(255, 255, 255)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 2,
+  "rowYs": [
+   231,
+   311
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 838.27,
+     "y": 231.2,
+     "w": 411.73,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 597.52,
+     "y": 231.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 356.77,
+     "y": 231.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 116.02,
+     "y": 231.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 838.27,
+     "y": 311.2,
+     "w": 411.73,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 597.52,
+     "y": 311.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 356.77,
+     "y": 311.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   }
+  ],
+  "toggle": {
+   "visible": false,
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "display": "none",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": false,
+   "display": "contents",
+   "position": "static",
+   "transform": "none",
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "bg": "rgba(0, 0, 0, 0)",
+   "headVisible": false,
+   "footVisible": false
+  },
+  "scrim": {
+   "visible": false,
+   "display": "none"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 308.77,
+    "y": 334.41,
+    "w": 36,
+    "h": 21.59,
+    "top": 334.41,
+    "bottom": 356
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 838.27,
+     "y": 255.2,
+     "w": 411.73,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 597.52,
+     "y": 255.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 356.77,
+     "y": 255.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 116.02,
+     "y": 255.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 1058.13,
+     "y": 335.2,
+     "w": 191.88,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 838.27,
+     "y": 335.2,
+     "w": 191.86,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 797.27,
+     "y": 348.2,
+     "w": 18,
+     "h": 18,
+     "top": 348.2,
+     "bottom": 366.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 556.52,
+     "y": 348.2,
+     "w": 18,
+     "h": 18,
+     "top": 348.2,
+     "bottom": 366.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 8,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": true,
+    "rect": {
+     "x": 597.52,
+     "y": 335.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": true,
+    "rect": {
+     "x": 356.77,
+     "y": 335.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 412.2,
+  "gridCols": "280px 280px 280px 280px",
+  "card": {
+   "x": 987,
+   "y": 412.2,
+   "w": 280,
+   "h": 512.14,
+   "top": 412.2,
+   "bottom": 924.34
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 74
+ },
+ "w1440": {
+  "vw": 1440,
+  "docOverflow": 0,
+  "docSW": 1440,
+  "docCW": 1440,
+  "pageH": 1258,
+  "headerH": 74,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 136,
+    "y": 214.2,
+    "w": 1168,
+    "h": 182,
+    "top": 214.2,
+    "bottom": 396.2
+   },
+   "css": {
+    "display": "grid",
+    "grid-template-columns": "411.734px 228.75px 228.75px 228.75px",
+    "gap": "12px",
+    "padding": "16px",
+    "border-top-color": "rgb(230, 236, 243)",
+    "background-color": "rgb(255, 255, 255)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 2,
+  "rowYs": [
+   231,
+   311
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 875.27,
+     "y": 231.2,
+     "w": 411.73,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 634.52,
+     "y": 231.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 393.77,
+     "y": 231.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 153.02,
+     "y": 231.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 875.27,
+     "y": 311.2,
+     "w": 411.73,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 634.52,
+     "y": 311.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 393.77,
+     "y": 311.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   }
+  ],
+  "toggle": {
+   "visible": false,
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "display": "none",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": false,
+   "display": "contents",
+   "position": "static",
+   "transform": "none",
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "bg": "rgba(0, 0, 0, 0)",
+   "headVisible": false,
+   "footVisible": false
+  },
+  "scrim": {
+   "visible": false,
+   "display": "none"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 345.77,
+    "y": 334.41,
+    "w": 36,
+    "h": 21.59,
+    "top": 334.41,
+    "bottom": 356
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 875.27,
+     "y": 255.2,
+     "w": 411.73,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 634.52,
+     "y": 255.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 393.77,
+     "y": 255.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 153.02,
+     "y": 255.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 1095.13,
+     "y": 335.2,
+     "w": 191.88,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 875.27,
+     "y": 335.2,
+     "w": 191.86,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 834.27,
+     "y": 348.2,
+     "w": 18,
+     "h": 18,
+     "top": 348.2,
+     "bottom": 366.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 593.52,
+     "y": 348.2,
+     "w": 18,
+     "h": 18,
+     "top": 348.2,
+     "bottom": 366.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 8,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": true,
+    "rect": {
+     "x": 634.52,
+     "y": 335.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": true,
+    "rect": {
+     "x": 393.77,
+     "y": 335.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 412.2,
+  "gridCols": "280px 280px 280px 280px",
+  "card": {
+   "x": 1024,
+   "y": 412.2,
+   "w": 280,
+   "h": 512.14,
+   "top": 412.2,
+   "bottom": 924.34
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 74
+ },
+ "w1920": {
+  "vw": 1920,
+  "docOverflow": 0,
+  "docSW": 1920,
+  "docCW": 1920,
+  "pageH": 1258,
+  "headerH": 74,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 376,
+    "y": 214.2,
+    "w": 1168,
+    "h": 182,
+    "top": 214.2,
+    "bottom": 396.2
+   },
+   "css": {
+    "display": "grid",
+    "grid-template-columns": "411.734px 228.75px 228.75px 228.75px",
+    "gap": "12px",
+    "padding": "16px",
+    "border-top-color": "rgb(230, 236, 243)",
+    "background-color": "rgb(255, 255, 255)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 2,
+  "rowYs": [
+   231,
+   311
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 1115.27,
+     "y": 231.2,
+     "w": 411.73,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 874.52,
+     "y": 231.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 633.77,
+     "y": 231.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 393.02,
+     "y": 231.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 1115.27,
+     "y": 311.2,
+     "w": 411.73,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 874.52,
+     "y": 311.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 633.77,
+     "y": 311.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   }
+  ],
+  "toggle": {
+   "visible": false,
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "display": "none",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": false,
+   "display": "contents",
+   "position": "static",
+   "transform": "none",
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "bg": "rgba(0, 0, 0, 0)",
+   "headVisible": false,
+   "footVisible": false
+  },
+  "scrim": {
+   "visible": false,
+   "display": "none"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 585.77,
+    "y": 334.41,
+    "w": 36,
+    "h": 21.59,
+    "top": 334.41,
+    "bottom": 356
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 1115.27,
+     "y": 255.2,
+     "w": 411.73,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 874.52,
+     "y": 255.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 633.77,
+     "y": 255.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 393.02,
+     "y": 255.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 1335.13,
+     "y": 335.2,
+     "w": 191.88,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 1115.27,
+     "y": 335.2,
+     "w": 191.86,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 1074.27,
+     "y": 348.2,
+     "w": 18,
+     "h": 18,
+     "top": 348.2,
+     "bottom": 366.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 833.52,
+     "y": 348.2,
+     "w": 18,
+     "h": 18,
+     "top": 348.2,
+     "bottom": 366.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 8,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": true,
+    "rect": {
+     "x": 874.52,
+     "y": 335.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": true,
+    "rect": {
+     "x": 633.77,
+     "y": 335.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 412.2,
+  "gridCols": "280px 280px 280px 280px",
+  "card": {
+   "x": 1264,
+   "y": 412.2,
+   "w": 280,
+   "h": 512.14,
+   "top": 412.2,
+   "bottom": 924.34
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 74
+ },
+ "open390": {
+  "vw": 390,
+  "docOverflow": 0,
+  "docSW": 390,
+  "docCW": 390,
+  "pageH": 1136,
+  "headerH": 65,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 0,
+    "y": 224.92,
+    "w": 390,
+    "h": 626.33,
+    "top": 224.92,
+    "bottom": 851.25
+   },
+   "css": {
+    "display": "flex",
+    "grid-template-columns": "minmax(0px, 1fr)",
+    "gap": "12px",
+    "padding": "14px 16px",
+    "border-top-color": "rgb(51, 65, 85)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 7,
+  "rowYs": [
+   239,
+   321,
+   404,
+   486,
+   568,
+   651,
+   733
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 16,
+     "y": 238.92,
+     "w": 358,
+     "h": 70.39,
+     "top": 238.92,
+     "bottom": 309.31
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 16,
+     "y": 321.31,
+     "w": 358,
+     "h": 70.39,
+     "top": 321.31,
+     "bottom": 391.7
+    },
+    "visible": true
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 16,
+     "y": 403.7,
+     "w": 358,
+     "h": 70.39,
+     "top": 403.7,
+     "bottom": 474.09
+    },
+    "visible": true
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 16,
+     "y": 486.09,
+     "w": 358,
+     "h": 70.39,
+     "top": 486.09,
+     "bottom": 556.48
+    },
+    "visible": true
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 16,
+     "y": 568.48,
+     "w": 358,
+     "h": 70.39,
+     "top": 568.48,
+     "bottom": 638.88
+    },
+    "visible": true
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 16,
+     "y": 650.88,
+     "w": 358,
+     "h": 70.39,
+     "top": 650.88,
+     "bottom": 721.27
+    },
+    "visible": true
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 16,
+     "y": 733.27,
+     "w": 358,
+     "h": 70.39,
+     "top": 733.27,
+     "bottom": 803.66
+    },
+    "visible": true
+   }
+  ],
+  "toggle": {
+   "visible": true,
+   "rect": {
+    "x": 12,
+    "y": 200.41,
+    "w": 366,
+    "h": 44,
+    "top": 200.41,
+    "bottom": 244.41
+   },
+   "display": "flex",
+   "expanded": "true",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": true,
+   "display": "block",
+   "position": "fixed",
+   "transform": "matrix(1, 0, 0, 1, 0, 0)",
+   "rect": {
+    "x": 0,
+    "y": 151.92,
+    "w": 390,
+    "h": 692.08,
+    "top": 151.92,
+    "bottom": 844
+   },
+   "bg": "rgb(255, 255, 255)",
+   "headVisible": true,
+   "footVisible": true
+  },
+  "scrim": {
+   "visible": true,
+   "display": "block"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 338,
+    "y": 815.66,
+    "w": 36,
+    "h": 21.59,
+    "top": 815.66,
+    "bottom": 837.25
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 265.31,
+     "w": 358,
+     "h": 44,
+     "top": 265.31,
+     "bottom": 309.31
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 347.7,
+     "w": 358,
+     "h": 44,
+     "top": 347.7,
+     "bottom": 391.7
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 430.09,
+     "w": 358,
+     "h": 44,
+     "top": 430.09,
+     "bottom": 474.09
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 512.48,
+     "w": 358,
+     "h": 44,
+     "top": 512.48,
+     "bottom": 556.48
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 209,
+     "y": 594.88,
+     "w": 165,
+     "h": 44,
+     "top": 594.88,
+     "bottom": 638.88
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 594.88,
+     "w": 165,
+     "h": 44,
+     "top": 594.88,
+     "bottom": 638.88
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 345,
+     "y": 690.27,
+     "w": 18,
+     "h": 18,
+     "top": 690.27,
+     "bottom": 708.27
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 345,
+     "y": 772.66,
+     "w": 18,
+     "h": 18,
+     "top": 772.66,
+     "bottom": 790.66
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 8,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 677.27,
+     "w": 358,
+     "h": 44,
+     "top": 677.27,
+     "bottom": 721.27
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 759.66,
+     "w": 358,
+     "h": 44,
+     "top": 759.66,
+     "bottom": 803.66
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 252.41,
+  "gridCols": "177px 177px",
+  "card": {
+   "x": 201,
+   "y": 252.41,
+   "w": 177,
+   "h": 504.22,
+   "top": 252.41,
+   "bottom": 756.63
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 65,
+  "opened": true
+ },
+ "open768": {
+  "vw": 768,
+  "docOverflow": 0,
+  "docSW": 768,
+  "docCW": 768,
+  "pageH": 1123,
+  "headerH": 65,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 0,
+    "y": 224.92,
+    "w": 768,
+    "h": 626.33,
+    "top": 224.92,
+    "bottom": 851.25
+   },
+   "css": {
+    "display": "flex",
+    "grid-template-columns": "minmax(0px, 1fr)",
+    "gap": "12px",
+    "padding": "14px 16px",
+    "border-top-color": "rgb(51, 65, 85)",
+    "background-color": "rgba(0, 0, 0, 0)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 7,
+  "rowYs": [
+   239,
+   321,
+   404,
+   486,
+   568,
+   651,
+   733
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 16,
+     "y": 238.92,
+     "w": 736,
+     "h": 70.39,
+     "top": 238.92,
+     "bottom": 309.31
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 16,
+     "y": 321.31,
+     "w": 736,
+     "h": 70.39,
+     "top": 321.31,
+     "bottom": 391.7
+    },
+    "visible": true
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 16,
+     "y": 403.7,
+     "w": 736,
+     "h": 70.39,
+     "top": 403.7,
+     "bottom": 474.09
+    },
+    "visible": true
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 16,
+     "y": 486.09,
+     "w": 736,
+     "h": 70.39,
+     "top": 486.09,
+     "bottom": 556.48
+    },
+    "visible": true
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 16,
+     "y": 568.48,
+     "w": 736,
+     "h": 70.39,
+     "top": 568.48,
+     "bottom": 638.88
+    },
+    "visible": true
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 16,
+     "y": 650.88,
+     "w": 736,
+     "h": 70.39,
+     "top": 650.88,
+     "bottom": 721.27
+    },
+    "visible": true
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 16,
+     "y": 733.27,
+     "w": 736,
+     "h": 70.39,
+     "top": 733.27,
+     "bottom": 803.66
+    },
+    "visible": true
+   }
+  ],
+  "toggle": {
+   "visible": true,
+   "rect": {
+    "x": 16,
+    "y": 205.2,
+    "w": 736,
+    "h": 44,
+    "top": 205.2,
+    "bottom": 249.2
+   },
+   "display": "flex",
+   "expanded": "true",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": true,
+   "display": "block",
+   "position": "fixed",
+   "transform": "matrix(1, 0, 0, 1, 0, 0)",
+   "rect": {
+    "x": 0,
+    "y": 151.92,
+    "w": 768,
+    "h": 692.08,
+    "top": 151.92,
+    "bottom": 844
+   },
+   "bg": "rgb(255, 255, 255)",
+   "headVisible": true,
+   "footVisible": true
+  },
+  "scrim": {
+   "visible": true,
+   "display": "block"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 716,
+    "y": 815.66,
+    "w": 36,
+    "h": 21.59,
+    "top": 815.66,
+    "bottom": 837.25
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 265.31,
+     "w": 736,
+     "h": 44,
+     "top": 265.31,
+     "bottom": 309.31
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 347.7,
+     "w": 736,
+     "h": 44,
+     "top": 347.7,
+     "bottom": 391.7
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 430.09,
+     "w": 736,
+     "h": 44,
+     "top": 430.09,
+     "bottom": 474.09
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 512.48,
+     "w": 736,
+     "h": 44,
+     "top": 512.48,
+     "bottom": 556.48
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 398,
+     "y": 594.88,
+     "w": 354,
+     "h": 44,
+     "top": 594.88,
+     "bottom": 638.88
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 594.88,
+     "w": 354,
+     "h": 44,
+     "top": 594.88,
+     "bottom": 638.88
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 723,
+     "y": 690.27,
+     "w": 18,
+     "h": 18,
+     "top": 690.27,
+     "bottom": 708.27
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 723,
+     "y": 772.66,
+     "w": 18,
+     "h": 18,
+     "top": 772.66,
+     "bottom": 790.66
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 8,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 677.27,
+     "w": 736,
+     "h": 44,
+     "top": 677.27,
+     "bottom": 721.27
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": true,
+    "rect": {
+     "x": 16,
+     "y": 759.66,
+     "w": 736,
+     "h": 44,
+     "top": 759.66,
+     "bottom": 803.66
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 257.2,
+  "gridCols": "237.328px 237.328px 237.328px",
+  "card": {
+   "x": 514.67,
+   "y": 257.2,
+   "w": 237.33,
+   "h": 491.06,
+   "top": 257.2,
+   "bottom": 748.27
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 65,
+  "opened": true
+ },
+ "journey1024": {
+  "search": {
+   "hash_before": "#/products",
+   "hash_after": "#/products?search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&page=1",
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 2,
+   "count": "2 منتج"
+  },
+  "category": {
+   "hash_before": "#/products?search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&page=1",
+   "hash_after": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293",
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 2,
+   "count": "2 منتج"
+  },
+  "brand": {
+   "hash_before": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293",
+   "hash_after": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254",
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "sort": {
+   "hash_before": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254",
+   "hash_after": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "price": {
+   "hash_before": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+   "hash_after": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc&minPrice=400",
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "instock": {
+   "hash_before": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc&minPrice=400",
+   "hash_after": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc&minPrice=400&inStock=1",
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "offers": {
+   "hash_before": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc&minPrice=400&inStock=1",
+   "hash_after": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc&minPrice=400&inStock=1&offers=1",
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 0,
+   "count": "0 منتج"
+  },
+  "reset": {
+   "hash_before": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc&minPrice=400&inStock=1&offers=1",
+   "hash_after": "#/products",
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 2,
+   "count": "2 منتج"
+  }
+ },
+ "journey1366": {
+  "search": {
+   "hash_before": "#/products",
+   "hash_after": "#/products?search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&page=1",
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 2,
+   "count": "2 منتج"
+  },
+  "category": {
+   "hash_before": "#/products?search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&page=1",
+   "hash_after": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293",
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 2,
+   "count": "2 منتج"
+  },
+  "brand": {
+   "hash_before": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293",
+   "hash_after": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254",
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "sort": {
+   "hash_before": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254",
+   "hash_after": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "price": {
+   "hash_before": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+   "hash_after": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc&minPrice=400",
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "instock": {
+   "hash_before": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc&minPrice=400",
+   "hash_after": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc&minPrice=400&inStock=1",
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "offers": {
+   "hash_before": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc&minPrice=400&inStock=1",
+   "hash_after": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc&minPrice=400&inStock=1&offers=1",
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 0,
+   "count": "0 منتج"
+  },
+  "reset": {
+   "hash_before": "#/products?page=1&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc&minPrice=400&inStock=1&offers=1",
+   "hash_after": "#/products",
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 2,
+   "count": "2 منتج"
+  }
+ },
+ "dark1366": {
+  "vw": 1366,
+  "docOverflow": 0,
+  "docSW": 1366,
+  "docCW": 1366,
+  "pageH": 1258,
+  "headerH": 74,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 99,
+    "y": 214.2,
+    "w": 1168,
+    "h": 182,
+    "top": 214.2,
+    "bottom": 396.2
+   },
+   "css": {
+    "display": "grid",
+    "grid-template-columns": "411.734px 228.75px 228.75px 228.75px",
+    "gap": "12px",
+    "padding": "16px",
+    "border-top-color": "rgb(30, 42, 61)",
+    "background-color": "rgb(18, 27, 43)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 2,
+  "rowYs": [
+   231,
+   311
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 838.27,
+     "y": 231.2,
+     "w": 411.73,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 597.52,
+     "y": 231.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 356.77,
+     "y": 231.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 116.02,
+     "y": 231.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 838.27,
+     "y": 311.2,
+     "w": 411.73,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 597.52,
+     "y": 311.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 356.77,
+     "y": 311.2,
+     "w": 228.75,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   }
+  ],
+  "toggle": {
+   "visible": false,
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "display": "none",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": false,
+   "display": "contents",
+   "position": "static",
+   "transform": "none",
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "bg": "rgba(0, 0, 0, 0)",
+   "headVisible": false,
+   "footVisible": false
+  },
+  "scrim": {
+   "visible": false,
+   "display": "none"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 308.77,
+    "y": 334.41,
+    "w": 36,
+    "h": 21.59,
+    "top": 334.41,
+    "bottom": 356
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 838.27,
+     "y": 255.2,
+     "w": 411.73,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 597.52,
+     "y": 255.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 356.77,
+     "y": 255.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 116.02,
+     "y": 255.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 1058.13,
+     "y": 335.2,
+     "w": 191.88,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 838.27,
+     "y": 335.2,
+     "w": 191.86,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 797.27,
+     "y": 348.2,
+     "w": 18,
+     "h": 18,
+     "top": 348.2,
+     "bottom": 366.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 556.52,
+     "y": 348.2,
+     "w": 18,
+     "h": 18,
+     "top": 348.2,
+     "bottom": 366.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 8,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": true,
+    "rect": {
+     "x": 597.52,
+     "y": 335.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": true,
+    "rect": {
+     "x": 356.77,
+     "y": 335.2,
+     "w": 228.75,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 412.2,
+  "gridCols": "280px 280px 280px 280px",
+  "card": {
+   "x": 987,
+   "y": 412.2,
+   "w": 280,
+   "h": 512.14,
+   "top": 412.2,
+   "bottom": 924.34
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 74
+ },
+ "category-result-1024": {
+  "vw": 1024,
+  "docOverflow": 0,
+  "docSW": 1024,
+  "docCW": 1024,
+  "pageH": 1298,
+  "headerH": 74,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 16,
+    "y": 214.2,
+    "w": 992,
+    "h": 182,
+    "top": 214.2,
+    "bottom": 396.2
+   },
+   "css": {
+    "display": "grid",
+    "grid-template-columns": "345.734px 192.094px 192.078px 192.078px",
+    "gap": "12px",
+    "padding": "16px",
+    "border-top-color": "rgb(230, 236, 243)",
+    "background-color": "rgb(255, 255, 255)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 2,
+  "rowYs": [
+   231,
+   311
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 645.27,
+     "y": 231.2,
+     "w": 345.73,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 441.17,
+     "y": 231.2,
+     "w": 192.09,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 237.09,
+     "y": 231.2,
+     "w": 192.08,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 33.02,
+     "y": 231.2,
+     "w": 192.08,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 645.27,
+     "y": 311.2,
+     "w": 345.73,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 441.17,
+     "y": 311.2,
+     "w": 192.09,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 237.09,
+     "y": 311.2,
+     "w": 192.08,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   }
+  ],
+  "toggle": {
+   "visible": false,
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "display": "none",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": false,
+   "display": "contents",
+   "position": "static",
+   "transform": "none",
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "bg": "rgba(0, 0, 0, 0)",
+   "headVisible": false,
+   "footVisible": false
+  },
+  "scrim": {
+   "visible": false,
+   "display": "none"
+  },
+  "count": {
+   "visible": true,
+   "text": "2 منتج",
+   "rect": {
+    "x": 189.09,
+    "y": 334.41,
+    "w": 36,
+    "h": 21.59,
+    "top": 334.41,
+    "bottom": 356
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 645.27,
+     "y": 255.2,
+     "w": 345.73,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 441.17,
+     "y": 255.2,
+     "w": 192.09,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "293",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 237.09,
+     "y": 255.2,
+     "w": 192.08,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 33.02,
+     "y": 255.2,
+     "w": 192.08,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 832.13,
+     "y": 335.2,
+     "w": 158.88,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 645.27,
+     "y": 335.2,
+     "w": 158.86,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 604.27,
+     "y": 348.2,
+     "w": 18,
+     "h": 18,
+     "top": 348.2,
+     "bottom": 366.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 400.17,
+     "y": 348.2,
+     "w": 18,
+     "h": 18,
+     "top": 348.2,
+     "bottom": 366.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 8,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": true,
+    "rect": {
+     "x": 441.17,
+     "y": 335.2,
+     "w": 192.09,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": true,
+    "rect": {
+     "x": 237.09,
+     "y": 335.2,
+     "w": 192.08,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 412.2,
+  "gridCols": "320px 320px 320px",
+  "card": {
+   "x": 688,
+   "y": 412.2,
+   "w": 320,
+   "h": 552.14,
+   "top": 412.2,
+   "bottom": 964.34
+  },
+  "cardCount": 2,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 74
+ },
+ "brand-result-1024": {
+  "vw": 1024,
+  "docOverflow": 0,
+  "docSW": 1024,
+  "docCW": 1024,
+  "pageH": 1298,
+  "headerH": 74,
+  "toolbar": {
+   "visible": true,
+   "rect": {
+    "x": 16,
+    "y": 214.2,
+    "w": 992,
+    "h": 182,
+    "top": 214.2,
+    "bottom": 396.2
+   },
+   "css": {
+    "display": "grid",
+    "grid-template-columns": "345.734px 192.094px 192.078px 192.078px",
+    "gap": "12px",
+    "padding": "16px",
+    "border-top-color": "rgb(230, 236, 243)",
+    "background-color": "rgb(255, 255, 255)",
+    "border-radius": "14px",
+    "margin-bottom": "16px"
+   }
+  },
+  "toolbarRows": 2,
+  "rowYs": [
+   231,
+   311
+  ],
+  "fields": [
+   {
+    "label": "بحث",
+    "rect": {
+     "x": 645.27,
+     "y": 231.2,
+     "w": 345.73,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التصنيف",
+    "rect": {
+     "x": 441.17,
+     "y": 231.2,
+     "w": 192.09,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "العلامة",
+    "rect": {
+     "x": 237.09,
+     "y": 231.2,
+     "w": 192.08,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "الترتيب",
+    "rect": {
+     "x": 33.02,
+     "y": 231.2,
+     "w": 192.08,
+     "h": 68,
+     "top": 231.2,
+     "bottom": 299.2
+    },
+    "visible": true
+   },
+   {
+    "label": "السعر",
+    "rect": {
+     "x": 645.27,
+     "y": 311.2,
+     "w": 345.73,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   },
+   {
+    "label": "التوفر",
+    "rect": {
+     "x": 441.17,
+     "y": 311.2,
+     "w": 192.09,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   },
+   {
+    "label": "عروض",
+    "rect": {
+     "x": 237.09,
+     "y": 311.2,
+     "w": 192.08,
+     "h": 68,
+     "top": 311.2,
+     "bottom": 379.2
+    },
+    "visible": true
+   }
+  ],
+  "toggle": {
+   "visible": false,
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "display": "none",
+   "expanded": "false",
+   "controls": "shop-toolbar"
+  },
+  "sheet": {
+   "visible": false,
+   "display": "contents",
+   "position": "static",
+   "transform": "none",
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "bottom": 0
+   },
+   "bg": "rgba(0, 0, 0, 0)",
+   "headVisible": false,
+   "footVisible": false
+  },
+  "scrim": {
+   "visible": false,
+   "display": "none"
+  },
+  "count": {
+   "visible": true,
+   "text": "1 منتج",
+   "rect": {
+    "x": 189.09,
+    "y": 334.41,
+    "w": 36,
+    "h": 21.59,
+    "top": 334.41,
+    "bottom": 356
+   }
+  },
+  "controls": [
+   {
+    "id": "shop-filter-search",
+    "tag": "INPUT",
+    "type": "search",
+    "visible": true,
+    "rect": {
+     "x": 645.27,
+     "y": 255.2,
+     "w": 345.73,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-category",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 441.17,
+     "y": 255.2,
+     "w": 192.09,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-brand",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 237.09,
+     "y": 255.2,
+     "w": 192.08,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "254",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-sort",
+    "tag": "SELECT",
+    "type": null,
+    "visible": true,
+    "rect": {
+     "x": 33.02,
+     "y": 255.2,
+     "w": 192.08,
+     "h": 44,
+     "top": 255.2,
+     "bottom": 299.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "createdAt:desc",
+    "checked": null
+   },
+   {
+    "id": "shop-filter-minprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 832.13,
+     "y": 335.2,
+     "w": 158.88,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-maxprice",
+    "tag": "INPUT",
+    "type": "number",
+    "visible": true,
+    "rect": {
+     "x": 645.27,
+     "y": 335.2,
+     "w": 158.86,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "h": 44,
+    "css": {
+     "height": "44px",
+     "min-height": "40px",
+     "font-size": "15px"
+    },
+    "value": "",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-instock",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 604.27,
+     "y": 348.2,
+     "w": 18,
+     "h": 18,
+     "top": 348.2,
+     "bottom": 366.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   },
+   {
+    "id": "shop-filter-offers",
+    "tag": "INPUT",
+    "type": "checkbox",
+    "visible": true,
+    "rect": {
+     "x": 400.17,
+     "y": 348.2,
+     "w": 18,
+     "h": 18,
+     "top": 348.2,
+     "bottom": 366.2
+    },
+    "h": 18,
+    "css": {
+     "height": "18px",
+     "min-height": "auto",
+     "font-size": "14px"
+    },
+    "value": "on",
+    "checked": false
+   }
+  ],
+  "controlsVisible": 8,
+  "controlsTotal": 8,
+  "checks": [
+   {
+    "text": "المتوفر فقط",
+    "visible": true,
+    "rect": {
+     "x": 441.17,
+     "y": 335.2,
+     "w": 192.09,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "minH": "44px"
+   },
+   {
+    "text": "عليها خصم فقط",
+    "visible": true,
+    "rect": {
+     "x": 237.09,
+     "y": 335.2,
+     "w": 192.08,
+     "h": 44,
+     "top": 335.2,
+     "bottom": 379.2
+    },
+    "minH": "44px"
+   }
+  ],
+  "gridTop": 412.2,
+  "gridCols": "320px 320px 320px",
+  "card": {
+   "x": 688,
+   "y": 412.2,
+   "w": 320,
+   "h": 552.14,
+   "top": 412.2,
+   "bottom": 964.34
+  },
+  "cardCount": 1,
+  "dupIds": {
+   "shop-filter-search": 1,
+   "shop-filter-category": 1,
+   "shop-filter-brand": 1,
+   "shop-filter-sort": 1,
+   "shop-filter-minprice": 1,
+   "shop-filter-maxprice": 1,
+   "shop-filter-instock": 1,
+   "shop-filter-offers": 1,
+   "shop-toolbar": 1,
+   "shop-filters-toggle": 1
+  },
+  "mainTop": 74
+ },
+ "reg390": {
+  "homeCards": 5,
+  "hero": true,
+  "headerH": 65,
+  "logo": {
+   "w": 34,
+   "h": 34,
+   "top": 15
+  },
+  "burger": {
+   "w": 44,
+   "h": 44,
+   "top": 10
+  },
+  "overflow": 0,
+  "homeCard": {
+   "w": 177,
+   "h": 321,
+   "top": 688
+  },
+  "listingCard": {
+   "w": 177,
+   "h": 504
+  },
+  "searchSheet": {
+   "top": 65,
+   "bg": "rgb(255, 255, 255)"
+  },
+  "menu": {
+   "rowH": 50,
+   "drawerTop": 65
+  }
+ },
+ "reg1366": {
+  "headerH": 74,
+  "overflow": 0,
+  "navLinkH": 44
+ }
+}

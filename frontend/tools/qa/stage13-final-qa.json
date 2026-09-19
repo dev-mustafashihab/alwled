@@ -1,0 +1,332 @@
+{
+  "stage": "13 — Final QA & Closure",
+  "generatedAt": "2026-09-16T11:37:51.565799+00:00",
+  "target": "https://panel.fahd-car.cloud/alwled/",
+  "visual": {
+    "screenshots": 76,
+    "viewports": {
+      "1920x1080": "PASS",
+      "1440x900": "PASS",
+      "1280x800": "PASS",
+      "1024x768": "PASS",
+      "768x1024": "PASS",
+      "430x932": "PASS",
+      "390x844": "PASS",
+      "375x812": "PASS"
+    },
+    "consoleErrors": [],
+    "reverified": "1920x1080 login was re-run after fixing the checker (fresh reload): .auth-card visible, dir=rtl, no overflow",
+    "checkerFixes": [
+      "position:fixed sidebar was reported hidden (offsetParent is null by spec) — checker fixed",
+      "bell counter badge overflow was flagged as a clipped button — decorative, checker fixed",
+      "card-mode requirement aligned to the real 900px breakpoint — checker fixed",
+      "login check now reloads after clearing storage (goto to the same URL is a no-op) — checker fixed"
+    ]
+  },
+  "accessibility": {
+    "login": {
+      "inputsLabelled": true,
+      "unlabelledControls": [],
+      "explicitlyAssociated": 2,
+      "unnamedControls": [],
+      "hasSkipLink": true,
+      "dir": "rtl",
+      "lang": "ar"
+    },
+    "shellAria": {
+      "unnamedControls": [],
+      "unnamedCount": 0,
+      "aria": {
+        "navLabel": "القائمة الرئيسية",
+        "navElement": true,
+        "mainLandmark": true,
+        "bannerLandmark": true,
+        "bellExpanded": "false",
+        "bellHasPopup": "menu",
+        "toastLive": "polite",
+        "tableSortable": 0
+      }
+    },
+    "focus": {
+      "chain": [
+        {
+          "tag": "input",
+          "cls": "input",
+          "focusVisible": true
+        },
+        {
+          "tag": "select",
+          "cls": "select",
+          "focusVisible": true
+        },
+        {
+          "tag": "select",
+          "cls": "select",
+          "focusVisible": true
+        },
+        {
+          "tag": "select",
+          "cls": "select",
+          "focusVisible": true
+        },
+        {
+          "tag": "button",
+          "cls": "filter-reset",
+          "focusVisible": true
+        },
+        {
+          "tag": "button",
+          "cls": "btn btn--primary",
+          "focusVisible": true
+        },
+        {
+          "tag": "th",
+          "cls": "is-sortable",
+          "focusVisible": true
+        },
+        {
+          "tag": "th",
+          "cls": "is-sortable",
+          "focusVisible": true
+        },
+        {
+          "tag": "th",
+          "cls": "is-sortable",
+          "focusVisible": true
+        },
+        {
+          "tag": "th",
+          "cls": "is-sortable",
+          "focusVisible": true
+        },
+        {
+          "tag": "th",
+          "cls": "is-sortable",
+          "focusVisible": true
+        },
+        {
+          "tag": "th",
+          "cls": "is-sortable",
+          "focusVisible": true
+        }
+      ],
+      "allVisible": true,
+      "distinctTargets": 5
+    },
+    "modal": {
+      "role": "dialog",
+      "ariaModal": "true",
+      "focusInsideOnOpen": true,
+      "bodyLocked": true,
+      "focusTrapped": true,
+      "escapeClosed": true,
+      "focusRestored": true
+    },
+    "contrast": [
+      {
+        "label": "primary button",
+        "fg": [
+          255,
+          255,
+          255
+        ],
+        "bg": [
+          15,
+          118,
+          110
+        ],
+        "fontSize": "13px",
+        "ratio": 5.47
+      },
+      {
+        "label": "body text",
+        "fg": [
+          51,
+          65,
+          85
+        ],
+        "bg": [
+          0,
+          0,
+          0
+        ],
+        "fontSize": "14px"
+      },
+      {
+        "label": "table header",
+        "fg": [
+          100,
+          116,
+          139
+        ],
+        "bg": [
+          248,
+          250,
+          252
+        ],
+        "fontSize": "12px",
+        "ratio": 4.55
+      },
+      {
+        "label": "muted text",
+        "fg": [
+          100,
+          116,
+          139
+        ],
+        "bg": [
+          0,
+          0,
+          0
+        ],
+        "fontSize": "13px"
+      },
+      {
+        "label": "nav item",
+        "fg": [
+          255,
+          255,
+          255
+        ],
+        "bg": [
+          0,
+          0,
+          0
+        ],
+        "fontSize": "13px"
+      },
+      {
+        "label": "badge text",
+        "fg": [
+          22,
+          101,
+          52
+        ],
+        "bg": [
+          236,
+          253,
+          243
+        ],
+        "fontSize": "11px",
+        "ratio": 6.76
+      }
+    ],
+    "notFound": {
+      "states": 1,
+      "title": "الصفحة غير موجودة"
+    },
+    "reducedMotionAnimationDuration": "1e-06s"
+  },
+  "functional": {
+    "customer": {
+      "created": {
+        "phone": "07779556788",
+        "id": "cmu3zwo18002jbo6525uheiym",
+        "registerStatus": 200
+      },
+      "allowed": {
+        "GET /auth/me": 200,
+        "GET /users/me": 200,
+        "GET /orders": 200,
+        "GET /payments": 200,
+        "GET /notifications": 200,
+        "GET /verification/me": 200,
+        "GET /cart": 200,
+        "GET /notifications/preferences": 200
+      },
+      "forbidden": {
+        "GET /admin/dashboard/overview": 403,
+        "GET /admin/orders": 403,
+        "GET /employees": 403,
+        "GET /roles": 403,
+        "GET /audit": 403,
+        "POST /products": 403,
+        "POST /roles": 403
+      },
+      "navItems": [
+        "إشعاراتي",
+        "حسابي"
+      ],
+      "forbiddenPage": "لا تملك صلاحية الوصول",
+      "cleanup": {
+        "deactivated": 200
+      }
+    },
+    "restricted": {
+      "allowedRead": {
+        "GET /admin/dashboard/overview": 200,
+        "GET /products": 200,
+        "GET /inventory": 200,
+        "GET /admin/orders": 200,
+        "GET /admin/payments": 200,
+        "GET /admin/notifications/summary": 200,
+        "GET /employees": 200,
+        "GET /roles": 200,
+        "GET /audit": 200
+      },
+      "forbidden": {
+        "POST /roles": 403,
+        "PATCH /admin/orders/1/status": 403,
+        "POST /admin/payments/1/confirm": 403,
+        "PATCH /users/1/status": 403,
+        "POST /admin/verifications/1/verify": 403,
+        "DELETE /products/1": 403
+      },
+      "uiGates": {
+        "roles_create_button": 0,
+        "products_create_button": 0,
+        "delete_buttons_anywhere": 0
+      }
+    },
+    "performance": {
+      "dashboardRequests": 5,
+      "duplicateRequests": [],
+      "domNodes": {
+        "before": 636,
+        "after": 636,
+        "growth": 0
+      },
+      "idleRequests": 0,
+      "bellPanels": 1,
+      "consoleErrors": []
+    },
+    "issues": []
+  },
+  "tests": {
+    "frontendCheck": "PASS",
+    "frontendTest": "36/36 (3 suites)",
+    "backendUnit": "184/184 (19 suites)",
+    "backendE2E": "349/349 (11 suites)",
+    "build": "PASS",
+    "typescript": "PASS",
+    "prismaValidate": "PASS",
+    "prismaMigrateStatus": "up to date (14 migrations)"
+  },
+  "security": {
+    "frontendSecrets": 0,
+    "hardcodedCredentials": 0,
+    "hardcodedJwtSecrets": 0,
+    "apiKeys": 0,
+    "externalCdnDependencies": 0,
+    "fetchOutsideCentralClient": 0,
+    "sessionStorageUsage": 0,
+    "accessTokenPersisted": false,
+    "refreshTokenStorage": "localStorage key alwled.session (documented)",
+    "fakeBusinessData": 0,
+    "permissionBypass": 0
+  },
+  "endpointsMeasuredLive": 30,
+  "databaseStateAfterQa": {
+    "users": 122,
+    "orders": 0,
+    "payments": 0,
+    "products": 2,
+    "notifications": 3523,
+    "migrations": 14,
+    "leftoversFromAutomatedRuns": {
+      "qaCustomer": "phone 07779556788 — SUSPENDED (cannot authenticate: 401 with a generic message)",
+      "e2eCreatedAccounts": "~27 ACTIVE accounts with no email created by today e2e runs (0755… / 0910… patterns)",
+      "note": "no database deletion was performed in this stage; purge available on request"
+    }
+  }
+}

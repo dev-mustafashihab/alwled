@@ -1,0 +1,504 @@
+/* shop.home.css — الصفحة الرئيسية (نطاق .shop-home-* و .shop-home)
+   PHASE 1 · STEP 2B — HOME VISUAL FOUNDATION
+   يعتمد على Storefront Semantic Tokens (--store-*) المعرّفة في tokens.css.
+   لا يمس: Product Card · Brands · Trust · Footer · Header.
+   ========================================================================== */
+
+/* ================= 1) إيقاع الصفحة ================= */
+#shop-view > .shop-home-ticker { margin-top: -17px; }      /* تعويض padding-top العام على .shop-main */
+.shop-home-section { margin-bottom: var(--space-8); }      /* 32px بين الأقسام */
+/* أقسام الرئيسية الداعمة (Brands/Trust) بنفس إيقاع الأقسام الأخرى */
+.shop-home.shop-section { margin-bottom: var(--space-8); }
+/* آخر قسم في الرئيسية: لا margin إضافي ⇒ المسافة إلى الفوتر تأتي من padding الصفحة (48px) */
+.shop-home.shop-section:last-of-type { margin-bottom: 0; }
+.shop-home.shop-home-slider { margin: var(--space-3) auto var(--space-8); }
+.shop-home-slider { margin: var(--space-3) auto var(--space-8); }
+
+/* ================= 2) NEWS TICKER ================= */
+.shop-home-ticker {
+  position: relative;
+  display: flex; align-items: center; gap: var(--space-2);
+  min-height: 2.25rem; height: auto;          /* 36px عند 100% — ينمو مع تكبير النص */
+  padding-block: var(--st-space-2);
+  padding-inline: var(--space-3);
+  border-radius: var(--radius-md);
+  background: var(--store-primary);
+  color: var(--store-surface);
+  overflow: hidden;
+}
+.shop-home-ticker__label {
+  flex: 0 0 auto;
+  display: inline-flex; align-items: center;
+  font-size: var(--st-caption);
+  line-height: 1;
+  opacity: .9;
+}
+.shop-home-ticker__viewport {
+  position: relative; flex: 1 1 auto;
+  min-height: 1.25rem; height: auto;          /* 20px عند 100% — لا يقصّ النص المتكبّر */
+  overflow: hidden;
+}
+/* حلقة سلسة: من 0 إلى -50% (نسختا الرسائل موجودتان في الـmarkup) ⇒ بلا فراغ */
+.shop-home-ticker__track {
+  display: inline-flex; align-items: center;
+  gap: var(--space-4);
+  min-height: 1.25rem; height: auto;
+  white-space: nowrap;
+  will-change: transform;
+  animation: shop-home-ticker-roll var(--store-ticker-duration) linear infinite;
+}
+.shop-home-ticker__item {
+  font-size: var(--st-body-sm);
+  font-weight: var(--fw-medium);
+  line-height: 1.4;
+  direction: rtl;                             /* نص كل رسالة RTL كما يجب */
+  color: var(--store-surface);
+}
+.shop-home-ticker__sep { opacity: .5; font-size: var(--st-caption); line-height: 1.25rem; }
+.shop-home-ticker:hover .shop-home-ticker__track,
+.shop-home-ticker:focus-within .shop-home-ticker__track { animation-play-state: paused; }
+/* 6 نسخ في المسار ⇒ التحريك بمقدار نسخة واحدة (1/6) من موضع مُزاح يمينًا إلى 0:
+   الشريط لا يفرغ أبدًا والحركة تبقى يسارية (النص يدخل من اليمين بترتيب قراءته الصحيح). */
+@keyframes shop-home-ticker-roll {
+  from { transform: translateX(16.6667%); }
+  to   { transform: translateX(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .shop-home-ticker__track { animation: none; }
+  .shop-home-ticker__viewport { overflow-x: auto; }
+}
+
+/* ================= 3) HERO SLIDER ================= */
+.shop-home-slider {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: var(--store-primary);
+}
+.shop-home-slider__viewport { overflow: hidden; border-radius: inherit; }
+.shop-home-slider__track {
+  display: flex;
+  transition: transform var(--store-slider-duration) var(--ease-out);
+  will-change: transform;
+}
+.shop-home-slide {
+  flex: 0 0 100%;
+  position: relative;
+  height: 236px;                                   /* جوال: 220–245 */
+  display: flex; flex-direction: column;
+  align-items: flex-start; justify-content: flex-start;
+  padding: var(--space-5) var(--space-4) 46px;
+  color: var(--store-surface);
+  /* هوية المتجر: أزرق primary + طبقة تعميق شفافة (بلا ألوان جديدة) */
+  background-image: linear-gradient(135deg, rgba(0, 0, 0, .30) 0%, rgba(0, 0, 0, 0) 62%);
+  background-color: var(--store-primary);
+}
+.shop-home-slide--2 { background-image: linear-gradient(160deg, rgba(0, 0, 0, .34) 0%, rgba(0, 0, 0, 0) 66%); }
+.shop-home-slide--3 { background-image: linear-gradient(115deg, rgba(0, 0, 0, .26) 0%, rgba(0, 0, 0, 0) 58%); }
+
+.shop-home-slide__shapes {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image: radial-gradient(circle at 88% 12%, rgba(255, 255, 255, .14), transparent 40%);
+}
+.shop-home-slide__body {
+  position: relative; z-index: 1;
+  display: flex; flex-direction: column; align-items: flex-start;
+  gap: var(--space-2);
+  width: 100%; max-width: 30rem;
+  text-align: start;
+}
+.shop-home-slide__title {
+  margin: 0; max-width: 20ch;
+  font-size: 1.5rem;                        /* 24px */
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  color: var(--store-surface);
+}
+.shop-home-slide__text {
+  margin: 0; max-width: 32ch;
+  font-size: var(--st-body);                       /* 14px */
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
+  color: var(--store-surface);                     /* أبيض كامل — بلا شفافية (إصلاح التباين) */
+}
+.shop-home-slide__cta {
+  margin-top: var(--space-2);
+  min-height: 44px; height: 44px; padding-block: 0;
+  padding-inline: var(--space-5);
+  border-radius: var(--radius-md);
+  border-color: var(--store-surface);
+  background: var(--store-surface);
+  color: var(--store-primary-active);
+  font-size: var(--st-body-sm);
+  font-weight: var(--fw-semibold);
+}
+.shop-home-slide__cta:hover { background: var(--store-surface-soft); color: var(--store-primary-active); }
+.shop-home-slide__cta:active { background: var(--store-primary-soft); }
+
+.shop-home-slider__arrow {
+  position: absolute; top: 50%; transform: translateY(-50%); z-index: 3;
+  width: 38px; height: 38px; display: none;
+  align-items: center; justify-content: center;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, .5);
+  background: rgba(0, 0, 0, .22);
+  color: var(--store-surface);
+}
+.shop-home-slider__arrow:hover { background: rgba(0, 0, 0, .38); }
+.shop-home-slider__arrow--prev { inset-inline-end: var(--space-3); }
+.shop-home-slider__arrow--next { inset-inline-start: var(--space-3); }
+@media (min-width: 768px) { .shop-home-slider__arrow { display: flex; } }
+
+/* النقاط: الشكل المرئي صغير · منطقة اللمس 32×32 منفصلة */
+.shop-home-slider__dots {
+  position: absolute; inset-inline: 0; bottom: var(--space-3); z-index: 3;
+  display: flex; gap: var(--space-6); justify-content: center;
+}
+.shop-home-slider__dot {
+  position: relative;
+  width: 8px; height: 8px; padding: 0; border: 0;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, .55);
+  cursor: pointer;
+}
+.shop-home-slider__dot::before {
+  content: ''; position: absolute; inset: -12px;    /* منطقة لمس 32×32 */
+  border-radius: var(--radius-pill);
+}
+.shop-home-slider__dot.is-active { width: 20px; border-radius: var(--radius-xs); background: var(--store-surface); }
+.shop-home-slider__dot:focus-visible { outline: 2px solid var(--store-surface); outline-offset: 3px; }
+
+@media (min-width: 768px) { .shop-home-slide { height: 330px; padding: var(--space-6) var(--space-8) 52px; } }
+@media (min-width: 1200px) { .shop-home-slide { height: 400px; padding: var(--space-8) var(--space-10) 56px; } }
+
+/* ================= 4) HOME SECTION HEADER (نمط موحّد) ================= */
+.shop-home .shop-section__head {
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  gap: var(--space-1) var(--space-3);
+  margin-bottom: var(--space-4);                   /* 16px قبل المحتوى */
+}
+.shop-home .shop-section__titles { flex: 1 1 auto; min-width: 0; }
+.shop-home .shop-section__title {
+  display: flex; align-items: center; gap: var(--space-2);
+  margin: 0;
+  font-size: var(--st-title-section);                         /* 20px */
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  color: var(--store-text);
+}
+.shop-home .shop-section__sub {
+  margin: var(--space-1) 0 0;
+  font-size: var(--st-body-sm);                         /* 13px */
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
+  color: var(--store-text-muted);
+}
+.shop-home .shop-section__link {
+  flex: 0 0 auto;
+  display: inline-flex; align-items: center;
+  min-height: 44px;                                /* منطقة لمس مناسبة */
+  padding-inline: var(--space-2);
+  font-size: var(--st-body-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--store-primary);
+  white-space: nowrap;
+}
+.shop-home .shop-section__link:hover { color: var(--store-primary-hover); }
+.shop-home .shop-section__link:focus-visible { outline: 2px solid var(--store-primary); outline-offset: 2px; border-radius: var(--radius-xs); }
+.shop-home .shop-section__icon { color: var(--store-primary); display: inline-flex; }
+
+/* ================= 5) CATEGORIES (Discovery Navigation) ================= */
+#shop-home-categories { scroll-margin-top: 84px; }
+#shop-home-categories .shop-taxonomy {
+  display: flex; gap: var(--space-3);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: var(--space-1);
+  scrollbar-width: none;
+}
+#shop-home-categories .shop-taxonomy::-webkit-scrollbar { display: none; }
+#shop-home-categories .shop-taxonomy__item {
+  flex: 0 0 138px;                                  /* 125–145 على الجوال */
+  scroll-snap-align: start;
+  min-width: 0;
+  display: flex; flex-direction: column; align-items: flex-start;
+  gap: var(--st-space-2);
+  padding: var(--st-space-10);
+  border: 1px solid var(--store-border);
+  border-radius: var(--radius-lg);
+  background: var(--store-surface);
+  color: var(--store-text);
+  text-decoration: none;
+  transition: border-color var(--dur-fast) var(--ease-out),
+              box-shadow var(--dur-fast) var(--ease-out),
+              transform var(--dur-fast) var(--ease-out),
+              background-color var(--dur-fast) var(--ease-out);
+}
+#shop-home-categories .shop-taxonomy__item:active { background: var(--store-surface-soft); }
+#shop-home-categories .shop-taxonomy__icon {
+  width: 32px; height: 32px; flex: 0 0 auto;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: var(--radius-md);
+  background: var(--store-primary-soft);
+  color: var(--store-primary);
+}
+#shop-home-categories .shop-taxonomy__name {
+  font-size: var(--st-body-sm);
+  font-weight: var(--fw-semibold);
+  line-height: 1.3;
+  color: var(--store-text);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden; word-break: break-word;
+}
+#shop-home-categories .shop-taxonomy__count {
+  font-size: var(--st-caption);
+  color: var(--store-text-muted);
+}
+
+@media (min-width: 768px) {
+  #shop-home-categories .shop-taxonomy {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+    overflow: visible; gap: var(--space-3);
+  }
+  #shop-home-categories .shop-taxonomy__item { flex: initial; }
+  #shop-home-categories .shop-taxonomy__item:hover {
+    border-color: var(--store-primary);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-1px);
+  }
+}
+@media (min-width: 1200px) {
+  #shop-home-categories .shop-taxonomy { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+}
+
+/* ================= 6) MOBILE POLISH (≤600px) — طبقة الجوال ================= */
+@media (max-width: 600px) {
+  /* ---------- STEP 2C: بطاقة منتج الرئيسية على الجوال ---------- */
+  .shop-home .shop-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);                          /* 12px */
+  }
+  .shop-home .shop-card {
+    display: flex; flex-direction: column;
+    background: var(--store-surface);
+    border: 1px solid var(--store-border);
+    border-radius: var(--radius-lg);
+    box-shadow: none;
+  }
+  .shop-home .shop-card:active { background: var(--store-surface-soft); }
+
+  /* مساحة الصورة — Responsive 125–145px */
+  .shop-home .shop-card__media {
+    aspect-ratio: auto;
+    height: clamp(126px, 34vw, 142px);
+    padding: var(--st-space-6);
+    background: var(--store-surface);
+  }
+  .shop-home .shop-card__media img { max-height: 100%; object-fit: contain; }
+  /* Placeholder بنفس المساحة تماماً — لا ارتفاع إضافي */
+  .shop-home .shop-card__placeholder { height: 100%; display: flex; align-items: center; justify-content: center; color: var(--store-text-faint); }
+  .shop-home .shop-card__placeholder svg { width: 30px; height: 30px; }
+
+  /* شارة الخصم: أعلى الصورة · ≥11px */
+  .shop-home .shop-card__flags { inset-block-start: var(--space-2); inset-inline-start: var(--space-2); }
+  .shop-home .shop-card__flags .badge { font-size: 0.6875rem; padding: var(--st-space-2) 8px; }
+
+  /* جسم البطاقة */
+  .shop-home .shop-card__body {
+    padding: var(--space-3);
+    gap: 3px;
+    flex: 1 1 auto;
+    display: flex; flex-direction: column;
+  }
+
+  /* Brand فقط (التصنيف ورمز المنتج مخفيان بصرياً) */
+  .shop-home .shop-card__meta { font-size: var(--st-caption); line-height: 1.35; color: var(--store-text-muted); }
+  .shop-home .shop-card__meta > span { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .shop-home .shop-card__meta > span:nth-child(n+2) { display: none; }
+
+  /* الاسم: 13.5px semibold · سطران بحد أقصى · مساحة ثابتة لتوازي البطاقات */
+  .shop-home .shop-card__name {
+    font-size: 0.84375rem; font-weight: var(--fw-semibold);
+    line-height: 1.32; margin: 0; color: var(--store-text);
+    /* بلا حجز ارتفاع ثابت: شبكة CSS تمدّ بطاقات الصف بالتساوي
+       + margin-top:auto على السعر/الزر ⇒ الاصطفاف محفوظ مع أقصر ارتفاع ممكن */
+  }
+  .shop-home .shop-card__name a,
+  .shop-home .shop-card__name span {
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    color: inherit;
+  }
+
+  /* مواصفة قصيرة: سطر واحد */
+  .shop-home .shop-card__desc {
+    font-size: var(--st-meta); line-height: 1.4; color: var(--store-text-muted);
+    display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;
+  }
+
+  /* السعر — يبقى قريباً من أسفل البطاقة */
+  .shop-home .shop-card__foot {
+    margin-top: auto;
+    padding-top: var(--space-2);
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--st-space-2) var(--space-2);
+  }
+  .shop-home .shop-price { gap: var(--space-2); align-items: baseline; min-width: 0; flex-wrap: wrap; }
+  .shop-home .shop-price__now {
+    font-size: clamp(0.9375rem, 4.6vw, 1.0625rem);
+    font-weight: var(--fw-bold);
+    color: var(--store-text);
+    white-space: nowrap;
+  }
+  .shop-home .shop-price__was {
+    font-size: var(--st-caption);
+    white-space: nowrap;
+    text-decoration: line-through;
+    color: var(--store-text-faint);                                  /* fallback */
+    color: color-mix(in srgb, var(--store-text-faint) 78%, var(--store-text));  /* تعميق للوصول إلى AA */
+  }
+  /* شارة «وفّر %» مكرّرة مع شارة الخصم على الصورة ⇒ مخفية على الرئيسية+الجوال فقط */
+  .shop-home .shop-card__foot .badge { display: none; }
+
+  /* أضف للسلة */
+  .shop-home .shop-card__actions { margin-top: 0; padding-top: var(--space-2); gap: 0; }
+  .shop-home .shop-card__add {
+    width: 100%;
+    height: var(--control-h);                    /* 40px */
+    min-height: var(--control-h);
+    padding: 0 var(--space-2);
+    font-size: var(--st-body-sm);
+    font-weight: var(--fw-semibold);
+    white-space: nowrap;
+    border-radius: var(--radius-md);
+    /* هوية المتجر الزرقاء (بدل primary العام teal) — عرض فقط، نفس الـhandler */
+    background: var(--store-primary);
+    border-color: var(--store-primary);
+    color: var(--store-surface);
+  }
+  .shop-home .shop-card__add:hover { background: var(--store-primary-hover); border-color: var(--store-primary-hover); }
+  .shop-home .shop-card__add:active { background: var(--store-primary-active); border-color: var(--store-primary-active); }
+  .shop-home .shop-card__details { display: none; }
+
+  /* ---------- STEP 2D: العلامات التجارية (صف مضغوط) ---------- */
+  .shop-home .shop-chips {
+    flex-wrap: nowrap; overflow-x: auto;
+    scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch;
+    gap: var(--space-2);
+    padding-bottom: var(--space-1);
+    scrollbar-width: none;
+  }
+  .shop-home .shop-chips::-webkit-scrollbar { display: none; }
+  .shop-home .shop-chips .chip {
+    flex: 0 0 auto; scroll-snap-align: start;
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 46px; height: 46px;                  /* 42–52 */
+    padding-inline: var(--space-4);
+    border: 1px solid var(--store-border);
+    border-radius: var(--radius-md);
+    background: var(--store-surface);
+    color: var(--store-text);
+    font-size: var(--st-body-sm);
+    font-weight: var(--fw-semibold);
+    box-shadow: none;
+  }
+  .shop-home .shop-chips .chip:active { background: var(--store-surface-soft); }
+
+  /* ---------- STEP 2D: قسم الثقة (2×2 مضغوط ومتوازن) ---------- */
+  .shop-home .shop-benefits {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+    align-items: stretch;
+  }
+  .shop-home .shop-benefit {
+    display: flex; flex-direction: column; align-items: flex-start;
+    gap: var(--space-2);
+    padding: var(--space-3);
+    border: 1px solid var(--store-border);
+    border-radius: var(--radius-lg);
+    background: var(--store-surface);
+    box-shadow: none;
+  }
+  .shop-home .shop-benefit__icon {
+    width: 34px; height: 34px; flex: 0 0 auto;
+    display: inline-flex; align-items: center; justify-content: center;
+    border-radius: var(--radius-md);
+    background: var(--store-primary-soft);
+    color: var(--store-primary);
+    font-size: 1.0625rem;
+  }
+  .shop-home .shop-benefit__title {
+    font-size: 0.84375rem; font-weight: var(--fw-semibold);
+    line-height: 1.3; color: var(--store-text);
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .shop-home .shop-benefit__text {
+    font-size: var(--st-meta); line-height: 1.45; color: var(--store-text-muted);
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+
+
+}
+
+/* شاشات صغيرة جداً */
+@media (max-width: 380px) {
+  .shop-home .shop-card__media { height: 128px; }
+  .shop-home .shop-card__add { font-size: 0.78125rem; height: 38px; min-height: 38px; }
+  .shop-home-slide { height: 228px; }
+  .shop-home-slide__title { font-size: var(--st-title-section); }
+  #shop-home-categories .shop-taxonomy__item { flex: 0 0 130px; }
+}
+
+/* الشكل الصغير للنصوص المساعدة */
+.visually-hidden {
+  position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* ---------------------------------------------- STEP 5 — سلايدر الصور الحقيقي
+   مصدره GET /slider · الصورة هي العنصر الأساسي · بلا crop/bلا distortion.
+   لا يُحذف أي شيء قديم (تنظيف Legacy = Phase 8). */
+.shop-home-slider .shop-home-slide {
+  position: relative;              /* مرجع لتوضيع الـoverlay عند وجود محتوى */
+  background-image: none;          /* إلغاء التدرّجات الزخرفية القديمة على هذا المحتوى */
+  min-height: 0;
+  height: auto;
+  padding: 0;
+}
+.shop-home-slide__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  line-height: 0;                  /* يمنع الفراغ السفلي تحت الصورة */
+}
+.shop-home-slide__img {
+  display: block;
+  width: 100%;
+  height: auto;                    /* النسبة الطبيعية للصورة محفوظة */
+  object-fit: contain;             /* لا قص ولا تمديد */
+  background: var(--store-surface-soft, #f6f7f9);
+}
+.shop-home-slider .shop-home-slide__body {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  line-height: 1.7;
+  padding: var(--space-4) var(--space-5);
+  color: #fff;
+  background: linear-gradient(to top, rgba(0, 0, 0, .62), rgba(0, 0, 0, 0));
+  text-align: start;
+}
+.shop-home-slider .shop-home-slide__title { margin: 0; font-size: clamp(1.05rem, .95rem + .6vw, 1.5rem); font-weight: 700; }
+.shop-home-slider .shop-home-slide__text { margin: 4px 0 0; font-size: .95rem; opacity: .95; }
+.shop-home-slider .shop-home-slide__cta {
+  display: inline-block; margin-top: 10px; padding: 10px 18px; border-radius: 10px;
+  background: #FFBF17; color: #171717; font-weight: 700; line-height: 1.4;
+}
+/* الشرائح غير النشطة خارج المسار البصري */
+.shop-home-slider .shop-home-slide[aria-hidden="true"] { pointer-events: none; }
+
+/* إصلاح انحدار: السلايدر صار أول محتوى مرئي بعد الهيدر/الشريط السريع
+   ⇒ إلغاء الهامش العلوي كي لا يتضاعف الفراغ تحت الهيدر */
+/* تعويض padding-top للـmain (32px) بنفس نمط الشريط السابق (−17px) ⇒ فراغ ≤16px */
+#shop-view > .shop-home-slider:first-child { margin-top: -16px; }
+#shop-view > .shop-home-slider:first-child + * { margin-top: var(--space-6); }

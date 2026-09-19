@@ -1,0 +1,217 @@
+{
+  "stage": "15",
+  "scope": "production smoke (read-only + auth)",
+  "api": "https://panel.fahd-car.cloud/alwled-api/api/v1",
+  "total": 32,
+  "passed": 32,
+  "failed": 0,
+  "results": [
+    {
+      "check": "health /health → 200",
+      "status": "PASS",
+      "got": "200",
+      "ms": 75.0
+    },
+    {
+      "check": "health /health/live → 200",
+      "status": "PASS",
+      "got": "200",
+      "ms": 19.1
+    },
+    {
+      "check": "security headers present (CSP, HSTS, X-Content-Type-Options, Referrer-Policy, X-Frame-Options)",
+      "status": "PASS",
+      "got": "[\"Access-Control-Allow-Credentials\", \"Access-Control-Expose-Headers\", \"Connection\", \"Content-Length\", \"Content-Security-Policy\", \"Content-Type\", \"Cross-Origin-O"
+    },
+    {
+      "check": "X-Request-Id is generated per request",
+      "status": "PASS",
+      "got": "mu4hvt6g-9wd7fs9j"
+    },
+    {
+      "check": "health /health/ready → 200",
+      "status": "PASS",
+      "got": "200",
+      "ms": 20.2
+    },
+    {
+      "check": "readiness body exposes no secrets/host/db url",
+      "status": "PASS",
+      "got": "{\"status\": \"ready\", \"database\": \"up\", \"timestamp\": \"2026-09-16T19:29:42.541Z\"}"
+    },
+    {
+      "check": "swagger exposure is explicit (dev: 200 · production: disabled unless SWAGGER_ENABLED=true)",
+      "status": "PASS",
+      "got": "200",
+      "detail": "this deployment is a dev/staging host"
+    },
+    {
+      "check": "public catalog reachable without auth",
+      "status": "PASS",
+      "got": "200",
+      "ms": 33.9
+    },
+    {
+      "check": "public product detail reachable",
+      "status": "PASS",
+      "got": "200",
+      "ms": 26.1
+    },
+    {
+      "check": "private cart refuses anonymous access (401)",
+      "status": "PASS",
+      "got": "401",
+      "ms": 15.4
+    },
+    {
+      "check": "customer login works",
+      "status": "PASS",
+      "got": "200",
+      "ms": 250.8
+    },
+    {
+      "check": "customer /auth/me works",
+      "status": "PASS",
+      "got": "200",
+      "ms": 23.8
+    },
+    {
+      "check": "owner login works",
+      "status": "PASS",
+      "got": "200",
+      "ms": 272.1
+    },
+    {
+      "check": "customer read /cart",
+      "status": "PASS",
+      "got": "200",
+      "ms": 32.9
+    },
+    {
+      "check": "customer read /orders?page=1&limit=5",
+      "status": "PASS",
+      "got": "200",
+      "ms": 48.9
+    },
+    {
+      "check": "customer read /payments?page=1&limit=5",
+      "status": "PASS",
+      "got": "200",
+      "ms": 40.9
+    },
+    {
+      "check": "customer read /notifications?limit=5",
+      "status": "PASS",
+      "got": "200",
+      "ms": 62.7
+    },
+    {
+      "check": "customer read /notifications/unread-count",
+      "status": "PASS",
+      "got": "200",
+      "ms": 33.0
+    },
+    {
+      "check": "customer read /verification/me",
+      "status": "PASS",
+      "got": "200",
+      "ms": 25.2
+    },
+    {
+      "check": "customer read /users/me",
+      "status": "PASS",
+      "got": "200",
+      "ms": 25.6
+    },
+    {
+      "check": "customer read /auth/sessions",
+      "status": "PASS",
+      "got": "200",
+      "ms": 25.3
+    },
+    {
+      "check": "checkout preview responds (200 with cart, or 409 when empty — never 5xx)",
+      "status": "PASS",
+      "got": "409",
+      "ms": 30.7
+    },
+    {
+      "check": "admin read /admin/dashboard/overview",
+      "status": "PASS",
+      "got": "200",
+      "ms": 51.6
+    },
+    {
+      "check": "admin read /admin/dashboard/payment-review?limit=5",
+      "status": "PASS",
+      "got": "200",
+      "ms": 32.1
+    },
+    {
+      "check": "admin read /products?page=1&limit=5",
+      "status": "PASS",
+      "got": "200",
+      "ms": 44.3
+    },
+    {
+      "check": "admin read /admin/orders?page=1&limit=5",
+      "status": "PASS",
+      "got": "200",
+      "ms": 38.0
+    },
+    {
+      "check": "admin read /admin/payments?page=1&limit=5",
+      "status": "PASS",
+      "got": "200",
+      "ms": 35.2
+    },
+    {
+      "check": "admin read /admin/notifications?page=1&limit=5",
+      "status": "PASS",
+      "got": "200",
+      "ms": 46.9
+    },
+    {
+      "check": "customer is blocked from admin surfaces (401/403/404)",
+      "status": "PASS",
+      "got": "{\"/admin/dashboard/overview\": 403, \"/admin/orders?page=1&limit=1\": 403, \"/employees?page=1&limit=1\": 403}"
+    },
+    {
+      "check": "unknown resource returns 404 without internals",
+      "status": "PASS",
+      "got": "404"
+    },
+    {
+      "check": "bad credentials return a generic 401",
+      "status": "PASS",
+      "got": "401"
+    },
+    {
+      "check": "no endpoint in the smoke set exceeds 2s",
+      "status": "PASS",
+      "got": "[[\"/auth/login\", 251], [\"/health\", 75], [\"/notifications?limit=5\", 63], [\"/admin/dashboard/overview\", 52], [\"/orders?page=1&limit=5\", 49]]"
+    }
+  ],
+  "slowest": [
+    [
+      "/auth/login",
+      250.8
+    ],
+    [
+      "/health",
+      75.0
+    ],
+    [
+      "/notifications?limit=5",
+      62.7
+    ],
+    [
+      "/admin/dashboard/overview",
+      51.6
+    ],
+    [
+      "/orders?page=1&limit=5",
+      48.9
+    ]
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "light_top": {
+    "theme": "light",
+    "header": [
+      "rgb(255, 255, 255)",
+      "rgb(230, 236, 243)",
+      "none"
+    ],
+    "search": [
+      "rgb(248, 250, 252)",
+      "rgb(15, 23, 42)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "cart": [
+      "rgb(248, 250, 252)",
+      "rgb(15, 23, 42)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "burger": [
+      "rgb(248, 250, 252)",
+      "rgb(15, 23, 42)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "storeSurface": "#ffffff",
+    "storeText": "#0f172a",
+    "overflow": 0
+  },
+  "light_scrolled": {
+    "theme": "light",
+    "header": [
+      "rgb(255, 255, 255)",
+      "rgb(230, 236, 243)",
+      "rgba(15, 23, 42, 0.08) 0px 1px 3px 0px, rgba(15, 23, 42, 0.04) 0px 1px 2px 0px"
+    ],
+    "search": [
+      "rgb(248, 250, 252)",
+      "rgb(15, 23, 42)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "cart": [
+      "rgb(248, 250, 252)",
+      "rgb(15, 23, 42)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "burger": [
+      "rgb(248, 250, 252)",
+      "rgb(15, 23, 42)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "storeSurface": "#ffffff",
+    "storeText": "#0f172a",
+    "overflow": 0
+  },
+  "dark_top": {
+    "theme": "dark",
+    "header": [
+      "rgb(18, 27, 43)",
+      "rgb(30, 42, 61)",
+      "none"
+    ],
+    "search": [
+      "rgb(15, 24, 38)",
+      "rgb(241, 245, 249)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "cart": [
+      "rgb(15, 24, 38)",
+      "rgb(241, 245, 249)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "burger": [
+      "rgb(15, 24, 38)",
+      "rgb(241, 245, 249)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "storeSurface": "#121b2b",
+    "storeText": "#f1f5f9",
+    "overflow": 0
+  },
+  "dark_scrolled": {
+    "theme": "dark",
+    "header": [
+      "rgb(18, 27, 43)",
+      "rgb(30, 42, 61)",
+      "rgba(0, 0, 0, 0.45) 0px 1px 3px 0px"
+    ],
+    "search": [
+      "rgb(15, 24, 38)",
+      "rgb(241, 245, 249)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "cart": [
+      "rgb(15, 24, 38)",
+      "rgb(241, 245, 249)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "burger": [
+      "rgb(15, 24, 38)",
+      "rgb(241, 245, 249)",
+      "rgba(0, 0, 0, 0)"
+    ],
+    "storeSurface": "#121b2b",
+    "storeText": "#f1f5f9",
+    "overflow": 0
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "stage": "14.4",
+  "scope": "frontend security + external dependency scan",
+  "files_scanned": 50,
+  "qa_fixture_tools": [
+    "qa.py",
+    "qa_a11y.py",
+    "qa_admin_regression.py",
+    "qa_endpoints.py",
+    "qa_functional.py",
+    "qa_shop_143_api.py",
+    "qa_shop_143_scan.py",
+    "qa_shop_143_ui.py",
+    "qa_shop_cart.py",
+    "qa_stage144_admin.py",
+    "qa_stage144_scan.py",
+    "qa_stage144_security.py",
+    "qa_stage144_status_reflection.py",
+    "qa_stage144_ui.py",
+    "qa_visual.py"
+  ],
+  "total": 23,
+  "passed": 23,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "shipped browser files scanned",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "files=50"
+    },
+    {
+      "check": "no hardcoded JWT (eyJ…)",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "no api key assignments",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "no password literals in shipped code",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "no bearer literals",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "no SHAMCASH env reads in browser code",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "no private key blocks",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "no refresh/access token literals",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "no external resource references in shipped frontend (CDN/fonts/images/js/css/analytics)",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "SVG namespace strings are present but never fetched (documented, not a dependency)",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "occurrences=4"
+    },
+    {
+      "check": "no external payment/SMS/email/verification/analytics provider reference",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "no fetch() outside the central api client",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "no axios usage anywhere (not part of the stack)",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "public store calls zero /admin endpoints",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "public store calls zero staff surfaces",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "no fake data / fake success helpers in shipped code",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "no shipped code writes a payment/verification final status",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "no token/password/amount written to browser storage",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "no dynamic HTML injection sink with untrusted data",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "remaining innerHTML sinks are static literals (table headers / resets) — no interpolation",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "static sinks=4"
+    },
+    {
+      "check": "zero QA fixture credentials inside shipped browser files",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "QA fixture credentials are limited to local QA tools (documented exception, never shipped)",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "qa tools carrying fixtures=15 of 20; shipped files with fixtures=0"
+    },
+    {
+      "check": "admin panel does not embed store modules",
+      "violations": 0,
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ]
+}

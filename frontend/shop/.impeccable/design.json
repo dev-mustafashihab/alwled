@@ -1,0 +1,708 @@
+{
+ "schemaVersion": 2,
+ "generatedAt": "2026-09-18T22:07:47Z",
+ "title": "Design System: الوليد للأجهزة الكهربائية — Storefront",
+ "extensions": {
+  "colorMeta": {
+   "store-primary": {
+    "role": "primary",
+    "displayName": "أزرق المتجر",
+    "canonical": "oklch(0.502 0.164 259.0)",
+    "hex": "#1F5FBF",
+    "tonalRamp": [
+     "#000046",
+     "#00186C",
+     "#003A93",
+     "#1C5CBC",
+     "#4380DF",
+     "#68A5FF",
+     "#8ECAFF",
+     "#B6F0FF"
+    ]
+   },
+   "store-primary-hover": {
+    "role": "primary",
+    "displayName": "أزرق المتجر — hover",
+    "canonical": "oklch(0.459 0.148 258.5)",
+    "hex": "#1A54A8",
+    "tonalRamp": [
+     "#000041",
+     "#001B66",
+     "#003D8C",
+     "#265EB2",
+     "#4B82D5",
+     "#6FA6F8",
+     "#95CBFF",
+     "#BCF1FF"
+    ]
+   },
+   "store-primary-active": {
+    "role": "primary",
+    "displayName": "أزرق المتجر — active",
+    "canonical": "oklch(0.419 0.132 258.1)",
+    "hex": "#164A93",
+    "tonalRamp": [
+     "#00003C",
+     "#001E60",
+     "#093E85",
+     "#2E60A9",
+     "#5283CB",
+     "#76A6EF",
+     "#9BCBFF",
+     "#C2F1FF"
+    ]
+   },
+   "store-primary-soft": {
+    "role": "primary",
+    "displayName": "أزرق المتجر — soft",
+    "canonical": "oklch(0.956 0.015 257.2)",
+    "hex": "#EAF1FB",
+    "tonalRamp": [
+     "#080B10",
+     "#21252B",
+     "#3E4249",
+     "#5D6269",
+     "#7D838B",
+     "#A0A6AE",
+     "#C3CAD3",
+     "#E8EFF9"
+    ]
+   },
+   "store-bg": {
+    "role": "neutral",
+    "displayName": "خلفية الصفحة",
+    "canonical": "oklch(0.984 0.003 247.9)",
+    "hex": "#F8FAFC",
+    "tonalRamp": [
+     "#0A0B0C",
+     "#242526",
+     "#414243",
+     "#606163",
+     "#818284",
+     "#A3A5A7",
+     "#C7C9CB",
+     "#EDEFF1"
+    ]
+   },
+   "store-surface": {
+    "role": "neutral",
+    "displayName": "سطح",
+    "canonical": "oklch(1.000 0.000 89.9)",
+    "hex": "#FFFFFF",
+    "tonalRamp": [
+     "#0B0B0B",
+     "#252525",
+     "#424242",
+     "#616161",
+     "#828282",
+     "#A5A5A5",
+     "#C9C9C9",
+     "#EEEEEE"
+    ]
+   },
+   "store-surface-soft": {
+    "role": "neutral",
+    "displayName": "سطح بارد ثانوي",
+    "canonical": "oklch(0.984 0.003 247.9)",
+    "hex": "#F8FAFC",
+    "tonalRamp": [
+     "#0A0B0C",
+     "#242526",
+     "#414243",
+     "#606163",
+     "#818284",
+     "#A3A5A7",
+     "#C7C9CB",
+     "#EDEFF1"
+    ]
+   },
+   "store-text": {
+    "role": "neutral",
+    "displayName": "نص أساسي",
+    "canonical": "oklch(0.208 0.040 265.8)",
+    "hex": "#0F172A",
+    "tonalRamp": [
+     "#040A1B",
+     "#1C2538",
+     "#384256",
+     "#586176",
+     "#798298",
+     "#9BA5BA",
+     "#C0C9DE",
+     "#E5EFFF"
+    ]
+   },
+   "store-text-body": {
+    "role": "neutral",
+    "displayName": "نص المتن",
+    "canonical": "oklch(0.372 0.039 257.3)",
+    "hex": "#334155",
+    "tonalRamp": [
+     "#030B1A",
+     "#192637",
+     "#354357",
+     "#546277",
+     "#758398",
+     "#98A6BB",
+     "#BCCADF",
+     "#E2F0FF"
+    ]
+   },
+   "store-text-muted": {
+    "role": "neutral",
+    "displayName": "نص خافت",
+    "canonical": "oklch(0.554 0.041 257.4)",
+    "hex": "#64748B",
+    "tonalRamp": [
+     "#030B1A",
+     "#1A2637",
+     "#354356",
+     "#536278",
+     "#73849B",
+     "#96A6BD",
+     "#BBCBE2",
+     "#E0F0FF"
+    ]
+   },
+   "store-text-faint": {
+    "role": "neutral",
+    "displayName": "نص أشد خفوتًا",
+    "canonical": "oklch(0.616 0.031 258.4)",
+    "hex": "#7A8698",
+    "tonalRamp": [
+     "#050B16",
+     "#1D2532",
+     "#394351",
+     "#576272",
+     "#778395",
+     "#9AA6B8",
+     "#BECADC",
+     "#E4EFFF"
+    ]
+   },
+   "store-border": {
+    "role": "neutral",
+    "displayName": "حدّ",
+    "canonical": "oklch(0.941 0.011 252.1)",
+    "hex": "#E6ECF3",
+    "tonalRamp": [
+     "#090B0F",
+     "#222529",
+     "#3F4247",
+     "#5D6267",
+     "#7E8388",
+     "#A0A6AC",
+     "#C4CAD0",
+     "#E9EFF6"
+    ]
+   },
+   "store-border-strong": {
+    "role": "neutral",
+    "displayName": "حدّ أقوى",
+    "canonical": "oklch(0.869 0.020 252.9)",
+    "hex": "#CBD5E1",
+    "tonalRamp": [
+     "#070C11",
+     "#20262D",
+     "#3C434B",
+     "#5A626B",
+     "#7B838D",
+     "#9DA6B1",
+     "#C0CAD6",
+     "#E6F0FC"
+    ]
+   },
+   "store-success": {
+    "role": "tertiary",
+    "displayName": "أخضر النجاح",
+    "canonical": "oklch(0.627 0.170 149.2)",
+    "hex": "#16A34A",
+    "tonalRamp": [
+     "#001600",
+     "#003500",
+     "#005600",
+     "#007825",
+     "#079D45",
+     "#49C169",
+     "#77E58F",
+     "#A2FFB6"
+    ]
+   },
+   "store-warning": {
+    "role": "tertiary",
+    "displayName": "كهرمان التحذير",
+    "canonical": "oklch(0.666 0.157 58.3)",
+    "hex": "#D97706",
+    "tonalRamp": [
+     "#2B0000",
+     "#4F0000",
+     "#752400",
+     "#9C4500",
+     "#C46600",
+     "#EB892E",
+     "#FFAF5F",
+     "#FFD68A"
+    ]
+   },
+   "store-danger": {
+    "role": "secondary",
+    "displayName": "أحمر الخصم",
+    "canonical": "oklch(0.577 0.215 27.3)",
+    "hex": "#DC2626",
+    "tonalRamp": [
+     "#3B0000",
+     "#650000",
+     "#900000",
+     "#BB0007",
+     "#E63631",
+     "#FF6559",
+     "#FF8F80",
+     "#FFB9A8"
+    ]
+   },
+   "store-info": {
+    "role": "primary",
+    "displayName": "أزرق التركيز في الداكن",
+    "canonical": "oklch(0.546 0.215 262.9)",
+    "hex": "#2563EB",
+    "tonalRamp": [
+     "#0B0058",
+     "#000081",
+     "#002DAB",
+     "#1752D6",
+     "#3978FE",
+     "#5E9EFF",
+     "#84C5FF",
+     "#ABECFF"
+    ]
+   },
+   "dark-bg": {
+    "role": "neutral",
+    "displayName": "داكن — خلفية",
+    "canonical": "oklch(0.182 0.031 261.1)",
+    "hex": "#0A1220",
+    "tonalRamp": [
+     "#050B18",
+     "#1D2534",
+     "#394252",
+     "#586272",
+     "#798393",
+     "#9CA6B6",
+     "#C0CAD9",
+     "#E6EFFE"
+    ]
+   },
+   "dark-surface": {
+    "role": "neutral",
+    "displayName": "داكن — سطح",
+    "canonical": "oklch(0.222 0.034 261.5)",
+    "hex": "#121B2B",
+    "tonalRamp": [
+     "#040B19",
+     "#1C2536",
+     "#384254",
+     "#586273",
+     "#798395",
+     "#9BA6B7",
+     "#C0CADB",
+     "#E5EFFF"
+    ]
+   },
+   "dark-surface-soft": {
+    "role": "neutral",
+    "displayName": "داكن — سطح ثانوي",
+    "canonical": "oklch(0.208 0.031 259.0)",
+    "hex": "#0F1826",
+    "tonalRamp": [
+     "#040B18",
+     "#1C2534",
+     "#394352",
+     "#586271",
+     "#798393",
+     "#9CA6B5",
+     "#C0CAD9",
+     "#E5EFFE"
+    ]
+   },
+   "dark-text": {
+    "role": "neutral",
+    "displayName": "داكن — نص أساسي",
+    "canonical": "oklch(0.968 0.007 247.9)",
+    "hex": "#F1F5F9",
+    "tonalRamp": [
+     "#0A0B0D",
+     "#232527",
+     "#404245",
+     "#5F6264",
+     "#808386",
+     "#A2A5A9",
+     "#C6CACD",
+     "#EBEFF3"
+    ]
+   },
+   "dark-text-body": {
+    "role": "neutral",
+    "displayName": "داكن — نص المتن",
+    "canonical": "oklch(0.869 0.020 252.9)",
+    "hex": "#CBD5E1",
+    "tonalRamp": [
+     "#070C11",
+     "#20262D",
+     "#3C434B",
+     "#5A626B",
+     "#7B838D",
+     "#9DA6B1",
+     "#C0CAD6",
+     "#E6F0FC"
+    ]
+   },
+   "dark-text-muted": {
+    "role": "neutral",
+    "displayName": "داكن — نص خافت",
+    "canonical": "oklch(0.711 0.035 256.8)",
+    "hex": "#94A3B8",
+    "tonalRamp": [
+     "#040B17",
+     "#1C2633",
+     "#374353",
+     "#566274",
+     "#768397",
+     "#97A6BB",
+     "#BCCADF",
+     "#E1F0FF"
+    ]
+   },
+   "dark-border": {
+    "role": "neutral",
+    "displayName": "داكن — حدّ",
+    "canonical": "oklch(0.283 0.039 259.4)",
+    "hex": "#1E2A3D",
+    "tonalRamp": [
+     "#030B1B",
+     "#1A2538",
+     "#364356",
+     "#556276",
+     "#768398",
+     "#99A6BA",
+     "#BDCADE",
+     "#E3EFFF"
+    ]
+   },
+   "brand-teal-logo": {
+    "role": "secondary",
+    "displayName": "teal الشعار (أصل محفوظ)",
+    "canonical": "oklch(0.704 0.123 182.5)",
+    "hex": "#14B8A6",
+    "tonalRamp": [
+     "#00150F",
+     "#003329",
+     "#005347",
+     "#007567",
+     "#009988",
+     "#25BEAB",
+     "#61E2D0",
+     "#90FFF5"
+    ]
+   }
+  },
+  "typographyMeta": {
+   "section-title": {
+    "displayName": "Section title",
+    "purpose": "عناوين الصفحات/الأقسام."
+   },
+   "product-name": {
+    "displayName": "Product name",
+    "purpose": "اسم المنتج في القوائم — سطران كحد أقصى."
+   },
+   "price-now": {
+    "displayName": "Price",
+    "purpose": "السعر الحالي — أكبر نص في البطاقة بعد الصورة."
+   },
+   "body": {
+    "displayName": "Body",
+    "purpose": "النص العام والتنقّل."
+   },
+   "field": {
+    "displayName": "Field",
+    "purpose": "الحقول والقوائم المنسدلة."
+   },
+   "label": {
+    "displayName": "Label",
+    "purpose": "تسميات الأدوات والعدّاد والمسار."
+   },
+   "badge": {
+    "displayName": "Badge",
+    "purpose": "شارات الخصم/الحالة."
+   }
+  },
+  "shadows": [
+   {
+    "name": "shadow-xs",
+    "value": "0 1px 2px rgba(15,23,42,0.06)",
+    "purpose": "أزرار أساسية وشرائح."
+   },
+   {
+    "name": "shadow-sm",
+    "value": "0 1px 3px rgba(15,23,42,0.08), 0 1px 2px rgba(15,23,42,0.04)",
+    "purpose": "أسطح صغيرة مرفوعة."
+   },
+   {
+    "name": "shadow-md",
+    "value": "0 6px 16px rgba(15,23,42,0.08), 0 2px 6px rgba(15,23,42,0.04)",
+    "purpose": "بطاقة المنتج عند hover (مع translateY(-3px))."
+   },
+   {
+    "name": "shadow-lg",
+    "value": "0 18px 40px rgba(15,23,42,0.16)",
+    "purpose": "أسطح كبيرة/طائرة."
+   },
+   {
+    "name": "sheet-shadow",
+    "value": "0 -12px 34px rgba(15,23,42,0.22)",
+    "purpose": "لوحة الفلاتر/البحث/القائمة."
+   },
+   {
+    "name": "scrim",
+    "value": "rgba(2,6,16,0.7)",
+    "purpose": "طبقة معتمة خلف اللوحات المودالية."
+   }
+  ],
+  "motion": [
+   {
+    "name": "dur-instant",
+    "value": "90ms",
+    "purpose": "تغيّرات فورية."
+   },
+   {
+    "name": "dur-fast",
+    "value": "140ms",
+    "purpose": "حالات صغيرة."
+   },
+   {
+    "name": "dur-base",
+    "value": "200ms",
+    "purpose": "انتقالات الحالة (بطاقة/أزرار)."
+   },
+   {
+    "name": "dur-slow",
+    "value": "320ms",
+    "purpose": "أسطح كبيرة."
+   },
+   {
+    "name": "ease-out",
+    "value": "cubic-bezier(0.22,0.61,0.36,1)",
+    "purpose": "المنحنى القياسي."
+   },
+   {
+    "name": "sheet-ease",
+    "value": "cubic-bezier(0.22,0.61,0.36,1) 280ms",
+    "purpose": "انزلاق اللوحة السفلية (visibility معها)."
+   },
+   {
+    "name": "reduced-motion",
+    "value": "prefers-reduced-motion: reduce",
+    "purpose": "إيقاف الانتقالات/الحركات في الكتالوج."
+   }
+  ],
+  "breakpoints": [
+   {
+    "name": "mobile-header-max",
+    "value": "1023px"
+   },
+   {
+    "name": "desktop-header-min",
+    "value": "1024px"
+   },
+   {
+    "name": "filter-sheet-max",
+    "value": "768px"
+   },
+   {
+    "name": "filter-inline-min",
+    "value": "769px"
+   },
+   {
+    "name": "sm",
+    "value": "640px"
+   },
+   {
+    "name": "md",
+    "value": "768px"
+   },
+   {
+    "name": "lg",
+    "value": "1024px"
+   },
+   {
+    "name": "xl",
+    "value": "1280px"
+   },
+   {
+    "name": "content-max",
+    "value": "1200px"
+   }
+  ]
+ },
+ "components": [
+  {
+   "name": "Primary Button",
+   "kind": "button",
+   "refersTo": "button-primary",
+   "description": "الفعل الأساسي في الكتالوج (أضف للسلة · عرض النتائج · إعادة المحاولة).",
+   "html": "<button class=\"ds-btn-primary\">أضف للسلة</button>",
+   "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 12px;background:var(--store-primary);color:#FFFFFF;border:1px solid var(--store-primary);border-radius:10px;font-family:Tahoma,Cairo,\"Segoe UI\",\"Noto Naskh Arabic\",Arial,sans-serif;font-size:14px;font-weight:600;cursor:pointer;transition:background 200ms cubic-bezier(0.22,0.61,0.36,1),border-color 200ms cubic-bezier(0.22,0.61,0.36,1)}.ds-btn-primary:hover{background:var(--store-primary-hover);border-color:var(--store-primary-hover)}.ds-btn-primary:active{background:var(--store-primary-active);border-color:var(--store-primary-active)}.ds-btn-primary:focus-visible{outline:2px solid var(--store-primary);outline-offset:2px}"
+  },
+  {
+   "name": "Ghost Button",
+   "kind": "button",
+   "refersTo": "button-ghost",
+   "description": "إجراء ثانوي (تفريغ الفلاتر) بلا خلفية.",
+   "html": "<button class=\"ds-btn-ghost\">تفريغ الفلاتر</button>",
+   "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 10px;background:transparent;color:var(--store-text-muted);border:1px solid transparent;border-radius:8px;font-family:Tahoma,Cairo,\"Segoe UI\",\"Noto Naskh Arabic\",Arial,sans-serif;font-size:14px;font-weight:500;cursor:pointer}.ds-btn-ghost:hover{background:var(--store-surface-soft);color:var(--store-text)}.ds-btn-ghost:focus-visible{outline:2px solid var(--store-primary);outline-offset:2px}"
+  },
+  {
+   "name": "Text Input",
+   "kind": "input",
+   "refersTo": "input-field",
+   "description": "حقل نص/بحث داخل أدوات التصفّح.",
+   "html": "<input class=\"ds-input\" type=\"search\" placeholder=\"ابحث بالاسم أو الوصف…\" aria-label=\"بحث في المنتجات\">",
+   "css": ".ds-input{width:100%;min-height:44px;padding:8px 12px;background:var(--store-surface);color:var(--store-text);border:1px solid var(--store-border);border-radius:8px;font-family:Tahoma,Cairo,\"Segoe UI\",\"Noto Naskh Arabic\",Arial,sans-serif;font-size:15px}.ds-input::placeholder{color:var(--store-text-muted);opacity:1}.ds-input:hover{border-color:var(--store-border-strong)}.ds-input:focus{border-color:var(--store-primary);box-shadow:0 0 0 3px rgba(31,95,191,0.30)}.ds-input:focus-visible{outline:2px solid var(--store-primary);outline-offset:2px}"
+  },
+  {
+   "name": "Select",
+   "kind": "input",
+   "refersTo": "input-field",
+   "description": "قائمة منسدلة (تصنيف/علامة/ترتيب) بسهم محلي وحشوة RTL.",
+   "html": "<select class=\"ds-select\" aria-label=\"تصفية حسب التصنيف\"><option>كل التصنيفات</option><option>ثلاجات</option></select>",
+   "css": ".ds-select{appearance:none;width:100%;min-height:44px;padding:8px 12px 8px 32px;background:var(--store-surface);color:var(--store-text);border:1px solid var(--store-border);border-radius:8px;font-family:Tahoma,Cairo,\"Segoe UI\",\"Noto Naskh Arabic\",Arial,sans-serif;font-size:15px;background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E\");background-repeat:no-repeat;background-position:left 12px center;background-size:15px}.ds-select:focus{border-color:var(--store-primary);box-shadow:0 0 0 3px rgba(31,95,191,0.30)}.ds-select:focus-visible{outline:2px solid var(--store-primary);outline-offset:2px}"
+  },
+  {
+   "name": "Checkbox Row",
+   "kind": "input",
+   "refersTo": "checkbox-row",
+   "description": "صف اختيار كامل 44px بـcheckbox أصلية داخل label.",
+   "html": "<label class=\"ds-check\"><input type=\"checkbox\"><span>عليها خصم فقط</span></label>",
+   "css": ".ds-check{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 10px;background:var(--store-surface);border:1px solid var(--store-border);border-radius:10px;color:var(--store-text-body);font-family:Tahoma,Cairo,\"Segoe UI\",\"Noto Naskh Arabic\",Arial,sans-serif;font-size:13px;cursor:pointer}.ds-check input{accent-color:var(--store-primary);width:18px;height:18px}.ds-check:hover{border-color:var(--store-border-strong)}.ds-check:focus-within{border-color:var(--store-primary);box-shadow:0 0 0 3px rgba(31,95,191,0.30)}.ds-check input:focus-visible{outline:2px solid var(--store-primary);outline-offset:2px}"
+  },
+  {
+   "name": "Listing Product Card",
+   "kind": "card",
+   "refersTo": "card-product",
+   "description": "بطاقة منتج في القوائم (3D المعتمد): صورة 188px · علامة · اسم سطران · سعر · زر بعرض كامل.",
+   "html": "<article class=\"ds-card\"><div class=\"ds-card__media\"><span class=\"ds-card__flag\">-16.67%</span></div><div class=\"ds-card__body\"><span class=\"ds-card__brand\">علامة تجريبية ب</span><h3 class=\"ds-card__name\">منتج تجريبي — ثلاجة 300 لتر</h3><div class=\"ds-card__price\"><span class=\"ds-card__now\">$350.00</span></div><button class=\"ds-card__add\">أضف للسلة</button></div></article>",
+   "css": ".ds-card{display:flex;flex-direction:column;height:100%;background:var(--store-surface);border:1px solid var(--store-border);border-radius:14px;overflow:hidden}.ds-card__media{position:relative;height:188px;background:var(--store-surface-soft)}.ds-card__flag{position:absolute;top:8px;inset-inline-start:8px;background:#FEF2F2;color:#991B1B;border:1px solid #FEE2E2;border-radius:999px;padding:0 7px;height:22px;display:inline-flex;align-items:center;font-size:11.5px;font-weight:700}.ds-card__body{display:flex;flex-direction:column;gap:6px;padding:12px}.ds-card__brand{font-size:12px;color:var(--store-text-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ds-card__name{margin:0;font-size:15px;font-weight:600;color:var(--store-text);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.ds-card__price{margin-top:auto}.ds-card__now{font-size:18px;font-weight:700;color:var(--store-text)}.ds-card__add{min-height:44px;width:100%;margin-top:6px;background:var(--store-primary);color:#FFFFFF;border:1px solid var(--store-primary);border-radius:0;font-size:14px;font-weight:600;cursor:pointer}.ds-card__add:hover{background:var(--store-primary-hover)}.ds-card__add:focus-visible{outline:2px solid var(--store-primary);outline-offset:2px}"
+  },
+  {
+   "name": "Taxonomy Card",
+   "kind": "card",
+   "refersTo": "card-taxonomy",
+   "description": "بطاقة تصنيف/علامة (3E المعتمد): صف مضغوط، الاسم يمينًا والعدّاد يسارًا.",
+   "html": "<a class=\"ds-tax\" href=\"#\"><span class=\"ds-tax__name\">تصنيف تجريبي — ثلاجات</span><span class=\"ds-tax__count\">2 منتج</span></a>",
+   "css": ".ds-tax{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:92px;padding:16px;background:var(--store-surface);border:1px solid var(--store-border);border-radius:14px;text-decoration:none;color:var(--store-text)}.ds-tax__name{font-size:15px;font-weight:600;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.ds-tax__count{font-size:13px;color:var(--store-text-muted);white-space:nowrap}.ds-tax:hover{border-color:var(--store-border-strong)}.ds-tax:focus-visible{outline:2px solid var(--store-primary);outline-offset:2px}"
+  },
+  {
+   "name": "Discount Badge",
+   "kind": "chip",
+   "refersTo": "card-product",
+   "description": "شارة الخصم على صورة المنتج (كبسولة 22px).",
+   "html": "<span class=\"ds-badge\">-16.67%</span>",
+   "css": ".ds-badge{display:inline-flex;align-items:center;height:22px;padding:0 7px;background:#FEF2F2;color:#991B1B;border:1px solid #FEE2E2;border-radius:999px;font-family:Tahoma,Cairo,\"Segoe UI\",Arial,sans-serif;font-size:11.5px;font-weight:700}"
+  },
+  {
+   "name": "PDP Purchase CTA (disabled)",
+   "kind": "button",
+   "refersTo": "button-primary",
+   "description": "CTA صفحة المنتج عند عدم التوفّر (inStock === false): معطّل أصلًا بحالة محايدة دلالية.",
+   "html": "<button class=\"ds-pdp-cta\" disabled>غير متوفر حاليًا</button>",
+   "css": ".ds-pdp-cta{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 12px;background:var(--store-primary);color:#FFFFFF;border:1px solid var(--store-primary);border-radius:8px;font-family:Tahoma,Cairo,\"Segoe UI\",Arial,sans-serif;font-size:15px;font-weight:600;cursor:pointer}.ds-pdp-cta:disabled{background:var(--store-surface-soft);border-color:var(--store-border-strong);color:var(--store-text-muted);opacity:1;cursor:not-allowed}.ds-pdp-cta:focus-visible{outline:2px solid var(--store-primary);outline-offset:2px}"
+  }
+ ],
+ "narrative": {
+  "northStar": "الوليد — تجارية عملية هادئة، بحدود أولًا (وصف مستخرج من التنفيذ، لا استعارة مُختلقة)",
+  "overview": "نظام موثّق من التنفيذ القائم: حدّ 1px + سطح + نصف قطر واضح، والظل استجابة لحالة لا ديكور. أزرق المتجر #1F5FBF هو الأكسنت الوحيد، والـteal أصل شعار محفوظ. الجوال أولًا (390) بكثافة مقصودة: بطاقة منتج 177×327 على الجوال و280×357 على 1366، وأدوات التصفّح لوحة سفلية ≤768 وشريط inline ≥769. العربية RTL بخصائص منطقية، وواجهات Static بلا Framework/CDN/npm.",
+  "keyCharacteristics": [
+   "حدود أولًا: حدّ 1px + سطح، والظلال محسوبة ومحدودة.",
+   "أكسنت واحد: أزرق المتجر #1F5FBF؛ الـteal أصل شعار لا لون واجهة.",
+   "جوال أولًا وكثافة مقصودة: بطاقة المنتج ≈177×327 (390) و280×357 (1366).",
+   "إتاحة مُقاسة: حلقة تركيز ≥3:1 في الثيمين، أهداف لمس 44px، لوحة الفلاتر حوار كامل السلوك.",
+   "Static حصرًا: HTML/CSS/Vanilla JS بلا Framework/CDN/npm.",
+   "العربية RTL + خط نظامي (Tahoma stack)؛ خط Qomra مستخدم في القائمة فقط."
+  ],
+  "rules": [
+   {
+    "name": "The One Blue Rule",
+    "body": "أزرق المتجر #1F5FBF هو الأكسنت الوحيد للواجهة؛ لا لون ثانٍ للتفاعل أو للتمييز. أي لون آخر يجب أن يكون دلاليًا (خصم/نجاح/تحذير) أو محايدًا.",
+    "section": "colors"
+   },
+   {
+    "name": "The Locked Teal Rule",
+    "body": "الـteal (#14B8A6) أصل شعار محفوظ — لا يُستعمل كلون واجهة ولا يُعاد تلوينه. أي teal متبقٍ في CSS القديم هو بقايا legacy لا قاعدة تصميم.",
+    "section": "colors"
+   },
+   {
+    "name": "The Dark-Is-Semantic Rule",
+    "body": "الوضع الداكن يعيد تعريف التوكنز الدلالية نفسها؛ لا تُكتب ألوان داكنة صلبة في قواعد المكوّنات.",
+    "section": "colors"
+   },
+   {
+    "name": "The Two-Line Rule",
+    "body": "اسم المنتج في بطاقة القوائم سطران كحد أقصى مع قصّ بثلاث نقاط، والعلامة التجارية سطر واحد؛ لا يُسمح للنص أن يمدّ البطاقة.",
+    "section": "typography"
+   },
+   {
+    "name": "The Price-First Rule",
+    "body": "بعد الصورة، السعر الحالي هو أكبر نص في البطاقة (18px/700)؛ السعر القديم أصغر (13.5px) وبمحاذاة خافتة ومشطوب.",
+    "section": "typography"
+   },
+   {
+    "name": "The No-Gap Rule",
+    "body": "لا توجد منطقة عرض بلا أدوات تصفّح: ≤768 لوحة سفلية بزر واضح، و≥769 شريط inline مرئي دائمًا.",
+    "section": "layout"
+   },
+   {
+    "name": "The RTL-Logical Rule",
+    "body": "كل المسافات والحدود والاتجاهات بخصائص منطقية؛ لا left/right في قواعد جديدة.",
+    "section": "layout"
+   },
+   {
+    "name": "The Border-First Rule",
+    "body": "إن أمكن التعبير بالفصل بحدّ، لا تستخدم ظلًا. الظل = حالة أو سطح طائر، لا زخرفة.",
+    "section": "elevation"
+   },
+   {
+    "name": "The One-Ring Rule",
+    "body": "مؤشر التركيز حلقة واحدة: outline 2px + offset 2px و box-shadow: none — لا حلقتان ولا ظل تركيز مزدوج.",
+    "section": "elevation"
+   },
+   {
+    "name": "The Truthful-Availability Rule",
+    "body": "زر الشراء يعكس inStock من الـAPI: false ⇒ disabled بنص «غير متوفر حاليًا» (بلا مصادقة وبلا طلب سلة) · true/غير معرّف ⇒ السلوك الحالي. لا تُخترع حالة توفّر.",
+    "section": "components"
+   }
+  ],
+  "dos": [
+   "Do استخدم توكنز --store-* الدلالية في كل سطح جديد، ولا تكتب HEX مباشرًا في قواعد المكوّنات.",
+   "Do حافظ على أزرق المتجر #1F5FBF أكسنتًا وحيدًا، وعلى 6.09:1 للنص الأبيض فوقه.",
+   "Do اجعل حلقة التركيز 2px solid + offset 2px بلون --cat-focus (فاتح #1F5FBF / داكن #2563EB) مع box-shadow: none.",
+   "Do حافظ على أهداف اللمس ≥44px للأزرار والحقول وصفوف الاختيار وزر الإغلاق وإعادة المحاولة.",
+   "Do حافظ على سلوك لوحة الفلاتر المودالي كاملًا (dialog · تركيز ابتدائي · حبس · Escape · إعادة تركيز · قفل تمرير · تنظيف عند 769+).",
+   "Do أبقِ بطاقة القوائم كما هي: صورة 140/156/188 · علامة سطر واحد · اسم سطران · سعر 18/700 · زر بعرض كامل · ارتفاع 327/357.",
+   "Do أبقِ بطاقة التصنيف صفًّا مضغوطًا (92px) بعمود واحد على الجوال وأعمدة ثابتة 276px على الديسكتوب.",
+   "Do استخدم خصائص RTL المنطقية، وحدود 1px، وسلّم المسافات/الأنصاف القائم.",
+   "Do اكتب أي حالة جديدة بنفس نمط الحالات: loading aria-busy + هياكل aria-hidden + رسالة status · empty status · error alert + زر 44px.",
+   "Do اجعل CTA الشراء صادقًا مع inStock، وحالة المعطّل محايدة دلالية بتباين ≥4.5:1 في الثيمين."
+  ],
+  "donts": [
+   "Don't تستخدم الـteal كلون واجهة أو تعيد تلوين الشعار — الشعار teal أصل محفوظ، والـteal المتوقع في --primary/--border-brand هو بقايا legacy يجب عدم توسيعها في أسطح جديدة.",
+   "Don't تعرّف Qomra كخط عام للواجهة: الخط العام هو Tahoma stack، وQomra مستخدم في القائمة فقط.",
+   "Don't تفترض أن تصفية التوفّر قدرة متاحة: واجهة المنتجات للزائر لا تدعم حاليًا تصفية inStock صادقة server-side. تحكّم «المتوفر فقط» مخفي عن الزبون عن قصد حتى يتوفّر دعم API/مخزون حقيقي. توافق الرابط قد يبقى، لكنه ليس قدرة ظاهرة في المتجر.",
+   "Don't تصف «عليها خصم» (offers) كفلتر على كامل الكتالوج: تنفيذه الحالي محلي على الصفحة المحمّلة فقط.",
+   "Don't تفترض أن هندسة هياكل التحميل تطابق بطاقة 3D: الهياكل مشتركة مع صفحات أخرى (قيد موثّق).",
+   "Don't تفترض وجود صور أو بيانات منتجات حقيقية: المنتجان الحاليان بيانات اختبارية صريحة بلا صور — لا تُختلق صور أو شعارات أو أرقام.",
+   "Don't تُصلح أو تُعيد كتابة CSS القديم لمجرد النقاء الجمالي: حيثما أنتجت التجاوزات المقيّدة السلوك المعتمد، تبقى القاعدة القديمة كما هي.",
+   "Don't تُدرج نتائج كاشف Impeccable كقواعد تصميم: هي ملاحظات معلّقة بانتظار مراجعة منفصلة، ولم تُصلح في هذه الوثيقة.",
+   "Don't تحوّل قواعد الأعمال غير المحسومة إلى حقائق تصميم: تفاصيل الدفع · وكيل الشحن · عمولة المنصة = غير محسومة.",
+   "Don't تعرض وعد دفع/شحن/ضمان ما دامت القاعدة غير محسومة في PRODUCT.md (أُزيل نص «شام كاش» في 4B.1)."
+  ]
+ }
+}

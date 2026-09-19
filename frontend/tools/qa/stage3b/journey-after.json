@@ -1,0 +1,166 @@
+{
+ "w1024": {
+  "search": {
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 2,
+   "count": "2 منتج"
+  },
+  "category": {
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 2,
+   "count": "2 منتج"
+  },
+  "brand": {
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "sort": {
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "price": {
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "instock": {
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "offers": {
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 0,
+   "count": "0 منتج"
+  },
+  "reset": {
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 2,
+   "count": "2 منتج"
+  }
+ },
+ "w1366": {
+  "search": {
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 2,
+   "count": "2 منتج"
+  },
+  "category": {
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 2,
+   "count": "2 منتج"
+  },
+  "brand": {
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "sort": {
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "price": {
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "instock": {
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "offers": {
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12&search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 0,
+   "count": "0 منتج"
+  },
+  "reset": {
+   "changed": true,
+   "requests": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "cards": 2,
+   "count": "2 منتج"
+  }
+ }
+}

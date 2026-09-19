@@ -48,6 +48,8 @@
       '/dashboard': { title: 'لوحة التحكم', permission: 'dashboard.read', icon: 'dashboard', group: 'الرئيسية', nav: 'لوحة التحكم', render: ALW.pages.dashboard.render },
       '/analytics': { title: 'التحليلات', permission: 'analytics.read', icon: 'chart', group: 'الرئيسية', nav: 'التحليلات', render: ALW.pages.analytics.render },
 
+      '/slider': { title: 'السلايدر', permission: 'slider.read', icon: 'image', group: 'واجهة المتجر', nav: 'السلايدر', render: function (container, context) { return ALW.pages.slider.render(container, context); } },
+
       '/products': { title: 'المنتجات', permission: 'products.read', icon: 'package', group: 'الكتالوج', nav: 'المنتجات', render: renderPage(ALW.pagesCatalog.products) },
       '/categories': { title: 'التصنيفات', permission: 'categories.read', icon: 'layers', group: 'الكتالوج', nav: 'التصنيفات', render: renderPage(ALW.pagesCatalog.categories) },
       '/brands': { title: 'العلامات التجارية', permission: 'brands.read', icon: 'tag', group: 'الكتالوج', nav: 'العلامات', render: renderPage(ALW.pagesCatalog.brands) },

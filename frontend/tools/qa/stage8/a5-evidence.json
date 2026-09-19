@@ -1,0 +1,75 @@
+{
+ "A5_1_ADD": {
+  "mobile": "/uploads/slider/slider-1e9dcb33-4395-46a6-b74d-01de51976dea.webp",
+  "desktop": "/uploads/slider/slider-68d5ccda-a5a1-4e0b-93dc-7a80730bd6a7.webp",
+  "requests": [
+   {
+    "m": "PATCH",
+    "p": "/slider/admin/14",
+    "k": "multipart"
+   },
+   {
+    "m": "PATCH",
+    "p": "/slider/admin/14",
+    "k": "multipart"
+   }
+  ]
+ },
+ "A5_2_KEEP": {
+  "before": "/uploads/slider/slider-1e9dcb33-4395-46a6-b74d-01de51976dea.webp",
+  "after": "/uploads/slider/slider-1e9dcb33-4395-46a6-b74d-01de51976dea.webp",
+  "same": true,
+  "requests": [
+   {
+    "m": "PATCH",
+    "p": "/slider/admin/14",
+    "k": "json"
+   },
+   {
+    "m": "PATCH",
+    "p": "/slider/admin/14",
+    "k": "json"
+   }
+  ]
+ },
+ "A5_3_REPLACE": {
+  "old": "/uploads/slider/slider-1e9dcb33-4395-46a6-b74d-01de51976dea.webp",
+  "new": "/uploads/slider/slider-b63b2a8f-2075-462a-87da-c52574b70ec1.webp",
+  "changed": true,
+  "requests": [
+   {
+    "m": "PATCH",
+    "p": "/slider/admin/14",
+    "k": "multipart"
+   },
+   {
+    "m": "PATCH",
+    "p": "/slider/admin/14",
+    "k": "multipart"
+   }
+  ]
+ },
+ "A5_4_REMOVE": {
+  "old_mobile": "/uploads/slider/slider-b63b2a8f-2075-462a-87da-c52574b70ec1.webp",
+  "mobile_after": "/uploads/slider/slider-b63b2a8f-2075-462a-87da-c52574b70ec1.webp",
+  "desktop_unchanged": true,
+  "requests": [
+   {
+    "m": "PATCH",
+    "p": "/slider/admin/14",
+    "k": "json"
+   },
+   {
+    "m": "PATCH",
+    "p": "/slider/admin/14",
+    "k": "json"
+   },
+   {
+    "m": "PATCH",
+    "p": "/slider/admin/14",
+    "k": "json"
+   }
+  ],
+  "note": "الاختبار الأول فشل بسبب محدّد QA خاطئ (#f-mobileMode) — المحدّد الصحيح: #sl-mobile-mode"
+ }
+}

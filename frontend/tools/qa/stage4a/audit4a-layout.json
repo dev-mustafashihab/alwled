@@ -1,0 +1,3252 @@
+{
+ "console": [],
+ "failed": [],
+ "requests": {
+  "normal": [
+   {
+    "u": "products?page=1&limit=24&sortBy=createdAt&sortOrder=desc",
+    "s": 200
+   },
+   {
+    "u": "products?page=1&limit=8",
+    "s": 200
+   },
+   {
+    "u": "categories?limit=48",
+    "s": 200
+   },
+   {
+    "u": "brands?limit=48",
+    "s": 200
+   },
+   {
+    "u": "products/633",
+    "s": 200
+   },
+   {
+    "u": "products?page=1&limit=8&categoryId=293",
+    "s": 200
+   }
+  ],
+  "normal_list": [
+   "products?page=1&limit=24&sortBy=createdAt&sortOrder=desc",
+   "products?page=1&limit=8",
+   "categories?limit=48",
+   "brands?limit=48",
+   "products/633",
+   "products?page=1&limit=8&categoryId=293"
+  ],
+  "discounted": [
+   {
+    "u": "products?page=1&limit=24&sortBy=createdAt&sortOrder=desc",
+    "s": 200
+   },
+   {
+    "u": "products?page=1&limit=8",
+    "s": 200
+   },
+   {
+    "u": "categories?limit=48",
+    "s": 200
+   },
+   {
+    "u": "brands?limit=48",
+    "s": 200
+   },
+   {
+    "u": "products/632",
+    "s": 200
+   },
+   {
+    "u": "products?page=1&limit=8&categoryId=293",
+    "s": 200
+   }
+  ],
+  "discounted_list": [
+   "products?page=1&limit=24&sortBy=createdAt&sortOrder=desc",
+   "products?page=1&limit=8",
+   "categories?limit=48",
+   "brands?limit=48",
+   "products/632",
+   "products?page=1&limit=8&categoryId=293"
+  ]
+ },
+ "hierarchy": {
+  "normal": {
+   "vw": 1366,
+   "productCols": 2,
+   "productColsVal": "585.938px 558.047px",
+   "productGap": "24px",
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "x": 681,
+    "y": 144
+   },
+   "stageAspect": "1 / 1",
+   "stageRadius": "14px",
+   "stageBorder": "rgb(230, 236, 243)",
+   "stageBg": "rgb(255, 255, 255)",
+   "stageImg": null,
+   "placeholder": {
+    "bg": "linear-gradient(rgb(248, 250, 252) 0%, rgb(255, 255, 255) 10",
+    "color": "rgb(148, 163, 184)",
+    "box": {
+     "w": 584,
+     "h": 584,
+     "x": 682,
+     "y": 145
+    }
+   },
+   "thumbs": 0,
+   "thumbsBox": null,
+   "thumbFirst": null,
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "box": {
+     "w": 558,
+     "h": 40,
+     "x": 99,
+     "y": 180
+    },
+    "fontSize": "29.6px",
+    "color": "rgb(15, 23, 42)",
+    "lineHeight": "39.96px"
+   },
+   "priceBox": {
+    "w": 558,
+    "h": 83,
+    "x": 99,
+    "y": 236
+   },
+   "priceNow": {
+    "text": "350.00 $",
+    "fontSize": "32px",
+    "color": "rgb(15, 23, 42)"
+   },
+   "priceWas": null,
+   "priceOff": null,
+   "priceBg": "rgb(248, 250, 252)",
+   "metaText": "علامة تجريبية بتصنيف تجريبي — ثلاجاترمز المنتج: DEMO-REF-002",
+   "metaSpans": 3,
+   "facts": [
+    {
+     "label": "التوفّر",
+     "value": "غير متوفر حاليًا"
+    },
+    {
+     "label": "العلامة",
+     "value": "علامة تجريبية ب"
+    },
+    {
+     "label": "التصنيف",
+     "value": "تصنيف تجريبي — ثلاجات"
+    },
+    {
+     "label": "رمز المنتج",
+     "value": "DEMO-REF-002"
+    }
+   ],
+   "factsCols": "273.016px 273.031px",
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 485,
+     "y": 509
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 537,
+      "y": 509
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 613,
+      "y": 509
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 485,
+      "y": 509
+     }
+    }
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 338,
+     "y": 507
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(15, 118, 110)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "actions": {
+    "display": "flex",
+    "box": {
+     "w": 558,
+     "h": 48,
+     "x": 99,
+     "y": 507
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر.",
+   "panels": [],
+   "specs": 0,
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 30",
+     "href": null
+    }
+   ],
+   "crumbsNav": true,
+   "related": {
+    "cards": 1,
+    "gridCols": 4,
+    "card": {
+     "w": 280,
+     "h": 512,
+     "x": 987,
+     "y": 800
+    },
+    "media": {
+     "w": 278,
+     "h": 278,
+     "x": 988,
+     "y": 801
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 114,
+     "h": 44,
+     "x": 1141,
+     "y": 1251
+    },
+    "details": "flex",
+    "desc": "flow-root",
+    "metaSpans": 3,
+    "cardBg": "rgb(255, 255, 255)"
+   },
+   "h1": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "dir": "rtl",
+   "overflow": 0,
+   "docH": 1678,
+   "footerY": 1392,
+   "body": "rgb(248, 250, 252)",
+   "bodyColor": "rgb(51, 65, 85)"
+  },
+  "discounted": {
+   "vw": 1366,
+   "productCols": 2,
+   "productColsVal": "585.938px 558.047px",
+   "productGap": "24px",
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "x": 681,
+    "y": 144
+   },
+   "stageAspect": "1 / 1",
+   "stageRadius": "14px",
+   "stageBorder": "rgb(230, 236, 243)",
+   "stageBg": "rgb(255, 255, 255)",
+   "stageImg": null,
+   "placeholder": {
+    "bg": "linear-gradient(rgb(248, 250, 252) 0%, rgb(255, 255, 255) 10",
+    "color": "rgb(148, 163, 184)",
+    "box": {
+     "w": 584,
+     "h": 584,
+     "x": 682,
+     "y": 145
+    }
+   },
+   "thumbs": 0,
+   "thumbsBox": null,
+   "thumbFirst": null,
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 500 لتر",
+    "box": {
+     "w": 558,
+     "h": 40,
+     "x": 99,
+     "y": 180
+    },
+    "fontSize": "29.6px",
+    "color": "rgb(15, 23, 42)",
+    "lineHeight": "39.96px"
+   },
+   "priceBox": {
+    "w": 558,
+    "h": 83,
+    "x": 99,
+    "y": 236
+   },
+   "priceNow": {
+    "text": "500.00 $",
+    "fontSize": "32px",
+    "color": "rgb(15, 23, 42)"
+   },
+   "priceWas": {
+    "text": "600.00 $",
+    "fontSize": "13.5px",
+    "color": "rgb(148, 163, 184)",
+    "deco": "line-through"
+   },
+   "priceOff": {
+    "text": "خصم 16.67%",
+    "bg": "rgb(254, 242, 242)",
+    "color": "rgb(153, 27, 27)"
+   },
+   "priceBg": "rgb(248, 250, 252)",
+   "metaText": "علامة تجريبية أتصنيف تجريبي — ثلاجاترمز المنتج: DEMO-REF-001",
+   "metaSpans": 3,
+   "facts": [
+    {
+     "label": "التوفّر",
+     "value": "متوفر"
+    },
+    {
+     "label": "العلامة",
+     "value": "علامة تجريبية أ"
+    },
+    {
+     "label": "التصنيف",
+     "value": "تصنيف تجريبي — ثلاجات"
+    },
+    {
+     "label": "رمز المنتج",
+     "value": "DEMO-REF-001"
+    }
+   ],
+   "factsCols": "273.016px 273.031px",
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 485,
+     "y": 509
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 537,
+      "y": 509
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 613,
+      "y": 509
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 485,
+      "y": 509
+     }
+    }
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 338,
+     "y": 507
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(15, 118, 110)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "actions": {
+    "display": "flex",
+    "box": {
+     "w": 558,
+     "h": 48,
+     "x": 99,
+     "y": 507
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر.",
+   "panels": [],
+   "specs": 0,
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 50",
+     "href": null
+    }
+   ],
+   "crumbsNav": true,
+   "related": {
+    "cards": 1,
+    "gridCols": 4,
+    "card": {
+     "w": 280,
+     "h": 512,
+     "x": 987,
+     "y": 800
+    },
+    "media": {
+     "w": 278,
+     "h": 278,
+     "x": 988,
+     "y": 801
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 114,
+     "h": 44,
+     "x": 1141,
+     "y": 1251
+    },
+    "details": "flex",
+    "desc": "flow-root",
+    "metaSpans": 3,
+    "cardBg": "rgb(255, 255, 255)"
+   },
+   "h1": [
+    "منتج تجريبي — ثلاجة 500 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "dir": "rtl",
+   "overflow": 0,
+   "docH": 1678,
+   "footerY": 1392,
+   "body": "rgb(248, 250, 252)",
+   "bodyColor": "rgb(51, 65, 85)"
+  }
+ },
+ "matrix": {
+  "360": {
+   "vw": 360,
+   "productCols": 1,
+   "productColsVal": "336px",
+   "stage": {
+    "w": 336,
+    "h": 336,
+    "x": 12,
+    "y": 163
+   },
+   "stageAspect": "1 / 1",
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "box": {
+     "w": 336,
+     "h": 29,
+     "x": 12,
+     "y": 583
+    },
+    "fontSize": "21.6px",
+    "color": "rgb(15, 23, 42)",
+    "lineHeight": "29.16px"
+   },
+   "priceNow": {
+    "text": "350.00 $",
+    "fontSize": "24px",
+    "color": "rgb(15, 23, 42)"
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 152,
+     "h": 48,
+     "x": 12,
+     "y": 840
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(15, 118, 110)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 176,
+     "y": 842
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 228,
+      "y": 842
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 304,
+      "y": 842
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 176,
+      "y": 842
+     }
+    }
+   },
+   "factsCols": "164px 164px",
+   "thumbs": 0,
+   "thumbFirst": null,
+   "related": {
+    "cards": 1,
+    "gridCols": 2,
+    "card": {
+     "w": 162,
+     "h": 489,
+     "x": 186,
+     "y": 1108
+    },
+    "media": {
+     "w": 160,
+     "h": 160,
+     "x": 187,
+     "y": 1109
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 136,
+     "h": 44,
+     "x": 199,
+     "y": 1488
+    },
+    "details": "flex",
+    "desc": "none",
+    "metaSpans": 3,
+    "cardBg": "rgb(255, 255, 255)"
+   },
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 30",
+     "href": null
+    }
+   ],
+   "overflow": 0,
+   "docH": 2000,
+   "h1": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "panels": [],
+   "placeholder": {
+    "bg": "linear-gradient(rgb(248, 250, 252) 0%, rgb(255, 255, 255) 10",
+    "color": "rgb(148, 163, 184)",
+    "box": {
+     "w": 334,
+     "h": 334,
+     "x": 13,
+     "y": 164
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر."
+  },
+  "390": {
+   "vw": 390,
+   "productCols": 1,
+   "productColsVal": "366px",
+   "stage": {
+    "w": 366,
+    "h": 366,
+    "x": 12,
+    "y": 163
+   },
+   "stageAspect": "1 / 1",
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "box": {
+     "w": 366,
+     "h": 29,
+     "x": 12,
+     "y": 585
+    },
+    "fontSize": "21.6px",
+    "color": "rgb(15, 23, 42)",
+    "lineHeight": "29.16px"
+   },
+   "priceNow": {
+    "text": "350.00 $",
+    "fontSize": "24px",
+    "color": "rgb(15, 23, 42)"
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 182,
+     "h": 48,
+     "x": 12,
+     "y": 840
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(15, 118, 110)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 206,
+     "y": 842
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 258,
+      "y": 842
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 334,
+      "y": 842
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 206,
+      "y": 842
+     }
+    }
+   },
+   "factsCols": "179px 179px",
+   "thumbs": 0,
+   "thumbFirst": null,
+   "related": {
+    "cards": 1,
+    "gridCols": 2,
+    "card": {
+     "w": 177,
+     "h": 504,
+     "x": 201,
+     "y": 1086
+    },
+    "media": {
+     "w": 175,
+     "h": 175,
+     "x": 202,
+     "y": 1087
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 151,
+     "h": 44,
+     "x": 214,
+     "y": 1481
+    },
+    "details": "flex",
+    "desc": "none",
+    "metaSpans": 3,
+    "cardBg": "rgb(255, 255, 255)"
+   },
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 30",
+     "href": null
+    }
+   ],
+   "overflow": 0,
+   "docH": 1993,
+   "h1": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "panels": [],
+   "placeholder": {
+    "bg": "linear-gradient(rgb(248, 250, 252) 0%, rgb(255, 255, 255) 10",
+    "color": "rgb(148, 163, 184)",
+    "box": {
+     "w": 364,
+     "h": 364,
+     "x": 13,
+     "y": 164
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر."
+  },
+  "430": {
+   "vw": 430,
+   "productCols": 1,
+   "productColsVal": "406px",
+   "stage": {
+    "w": 406,
+    "h": 406,
+    "x": 12,
+    "y": 163
+   },
+   "stageAspect": "1 / 1",
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "box": {
+     "w": 406,
+     "h": 30,
+     "x": 12,
+     "y": 625
+    },
+    "fontSize": "21.9px",
+    "color": "rgb(15, 23, 42)",
+    "lineHeight": "29.565px"
+   },
+   "priceNow": {
+    "text": "350.00 $",
+    "fontSize": "24.36px",
+    "color": "rgb(15, 23, 42)"
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 222,
+     "h": 48,
+     "x": 12,
+     "y": 840
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(15, 118, 110)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 246,
+     "y": 842
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 298,
+      "y": 842
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 374,
+      "y": 842
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 246,
+      "y": 842
+     }
+    }
+   },
+   "factsCols": "199px 199px",
+   "thumbs": 0,
+   "thumbFirst": null,
+   "related": {
+    "cards": 1,
+    "gridCols": 2,
+    "card": {
+     "w": 197,
+     "h": 503,
+     "x": 221,
+     "y": 1127
+    },
+    "media": {
+     "w": 195,
+     "h": 195,
+     "x": 222,
+     "y": 1128
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 171,
+     "h": 44,
+     "x": 234,
+     "y": 1521
+    },
+    "details": "flex",
+    "desc": "none",
+    "metaSpans": 3,
+    "cardBg": "rgb(255, 255, 255)"
+   },
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 30",
+     "href": null
+    }
+   ],
+   "overflow": 0,
+   "docH": 2033,
+   "h1": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "panels": [],
+   "placeholder": {
+    "bg": "linear-gradient(rgb(248, 250, 252) 0%, rgb(255, 255, 255) 10",
+    "color": "rgb(148, 163, 184)",
+    "box": {
+     "w": 404,
+     "h": 404,
+     "x": 13,
+     "y": 164
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر."
+  },
+  "600": {
+   "vw": 600,
+   "productCols": 1,
+   "productColsVal": "576px",
+   "stage": {
+    "w": 576,
+    "h": 576,
+    "x": 12,
+    "y": 134
+   },
+   "stageAspect": "1 / 1",
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "box": {
+     "w": 576,
+     "h": 32,
+     "x": 12,
+     "y": 766
+    },
+    "fontSize": "23.6px",
+    "color": "rgb(15, 23, 42)",
+    "lineHeight": "31.86px"
+   },
+   "priceNow": {
+    "text": "350.00 $",
+    "fontSize": "26.4px",
+    "color": "rgb(15, 23, 42)"
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 392,
+     "h": 48,
+     "x": 12,
+     "y": 840
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(15, 118, 110)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 416,
+     "y": 842
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 468,
+      "y": 842
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 544,
+      "y": 842
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 416,
+      "y": 842
+     }
+    }
+   },
+   "factsCols": "284px 284px",
+   "thumbs": 0,
+   "thumbFirst": null,
+   "related": {
+    "cards": 1,
+    "gridCols": 2,
+    "card": {
+     "w": 282,
+     "h": 480,
+     "x": 306,
+     "y": 1250
+    },
+    "media": {
+     "w": 280,
+     "h": 280,
+     "x": 307,
+     "y": 1251
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 115,
+     "h": 44,
+     "x": 461,
+     "y": 1674
+    },
+    "details": "flex",
+    "desc": "none",
+    "metaSpans": 3,
+    "cardBg": "rgb(255, 255, 255)"
+   },
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 30",
+     "href": null
+    }
+   ],
+   "overflow": 0,
+   "docH": 2134,
+   "h1": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "panels": [],
+   "placeholder": {
+    "bg": "linear-gradient(rgb(248, 250, 252) 0%, rgb(255, 255, 255) 10",
+    "color": "rgb(148, 163, 184)",
+    "box": {
+     "w": 574,
+     "h": 574,
+     "x": 13,
+     "y": 135
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر."
+  },
+  "768": {
+   "vw": 768,
+   "productCols": 1,
+   "productColsVal": "736px",
+   "stage": {
+    "w": 736,
+    "h": 736,
+    "x": 16,
+    "y": 135
+   },
+   "stageAspect": "1 / 1",
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "box": {
+     "w": 736,
+     "h": 34,
+     "x": 16,
+     "y": 927
+    },
+    "fontSize": "25.28px",
+    "color": "rgb(15, 23, 42)",
+    "lineHeight": "34.128px"
+   },
+   "priceNow": {
+    "text": "350.00 $",
+    "fontSize": "28.416px",
+    "color": "rgb(15, 23, 42)"
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 433,
+     "y": 1242
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(15, 118, 110)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 580,
+     "y": 1244
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 632,
+      "y": 1244
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 708,
+      "y": 1244
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 580,
+      "y": 1244
+     }
+    }
+   },
+   "factsCols": "362px 362px",
+   "thumbs": 0,
+   "thumbFirst": null,
+   "related": {
+    "cards": 1,
+    "gridCols": 3,
+    "card": {
+     "w": 237,
+     "h": 491,
+     "x": 515,
+     "y": 1400
+    },
+    "media": {
+     "w": 235,
+     "h": 235,
+     "x": 516,
+     "y": 1401
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 92,
+     "h": 44,
+     "x": 647,
+     "y": 1830
+    },
+    "details": "flex",
+    "desc": "flow-root",
+    "metaSpans": 3,
+    "cardBg": "rgb(255, 255, 255)"
+   },
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 30",
+     "href": null
+    }
+   ],
+   "overflow": 0,
+   "docH": 2298,
+   "h1": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "panels": [],
+   "placeholder": {
+    "bg": "linear-gradient(rgb(248, 250, 252) 0%, rgb(255, 255, 255) 10",
+    "color": "rgb(148, 163, 184)",
+    "box": {
+     "w": 734,
+     "h": 734,
+     "x": 17,
+     "y": 136
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر."
+  },
+  "769": {
+   "vw": 769,
+   "productCols": 1,
+   "productColsVal": "737px",
+   "stage": {
+    "w": 737,
+    "h": 737,
+    "x": 16,
+    "y": 135
+   },
+   "stageAspect": "1 / 1",
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "box": {
+     "w": 737,
+     "h": 34,
+     "x": 16,
+     "y": 928
+    },
+    "fontSize": "25.29px",
+    "color": "rgb(15, 23, 42)",
+    "lineHeight": "34.1415px"
+   },
+   "priceNow": {
+    "text": "350.00 $",
+    "fontSize": "28.428px",
+    "color": "rgb(15, 23, 42)"
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 434,
+     "y": 1243
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(15, 118, 110)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 581,
+     "y": 1245
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 633,
+      "y": 1245
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 709,
+      "y": 1245
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 581,
+      "y": 1245
+     }
+    }
+   },
+   "factsCols": "362.5px 362.5px",
+   "thumbs": 0,
+   "thumbFirst": null,
+   "related": {
+    "cards": 1,
+    "gridCols": 3,
+    "card": {
+     "w": 238,
+     "h": 491,
+     "x": 515,
+     "y": 1401
+    },
+    "media": {
+     "w": 236,
+     "h": 236,
+     "x": 516,
+     "y": 1402
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 92,
+     "h": 44,
+     "x": 648,
+     "y": 1831
+    },
+    "details": "flex",
+    "desc": "flow-root",
+    "metaSpans": 3,
+    "cardBg": "rgb(255, 255, 255)"
+   },
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 30",
+     "href": null
+    }
+   ],
+   "overflow": 0,
+   "docH": 2299,
+   "h1": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "panels": [],
+   "placeholder": {
+    "bg": "linear-gradient(rgb(248, 250, 252) 0%, rgb(255, 255, 255) 10",
+    "color": "rgb(148, 163, 184)",
+    "box": {
+     "w": 735,
+     "h": 735,
+     "x": 17,
+     "y": 136
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر."
+  },
+  "900": {
+   "vw": 900,
+   "productCols": 1,
+   "productColsVal": "868px",
+   "stage": {
+    "w": 868,
+    "h": 868,
+    "x": 16,
+    "y": 135
+   },
+   "stageAspect": "1 / 1",
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "box": {
+     "w": 868,
+     "h": 36,
+     "x": 16,
+     "y": 1059
+    },
+    "fontSize": "26.6px",
+    "color": "rgb(15, 23, 42)",
+    "lineHeight": "35.91px"
+   },
+   "priceNow": {
+    "text": "350.00 $",
+    "fontSize": "30px",
+    "color": "rgb(15, 23, 42)"
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 565,
+     "y": 1378
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(15, 118, 110)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 712,
+     "y": 1380
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 764,
+      "y": 1380
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 840,
+      "y": 1380
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 712,
+      "y": 1380
+     }
+    }
+   },
+   "factsCols": "428px 428px",
+   "thumbs": 0,
+   "thumbFirst": null,
+   "related": {
+    "cards": 1,
+    "gridCols": 3,
+    "card": {
+     "w": 281,
+     "h": 513,
+     "x": 603,
+     "y": 1536
+    },
+    "media": {
+     "w": 279,
+     "h": 279,
+     "x": 604,
+     "y": 1537
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 114,
+     "h": 44,
+     "x": 757,
+     "y": 1989
+    },
+    "details": "flex",
+    "desc": "flow-root",
+    "metaSpans": 3,
+    "cardBg": "rgb(255, 255, 255)"
+   },
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 30",
+     "href": null
+    }
+   ],
+   "overflow": 0,
+   "docH": 2415,
+   "h1": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "panels": [],
+   "placeholder": {
+    "bg": "linear-gradient(rgb(248, 250, 252) 0%, rgb(255, 255, 255) 10",
+    "color": "rgb(148, 163, 184)",
+    "box": {
+     "w": 866,
+     "h": 866,
+     "x": 17,
+     "y": 136
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر."
+  },
+  "1023": {
+   "vw": 1023,
+   "productCols": 1,
+   "productColsVal": "991px",
+   "stage": {
+    "w": 991,
+    "h": 991,
+    "x": 16,
+    "y": 135
+   },
+   "stageAspect": "1 / 1",
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "box": {
+     "w": 991,
+     "h": 38,
+     "x": 16,
+     "y": 1182
+    },
+    "fontSize": "27.83px",
+    "color": "rgb(15, 23, 42)",
+    "lineHeight": "37.5705px"
+   },
+   "priceNow": {
+    "text": "350.00 $",
+    "fontSize": "31.476px",
+    "color": "rgb(15, 23, 42)"
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 688,
+     "y": 1506
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(15, 118, 110)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 835,
+     "y": 1508
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 887,
+      "y": 1508
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 963,
+      "y": 1508
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 835,
+      "y": 1508
+     }
+    }
+   },
+   "factsCols": "489.5px 489.5px",
+   "thumbs": 0,
+   "thumbFirst": null,
+   "related": {
+    "cards": 1,
+    "gridCols": 3,
+    "card": {
+     "w": 320,
+     "h": 552,
+     "x": 687,
+     "y": 1663
+    },
+    "media": {
+     "w": 318,
+     "h": 318,
+     "x": 688,
+     "y": 1664
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 133,
+     "h": 44,
+     "x": 861,
+     "y": 2154
+    },
+    "details": "flex",
+    "desc": "flow-root",
+    "metaSpans": 3,
+    "cardBg": "rgb(255, 255, 255)"
+   },
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 30",
+     "href": null
+    }
+   ],
+   "overflow": 0,
+   "docH": 2581,
+   "h1": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "panels": [],
+   "placeholder": {
+    "bg": "linear-gradient(rgb(248, 250, 252) 0%, rgb(255, 255, 255) 10",
+    "color": "rgb(148, 163, 184)",
+    "box": {
+     "w": 989,
+     "h": 989,
+     "x": 17,
+     "y": 136
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر."
+  },
+  "1024": {
+   "vw": 1024,
+   "productCols": 1,
+   "productColsVal": "992px",
+   "stage": {
+    "w": 992,
+    "h": 992,
+    "x": 16,
+    "y": 144
+   },
+   "stageAspect": "1 / 1",
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "box": {
+     "w": 992,
+     "h": 38,
+     "x": 16,
+     "y": 1192
+    },
+    "fontSize": "27.84px",
+    "color": "rgb(15, 23, 42)",
+    "lineHeight": "37.584px"
+   },
+   "priceNow": {
+    "text": "350.00 $",
+    "fontSize": "31.488px",
+    "color": "rgb(15, 23, 42)"
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 689,
+     "y": 1516
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(15, 118, 110)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 836,
+     "y": 1518
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 888,
+      "y": 1518
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 964,
+      "y": 1518
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 836,
+      "y": 1518
+     }
+    }
+   },
+   "factsCols": "490px 490px",
+   "thumbs": 0,
+   "thumbFirst": null,
+   "related": {
+    "cards": 1,
+    "gridCols": 3,
+    "card": {
+     "w": 320,
+     "h": 552,
+     "x": 688,
+     "y": 1673
+    },
+    "media": {
+     "w": 318,
+     "h": 318,
+     "x": 689,
+     "y": 1674
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 134,
+     "h": 44,
+     "x": 862,
+     "y": 2164
+    },
+    "details": "flex",
+    "desc": "flow-root",
+    "metaSpans": 3,
+    "cardBg": "rgb(255, 255, 255)"
+   },
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 30",
+     "href": null
+    }
+   ],
+   "overflow": 0,
+   "docH": 2591,
+   "h1": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "panels": [],
+   "placeholder": {
+    "bg": "linear-gradient(rgb(248, 250, 252) 0%, rgb(255, 255, 255) 10",
+    "color": "rgb(148, 163, 184)",
+    "box": {
+     "w": 990,
+     "h": 990,
+     "x": 17,
+     "y": 145
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر."
+  },
+  "1280": {
+   "vw": 1280,
+   "productCols": 2,
+   "productColsVal": "585.938px 558.047px",
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "x": 638,
+    "y": 144
+   },
+   "stageAspect": "1 / 1",
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "box": {
+     "w": 558,
+     "h": 40,
+     "x": 56,
+     "y": 180
+    },
+    "fontSize": "29.6px",
+    "color": "rgb(15, 23, 42)",
+    "lineHeight": "39.96px"
+   },
+   "priceNow": {
+    "text": "350.00 $",
+    "fontSize": "32px",
+    "color": "rgb(15, 23, 42)"
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 295,
+     "y": 507
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(15, 118, 110)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 442,
+     "y": 509
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 494,
+      "y": 509
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 570,
+      "y": 509
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 442,
+      "y": 509
+     }
+    }
+   },
+   "factsCols": "273.016px 273.031px",
+   "thumbs": 0,
+   "thumbFirst": null,
+   "related": {
+    "cards": 1,
+    "gridCols": 4,
+    "card": {
+     "w": 280,
+     "h": 512,
+     "x": 944,
+     "y": 800
+    },
+    "media": {
+     "w": 278,
+     "h": 278,
+     "x": 945,
+     "y": 801
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 114,
+     "h": 44,
+     "x": 1098,
+     "y": 1251
+    },
+    "details": "flex",
+    "desc": "flow-root",
+    "metaSpans": 3,
+    "cardBg": "rgb(255, 255, 255)"
+   },
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 30",
+     "href": null
+    }
+   ],
+   "overflow": 0,
+   "docH": 1678,
+   "h1": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "panels": [],
+   "placeholder": {
+    "bg": "linear-gradient(rgb(248, 250, 252) 0%, rgb(255, 255, 255) 10",
+    "color": "rgb(148, 163, 184)",
+    "box": {
+     "w": 584,
+     "h": 584,
+     "x": 639,
+     "y": 145
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر."
+  },
+  "1366": {
+   "vw": 1366,
+   "productCols": 2,
+   "productColsVal": "585.938px 558.047px",
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "x": 681,
+    "y": 144
+   },
+   "stageAspect": "1 / 1",
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "box": {
+     "w": 558,
+     "h": 40,
+     "x": 99,
+     "y": 180
+    },
+    "fontSize": "29.6px",
+    "color": "rgb(15, 23, 42)",
+    "lineHeight": "39.96px"
+   },
+   "priceNow": {
+    "text": "350.00 $",
+    "fontSize": "32px",
+    "color": "rgb(15, 23, 42)"
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 338,
+     "y": 507
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(15, 118, 110)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 485,
+     "y": 509
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 537,
+      "y": 509
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 613,
+      "y": 509
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 485,
+      "y": 509
+     }
+    }
+   },
+   "factsCols": "273.016px 273.031px",
+   "thumbs": 0,
+   "thumbFirst": null,
+   "related": {
+    "cards": 1,
+    "gridCols": 4,
+    "card": {
+     "w": 280,
+     "h": 512,
+     "x": 987,
+     "y": 800
+    },
+    "media": {
+     "w": 278,
+     "h": 278,
+     "x": 988,
+     "y": 801
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 114,
+     "h": 44,
+     "x": 1141,
+     "y": 1251
+    },
+    "details": "flex",
+    "desc": "flow-root",
+    "metaSpans": 3,
+    "cardBg": "rgb(255, 255, 255)"
+   },
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 30",
+     "href": null
+    }
+   ],
+   "overflow": 0,
+   "docH": 1678,
+   "h1": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "panels": [],
+   "placeholder": {
+    "bg": "linear-gradient(rgb(248, 250, 252) 0%, rgb(255, 255, 255) 10",
+    "color": "rgb(148, 163, 184)",
+    "box": {
+     "w": 584,
+     "h": 584,
+     "x": 682,
+     "y": 145
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر."
+  },
+  "1440": {
+   "vw": 1440,
+   "productCols": 2,
+   "productColsVal": "585.938px 558.047px",
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "x": 718,
+    "y": 144
+   },
+   "stageAspect": "1 / 1",
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "box": {
+     "w": 558,
+     "h": 40,
+     "x": 136,
+     "y": 180
+    },
+    "fontSize": "29.6px",
+    "color": "rgb(15, 23, 42)",
+    "lineHeight": "39.96px"
+   },
+   "priceNow": {
+    "text": "350.00 $",
+    "fontSize": "32px",
+    "color": "rgb(15, 23, 42)"
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 375,
+     "y": 507
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(15, 118, 110)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 522,
+     "y": 509
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 574,
+      "y": 509
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 650,
+      "y": 509
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 522,
+      "y": 509
+     }
+    }
+   },
+   "factsCols": "273.016px 273.031px",
+   "thumbs": 0,
+   "thumbFirst": null,
+   "related": {
+    "cards": 1,
+    "gridCols": 4,
+    "card": {
+     "w": 280,
+     "h": 512,
+     "x": 1024,
+     "y": 800
+    },
+    "media": {
+     "w": 278,
+     "h": 278,
+     "x": 1025,
+     "y": 801
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 114,
+     "h": 44,
+     "x": 1178,
+     "y": 1251
+    },
+    "details": "flex",
+    "desc": "flow-root",
+    "metaSpans": 3,
+    "cardBg": "rgb(255, 255, 255)"
+   },
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 30",
+     "href": null
+    }
+   ],
+   "overflow": 0,
+   "docH": 1678,
+   "h1": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "panels": [],
+   "placeholder": {
+    "bg": "linear-gradient(rgb(248, 250, 252) 0%, rgb(255, 255, 255) 10",
+    "color": "rgb(148, 163, 184)",
+    "box": {
+     "w": 584,
+     "h": 584,
+     "x": 719,
+     "y": 145
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر."
+  },
+  "1920": {
+   "vw": 1920,
+   "productCols": 2,
+   "productColsVal": "585.938px 558.047px",
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "x": 958,
+    "y": 144
+   },
+   "stageAspect": "1 / 1",
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 300 لتر",
+    "box": {
+     "w": 558,
+     "h": 40,
+     "x": 376,
+     "y": 180
+    },
+    "fontSize": "29.6px",
+    "color": "rgb(15, 23, 42)",
+    "lineHeight": "39.96px"
+   },
+   "priceNow": {
+    "text": "350.00 $",
+    "fontSize": "32px",
+    "color": "rgb(15, 23, 42)"
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 615,
+     "y": 507
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(15, 118, 110)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 762,
+     "y": 509
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 814,
+      "y": 509
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 890,
+      "y": 509
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 762,
+      "y": 509
+     }
+    }
+   },
+   "factsCols": "273.016px 273.031px",
+   "thumbs": 0,
+   "thumbFirst": null,
+   "related": {
+    "cards": 1,
+    "gridCols": 4,
+    "card": {
+     "w": 280,
+     "h": 512,
+     "x": 1264,
+     "y": 800
+    },
+    "media": {
+     "w": 278,
+     "h": 278,
+     "x": 1265,
+     "y": 801
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 114,
+     "h": 44,
+     "x": 1418,
+     "y": 1251
+    },
+    "details": "flex",
+    "desc": "flow-root",
+    "metaSpans": 3,
+    "cardBg": "rgb(255, 255, 255)"
+   },
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 30",
+     "href": null
+    }
+   ],
+   "overflow": 0,
+   "docH": 1678,
+   "h1": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "panels": [],
+   "placeholder": {
+    "bg": "linear-gradient(rgb(248, 250, 252) 0%, rgb(255, 255, 255) 10",
+    "color": "rgb(148, 163, 184)",
+    "box": {
+     "w": 584,
+     "h": 584,
+     "x": 959,
+     "y": 145
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر."
+  }
+ },
+ "gallery": {},
+ "buy": {},
+ "related": {},
+ "dark": {
+  "390": {
+   "vw": 390,
+   "productCols": 1,
+   "productColsVal": "366px",
+   "productGap": "20px",
+   "stage": {
+    "w": 366,
+    "h": 366,
+    "x": 12,
+    "y": 163
+   },
+   "stageAspect": "1 / 1",
+   "stageRadius": "14px",
+   "stageBorder": "rgb(30, 42, 61)",
+   "stageBg": "rgb(18, 27, 43)",
+   "stageImg": null,
+   "placeholder": {
+    "bg": "linear-gradient(rgb(15, 24, 38) 0%, rgb(18, 27, 43) 100%)",
+    "color": "rgb(100, 116, 139)",
+    "box": {
+     "w": 364,
+     "h": 364,
+     "x": 13,
+     "y": 164
+    }
+   },
+   "thumbs": 0,
+   "thumbsBox": null,
+   "thumbFirst": null,
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 500 لتر",
+    "box": {
+     "w": 366,
+     "h": 29,
+     "x": 12,
+     "y": 585
+    },
+    "fontSize": "21.6px",
+    "color": "rgb(241, 245, 249)",
+    "lineHeight": "29.16px"
+   },
+   "priceBox": {
+    "w": 366,
+    "h": 70,
+    "x": 12,
+    "y": 630
+   },
+   "priceNow": {
+    "text": "500.00 $",
+    "fontSize": "24px",
+    "color": "rgb(241, 245, 249)"
+   },
+   "priceWas": {
+    "text": "600.00 $",
+    "fontSize": "13.5px",
+    "color": "rgb(100, 116, 139)",
+    "deco": "line-through"
+   },
+   "priceOff": {
+    "text": "خصم 16.67%",
+    "bg": "rgba(220, 38, 38, 0.16)",
+    "color": "rgb(153, 27, 27)"
+   },
+   "priceBg": "rgb(15, 24, 38)",
+   "metaText": "علامة تجريبية أتصنيف تجريبي — ثلاجاترمز المنتج: DEMO-REF-001",
+   "metaSpans": 3,
+   "facts": [
+    {
+     "label": "التوفّر",
+     "value": "متوفر"
+    },
+    {
+     "label": "العلامة",
+     "value": "علامة تجريبية أ"
+    },
+    {
+     "label": "التصنيف",
+     "value": "تصنيف تجريبي — ثلاجات"
+    },
+    {
+     "label": "رمز المنتج",
+     "value": "DEMO-REF-001"
+    }
+   ],
+   "factsCols": "179px 179px",
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 206,
+     "y": 842
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 258,
+      "y": 842
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 334,
+      "y": 842
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 206,
+      "y": 842
+     }
+    }
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 182,
+     "h": 48,
+     "x": 12,
+     "y": 840
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(20, 184, 166)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "actions": {
+    "display": "grid",
+    "box": {
+     "w": 390,
+     "h": 73,
+     "x": 0,
+     "y": 827
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر.",
+   "panels": [],
+   "specs": 0,
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 50",
+     "href": null
+    }
+   ],
+   "crumbsNav": true,
+   "related": {
+    "cards": 1,
+    "gridCols": 2,
+    "card": {
+     "w": 177,
+     "h": 476,
+     "x": 201,
+     "y": 1086
+    },
+    "media": {
+     "w": 175,
+     "h": 175,
+     "x": 202,
+     "y": 1087
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 151,
+     "h": 44,
+     "x": 214,
+     "y": 1453
+    },
+    "details": "flex",
+    "desc": "none",
+    "metaSpans": 3,
+    "cardBg": "rgb(18, 27, 43)"
+   },
+   "h1": [
+    "منتج تجريبي — ثلاجة 500 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "dir": "rtl",
+   "overflow": 0,
+   "docH": 1965,
+   "footerY": 1634,
+   "body": "rgb(10, 18, 32)",
+   "bodyColor": "rgb(203, 213, 225)"
+  },
+  "1366": {
+   "vw": 1366,
+   "productCols": 2,
+   "productColsVal": "585.938px 558.047px",
+   "productGap": "24px",
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "x": 681,
+    "y": 144
+   },
+   "stageAspect": "1 / 1",
+   "stageRadius": "14px",
+   "stageBorder": "rgb(30, 42, 61)",
+   "stageBg": "rgb(18, 27, 43)",
+   "stageImg": null,
+   "placeholder": {
+    "bg": "linear-gradient(rgb(15, 24, 38) 0%, rgb(18, 27, 43) 100%)",
+    "color": "rgb(100, 116, 139)",
+    "box": {
+     "w": 584,
+     "h": 584,
+     "x": 682,
+     "y": 145
+    }
+   },
+   "thumbs": 0,
+   "thumbsBox": null,
+   "thumbFirst": null,
+   "title": {
+    "tag": "H1",
+    "text": "منتج تجريبي — ثلاجة 500 لتر",
+    "box": {
+     "w": 558,
+     "h": 40,
+     "x": 99,
+     "y": 180
+    },
+    "fontSize": "29.6px",
+    "color": "rgb(241, 245, 249)",
+    "lineHeight": "39.96px"
+   },
+   "priceBox": {
+    "w": 558,
+    "h": 83,
+    "x": 99,
+    "y": 236
+   },
+   "priceNow": {
+    "text": "500.00 $",
+    "fontSize": "32px",
+    "color": "rgb(241, 245, 249)"
+   },
+   "priceWas": {
+    "text": "600.00 $",
+    "fontSize": "13.5px",
+    "color": "rgb(100, 116, 139)",
+    "deco": "line-through"
+   },
+   "priceOff": {
+    "text": "خصم 16.67%",
+    "bg": "rgba(220, 38, 38, 0.16)",
+    "color": "rgb(153, 27, 27)"
+   },
+   "priceBg": "rgb(15, 24, 38)",
+   "metaText": "علامة تجريبية أتصنيف تجريبي — ثلاجاترمز المنتج: DEMO-REF-001",
+   "metaSpans": 3,
+   "facts": [
+    {
+     "label": "التوفّر",
+     "value": "متوفر"
+    },
+    {
+     "label": "العلامة",
+     "value": "علامة تجريبية أ"
+    },
+    {
+     "label": "التصنيف",
+     "value": "تصنيف تجريبي — ثلاجات"
+    },
+    {
+     "label": "رمز المنتج",
+     "value": "DEMO-REF-001"
+    }
+   ],
+   "factsCols": "273.016px 273.031px",
+   "qty": {
+    "box": {
+     "w": 172,
+     "h": 44,
+     "x": 485,
+     "y": 509
+    },
+    "role": "group",
+    "label": "اختيار الكمية",
+    "input": {
+     "value": "1",
+     "min": "1",
+     "max": "99",
+     "label": "الكمية",
+     "box": {
+      "w": 68,
+      "h": 44,
+      "x": 537,
+      "y": 509
+     }
+    },
+    "btn0": {
+     "label": "إنقاص الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 613,
+      "y": 509
+     }
+    },
+    "btn1": {
+     "label": "زيادة الكمية",
+     "box": {
+      "w": 44,
+      "h": 44,
+      "x": 485,
+      "y": 509
+     }
+    }
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 338,
+     "y": 507
+    },
+    "disabled": false,
+    "ariaDisabled": null,
+    "name": null,
+    "bg": "rgb(20, 184, 166)",
+    "color": "rgb(255, 255, 255)",
+    "radius": "8px"
+   },
+   "actions": {
+    "display": "flex",
+    "box": {
+     "w": 558,
+     "h": 48,
+     "x": 99,
+     "y": 507
+    }
+   },
+   "note": "الأسعار معروضة كما هي في نظام المتجر. الدفع عبر شام كاش بتحويل يدوي مع مراجعة من فريق المتجر.",
+   "panels": [],
+   "specs": 0,
+   "crumbs": [
+    {
+     "tag": "A",
+     "text": "الرئيسية",
+     "href": "#/"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "المنتجات",
+     "href": "#/products"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "A",
+     "text": "تصنيف تجريبي — ثلاجات",
+     "href": "#/products?categoryId=293"
+    },
+    {
+     "tag": "SPAN",
+     "text": "‹",
+     "href": null
+    },
+    {
+     "tag": "SPAN",
+     "text": "منتج تجريبي — ثلاجة 50",
+     "href": null
+    }
+   ],
+   "crumbsNav": true,
+   "related": {
+    "cards": 1,
+    "gridCols": 4,
+    "card": {
+     "w": 280,
+     "h": 512,
+     "x": 987,
+     "y": 800
+    },
+    "media": {
+     "w": 278,
+     "h": 278,
+     "x": 988,
+     "y": 801
+    },
+    "mediaAspect": "1 / 1",
+    "addRadius": "0px",
+    "addW": {
+     "w": 114,
+     "h": 44,
+     "x": 1141,
+     "y": 1251
+    },
+    "details": "flex",
+    "desc": "flow-root",
+    "metaSpans": 3,
+    "cardBg": "rgb(18, 27, 43)"
+   },
+   "h1": [
+    "منتج تجريبي — ثلاجة 500 لتر"
+   ],
+   "h2": [
+    "منتجات مشابهة"
+   ],
+   "dir": "rtl",
+   "overflow": 0,
+   "docH": 1678,
+   "footerY": 1392,
+   "body": "rgb(10, 18, 32)",
+   "bodyColor": "rgb(203, 213, 225)"
+  }
+ },
+ "misc": {}
+}

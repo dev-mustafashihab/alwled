@@ -1,0 +1,28 @@
+{
+ "top_open": {
+  "scrollY": 0,
+  "headerTop": 0,
+  "headerBottom": 65
+ },
+ "menu_open_top": {
+  "scrollY": 0,
+  "headerTop": 0,
+  "headerBottom": 65,
+  "drawerTop": 65,
+  "gap": 0,
+  "drawerH": 779
+ },
+ "menu_open_scroll1200": {
+  "scrollY": 1200,
+  "headerTop": 0,
+  "headerBottom": 65,
+  "drawerTop": 65,
+  "gap": 0,
+  "drawerH": 779
+ },
+ "sticky_scroll1200": {
+  "scrollY": 1200,
+  "headerTop": 0,
+  "headerBottom": 65
+ }
+}

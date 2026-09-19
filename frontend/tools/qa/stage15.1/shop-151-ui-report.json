@@ -1,0 +1,249 @@
+{
+  "overflow": {
+    "320": 0,
+    "360": 0,
+    "375": 0,
+    "390": 0,
+    "414": 0,
+    "768": 0,
+    "1024": 0,
+    "1440": 0
+  },
+  "shots": [
+    "/root/alwled/frontend/tools/qa/stage15.1/home-320.png",
+    "/root/alwled/frontend/tools/qa/stage15.1/home-360.png",
+    "/root/alwled/frontend/tools/qa/stage15.1/home-375.png",
+    "/root/alwled/frontend/tools/qa/stage15.1/home-390.png",
+    "/root/alwled/frontend/tools/qa/stage15.1/home-414.png",
+    "/root/alwled/frontend/tools/qa/stage15.1/home-768.png",
+    "/root/alwled/frontend/tools/qa/stage15.1/home-1024.png",
+    "/root/alwled/frontend/tools/qa/stage15.1/home-1440.png",
+    "/root/alwled/frontend/tools/qa/stage15.1/drawer-open-390.png",
+    "/root/alwled/frontend/tools/qa/stage15.1/product-390.png",
+    "/root/alwled/frontend/tools/qa/stage15.1/footer-390.png",
+    "/root/alwled/frontend/tools/qa/stage15.1/home-1280.png"
+  ],
+  "checks": [
+    {
+      "name": "overflow 320 = 0",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "name": "overflow 360 = 0",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "name": "overflow 375 = 0",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "name": "overflow 390 = 0",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "name": "overflow 414 = 0",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "name": "overflow 768 = 0",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "name": "overflow 1024 = 0",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "name": "overflow 1440 = 0",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "name": "burger visible & touch >= 44px",
+      "ok": true,
+      "detail": "44x44"
+    },
+    {
+      "name": "burger has 3 equal lines",
+      "ok": true,
+      "detail": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "name": "product grid = 2 columns on mobile",
+      "ok": true,
+      "detail": 2
+    },
+    {
+      "name": "hero title > body text",
+      "ok": true,
+      "detail": {
+        "hero": 26.16,
+        "body": 15,
+        "card": 14.5
+      }
+    },
+    {
+      "name": "card name >= 14px",
+      "ok": true,
+      "detail": 14.5
+    },
+    {
+      "name": "drawer opens (is-open, aria-expanded=true)",
+      "ok": true,
+      "detail": {
+        "openClass": true,
+        "hidden": false,
+        "aria": "true",
+        "panelLeft": 0,
+        "panelRight": 390,
+        "vw": 390,
+        "scrimVisible": "1",
+        "bodyOverflow": "hidden",
+        "focusedInside": true,
+        "focused": ""
+      }
+    },
+    {
+      "name": "menu drops from under the header (reference pattern)",
+      "ok": true,
+      "detail": {
+        "openClass": true,
+        "hidden": false,
+        "aria": "true",
+        "panelLeft": 0,
+        "panelRight": 390,
+        "vw": 390,
+        "scrimVisible": "1",
+        "bodyOverflow": "hidden",
+        "focusedInside": true,
+        "focused": ""
+      }
+    },
+    {
+      "name": "menu covers the viewport width",
+      "ok": true,
+      "detail": {
+        "openClass": true,
+        "hidden": false,
+        "aria": "true",
+        "panelLeft": 0,
+        "panelRight": 390,
+        "vw": 390,
+        "scrimVisible": "1",
+        "bodyOverflow": "hidden",
+        "focusedInside": true,
+        "focused": ""
+      }
+    },
+    {
+      "name": "body scroll locked",
+      "ok": true,
+      "detail": "hidden"
+    },
+    {
+      "name": "focus moved into menu",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "drawer targets >= 44px",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "page does not scroll behind drawer",
+      "ok": true,
+      "detail": "0 -> 0"
+    },
+    {
+      "name": "Escape closes drawer",
+      "ok": true,
+      "detail": {
+        "hidden": true,
+        "aria": "false",
+        "bodyOverflow": "",
+        "focused": "shop-burger"
+      }
+    },
+    {
+      "name": "body scroll restored after close",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "focus returns to burger",
+      "ok": true,
+      "detail": "shop-burger"
+    },
+    {
+      "name": "page scrolls again after close",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "menu button toggles open/close (X state)",
+      "ok": true,
+      "detail": "open=True closed=True"
+    },
+    {
+      "name": "click outside closes menu",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "add-to-cart visible & >= 44px",
+      "ok": true,
+      "detail": "182x48"
+    },
+    {
+      "name": "qty buttons >= 44px",
+      "ok": true,
+      "detail": {
+        "x": 334,
+        "y": 786,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "name": "guest add-to-cart shows auth prompt",
+      "ok": true,
+      "detail": {
+        "dialogs": 1,
+        "text": "سجّل الدخول لإضافة المنتج إلى السلة\n✕\n\nحتى تضيف المنتج إلى ا"
+      }
+    },
+    {
+      "name": "footer has 3 accordion sections (mobile closed)",
+      "ok": true,
+      "detail": {
+        "count": 3,
+        "openCount": 0
+      }
+    },
+    {
+      "name": "footer sections open on desktop",
+      "ok": true,
+      "detail": 3
+    },
+    {
+      "name": "no console errors",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "failures": [],
+  "console_errors": [],
+  "passed": 32,
+  "total": 32
+}

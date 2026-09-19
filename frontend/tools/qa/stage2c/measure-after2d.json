@@ -1,0 +1,1433 @@
+{
+  "tag": "after2d",
+  "url": "https://panel.fahd-car.cloud/alwled/shop/",
+  "sizes": {
+    "360": {
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 360,
+        "h": 65,
+        "bottom": 65
+      },
+      "headerCss": {
+        "background-color": "rgb(255, 255, 255)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)",
+        "box-shadow": "none",
+        "position": "sticky",
+        "backdrop-filter": "saturate(1.8) blur(16px)",
+        "height": "65px"
+      },
+      "headerClass": "shop-header",
+      "inner": {
+        "x": 0,
+        "y": 0,
+        "w": 360,
+        "h": 64,
+        "bottom": 64
+      },
+      "innerCss": {
+        "padding-inline-start": "12px",
+        "padding-inline-end": "12px",
+        "gap": "6px",
+        "height": "64px",
+        "min-height": "60px"
+      },
+      "brand": {
+        "x": 271,
+        "y": 10,
+        "w": 77,
+        "h": 44,
+        "bottom": 54
+      },
+      "logo": {
+        "x": 314,
+        "y": 15,
+        "w": 34,
+        "h": 34,
+        "bottom": 49
+      },
+      "logoCss": {
+        "width": "34px",
+        "height": "34px",
+        "border-radius": "10px"
+      },
+      "brandText": {
+        "text": "الوليد",
+        "css": {
+          "font-size": "14px",
+          "font-weight": "700",
+          "white-space": "nowrap",
+          "overflow": "hidden",
+          "text-overflow": "ellipsis"
+        }
+      },
+      "brandSmall": {
+        "text": "للأجهزة الكهربائية",
+        "css": {
+          "font-size": "11.5px",
+          "display": "none"
+        }
+      },
+      "divider": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        },
+        "display": "none"
+      },
+      "searchBtn": {
+        "x": 112,
+        "y": 10,
+        "w": 44,
+        "h": 44,
+        "bottom": 54
+      },
+      "searchCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "12px"
+      },
+      "searchIcon": {
+        "x": 123.5,
+        "y": 21.5,
+        "w": 21,
+        "h": 21,
+        "bottom": 42.5
+      },
+      "cartBtn": {
+        "x": 62,
+        "y": 10,
+        "w": 44,
+        "h": 44,
+        "bottom": 54
+      },
+      "cartCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "12px"
+      },
+      "cartIcon": {
+        "x": 73.5,
+        "y": 21.5,
+        "w": 21,
+        "h": 21,
+        "bottom": 42.5
+      },
+      "cartBadge": null,
+      "burgerBtn": {
+        "x": 12,
+        "y": 10,
+        "w": 44,
+        "h": 44,
+        "bottom": 54
+      },
+      "burgerCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "12px"
+      },
+      "burgerBars": {
+        "x": 23,
+        "y": 24,
+        "w": 22,
+        "h": 16,
+        "bottom": 40
+      },
+      "actionsCss": {
+        "gap": "6px"
+      },
+      "varHdrTop": "65px",
+      "varHdrHeight": "64px",
+      "varHdrGap": "6px",
+      "overflow": {
+        "docSW": 360,
+        "docCW": 360,
+        "bodySW": 360,
+        "bodyCW": 360
+      },
+      "dpr": 2,
+      "fonts": "loaded"
+    },
+    "390": {
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 65,
+        "bottom": 65
+      },
+      "headerCss": {
+        "background-color": "rgb(255, 255, 255)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)",
+        "box-shadow": "none",
+        "position": "sticky",
+        "backdrop-filter": "saturate(1.8) blur(16px)",
+        "height": "65px"
+      },
+      "headerClass": "shop-header",
+      "inner": {
+        "x": 0,
+        "y": 0,
+        "w": 390,
+        "h": 64,
+        "bottom": 64
+      },
+      "innerCss": {
+        "padding-inline-start": "12px",
+        "padding-inline-end": "12px",
+        "gap": "6px",
+        "height": "64px",
+        "min-height": "60px"
+      },
+      "brand": {
+        "x": 301,
+        "y": 10,
+        "w": 77,
+        "h": 44,
+        "bottom": 54
+      },
+      "logo": {
+        "x": 344,
+        "y": 15,
+        "w": 34,
+        "h": 34,
+        "bottom": 49
+      },
+      "logoCss": {
+        "width": "34px",
+        "height": "34px",
+        "border-radius": "10px"
+      },
+      "brandText": {
+        "text": "الوليد",
+        "css": {
+          "font-size": "14px",
+          "font-weight": "700",
+          "white-space": "nowrap",
+          "overflow": "hidden",
+          "text-overflow": "ellipsis"
+        }
+      },
+      "brandSmall": {
+        "text": "للأجهزة الكهربائية",
+        "css": {
+          "font-size": "11.5px",
+          "display": "none"
+        }
+      },
+      "divider": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        },
+        "display": "none"
+      },
+      "searchBtn": {
+        "x": 112,
+        "y": 10,
+        "w": 44,
+        "h": 44,
+        "bottom": 54
+      },
+      "searchCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "12px"
+      },
+      "searchIcon": {
+        "x": 123.5,
+        "y": 21.5,
+        "w": 21,
+        "h": 21,
+        "bottom": 42.5
+      },
+      "cartBtn": {
+        "x": 62,
+        "y": 10,
+        "w": 44,
+        "h": 44,
+        "bottom": 54
+      },
+      "cartCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "12px"
+      },
+      "cartIcon": {
+        "x": 73.5,
+        "y": 21.5,
+        "w": 21,
+        "h": 21,
+        "bottom": 42.5
+      },
+      "cartBadge": null,
+      "burgerBtn": {
+        "x": 12,
+        "y": 10,
+        "w": 44,
+        "h": 44,
+        "bottom": 54
+      },
+      "burgerCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "12px"
+      },
+      "burgerBars": {
+        "x": 23,
+        "y": 24,
+        "w": 22,
+        "h": 16,
+        "bottom": 40
+      },
+      "actionsCss": {
+        "gap": "6px"
+      },
+      "varHdrTop": "65px",
+      "varHdrHeight": "64px",
+      "varHdrGap": "6px",
+      "overflow": {
+        "docSW": 390,
+        "docCW": 390,
+        "bodySW": 390,
+        "bodyCW": 390
+      },
+      "dpr": 2,
+      "fonts": "loaded"
+    },
+    "430": {
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 430,
+        "h": 65,
+        "bottom": 65
+      },
+      "headerCss": {
+        "background-color": "rgb(255, 255, 255)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)",
+        "box-shadow": "none",
+        "position": "sticky",
+        "backdrop-filter": "saturate(1.8) blur(16px)",
+        "height": "65px"
+      },
+      "headerClass": "shop-header",
+      "inner": {
+        "x": 0,
+        "y": 0,
+        "w": 430,
+        "h": 64,
+        "bottom": 64
+      },
+      "innerCss": {
+        "padding-inline-start": "12px",
+        "padding-inline-end": "12px",
+        "gap": "6px",
+        "height": "64px",
+        "min-height": "60px"
+      },
+      "brand": {
+        "x": 341,
+        "y": 10,
+        "w": 77,
+        "h": 44,
+        "bottom": 54
+      },
+      "logo": {
+        "x": 384,
+        "y": 15,
+        "w": 34,
+        "h": 34,
+        "bottom": 49
+      },
+      "logoCss": {
+        "width": "34px",
+        "height": "34px",
+        "border-radius": "10px"
+      },
+      "brandText": {
+        "text": "الوليد",
+        "css": {
+          "font-size": "14px",
+          "font-weight": "700",
+          "white-space": "nowrap",
+          "overflow": "hidden",
+          "text-overflow": "ellipsis"
+        }
+      },
+      "brandSmall": {
+        "text": "للأجهزة الكهربائية",
+        "css": {
+          "font-size": "11.5px",
+          "display": "none"
+        }
+      },
+      "divider": {
+        "rect": {
+          "x": 334,
+          "y": 19,
+          "w": 1,
+          "h": 26,
+          "bottom": 45
+        },
+        "display": "block"
+      },
+      "searchBtn": {
+        "x": 112,
+        "y": 10,
+        "w": 44,
+        "h": 44,
+        "bottom": 54
+      },
+      "searchCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "12px"
+      },
+      "searchIcon": {
+        "x": 123.5,
+        "y": 21.5,
+        "w": 21,
+        "h": 21,
+        "bottom": 42.5
+      },
+      "cartBtn": {
+        "x": 62,
+        "y": 10,
+        "w": 44,
+        "h": 44,
+        "bottom": 54
+      },
+      "cartCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "12px"
+      },
+      "cartIcon": {
+        "x": 73.5,
+        "y": 21.5,
+        "w": 21,
+        "h": 21,
+        "bottom": 42.5
+      },
+      "cartBadge": null,
+      "burgerBtn": {
+        "x": 12,
+        "y": 10,
+        "w": 44,
+        "h": 44,
+        "bottom": 54
+      },
+      "burgerCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "12px"
+      },
+      "burgerBars": {
+        "x": 23,
+        "y": 24,
+        "w": 22,
+        "h": 16,
+        "bottom": 40
+      },
+      "actionsCss": {
+        "gap": "6px"
+      },
+      "varHdrTop": "65px",
+      "varHdrHeight": "64px",
+      "varHdrGap": "6px",
+      "overflow": {
+        "docSW": 430,
+        "docCW": 430,
+        "bodySW": 430,
+        "bodyCW": 430
+      },
+      "dpr": 2,
+      "fonts": "loaded"
+    },
+    "600": {
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 600,
+        "h": 65,
+        "bottom": 65
+      },
+      "headerCss": {
+        "background-color": "rgb(255, 255, 255)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)",
+        "box-shadow": "none",
+        "position": "sticky",
+        "backdrop-filter": "saturate(1.8) blur(16px)",
+        "height": "65px"
+      },
+      "headerClass": "shop-header",
+      "inner": {
+        "x": 0,
+        "y": 0,
+        "w": 600,
+        "h": 64,
+        "bottom": 64
+      },
+      "innerCss": {
+        "padding-inline-start": "12px",
+        "padding-inline-end": "12px",
+        "gap": "6px",
+        "height": "64px",
+        "min-height": "60px"
+      },
+      "brand": {
+        "x": 511,
+        "y": 10,
+        "w": 77,
+        "h": 44,
+        "bottom": 54
+      },
+      "logo": {
+        "x": 554,
+        "y": 15,
+        "w": 34,
+        "h": 34,
+        "bottom": 49
+      },
+      "logoCss": {
+        "width": "34px",
+        "height": "34px",
+        "border-radius": "10px"
+      },
+      "brandText": {
+        "text": "الوليد",
+        "css": {
+          "font-size": "14px",
+          "font-weight": "700",
+          "white-space": "nowrap",
+          "overflow": "hidden",
+          "text-overflow": "ellipsis"
+        }
+      },
+      "brandSmall": {
+        "text": "للأجهزة الكهربائية",
+        "css": {
+          "font-size": "11.5px",
+          "display": "none"
+        }
+      },
+      "divider": {
+        "rect": {
+          "x": 504,
+          "y": 19,
+          "w": 1,
+          "h": 26,
+          "bottom": 45
+        },
+        "display": "block"
+      },
+      "searchBtn": {
+        "x": 112,
+        "y": 10,
+        "w": 44,
+        "h": 44,
+        "bottom": 54
+      },
+      "searchCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "12px"
+      },
+      "searchIcon": {
+        "x": 123.5,
+        "y": 21.5,
+        "w": 21,
+        "h": 21,
+        "bottom": 42.5
+      },
+      "cartBtn": {
+        "x": 62,
+        "y": 10,
+        "w": 44,
+        "h": 44,
+        "bottom": 54
+      },
+      "cartCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "12px"
+      },
+      "cartIcon": {
+        "x": 73.5,
+        "y": 21.5,
+        "w": 21,
+        "h": 21,
+        "bottom": 42.5
+      },
+      "cartBadge": null,
+      "burgerBtn": {
+        "x": 12,
+        "y": 10,
+        "w": 44,
+        "h": 44,
+        "bottom": 54
+      },
+      "burgerCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "12px"
+      },
+      "burgerBars": {
+        "x": 23,
+        "y": 24,
+        "w": 22,
+        "h": 16,
+        "bottom": 40
+      },
+      "actionsCss": {
+        "gap": "6px"
+      },
+      "varHdrTop": "65px",
+      "varHdrHeight": "64px",
+      "varHdrGap": "6px",
+      "overflow": {
+        "docSW": 600,
+        "docCW": 600,
+        "bodySW": 600,
+        "bodyCW": 600
+      },
+      "dpr": 2,
+      "fonts": "loaded"
+    },
+    "768": {
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 768,
+        "h": 65,
+        "bottom": 65
+      },
+      "headerCss": {
+        "background-color": "rgb(255, 255, 255)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)",
+        "box-shadow": "none",
+        "position": "sticky",
+        "backdrop-filter": "saturate(1.8) blur(16px)",
+        "height": "65px"
+      },
+      "headerClass": "shop-header",
+      "inner": {
+        "x": 0,
+        "y": 0,
+        "w": 768,
+        "h": 64,
+        "bottom": 64
+      },
+      "innerCss": {
+        "padding-inline-start": "16px",
+        "padding-inline-end": "16px",
+        "gap": "8px",
+        "height": "64px",
+        "min-height": "60px"
+      },
+      "brand": {
+        "x": 626,
+        "y": 10,
+        "w": 126,
+        "h": 44,
+        "bottom": 54
+      },
+      "logo": {
+        "x": 716,
+        "y": 14,
+        "w": 36,
+        "h": 36,
+        "bottom": 50
+      },
+      "logoCss": {
+        "width": "36px",
+        "height": "36px",
+        "border-radius": "10px"
+      },
+      "brandText": {
+        "text": "الوليد",
+        "css": {
+          "font-size": "16px",
+          "font-weight": "700",
+          "white-space": "normal",
+          "overflow": "visible",
+          "text-overflow": "clip"
+        }
+      },
+      "brandSmall": {
+        "text": "للأجهزة الكهربائية",
+        "css": {
+          "font-size": "11.5px",
+          "display": "block"
+        }
+      },
+      "divider": {
+        "rect": {
+          "x": 617,
+          "y": 19,
+          "w": 1,
+          "h": 26,
+          "bottom": 45
+        },
+        "display": "block"
+      },
+      "searchBtn": {
+        "x": 120,
+        "y": 10,
+        "w": 44,
+        "h": 44,
+        "bottom": 54
+      },
+      "searchCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "12px"
+      },
+      "searchIcon": {
+        "x": 131.5,
+        "y": 21.5,
+        "w": 21,
+        "h": 21,
+        "bottom": 42.5
+      },
+      "cartBtn": {
+        "x": 68,
+        "y": 10,
+        "w": 44,
+        "h": 44,
+        "bottom": 54
+      },
+      "cartCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "12px"
+      },
+      "cartIcon": {
+        "x": 79.5,
+        "y": 21.5,
+        "w": 21,
+        "h": 21,
+        "bottom": 42.5
+      },
+      "cartBadge": null,
+      "burgerBtn": {
+        "x": 16,
+        "y": 10,
+        "w": 44,
+        "h": 44,
+        "bottom": 54
+      },
+      "burgerCss": {
+        "width": "44px",
+        "height": "44px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 23, 42)",
+        "border-top-width": "1px",
+        "border-top-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "12px"
+      },
+      "burgerBars": {
+        "x": 27,
+        "y": 24,
+        "w": 22,
+        "h": 16,
+        "bottom": 40
+      },
+      "actionsCss": {
+        "gap": "8px"
+      },
+      "varHdrTop": "65px",
+      "varHdrHeight": "64px",
+      "varHdrGap": "8px",
+      "overflow": {
+        "docSW": 768,
+        "docCW": 768,
+        "bodySW": 768,
+        "bodyCW": 768
+      },
+      "dpr": 1,
+      "fonts": "loaded"
+    },
+    "1024": {
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 1024,
+        "h": 74,
+        "bottom": 74
+      },
+      "headerCss": {
+        "background-color": "rgba(255, 255, 255, 0.9)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)",
+        "box-shadow": "rgba(15, 23, 42, 0.06) 0px 4px 20px 0px",
+        "position": "sticky",
+        "backdrop-filter": "saturate(1.8) blur(16px)",
+        "height": "74px"
+      },
+      "headerClass": "shop-header",
+      "inner": {
+        "x": 0,
+        "y": 0,
+        "w": 1024,
+        "h": 73,
+        "bottom": 73
+      },
+      "innerCss": {
+        "padding-inline-start": "24px",
+        "padding-inline-end": "24px",
+        "gap": "10px",
+        "height": "73px",
+        "min-height": "60px"
+      },
+      "brand": {
+        "x": 874,
+        "y": 14.5,
+        "w": 126,
+        "h": 44,
+        "bottom": 58.5
+      },
+      "logo": {
+        "x": 964,
+        "y": 18.5,
+        "w": 36,
+        "h": 36,
+        "bottom": 54.5
+      },
+      "logoCss": {
+        "width": "36px",
+        "height": "36px",
+        "border-radius": "10px"
+      },
+      "brandText": {
+        "text": "الوليد",
+        "css": {
+          "font-size": "16px",
+          "font-weight": "700",
+          "white-space": "normal",
+          "overflow": "visible",
+          "text-overflow": "clip"
+        }
+      },
+      "brandSmall": {
+        "text": "للأجهزة الكهربائية",
+        "css": {
+          "font-size": "11.5px",
+          "display": "block"
+        }
+      },
+      "divider": {
+        "rect": {
+          "x": 863,
+          "y": 24.5,
+          "w": 1,
+          "h": 24,
+          "bottom": 48.5
+        },
+        "display": "block"
+      },
+      "searchBtn": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
+      },
+      "searchCss": {
+        "width": "46px",
+        "height": "46px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 118, 110)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "searchIcon": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
+      },
+      "cartBtn": {
+        "x": 228,
+        "y": 13.5,
+        "w": 46,
+        "h": 46,
+        "bottom": 59.5
+      },
+      "cartCss": {
+        "width": "46px",
+        "height": "46px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 118, 110)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "cartIcon": {
+        "x": 240.5,
+        "y": 26,
+        "w": 21,
+        "h": 21,
+        "bottom": 47
+      },
+      "cartBadge": null,
+      "burgerBtn": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
+      },
+      "burgerCss": {
+        "width": "46px",
+        "height": "46px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 118, 110)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "burgerBars": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
+      },
+      "actionsCss": {
+        "gap": "10px"
+      },
+      "varHdrTop": "74px",
+      "varHdrHeight": "73px",
+      "varHdrGap": "10px",
+      "overflow": {
+        "docSW": 1024,
+        "docCW": 1024,
+        "bodySW": 1024,
+        "bodyCW": 1024
+      },
+      "dpr": 1,
+      "fonts": "loaded"
+    },
+    "1366": {
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 1366,
+        "h": 74,
+        "bottom": 74
+      },
+      "headerCss": {
+        "background-color": "rgba(255, 255, 255, 0.9)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)",
+        "box-shadow": "rgba(15, 23, 42, 0.06) 0px 4px 20px 0px",
+        "position": "sticky",
+        "backdrop-filter": "saturate(1.8) blur(16px)",
+        "height": "74px"
+      },
+      "headerClass": "shop-header",
+      "inner": {
+        "x": 83,
+        "y": 0,
+        "w": 1200,
+        "h": 73,
+        "bottom": 73
+      },
+      "innerCss": {
+        "padding-inline-start": "24px",
+        "padding-inline-end": "24px",
+        "gap": "10px",
+        "height": "73px",
+        "min-height": "60px"
+      },
+      "brand": {
+        "x": 1133,
+        "y": 14.5,
+        "w": 126,
+        "h": 44,
+        "bottom": 58.5
+      },
+      "logo": {
+        "x": 1223,
+        "y": 18.5,
+        "w": 36,
+        "h": 36,
+        "bottom": 54.5
+      },
+      "logoCss": {
+        "width": "36px",
+        "height": "36px",
+        "border-radius": "10px"
+      },
+      "brandText": {
+        "text": "الوليد",
+        "css": {
+          "font-size": "16px",
+          "font-weight": "700",
+          "white-space": "normal",
+          "overflow": "visible",
+          "text-overflow": "clip"
+        }
+      },
+      "brandSmall": {
+        "text": "للأجهزة الكهربائية",
+        "css": {
+          "font-size": "11.5px",
+          "display": "block"
+        }
+      },
+      "divider": {
+        "rect": {
+          "x": 1122,
+          "y": 24.5,
+          "w": 1,
+          "h": 24,
+          "bottom": 48.5
+        },
+        "display": "block"
+      },
+      "searchBtn": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
+      },
+      "searchCss": {
+        "width": "46px",
+        "height": "46px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 118, 110)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "searchIcon": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
+      },
+      "cartBtn": {
+        "x": 311,
+        "y": 13.5,
+        "w": 46,
+        "h": 46,
+        "bottom": 59.5
+      },
+      "cartCss": {
+        "width": "46px",
+        "height": "46px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 118, 110)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "cartIcon": {
+        "x": 323.5,
+        "y": 26,
+        "w": 21,
+        "h": 21,
+        "bottom": 47
+      },
+      "cartBadge": null,
+      "burgerBtn": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
+      },
+      "burgerCss": {
+        "width": "46px",
+        "height": "46px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 118, 110)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "burgerBars": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
+      },
+      "actionsCss": {
+        "gap": "10px"
+      },
+      "varHdrTop": "74px",
+      "varHdrHeight": "73px",
+      "varHdrGap": "10px",
+      "overflow": {
+        "docSW": 1366,
+        "docCW": 1366,
+        "bodySW": 1366,
+        "bodyCW": 1366
+      },
+      "dpr": 1,
+      "fonts": "loaded"
+    },
+    "1920": {
+      "header": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 74,
+        "bottom": 74
+      },
+      "headerCss": {
+        "background-color": "rgba(255, 255, 255, 0.9)",
+        "border-bottom-width": "1px",
+        "border-bottom-color": "rgb(230, 236, 243)",
+        "box-shadow": "rgba(15, 23, 42, 0.06) 0px 4px 20px 0px",
+        "position": "sticky",
+        "backdrop-filter": "saturate(1.8) blur(16px)",
+        "height": "74px"
+      },
+      "headerClass": "shop-header",
+      "inner": {
+        "x": 360,
+        "y": 0,
+        "w": 1200,
+        "h": 73,
+        "bottom": 73
+      },
+      "innerCss": {
+        "padding-inline-start": "24px",
+        "padding-inline-end": "24px",
+        "gap": "10px",
+        "height": "73px",
+        "min-height": "60px"
+      },
+      "brand": {
+        "x": 1410,
+        "y": 14.5,
+        "w": 126,
+        "h": 44,
+        "bottom": 58.5
+      },
+      "logo": {
+        "x": 1500,
+        "y": 18.5,
+        "w": 36,
+        "h": 36,
+        "bottom": 54.5
+      },
+      "logoCss": {
+        "width": "36px",
+        "height": "36px",
+        "border-radius": "10px"
+      },
+      "brandText": {
+        "text": "الوليد",
+        "css": {
+          "font-size": "16px",
+          "font-weight": "700",
+          "white-space": "normal",
+          "overflow": "visible",
+          "text-overflow": "clip"
+        }
+      },
+      "brandSmall": {
+        "text": "للأجهزة الكهربائية",
+        "css": {
+          "font-size": "11.5px",
+          "display": "block"
+        }
+      },
+      "divider": {
+        "rect": {
+          "x": 1399,
+          "y": 24.5,
+          "w": 1,
+          "h": 24,
+          "bottom": 48.5
+        },
+        "display": "block"
+      },
+      "searchBtn": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
+      },
+      "searchCss": {
+        "width": "46px",
+        "height": "46px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 118, 110)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "searchIcon": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
+      },
+      "cartBtn": {
+        "x": 588,
+        "y": 13.5,
+        "w": 46,
+        "h": 46,
+        "bottom": 59.5
+      },
+      "cartCss": {
+        "width": "46px",
+        "height": "46px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 118, 110)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "cartIcon": {
+        "x": 600.5,
+        "y": 26,
+        "w": 21,
+        "h": 21,
+        "bottom": 47
+      },
+      "cartBadge": null,
+      "burgerBtn": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
+      },
+      "burgerCss": {
+        "width": "46px",
+        "height": "46px",
+        "background-color": "rgb(248, 250, 252)",
+        "color": "rgb(15, 118, 110)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "12px"
+      },
+      "burgerBars": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
+      },
+      "actionsCss": {
+        "gap": "10px"
+      },
+      "varHdrTop": "74px",
+      "varHdrHeight": "73px",
+      "varHdrGap": "10px",
+      "overflow": {
+        "docSW": 1920,
+        "docCW": 1920,
+        "bodySW": 1920,
+        "bodyCW": 1920
+      },
+      "dpr": 1,
+      "fonts": "loaded"
+    }
+  },
+  "sticky": {
+    "0": {
+      "scrollY": 0,
+      "headerTop": 0,
+      "headerBottom": 65,
+      "height": 65,
+      "isScrolled": false,
+      "boxShadow": "none",
+      "background": "rgb(255, 255, 255)"
+    },
+    "600": {
+      "scrollY": 600,
+      "headerTop": 0,
+      "headerBottom": 65,
+      "height": 65,
+      "isScrolled": true,
+      "boxShadow": "rgba(15, 23, 42, 0.08) 0px 1px 3px 0px, rgba(15, 23, 42, 0.04) 0px 1px 2px 0px",
+      "background": "rgb(255, 255, 255)"
+    },
+    "1200": {
+      "scrollY": 1200,
+      "headerTop": 0,
+      "headerBottom": 65,
+      "height": 65,
+      "isScrolled": true,
+      "boxShadow": "rgba(15, 23, 42, 0.08) 0px 1px 3px 0px, rgba(15, 23, 42, 0.04) 0px 1px 2px 0px",
+      "background": "rgb(255, 255, 255)"
+    },
+    "1913": {
+      "scrollY": 1913,
+      "headerTop": 0,
+      "headerBottom": 65,
+      "height": 65,
+      "isScrolled": true,
+      "boxShadow": "rgba(15, 23, 42, 0.08) 0px 1px 3px 0px, rgba(15, 23, 42, 0.04) 0px 1px 2px 0px",
+      "background": "rgb(255, 255, 255)"
+    }
+  },
+  "menu": {
+    "headerBottom": 65,
+    "drawerTop": 65,
+    "diff": 0,
+    "open": true,
+    "burgerAria": "true",
+    "burgerBg": "rgb(234, 241, 251)",
+    "burgerColor": "rgb(31, 95, 191)",
+    "burgerShadow": "none",
+    "burgerBorder": "rgba(0, 0, 0, 0)"
+  },
+  "search": {
+    "headerBottom": 65,
+    "sheetTop": 65,
+    "diff": 0,
+    "open": true,
+    "sheetBg": "rgb(234, 241, 251)",
+    "sheetColor": "rgb(31, 95, 191)",
+    "sheetBorder": "rgba(0, 0, 0, 0)",
+    "liveRole": false,
+    "liveAttrs": null
+  },
+  "console_errors": [],
+  "shots": [
+    "/root/alwled/frontend/tools/qa/stage2c/after2d-360-top.png",
+    "/root/alwled/frontend/tools/qa/stage2c/after2d-390-top.png",
+    "/root/alwled/frontend/tools/qa/stage2c/after2d-1366-top.png",
+    "/root/alwled/frontend/tools/qa/stage2c/after2d-390-scroll1200.png",
+    "/root/alwled/frontend/tools/qa/stage2c/after2d-390-menu.png",
+    "/root/alwled/frontend/tools/qa/stage2c/after2d-390-search.png",
+    "/root/alwled/frontend/tools/qa/stage2c/after2d-390-search-scroll1200.png",
+    "/root/alwled/frontend/tools/qa/stage2c/after2d-390-focus.png"
+  ],
+  "menu_scrolled": {
+    "scrollY": 1200,
+    "headerTop": 0,
+    "headerBottom": 65,
+    "drawerTop": 65,
+    "diff": 0
+  },
+  "search_a11y": [
+    {
+      "cls": "shop-search-state",
+      "live": "polite",
+      "atomic": "true",
+      "text": "لا نتائج مطابقةلم نجد منتجات تطابق «لمبة». جرّب كل"
+    }
+  ],
+  "search_scrolled": {
+    "scrollY": 1200,
+    "headerTop": 0,
+    "headerBottom": 65,
+    "sheetTop": 65,
+    "diff": 0,
+    "strip": [
+      [
+        5,
+        "DIV.shop-header__inner"
+      ],
+      [
+        20,
+        "DIV.shop-header__inner"
+      ],
+      [
+        40,
+        "DIV.shop-header__inner"
+      ],
+      [
+        60,
+        "DIV.shop-header__inner"
+      ],
+      [
+        72,
+        "DIV.shop-search-sheet__head"
+      ]
+    ]
+  },
+  "focus": {
+    "id": "shop-burger",
+    "cls": "shop-iconbtn shop-header__burger",
+    "outline": "solid 2px",
+    "boxShadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px",
+    "bg": "rgb(234, 241, 251)",
+    "color": "rgb(31, 94, 190)"
+  }
+}

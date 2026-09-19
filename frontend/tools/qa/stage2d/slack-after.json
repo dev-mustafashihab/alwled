@@ -1,0 +1,44 @@
+{
+ "360x780": {
+  "viewport": "360x780",
+  "scrollClientH": 534,
+  "lastChild": "shop-menu__guest",
+  "slackPx": 83,
+  "viewportH": 780
+ },
+ "390x844": {
+  "viewport": "390x844",
+  "scrollClientH": 598,
+  "lastChild": "shop-menu__guest",
+  "slackPx": 147,
+  "viewportH": 844
+ },
+ "390x700": {
+  "viewport": "390x700",
+  "scrollClientH": 454,
+  "lastChild": "shop-menu__guest",
+  "slackPx": 3,
+  "viewportH": 700
+ },
+ "430x900": {
+  "viewport": "430x900",
+  "scrollClientH": 654,
+  "lastChild": "shop-menu__guest",
+  "slackPx": 203,
+  "viewportH": 900
+ },
+ "600x900": {
+  "viewport": "600x900",
+  "scrollClientH": 654,
+  "lastChild": "shop-menu__guest",
+  "slackPx": 203,
+  "viewportH": 900
+ },
+ "768x1000": {
+  "viewport": "768x1000",
+  "scrollClientH": 754,
+  "lastChild": "shop-menu__guest",
+  "slackPx": 303,
+  "viewportH": 1000
+ }
+}

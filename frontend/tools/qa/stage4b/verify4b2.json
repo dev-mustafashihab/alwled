@@ -1,0 +1,2023 @@
+{
+ "console": [
+  {
+   "t": "error",
+   "x": "Failed to load resource: net::ERR_FAILED",
+   "k": "states"
+  },
+  {
+   "t": "error",
+   "x": "Failed to load resource: net::ERR_FAILED",
+   "k": "states"
+  },
+  {
+   "t": "error",
+   "x": "Failed to load resource: net::ERR_FAILED",
+   "k": "states"
+  },
+  {
+   "t": "error",
+   "x": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+   "k": "states"
+  }
+ ],
+ "failed": [],
+ "m42": {},
+ "matrix": {
+  "360": {
+   "vw": 360,
+   "vh": 900,
+   "cols": 1,
+   "gallery": {
+    "w": 336,
+    "h": 336,
+    "y": 163,
+    "bottom": 499
+   },
+   "stage": {
+    "w": 336,
+    "h": 336,
+    "y": 163,
+    "bottom": 499
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 152,
+     "h": 48,
+     "y": 815,
+     "bottom": 863
+    }
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "y": 817,
+    "bottom": 861
+   },
+   "factsCells": 1,
+   "factsBox": {
+    "w": 336,
+    "h": 72,
+    "y": 714,
+    "bottom": 786
+   },
+   "factsCols": "336px",
+   "metaSpans": 3,
+   "actions": {
+    "w": 360,
+    "h": 73,
+    "y": 802,
+    "bottom": 875
+   },
+   "ctaAboveFold": true,
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "related": {
+    "card": {
+     "w": 162,
+     "h": 327,
+     "y": 1071,
+     "bottom": 1398
+    },
+    "media": {
+     "w": 160,
+     "h": 140,
+     "y": 1072,
+     "bottom": 1212
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 136,
+     "h": 44,
+     "y": 1341,
+     "bottom": 1385
+    },
+    "cards": 1
+   },
+   "relatedErr": false,
+   "placeholder": "none",
+   "stageImg": null,
+   "priceIsolate": "isolate",
+   "overflow": 0,
+   "docH": 1801,
+   "note": false
+  },
+  "390": {
+   "vw": 390,
+   "vh": 900,
+   "cols": 1,
+   "gallery": {
+    "w": 366,
+    "h": 366,
+    "y": 163,
+    "bottom": 529
+   },
+   "stage": {
+    "w": 366,
+    "h": 366,
+    "y": 163,
+    "bottom": 529
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 182,
+     "h": 48,
+     "y": 817,
+     "bottom": 865
+    }
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "y": 819,
+    "bottom": 863
+   },
+   "factsCells": 1,
+   "factsBox": {
+    "w": 366,
+    "h": 72,
+    "y": 716,
+    "bottom": 788
+   },
+   "factsCols": "366px",
+   "metaSpans": 3,
+   "actions": {
+    "w": 390,
+    "h": 73,
+    "y": 804,
+    "bottom": 877
+   },
+   "ctaAboveFold": true,
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "related": {
+    "card": {
+     "w": 177,
+     "h": 327,
+     "y": 1073,
+     "bottom": 1400
+    },
+    "media": {
+     "w": 175,
+     "h": 140,
+     "y": 1074,
+     "bottom": 1214
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 151,
+     "h": 44,
+     "y": 1343,
+     "bottom": 1387
+    },
+    "cards": 1
+   },
+   "relatedErr": false,
+   "placeholder": "none",
+   "stageImg": null,
+   "priceIsolate": "isolate",
+   "overflow": 0,
+   "docH": 1803,
+   "note": false
+  },
+  "430": {
+   "vw": 430,
+   "vh": 900,
+   "cols": 1,
+   "gallery": {
+    "w": 406,
+    "h": 406,
+    "y": 163,
+    "bottom": 569
+   },
+   "stage": {
+    "w": 406,
+    "h": 406,
+    "y": 163,
+    "bottom": 569
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 222,
+     "h": 48,
+     "y": 840,
+     "bottom": 888
+    }
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "y": 842,
+    "bottom": 886
+   },
+   "factsCells": 1,
+   "factsBox": {
+    "w": 406,
+    "h": 72,
+    "y": 757,
+    "bottom": 829
+   },
+   "factsCols": "406px",
+   "metaSpans": 3,
+   "actions": {
+    "w": 430,
+    "h": 73,
+    "y": 827,
+    "bottom": 900
+   },
+   "ctaAboveFold": true,
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "related": {
+    "card": {
+     "w": 197,
+     "h": 306,
+     "y": 1114,
+     "bottom": 1420
+    },
+    "media": {
+     "w": 195,
+     "h": 140,
+     "y": 1115,
+     "bottom": 1255
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 171,
+     "h": 44,
+     "y": 1363,
+     "bottom": 1407
+    },
+    "cards": 1
+   },
+   "relatedErr": false,
+   "placeholder": "none",
+   "stageImg": null,
+   "priceIsolate": "isolate",
+   "overflow": 0,
+   "docH": 1823,
+   "note": false
+  },
+  "600": {
+   "vw": 600,
+   "vh": 900,
+   "cols": 1,
+   "gallery": {
+    "w": 576,
+    "h": 576,
+    "y": 134,
+    "bottom": 710
+   },
+   "stage": {
+    "w": 576,
+    "h": 576,
+    "y": 134,
+    "bottom": 710
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 392,
+     "h": 48,
+     "y": 840,
+     "bottom": 888
+    }
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "y": 842,
+    "bottom": 886
+   },
+   "factsCells": 1,
+   "factsBox": {
+    "w": 576,
+    "h": 72,
+    "y": 904,
+    "bottom": 976
+   },
+   "factsCols": "576px",
+   "metaSpans": 3,
+   "actions": {
+    "w": 600,
+    "h": 73,
+    "y": 827,
+    "bottom": 900
+   },
+   "ctaAboveFold": true,
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "related": {
+    "card": {
+     "w": 282,
+     "h": 306,
+     "y": 1261,
+     "bottom": 1567
+    },
+    "media": {
+     "w": 280,
+     "h": 140,
+     "y": 1262,
+     "bottom": 1402
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 256,
+     "h": 44,
+     "y": 1510,
+     "bottom": 1554
+    },
+    "cards": 1
+   },
+   "relatedErr": false,
+   "placeholder": "none",
+   "stageImg": null,
+   "priceIsolate": "isolate",
+   "overflow": 0,
+   "docH": 1970,
+   "note": false
+  },
+  "768": {
+   "vw": 768,
+   "vh": 900,
+   "cols": 1,
+   "gallery": {
+    "w": 600,
+    "h": 600,
+    "y": 135,
+    "bottom": 735
+   },
+   "stage": {
+    "w": 600,
+    "h": 600,
+    "y": 135,
+    "bottom": 735
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "y": 1022,
+     "bottom": 1070
+    }
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "y": 1024,
+    "bottom": 1068
+   },
+   "factsCells": 1,
+   "factsBox": {
+    "w": 736,
+    "h": 72,
+    "y": 934,
+    "bottom": 1006
+   },
+   "factsCols": "736px",
+   "metaSpans": 3,
+   "actions": {
+    "w": 736,
+    "h": 48,
+    "y": 1022,
+    "bottom": 1070
+   },
+   "ctaAboveFold": false,
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "related": {
+    "card": {
+     "w": 237,
+     "h": 325,
+     "y": 1278,
+     "bottom": 1603
+    },
+    "media": {
+     "w": 235,
+     "h": 156,
+     "y": 1279,
+     "bottom": 1435
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 211,
+     "h": 44,
+     "y": 1546,
+     "bottom": 1590
+    },
+    "cards": 1
+   },
+   "relatedErr": false,
+   "placeholder": "none",
+   "stageImg": null,
+   "priceIsolate": "isolate",
+   "overflow": 0,
+   "docH": 2009,
+   "note": false
+  },
+  "769": {
+   "vw": 769,
+   "vh": 900,
+   "cols": 1,
+   "gallery": {
+    "w": 600,
+    "h": 600,
+    "y": 135,
+    "bottom": 735
+   },
+   "stage": {
+    "w": 600,
+    "h": 600,
+    "y": 135,
+    "bottom": 735
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "y": 1022,
+     "bottom": 1070
+    }
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "y": 1024,
+    "bottom": 1068
+   },
+   "factsCells": 1,
+   "factsBox": {
+    "w": 737,
+    "h": 72,
+    "y": 934,
+    "bottom": 1006
+   },
+   "factsCols": "737px",
+   "metaSpans": 3,
+   "actions": {
+    "w": 737,
+    "h": 48,
+    "y": 1022,
+    "bottom": 1070
+   },
+   "ctaAboveFold": false,
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "related": {
+    "card": {
+     "w": 238,
+     "h": 325,
+     "y": 1278,
+     "bottom": 1603
+    },
+    "media": {
+     "w": 236,
+     "h": 156,
+     "y": 1279,
+     "bottom": 1435
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 212,
+     "h": 44,
+     "y": 1546,
+     "bottom": 1590
+    },
+    "cards": 1
+   },
+   "relatedErr": false,
+   "placeholder": "none",
+   "stageImg": null,
+   "priceIsolate": "isolate",
+   "overflow": 0,
+   "docH": 2009,
+   "note": false
+  },
+  "900": {
+   "vw": 900,
+   "vh": 900,
+   "cols": 1,
+   "gallery": {
+    "w": 600,
+    "h": 600,
+    "y": 135,
+    "bottom": 735
+   },
+   "stage": {
+    "w": 600,
+    "h": 600,
+    "y": 135,
+    "bottom": 735
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "y": 1026,
+     "bottom": 1074
+    }
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "y": 1028,
+    "bottom": 1072
+   },
+   "factsCells": 1,
+   "factsBox": {
+    "w": 868,
+    "h": 72,
+    "y": 938,
+    "bottom": 1010
+   },
+   "factsCols": "868px",
+   "metaSpans": 3,
+   "actions": {
+    "w": 868,
+    "h": 48,
+    "y": 1026,
+    "bottom": 1074
+   },
+   "ctaAboveFold": false,
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "related": {
+    "card": {
+     "w": 281,
+     "h": 325,
+     "y": 1282,
+     "bottom": 1607
+    },
+    "media": {
+     "w": 279,
+     "h": 156,
+     "y": 1283,
+     "bottom": 1439
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 255,
+     "h": 44,
+     "y": 1550,
+     "bottom": 1594
+    },
+    "cards": 1
+   },
+   "relatedErr": false,
+   "placeholder": "none",
+   "stageImg": null,
+   "priceIsolate": "isolate",
+   "overflow": 0,
+   "docH": 1973,
+   "note": false
+  },
+  "1023": {
+   "vw": 1023,
+   "vh": 900,
+   "cols": 1,
+   "gallery": {
+    "w": 600,
+    "h": 600,
+    "y": 135,
+    "bottom": 735
+   },
+   "stage": {
+    "w": 600,
+    "h": 600,
+    "y": 135,
+    "bottom": 735
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "y": 1031,
+     "bottom": 1079
+    }
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "y": 1033,
+    "bottom": 1077
+   },
+   "factsCells": 1,
+   "factsBox": {
+    "w": 991,
+    "h": 72,
+    "y": 943,
+    "bottom": 1015
+   },
+   "factsCols": "991px",
+   "metaSpans": 3,
+   "actions": {
+    "w": 991,
+    "h": 48,
+    "y": 1031,
+    "bottom": 1079
+   },
+   "ctaAboveFold": false,
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "related": {
+    "card": {
+     "w": 320,
+     "h": 325,
+     "y": 1287,
+     "bottom": 1611
+    },
+    "media": {
+     "w": 318,
+     "h": 156,
+     "y": 1288,
+     "bottom": 1444
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 294,
+     "h": 44,
+     "y": 1554,
+     "bottom": 1598
+    },
+    "cards": 1
+   },
+   "relatedErr": false,
+   "placeholder": "none",
+   "stageImg": null,
+   "priceIsolate": "isolate",
+   "overflow": 0,
+   "docH": 1977,
+   "note": false
+  },
+  "1024": {
+   "vw": 1024,
+   "vh": 900,
+   "cols": 1,
+   "gallery": {
+    "w": 600,
+    "h": 600,
+    "y": 144,
+    "bottom": 744
+   },
+   "stage": {
+    "w": 600,
+    "h": 600,
+    "y": 144,
+    "bottom": 744
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "y": 1040,
+     "bottom": 1088
+    }
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "y": 1042,
+    "bottom": 1086
+   },
+   "factsCells": 1,
+   "factsBox": {
+    "w": 992,
+    "h": 72,
+    "y": 952,
+    "bottom": 1024
+   },
+   "factsCols": "992px",
+   "metaSpans": 3,
+   "actions": {
+    "w": 992,
+    "h": 48,
+    "y": 1040,
+    "bottom": 1088
+   },
+   "ctaAboveFold": false,
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "related": {
+    "card": {
+     "w": 320,
+     "h": 357,
+     "y": 1296,
+     "bottom": 1652
+    },
+    "media": {
+     "w": 318,
+     "h": 188,
+     "y": 1297,
+     "bottom": 1485
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 294,
+     "h": 44,
+     "y": 1595,
+     "bottom": 1639
+    },
+    "cards": 1
+   },
+   "relatedErr": false,
+   "placeholder": "none",
+   "stageImg": null,
+   "priceIsolate": "isolate",
+   "overflow": 0,
+   "docH": 2018,
+   "note": false
+  },
+  "1280": {
+   "vw": 1280,
+   "vh": 900,
+   "cols": 2,
+   "gallery": {
+    "w": 586,
+    "h": 586,
+    "y": 144,
+    "bottom": 730
+   },
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "y": 144,
+    "bottom": 730
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "y": 423,
+     "bottom": 471
+    }
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "y": 425,
+    "bottom": 469
+   },
+   "factsCells": 1,
+   "factsBox": {
+    "w": 558,
+    "h": 72,
+    "y": 335,
+    "bottom": 407
+   },
+   "factsCols": "558.047px",
+   "metaSpans": 3,
+   "actions": {
+    "w": 558,
+    "h": 48,
+    "y": 423,
+    "bottom": 471
+   },
+   "ctaAboveFold": true,
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "related": {
+    "card": {
+     "w": 280,
+     "h": 357,
+     "y": 938,
+     "bottom": 1294
+    },
+    "media": {
+     "w": 278,
+     "h": 188,
+     "y": 939,
+     "bottom": 1127
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 254,
+     "h": 44,
+     "y": 1237,
+     "bottom": 1281
+    },
+    "cards": 1
+   },
+   "relatedErr": false,
+   "placeholder": "none",
+   "stageImg": null,
+   "priceIsolate": "isolate",
+   "overflow": 0,
+   "docH": 1660,
+   "note": false
+  },
+  "1366": {
+   "vw": 1366,
+   "vh": 900,
+   "cols": 2,
+   "gallery": {
+    "w": 586,
+    "h": 586,
+    "y": 144,
+    "bottom": 730
+   },
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "y": 144,
+    "bottom": 730
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "y": 423,
+     "bottom": 471
+    }
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "y": 425,
+    "bottom": 469
+   },
+   "factsCells": 1,
+   "factsBox": {
+    "w": 558,
+    "h": 72,
+    "y": 335,
+    "bottom": 407
+   },
+   "factsCols": "558.047px",
+   "metaSpans": 3,
+   "actions": {
+    "w": 558,
+    "h": 48,
+    "y": 423,
+    "bottom": 471
+   },
+   "ctaAboveFold": true,
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "related": {
+    "card": {
+     "w": 280,
+     "h": 357,
+     "y": 938,
+     "bottom": 1294
+    },
+    "media": {
+     "w": 278,
+     "h": 188,
+     "y": 939,
+     "bottom": 1127
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 254,
+     "h": 44,
+     "y": 1237,
+     "bottom": 1281
+    },
+    "cards": 1
+   },
+   "relatedErr": false,
+   "placeholder": "none",
+   "stageImg": null,
+   "priceIsolate": "isolate",
+   "overflow": 0,
+   "docH": 1660,
+   "note": false
+  },
+  "1440": {
+   "vw": 1440,
+   "vh": 900,
+   "cols": 2,
+   "gallery": {
+    "w": 586,
+    "h": 586,
+    "y": 144,
+    "bottom": 730
+   },
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "y": 144,
+    "bottom": 730
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "y": 423,
+     "bottom": 471
+    }
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "y": 425,
+    "bottom": 469
+   },
+   "factsCells": 1,
+   "factsBox": {
+    "w": 558,
+    "h": 72,
+    "y": 335,
+    "bottom": 407
+   },
+   "factsCols": "558.047px",
+   "metaSpans": 3,
+   "actions": {
+    "w": 558,
+    "h": 48,
+    "y": 423,
+    "bottom": 471
+   },
+   "ctaAboveFold": true,
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "related": {
+    "card": {
+     "w": 280,
+     "h": 357,
+     "y": 938,
+     "bottom": 1294
+    },
+    "media": {
+     "w": 278,
+     "h": 188,
+     "y": 939,
+     "bottom": 1127
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 254,
+     "h": 44,
+     "y": 1237,
+     "bottom": 1281
+    },
+    "cards": 1
+   },
+   "relatedErr": false,
+   "placeholder": "none",
+   "stageImg": null,
+   "priceIsolate": "isolate",
+   "overflow": 0,
+   "docH": 1660,
+   "note": false
+  },
+  "1920": {
+   "vw": 1920,
+   "vh": 900,
+   "cols": 2,
+   "gallery": {
+    "w": 586,
+    "h": 586,
+    "y": 144,
+    "bottom": 730
+   },
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "y": 144,
+    "bottom": 730
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "y": 423,
+     "bottom": 471
+    }
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "y": 425,
+    "bottom": 469
+   },
+   "factsCells": 1,
+   "factsBox": {
+    "w": 558,
+    "h": 72,
+    "y": 335,
+    "bottom": 407
+   },
+   "factsCols": "558.047px",
+   "metaSpans": 3,
+   "actions": {
+    "w": 558,
+    "h": 48,
+    "y": 423,
+    "bottom": 471
+   },
+   "ctaAboveFold": true,
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "related": {
+    "card": {
+     "w": 280,
+     "h": 357,
+     "y": 938,
+     "bottom": 1294
+    },
+    "media": {
+     "w": 278,
+     "h": 188,
+     "y": 939,
+     "bottom": 1127
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 254,
+     "h": 44,
+     "y": 1237,
+     "bottom": 1281
+    },
+    "cards": 1
+   },
+   "relatedErr": false,
+   "placeholder": "none",
+   "stageImg": null,
+   "priceIsolate": "isolate",
+   "overflow": 0,
+   "docH": 1660,
+   "note": false
+  }
+ },
+ "theme": {
+  "390_light_632": {
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 182,
+     "h": 48,
+     "y": 817,
+     "bottom": 865
+    }
+   },
+   "factsCells": 1,
+   "related": {
+    "card": {
+     "w": 177,
+     "h": 327,
+     "y": 1073,
+     "bottom": 1400
+    },
+    "media": {
+     "w": 175,
+     "h": 140,
+     "y": 1074,
+     "bottom": 1214
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 151,
+     "h": 44,
+     "y": 1343,
+     "bottom": 1387
+    },
+    "cards": 1
+   },
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "overflow": 0,
+   "note": false
+  },
+  "390_light_633": {
+   "add": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "box": {
+     "w": 182,
+     "h": 48,
+     "y": 817,
+     "bottom": 865
+    }
+   },
+   "factsCells": 1,
+   "related": {
+    "card": {
+     "w": 177,
+     "h": 327,
+     "y": 1073,
+     "bottom": 1400
+    },
+    "media": {
+     "w": 175,
+     "h": 140,
+     "y": 1074,
+     "bottom": 1214
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 151,
+     "h": 44,
+     "y": 1343,
+     "bottom": 1387
+    },
+    "cards": 1
+   },
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "overflow": 0,
+   "note": false
+  },
+  "390_dark_632": {
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 182,
+     "h": 48,
+     "y": 817,
+     "bottom": 865
+    }
+   },
+   "factsCells": 1,
+   "related": {
+    "card": {
+     "w": 177,
+     "h": 327,
+     "y": 1073,
+     "bottom": 1400
+    },
+    "media": {
+     "w": 175,
+     "h": 140,
+     "y": 1074,
+     "bottom": 1214
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 151,
+     "h": 44,
+     "y": 1343,
+     "bottom": 1387
+    },
+    "cards": 1
+   },
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "overflow": 0,
+   "note": false
+  },
+  "390_dark_633": {
+   "add": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "box": {
+     "w": 182,
+     "h": 48,
+     "y": 817,
+     "bottom": 865
+    }
+   },
+   "factsCells": 1,
+   "related": {
+    "card": {
+     "w": 177,
+     "h": 327,
+     "y": 1073,
+     "bottom": 1400
+    },
+    "media": {
+     "w": 175,
+     "h": 140,
+     "y": 1074,
+     "bottom": 1214
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 151,
+     "h": 44,
+     "y": 1343,
+     "bottom": 1387
+    },
+    "cards": 1
+   },
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "overflow": 0,
+   "note": false
+  },
+  "768_light_632": {
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "y": 1022,
+     "bottom": 1070
+    }
+   },
+   "factsCells": 1,
+   "related": {
+    "card": {
+     "w": 237,
+     "h": 325,
+     "y": 1278,
+     "bottom": 1603
+    },
+    "media": {
+     "w": 235,
+     "h": 156,
+     "y": 1279,
+     "bottom": 1435
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 211,
+     "h": 44,
+     "y": 1546,
+     "bottom": 1590
+    },
+    "cards": 1
+   },
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "overflow": 0,
+   "note": false
+  },
+  "768_light_633": {
+   "add": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "box": {
+     "w": 131,
+     "h": 48,
+     "y": 1022,
+     "bottom": 1070
+    }
+   },
+   "factsCells": 1,
+   "related": {
+    "card": {
+     "w": 237,
+     "h": 325,
+     "y": 1278,
+     "bottom": 1603
+    },
+    "media": {
+     "w": 235,
+     "h": 156,
+     "y": 1279,
+     "bottom": 1435
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 211,
+     "h": 44,
+     "y": 1546,
+     "bottom": 1590
+    },
+    "cards": 1
+   },
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "overflow": 0,
+   "note": false
+  },
+  "768_dark_632": {
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "y": 1022,
+     "bottom": 1070
+    }
+   },
+   "factsCells": 1,
+   "related": {
+    "card": {
+     "w": 237,
+     "h": 325,
+     "y": 1278,
+     "bottom": 1603
+    },
+    "media": {
+     "w": 235,
+     "h": 156,
+     "y": 1279,
+     "bottom": 1435
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 211,
+     "h": 44,
+     "y": 1546,
+     "bottom": 1590
+    },
+    "cards": 1
+   },
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "overflow": 0,
+   "note": false
+  },
+  "768_dark_633": {
+   "add": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "box": {
+     "w": 131,
+     "h": 48,
+     "y": 1022,
+     "bottom": 1070
+    }
+   },
+   "factsCells": 1,
+   "related": {
+    "card": {
+     "w": 237,
+     "h": 325,
+     "y": 1278,
+     "bottom": 1603
+    },
+    "media": {
+     "w": 235,
+     "h": 156,
+     "y": 1279,
+     "bottom": 1435
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 211,
+     "h": 44,
+     "y": 1546,
+     "bottom": 1590
+    },
+    "cards": 1
+   },
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "overflow": 0,
+   "note": false
+  },
+  "1024_light_632": {
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "y": 1040,
+     "bottom": 1088
+    }
+   },
+   "factsCells": 1,
+   "related": {
+    "card": {
+     "w": 320,
+     "h": 357,
+     "y": 1296,
+     "bottom": 1652
+    },
+    "media": {
+     "w": 318,
+     "h": 188,
+     "y": 1297,
+     "bottom": 1485
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 294,
+     "h": 44,
+     "y": 1595,
+     "bottom": 1639
+    },
+    "cards": 1
+   },
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "overflow": 0,
+   "note": false
+  },
+  "1024_light_633": {
+   "add": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "box": {
+     "w": 131,
+     "h": 48,
+     "y": 1040,
+     "bottom": 1088
+    }
+   },
+   "factsCells": 1,
+   "related": {
+    "card": {
+     "w": 320,
+     "h": 357,
+     "y": 1296,
+     "bottom": 1652
+    },
+    "media": {
+     "w": 318,
+     "h": 188,
+     "y": 1297,
+     "bottom": 1485
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 294,
+     "h": 44,
+     "y": 1595,
+     "bottom": 1639
+    },
+    "cards": 1
+   },
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "overflow": 0,
+   "note": false
+  },
+  "1024_dark_632": {
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "y": 1040,
+     "bottom": 1088
+    }
+   },
+   "factsCells": 1,
+   "related": {
+    "card": {
+     "w": 320,
+     "h": 357,
+     "y": 1296,
+     "bottom": 1652
+    },
+    "media": {
+     "w": 318,
+     "h": 188,
+     "y": 1297,
+     "bottom": 1485
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 294,
+     "h": 44,
+     "y": 1595,
+     "bottom": 1639
+    },
+    "cards": 1
+   },
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "overflow": 0,
+   "note": false
+  },
+  "1024_dark_633": {
+   "add": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "box": {
+     "w": 131,
+     "h": 48,
+     "y": 1040,
+     "bottom": 1088
+    }
+   },
+   "factsCells": 1,
+   "related": {
+    "card": {
+     "w": 320,
+     "h": 357,
+     "y": 1296,
+     "bottom": 1652
+    },
+    "media": {
+     "w": 318,
+     "h": 188,
+     "y": 1297,
+     "bottom": 1485
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 294,
+     "h": 44,
+     "y": 1595,
+     "bottom": 1639
+    },
+    "cards": 1
+   },
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "overflow": 0,
+   "note": false
+  },
+  "1366_light_632": {
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "y": 423,
+     "bottom": 471
+    }
+   },
+   "factsCells": 1,
+   "related": {
+    "card": {
+     "w": 280,
+     "h": 357,
+     "y": 938,
+     "bottom": 1294
+    },
+    "media": {
+     "w": 278,
+     "h": 188,
+     "y": 939,
+     "bottom": 1127
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 254,
+     "h": 44,
+     "y": 1237,
+     "bottom": 1281
+    },
+    "cards": 1
+   },
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "overflow": 0,
+   "note": false
+  },
+  "1366_light_633": {
+   "add": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "box": {
+     "w": 131,
+     "h": 48,
+     "y": 423,
+     "bottom": 471
+    }
+   },
+   "factsCells": 1,
+   "related": {
+    "card": {
+     "w": 280,
+     "h": 357,
+     "y": 938,
+     "bottom": 1294
+    },
+    "media": {
+     "w": 278,
+     "h": 188,
+     "y": 939,
+     "bottom": 1127
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 254,
+     "h": 44,
+     "y": 1237,
+     "bottom": 1281
+    },
+    "cards": 1
+   },
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "overflow": 0,
+   "note": false
+  },
+  "1366_dark_632": {
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "y": 423,
+     "bottom": 471
+    }
+   },
+   "factsCells": 1,
+   "related": {
+    "card": {
+     "w": 280,
+     "h": 357,
+     "y": 938,
+     "bottom": 1294
+    },
+    "media": {
+     "w": 278,
+     "h": 188,
+     "y": 939,
+     "bottom": 1127
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 254,
+     "h": 44,
+     "y": 1237,
+     "bottom": 1281
+    },
+    "cards": 1
+   },
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "overflow": 0,
+   "note": false
+  },
+  "1366_dark_633": {
+   "add": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "box": {
+     "w": 131,
+     "h": 48,
+     "y": 423,
+     "bottom": 471
+    }
+   },
+   "factsCells": 1,
+   "related": {
+    "card": {
+     "w": 280,
+     "h": 357,
+     "y": 938,
+     "bottom": 1294
+    },
+    "media": {
+     "w": 278,
+     "h": 188,
+     "y": 939,
+     "bottom": 1127
+    },
+    "mediaAspect": "auto",
+    "details": "none",
+    "desc": "none",
+    "metaSpans": 3,
+    "addW": {
+     "w": 254,
+     "h": 44,
+     "y": 1237,
+     "bottom": 1281
+    },
+    "cards": 1
+   },
+   "panels": [
+    {
+     "title": "وصف المنتج",
+     "text": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "crumbCurrent": 1,
+   "overflow": 0,
+   "note": false
+  }
+ },
+ "states": {
+  "related_error": {
+   "note": true,
+   "text": "تعذّر تحميل المنتجات المشابهة.",
+   "role": "status",
+   "cards": 0,
+   "overflow": 0
+  },
+  "broken_image": {
+   "hasImg": false,
+   "placeholder": true,
+   "stageH": 366,
+   "overflow": 0
+  },
+  "description_real": {
+   "panels": [
+    {
+     "t": "وصف المنتج",
+     "x": "بيانات اختبارية للتحقق من العلاقات فقط"
+    }
+   ],
+   "h2": [
+    "وصف المنتج"
+   ]
+  },
+  "loading": {
+   "busy": null,
+   "note": null,
+   "role": null,
+   "overflow": 0
+  },
+  "error": {
+   "role": null,
+   "title": null
+  },
+  "notfound": {
+   "role": "status",
+   "title": "المنتج غير موجود"
+  }
+ },
+ "a11y": {
+  "dupIds": [],
+  "hiddenTabbableReal": 0,
+  "headings": [
+   "H1:منتج تجريبي — ثلاجة 50",
+   "H2:وصف المنتج",
+   "H2:منتجات مشابهة",
+   "H3:منتج تجريبي — ثلاجة 30"
+  ],
+  "crumbCurrent": 1,
+  "facts": 1,
+  "relCards": 1
+ },
+ "regression": {
+  "home_390": {
+   "headerH": 65,
+   "homeCard": "177x321",
+   "overflow": 0
+  },
+  "listing_390": {
+   "card": "177x327",
+   "details": "none",
+   "media": "175x140",
+   "overflow": 0
+  },
+  "taxo_390": {
+   "taxo": "366x92",
+   "overflow": 0
+  },
+  "search": {
+   "rowH": 90,
+   "rows": 2
+  },
+  "home_1366": {
+   "headerH": 74,
+   "homeCard": "280x357",
+   "overflow": 0
+  },
+  "listing_1366": {
+   "card": "280x357",
+   "details": "none",
+   "media": "278x188",
+   "overflow": 0
+  },
+  "taxo_1366": {
+   "taxo": "276x96",
+   "overflow": 0
+  }
+ },
+ "shots": [
+  "/root/alwled/frontend/tools/qa/stage4b/v2-pdp-390.png",
+  "/root/alwled/frontend/tools/qa/stage4b/v2-pdp-768.png",
+  "/root/alwled/frontend/tools/qa/stage4b/v2-pdp-1024.png",
+  "/root/alwled/frontend/tools/qa/stage4b/v2-pdp-1366.png",
+  "/root/alwled/frontend/tools/qa/stage4b/v2-dark-390-632.png",
+  "/root/alwled/frontend/tools/qa/stage4b/v2-dark-390-633.png"
+ ]
+}

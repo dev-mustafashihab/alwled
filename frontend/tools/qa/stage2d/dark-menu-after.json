@@ -1,0 +1,54 @@
+{
+ "light": {
+  "theme": "light",
+  "drawerBg": "rgb(255, 255, 255)",
+  "rowBg": "rgb(234, 241, 251)",
+  "rowColor": "rgb(31, 95, 191)",
+  "rowIcon": "rgb(31, 95, 191)",
+  "currentBg": "rgb(234, 241, 251)",
+  "currentColor": "rgb(31, 95, 191)",
+  "labelColor": "rgb(100, 116, 139)",
+  "dividerBg": "rgb(230, 236, 243)",
+  "themeBoxBg": "rgb(248, 250, 252)",
+  "themeBtnColor": "rgb(31, 95, 191)",
+  "thumbBg": "rgb(234, 241, 251)",
+  "noteColor": "rgb(100, 116, 139)",
+  "ctaBg": "rgb(31, 95, 191)",
+  "ctaColor": "rgb(255, 255, 255)",
+  "vars": {
+   "storeSurface": "#ffffff",
+   "storeSurfaceSoft": "#f8fafc",
+   "storeBorder": "#e6ecf3",
+   "storeText": "#0f172a",
+   "storeTextMuted": "#64748b",
+   "storePrimary": "#1F5FBF",
+   "storePrimarySoft": "#EAF1FB"
+  }
+ },
+ "dark": {
+  "theme": "dark",
+  "drawerBg": "rgb(18, 27, 43)",
+  "rowBg": "rgba(31, 95, 191, 0.18)",
+  "rowColor": "color(srgb 0.57451 0.696078 0.874118)",
+  "rowIcon": "color(srgb 0.57451 0.696078 0.874118)",
+  "currentBg": "rgba(31, 95, 191, 0.18)",
+  "currentColor": "color(srgb 0.57451 0.696078 0.874118)",
+  "labelColor": "rgb(148, 163, 184)",
+  "dividerBg": "rgb(30, 42, 61)",
+  "themeBoxBg": "rgb(15, 24, 38)",
+  "themeBtnColor": "rgb(148, 163, 184)",
+  "thumbBg": "rgba(31, 95, 191, 0.18)",
+  "noteColor": "rgb(148, 163, 184)",
+  "ctaBg": "rgb(31, 95, 191)",
+  "ctaColor": "rgb(255, 255, 255)",
+  "vars": {
+   "storeSurface": "#121b2b",
+   "storeSurfaceSoft": "#0f1826",
+   "storeBorder": "#1e2a3d",
+   "storeText": "#f1f5f9",
+   "storeTextMuted": "#94a3b8",
+   "storePrimary": "#1F5FBF",
+   "storePrimarySoft": "rgba(31, 95, 191, 0.18)"
+  }
+ }
+}

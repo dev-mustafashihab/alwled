@@ -1,0 +1,236 @@
+{
+ "info_390": {
+  "box": [
+   366,
+   36
+  ],
+  "vp_h": 22,
+  "track_h": 20,
+  "item_fs": "13px",
+  "item_lh": "18.2px",
+  "item_dir": "rtl",
+  "track_dir": "rtl",
+  "vp_aria_hidden": "true",
+  "items": 24,
+  "hidden_items": 38,
+  "sr_text": "🔥 عروض جديدة على الأجهزة المنزلية — ✨ تشكيلة جديدة وصلت المعرض — 🚚 خدمة التوصيل متوفرة — ⭐ تابع أحدث عروضنا",
+  "bg": "rgb(31, 95, 191)",
+  "col": "rgb(255, 255, 255)"
+ },
+ "gaps_390": [
+  {
+   "right_gap": 23,
+   "left_gap": -32,
+   "vp_w": 320,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 608.148, 0)"
+  },
+  {
+   "right_gap": -86,
+   "left_gap": -99,
+   "vp_w": 320,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 541.331, 0)"
+  },
+  {
+   "right_gap": -19,
+   "left_gap": -166,
+   "vp_w": 320,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 474.032, 0)"
+  },
+  {
+   "right_gap": -168,
+   "left_gap": -15,
+   "vp_w": 320,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 407.216, 0)"
+  },
+  {
+   "right_gap": -101,
+   "left_gap": -82,
+   "vp_w": 320,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 340.401, 0)"
+  },
+  {
+   "right_gap": -34,
+   "left_gap": -1,
+   "vp_w": 320,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 273.102, 0)"
+  },
+  {
+   "right_gap": 33,
+   "left_gap": -68,
+   "vp_w": 320,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 206.288, 0)"
+  },
+  {
+   "right_gap": -139,
+   "left_gap": -135,
+   "vp_w": 320,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 138.989, 0)"
+  },
+  {
+   "right_gap": -72,
+   "left_gap": -26,
+   "vp_w": 320,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 71.6879, 0)"
+  },
+  {
+   "right_gap": -4,
+   "left_gap": -94,
+   "vp_w": 320,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 4.38794, 0)"
+  },
+  {
+   "right_gap": -62,
+   "left_gap": -163,
+   "vp_w": 320,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 692.908, 0)"
+  },
+  {
+   "right_gap": 6,
+   "left_gap": -15,
+   "vp_w": 320,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 625.123, 0)"
+  }
+ ],
+ "zoom_390": {
+  "box": [
+   366,
+   72
+  ],
+  "vp_h": 40,
+  "track_h": 40,
+  "item_fs": "26px",
+  "item_lh": "36.4px",
+  "text_inside": true,
+  "ov": 0
+ },
+ "console_390": [],
+ "info_1366": {
+  "box": [
+   1168,
+   36
+  ],
+  "vp_h": 22,
+  "track_h": 20,
+  "item_fs": "13px",
+  "item_lh": "18.2px",
+  "item_dir": "rtl",
+  "track_dir": "rtl",
+  "vp_aria_hidden": "true",
+  "items": 24,
+  "hidden_items": 38,
+  "sr_text": "🔥 عروض جديدة على الأجهزة المنزلية — ✨ تشكيلة جديدة وصلت المعرض — 🚚 خدمة التوصيل متوفرة — ⭐ تابع أحدث عروضنا",
+  "bg": "rgb(31, 95, 191)",
+  "col": "rgb(255, 255, 255)"
+ },
+ "gaps_1366": [
+  {
+   "right_gap": 31,
+   "left_gap": 4,
+   "vp_w": 1122,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 599.917, 0)"
+  },
+  {
+   "right_gap": -78,
+   "left_gap": -63,
+   "vp_w": 1122,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 533.102, 0)"
+  },
+  {
+   "right_gap": -11,
+   "left_gap": -130,
+   "vp_w": 1122,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 465.802, 0)"
+  },
+  {
+   "right_gap": -160,
+   "left_gap": -197,
+   "vp_w": 1122,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 398.984, 0)"
+  },
+  {
+   "right_gap": -93,
+   "left_gap": -46,
+   "vp_w": 1122,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 331.686, 0)"
+  },
+  {
+   "right_gap": -25,
+   "left_gap": 34,
+   "vp_w": 1122,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 264.385, 0)"
+  },
+  {
+   "right_gap": -198,
+   "left_gap": -32,
+   "vp_w": 1122,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 197.573, 0)"
+  },
+  {
+   "right_gap": -130,
+   "left_gap": -100,
+   "vp_w": 1122,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 130.27, 0)"
+  },
+  {
+   "right_gap": -62,
+   "left_gap": 8,
+   "vp_w": 1122,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 62.4894, 0)"
+  },
+  {
+   "right_gap": 7,
+   "left_gap": -61,
+   "vp_w": 1122,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 750.522, 0)"
+  },
+  {
+   "right_gap": -52,
+   "left_gap": -129,
+   "vp_w": 1122,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 683.222, 0)"
+  },
+  {
+   "right_gap": 15,
+   "left_gap": 20,
+   "vp_w": 1122,
+   "items": 24,
+   "tf": "matrix(1, 0, 0, 1, 616.409, 0)"
+  }
+ ],
+ "zoom_1366": {
+  "box": [
+   1168,
+   72
+  ],
+  "vp_h": 40,
+  "track_h": 40,
+  "item_fs": "26px",
+  "item_lh": "36.4px",
+  "text_inside": true,
+  "ov": 0
+ },
+ "console_1366": []
+}

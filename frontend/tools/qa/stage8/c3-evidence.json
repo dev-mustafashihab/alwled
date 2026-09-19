@@ -1,0 +1,38 @@
+{
+ "light": {
+  "theme": "light",
+  "card_bg": "rgb(255, 255, 255)",
+  "card_border": "rgb(230, 236, 243)",
+  "card_radius": "14px",
+  "meta_color": "rgb(98, 98, 98)",
+  "meta_size": "12px",
+  "btn_bg": "rgb(255, 255, 255)",
+  "btn_color": "rgb(51, 65, 85)",
+  "btn_h": 44,
+  "img_filter": "none",
+  "img_opacity": "1",
+  "img_mix": "normal",
+  "img_w": 389,
+  "img_h": 130,
+  "body_bg": "rgb(248, 250, 252)",
+  "body_color": "rgb(51, 65, 85)"
+ },
+ "dark": {
+  "theme": "dark",
+  "card_bg": "rgb(18, 27, 43)",
+  "card_border": "rgb(30, 42, 61)",
+  "card_radius": "14px",
+  "meta_color": "rgb(98, 98, 98)",
+  "meta_size": "12px",
+  "btn_bg": "rgb(18, 27, 43)",
+  "btn_color": "rgb(203, 213, 225)",
+  "btn_h": 44,
+  "img_filter": "none",
+  "img_opacity": "1",
+  "img_mix": "normal",
+  "img_w": 389,
+  "img_h": 130,
+  "body_bg": "rgb(10, 18, 32)",
+  "body_color": "rgb(203, 213, 225)"
+ }
+}

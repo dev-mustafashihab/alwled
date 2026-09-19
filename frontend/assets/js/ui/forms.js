@@ -9,6 +9,13 @@
     return global.ALW.dom;
   }
 
+  /** every control gets a stable id so its <label for> always points at it */
+  function withId(config) {
+    var opts = Object.assign({}, config);
+    if (!opts.id) opts.id = 'f-' + (opts.name || Math.random().toString(36).slice(2, 8));
+    return opts;
+  }
+
   function fieldWrapper(config) {
     var wrap = document.createElement('div');
     wrap.className = config.full ? 'field w-full' : 'field';
@@ -45,7 +52,7 @@
   }
 
   function text(config) {
-    var opts = config || {};
+    var opts = withId(config);
     var wrap = fieldWrapper(opts);
     var input = document.createElement('input');
     input.type = opts.type || 'text';
@@ -69,7 +76,7 @@
   }
 
   function password(config) {
-    var opts = config || {};
+    var opts = withId(config);
     var wrap = fieldWrapper(opts);
     var group = document.createElement('div');
     group.className = 'input-group';
@@ -104,12 +111,11 @@
   }
 
   function number(config) {
-    var opts = Object.assign({}, config, { type: 'number' });
-    return text(opts);
+    return text(Object.assign({}, config, { type: 'number' }));
   }
 
   function textarea(config) {
-    var opts = config || {};
+    var opts = withId(config);
     var wrap = fieldWrapper(opts);
     var input = document.createElement('textarea');
     input.className = 'textarea';
@@ -126,7 +132,7 @@
   }
 
   function select(config) {
-    var opts = config || {};
+    var opts = withId(config);
     var wrap = fieldWrapper(opts);
     var input = document.createElement('select');
     input.className = 'select';

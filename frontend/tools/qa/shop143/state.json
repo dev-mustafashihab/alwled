@@ -1,0 +1,63 @@
+{
+  "orders": {
+    "main": {
+      "id": 1456,
+      "orderNumber": "ORD-2026-001320",
+      "total": "700.00",
+      "status": "PENDING"
+    },
+    "reject": {
+      "id": 1457,
+      "orderNumber": "ORD-2026-001321",
+      "total": "350.00"
+    },
+    "cancelled": {
+      "id": 1458,
+      "orderNumber": "ORD-2026-001322"
+    },
+    "cancelled_with_payment": {
+      "id": 1459,
+      "orderNumber": "ORD-2026-001323"
+    }
+  },
+  "payments": {
+    "main": {
+      "id": "cmu497lsy000s5l7ydozxtoff",
+      "orderId": 1456,
+      "amount": "700.00",
+      "status": "SUCCEEDED",
+      "transactionReference": "SC-143-375B2B"
+    },
+    "reject": {
+      "id": "cmu497mgr002j5l7yifnbl53b",
+      "orderId": 1457,
+      "amount": "350.00",
+      "status": "PENDING_REVIEW",
+      "transactionReference": "SC-143-REJ-D065E0"
+    },
+    "cancelled_with_payment": {
+      "id": "cmu497mxs004p5l7y3d3l97m4",
+      "status": "CANCELLED",
+      "transactionReference": null
+    }
+  },
+  "customers": {
+    "a": {
+      "id": "cmu4412t000avyy74kaghnflf",
+      "phone": "0955900100"
+    },
+    "b": {
+      "id": "cmu494h8z00dzmcxjbrv2ltgq",
+      "phone": "0955900160"
+    }
+  },
+  "sham_cash": {
+    "method": "SHAM_CASH",
+    "configured": false,
+    "walletNumber": null,
+    "accountName": null,
+    "instructions": null,
+    "currency": "USD",
+    "submitPath": "POST /api/v1/payments/:id/submit"
+  }
+}

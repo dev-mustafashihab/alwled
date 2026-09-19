@@ -1,0 +1,100 @@
+{
+ "capacity": {
+  "bodyH": 706,
+  "bodyPadding": "16px 12px 24px",
+  "innerH": 666,
+  "labelH": 8,
+  "rowH": 90,
+  "pitch": 98,
+  "capacity": 6,
+  "rowsNow": 2,
+  "visibleRows": 2,
+  "headH": 73,
+  "sheetH": 779
+ },
+ "cssom": {
+  "objectFitRules": [],
+  "placeholderRules": [],
+  "accentRules": 0
+ },
+ "input_blur": {
+  "border": "rgb(230, 236, 243)",
+  "bg": "rgb(248, 250, 252)",
+  "color": "rgb(15, 23, 42)",
+  "font": "16px",
+  "radius": "12px",
+  "outline": "none"
+ },
+ "placeholder_css": [],
+ "colors_light": {
+  "sheetBg": "rgb(255, 255, 255)",
+  "inputBg": "rgb(248, 250, 252)",
+  "inputBorder": "rgb(31, 95, 191)",
+  "inputColor": "rgb(15, 23, 42)",
+  "rowBg": "rgb(255, 255, 255)",
+  "rowBorder": "rgb(230, 236, 243)",
+  "name": "rgb(15, 23, 42)",
+  "meta": "rgb(100, 116, 139)",
+  "price": "rgb(15, 23, 42)",
+  "label": "rgb(100, 116, 139)",
+  "mediaBg": "rgb(248, 250, 252)",
+  "closeBg": "rgb(248, 250, 252)",
+  "closeColor": "rgb(15, 23, 42)",
+  "textMuted": "#64748b",
+  "storePrimary": "#1F5FBF"
+ },
+ "colors_dark": {
+  "sheetBg": "rgb(18, 27, 43)",
+  "inputBg": "rgb(15, 24, 38)",
+  "inputBorder": "color(srgb 0.57451 0.696078 0.874118)",
+  "inputColor": "rgb(241, 245, 249)",
+  "rowBg": "rgb(18, 27, 43)",
+  "rowBorder": "rgb(30, 42, 61)",
+  "name": "rgb(241, 245, 249)",
+  "meta": "rgb(148, 163, 184)",
+  "price": "rgb(241, 245, 249)",
+  "label": "rgb(148, 163, 184)",
+  "mediaBg": "rgb(15, 24, 38)",
+  "closeBg": "rgb(15, 24, 38)",
+  "closeColor": "rgb(241, 245, 249)",
+  "textMuted": "#94a3b8",
+  "storePrimary": "#1F5FBF"
+ },
+ "short_420_top": {
+  "headBottom": 138,
+  "bodyH": 282,
+  "maxScroll": 0,
+  "rows": 2,
+  "visible": 2,
+  "closeInView": true,
+  "closeTop": 79,
+  "inputFocused": "shop-search-sheet-input",
+  "pageScrollY": 0
+ },
+ "short_420_bottom": {
+  "scrollTop": 0,
+  "maxScroll": 0,
+  "lastRowReachable": true,
+  "closeStillInView": true
+ },
+ "contrast_light": {
+  "name_on_row": 17.85,
+  "meta_on_row": 4.76,
+  "price_on_row": 17.85,
+  "label_on_sheet": 4.76,
+  "input_text_on_input": 17.06,
+  "close_icon_on_close": 17.06,
+  "muted_token": "#64748b",
+  "primary_token": "#1F5FBF"
+ },
+ "contrast_dark": {
+  "name_on_row": 15.75,
+  "meta_on_row": 6.73,
+  "price_on_row": 15.75,
+  "label_on_sheet": 6.73,
+  "input_text_on_input": 16.26,
+  "close_icon_on_close": 16.26,
+  "muted_token": "#94a3b8",
+  "primary_token": "#1F5FBF"
+ }
+}

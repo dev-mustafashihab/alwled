@@ -1,0 +1,234 @@
+{
+ "light": {
+  "sheetClose": {
+   "label": "زر إغلاق اللوحة",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 6.09,
+   "shadowVsParent": null,
+   "bgParent": "rgb(255,255,255)"
+  },
+  "toggle": {
+   "label": "زر الفلاتر",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 5.82,
+   "shadowVsParent": null,
+   "bgParent": "rgb(248,250,252)"
+  },
+  "search": {
+   "label": "حقل البحث",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 6.09,
+   "shadowVsParent": null,
+   "bgParent": "rgb(255,255,255)"
+  },
+  "category": {
+   "label": "التصنيف",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 6.09,
+   "shadowVsParent": null,
+   "bgParent": "rgb(255,255,255)"
+  },
+  "brand": {
+   "label": "العلامة",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 6.09,
+   "shadowVsParent": null,
+   "bgParent": "rgb(255,255,255)"
+  },
+  "sort": {
+   "label": "الترتيب",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 6.09,
+   "shadowVsParent": null,
+   "bgParent": "rgb(255,255,255)"
+  },
+  "minprice": {
+   "label": "أقل سعر",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 6.09,
+   "shadowVsParent": null,
+   "bgParent": "rgb(255,255,255)"
+  },
+  "instock": {
+   "label": "المتوفر فقط",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 6.09,
+   "shadowVsParent": null,
+   "bgParent": "rgb(255,255,255)"
+  },
+  "offers": {
+   "label": "عليها خصم",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 6.09,
+   "shadowVsParent": null,
+   "bgParent": "rgb(255,255,255)"
+  },
+  "done": {
+   "label": "عرض النتائج",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px",
+   "ringVsParent": 6.09,
+   "shadowVsParent": 17.85,
+   "bgParent": "rgb(255,255,255)"
+  },
+  "clear": {
+   "label": "تفريغ الفلاتر",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 6.09,
+   "shadowVsParent": null,
+   "bgParent": "rgb(255,255,255)"
+  },
+  "checkLabel": {
+   "h": 44,
+   "w": 358
+  }
+ },
+ "dark": {
+  "sheetClose": {
+   "label": "زر إغلاق اللوحة",
+   "outline": "2px solid rgb(37, 99, 235)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 3.34,
+   "shadowVsParent": null,
+   "bgParent": "rgb(18,27,43)"
+  },
+  "toggle": {
+   "label": "زر الفلاتر",
+   "outline": "2px solid rgb(37, 99, 235)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 3.63,
+   "shadowVsParent": null,
+   "bgParent": "rgb(10,18,32)"
+  },
+  "search": {
+   "label": "حقل البحث",
+   "outline": "2px solid rgb(37, 99, 235)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 3.34,
+   "shadowVsParent": null,
+   "bgParent": "rgb(18,27,43)"
+  },
+  "category": {
+   "label": "التصنيف",
+   "outline": "2px solid rgb(37, 99, 235)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 3.34,
+   "shadowVsParent": null,
+   "bgParent": "rgb(18,27,43)"
+  },
+  "brand": {
+   "label": "العلامة",
+   "outline": "2px solid rgb(37, 99, 235)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 3.34,
+   "shadowVsParent": null,
+   "bgParent": "rgb(18,27,43)"
+  },
+  "sort": {
+   "label": "الترتيب",
+   "outline": "2px solid rgb(37, 99, 235)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 3.34,
+   "shadowVsParent": null,
+   "bgParent": "rgb(18,27,43)"
+  },
+  "minprice": {
+   "label": "أقل سعر",
+   "outline": "2px solid rgb(37, 99, 235)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 3.34,
+   "shadowVsParent": null,
+   "bgParent": "rgb(18,27,43)"
+  },
+  "instock": {
+   "label": "المتوفر فقط",
+   "outline": "2px solid rgb(37, 99, 235)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 3.34,
+   "shadowVsParent": null,
+   "bgParent": "rgb(18,27,43)"
+  },
+  "offers": {
+   "label": "عليها خصم",
+   "outline": "2px solid rgb(37, 99, 235)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 3.34,
+   "shadowVsParent": null,
+   "bgParent": "rgb(18,27,43)"
+  },
+  "done": {
+   "label": "عرض النتائج",
+   "outline": "2px solid rgb(37, 99, 235)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "rgba(0, 0, 0, 0.4) 0px 1px 2px 0px",
+   "ringVsParent": 3.34,
+   "shadowVsParent": 1.22,
+   "bgParent": "rgb(18,27,43)"
+  },
+  "clear": {
+   "label": "تفريغ الفلاتر",
+   "outline": "2px solid rgb(37, 99, 235)",
+   "style": "solid",
+   "offset": "2px",
+   "shadow": "none",
+   "ringVsParent": 3.34,
+   "shadowVsParent": null,
+   "bgParent": "rgb(18,27,43)"
+  },
+  "checkLabel": {
+   "h": 44,
+   "w": 358
+  }
+ }
+}

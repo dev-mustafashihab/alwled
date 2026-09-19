@@ -1,0 +1,327 @@
+{
+  "stage": "14.3",
+  "scope": "customer flow — API level",
+  "base": "https://panel.fahd-car.cloud/alwled-api/api/v1",
+  "total": 52,
+  "passed": 52,
+  "failed": 0,
+  "results": [
+    {
+      "name": "customer A can log in (stage 14.2 account reused)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "customer B (isolation) has a session",
+      "ok": true,
+      "detail": "status=200"
+    },
+    {
+      "name": "customers A and B are different users",
+      "ok": true
+    },
+    {
+      "name": "GET /orders returns the paginated customer shape",
+      "ok": true,
+      "detail": "code=200"
+    },
+    {
+      "name": "GET /notifications/unread-count returns {count}",
+      "ok": true,
+      "detail": "code=200 payload={'count': 28}"
+    },
+    {
+      "name": "GET /payments/sham-cash/account is reachable for a customer",
+      "ok": true,
+      "detail": "code=200"
+    },
+    {
+      "name": "GET /verification/me returns the stage 9 state machine view",
+      "ok": true,
+      "detail": "code=200"
+    },
+    {
+      "name": "GET /auth/sessions lists sessions without tokens",
+      "ok": true,
+      "detail": "code=200"
+    },
+    {
+      "name": "a public product exists for the order flow",
+      "ok": true,
+      "detail": "code=200"
+    },
+    {
+      "name": "cart item added for the QA run",
+      "ok": true,
+      "detail": "code=201"
+    },
+    {
+      "name": "POST /orders creates a real order",
+      "ok": true,
+      "detail": "code=201 "
+    },
+    {
+      "name": "order money comes from the backend as strings",
+      "ok": true
+    },
+    {
+      "name": "same Idempotency-Key returns the same order (no duplicate)",
+      "ok": true,
+      "detail": "replay=1456"
+    },
+    {
+      "name": "4 parallel identical order requests produce exactly one order id",
+      "ok": true,
+      "detail": "ids=['1456']"
+    },
+    {
+      "name": "the order appears exactly once in GET /orders",
+      "ok": true,
+      "detail": "matches=1"
+    },
+    {
+      "name": "POST /payments creates a SHAM_CASH payment",
+      "ok": true,
+      "detail": "code=201 "
+    },
+    {
+      "name": "payment amount equals the order total (backend-authoritative)",
+      "ok": true,
+      "detail": "payment=700.00 order=700.00"
+    },
+    {
+      "name": "payment provider stays null (manual workflow only)",
+      "ok": true,
+      "detail": "provider=None"
+    },
+    {
+      "name": "replaying the payment key returns the same payment",
+      "ok": true
+    },
+    {
+      "name": "a second active payment for the same order is refused by the backend",
+      "ok": true,
+      "detail": "code=409 توجد دفعة مسبقة لهذا الطلب"
+    },
+    {
+      "name": "submit without proofUrl is rejected by the backend",
+      "ok": true,
+      "detail": "code=400"
+    },
+    {
+      "name": "submit with a reference + proof link moves the payment to PENDING_REVIEW",
+      "ok": true,
+      "detail": "code=201 status=PENDING_REVIEW"
+    },
+    {
+      "name": "re-submitting the same payment is refused (409)",
+      "ok": true,
+      "detail": "code=409"
+    },
+    {
+      "name": "client attempts to set amount/status are rejected and never change the payment",
+      "ok": true,
+      "detail": "tamper=400 amount=700.00 status=PENDING_REVIEW"
+    },
+    {
+      "name": "customer sees ORDER_CREATED for the new order",
+      "ok": true,
+      "detail": "types=['PAYMENT_SUBMITTED_FOR_REVIEW', 'PAYMENT_CREATED', 'ORDER_CREATED', 'ORDER_CONFIRMED', 'ORDER_CANCELLED', 'PAYMENT_CREATED', 'ORDER_CREATED', 'ORDER_CANCELLED']"
+    },
+    {
+      "name": "customer sees PAYMENT_SUBMITTED_FOR_REVIEW after submitting proof",
+      "ok": true,
+      "detail": "types=['PAYMENT_SUBMITTED_FOR_REVIEW', 'PAYMENT_CREATED', 'ORDER_CREATED', 'ORDER_CONFIRMED', 'ORDER_CANCELLED', 'PAYMENT_CREATED', 'ORDER_CREATED', 'ORDER_CANCELLED']"
+    },
+    {
+      "name": "POST /notifications/{id}/read marks the customer's own notification",
+      "ok": true,
+      "detail": "code=200"
+    },
+    {
+      "name": "customer B cannot read customer A's order (404)",
+      "ok": true,
+      "detail": "code=404"
+    },
+    {
+      "name": "customer B cannot cancel customer A's order (404)",
+      "ok": true,
+      "detail": "code=404"
+    },
+    {
+      "name": "customer B cannot read customer A's payment (404)",
+      "ok": true,
+      "detail": "code=404"
+    },
+    {
+      "name": "customer B cannot submit proof on customer A's payment (404)",
+      "ok": true,
+      "detail": "code=404"
+    },
+    {
+      "name": "customer B cannot mark customer A's notification as read (404)",
+      "ok": true,
+      "detail": "code=404"
+    },
+    {
+      "name": "customer A's order never appears in customer B's list",
+      "ok": true,
+      "detail": "b_ids=[]"
+    },
+    {
+      "name": "customer B has an independent verification record",
+      "ok": true,
+      "detail": "a=cmu482gr9004gmcxj8vrz0j8k b=None"
+    },
+    {
+      "name": "rejection fixture order+payment created (PENDING_REVIEW)",
+      "ok": true,
+      "detail": "order=1457 payment=cmu497mgr002j5l7yifnbl53b status=PENDING_REVIEW"
+    },
+    {
+      "name": "a PENDING order can be cancelled (state machine)",
+      "ok": true,
+      "detail": "code=200 status=CANCELLED"
+    },
+    {
+      "name": "cancelling an already-cancelled order is refused (409)",
+      "ok": true,
+      "detail": "code=409"
+    },
+    {
+      "name": "cancelling a PENDING order with an active payment follows the order state machine",
+      "ok": true,
+      "detail": "code=200 status=CANCELLED"
+    },
+    {
+      "name": "owner/admin can log in for the review cross-check",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "admin review queue lists the customer's submitted payment",
+      "ok": true,
+      "detail": "code=200 in_queue=True"
+    },
+    {
+      "name": "admin confirm moves the payment to SUCCEEDED",
+      "ok": true,
+      "detail": "code=200 status=SUCCEEDED"
+    },
+    {
+      "name": "customer sees the new payment status without any client-side tampering",
+      "ok": true,
+      "detail": "status=SUCCEEDED"
+    },
+    {
+      "name": "customer receives PAYMENT_CONFIRMED after the admin decision",
+      "ok": true,
+      "detail": "types=['PAYMENT_CONFIRMED', 'ORDER_CANCELLED', 'PAYMENT_CREATED', 'ORDER_CREATED', 'ORDER_CANCELLED', 'ORDER_CREATED', 'PAYMENT_SUBMITTED_FOR_REVIEW', 'PAYMENT_CREATED']"
+    },
+    {
+      "name": "payment approval alone does not silently confirm the order (explicit staff step)",
+      "ok": true,
+      "detail": "status=PENDING"
+    },
+    {
+      "name": "admin confirms the order explicitly",
+      "ok": true,
+      "detail": "code=200 status=CONFIRMED"
+    },
+    {
+      "name": "customer cannot cancel a CONFIRMED order (409)",
+      "ok": true,
+      "detail": "code=409 لا يمكن إلغاء الطلب بعد تأكيده — تواصل مع الدعم"
+    },
+    {
+      "name": "admin can cancel the payment of a cancelled order (no dangling PENDING payment)",
+      "ok": true,
+      "detail": "code=200 status=CANCELLED"
+    },
+    {
+      "name": "admin can read the rejection fixture payment (payments.read)",
+      "ok": true,
+      "detail": "code=200 status=PENDING_REVIEW"
+    },
+    {
+      "name": "creating an order from an empty cart is refused (409)",
+      "ok": true,
+      "detail": "code=409 السلة فارغة — لا يمكن إنشاء طلب"
+    },
+    {
+      "name": "an order beyond available stock is refused by the backend",
+      "ok": true,
+      "detail": "code=409 السلة فارغة — لا يمكن إنشاء طلب"
+    },
+    {
+      "name": "session list contains no token material",
+      "ok": true,
+      "detail": "keys=['createdAt', 'expiresAt', 'ip', 'sessionId', 'userAgent']"
+    },
+    {
+      "name": "change-password with a wrong current password is refused (401/400)",
+      "ok": true,
+      "detail": "code=400"
+    }
+  ],
+  "state": {
+    "orders": {
+      "main": {
+        "id": 1456,
+        "orderNumber": "ORD-2026-001320",
+        "total": "700.00",
+        "status": "PENDING"
+      },
+      "reject": {
+        "id": 1457,
+        "orderNumber": "ORD-2026-001321",
+        "total": "350.00"
+      },
+      "cancelled": {
+        "id": 1458,
+        "orderNumber": "ORD-2026-001322"
+      },
+      "cancelled_with_payment": {
+        "id": 1459,
+        "orderNumber": "ORD-2026-001323"
+      }
+    },
+    "payments": {
+      "main": {
+        "id": "cmu497lsy000s5l7ydozxtoff",
+        "orderId": 1456,
+        "amount": "700.00",
+        "status": "SUCCEEDED"
+      },
+      "reject": {
+        "id": "cmu497mgr002j5l7yifnbl53b",
+        "orderId": 1457,
+        "amount": "350.00",
+        "status": "PENDING"
+      },
+      "cancelled_with_payment": {
+        "id": "cmu497mxs004p5l7y3d3l97m4",
+        "status": "PENDING"
+      }
+    },
+    "customers": {
+      "a": {
+        "id": "cmu4412t000avyy74kaghnflf",
+        "phone": "0955900100"
+      },
+      "b": {
+        "id": "cmu494h8z00dzmcxjbrv2ltgq",
+        "phone": "0955900160"
+      }
+    },
+    "sham_cash": {
+      "method": "SHAM_CASH",
+      "configured": false,
+      "walletNumber": null,
+      "accountName": null,
+      "instructions": null,
+      "currency": "USD",
+      "submitPath": "POST /api/v1/payments/:id/submit"
+    }
+  }
+}

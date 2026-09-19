@@ -1,0 +1,150 @@
+{
+ "390x700": {
+  "top": {
+   "scrollBox": {
+    "top": 65,
+    "bottom": 519
+   },
+   "maxScroll": 1,
+   "firstRow": {
+    "top": 107,
+    "bottom": 157,
+    "inScrollViewport": true,
+    "inViewport": true,
+    "h": 50
+   },
+   "lastRow": {
+    "top": 466,
+    "bottom": 516,
+    "inScrollViewport": true,
+    "inViewport": true,
+    "h": 50
+   },
+   "lastRowText": "إنشاء حساب",
+   "theme": {
+    "top": 536,
+    "bottom": 590,
+    "inScrollViewport": false,
+    "inViewport": true,
+    "h": 54
+   },
+   "cta": {
+    "top": 638,
+    "bottom": 684,
+    "inScrollViewport": false,
+    "inViewport": true,
+    "h": 46
+   },
+   "themeAfterScroll": null
+  },
+  "bottom": {
+   "scrollBox": {
+    "top": 65,
+    "bottom": 519
+   },
+   "maxScroll": 1,
+   "firstRow": {
+    "top": 106,
+    "bottom": 156,
+    "inScrollViewport": true,
+    "inViewport": true,
+    "h": 50
+   },
+   "lastRow": {
+    "top": 465,
+    "bottom": 515,
+    "inScrollViewport": true,
+    "inViewport": true,
+    "h": 50
+   },
+   "lastRowText": "إنشاء حساب",
+   "theme": {
+    "top": 536,
+    "bottom": 590,
+    "inViewport": true
+   },
+   "cta": {
+    "top": 638,
+    "bottom": 684,
+    "inScrollViewport": false,
+    "inViewport": true,
+    "h": 46
+   },
+   "themeAfterScroll": null
+  }
+ },
+ "390x600": {
+  "top": {
+   "scrollBox": {
+    "top": 65,
+    "bottom": 419
+   },
+   "maxScroll": 101,
+   "firstRow": {
+    "top": 107,
+    "bottom": 157,
+    "inScrollViewport": true,
+    "inViewport": true,
+    "h": 50
+   },
+   "lastRow": {
+    "top": 466,
+    "bottom": 516,
+    "inScrollViewport": false,
+    "inViewport": true,
+    "h": 50
+   },
+   "lastRowText": "إنشاء حساب",
+   "theme": {
+    "top": 436,
+    "bottom": 490,
+    "inScrollViewport": false,
+    "inViewport": true,
+    "h": 54
+   },
+   "cta": {
+    "top": 538,
+    "bottom": 584,
+    "inScrollViewport": false,
+    "inViewport": true,
+    "h": 46
+   },
+   "themeAfterScroll": null
+  },
+  "bottom": {
+   "scrollBox": {
+    "top": 65,
+    "bottom": 419
+   },
+   "maxScroll": 101,
+   "firstRow": {
+    "top": 6,
+    "bottom": 56,
+    "inScrollViewport": false,
+    "inViewport": true,
+    "h": 50
+   },
+   "lastRow": {
+    "top": 365,
+    "bottom": 415,
+    "inScrollViewport": true,
+    "inViewport": true,
+    "h": 50
+   },
+   "lastRowText": "إنشاء حساب",
+   "theme": {
+    "top": 436,
+    "bottom": 490,
+    "inViewport": true
+   },
+   "cta": {
+    "top": 538,
+    "bottom": 584,
+    "inScrollViewport": false,
+    "inViewport": true,
+    "h": 46
+   },
+   "themeAfterScroll": null
+  }
+ }
+}

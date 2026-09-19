@@ -6,9 +6,14 @@ import rateLimit from 'express-rate-limit';
 import { AppModule } from './app.module';
 import { HttpExceptionFilter } from './common/filters/http-exception.filter';
 import { LoggingInterceptor } from './common/interceptors/logging.interceptor';
+import { requestIdMiddleware } from './common/middleware/request-id.middleware';
+import { describeRuntime } from './config/configuration';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { logger: ['log', 'warn', 'error'] });
+  // SIGTERM/SIGINT: تُغلق الموارد (Prisma) وتُنهى الطلبات الجارية بدل قطعها (Docker restart / deployment).
+  app.enableShutdownHooks();
+  app.use(requestIdMiddleware);
   app.setGlobalPrefix('api');
   app.enableVersioning({ type: VersioningType.URI, defaultVersion: '1' });
   app.useGlobalPipes(
@@ -68,5 +73,6 @@ async function bootstrap() {
   SwaggerModule.setup('api/docs', app, SwaggerModule.createDocument(app, config));
   await app.listen(process.env.PORT ?? 3100, '0.0.0.0');
   new Logger('Bootstrap').log(`API :${process.env.PORT ?? 3100} — swagger /api/docs`);
+  new Logger('Bootstrap').log(`runtime ${JSON.stringify(describeRuntime())}`);
 }
 bootstrap();

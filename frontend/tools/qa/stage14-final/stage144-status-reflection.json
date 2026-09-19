@@ -1,0 +1,45 @@
+{
+  "stage": "14.4",
+  "scope": "customer-visible payment status reflection (clean environment)",
+  "total": 7,
+  "passed": 7,
+  "failed": 0,
+  "results": [
+    {
+      "step": "backend has a SUCCEEDED payment to reflect",
+      "status": "PASS",
+      "got": "SUCCEEDED"
+    },
+    {
+      "step": "backend has a FAILED payment with a stored reason",
+      "status": "PASS",
+      "got": "إثبات غير مطابق لكشف شام كاش — Stage 14.4"
+    },
+    {
+      "step": "store reflects the backend SUCCEEDED payment state (order 1541)",
+      "status": "PASS",
+      "got": "rendered=True amount_shown=True",
+      "detail": "الرئيسية | ‹ | طلباتي | ‹ | الدفع | دفع الطلب |  | ORD-2026-001400 • 1500.00 $ |  | تفاصيل الطلب | حالة الدفعة | ناجحة | شام كاش | المبلغ | 1500.00 $ | العملة | USD | أُنشئت في | 16 أيلول 2026، 18:01 | مرجع الحوالة | SC-144-UI-1541 | أُرسل ال"
+    },
+    {
+      "step": "store reflects the backend FAILED payment state (order 1543)",
+      "status": "PASS",
+      "got": "rendered=True amount_shown=True",
+      "detail": "الرئيسية | ‹ | طلباتي | ‹ | الدفع | دفع الطلب |  | ORD-2026-001402 • 500.00 $ |  | تفاصيل الطلب | حالة الدفعة | مرفوضة | شام كاش | المبلغ | 500.00 $ | العملة | USD | أُنشئت في | 16 أيلول 2026، 18:03 | مرجع الحوالة | SC-144-REJ-81791 | أُرسل ا"
+    },
+    {
+      "step": "store shows the staff rejection reason to the customer",
+      "status": "PASS",
+      "got": "reason_shown=True"
+    },
+    {
+      "step": "no fake success/retry control on a rejected payment",
+      "status": "PASS"
+    },
+    {
+      "step": "no unexpected console errors during the status reflection checks",
+      "status": "PASS",
+      "got": "[]"
+    }
+  ]
+}

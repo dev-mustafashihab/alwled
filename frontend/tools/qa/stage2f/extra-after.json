@@ -1,0 +1,278 @@
+{
+ "light_1024": {
+  "placeholder": {
+   "text": "ابحث عن منتج…",
+   "textW": 101,
+   "contentW": 136,
+   "fits": true,
+   "inputW": 162,
+   "fs": "16px",
+   "padStart": "12px",
+   "padEnd": "12px"
+  },
+  "colors": {
+   "navDefault": {
+    "color": "rgb(31, 95, 191)",
+    "bg": "rgb(234, 241, 251)"
+   },
+   "navActive": {
+    "color": "rgb(31, 95, 191)",
+    "bg": "rgb(234, 241, 251)",
+    "weight": "600"
+   },
+   "inputBg": "rgb(248, 250, 252)",
+   "inputBorder": "rgb(230, 236, 243)",
+   "inputColor": "rgb(15, 23, 42)",
+   "inputPlaceholder": "rgb(100, 116, 139)",
+   "searchBtn": {
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "cart": {
+    "bg": "rgb(248, 250, 252)",
+    "color": "rgb(15, 23, 42)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "register": {
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "login": {
+    "color": "rgb(100, 116, 139)"
+   },
+   "header": {
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(230, 236, 243)"
+   },
+   "storeTokens": {
+    "surface": "#ffffff",
+    "surfaceSoft": "#f8fafc",
+    "border": "#e6ecf3",
+    "text": "#0f172a",
+    "textBody": "#334155",
+    "textMuted": "#64748b",
+    "primary": "#1F5FBF",
+    "primarySoft": "#EAF1FB"
+   }
+  },
+  "cssom": {
+   "spacer": [
+    "shop.header.css",
+    ".shop-header .shop-header__spacer",
+    "flex: 0 0 auto;"
+   ],
+   "searchVisible": [
+    "shop.header.css",
+    ".shop-header .shop-search",
+    "display: flex;"
+   ]
+  }
+ },
+ "light_1366": {
+  "placeholder": {
+   "text": "ابحث عن منتج…",
+   "textW": 101,
+   "contentW": 312,
+   "fits": true,
+   "inputW": 338,
+   "fs": "16px",
+   "padStart": "12px",
+   "padEnd": "12px"
+  },
+  "colors": {
+   "navDefault": {
+    "color": "rgb(31, 95, 191)",
+    "bg": "rgb(234, 241, 251)"
+   },
+   "navActive": {
+    "color": "rgb(31, 95, 191)",
+    "bg": "rgb(234, 241, 251)",
+    "weight": "600"
+   },
+   "inputBg": "rgb(248, 250, 252)",
+   "inputBorder": "rgb(230, 236, 243)",
+   "inputColor": "rgb(15, 23, 42)",
+   "inputPlaceholder": "rgb(100, 116, 139)",
+   "searchBtn": {
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "cart": {
+    "bg": "rgb(248, 250, 252)",
+    "color": "rgb(15, 23, 42)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "register": {
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "login": {
+    "color": "rgb(100, 116, 139)"
+   },
+   "header": {
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgb(230, 236, 243)"
+   },
+   "storeTokens": {
+    "surface": "#ffffff",
+    "surfaceSoft": "#f8fafc",
+    "border": "#e6ecf3",
+    "text": "#0f172a",
+    "textBody": "#334155",
+    "textMuted": "#64748b",
+    "primary": "#1F5FBF",
+    "primarySoft": "#EAF1FB"
+   }
+  },
+  "cssom": {
+   "spacer": [
+    "shop.header.css",
+    ".shop-header .shop-header__spacer",
+    "flex: 0 0 auto;"
+   ],
+   "searchVisible": [
+    "shop.header.css",
+    ".shop-header .shop-search",
+    "display: flex;"
+   ]
+  }
+ },
+ "dark_1024": {
+  "placeholder": {
+   "text": "ابحث عن منتج…",
+   "textW": 101,
+   "contentW": 136,
+   "fits": true,
+   "inputW": 162,
+   "fs": "16px",
+   "padStart": "12px",
+   "padEnd": "12px"
+  },
+  "colors": {
+   "navDefault": {
+    "color": "color(srgb 0.57451 0.696078 0.874118)",
+    "bg": "rgba(31, 95, 191, 0.18)"
+   },
+   "navActive": {
+    "color": "color(srgb 0.57451 0.696078 0.874118)",
+    "bg": "rgba(31, 95, 191, 0.18)",
+    "weight": "600"
+   },
+   "inputBg": "rgb(15, 24, 38)",
+   "inputBorder": "rgb(30, 42, 61)",
+   "inputColor": "rgb(241, 245, 249)",
+   "inputPlaceholder": "rgb(148, 163, 184)",
+   "searchBtn": {
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "cart": {
+    "bg": "rgb(15, 24, 38)",
+    "color": "rgb(241, 245, 249)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "register": {
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "login": {
+    "color": "rgb(148, 163, 184)"
+   },
+   "header": {
+    "bg": "rgb(18, 27, 43)",
+    "border": "rgb(30, 42, 61)"
+   },
+   "storeTokens": {
+    "surface": "#121b2b",
+    "surfaceSoft": "#0f1826",
+    "border": "#1e2a3d",
+    "text": "#f1f5f9",
+    "textBody": "#cbd5e1",
+    "textMuted": "#94a3b8",
+    "primary": "#1F5FBF",
+    "primarySoft": "rgba(31, 95, 191, 0.18)"
+   }
+  },
+  "cssom": {
+   "spacer": [
+    "shop.header.css",
+    ".shop-header .shop-header__spacer",
+    "flex: 0 0 auto;"
+   ],
+   "searchVisible": [
+    "shop.header.css",
+    ".shop-header .shop-search",
+    "display: flex;"
+   ]
+  }
+ },
+ "dark_1366": {
+  "placeholder": {
+   "text": "ابحث عن منتج…",
+   "textW": 101,
+   "contentW": 312,
+   "fits": true,
+   "inputW": 338,
+   "fs": "16px",
+   "padStart": "12px",
+   "padEnd": "12px"
+  },
+  "colors": {
+   "navDefault": {
+    "color": "color(srgb 0.57451 0.696078 0.874118)",
+    "bg": "rgba(31, 95, 191, 0.18)"
+   },
+   "navActive": {
+    "color": "color(srgb 0.57451 0.696078 0.874118)",
+    "bg": "rgba(31, 95, 191, 0.18)",
+    "weight": "600"
+   },
+   "inputBg": "rgb(15, 24, 38)",
+   "inputBorder": "rgb(30, 42, 61)",
+   "inputColor": "rgb(241, 245, 249)",
+   "inputPlaceholder": "rgb(148, 163, 184)",
+   "searchBtn": {
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "cart": {
+    "bg": "rgb(15, 24, 38)",
+    "color": "rgb(241, 245, 249)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "register": {
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "login": {
+    "color": "rgb(148, 163, 184)"
+   },
+   "header": {
+    "bg": "rgb(18, 27, 43)",
+    "border": "rgb(30, 42, 61)"
+   },
+   "storeTokens": {
+    "surface": "#121b2b",
+    "surfaceSoft": "#0f1826",
+    "border": "#1e2a3d",
+    "text": "#f1f5f9",
+    "textBody": "#cbd5e1",
+    "textMuted": "#94a3b8",
+    "primary": "#1F5FBF",
+    "primarySoft": "rgba(31, 95, 191, 0.18)"
+   }
+  },
+  "cssom": {
+   "spacer": [
+    "shop.header.css",
+    ".shop-header .shop-header__spacer",
+    "flex: 0 0 auto;"
+   ],
+   "searchVisible": [
+    "shop.header.css",
+    ".shop-header .shop-search",
+    "display: flex;"
+   ]
+  }
+ }
+}

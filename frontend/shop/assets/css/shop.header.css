@@ -1,0 +1,1368 @@
+/* ============================================================================
+   shop.header.css — Stage 15.2
+   الهيدر + قائمة الجوال (Header + Menu) — مُنقولان بصرياً وحركياً من مرجع
+   مشروع Defense، مع هوية alwled وألوانه ومحتواه فقط.
+   ملف مستقل تماماً: لا يخلط أي شيء مع أنماط لوحة الإدارة.
+   يعتمد على توكنات tokens.css المشتركة + متغيّرات shop-* المعرّفة في shop.css.
+   ========================================================================== */
+
+.shop-body {
+  /* --- إصلاح Sticky (PHASE 2 · STEP 2B) -------------------------------------
+     السبب الجذري: base.css يعرّف body { height: 100% } ⇒ صندوق الـbody يساوي ارتفاع
+     الشاشة فقط، فينتهي مدى position: sticky للهيدر عند نهاية ذلك الصندوق (900px)
+     رغم أن المحتوى 2766px. الحل: جعل ارتفاع الـbody يتبع المحتوى.
+     overflow-x: clip لا يُنشئ scroll container (بعكس hidden) ⇒ sticky يعمل
+     مع بقاء منع الفائض الأفقي. سطر hidden قبله = احتياط للمتصفحات بلا clip.
+     ------------------------------------------------------------------------- */
+  height: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-x: clip;
+  overflow-y: visible;
+}
+
+/* (PHASE 2 · STEP 2C) --hdrmenu-top صار مشتقاً من --shop-header-height في القسم 15
+   أدناه — مصدر واحد للهيدر والقائمة ولوحة البحث (كان هنا 72px مكتوباً يدوياً). */
+
+/* ------------------------------------------------ 1) الهيدر */
+/* ملاحظة: كتلة الهوية (.shop-brand/.shop-nav) لها حركة دخول منفصلة أدناه (نمط .header-anim) */
+.shop-header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  background: color-mix(in srgb, var(--bg-surface) 88%, transparent);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: saturate(180%) blur(16px);
+  -webkit-backdrop-filter: saturate(180%) blur(16px);
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  transition: all 300ms ease;
+}
+
+[data-theme='dark'] .shop-header {
+  background: rgba(18, 27, 43, 0.9);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.shop-header.is-scrolled { box-shadow: 0 6px 26px rgba(15, 23, 42, 0.12); }
+
+.shop-header__inner {
+  max-width: var(--shop-max, 1200px);
+  margin-inline: auto;
+  height: 64px;
+  padding: var(--space-2) var(--shop-gutter, var(--space-4));
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+@media (min-width: 1024px) {
+  .shop-header__inner { height: 72px; padding-inline: var(--space-6); gap: var(--space-3); }
+}
+
+/* فاصل رقيق بعد الشعار (نمط المرجع) */
+.shop-header__divider {
+  width: 1px;
+  height: 26px;
+  border-radius: 1px;
+  background: var(--border-subtle);
+  flex-shrink: 0;
+}
+
+.shop-header__spacer { flex: 1 1 auto; min-width: var(--space-2); }
+
+/* ------------------------------------------------ 2) أزرار الهيدر (نمط hdr-btn) */
+.shop-iconbtn,
+.shop-header__burger,
+#shop-burger,
+.shop-cartbtn,
+.shop-bell,
+.shop-user__avatar {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: var(--hdrmenu-radius);
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border-subtle);
+  color: var(var(--store-primary));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease-out),
+              border-color var(--dur-fast) var(--ease-out),
+              transform var(--dur-fast) var(--ease-out),
+              color var(--dur-fast) var(--ease-out);
+}
+
+@media (min-width: 1024px) {
+  .shop-iconbtn,
+  .shop-header__burger,
+  #shop-burger,
+  .shop-cartbtn,
+  .shop-bell { width: 46px; height: 46px; min-width: 46px; }
+}
+
+.shop-iconbtn:hover,
+.shop-header__burger:hover,
+#shop-burger:hover,
+.shop-cartbtn:hover,
+.shop-bell:hover {
+  background: var(var(--store-primary-soft));
+  border-color: var(--border-brand);
+  color: var(var(--store-primary));
+}
+
+#shop-burger:active,
+.shop-iconbtn:active { transform: scale(0.96); }
+
+/* أيقونات الهيدر: SVG من ملفات المشروع المحلية */
+.shop-iconbtn svg,
+.shop-header__burger svg,
+.shop-cartbtn svg,
+.shop-bell svg,
+.shop-user__avatar svg { width: 21px; height: 21px; display: block; }
+
+/* شارة العدد: فوق الحافة العليا (نمط المرجع) */
+.shop-cartbtn,
+.shop-bell { position: relative; overflow: visible; }
+
+/* ------------------------------------------------ 3) الهوية في الهيدر */
+.shop-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  text-decoration: none;
+  color: var(--text-strong);
+  min-width: 0;
+}
+
+.shop-brand__logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  /* المرجع: تكبير الشعار عند المرور (transition: transform .3s ease) */
+  transition: transform 300ms ease;
+  filter: drop-shadow(0 2px 4px rgba(15, 23, 42, 0.12));
+}
+
+.shop-brand:hover .shop-brand__logo,
+.shop-brand:focus-visible .shop-brand__logo { transform: scale(1.08); }
+
+.shop-brand__text { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
+.shop-brand__text strong { font-size: 1rem; font-weight: var(--fw-bold); letter-spacing: normal; }
+.shop-brand__text small { font-size: 0.71875rem; color: var(--text-muted); }
+
+@media (max-width: 420px) {
+  .shop-header__divider { display: none; }
+  .shop-brand__text small { display: none; }
+  .shop-brand__text strong { font-size: 0.9375rem; }
+}
+
+/* روابط سطح المكتب (نمط nav-desktop-link) */
+.shop-nav { display: none; align-items: center; gap: var(--st-space-2); }
+
+@media (min-width: 1024px) {
+  .shop-nav { display: flex; }
+}
+
+.shop-nav__link {
+  padding: var(--space-2) var(--space-4);
+  border-radius: 10px;
+  font-size: 0.875rem;
+  font-weight: var(--fw-medium);
+  color: var(--text-muted);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+
+.shop-nav__link:hover { color: var(--text-strong); background: var(--bg-surface-2); }
+.shop-nav__link[aria-current='page'] { color: var(var(--store-primary)); font-weight: var(--fw-bold); background: var(var(--store-primary-soft)); }
+
+/* ------------------------------------------------ 4) قائمة الجوال (Overlay منسدل) */
+/* القائمة المنسدلة من تحت الهيدر (نمط المرجع): تغطي الشاشة أسفل الهيدر */
+.shop-drawer {
+  position: fixed;
+  inset-inline: 0;
+  top: var(--hdrmenu-top);
+  bottom: 0;
+  z-index: var(--z-drawer);
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-surface-2) 100%);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-12px);
+  pointer-events: none;
+  transition: opacity 250ms ease,
+              transform 250ms ease,
+              visibility 250ms ease;
+}
+
+.shop-drawer.is-open,
+.shop-drawer.is-closing {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* حالة «قبل الفتح»: مرئية للحساب (شفافة) ليعمل الانتقال فعلاً */
+.shop-drawer.is-opening { visibility: visible; pointer-events: none; }
+
+.shop-drawer.is-open { opacity: 1; transform: translateY(0); }
+.shop-drawer.is-closing { opacity: 0; transform: translateY(-12px); }
+.shop-drawer[hidden] { display: flex; }        /* القائمة تعمل بـ is-open لا بـ hidden */
+
+/* بلا طبقة تعتيم منفصلة: اللوحة تغطي الشاشة (كما في المرجع) */
+.shop-drawer__scrim { display: none !important; }
+
+.shop-drawer__panel {
+  position: static;
+  inset: auto;
+  width: 100%;
+  max-width: 640px;
+  margin-inline: auto;
+  min-height: 100%;
+  background: transparent !important;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  transform: none;
+  animation: none;
+  transition: none;
+}
+
+.shop-drawer__head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  min-height: 56px;
+  padding: var(--space-2) var(--space-4);
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.shop-drawer__nav { display: flex; flex-direction: column; padding: 0; overflow: visible; flex: 1 1 auto; }
+
+
+/* عناوين المجموعات + الفواصل (نمط mmenu-section-label / divider) */
+.shop-drawer__group-title,
+.shop-menu__label {
+  margin: 0;
+  padding: var(--space-3) var(--space-5) var(--space-1);
+  font-size: 0.75rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(var(--store-primary));
+}
+
+.shop-menu__divider {
+  height: 1px;
+  margin: var(--space-3) var(--space-5);
+  background: var(--border-subtle);
+}
+
+/* روابط القائمة + تتابع الدخول (نمط mobile-nav-link + stagger) */
+.shop-drawer__link,
+.shop-menu__link {
+  display: flex;
+  align-items: center;
+  gap: var(--st-space-14);
+  min-height: 54px;
+  padding: var(--space-4) var(--space-5);
+  font-size: 1rem;
+  font-weight: var(--fw-medium);
+  color: var(--text-body);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-subtle);
+  opacity: 0;
+  transform: translateX(20px);
+  transition: color 250ms ease, background 250ms ease,
+              opacity 300ms ease, transform 300ms ease;
+}
+
+.shop-drawer.is-open .shop-drawer__link,
+.shop-drawer.is-open .shop-menu__link,
+.shop-drawer.is-open .shop-menu__stagger { opacity: 1; transform: translateX(0); }
+
+.shop-menu__stagger { opacity: 0; transform: translateX(20px); transition: opacity 300ms ease, transform 300ms ease; }
+
+.shop-drawer__link:hover,
+.shop-drawer__link:focus-visible,
+.shop-menu__link:hover,
+.shop-menu__link:focus-visible { color: var(--text-strong); background: var(--bg-surface-2); }
+
+.shop-drawer__link[aria-current='page'] {
+  color: var(var(--store-primary));
+  font-weight: var(--fw-bold);
+  background: var(var(--store-primary-soft));
+}
+
+.shop-drawer__link__icon { width: 22px; height: 22px; display: inline-grid; place-items: center; color: var(--text-muted); flex-shrink: 0; }
+.shop-drawer__link__icon svg { width: 22px; height: 22px; display: block; }
+.shop-drawer__link:hover .shop-drawer__link__icon,
+.shop-drawer__link[aria-current='page'] .shop-drawer__link__icon { color: var(var(--store-primary)); }
+
+/* أسفل القائمة: أزرار الحساب + مبدّل المظهر (نمط mmenu-theme) */
+.shop-drawer__foot {
+  margin-top: auto;
+  padding: var(--space-4) var(--space-5) calc(var(--space-5) + env(safe-area-inset-bottom, 0));
+  background: transparent;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.shop-drawer__foot .btn { min-height: 46px; width: 100%; margin-top: var(--space-2); }
+.shop-drawer__foot .shop-note { font-size: 0.8125rem; color: var(--text-muted); }
+
+.shop-menu__theme {
+  margin: var(--space-4) var(--space-5) 0;
+  display: flex;
+  gap: 0;
+  padding: 4px;
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--hdrmenu-radius);
+}
+
+.shop-menu__theme-btn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--st-space-6);
+  min-height: 40px;
+  padding: var(--space-2);
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.8125rem;
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+
+.shop-menu__theme-btn svg { width: 16px; height: 16px; }
+.shop-menu__theme-btn:hover { color: var(--text-strong); }
+.shop-menu__theme-btn.is-active { background: var(var(--store-primary-soft)); color: var(var(--store-primary)); font-weight: var(--fw-bold); }
+
+/* ------------------------------------------------ 5) حركة الفتح + إتاحة */
+/* حركة المرجع حرفياً: انزلاق أفقي 30px + تلاشٍ، 600ms ease-out
+   (Defense: @keyframes slideIn {from{opacity:0;transform:translateX(30px)}to{...translateX(0)}}) */
+@keyframes shop-slide-in {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* كتلة الهوية في الهيدر تنزلق عند الدخول (نمط .header-anim في المرجع) */
+.shop-brand,
+.shop-header__divider,
+.shop-nav { animation: shop-slide-in 600ms ease-out; }
+
+/* كتلة لاحقة بتأخير بسيط — المرجع يضع الصنف header-anim-delay على كتلة العنوان والروابط
+   (بلا قاعدة CSS هناك) فنُعطيها تأخيراً صريحاً بسيطاً ليكون التتابع مقصوداً */
+.shop-nav { animation-delay: 80ms; }
+
+.shop-body.menu-open { overflow: hidden; }
+/* (PHASE 2 · STEP 2B) أثناء فتح القائمة: overflow:hidden على body ينهي سياق sticky
+   فيختفي الهيدر إن كان المستخدم قد مرّر الصفحة. تثبيت الهيدر في هذه الحالة فقط
+   يجعل القائمة تبدأ دائماً تحت الهيدر بلا فراغ. (sticky يبقى للتمرير العادي) */
+.shop-body.menu-open .shop-header {
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+}
+.shop-body.menu-open .shop-header { box-shadow: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .shop-brand,
+  .shop-header__divider,
+  .shop-nav,
+  .shop-header,
+  .shop-drawer,
+  .shop-drawer__link,
+  .shop-menu__link,
+  .shop-menu__stagger { animation: none !important; transition: none !important; transform: none !important; }
+  .shop-drawer__link,
+  .shop-menu__link,
+  .shop-menu__stagger { opacity: 1; }
+}
+
+/* ------------------------------------------------ 6) ضبط أزرار الهيدر الأيقونية */
+.shop-cartbtn__label { display: none; }        /* أزرار أيقونية مثل المرجع */
+
+.shop-user {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  padding: 0;
+  border-radius: var(--hdrmenu-radius);
+}
+
+@media (max-width: 480px) {
+  .shop-user { width: 44px; height: 44px; min-width: 44px; }
+}
+
+.shop-drawer__head .shop-iconbtn { width: 44px; height: 44px; }
+.shop-drawer__head .shop-iconbtn svg { width: 20px; height: 20px; }
+
+/* ------------------------------------------------ 7) ظهور الأزرار حسب المقاس (نمط المرجع) */
+@media (min-width: 1024px) {
+  /* سطح المكتب: روابط في الهيدر — لا زر قائمة */
+  .shop-header__burger,
+  #shop-burger { display: none !important; }
+}
+
+@media (max-width: 1023px) {
+  .shop-header__burger,
+  #shop-burger { display: inline-flex !important; }
+}
+
+/* ------------------------------------------------ 8) بلا تكرار: رأس القائمة زر إغلاق فقط
+   (اسم المتجر وزر القائمة ظاهران أصلاً في الهيدر فوق اللوحة — نمط المرجع) */
+.shop-drawer__head .shop-brand__text,
+.shop-drawer__head .shop-brand__logo { display: none; }
+
+.shop-drawer__head { justify-content: flex-end; min-height: 52px; }
+
+/* ============================================================================
+   قائمة الملف الشخصي (المنسدلة من زر الهيدر) — بديل بنود «حسابك» داخل القائمة
+   ========================================================================== */
+.shop-profile-menu {
+  position: absolute;
+  top: calc(100% - 6px);
+  inset-inline-end: var(--shop-gutter, var(--space-4));
+  z-index: var(--z-dropdown);
+  min-width: 232px;
+  max-width: min(92vw, 300px);
+  padding: var(--space-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--hdrmenu-radius);
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--st-space-2);
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.shop-profile-menu.is-opening { visibility: hidden; }
+.shop-profile-menu.is-open { opacity: 1; transform: translateY(0); }
+.shop-profile-menu[hidden] { display: none; }
+
+.shop-profile-menu__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 44px;
+  padding: var(--space-2) var(--space-3);
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--text-body);
+  font-family: inherit;
+  font-size: 0.9375rem;
+  text-align: start;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.shop-profile-menu__item svg { width: 19px; height: 19px; color: var(--text-muted); flex-shrink: 0; }
+.shop-profile-menu__item:hover,
+.shop-profile-menu__item:focus-visible { background: var(--bg-surface-2); color: var(--text-strong); }
+.shop-profile-menu__item:hover svg { color: var(var(--store-primary)); }
+
+.shop-profile-menu__item--danger { color: var(--danger-700); }
+.shop-profile-menu__item--danger svg { color: var(--danger-600); }
+.shop-profile-menu__item--danger:hover { background: var(--danger-50); }
+
+/* الزائر: قسم «حسابك» داخل القائمة — يختفي للمسجّل (لا تكرار) */
+.shop-menu__guest[hidden] { display: none; }
+.shop-drawer__foot:empty { display: none; margin: 0; padding: 0; border: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .shop-profile-menu { transition: none; transform: none; }
+}
+
+/* ============================================================================
+   9) تحسين الهيدر — توحيد المقاسات والشارات والتباعد (Stage 15.2 polish)
+   ========================================================================== */
+
+/* مقاس واحد لكل أزرار الهيدر (كانت 44/46 مختلفة بين السلة والجرس والحساب) */
+.shop-body { --hdr-btn: 44px; --hdr-gap: 8px; }
+
+@media (min-width: 1024px) {
+  .shop-body { --hdr-btn: 46px; --hdr-gap: var(--st-space-10); }
+}
+
+.shop-iconbtn,
+.shop-header__burger,
+#shop-burger,
+.shop-cartbtn,
+.shop-bell,
+.shop-user {
+  width: var(--hdr-btn);
+  height: var(--hdr-btn);
+  min-width: var(--hdr-btn);
+  border-radius: 12px;
+}
+
+.shop-actions { gap: var(--hdr-gap); align-items: center; }
+.shop-header__inner { gap: var(--hdr-gap); }
+
+/* الشارات: موضع واحد لكل الشارات (أعلى جهة بداية السطر = اليمين في RTL) */
+.shop-cartbtn__badge,
+.shop-bell__badge {
+  position: absolute;
+  inset-block-start: -5px;
+  inset-inline-start: -5px;
+  inset-inline-end: auto;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: var(--radius-pill);
+  border: 2px solid var(--bg-surface);
+  font-size: 0.6875rem;
+  font-weight: var(--fw-bold);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-variant-numeric: tabular-nums;
+}
+
+/* أيقونات بمقاس موحّد داخل الأزرار */
+.shop-iconbtn svg,
+.shop-header__burger svg,
+.shop-cartbtn svg,
+.shop-bell svg,
+.shop-user svg { width: 21px; height: 21px; }
+
+/* سطح المكتب: تقليل ازدحام الهيدر (بحث أضيق + روابط أرشق + فواصل أوضح) */
+@media (min-width: 1024px) {
+  .shop-search { flex: 0 1 260px; }
+  .shop-search__input { height: 40px; }
+  .shop-nav__link { padding: var(--space-2) var(--space-3); font-size: 0.84375rem; }
+  .shop-header__divider { height: 24px; }
+  .shop-brand__logo { width: 36px; height: 36px; }
+}
+
+/* الجوال: كتلة الهوية لا تزاحم الأزرار */
+@media (max-width: 640px) {
+  .shop-brand { min-width: 0; }
+  .shop-brand__text strong { font-size: 0.9375rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .shop-header__spacer { min-width: 4px; }
+}
+
+/* ============================================================================
+   10) هيدر الزائر على الديسكتوب — تقليل الازدحام دون إضعاف الوصول
+   «تسجيل الدخول» رابط نصّي خفيف · «إنشاء حساب» الزر الأساسي المضغوط
+   ========================================================================== */
+@media (min-width: 1024px) {
+  .shop-actions > a[href='#/login'] {
+    background: transparent;
+    border-color: transparent;
+    padding-inline: var(--space-2);
+    color: var(--text-muted);
+    font-weight: var(--fw-medium);
+  }
+
+  .shop-actions > a[href='#/login']:hover,
+  .shop-actions > a[href='#/login']:focus-visible {
+    background: var(--bg-surface-2);
+    border-color: transparent;
+    color: var(--text-strong);
+  }
+
+  .shop-actions > a[href='#/register'] { padding-inline: var(--space-4); }
+}
+
+/* ============================================================================
+   11) هيدر الجوال مبسّط: ☰ + الشعار + 🔍 + 🛒 فقط
+   الجرس 🔔 وبنود الحساب 👤 ينتقلان إلى القائمة الجانبية (ديسكتوب كما هو)
+   ========================================================================== */
+@media (max-width: 1023px) {
+  .shop-header .shop-bell,
+  .shop-header #shop-user-btn,
+  .shop-header #shop-bell,
+  .shop-actions > a[href='#/login'],
+  .shop-actions > a[href='#/register'] { display: none !important; }
+}
+
+/* بنود القائمة الجانبية الخاصة بالحساب */
+.shop-menu__badge {
+  margin-inline-start: auto;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-pill);
+  background: var(--danger-600);
+  color: #fff;
+  font-size: 0.71875rem;
+  font-weight: var(--fw-bold);
+  font-variant-numeric: tabular-nums;
+}
+
+.shop-drawer__link--danger { color: var(--danger-700); width: 100%; text-align: start; background: transparent; border: 0; }
+.shop-drawer__link--danger .shop-drawer__link__icon { color: var(--danger-600); }
+.shop-drawer__link--danger:hover { background: var(--danger-50); }
+
+.shop-menu__account[hidden] { display: none; }
+.shop-menu__account .shop-drawer__link { font-family: inherit; cursor: pointer; }
+
+/* سطح المكتب: لا تغيير — الجرس وزر الحساب وروابط الدخول كما هي */
+
+/* ============================================================================
+   12) مرجع Unblock Syria — قياسات مُستخرجة فعلياً من الموقع (مقاسة على 390px):
+       بند القائمة: font-size 18px · weight 500 · lh 28px · padding 16px 24px
+                    gap 16px · ارتفاع الصف ≈ 61px
+       مبدّل المظهر: 14px · weight 500 · lh 20px
+       الخط: qomraArabic (ملفات محلية داخل المشروع — بلا CDN)
+       الهوية والألوان: alwled كما هي.
+   ========================================================================== */
+
+.shop-drawer__panel {
+  font-family: var(--st-font);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.shop-drawer__link,
+.shop-menu__link {
+  font-family: var(--st-font);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  gap: 16px;
+  padding: 16px 24px;
+  min-height: 61px;
+  border-radius: 0;
+  border-bottom: 0;
+}
+
+.shop-drawer__link__icon svg { width: 22px; height: 22px; }
+
+.shop-drawer__link[aria-current='page'] { font-weight: 500; }
+
+.shop-menu__label {
+  font-family: var(--st-font);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--text-muted);
+  padding: 16px 24px 8px;
+  margin: 0;
+}
+
+.shop-menu__divider { margin: 8px 24px; }
+
+.shop-menu__theme {
+  display: flex;
+  gap: 0;
+  margin: 8px 24px 16px;
+  padding: 4px;
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  position: static;
+  inset: auto;
+}
+
+.shop-menu__theme-btn {
+  flex: 1;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--st-space-6);
+  padding: var(--st-space-10) 8px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--st-font);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  cursor: pointer;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.shop-menu__theme-btn svg { width: 16px; height: 16px; }
+.shop-menu__theme-btn:hover { background: var(--bg-surface); color: var(--text-strong); }
+.shop-menu__theme-btn.is-active { background: var(var(--store-primary-soft)); color: var(var(--store-primary)); font-weight: 500; }
+
+.shop-drawer__foot { margin-top: 0; background: transparent; border-top: 0; padding: 8px 24px 24px; }
+
+.shop-menu__user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  margin: 0;
+  background: var(var(--store-primary-soft));
+  border-bottom: 1px solid var(--border-subtle);
+  text-decoration: none;
+  color: inherit;
+}
+
+.shop-menu__user-avatar {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 auto;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(var(--store-primary-soft));
+  color: var(var(--store-primary));
+  font-family: var(--st-font);
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+
+.shop-menu__user-main { display: flex; flex-direction: column; gap: var(--st-space-2); min-width: 0; }
+
+.shop-menu__user-main strong {
+  font-family: var(--st-font);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-strong);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shop-menu__user-main small {
+  font-family: var(--st-font);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.shop-menu__user[hidden] { display: none; }
+
+/* ============================================================================
+   13) تمرير سلس + فواصل مستقيمة + تثبيت المظهر + مؤشر منزلق (Stage 15.2)
+   ========================================================================== */
+
+/* لوحة القائمة: عمود مرن — منطقة تمرير + منطقة مثبّتة أسفلها */
+.shop-drawer__panel {
+  height: 100%;
+  overflow: hidden;
+}
+
+.shop-menu__scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;      /* تمرير بمِتانة على iOS */
+  overscroll-behavior: contain;
+  scroll-behavior: smooth;                /* تمرير متحرك */
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+.shop-menu__scroll::-webkit-scrollbar { width: 6px; }
+.shop-menu__scroll::-webkit-scrollbar-track { background: transparent; }
+.shop-menu__scroll::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 999px;
+}
+
+/* فاصل خط مستقيم بين كل بند وبند */
+.shop-drawer__link,
+.shop-menu__link {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.shop-drawer__nav { padding: 0; }
+
+/* تثبيت منطقة المظهر أسفل القائمة (لا تتحرك مع التمرير) */
+.shop-menu__theme,
+.shop-menu__theme + .shop-drawer__foot,
+.shop-drawer__foot {
+  flex: 0 0 auto;
+}
+
+.shop-drawer__panel > .shop-menu__divider,
+.shop-drawer__panel > .shop-menu__label,
+.shop-drawer__panel > .shop-menu__theme,
+.shop-drawer__panel > .shop-drawer__foot { flex: 0 0 auto; background: var(--bg-surface); }
+
+.shop-menu__theme { position: relative; }
+
+/* المؤشر المنزلق (الزر المختار) */
+.shop-menu__theme-thumb {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: calc(100% - 8px);
+  width: 0;
+  border-radius: 8px;
+  background: var(var(--store-primary-soft));
+  box-shadow: var(--shadow-xs);
+  transition: transform 280ms cubic-bezier(0.22, 0.61, 0.36, 1), width 200ms ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* الأزرار: نصّ فقط — بلا أي أثر ضغط أو خلفية */
+.shop-menu__theme-btn {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: none;
+}
+
+.shop-menu__theme-btn:hover { background: transparent !important; }
+.shop-menu__theme-btn:active { background: transparent !important; transform: none !important; }
+.shop-menu__theme-btn.is-active { background: transparent !important; color: var(var(--store-primary)); }
+
+/* إتاحة: حلقة تركيز للمتصفح فقط عند التنقل بالكيبورد */
+.shop-menu__theme-btn:focus { outline: none; }
+.shop-menu__theme-btn:focus-visible {
+  outline: 2px solid var(var(--store-primary));
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shop-menu__theme-thumb { transition: none; }
+  .shop-menu__scroll { scroll-behavior: auto; }
+}
+
+/* ============================================================================
+   14) تفاعل سلس: بنود الأقسام عند الضغط + صعود المظهر المثبّت من الأسفل للأعلى
+   ========================================================================== */
+
+/* بنود الأقسام: حركة سلسة عند الضغط (انزياح خفيف + تفتيح) بلا قفزات */
+.shop-drawer__link,
+.shop-menu__link {
+  transition: background 220ms cubic-bezier(0.22, 0.61, 0.36, 1),
+              color 220ms cubic-bezier(0.22, 0.61, 0.36, 1),
+              transform 260ms cubic-bezier(0.22, 0.61, 0.36, 1),
+              padding 260ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: transform;
+}
+
+.shop-drawer__link:active,
+.shop-menu__link:active {
+  background: var(var(--store-primary-soft));
+  transform: translateX(-6px);        /* انزياح سلس باتجاه القراءة (RTL) */
+}
+
+.shop-drawer__link:active .shop-drawer__link__icon { color: var(var(--store-primary)); }
+
+/* زر الخروج: نفس السلوك بلا لون تحذيري متغيّر */
+.shop-drawer__link--danger:active { background: var(--danger-50); }
+
+/* المظهر المثبّت أسفل القائمة: يظهر من الأسفل للأعلى بحركة سلسة بعد اكتمال ظهور القائمة */
+.shop-drawer__panel > .shop-menu__theme {
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity 360ms cubic-bezier(0.22, 0.61, 0.36, 1),
+              transform 460ms cubic-bezier(0.34, 1.15, 0.64, 1);
+  transition-delay: 0ms;
+  will-change: transform, opacity;
+}
+
+.shop-drawer.is-open .shop-drawer__panel > .shop-menu__theme {
+  opacity: 1;
+  transform: translateY(0);
+  /* يبدأ الصعود بعد ظهور البنود المتتابع (40ms لكل بند) */
+  transition-delay: 340ms;
+}
+
+/* منطقة المسار السفلية تظهر معه */
+.shop-drawer__panel > .shop-drawer__foot {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 320ms ease, transform 420ms cubic-bezier(0.34, 1.15, 0.64, 1);
+}
+
+.shop-drawer.is-open .shop-drawer__panel > .shop-drawer__foot {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 400ms;
+}
+
+/* الفاصل فوق المظهر يظهر بسلاسة أيضاً */
+.shop-drawer__panel > .shop-menu__divider {
+  transition: opacity 300ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shop-drawer__link:active,
+  .shop-menu__link:active { transform: none; }
+  .shop-drawer__panel > .shop-menu__theme,
+  .shop-drawer__panel > .shop-drawer__foot {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* ------------------------------------------------ 15) ارتفاع الهيدر — مصدر واحد
+   (PHASE 2 · STEP 2C) كان: 73px مكتوبة يدوياً + --hdrmenu-top مكرّرة (72/73/74).
+   الآن:
+     --shop-header-height = ارتفاع .shop-header__inner (بلا الحدّ السفلي) — جوال 64px
+     --hdrmenu-top        = ارتفاع الهيدر الكلي (inner + 1px حدّ سفلي) ⇒ مرجع أعلى
+                            القائمة الجانبية ولوحة البحث معاً.
+   الجوال/التابلت: 64px (الهيدر الكلي 65px) · سطح المكتب: 73px كما هو (مقفل — بلا تغيير).
+   ملاحظة: shop.header.js يقيس الهيدر فعلياً ويضبط --hdrmenu-top على body عند الفتح،
+   ويبقى المرجع الأدق — القيمة هنا احتياط مطابق تماماً (بلا JS). */
+.shop-body { --shop-header-height: 64px; }
+
+@media (min-width: 1024px) {
+  .shop-body { --shop-header-height: 73px; }
+}
+
+.shop-header__inner {
+  height: var(--shop-header-height);
+}
+
+.shop-body { --hdrmenu-top: calc(var(--shop-header-height) + 1px); }
+
+/* --- (PHASE 2 · STEP 2B) هدف لمس رابط الشعار ≥44px (بلا تغيير حجم الصورة) --- */
+.shop-header .shop-brand {
+  min-height: 44px;
+  align-items: center;
+}
+
+/* ============================================================================
+   16) PHASE 2 · STEP 2C — إعادة تصميم هيدر الجوال بصرياً (≤1023px)
+   النطاق: الهيدر الجوال فقط (☰ · الشعار · 🔍 · 🛒).
+   بلا تغيير DOM · بلا تغيير منطق القائمة/البحث/السلة · بلا JS · بلا !important.
+   الهوية: توكنات المتجر --store-* بدل أدوار teal داخل الهيدر الجوال فقط.
+   سطح المكتب (≥1024px) مقفل تماماً — كل القواعد هنا داخل ≤1023px.
+   ========================================================================== */
+@media (max-width: 1023px) {
+  /* 16.1 السطح: أبيض المتجر الصريح + حدّ رقيق بلون المتجر + بلا ظل أعلى الصفحة */
+  .shop-body .shop-header {
+    background: var(--store-surface);
+    border-bottom-color: var(--store-border);
+    box-shadow: none;
+  }
+
+  /* الظل يظهر عند التمرير فقط — بتوكن النظام بدل rgba مكتوبة يدوياً */
+  .shop-body .shop-header.is-scrolled { box-shadow: var(--shadow-sm); }
+
+  /* 16.2 أزرار الأدوات: سطح ناعم موحّد · بلا حدود ظاهرة · أيقونة بلون النص
+     ملاحظة: #shop-burger لازم بالاسم لأن القاعدة القديمة تستخدم ID (تفوّق أعلى). */
+  .shop-header .shop-iconbtn,
+  .shop-header #shop-burger,
+  .shop-header .shop-cartbtn {
+    background: var(--store-surface-soft);
+    border-color: transparent;
+    color: var(--store-text);
+  }
+
+  /* تفاعل هادئ: أزرق المتجر الناعم (hover + focus-visible) */
+  .shop-header .shop-iconbtn:hover,
+  .shop-header #shop-burger:hover,
+  .shop-header .shop-cartbtn:hover,
+  .shop-header .shop-iconbtn:focus-visible,
+  .shop-header #shop-burger:focus-visible,
+  .shop-header .shop-cartbtn:focus-visible {
+    background: var(--store-primary-soft);
+    border-color: transparent;
+    color: var(--store-primary);
+  }
+
+  /* 16.3 الحالة المفتوحة: الزر المسؤول فقط — واضح وهادئ (بلا أزرق صريح) */
+  .shop-header #shop-burger[aria-expanded='true'],
+  .shop-body:has(.shop-search-sheet.is-open) .shop-header #shop-search-btn {
+    background: var(--store-primary-soft);
+    border-color: transparent;
+    color: var(--store-primary);
+  }
+
+  /* 16.4 الشعار: صورة أصغر قليلاً (توازن مع هيدر 64px) + نص بلون المتجر */
+  .shop-header .shop-brand__logo { width: 36px; height: 36px; }
+  .shop-header .shop-brand__text strong { color: var(--store-text); }
+  .shop-header .shop-brand__text small { color: var(--store-text-muted); }
+
+  /* 16.5 أثناء فتح لوحة البحث: تثبيت الهيدر — نفس معالجة القائمة في STEP 2B.
+     السبب: قفل تمرير الصفحة (overflow:hidden) يُنهي سياق sticky ⇒ كان الهيدر يختفي
+     عند الفتح بعد تمرير، فيبقى شريط أعلى اللوحة يعرض محتوى الصفحة (روابط منتجات
+     قابلة للنقر فوق اللوحة). النتيجة الآن: headerBottom == searchSheetTop = 0
+     على أعلى الصفحة وبعد التمرير. */
+  .shop-body:has(.shop-search-sheet.is-open) .shop-header {
+    position: fixed;
+    top: 0;
+    inset-inline: 0;
+    box-shadow: none;
+  }
+}
+
+/* 16.6 كثافة الجوال (≤640px): الهيدر الأنفس — أهداف اللمس 44px تبقى كما هي.
+   ملاحظة: 641–1023px (التابلت 768) تحتفظ بكثافتها الحالية (gap 8px · نص 16px · سطر
+   الاسم الفرعي) لأن المساحة تسمح — بلا فرض كثافة 390 عليها. */
+@media (max-width: 640px) {
+  /* فاصل أدوات المتجر 6px (المدى المطلوب 4–6 — لا يوجد توكن 6px في النظام) */
+  .shop-body { --hdr-gap: var(--st-space-6); }
+  .shop-header .shop-brand__logo { width: 34px; height: 34px; }
+  .shop-header .shop-brand__text strong { font-size: 0.875rem; }
+}
+
+/* ============================================================================
+   17) PHASE 2 · STEP 2D — قائمة الجوال: هرمية · كثافة · مسح بصري (≤1023px)
+   بلا تغيير DOM · بلا تغيير منطق (JS) · بلا تغيير IA (لا روابط/تسميات/مسارات).
+   الهوية: توكنات المتجر --store-* · سطح المكتب ≥1024 مقفل تماماً.
+   ========================================================================== */
+@media (max-width: 1023px) {
+  /* لون إبراز القائمة: أزرق المتجر. في الثيم الداكن --store-primary ثابت (#1F5FBF) ولا
+     يحقق تبايناً كافياً كنص/أيقونة على سطح داكن، فنُفتّحه بمزج توكنات المتجر فقط
+     (بلا HEX جديد — color-mix مستخدم أصلاً في المشروع). */
+  .shop-body { --shop-menu-accent: var(--store-primary); }
+  [data-theme='dark'] .shop-body {
+    --shop-menu-accent: color-mix(in srgb, var(--store-primary) 45%, var(--store-text));
+  }
+
+  /* 17.1 اللوحة: سطح المتجر (بلا Gradient) + إيقاع أفقي = إيقاع الهيدر (12px)
+     (PHASE 2 · STEP 2D.1) التكوين العمودي: منطقة التمرير لا تتمدد لملء اللوحة
+     (كانت flex: 1 1 auto ⇒ تتراكم المساحة الحرة داخلها فيظهر فراغ 164–320px بين
+     آخر بند والمظهر). الآن: flex: 0 1 auto ⇒ المظهر ومنطقة الدعم يتبعان المحتوى،
+     والمساحة غير المستخدمة تقع بعد التكوين كاملاً. الحشوة السفلية 16px + margin
+     الفاصل 8px = 24px بين آخر بند والفاصل (الهدف 24–40px). */
+  .shop-body .shop-drawer { background: var(--store-surface); }
+  .shop-menu__scroll {
+    flex: 0 1 auto;
+    padding-inline: var(--space-3);
+    padding-block: var(--space-2) var(--space-4);
+  }
+
+  /* 17.2 بنود التنقل: صف 50px · سطح شفاف · radius النظام · بلا فاصل لكل بند */
+  .shop-menu__scroll .shop-drawer__link,
+  .shop-menu__scroll .shop-menu__link {
+    min-height: 50px;
+    padding: var(--space-2) var(--space-3);
+    gap: var(--space-3);
+    border-bottom: 0;
+    border-radius: var(--radius-md);
+    background: transparent;
+    color: var(--store-text);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    /* إلغاء التتابع (stagger) بصرياً: العناصر تظهر مع اللوحة مباشرة — بلا انتظار.
+       ملاحظة: shop.header.js يضع transitionDelay مضمّناً على كل بند (40ms×i) — ولا يمكن
+       إلغاؤه بـCSS بلا !important. بلا تعريف transition لا يبقى للتأخير أي أثر (لا ظهور
+       متتابع ولا تأخير على تفاعل اللمس). */
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .shop-menu__stagger { opacity: 1; transform: none; transition: none; }
+
+  /* 17.3 الأيقونات: 20px بلون هادئ (بلا حاويات دائرية) */
+  .shop-menu__scroll .shop-drawer__link__icon { width: 20px; height: 20px; color: var(--store-text-muted); }
+  .shop-menu__scroll .shop-drawer__link__icon svg { width: 20px; height: 20px; }
+
+  /* تفاعل هادئ (hover/focus/active) — أزرق المتجر الناعم */
+  .shop-menu__scroll .shop-drawer__link:hover,
+  .shop-menu__scroll .shop-drawer__link:focus-visible,
+  .shop-menu__scroll .shop-drawer__link:active,
+  .shop-menu__scroll .shop-menu__link:hover,
+  .shop-menu__scroll .shop-menu__link:focus-visible {
+    background: var(--store-primary-soft);
+    color: var(--shop-menu-accent);
+  }
+
+  .shop-menu__scroll .shop-drawer__link:hover .shop-drawer__link__icon,
+  .shop-menu__scroll .shop-drawer__link:focus-visible .shop-drawer__link__icon,
+  .shop-menu__scroll .shop-drawer__link[aria-current='page'] .shop-drawer__link__icon { color: var(--shop-menu-accent); }
+
+  /* البند الحالي — aria-current يضبطه shop.app.js (لا JS جديد) */
+  .shop-menu__scroll .shop-drawer__link[aria-current='page'] {
+    background: var(--store-primary-soft);
+    color: var(--shop-menu-accent);
+    font-weight: 600;
+  }
+
+  /* زر الخروج يبقى بلونه الدلالي (خارج هوية المتجر) */
+  .shop-menu__scroll .shop-drawer__link--danger { color: var(--danger-700); }
+  .shop-menu__scroll .shop-drawer__link--danger:hover,
+  .shop-menu__scroll .shop-drawer__link--danger:active { background: var(--danger-50); }
+
+  /* 17.4 عناوين الأقسام: أصغر وأهدأ (النصوص كما هي — لا عناوين جديدة) */
+  .shop-menu__scroll .shop-menu__label {
+    padding: var(--st-space-10) var(--space-3) var(--space-1);
+    font-size: 0.78125rem;
+    font-weight: 600;
+    color: var(--store-text-muted);
+  }
+
+  /* 17.5 الفواصل: خط رقيق بعرض المحتوى فقط
+     (كان داخل «حسابك» شريطاً سميكاً لأن الـspan سطري، وكان فاصل المظهر أبيض غير مرئي) */
+  .shop-menu__scroll .shop-menu__divider {
+    display: block;
+    height: 1px;
+    margin: var(--space-2) var(--space-3);
+    background: var(--store-border);
+  }
+
+  .shop-drawer__panel > .shop-menu__divider {
+    height: 1px;
+    margin: var(--space-2) var(--space-3) 0;
+    background: var(--store-border);
+  }
+
+  /* 17.6 بطاقة المستخدم (للمسجّل): سطح المتجر الناعم */
+  .shop-menu__scroll .shop-menu__user {
+    padding: var(--space-3);
+    margin-bottom: var(--space-2);
+    background: var(--store-primary-soft);
+    border-bottom: 0;
+    border-radius: var(--radius-md);
+  }
+
+  .shop-menu__scroll .shop-menu__user-avatar { background: var(--store-surface); color: var(--store-primary); }
+
+  /* 17.7 مبدّل المظهر: Control واحد مترابط — 3 أعمدة متساوية بلا overflow
+     (المنطق والمؤشر المنزلق كما هما — يتحرك بالـJS الحالي) */
+  .shop-drawer__panel > .shop-menu__theme {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    margin: var(--space-2) var(--space-3) var(--space-3);
+    padding: 4px;
+    background: var(--store-surface-soft);
+    border: 1px solid var(--store-border);
+    border-radius: var(--radius-md);
+    /* بلا صعود متأخر: يظهر مع اللوحة (كان يتأخر 340ms) */
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .shop-drawer.is-open .shop-drawer__panel > .shop-menu__theme,
+  .shop-drawer.is-open .shop-drawer__panel > .shop-menu__divider { transition-delay: 0ms; }
+
+  .shop-drawer__panel .shop-menu__theme-thumb { background: var(--store-primary-soft); box-shadow: none; }
+
+  .shop-drawer__panel .shop-menu__theme-btn {
+    min-height: 44px;
+    border-radius: 8px;
+    font-size: 0.8125rem;
+    color: var(--store-text-muted);
+  }
+
+  .shop-drawer__panel .shop-menu__theme-btn svg { width: 16px; height: 16px; }
+  .shop-drawer__panel .shop-menu__theme-btn.is-active { color: var(--shop-menu-accent); font-weight: 600; }
+  .shop-drawer__panel .shop-menu__theme-btn:hover { color: var(--store-text); }
+
+  /* 17.8 منطقة الدعم + CTA: أخف بصرياً وإيقاع أفقي موحّد (بلا تأخر ظهور) */
+  .shop-drawer__panel > .shop-drawer__foot {
+    padding: var(--space-2) var(--space-3) calc(var(--space-4) + env(safe-area-inset-bottom, 0px));
+    background: var(--store-surface);
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .shop-drawer.is-open .shop-drawer__panel > .shop-drawer__foot { transition-delay: 0ms; }
+
+  .shop-drawer__foot .shop-note { font-size: 0.78125rem; line-height: 1.6; color: var(--store-text-muted); }
+  .shop-drawer__foot .btn { border-radius: var(--radius-md); }
+
+  .shop-drawer__foot .btn--primary {
+    background: var(--store-primary);
+    border-color: var(--store-primary);
+    color: var(--text-on-brand);   /* #ffffff في الثيمين — كان var(--store-surface) ⇒ 2.83:1 في الداكن */
+  }
+
+  .shop-drawer__foot .btn--primary:hover {
+    background: var(--store-primary-hover);
+    border-color: var(--store-primary-hover);
+  }
+}
+
+
+/* ============================================================================
+   18) PHASE 2 · STEP 2F — هيدر سطح المكتب (≥1024px) فقط
+   النطاق: العرض البصري لهيدر الديسكتوب. لا JS · لا DOM · لا تغيير IA/روابط/مسارات.
+   الجوال/التابلت (≤1023px) مقفل تماماً — كل القواعد هنا داخل min-width:1024.
+   ========================================================================== */
+@media (min-width: 1024px) {
+  /* لون الإبراز على الديسكتوب: أزرق المتجر — ويُفتَّح في الثيم الداكن بمزج توكنات
+     (بلا HEX جديد) لأن --store-primary ثابت ولا يحقق تباين AA على سطح داكن. */
+  .shop-body { --shop-desktop-accent: var(--store-primary); }
+
+  [data-theme='dark'] .shop-body {
+    --shop-desktop-accent: color-mix(in srgb, var(--store-primary) 45%, var(--store-text));
+  }
+
+  /* 18.1 السطح: سطح المتجر الصريح (بلا blur/تدرّج) + حدّ رقيق · والظل عند التمرير فقط
+     (كان: rgba أبيض + backdrop blur 16px + ظل ثابت 0 4px 20px) */
+  .shop-body .shop-header {
+    background: var(--store-surface);
+    border-bottom-color: var(--store-border);
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .shop-body .shop-header.is-scrolled { box-shadow: var(--shadow-sm); }
+
+  /* 18.2 إصلاح حرج على 1024 بالضبط: حقل البحث كان display:none
+     (shop.css: @media max-width:1024 يُخفيه، ولا قاعدة تعيده ⇒ لا بحث على 1024) */
+  .shop-header .shop-search { display: flex; }
+
+  /* المسطرة بين التنقل والبحث لا تتمدد ⇒ المساحة الحرة تذهب لحقل البحث
+     (كانت تتمدد معه فتظهر فجوة 104–171px بين التنقل والبحث) */
+  .shop-header .shop-header__spacer { flex: 0 0 auto; }
+
+  /* 18.3 التنقل: صفوف ≥44px · خط 14 · نشط أزرق هادئ · hover على سطح ناعم */
+  .shop-header .shop-nav { gap: var(--space-1); }
+
+  .shop-header .shop-nav__link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding-block: 0;
+    padding-inline: var(--st-space-10);
+    font-size: 0.875rem;
+    color: var(--store-text-body);
+    border-radius: var(--radius-md);
+  }
+
+  .shop-header .shop-nav__link:hover {
+    background: var(--store-surface-soft);
+    color: var(--store-text);
+  }
+
+  .shop-header .shop-nav__link[aria-current='page'] {
+    background: var(--store-primary-soft);
+    color: var(--shop-desktop-accent);
+    font-weight: var(--fw-semibold);
+  }
+
+  /* 18.4 البحث: 44px · 16px · عرض مرن (يملأ الوسط بلا ابتلاع التنقل وبلا فراغ)
+     flex-basis 220 إلى 420 كحد أقصى ⇒ على 1024 ≈ 243px وهو آمن تماماً */
+  .shop-header .shop-search {
+    flex: 1 1 220px;
+    max-width: 420px;
+    gap: var(--space-2);
+  }
+
+  .shop-header .shop-search__input {
+    height: 44px;
+    font-size: 1rem;
+    background: var(--store-surface-soft);
+    border-color: var(--store-border);
+    color: var(--store-text);
+    border-radius: var(--radius-md);
+    padding-inline: var(--space-3);
+  }
+
+  .shop-header .shop-search__input::placeholder { color: var(--store-text-muted); opacity: 1; }
+  .shop-header .shop-search__input:focus { border-color: var(--shop-desktop-accent); }
+
+  /* ✕ الأصلي للمتصفح داخل input[type=search] (مسحان لنفس الوظيفة) */
+  .shop-header .shop-search__input::-webkit-search-cancel-button,
+  .shop-header .shop-search__input::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+  }
+
+  .shop-header .shop-search__btn {
+    min-height: 44px;
+    font-size: 0.875rem;
+    padding-inline: var(--space-3);
+    background: var(--store-primary);
+    border-color: var(--store-primary);
+    color: var(--text-on-brand);
+    border-radius: var(--radius-md);
+  }
+
+  .shop-header .shop-search__btn:hover {
+    background: var(--store-primary-hover);
+    border-color: var(--store-primary-hover);
+  }
+
+  /* 18.5 أزرار الأدوات (سلة · جرس · حساب) — نفس لغة هيدر الجوال */
+  .shop-header .shop-cartbtn,
+  .shop-header .shop-bell,
+  .shop-header .shop-user {
+    background: var(--store-surface-soft);
+    border-color: transparent;
+    color: var(--store-text);
+  }
+
+  .shop-header .shop-cartbtn:hover,
+  .shop-header .shop-bell:hover,
+  .shop-header .shop-user:hover,
+  .shop-header .shop-cartbtn:focus-visible,
+  .shop-header .shop-bell:focus-visible,
+  .shop-header .shop-user:focus-visible {
+    background: var(--store-primary-soft);
+    border-color: transparent;
+    color: var(--shop-desktop-accent);
+  }
+
+  /* 18.6 أزرار الزائر (تسجيل الدخول · إنشاء حساب): هدف لمس ≥44 + هوية المتجر
+     (كانت 32px فقط) */
+  .shop-header .shop-actions > a[href='#/login'],
+  .shop-header .shop-actions > a[href='#/register'] {
+    min-height: 44px;
+    font-size: 0.875rem;
+  }
+
+  .shop-header .shop-actions > a[href='#/login'] { color: var(--store-text-muted); }
+
+  .shop-header .shop-actions > a[href='#/login']:hover,
+  .shop-header .shop-actions > a[href='#/login']:focus-visible {
+    background: var(--store-surface-soft);
+    color: var(--store-text);
+  }
+
+  .shop-header .shop-actions > a[href='#/register'] {
+    background: var(--store-primary);
+    border-color: var(--store-primary);
+    color: var(--text-on-brand);
+  }
+
+  .shop-header .shop-actions > a[href='#/register']:hover,
+  .shop-header .shop-actions > a[href='#/register']:focus-visible {
+    background: var(--store-primary-hover);
+    border-color: var(--store-primary-hover);
+    color: var(--text-on-brand);
+  }
+
+  /* 18.7 الفاصل والهوية بالنص */
+  .shop-header .shop-header__divider { background: var(--store-border); }
+  .shop-header .shop-brand__text strong { color: var(--store-text); }
+  .shop-header .shop-brand__text small { color: var(--store-text-muted); }
+
+  /* 18.8 تركيز واحد واضح بهوية المتجر:
+     كان outline teal 2px (من .shop-body :focus-visible) + حلقة teal 3px (من base) = مزدوج
+     و teal. الآن: outline واحد بلون الإبراز وبلا حلقة. */
+  .shop-header :focus-visible {
+    outline: 2px solid var(--shop-desktop-accent);
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+}

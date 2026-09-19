@@ -1,0 +1,21 @@
+{
+  "name": "alwled-storefront",
+  "version": "1.0.0",
+  "description": "Alwled customer storefront — Tailwind v4 build layer (foundation).",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "tw:build": "tailwindcss -i tailwind/input.css -o shop/assets/css/shop.tw.css --minify",
+    "tw:watch": "tailwindcss -i tailwind/input.css -o shop/assets/css/shop.tw.css --watch",
+    "tw:dev": "tailwindcss -i tailwind/input.css -o shop/assets/css/shop.tw.css"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  },
+  "private": true
+}

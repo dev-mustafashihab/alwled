@@ -54,6 +54,10 @@ const PERMISSION_LABELS: Record<string, string> = {
   'analytics.read': 'عرض تحليلات لوحة التحكم',
   'notifications.admin.read': 'عرض إشعارات الإدارة',
   'audit.read': 'عرض سجل التدقيق',
+  'slider.read': 'عرض السلايدر',
+  'slider.create': 'إضافة شريحة',
+  'slider.update': 'تعديل شريحة',
+  'slider.delete': 'حذف شريحة',
 };
 
 async function main() {

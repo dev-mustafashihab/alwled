@@ -1,0 +1,668 @@
+{
+  "stage": "14.4",
+  "scope": "unified store UI QA (14.1→14.4)",
+  "total": 94,
+  "passed": 94,
+  "failed": 0,
+  "results": [
+    {
+      "step": "guest home renders store content",
+      "status": "PASS",
+      "got": "cards=2"
+    },
+    {
+      "step": "guest can open #/products (real cards)",
+      "status": "PASS",
+      "got": "cards=2"
+    },
+    {
+      "step": "guest can open the categories taxonomy view (تصفّح حسب التصنيف)",
+      "status": "PASS",
+      "got": "items=2 heading=True",
+      "detail": "الرئيسية | ‹ | التصنيفات | تصفّح حسب التصنيف |  | اختر عنصرًا لعرض منتجاته. |  | تصنيف تجريبي — أجهزة منزلية | 0 منتج | تصنيف تجريبي — ثلا"
+    },
+    {
+      "step": "guest can open the brands taxonomy view (تصفّح حسب العلامة التجارية)",
+      "status": "PASS",
+      "got": "items=2 heading=True",
+      "detail": "الرئيسية | ‹ | العلامات | تصفّح حسب العلامة التجارية |  | اختر عنصرًا لعرض منتجاته. |  | علامة تجريبية أ | 1 منتج | علامة تجريبية ب | 1 منتج"
+    },
+    {
+      "step": "guest search keeps the term in the URL and renders results",
+      "status": "PASS",
+      "got": "#/products?search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9"
+    },
+    {
+      "step": "guest on #/cart gets a clean auth guard (no crash, no loop)",
+      "status": "PASS",
+      "got": "الرئيسية | ‹ | السلة | تسجيل الدخول مطلوب |  | سجّل دخولك لعرض سلة مشترياتك ومتابعة الطلب. تصفّح الم",
+      "detail": "hash=#/cart"
+    },
+    {
+      "step": "guest on #/checkout gets a clean auth guard (no crash, no loop)",
+      "status": "PASS",
+      "got": "الرئيسية | ‹ | السلة | ‹ | إتمام الطلب | تسجيل الدخول مطلوب |  | سجّل دخولك لعرض ملخّص طلبك قبل التأكيد.",
+      "detail": "hash=#/checkout"
+    },
+    {
+      "step": "guest on #/orders gets a clean auth guard (no crash, no loop)",
+      "status": "PASS",
+      "got": "الرئيسية | ‹ | طلباتي | تسجيل الدخول مطلوب |  | سجّل دخولك لعرض طلباتك ومتابعتها. |  | تسجيل الدخول | إنشا",
+      "detail": "hash=#/orders"
+    },
+    {
+      "step": "guest on #/orders/1 gets a clean auth guard (no crash, no loop)",
+      "status": "PASS",
+      "got": "الرئيسية | ‹ | طلباتي | ‹ | تفاصيل الطلب | تسجيل الدخول مطلوب |  | سجّل دخولك لعرض تفاصيل الطلب. |  | تسجيل ",
+      "detail": "hash=#/orders/1"
+    },
+    {
+      "step": "guest on #/orders/1/payment gets a clean auth guard (no crash, no loop)",
+      "status": "PASS",
+      "got": "الرئيسية | ‹ | طلباتي | ‹ | الدفع | تسجيل الدخول مطلوب |  | سجّل دخولك لمتابعة دفع طلبك. |  | تسجيل الدخول | إ",
+      "detail": "hash=#/orders/1/payment"
+    },
+    {
+      "step": "guest on #/notifications gets a clean auth guard (no crash, no loop)",
+      "status": "PASS",
+      "got": "الرئيسية | ‹ | إشعاراتي | تسجيل الدخول مطلوب |  | سجّل دخولك لعرض إشعاراتك. |  | تسجيل الدخول | إنشاء حساب",
+      "detail": "hash=#/notifications"
+    },
+    {
+      "step": "guest on #/account gets a clean auth guard (no crash, no loop)",
+      "status": "PASS",
+      "got": "الرئيسية | ‹ | حسابي | تسجيل الدخول مطلوب |  | سجّل دخولك لعرض بيانات حسابك. |  | تسجيل الدخول | إنشاء حسا",
+      "detail": "hash=#/account"
+    },
+    {
+      "step": "guest on #/verification gets a clean auth guard (no crash, no loop)",
+      "status": "PASS",
+      "got": "الرئيسية | ‹ | توثيق الحساب | تسجيل الدخول مطلوب |  | سجّل دخولك لعرض حالة توثيق حسابك. |  | تسجيل الدخو",
+      "detail": "hash=#/verification"
+    },
+    {
+      "step": "public catalog exposes real in-stock products",
+      "status": "PASS",
+      "got": "[{\"id\": 632, \"name\": \"منتج تجريبي — ثلاجة 500 لتر\"}]"
+    },
+    {
+      "step": "guest add-to-cart opens the auth prompt",
+      "status": "PASS"
+    },
+    {
+      "step": "guest add-to-cart sends zero /cart requests",
+      "status": "PASS",
+      "got": "[]"
+    },
+    {
+      "step": "Escape closes the guest prompt (accessibility)",
+      "status": "PASS"
+    },
+    {
+      "step": "login from the prompt completes the pending add and lands on the cart",
+      "status": "PASS",
+      "got": "#/cart"
+    },
+    {
+      "step": "customer logs in from the store UI",
+      "status": "PASS",
+      "got": "hash=#/"
+    },
+    {
+      "step": "add to cart works for the authenticated customer",
+      "status": "PASS",
+      "got": "product=632"
+    },
+    {
+      "step": "cart renders the real cart with backend money",
+      "status": "PASS",
+      "got": "الرئيسية | ‹ | السلة | سلة المشتريات |  | راجع الكميات قبل متابعة الطلب. |  | تفريغ السلة | منتج تجريبي — ثلاجة 500 لتر | رمز ال"
+    },
+    {
+      "step": "cart quantity update keeps the UI total identical to the backend",
+      "status": "PASS",
+      "got": "ui=1500.00 $ api=1500.00"
+    },
+    {
+      "step": "cart total actually changed after the quantity update",
+      "status": "PASS",
+      "got": "1000.00 $ -> 1500.00 $"
+    },
+    {
+      "step": "checkout preview total matches the backend subtotal",
+      "status": "PASS",
+      "got": "ui=1500.00 $ api=1500.00"
+    },
+    {
+      "step": "order success screen shows a real order number",
+      "status": "PASS",
+      "got": "✅ | تم إنشاء طلبك بنجاح | رقم الطلب | ORD-2026-001400 | الإجمالي | 1500.00 $ | عدد الأصناف | 1 | الحالة | قيد الانتظار"
+    },
+    {
+      "step": "triple click on confirm produced exactly one order",
+      "status": "PASS",
+      "got": "matches=1"
+    },
+    {
+      "step": "order creation reserved inventory exactly for the ordered units",
+      "status": "PASS",
+      "got": "reserved 13 -> 16 ordered_units=3"
+    },
+    {
+      "step": "cart is empty after the order",
+      "status": "PASS"
+    },
+    {
+      "step": "orders list shows the new order with status and total",
+      "status": "PASS",
+      "got": "الرئيسية | ‹ | طلباتي | طلباتي |  | 52 طلب |  | ORD-2026-001400 | قيد الانتظار | التاريخ: 16 أيلول 2026، 18:01عدد الأصناف: 1 | 150"
+    },
+    {
+      "step": "order details show items, totals and a real timeline",
+      "status": "PASS"
+    },
+    {
+      "step": "order details expose no internal ids or tokens",
+      "status": "PASS"
+    },
+    {
+      "step": "unconfigured sham cash shows an honest notice (no invented wallet/name/reference)",
+      "status": "PASS",
+      "got": "بيانات تحويل شام كاش | ⚠️ | بيانات الدفع غير مهيأة حالياً | لم يقم المتجر بضبط بيانات محفظة شام كاش بعد. يمكنك إنشاء الدفعة، و"
+    },
+    {
+      "step": "payment amount equals the order total from the backend",
+      "status": "PASS",
+      "got": "payment=1500.00 order=1500.00"
+    },
+    {
+      "step": "payment provider stays null (manual sham cash workflow)",
+      "status": "PASS"
+    },
+    {
+      "step": "no file-upload path is invented (the API takes a proof link)",
+      "status": "PASS",
+      "got": "file_inputs=0"
+    },
+    {
+      "step": "empty reference is refused client-side in Arabic",
+      "status": "PASS",
+      "got": "⚠️\nأدخل مرجع الحوالة."
+    },
+    {
+      "step": "malformed proof link is refused client-side",
+      "status": "PASS",
+      "got": "⚠️\nأدخل رابطًا صحيحًا للصورة (http/https) لا يزيد عن 512 حرفًا."
+    },
+    {
+      "step": "payment reaches PENDING_REVIEW after submitting the proof",
+      "status": "PASS",
+      "got": "PENDING_REVIEW"
+    },
+    {
+      "step": "store shows the review state without writing any final status",
+      "status": "PASS"
+    },
+    {
+      "step": "parallel duplicate submits leave the payment in PENDING_REVIEW (409 backstop)",
+      "status": "PASS",
+      "got": "PENDING_REVIEW"
+    },
+    {
+      "step": "notifications page lists real events (order/payment)",
+      "status": "PASS",
+      "got": "الرئيسية | ‹ | إشعاراتي | إشعاراتي |  | 167 إشعار |  | غير المقروء فقط | تعليم الكل كمقروء | تم استلام إثبات الدفع | جديد |  | وصلنا إ"
+    },
+    {
+      "step": "notification cards contain no executable markup",
+      "status": "PASS"
+    },
+    {
+      "step": "notification badge equals GET /notifications/unread-count (condition wait)",
+      "status": "PASS",
+      "got": "badge=10"
+    },
+    {
+      "step": "mark-read updates the badge from the source",
+      "status": "PASS",
+      "got": "badge=9 api=9"
+    },
+    {
+      "step": "read-all clears the unread count at the source",
+      "status": "PASS",
+      "got": "0"
+    },
+    {
+      "step": "notification preferences panel renders with the backend types",
+      "status": "PASS"
+    },
+    {
+      "step": "notification routing is a validated hash route (no markup injection)",
+      "status": "PASS",
+      "got": "{\"good\": \"#/orders?orderNumber=ORD-2026-0001\", \"bad\": \"#/orders\"}"
+    },
+    {
+      "step": "account page shows profile, password, sessions and shortcuts",
+      "status": "PASS"
+    },
+    {
+      "step": "account page displays no tokens/hashes",
+      "status": "PASS"
+    },
+    {
+      "step": "wrong current password (with a compliant new one) is refused with the backend's Arabic message",
+      "status": "PASS",
+      "got": "⚠️\nكلمة المرور الجديدة لا تحقق متطلبات الأمان.",
+      "detail": "backend-surfaced message='⚠️\\nكلمة المرور الجديدة لا تحقق متطلبات الأمان.'"
+    },
+    {
+      "step": "no password/token ever written to browser storage",
+      "status": "PASS",
+      "got": "[\"alwled.session\"]"
+    },
+    {
+      "step": "verification page shows the real state machine and the LOG provider",
+      "status": "PASS",
+      "got": "الرئيسية | ‹ | توثيق الحساب | توثيق الحساب |  | التوثيق يُراجَع يدويًا من فريق المتجر. |  | ملغى | حالة الطلب | الحالة | ملغى | المحاولة | 1 | الم"
+    },
+    {
+      "step": "verification page offers no action beyond the backend state machine",
+      "status": "PASS",
+      "got": "CANCELLED"
+    },
+    {
+      "step": "cancel CTA is offered for a PENDING order",
+      "status": "PASS"
+    },
+    {
+      "step": "cancel modal is keyboard-ready (focus inside the dialog)",
+      "status": "PASS"
+    },
+    {
+      "step": "cancel reflects the backend CANCELLED state and hides the CTA",
+      "status": "PASS",
+      "got": "CANCELLED"
+    },
+    {
+      "step": "router keeps every route on direct navigation",
+      "status": "PASS",
+      "got": "{}"
+    },
+    {
+      "step": "refresh keeps the current route",
+      "status": "PASS",
+      "got": "#/verification"
+    },
+    {
+      "step": "back/forward navigation works in the hash router",
+      "status": "PASS",
+      "got": "back=#/account forward=#/verification"
+    },
+    {
+      "step": "unknown route shows the store not-found state (no crash)",
+      "status": "PASS",
+      "got": "الرئيسية ‹ صفحة غير موجودة 📦 الصفحة غير "
+    },
+    {
+      "step": "customer B session is active for the isolation checks",
+      "status": "PASS",
+      "got": "0955900160"
+    },
+    {
+      "step": "customer B sees 'order not found' for A's order in the UI",
+      "status": "PASS",
+      "got": "الرئيسية | ‹ | طلباتي | ‹ | تفاصيل الطلب | 📦 | الطلب غير موجود | هذا الطلب غير متاح لحسابك. | عرض طلباتي"
+    },
+    {
+      "step": "customer B is denied every customer-A resource (404/401, never 200)",
+      "status": "PASS",
+      "got": "{\"order\": 404, \"order_cancel\": 404, \"payment\": 404, \"payment_submit\": 400, \"cart_read\": 200, \"verification\": 200}"
+    },
+    {
+      "step": "customer B reading own cart works (isolation is about ownership, not a broken API)",
+      "status": "PASS",
+      "got": "200"
+    },
+    {
+      "step": "A's order never appears in B's list",
+      "status": "PASS"
+    },
+    {
+      "step": "store session for customer A is still valid after the isolation section",
+      "status": "PASS",
+      "got": "authenticated"
+    },
+    {
+      "step": "owner logs into the admin panel",
+      "status": "PASS",
+      "got": "#/dashboard"
+    },
+    {
+      "step": "admin review queue lists the customer's payment",
+      "status": "PASS",
+      "got": "cmu4eq4p3001"
+    },
+    {
+      "step": "admin decision sets the payment to SUCCEEDED (via ui)",
+      "status": "PASS",
+      "got": "SUCCEEDED"
+    },
+    {
+      "step": "customer sees SUCCEEDED after refresh (condition wait, no stale DOM read)",
+      "status": "PASS",
+      "got": "label_found=True",
+      "detail": "الرئيسية | ‹ | طلباتي | ‹ | الدفع | دفع الطلب |  | ORD-2026-001400 • 1500.00 $ |  | تفاصيل الطلب | حالة الدفعة | ناجحة | شام كاش | المبلغ | 1500.00 $ | العملة | USD | أُنشئت في | 16 أيلول 2026، 18"
+    },
+    {
+      "step": "rejection fixture created (order + payment + proof → PENDING_REVIEW)",
+      "status": "PASS",
+      "got": "order=1543 payment=cmu4esjzv004q146p2ldaahla"
+    },
+    {
+      "step": "admin rejection sets FAILED with a stored reason (via ui)",
+      "status": "PASS",
+      "got": "FAILED | إثبات غير مطابق لكشف شام كاش — Stage 14.4"
+    },
+    {
+      "step": "customer sees FAILED and the staff reason after refresh",
+      "status": "PASS",
+      "got": "label=True reason=True backend=FAILED",
+      "detail": "الرئيسية | ‹ | طلباتي | ‹ | الدفع | دفع الطلب |  | ORD-2026-001402 • 500.00 $ |  | تفاصيل الطلب | حالة الدفعة | مرفوضة | شام كاش | المبلغ | 500.00 $ | العملة | USD | أُنشئت في | 16 أيلول 2026، 18:03 | مرجع الحوالة | SC-144-REJ-81791 | أُرسل الإثبات في | 16 أيلول 2"
+    },
+    {
+      "step": "no fake success/retry button on a rejected payment",
+      "status": "PASS"
+    },
+    {
+      "step": "cold load of #/account with a stored session renders private content (no false login guard)",
+      "status": "PASS",
+      "got": "الرئيسية | ‹ | حسابي | حسابي |  | Stage142 QA |  | نشط | غير موثّق | البيانات الأساسية | الاسم الأول | الكنية | رقم الهاتف | البريد الإل",
+      "detail": "guard=False marker=#shop-account-first"
+    },
+    {
+      "step": "cold load of #/orders/1541/payment with a stored session renders private content (no false login guard)",
+      "status": "PASS",
+      "got": "الرئيسية | ‹ | طلباتي | ‹ | الدفع | دفع الطلب |  | ORD-2026-001400 • 1500.00 $ |  | تفاصيل الطلب | حالة الدفعة | ناجحة | شام كاش | المبل",
+      "detail": "guard=False marker=None"
+    },
+    {
+      "step": "fresh login succeeds",
+      "status": "PASS"
+    },
+    {
+      "step": "expired access token can be installed through the documented session API",
+      "status": "PASS",
+      "got": "{\"ok\": true, \"access\": \"expired.access.token\", \"hasRefresh\": true}"
+    },
+    {
+      "step": "expired access ⇒ exactly one refresh through the central client, then a successful retry",
+      "status": "PASS",
+      "got": "ok:number refresh_calls=+1",
+      "detail": "{\"ok\": true, \"access\": \"expired.access.token\", \"hasRefresh\": true}"
+    },
+    {
+      "step": "logout clears the session and the private UI",
+      "status": "PASS"
+    },
+    {
+      "step": "after logout a private route shows the guard instead of stale data",
+      "status": "PASS",
+      "got": "الرئيسية\n‹\nطلباتي\nتسجيل الدخول مطلوب\n\nسجّل دخولك لعرض طلباتك ومتابعتها.\n\nتسجيل الدخول\nإنشا"
+    },
+    {
+      "step": "no duplicate API call storms on any page (≤2 identical reads per view)",
+      "status": "PASS",
+      "got": "{\"#/\": {}, \"#/products\": {}, \"#/orders\": {}, \"#/notifications\": {}, \"#/account\": {}}"
+    },
+    {
+      "step": "visitor on a private route produces no repeated unauthorized calls",
+      "status": "PASS",
+      "got": "0 calls",
+      "detail": "[]"
+    },
+    {
+      "step": "account form rendered for the accessibility pass",
+      "status": "PASS",
+      "got": "الرئيسية | ‹ | حسابي | حسابي |  | Stage142 QA |  | نشط | غير موثّق | البيانات الأساسية | الاسم الأول | الكنية | رقم الهاتف | البريد الإل"
+    },
+    {
+      "step": "every form control is labelled",
+      "status": "PASS",
+      "got": "{\"inputs\": 7, \"labelled\": 7, \"buttons\": 8, \"named\": 8, \"smallTargets\": 1, \"statusBadges\": 4, \"statusTextHidden\": 0, \"skipLink\": true, \"lang\": \"ar\"}"
+    },
+    {
+      "step": "every button/link has an accessible name",
+      "status": "PASS",
+      "got": "{\"inputs\": 7, \"labelled\": 7, \"buttons\": 8, \"named\": 8, \"smallTargets\": 1, \"statusBadges\": 4, \"statusTextHidden\": 0, \"skipLink\": true, \"lang\": \"ar\"}"
+    },
+    {
+      "step": "status badges carry text (not colour only)",
+      "status": "PASS",
+      "got": "{\"inputs\": 7, \"labelled\": 7, \"buttons\": 8, \"named\": 8, \"smallTargets\": 1, \"statusBadges\": 4, \"statusTextHidden\": 0, \"skipLink\": true, \"lang\": \"ar\"}"
+    },
+    {
+      "step": "skip link + lang=ar present",
+      "status": "PASS",
+      "got": "{\"inputs\": 7, \"labelled\": 7, \"buttons\": 8, \"named\": 8, \"smallTargets\": 1, \"statusBadges\": 4, \"statusTextHidden\": 0, \"skipLink\": true, \"lang\": \"ar\"}"
+    },
+    {
+      "step": "keyboard: focus ring is visible on focused controls",
+      "status": "PASS",
+      "got": "{\"button\": \"ok\", \"input\": \"ok\", \"header\": \"focused=false outline=none shadow=none\", \"ok\": true}"
+    },
+    {
+      "step": "all 8 viewports × 11 store pages: no overflow, no clipped CTA, header intact",
+      "status": "PASS",
+      "got": "[]"
+    },
+    {
+      "step": "no unexpected console errors across the whole 14.4 pass",
+      "status": "PASS",
+      "got": "[]",
+      "detail": "expected 4xx from negative tests=41"
+    },
+    {
+      "step": "store pages never call an admin endpoint",
+      "status": "PASS",
+      "got": "[]"
+    },
+    {
+      "step": "no store request body carries userId/amount/status",
+      "status": "PASS",
+      "got": "[]"
+    },
+    {
+      "step": "zero 5xx responses during the whole pass",
+      "status": "PASS",
+      "got": "[]"
+    }
+  ],
+  "state": {
+    "order": {
+      "id": "1541",
+      "number": "ORD-2026-001400",
+      "total": "1500.00",
+      "status": "PENDING",
+      "cancelled": "1542"
+    },
+    "payment": {
+      "id": "cmu4eq4p3001m146pl85pip6o"
+    },
+    "rejected": {
+      "orderId": 1543,
+      "paymentId": "cmu4esjzv004q146p2ldaahla"
+    },
+    "perf": {
+      "duplicate_calls": {
+        "#/": {},
+        "#/products": {},
+        "#/orders": {},
+        "#/notifications": {},
+        "#/account": {}
+      }
+    },
+    "router": {
+      "guest_search": "#/products?search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9",
+      "#/": "#/",
+      "#/products": "#/products",
+      "#/products/632": "#/products/632",
+      "#/cart": "#/cart",
+      "#/checkout": "#/checkout",
+      "#/orders": "#/orders",
+      "#/orders/1541": "#/orders/1541",
+      "#/orders/1541/payment": "#/orders/1541/payment",
+      "#/notifications": "#/notifications",
+      "#/account": "#/account",
+      "#/verification": "#/verification",
+      "refresh-keeps-route": "#/verification",
+      "back": "#/account",
+      "forward": "#/verification",
+      "same-hash": "#/orders/1541",
+      "unknown": "#/definitely-not-a-route",
+      "unknown_view": "الرئيسية ‹ صفحة غير موجودة 📦 الصفحة غير "
+    },
+    "products_in_stock": [
+      {
+        "id": 632,
+        "name": "منتج تجريبي — ثلاجة 500 لتر"
+      }
+    ],
+    "storage": {
+      "cookies": [],
+      "origins": [
+        {
+          "origin": "https://panel.fahd-car.cloud",
+          "localStorage": [
+            {
+              "name": "alwled.session",
+              "value": "{\"refreshToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbXU0NDEydDAwMGF2eXk3NGthZ2huZmxmIiwic2lkIjoiY211NGVzdTg2MDA2YTE0NnBjNWV1bWZsbCIsInR5cCI6InJlZnJlc2giLCJpYXQiOjE3ODk1ODE4MDUsImV4cCI6MTc5MDE4NjYwNX0.q0zHQSe3SZRvjDWczpppflDNzTMxXpefNHhsG15EP8I\",\"expiresIn\":\"15m\",\"remember\":false,\"startedAt\":\"2026-09-16T18:03:25.099Z\",\"user\":{\"id\":\"cmu4412t000avyy74kaghnflf\",\"firstName\":\"Stage142\",\"lastName\":\"QA\",\"email\":\"stage142.customer@alwled.test\",\"phone\":\"0955900100\",\"status\":\"ACTIVE\",\"isVerified\":false,\"lastLoginAt\":\"2026-09-16T18:00:50.298Z\",\"createdAt\":\"2026-09-16T13:01:53.653Z\",\"roles\":[\"CUSTOMER\"],\"updatedAt\":\"2026-09-16T18:00:50.299Z\",\"isActive\":true}}"
+            }
+          ]
+        }
+      ]
+    },
+    "fallback_used": [
+      {
+        "product": 632,
+        "code": 201
+      }
+    ],
+    "isolation": {
+      "order": 404,
+      "order_cancel": 404,
+      "payment": 404,
+      "payment_submit": 400,
+      "cart_read": 200,
+      "verification": 200
+    },
+    "rejected_view_probe": "الرئيسية | ‹ | طلباتي | ‹ | الدفع | دفع الطلب |  | ORD-2026-001402 • 500.00 $ |  | تفاصيل الطلب | حالة الدفعة | مرفوضة | شام كاش | المبلغ | 500.00 $ | العملة | USD | أُنشئت في | 16 أيلول 2026، 18:03 | مرجع الحوالة | SC-144-REJ-81791 | أُرسل الإثبات في | 16 أيلول 2",
+    "a11y": {
+      "inputs": 7,
+      "labelled": 7,
+      "buttons": 8,
+      "named": 8,
+      "smallTargets": 1,
+      "statusBadges": 4,
+      "statusTextHidden": 0,
+      "skipLink": true,
+      "lang": "ar"
+    },
+    "visual_failures": [],
+    "console": {
+      "expected": 41,
+      "unexpected": []
+    },
+    "throttle_events": 0,
+    "api_status_counts": {
+      "GET 401": 12,
+      "POST 401": 9,
+      "POST 200": 1,
+      "GET 200": 65
+    },
+    "server_errors": []
+  },
+  "screenshots": [
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/01-guest-auth-prompt.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/02-cart-after-login.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/03-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/04-checkout-preview.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/05-order-success.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/06-orders.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/07-order-details.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/08-payment-empty.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/09-payment-pending-review.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/10-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/11-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/12-verification.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/13-cancel-modal.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/14-admin-review-queue.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/15-admin-confirm-modal.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/16-payment-succeeded.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/17-admin-reject-form.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/18-payment-rejected.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1024-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1024-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1024-checkout.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1024-home.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1024-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1024-order.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1024-payment.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1024-verification.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1280-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1280-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1280-checkout.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1280-home.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1280-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1280-order.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1280-payment.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1280-verification.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1440-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1440-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1440-checkout.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1440-home.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1440-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1440-order.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1440-payment.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1440-verification.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1920-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1920-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1920-checkout.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1920-home.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1920-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1920-order.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1920-payment.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1920-verification.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp375-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp375-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp375-checkout.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp375-home.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp375-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp375-order.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp375-payment.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp375-verification.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp390-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp390-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp390-checkout.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp390-home.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp390-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp390-order.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp390-payment.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp390-verification.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp430-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp430-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp430-checkout.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp430-home.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp430-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp430-order.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp430-payment.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp430-verification.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp768-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp768-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp768-checkout.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp768-home.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp768-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp768-order.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp768-payment.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp768-verification.png"
+  ]
+}

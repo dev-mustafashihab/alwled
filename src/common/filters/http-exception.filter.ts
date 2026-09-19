@@ -7,6 +7,7 @@ import {
   Logger,
 } from '@nestjs/common';
 import { Request, Response } from 'express';
+import { getRequestId, safeLogPath } from '../middleware/request-id.middleware';
 
 export interface ApiError {
   field?: string;
@@ -93,9 +94,10 @@ export class HttpExceptionFilter implements ExceptionFilter {
       ) {
         status = HttpStatus.BAD_REQUEST;
         message = 'قيمة غير صالحة في الطلب';
-        this.logger.warn(`${req.method} ${req.url} → 400 (${name}/${code})`);
+        this.logger.warn(`${req.method} ${safeLogPath(req.originalUrl || req.url)} → 400 (${name}/${code}) rid=${getRequestId(req)}`);
       } else {
-        this.logger.error(exception.message, exception.stack);
+        // السجل يحتفظ بالأثر للتشخيص، أما الرد فلا يكشف أي شيء (رسالة عامة أدناه).
+        this.logger.error(`${req.method} ${safeLogPath(req.originalUrl || req.url)} rid=${getRequestId(req)} :: ${exception.message}`, exception.stack);
       }
     }
 

@@ -1,0 +1,541 @@
+{
+ "360": {
+  "inner": 1512,
+  "client": 1512,
+  "overflow": 0,
+  "dir": "rtl",
+  "h1": {
+   "txt": "السلايدر",
+   "w": 209,
+   "vis": true
+  },
+  "card": {
+   "x": 833,
+   "w": 391
+  },
+  "img_over": -289,
+  "meta": [
+   "الأبعاد الفعلية: 2059 × 764 · النسبة: 2.70:1"
+  ],
+  "acts": [
+   {
+    "a": "edit",
+    "w": 58,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "toggle",
+    "w": 62,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "up",
+    "w": 38,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "down",
+    "w": 38,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "delete",
+    "w": 54,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "add": {
+   "h": 44,
+   "vis": true
+  },
+  "modal": {
+   "open": true,
+   "w": 880,
+   "x": 316,
+   "right_over": -316,
+   "fields_out": 0,
+   "btns": [
+    {
+     "t": "إلغاء",
+     "vis": true,
+     "h": 40
+    },
+    {
+     "t": "إضافة",
+     "vis": true,
+     "h": 40
+    }
+   ],
+   "scrollable": true,
+   "doc_overflow": 0
+  },
+  "matches_target": false
+ },
+ "390": {
+  "inner": 1512,
+  "client": 1512,
+  "overflow": 0,
+  "dir": "rtl",
+  "h1": {
+   "txt": "السلايدر",
+   "w": 209,
+   "vis": true
+  },
+  "card": {
+   "x": 833,
+   "w": 391
+  },
+  "img_over": -289,
+  "meta": [
+   "الأبعاد الفعلية: 2059 × 764 · النسبة: 2.70:1"
+  ],
+  "acts": [
+   {
+    "a": "edit",
+    "w": 58,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "toggle",
+    "w": 62,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "up",
+    "w": 38,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "down",
+    "w": 38,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "delete",
+    "w": 54,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "add": {
+   "h": 44,
+   "vis": true
+  },
+  "modal": {
+   "open": true,
+   "w": 880,
+   "x": 316,
+   "right_over": -316,
+   "fields_out": 0,
+   "btns": [
+    {
+     "t": "إلغاء",
+     "vis": true,
+     "h": 40
+    },
+    {
+     "t": "إضافة",
+     "vis": true,
+     "h": 40
+    }
+   ],
+   "scrollable": true,
+   "doc_overflow": 0
+  },
+  "matches_target": false
+ },
+ "430": {
+  "inner": 1512,
+  "client": 1512,
+  "overflow": 0,
+  "dir": "rtl",
+  "h1": {
+   "txt": "السلايدر",
+   "w": 209,
+   "vis": true
+  },
+  "card": {
+   "x": 833,
+   "w": 391
+  },
+  "img_over": -289,
+  "meta": [
+   "الأبعاد الفعلية: 2059 × 764 · النسبة: 2.70:1"
+  ],
+  "acts": [
+   {
+    "a": "edit",
+    "w": 58,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "toggle",
+    "w": 62,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "up",
+    "w": 38,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "down",
+    "w": 38,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "delete",
+    "w": 54,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "add": {
+   "h": 44,
+   "vis": true
+  },
+  "modal": {
+   "open": true,
+   "w": 880,
+   "x": 316,
+   "right_over": -316,
+   "fields_out": 0,
+   "btns": [
+    {
+     "t": "إلغاء",
+     "vis": true,
+     "h": 40
+    },
+    {
+     "t": "إضافة",
+     "vis": true,
+     "h": 40
+    }
+   ],
+   "scrollable": true,
+   "doc_overflow": 0
+  },
+  "matches_target": false
+ },
+ "768": {
+  "inner": 1512,
+  "client": 1512,
+  "overflow": 0,
+  "dir": "rtl",
+  "h1": {
+   "txt": "السلايدر",
+   "w": 209,
+   "vis": true
+  },
+  "card": {
+   "x": 833,
+   "w": 391
+  },
+  "img_over": -289,
+  "meta": [
+   "الأبعاد الفعلية: 2059 × 764 · النسبة: 2.70:1"
+  ],
+  "acts": [
+   {
+    "a": "edit",
+    "w": 58,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "toggle",
+    "w": 62,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "up",
+    "w": 38,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "down",
+    "w": 38,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "delete",
+    "w": 54,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "add": {
+   "h": 44,
+   "vis": true
+  },
+  "modal": {
+   "open": true,
+   "w": 880,
+   "x": 316,
+   "right_over": -316,
+   "fields_out": 0,
+   "btns": [
+    {
+     "t": "إلغاء",
+     "vis": true,
+     "h": 40
+    },
+    {
+     "t": "إضافة",
+     "vis": true,
+     "h": 40
+    }
+   ],
+   "scrollable": true,
+   "doc_overflow": 0
+  },
+  "matches_target": false
+ },
+ "1024": {
+  "inner": 1512,
+  "client": 1512,
+  "overflow": 0,
+  "dir": "rtl",
+  "h1": {
+   "txt": "السلايدر",
+   "w": 209,
+   "vis": true
+  },
+  "card": {
+   "x": 833,
+   "w": 391
+  },
+  "img_over": -289,
+  "meta": [
+   "الأبعاد الفعلية: 2059 × 764 · النسبة: 2.70:1"
+  ],
+  "acts": [
+   {
+    "a": "edit",
+    "w": 58,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "toggle",
+    "w": 62,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "up",
+    "w": 38,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "down",
+    "w": 38,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "delete",
+    "w": 54,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "add": {
+   "h": 44,
+   "vis": true
+  },
+  "modal": {
+   "open": true,
+   "w": 880,
+   "x": 316,
+   "right_over": -316,
+   "fields_out": 0,
+   "btns": [
+    {
+     "t": "إلغاء",
+     "vis": true,
+     "h": 40
+    },
+    {
+     "t": "إضافة",
+     "vis": true,
+     "h": 40
+    }
+   ],
+   "scrollable": true,
+   "doc_overflow": 0
+  },
+  "matches_target": false
+ },
+ "1366": {
+  "inner": 1512,
+  "client": 1512,
+  "overflow": 0,
+  "dir": "rtl",
+  "h1": {
+   "txt": "السلايدر",
+   "w": 209,
+   "vis": true
+  },
+  "card": {
+   "x": 833,
+   "w": 391
+  },
+  "img_over": -289,
+  "meta": [
+   "الأبعاد الفعلية: 2059 × 764 · النسبة: 2.70:1"
+  ],
+  "acts": [
+   {
+    "a": "edit",
+    "w": 58,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "toggle",
+    "w": 62,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "up",
+    "w": 38,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "down",
+    "w": 38,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "delete",
+    "w": 54,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "add": {
+   "h": 44,
+   "vis": true
+  },
+  "modal": {
+   "open": true,
+   "w": 880,
+   "x": 316,
+   "right_over": -316,
+   "fields_out": 0,
+   "btns": [
+    {
+     "t": "إلغاء",
+     "vis": true,
+     "h": 40
+    },
+    {
+     "t": "إضافة",
+     "vis": true,
+     "h": 40
+    }
+   ],
+   "scrollable": true,
+   "doc_overflow": 0
+  },
+  "matches_target": false
+ },
+ "1920": {
+  "inner": 1512,
+  "client": 1512,
+  "overflow": 0,
+  "dir": "rtl",
+  "h1": {
+   "txt": "السلايدر",
+   "w": 209,
+   "vis": true
+  },
+  "card": {
+   "x": 833,
+   "w": 391
+  },
+  "img_over": -289,
+  "meta": [
+   "الأبعاد الفعلية: 2059 × 764 · النسبة: 2.70:1"
+  ],
+  "acts": [
+   {
+    "a": "edit",
+    "w": 58,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "toggle",
+    "w": 62,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "up",
+    "w": 38,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "down",
+    "w": 38,
+    "h": 44,
+    "vis": true
+   },
+   {
+    "a": "delete",
+    "w": 54,
+    "h": 44,
+    "vis": true
+   }
+  ],
+  "add": {
+   "h": 44,
+   "vis": true
+  },
+  "modal": {
+   "open": true,
+   "w": 880,
+   "x": 316,
+   "right_over": -316,
+   "fields_out": 0,
+   "btns": [
+    {
+     "t": "إلغاء",
+     "vis": true,
+     "h": 40
+    },
+    {
+     "t": "إضافة",
+     "vis": true,
+     "h": 40
+    }
+   ],
+   "scrollable": true,
+   "doc_overflow": 0
+  },
+  "matches_target": false
+ }
+}

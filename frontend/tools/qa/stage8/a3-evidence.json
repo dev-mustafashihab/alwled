@@ -1,0 +1,34 @@
+{
+ "session": true,
+ "server_after_create": [
+  {
+   "id": 9,
+   "so": 0,
+   "en": true
+  }
+ ],
+ "server_after_up": [
+  {
+   "id": 9,
+   "so": 0,
+   "en": true
+  },
+  {
+   "id": 13,
+   "so": 0,
+   "en": true
+  }
+ ],
+ "server_after_down": [
+  {
+   "id": 13,
+   "so": 0,
+   "en": true
+  },
+  {
+   "id": 9,
+   "so": 1,
+   "en": true
+  }
+ ]
+}

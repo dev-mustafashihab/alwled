@@ -1,0 +1,14 @@
+{
+ "corrupt": {
+  "msg": "تعذّرت قراءة الصورة — تأكد أن الملف صورة صالحة.",
+  "mutations": [],
+  "modal_open": true,
+  "editable": true
+ },
+ "over8mb": {
+  "msg": "حجم الملف يتجاوز 8MB.",
+  "mutations": [],
+  "modal_open": true,
+  "editable": true
+ }
+}

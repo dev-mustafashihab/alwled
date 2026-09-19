@@ -1,0 +1,114 @@
+{
+  "guest_top": {
+    "viewport": {
+      "w": 390,
+      "h": 600
+    },
+    "scrollTop": 0,
+    "maxScroll": 101,
+    "lastRow": {
+      "text": "إنشاء حساب",
+      "rect": {
+        "top": 466,
+        "bottom": 516,
+        "h": 50
+      },
+      "fullyVisible": true
+    },
+    "theme": {
+      "top": 436,
+      "bottom": 490,
+      "h": 54
+    },
+    "themeReachable": true,
+    "cta": {
+      "top": 538,
+      "bottom": 584,
+      "h": 46
+    },
+    "ctaReachable": true,
+    "pageScrollY": 0
+  },
+  "guest_bottom": {
+    "viewport": {
+      "w": 390,
+      "h": 600
+    },
+    "scrollTop": 101,
+    "maxScroll": 101,
+    "lastRow": {
+      "text": "إنشاء حساب",
+      "rect": {
+        "top": 365,
+        "bottom": 415,
+        "h": 50
+      },
+      "fullyVisible": true
+    },
+    "theme": {
+      "top": 436,
+      "bottom": 490,
+      "h": 54
+    },
+    "themeReachable": true,
+    "cta": {
+      "top": 538,
+      "bottom": 584,
+      "h": 46
+    },
+    "ctaReachable": true,
+    "pageScrollY": 0
+  },
+  "auth_top": {
+    "viewport": {
+      "w": 390,
+      "h": 600
+    },
+    "scrollTop": 0,
+    "maxScroll": 180,
+    "lastRow": {
+      "text": "تسجيل الخروج",
+      "rect": {
+        "top": 643,
+        "bottom": 693,
+        "h": 50
+      },
+      "fullyVisible": false
+    },
+    "theme": {
+      "top": 534,
+      "bottom": 588,
+      "h": 54
+    },
+    "themeReachable": true,
+    "cta": null,
+    "ctaReachable": null,
+    "pageScrollY": 0
+  },
+  "auth_bottom": {
+    "viewport": {
+      "w": 390,
+      "h": 600
+    },
+    "scrollTop": 180,
+    "maxScroll": 180,
+    "lastRow": {
+      "text": "تسجيل الخروج",
+      "rect": {
+        "top": 463,
+        "bottom": 513,
+        "h": 50
+      },
+      "fullyVisible": true
+    },
+    "theme": {
+      "top": 534,
+      "bottom": 588,
+      "h": 54
+    },
+    "themeReachable": true,
+    "cta": null,
+    "ctaReachable": null,
+    "pageScrollY": 0
+  }
+}

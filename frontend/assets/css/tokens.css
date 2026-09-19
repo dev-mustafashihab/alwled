@@ -103,6 +103,32 @@
   --fs-xl: 20px;
   --fs-2xl: 24px;
   --fs-3xl: 30px;
+  /* ===== PHASE 5B — Storefront semantic typography (rem-based) ===== */
+  --st-font: 'Cairo', Tahoma, 'Segoe UI', 'Noto Naskh Arabic', 'Helvetica Neue', Arial, sans-serif;
+  --st-display: clamp(1.0625rem, 0.95rem + 0.6vw, 1.5rem);
+  --st-title-page: 1.25rem;
+  --st-title-section: 1.25rem;
+  --st-title-card: 0.9375rem;
+  --st-body: 0.875rem;
+  --st-body-sm: 0.8125rem;
+  --st-meta: 0.75rem;
+  --st-caption: 0.6875rem;
+  --st-price-xl: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+  --st-price-l: 1.125rem;
+  --st-price-m: 1rem;
+  --st-old-price: 0.8125rem;
+  --st-btn: 0.875rem;
+  --st-input: 1rem;
+  --st-space-2: 0.125rem;
+  --st-space-6: 0.375rem;
+  --st-space-10: 0.625rem;
+  --st-space-14: 0.875rem;
+  --st-space-18: 1.125rem;
+  --st-lh-tight: 1.3;
+  --st-lh-normal: 1.55;
+  --st-lh-loose: 1.75;
+
+
 
   --fw-regular: 400;
   --fw-medium: 500;
@@ -165,6 +191,39 @@
   --z-modal: 80;
   --z-toast: 90;
 
+  /* ========================= storefront (semantic) ==========================
+     طبقة دلالية لواجهة المتجر فقط. لا تغيّر أي توكن نظام/لوحة الإدارة.
+     المصدر: هوية المتجر الحالية — الأزرق #1F5FBF المستخدم فعلاً في shop.css.
+     ملاحظة: هذه التوكنز معرّفة فقط — لم يُستبدل أي استخدام حالي بعد (لا Migration).
+     ======================================================================== */
+  --store-primary: #1F5FBF;
+  --store-primary-hover: #1A54A8;
+  --store-primary-active: #164A93;
+  --store-primary-soft: #EAF1FB;
+
+  --store-bg: var(--neutral-50);
+  --store-surface: var(--neutral-0);
+  --store-surface-soft: var(--neutral-50);
+
+  --store-text: var(--neutral-900);
+  --store-text-body: var(--neutral-700);
+  --store-text-muted: var(--neutral-500);
+  --store-text-faint: #7A8698;          /* أغمق من --text-faint لتحقيق تباين 4.5 على الأسطح الفاتحة */
+
+  --store-border: var(--neutral-200);
+  --store-border-strong: var(--neutral-300);
+
+  --store-success: var(--success-500);
+  --store-warning: var(--warning-500);
+  --store-danger: var(--danger-500);
+  --store-info: var(--info-500);
+
+  --store-shadow-focus: 0 0 0 3px rgba(31, 95, 191, 0.30);
+
+  /* قيم حركة مستخدمة حالياً كقيم صلبة في shop.home.css (السلايدر والشريط) */
+  --store-slider-duration: 500ms;
+  --store-ticker-duration: 26s;
+
   /* Breakpoints (documented; media queries use literals — see layout.css)
      sm: 560px | md: 768px | lg: 1024px | xl: 1280px | 2xl: 1536px */
 }
@@ -196,6 +255,21 @@
   --warning-50: rgba(217, 119, 6, 0.16);
   --danger-50: rgba(220, 38, 38, 0.16);
   --info-50: rgba(37, 99, 235, 0.16);
+
+  /* Storefront في الثيم الداكن.
+     --neutral-0/50/200/300/900… لا تتغيّر في الثيم الداكن، لذلك نربط توكنز المتجر
+     الدلالية بتوكنز الأدوار التي تتغيّر فعلاً (--bg-*, --text-*, --border-*) بدل تكرار HEX.
+     هوية المتجر الزرقاء (--store-primary*) تبقى كما هي — لا تُحوَّل إلى teal. */
+  --store-bg: var(--bg-app);
+  --store-surface: var(--bg-surface);
+  --store-surface-soft: var(--bg-surface-2);
+  --store-text: var(--text-strong);
+  --store-text-body: var(--text-body);
+  --store-text-muted: var(--text-muted);
+  --store-border: var(--border-subtle);
+  --store-border-strong: var(--border-strong);
+  --store-primary-soft: rgba(31, 95, 191, 0.18);
+  --store-text-faint: #8E9AAB;
 
   --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.45);

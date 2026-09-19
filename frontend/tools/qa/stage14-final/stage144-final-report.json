@@ -1,0 +1,299 @@
+{
+  "stage": "14.4",
+  "title": "Final Integration QA, Security Verification & Stage 14 Closure",
+  "status": "PASS",
+  "suites": {
+    "ui_stage144": {
+      "status": "PASS",
+      "total": 94,
+      "passed": 94,
+      "failed": 0,
+      "failures": []
+    },
+    "security_stage144": {
+      "status": "PASS",
+      "total": 25,
+      "passed": 25,
+      "failed": 0,
+      "failures": []
+    },
+    "admin_regression_stage144": {
+      "status": "PASS",
+      "total": 23,
+      "passed": 23,
+      "failed": 0,
+      "failures": []
+    },
+    "contracts_stage144": {
+      "status": "PASS",
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "failures": []
+    },
+    "scan_stage144": {
+      "status": "PASS",
+      "total": 23,
+      "passed": 23,
+      "failed": 0,
+      "failures": []
+    },
+    "stage141_regression": {
+      "status": "PASS",
+      "total": 41,
+      "passed": 41,
+      "failed": 0,
+      "failures": []
+    },
+    "stage142_regression": {
+      "status": "PASS",
+      "total": 38,
+      "passed": 38,
+      "failed": 0,
+      "failures": []
+    },
+    "payment_status_reflection": {
+      "status": "PASS",
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "failures": []
+    }
+  },
+  "backend_and_frontend_tests": {
+    "backend_unit": "184 passed, 184 total",
+    "backend_unit_suites": "n/a",
+    "backend_e2e": "350 passed, 350 total",
+    "backend_e2e_suites": "n/a",
+    "build": "PASS",
+    "typescript": "PASS (0 errors)",
+    "prisma_validate": "PASS",
+    "prisma_migrate": "PASS",
+    "frontend_test": "112 passed, 112 total",
+    "frontend_test_suites": "n/a",
+    "frontend_check": "PASS",
+    "raw_tails": {
+      "build": [
+        "npm notice run alwled-backend@0.1.0 build",
+        "npm notice run nest build"
+      ],
+      "tsc": [
+        "npm notice run alwled-backend@0.1.0 npx",
+        "npm notice run 'tsc' --noEmit"
+      ],
+      "prisma": [
+        "14 migrations found in prisma/migrations",
+        "",
+        "Database schema is up to date!"
+      ]
+    }
+  },
+  "evidence": {
+    "order": {
+      "id": "1541",
+      "number": "ORD-2026-001400",
+      "total": "1500.00",
+      "status": "PENDING",
+      "cancelled": "1542"
+    },
+    "payment": {
+      "id": "cmu4eq4p3001m146pl85pip6o"
+    },
+    "rejected": {
+      "orderId": 1543,
+      "paymentId": "cmu4esjzv004q146p2ldaahla"
+    },
+    "isolation": {
+      "order": 404,
+      "order_cancel": 404,
+      "payment": 404,
+      "payment_submit": 400,
+      "cart_read": 200,
+      "verification": 200
+    },
+    "router": {
+      "guest_search": "#/products?search=%D8%AB%D9%84%D8%A7%D8%AC%D8%A9",
+      "#/": "#/",
+      "#/products": "#/products",
+      "#/products/632": "#/products/632",
+      "#/cart": "#/cart",
+      "#/checkout": "#/checkout",
+      "#/orders": "#/orders",
+      "#/orders/1541": "#/orders/1541",
+      "#/orders/1541/payment": "#/orders/1541/payment",
+      "#/notifications": "#/notifications",
+      "#/account": "#/account",
+      "#/verification": "#/verification",
+      "refresh-keeps-route": "#/verification",
+      "back": "#/account",
+      "forward": "#/verification",
+      "same-hash": "#/orders/1541",
+      "unknown": "#/definitely-not-a-route",
+      "unknown_view": "الرئيسية ‹ صفحة غير موجودة 📦 الصفحة غير "
+    },
+    "visual_failures": [],
+    "a11y": {
+      "inputs": 7,
+      "labelled": 7,
+      "buttons": 8,
+      "named": 8,
+      "smallTargets": 1,
+      "statusBadges": 4,
+      "statusTextHidden": 0,
+      "skipLink": true,
+      "lang": "ar"
+    },
+    "perf": {
+      "duplicate_calls": {
+        "#/": {},
+        "#/products": {},
+        "#/orders": {},
+        "#/notifications": {},
+        "#/account": {}
+      }
+    },
+    "console": {
+      "expected": 41,
+      "unexpected": []
+    },
+    "throttle_events": 0,
+    "rejected_view_probe": "الرئيسية | ‹ | طلباتي | ‹ | الدفع | دفع الطلب |  | ORD-2026-001402 • 500.00 $ |  | تفاصيل الطلب | حالة الدفعة | مرفوضة | شام كاش | المبلغ | 500.00 $ | العملة | USD | أُنشئت في | 16 أيلول 2026، 18:03 | مرجع الحوالة | SC-144-REJ-81791 | أُرسل الإثبات في | 16 أيلول 2",
+    "cart_debug": null,
+    "api_status_counts": {
+      "GET 401": 12,
+      "POST 401": 9,
+      "POST 200": 1,
+      "GET 200": 65
+    },
+    "fallback_used": [
+      {
+        "product": 632,
+        "code": 201
+      }
+    ]
+  },
+  "qa_data_inventory": {
+    "qa_customers": "2",
+    "qa_customers_detail": "0955900100=ACTIVE, 0955900160=ACTIVE",
+    "qa_emails": "3",
+    "qa_employees": "ERROR: ERROR:  relation \"employees\" does not exist",
+    "qa_roles": "2",
+    "qa_role_names": "STAGE144R582045, SMOKE_11361",
+    "qa_orders": "56",
+    "qa_orders_by_status": "CANCELLED:17, CONFIRMED:2, PENDING:37",
+    "qa_payments": "41",
+    "qa_payment_refs": "34",
+    "qa_idempotency_keys": "58",
+    "qa_notifications": "180",
+    "qa_verifications": "1",
+    "qa_carts": "1",
+    "qa_refresh_tokens": "229",
+    "qa_audit_entries": "797",
+    "qa_inventory_movements": "2"
+  },
+  "qa_data_preserved": {
+    "owner_account": "1",
+    "system_roles": "4",
+    "permissions": "45",
+    "demo_products": "2",
+    "catalog_seed_categories": "2",
+    "catalog_seed_brands": "2",
+    "specification_definitions": "4",
+    "inventory_rows": "2",
+    "demo_account_0966112233": "1"
+  },
+  "qa_records_deleted": 0,
+  "screenshots": [
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/01-guest-auth-prompt.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/02-cart-after-login.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/03-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/04-checkout-preview.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/05-order-success.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/06-orders.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/07-order-details.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/08-payment-empty.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/09-payment-pending-review.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/10-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/11-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/12-verification.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/13-cancel-modal.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/14-admin-review-queue.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/15-admin-confirm-modal.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/16-payment-succeeded.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/17-admin-reject-form.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/18-payment-rejected.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1024-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1024-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1024-checkout.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1024-home.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1024-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1024-order.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1024-payment.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1024-verification.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1280-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1280-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1280-checkout.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1280-home.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1280-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1280-order.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1280-payment.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1280-verification.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1440-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1440-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1440-checkout.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1440-home.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1440-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1440-order.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1440-payment.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1440-verification.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1920-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1920-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1920-checkout.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1920-home.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1920-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1920-order.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1920-payment.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp1920-verification.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp375-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp375-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp375-checkout.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp375-home.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp375-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp375-order.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp375-payment.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp375-verification.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp390-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp390-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp390-checkout.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp390-home.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp390-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp390-order.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp390-payment.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp390-verification.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp430-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp430-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp430-checkout.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp430-home.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp430-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp430-order.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp430-payment.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp430-verification.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp768-account.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp768-cart.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp768-checkout.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp768-home.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp768-notifications.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp768-order.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp768-payment.png",
+    "/root/alwled/frontend/tools/qa/stage14-final/shots/vp768-verification.png"
+  ],
+  "reports": {
+    "ui": "/root/alwled/frontend/tools/qa/stage14-final/stage144-ui-report.json",
+    "security": "/root/alwled/frontend/tools/qa/stage14-final/stage144-security-report.json",
+    "admin": "/root/alwled/frontend/tools/qa/stage14-final/stage144-admin-report.json",
+    "contracts": "/root/alwled/frontend/tools/qa/stage14-final/stage144-contracts-report.json",
+    "scan": "/root/alwled/frontend/tools/qa/stage14-final/stage144-scan-report.json",
+    "inventory": "/root/alwled/frontend/tools/qa/stage14-final/stage144-cleanup-inventory.json",
+    "status_reflection": "/root/alwled/frontend/tools/qa/stage14-final/stage144-status-reflection.json"
+  }
+}

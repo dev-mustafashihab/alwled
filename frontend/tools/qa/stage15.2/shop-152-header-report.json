@@ -1,0 +1,394 @@
+{
+  "checks": [
+    {
+      "name": "overflow 320 = 0 + header fits",
+      "ok": true,
+      "detail": "ov=0 fit=True"
+    },
+    {
+      "name": "overflow 360 = 0 + header fits",
+      "ok": true,
+      "detail": "ov=0 fit=True"
+    },
+    {
+      "name": "overflow 375 = 0 + header fits",
+      "ok": true,
+      "detail": "ov=0 fit=True"
+    },
+    {
+      "name": "overflow 390 = 0 + header fits",
+      "ok": true,
+      "detail": "ov=0 fit=True"
+    },
+    {
+      "name": "overflow 414 = 0 + header fits",
+      "ok": true,
+      "detail": "ov=0 fit=True"
+    },
+    {
+      "name": "overflow 768 = 0 + header fits",
+      "ok": true,
+      "detail": "ov=0 fit=True"
+    },
+    {
+      "name": "overflow 1024 = 0 + header fits",
+      "ok": true,
+      "detail": "ov=0 fit=True"
+    },
+    {
+      "name": "overflow 1440 = 0 + header fits",
+      "ok": true,
+      "detail": "ov=0 fit=True"
+    },
+    {
+      "name": "module loaded (ALW.shopHeader)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "header uses SVG icon (no emoji)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "menu button >= 44px on mobile",
+      "ok": true,
+      "detail": {
+        "x": 12,
+        "y": 14.5,
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "name": "menu opens (is-open)",
+      "ok": true,
+      "detail": {
+        "open": true,
+        "visibility": "visible",
+        "delays": [
+          "0s",
+          "0.04s",
+          "0.08s",
+          "0.12s"
+        ],
+        "opacityFirst": "1",
+        "transformFirst": "matrix(1, 0, 0, 1, 0.00968245, 0)"
+      }
+    },
+    {
+      "name": "stagger delays applied (reference pattern)",
+      "ok": true,
+      "detail": [
+        "0s",
+        "0.04s",
+        "0.08s",
+        "0.12s"
+      ]
+    },
+    {
+      "name": "menu drops from under the header",
+      "ok": true,
+      "detail": {
+        "top": 74,
+        "bottom": 844,
+        "left": 0,
+        "right": 390,
+        "vh": 844,
+        "vw": 390,
+        "headerBottom": 74,
+        "opacity": "1",
+        "pointer": "auto",
+        "bodyOverflow": "hidden",
+        "htmlOverflow": "hidden",
+        "aria": "true",
+        "focusedInside": true,
+        "linkOpacity": "1",
+        "iconSvg": 7
+      }
+    },
+    {
+      "name": "menu covers full width (overlay behavior)",
+      "ok": true,
+      "detail": {
+        "top": 74,
+        "bottom": 844,
+        "left": 0,
+        "right": 390,
+        "vh": 844,
+        "vw": 390,
+        "headerBottom": 74,
+        "opacity": "1",
+        "pointer": "auto",
+        "bodyOverflow": "hidden",
+        "htmlOverflow": "hidden",
+        "aria": "true",
+        "focusedInside": true,
+        "linkOpacity": "1",
+        "iconSvg": 7
+      }
+    },
+    {
+      "name": "menu visible & interactive",
+      "ok": true,
+      "detail": {
+        "top": 74,
+        "bottom": 844,
+        "left": 0,
+        "right": 390,
+        "vh": 844,
+        "vw": 390,
+        "headerBottom": 74,
+        "opacity": "1",
+        "pointer": "auto",
+        "bodyOverflow": "hidden",
+        "htmlOverflow": "hidden",
+        "aria": "true",
+        "focusedInside": true,
+        "linkOpacity": "1",
+        "iconSvg": 7
+      }
+    },
+    {
+      "name": "scroll locked (html+body)",
+      "ok": true,
+      "detail": {
+        "top": 74,
+        "bottom": 844,
+        "left": 0,
+        "right": 390,
+        "vh": 844,
+        "vw": 390,
+        "headerBottom": 74,
+        "opacity": "1",
+        "pointer": "auto",
+        "bodyOverflow": "hidden",
+        "htmlOverflow": "hidden",
+        "aria": "true",
+        "focusedInside": true,
+        "linkOpacity": "1",
+        "iconSvg": 7
+      }
+    },
+    {
+      "name": "aria-expanded=true + focus inside",
+      "ok": true,
+      "detail": {
+        "top": 74,
+        "bottom": 844,
+        "left": 0,
+        "right": 390,
+        "vh": 844,
+        "vw": 390,
+        "headerBottom": 74,
+        "opacity": "1",
+        "pointer": "auto",
+        "bodyOverflow": "hidden",
+        "htmlOverflow": "hidden",
+        "aria": "true",
+        "focusedInside": true,
+        "linkOpacity": "1",
+        "iconSvg": 7
+      }
+    },
+    {
+      "name": "links fully visible after stagger",
+      "ok": true,
+      "detail": "1"
+    },
+    {
+      "name": "all menu links use local SVG icons",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "name": "Escape closes menu",
+      "ok": true,
+      "detail": {
+        "open": false,
+        "bodyOverflow": "",
+        "htmlOverflow": "",
+        "aria": "false",
+        "focused": "shop-burger"
+      }
+    },
+    {
+      "name": "scroll restored after close",
+      "ok": true,
+      "detail": {
+        "open": false,
+        "bodyOverflow": "",
+        "htmlOverflow": "",
+        "aria": "false",
+        "focused": "shop-burger"
+      }
+    },
+    {
+      "name": "focus back to menu button",
+      "ok": true,
+      "detail": "shop-burger"
+    },
+    {
+      "name": "page scrolls again after close",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "click outside (header) closes menu",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "menu button toggles closed",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no duplicated close button inside menu",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "menu link navigates & menu closes",
+      "ok": true,
+      "detail": {
+        "hash": "#/products",
+        "open": false,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "no overflow after navigation",
+      "ok": true,
+      "detail": 0
+    },
+    {
+      "name": "theme control light/dark works",
+      "ok": true,
+      "detail": {
+        "theme": "dark",
+        "stored": "dark",
+        "active": true
+      }
+    },
+    {
+      "name": "desktop: burger hidden, nav visible",
+      "ok": true,
+      "detail": {
+        "burgerVisible": false,
+        "navVisible": true,
+        "navLinks": 4,
+        "headerHeight": 73
+      }
+    },
+    {
+      "name": "menu auto-closes when resizing to desktop",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "header cart button still navigates",
+      "ok": true,
+      "detail": "#/cart"
+    },
+    {
+      "name": "guest: account section stays in menu",
+      "ok": true,
+      "detail": {
+        "section": true,
+        "hidden": false,
+        "login": 1,
+        "userBtnInHeaderVisible": false
+      }
+    },
+    {
+      "name": "authed: account section visible in menu (mobile entries), guest section hidden",
+      "ok": true,
+      "detail": {
+        "userBtn": true,
+        "guestHidden": true,
+        "menuAccount": 1,
+        "footEmpty": 0
+      }
+    },
+    {
+      "name": "profile dropdown: 5 account items with SVG icons",
+      "ok": true,
+      "detail": [
+        "حسابي",
+        "طلباتي",
+        "إشعاراتي",
+        "توثيق الحساب",
+        "تسجيل الخروج"
+      ]
+    },
+    {
+      "name": "profile dropdown opens (aria + focus + RTL fit)",
+      "ok": true,
+      "detail": {
+        "count": 5,
+        "labels": [
+          "حسابي",
+          "طلباتي",
+          "إشعاراتي",
+          "توثيق الحساب",
+          "تسجيل الخروج"
+        ],
+        "sizes": [
+          44,
+          44,
+          44,
+          44,
+          44
+        ],
+        "svg": 5,
+        "opacity": "1",
+        "right": 248,
+        "vw": 1440,
+        "aria": "true",
+        "focusedInside": true
+      }
+    },
+    {
+      "name": "profile dropdown closes on Escape",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "profile dropdown closes on outside click",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "profile item navigates & closes",
+      "ok": true,
+      "detail": {
+        "hash": "#/orders",
+        "open": false,
+        "overflow": 0
+      }
+    },
+    {
+      "name": "no console errors",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "failures": [],
+  "overflow": {
+    "320": 0,
+    "360": 0,
+    "375": 0,
+    "390": 0,
+    "414": 0,
+    "768": 0,
+    "1024": 0,
+    "1440": 0
+  },
+  "shots": [
+    "/root/alwled/frontend/tools/qa/stage15.2/menu-open-390.png"
+  ],
+  "console_errors": [],
+  "passed": 41,
+  "total": 41
+}

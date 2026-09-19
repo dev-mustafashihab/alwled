@@ -12,3 +12,19 @@ npm-debug.log*
 tmp
 scripts/*.log
 test/**/*.snap
+
+# --- Stage 15: لا تدخل مخرجات QA/الاختبارات/الوثائق إلى صورة الإنتاج ---
+# الواجهة مطلوبة داخل الصورة (لوحة /alwled/ + متجر /alwled/shop/) — نستثني فقط مخرجات QA/الاختبارات
+frontend/tools/qa
+frontend/tests
+frontend/tools/*.log
+docs
+test
+scripts
+*.md
+!README.md
+coverage
+.DS_Store
+*.sqlite
+*.dump
+*.backup

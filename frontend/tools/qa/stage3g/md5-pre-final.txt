@@ -1,0 +1,5 @@
+cef877c8f6f884b8b82fd700a5d62ef2  ../../../shop/assets/js/shop.pages.js
+a3a507d161c9076c2533c85ac744d8c8  ../../../shop/assets/js/shop.js
+cd22021103ca8607ee72b91bd72d8ec6  ../../../shop/assets/css/shop.css
+3e79222ebb9ce0a98c01feab23717bfd  ../../../shop/assets/css/shop.filters.css
+daa29403ed57a4e8a16ddd510c212f43  ../../../shop/index.html

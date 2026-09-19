@@ -1,0 +1,52 @@
+{
+ "4_http_bad": {
+  "msg": "رابط غير صالح: المسموح مسار داخلي (#/...) أو http(s)://",
+  "calls": [
+   "POST /slider/admin"
+  ],
+  "res": [
+   "POST fail:400"
+  ],
+  "modal_open": true,
+  "editable": true
+ },
+ "5_javascript": {
+  "msg": "رابط غير مسموح: سكيم خطر",
+  "calls": [
+   "POST /slider/admin"
+  ],
+  "res": [
+   "POST fail:400",
+   "POST fail:400"
+  ],
+  "modal_open": true,
+  "editable": true
+ },
+ "6_data": {
+  "msg": "رابط غير مسموح: سكيم خطر",
+  "calls": [
+   "POST /slider/admin"
+  ],
+  "res": [
+   "POST fail:400",
+   "POST fail:400",
+   "POST fail:400"
+  ],
+  "modal_open": true,
+  "editable": true
+ },
+ "7_file": {
+  "msg": "رابط غير مسموح: سكيم خطر",
+  "calls": [
+   "POST /slider/admin"
+  ],
+  "res": [
+   "POST fail:400",
+   "POST fail:400",
+   "POST fail:400",
+   "POST fail:400"
+  ],
+  "modal_open": true,
+  "editable": true
+ }
+}

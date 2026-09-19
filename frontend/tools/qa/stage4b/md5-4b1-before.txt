@@ -1,0 +1,2 @@
+c24b43dd96f3055b8e3a0f3e1f36ac20  ../../../shop/assets/js/shop.pages.js
+b9941eaa0a36a04ec5f185b87015d59b  ../../../shop/assets/css/shop.css

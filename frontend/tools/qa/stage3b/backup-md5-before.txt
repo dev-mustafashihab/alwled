@@ -1,0 +1,3 @@
+42de7b53bbe59cf77f9bd56c052f0723  ../../../shop/assets/css/shop.filters.css
+0c75085ab344936300c35408c26e39e6  ../../../shop/assets/css/shop.css
+a930c5d4acffdea9af1362ed2426c0e4  ../../../shop/assets/js/shop.pages.js

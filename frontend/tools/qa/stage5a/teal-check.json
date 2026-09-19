@@ -1,0 +1,58 @@
+{
+ "products": [],
+ "pdp": [],
+ "cart": [
+  {
+   "cls": "btn btn--primary btn--lg btn--bloc",
+   "text": "تسجيل الدخول",
+   "bg": "rgb(15, 118, 110)",
+   "color": "rgb(255, 255, 255)",
+   "box": "394x48"
+  }
+ ],
+ "checkout": [
+  {
+   "cls": "btn btn--primary btn--lg btn--bloc",
+   "text": "تسجيل الدخول",
+   "bg": "rgb(15, 118, 110)",
+   "color": "rgb(255, 255, 255)",
+   "box": "394x48"
+  }
+ ],
+ "orders": [
+  {
+   "cls": "btn btn--primary btn--lg btn--bloc",
+   "text": "تسجيل الدخول",
+   "bg": "rgb(15, 118, 110)",
+   "color": "rgb(255, 255, 255)",
+   "box": "394x48"
+  }
+ ],
+ "notifs": [
+  {
+   "cls": "btn btn--primary btn--lg btn--bloc",
+   "text": "تسجيل الدخول",
+   "bg": "rgb(15, 118, 110)",
+   "color": "rgb(255, 255, 255)",
+   "box": "394x48"
+  }
+ ],
+ "account": [
+  {
+   "cls": "btn btn--primary btn--lg btn--bloc",
+   "text": "تسجيل الدخول",
+   "bg": "rgb(15, 118, 110)",
+   "color": "rgb(255, 255, 255)",
+   "box": "394x48"
+  }
+ ],
+ "auth_dialog": [
+  {
+   "cls": "btn btn--primary",
+   "text": "تسجيل الدخول",
+   "bg": "rgb(15, 118, 110)",
+   "color": "rgb(255, 255, 255)",
+   "box": "112x40"
+  }
+ ]
+}

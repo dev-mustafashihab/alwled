@@ -258,3 +258,61 @@ describe('router — التوجيه والحرّاس', () => {
     expect(router.resolve('/nope', routes, { authenticated: true, can: () => true }).kind).toBe('notfound');
   });
 });
+
+
+describe('stage 14.4 — one refresh for concurrent 401s', () => {
+  test('parallel unauthorized requests share a single refresh call', async () => {
+    require(path.join(__dirname, '..', 'assets', 'js', 'core', 'config.js'));
+    require(path.join(__dirname, '..', 'assets', 'js', 'core', 'session.js'));
+    require(path.join(__dirname, '..', 'assets', 'js', 'core', 'format.js'));
+    require(path.join(__dirname, '..', 'assets', 'js', 'core', 'api.js'));
+    const ALW = globalThis.ALW;
+    let refreshCalls = 0;
+    let resolveRefresh;
+    const pending = new Promise((resolve) => { resolveRefresh = resolve; });
+
+    const jsonResponse = (status, body) => Promise.resolve({
+      ok: status >= 200 && status < 300,
+      status,
+      headers: { get: () => 'application/json' },
+      text: async () => JSON.stringify(body),
+    });
+
+    const fetchStub = (url, init) => {
+      const target = String(url);
+      if (target.includes('/auth/refresh')) {
+        refreshCalls += 1;
+        return pending.then(() => jsonResponse(200, { success: true, data: { accessToken: 'fresh-access', refreshToken: 'fresh-refresh' } }));
+      }
+      const header = (init && init.headers && init.headers.Authorization) || '';
+      const authorized = header.includes('fresh-access');
+      return authorized
+        ? jsonResponse(200, { success: true, data: { itemCount: 0 } })
+        : jsonResponse(401, { success: false, message: 'expired' });
+    };
+
+    const sessionStub = {
+      getAccess: () => 'stale-access',
+      getRefresh: () => 'refresh-1',
+      setAccess: () => {},
+      start: () => {},
+      clear: () => {},
+      expire: () => {},
+      user: () => null,
+      hasRefresh: () => true,
+      setUser: () => {},
+    };
+
+    ALW.api.configure({ config: ALW.config, session: sessionStub, fetchImpl: fetchStub, refresh: () => {
+      refreshCalls += 1;
+      return pending.then(() => { sessionStub.getAccess = () => 'fresh-access'; return 'fresh-access'; });
+    }, onUnauthorized: () => {} });
+
+    const calls = [ALW.api.get('/cart'), ALW.api.get('/orders'), ALW.api.get('/notifications')];
+    await new Promise((resolve) => setTimeout(resolve, 20));
+    expect(refreshCalls).toBe(1);          // ثلاثة 401 متزامنة ⇒ تجديد واحد فقط
+    resolveRefresh();
+    await Promise.all(calls).catch(() => null);
+    expect(refreshCalls).toBe(1);
+  });
+});

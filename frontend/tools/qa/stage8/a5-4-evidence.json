@@ -1,0 +1,19 @@
+{
+ "id": 16,
+ "old_mobile": "/uploads/slider/slider-22d09047-e75e-4b4e-ad28-4b5d4625e04b.webp",
+ "mobile_after": null,
+ "desktop": "/uploads/slider/slider-d678a5f0-0fbe-43dd-988e-7648bb9b5240.webp",
+ "calls": [
+  {
+   "m": "PATCH",
+   "p": "/slider/admin/16",
+   "k": "json",
+   "body": {
+    "altText": "QA-RM إزالة",
+    "isEnabled": true,
+    "sortOrder": 0,
+    "mobileMode": "remove"
+   }
+  }
+ ]
+}

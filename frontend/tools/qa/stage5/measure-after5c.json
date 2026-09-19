@@ -1,0 +1,3139 @@
+{
+ "label": "after5c",
+ "geo": {
+  "1366_products": {
+   "hdr": [
+    1200,
+    73
+   ],
+   "search_row": null,
+   "card": [
+    280,
+    357
+   ],
+   "home_card": null,
+   "taxo": null,
+   "stage": null,
+   "pdp_cta": null,
+   "facts": null,
+   "add": [
+    254,
+    44
+   ],
+   "toolbar": [
+    1168,
+    180
+   ],
+   "filters_toggle": [
+    0,
+    0
+   ],
+   "crumbs": [
+    42,
+    21
+   ],
+   "footer_sum": [
+    255,
+    22
+   ],
+   "qty": null,
+   "ov": 0,
+   "docH": 1095
+  },
+  "1366_taxo": {
+   "hdr": [
+    1200,
+    73
+   ],
+   "search_row": null,
+   "card": null,
+   "home_card": null,
+   "taxo": [
+    276,
+    96
+   ],
+   "stage": null,
+   "pdp_cta": null,
+   "facts": null,
+   "add": null,
+   "toolbar": null,
+   "filters_toggle": null,
+   "crumbs": [
+    42,
+    21
+   ],
+   "footer_sum": [
+    255,
+    22
+   ],
+   "qty": null,
+   "ov": 0,
+   "docH": 900
+  },
+  "1366_pdp": {
+   "hdr": [
+    1200,
+    73
+   ],
+   "search_row": null,
+   "card": null,
+   "home_card": null,
+   "taxo": null,
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "maxW": "none",
+    "fs": "14px"
+   },
+   "pdp_cta": [
+    130,
+    48
+   ],
+   "facts": [
+    558,
+    71
+   ],
+   "add": [
+    254,
+    44
+   ],
+   "toolbar": null,
+   "filters_toggle": null,
+   "crumbs": [
+    42,
+    21
+   ],
+   "footer_sum": [
+    255,
+    22
+   ],
+   "qty": [
+    172,
+    44
+   ],
+   "ov": 0,
+   "docH": 1654
+  },
+  "1366_pdp_oos": {
+   "hdr": [
+    1200,
+    73
+   ],
+   "search_row": null,
+   "card": null,
+   "home_card": null,
+   "taxo": null,
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "maxW": "none",
+    "fs": "14px"
+   },
+   "pdp_cta": [
+    125,
+    48
+   ],
+   "facts": [
+    558,
+    71
+   ],
+   "add": [
+    254,
+    44
+   ],
+   "toolbar": null,
+   "filters_toggle": null,
+   "crumbs": [
+    42,
+    21
+   ],
+   "footer_sum": [
+    255,
+    22
+   ],
+   "qty": [
+    172,
+    44
+   ],
+   "ov": 0,
+   "docH": 1654
+  },
+  "1366_cart": {
+   "ov": 0,
+   "docH": 900,
+   "clipped": []
+  },
+  "1366_checkout": {
+   "ov": 0,
+   "docH": 900,
+   "clipped": []
+  },
+  "1366_orders": {
+   "ov": 0,
+   "docH": 900,
+   "clipped": []
+  },
+  "1366_notifs": {
+   "ov": 0,
+   "docH": 900,
+   "clipped": []
+  },
+  "1366_account": {
+   "ov": 0,
+   "docH": 900,
+   "clipped": []
+  },
+  "1366_authdlg": {
+   "ov": 0,
+   "docH": 1654,
+   "clipped": []
+  },
+  "390_home": {
+   "hdr": [
+    390,
+    64
+   ],
+   "search_row": null,
+   "card": null,
+   "home_card": [
+    177,
+    321
+   ],
+   "taxo": null,
+   "stage": null,
+   "pdp_cta": null,
+   "facts": null,
+   "add": [
+    151,
+    40
+   ],
+   "toolbar": null,
+   "filters_toggle": null,
+   "crumbs": null,
+   "footer_sum": [
+    366,
+    48
+   ],
+   "qty": null,
+   "ov": 0,
+   "docH": 2754
+  },
+  "390_products": {
+   "hdr": [
+    390,
+    64
+   ],
+   "search_row": null,
+   "card": [
+    177,
+    327
+   ],
+   "home_card": null,
+   "taxo": null,
+   "stage": null,
+   "pdp_cta": null,
+   "facts": null,
+   "add": [
+    151,
+    44
+   ],
+   "toolbar": [
+    390,
+    128
+   ],
+   "filters_toggle": [
+    366,
+    44
+   ],
+   "crumbs": [
+    42,
+    21
+   ],
+   "footer_sum": [
+    366,
+    48
+   ],
+   "qty": null,
+   "ov": 0,
+   "docH": 957
+  },
+  "390_pdp": {
+   "hdr": [
+    390,
+    64
+   ],
+   "search_row": [
+    0,
+    0
+   ],
+   "card": null,
+   "home_card": null,
+   "taxo": null,
+   "stage": {
+    "w": 366,
+    "h": 366,
+    "maxW": "none",
+    "fs": "14px"
+   },
+   "pdp_cta": [
+    182,
+    48
+   ],
+   "facts": [
+    366,
+    71
+   ],
+   "add": [
+    151,
+    44
+   ],
+   "toolbar": null,
+   "filters_toggle": null,
+   "crumbs": [
+    42,
+    21
+   ],
+   "footer_sum": [
+    366,
+    48
+   ],
+   "qty": [
+    172,
+    44
+   ],
+   "ov": 0,
+   "docH": 1799
+  },
+  "390_filters": {
+   "hdr": [
+    390,
+    64
+   ],
+   "search_row": [
+    0,
+    0
+   ],
+   "card": [
+    177,
+    327
+   ],
+   "home_card": null,
+   "taxo": null,
+   "stage": null,
+   "pdp_cta": null,
+   "facts": null,
+   "add": [
+    151,
+    44
+   ],
+   "toolbar": [
+    390,
+    532
+   ],
+   "filters_toggle": [
+    366,
+    44
+   ],
+   "crumbs": [
+    42,
+    21
+   ],
+   "footer_sum": [
+    366,
+    48
+   ],
+   "qty": null,
+   "ov": 0,
+   "docH": 957
+  }
+ },
+ "typo": {
+  "1366_products": {
+   "brand": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "700",
+    "lineHeight": "19.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "19.1875px"
+   },
+   "nav": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "44px"
+   },
+   "iconbtn": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 118, 110)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "46px"
+   },
+   "crumbs": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "sec_title": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "20px",
+    "fontWeight": "700",
+    "lineHeight": "27px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "27px"
+   },
+   "sec_sub": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "24.05px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "24.0469px"
+   },
+   "card_name": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "lineHeight": "21.75px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "21.75px"
+   },
+   "card_meta": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "18px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "18px"
+   },
+   "card_price": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "18px",
+    "fontWeight": "700",
+    "lineHeight": "28.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "28.7969px"
+   },
+   "card_was": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "card_add": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(255, 255, 255)",
+    "backgroundColor": "rgb(31, 95, 191)",
+    "height": "44px"
+   },
+   "badge": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "lineHeight": "18.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(153, 27, 27)",
+    "backgroundColor": "rgb(254, 242, 242)",
+    "height": "22px"
+   },
+   "toolbar_label": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "500",
+    "lineHeight": "19.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "19.1875px"
+   },
+   "toolbar_count": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "19.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "19.1875px"
+   },
+   "filter_input": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "height": "44px"
+   },
+   "check": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "height": "44px"
+   },
+   "pdp_title": null,
+   "pdp_price": null,
+   "pdp_fact_label": null,
+   "pdp_fact_val": null,
+   "pdp_cta": null,
+   "qty": null,
+   "panel_title": null,
+   "prose": null,
+   "state_title": null,
+   "state_text": null,
+   "state_btn": null,
+   "taxo_name": null,
+   "taxo_count": null,
+   "footer_link": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "footer_sum": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "22.3906px"
+   },
+   "search_input": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "25.6px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "height": "48px"
+   },
+   "search_row_name": null,
+   "drawer_link": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "lineHeight": "28px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "body": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "1095.12px"
+   }
+  },
+  "1366_pdp": {
+   "brand": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "700",
+    "lineHeight": "19.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "19.1875px"
+   },
+   "nav": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "44px"
+   },
+   "iconbtn": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 118, 110)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "46px"
+   },
+   "crumbs": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "sec_title": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "20px",
+    "fontWeight": "700",
+    "lineHeight": "27px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "27px"
+   },
+   "sec_sub": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "24.05px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "24.0469px"
+   },
+   "card_name": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "lineHeight": "21.75px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "21.75px"
+   },
+   "card_meta": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "19.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "19.1875px"
+   },
+   "card_price": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "32px",
+    "fontWeight": "700",
+    "lineHeight": "51.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "51.1875px"
+   },
+   "card_was": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(148, 163, 184)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "card_add": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(255, 255, 255)",
+    "backgroundColor": "rgb(31, 95, 191)",
+    "height": "44px"
+   },
+   "badge": null,
+   "toolbar_label": null,
+   "toolbar_count": null,
+   "filter_input": null,
+   "check": null,
+   "pdp_title": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "29.6px",
+    "fontWeight": "700",
+    "lineHeight": "39.96px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "39.9375px"
+   },
+   "pdp_price": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "32px",
+    "fontWeight": "700",
+    "lineHeight": "51.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "51.1875px"
+   },
+   "pdp_fact_label": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "19.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "19.1875px"
+   },
+   "pdp_fact_val": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "pdp_cta": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(255, 255, 255)",
+    "backgroundColor": "rgb(31, 95, 191)",
+    "height": "48px"
+   },
+   "qty": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "25.6px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "height": "44px"
+   },
+   "panel_title": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "20px",
+    "fontWeight": "700",
+    "lineHeight": "27px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "27px"
+   },
+   "prose": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "25.9px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "25.8906px"
+   },
+   "state_title": null,
+   "state_text": null,
+   "state_btn": null,
+   "taxo_name": null,
+   "taxo_count": null,
+   "footer_link": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "footer_sum": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "22.3906px"
+   },
+   "search_input": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "25.6px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "height": "48px"
+   },
+   "search_row_name": null,
+   "drawer_link": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "lineHeight": "28px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "body": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "1653.58px"
+   }
+  },
+  "1366_pdp_oos": {
+   "brand": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "700",
+    "lineHeight": "19.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "19.1875px"
+   },
+   "nav": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "44px"
+   },
+   "iconbtn": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 118, 110)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "46px"
+   },
+   "crumbs": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "sec_title": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "20px",
+    "fontWeight": "700",
+    "lineHeight": "27px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "27px"
+   },
+   "sec_sub": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "24.05px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "24.0469px"
+   },
+   "card_name": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "lineHeight": "21.75px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "21.75px"
+   },
+   "card_meta": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "19.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "19.1875px"
+   },
+   "card_price": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "32px",
+    "fontWeight": "700",
+    "lineHeight": "51.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "51.1875px"
+   },
+   "card_was": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "card_add": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(255, 255, 255)",
+    "backgroundColor": "rgb(31, 95, 191)",
+    "height": "44px"
+   },
+   "badge": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "lineHeight": "18.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(153, 27, 27)",
+    "backgroundColor": "rgb(254, 242, 242)",
+    "height": "22px"
+   },
+   "toolbar_label": null,
+   "toolbar_count": null,
+   "filter_input": null,
+   "check": null,
+   "pdp_title": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "29.6px",
+    "fontWeight": "700",
+    "lineHeight": "39.96px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "39.9375px"
+   },
+   "pdp_price": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "32px",
+    "fontWeight": "700",
+    "lineHeight": "51.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "51.1875px"
+   },
+   "pdp_fact_label": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "19.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "19.1875px"
+   },
+   "pdp_fact_val": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "pdp_cta": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "48px"
+   },
+   "qty": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "25.6px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "height": "44px"
+   },
+   "panel_title": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "20px",
+    "fontWeight": "700",
+    "lineHeight": "27px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "27px"
+   },
+   "prose": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "25.9px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "25.8906px"
+   },
+   "state_title": null,
+   "state_text": null,
+   "state_btn": null,
+   "taxo_name": null,
+   "taxo_count": null,
+   "footer_link": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "footer_sum": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "22.3906px"
+   },
+   "search_input": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "25.6px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "height": "48px"
+   },
+   "search_row_name": null,
+   "drawer_link": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "18px",
+    "fontWeight": "500",
+    "lineHeight": "28px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "body": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "1653.58px"
+   }
+  },
+  "390_products": {
+   "brand": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "lineHeight": "16.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "16.7969px"
+   },
+   "nav": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "iconbtn": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "44px"
+   },
+   "crumbs": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "sec_title": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "20px",
+    "fontWeight": "700",
+    "lineHeight": "27px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "27px"
+   },
+   "sec_sub": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "24.05px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "24.0469px"
+   },
+   "card_name": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14.5px",
+    "fontWeight": "600",
+    "lineHeight": "21.025px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "42.0312px"
+   },
+   "card_meta": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "18px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "18px"
+   },
+   "card_price": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "17px",
+    "fontWeight": "700",
+    "lineHeight": "27.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "27.1875px"
+   },
+   "card_was": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "card_add": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(255, 255, 255)",
+    "backgroundColor": "rgb(31, 95, 191)",
+    "height": "44px"
+   },
+   "badge": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "lineHeight": "18.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(153, 27, 27)",
+    "backgroundColor": "rgb(254, 242, 242)",
+    "height": "22px"
+   },
+   "toolbar_label": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "500",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "toolbar_count": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "19.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "19.1875px"
+   },
+   "filter_input": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "height": "44px"
+   },
+   "check": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "height": "auto"
+   },
+   "pdp_title": null,
+   "pdp_price": null,
+   "pdp_fact_label": null,
+   "pdp_fact_val": null,
+   "pdp_cta": null,
+   "qty": null,
+   "panel_title": null,
+   "prose": null,
+   "state_title": null,
+   "state_text": null,
+   "state_btn": null,
+   "taxo_name": null,
+   "taxo_count": null,
+   "footer_link": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "40px"
+   },
+   "footer_sum": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "48px"
+   },
+   "search_input": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "25.6px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "48px"
+   },
+   "search_row_name": null,
+   "drawer_link": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "500",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "body": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "956.609px"
+   }
+  },
+  "390_search": {
+   "brand": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "lineHeight": "16.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "16.7969px"
+   },
+   "nav": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "iconbtn": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(31, 95, 191)",
+    "backgroundColor": "rgb(234, 241, 251)",
+    "height": "44px"
+   },
+   "crumbs": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "sec_title": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "20px",
+    "fontWeight": "700",
+    "lineHeight": "27px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "27px"
+   },
+   "sec_sub": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "24.05px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "24.0469px"
+   },
+   "card_name": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14.5px",
+    "fontWeight": "600",
+    "lineHeight": "21.025px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "42.0312px"
+   },
+   "card_meta": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "18px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "18px"
+   },
+   "card_price": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "17px",
+    "fontWeight": "700",
+    "lineHeight": "27.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "27.1875px"
+   },
+   "card_was": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "card_add": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(255, 255, 255)",
+    "backgroundColor": "rgb(31, 95, 191)",
+    "height": "44px"
+   },
+   "badge": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "lineHeight": "18.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(153, 27, 27)",
+    "backgroundColor": "rgb(254, 242, 242)",
+    "height": "22px"
+   },
+   "toolbar_label": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "500",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "toolbar_count": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "19.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "19.1875px"
+   },
+   "filter_input": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "height": "44px"
+   },
+   "check": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "height": "auto"
+   },
+   "pdp_title": null,
+   "pdp_price": null,
+   "pdp_fact_label": null,
+   "pdp_fact_val": null,
+   "pdp_cta": null,
+   "qty": null,
+   "panel_title": null,
+   "prose": null,
+   "state_title": null,
+   "state_text": null,
+   "state_btn": null,
+   "taxo_name": null,
+   "taxo_count": null,
+   "footer_link": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "40px"
+   },
+   "footer_sum": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "48px"
+   },
+   "search_input": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "25.6px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "48px"
+   },
+   "search_row_name": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "24px"
+   },
+   "drawer_link": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "500",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "body": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "900px"
+   }
+  },
+  "390_menu": {
+   "brand": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "lineHeight": "16.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "16.7969px"
+   },
+   "nav": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "iconbtn": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "44px"
+   },
+   "crumbs": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "sec_title": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "20px",
+    "fontWeight": "700",
+    "lineHeight": "27px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "27px"
+   },
+   "sec_sub": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "24.05px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "24.0469px"
+   },
+   "card_name": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14.5px",
+    "fontWeight": "600",
+    "lineHeight": "21.025px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "42.0312px"
+   },
+   "card_meta": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "18px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "18px"
+   },
+   "card_price": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "17px",
+    "fontWeight": "700",
+    "lineHeight": "27.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "27.1875px"
+   },
+   "card_was": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "card_add": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(255, 255, 255)",
+    "backgroundColor": "rgb(31, 95, 191)",
+    "height": "44px"
+   },
+   "badge": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "lineHeight": "18.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(153, 27, 27)",
+    "backgroundColor": "rgb(254, 242, 242)",
+    "height": "22px"
+   },
+   "toolbar_label": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "500",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "toolbar_count": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "19.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "19.1875px"
+   },
+   "filter_input": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "height": "44px"
+   },
+   "check": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "height": "auto"
+   },
+   "pdp_title": null,
+   "pdp_price": null,
+   "pdp_fact_label": null,
+   "pdp_fact_val": null,
+   "pdp_cta": null,
+   "qty": null,
+   "panel_title": null,
+   "prose": null,
+   "state_title": null,
+   "state_text": null,
+   "state_btn": null,
+   "taxo_name": null,
+   "taxo_count": null,
+   "footer_link": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "40px"
+   },
+   "footer_sum": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "48px"
+   },
+   "search_input": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "25.6px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "48px"
+   },
+   "search_row_name": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "drawer_link": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "500",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "50px"
+   },
+   "body": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "900px"
+   }
+  },
+  "390_pdp": {
+   "brand": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "lineHeight": "16.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "16.7969px"
+   },
+   "nav": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "iconbtn": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "44px"
+   },
+   "crumbs": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "sec_title": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "20px",
+    "fontWeight": "700",
+    "lineHeight": "27px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "27px"
+   },
+   "sec_sub": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "24.05px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "24.0469px"
+   },
+   "card_name": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14.5px",
+    "fontWeight": "600",
+    "lineHeight": "21.025px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "42.0312px"
+   },
+   "card_meta": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "19.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "19.1875px"
+   },
+   "card_price": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "24px",
+    "fontWeight": "700",
+    "lineHeight": "38.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "38.3906px"
+   },
+   "card_was": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(148, 163, 184)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "card_add": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(255, 255, 255)",
+    "backgroundColor": "rgb(31, 95, 191)",
+    "height": "44px"
+   },
+   "badge": null,
+   "toolbar_label": null,
+   "toolbar_count": null,
+   "filter_input": null,
+   "check": null,
+   "pdp_title": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "21.6px",
+    "fontWeight": "700",
+    "lineHeight": "29.16px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "29.1406px"
+   },
+   "pdp_price": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "24px",
+    "fontWeight": "700",
+    "lineHeight": "38.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "38.3906px"
+   },
+   "pdp_fact_label": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "19.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "19.1875px"
+   },
+   "pdp_fact_val": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "pdp_cta": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(255, 255, 255)",
+    "backgroundColor": "rgb(31, 95, 191)",
+    "height": "48px"
+   },
+   "qty": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "25.6px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "height": "44px"
+   },
+   "panel_title": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "20px",
+    "fontWeight": "700",
+    "lineHeight": "27px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "27px"
+   },
+   "prose": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "25.9px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "25.8906px"
+   },
+   "state_title": null,
+   "state_text": null,
+   "state_btn": null,
+   "taxo_name": null,
+   "taxo_count": null,
+   "footer_link": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "40px"
+   },
+   "footer_sum": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "48px"
+   },
+   "search_input": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "25.6px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "48px"
+   },
+   "search_row_name": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "drawer_link": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "500",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "body": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "1799.2px"
+   }
+  },
+  "390_filters": {
+   "brand": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "700",
+    "lineHeight": "16.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "16.7969px"
+   },
+   "nav": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "500",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "iconbtn": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "44px"
+   },
+   "crumbs": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "sec_title": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "20px",
+    "fontWeight": "700",
+    "lineHeight": "27px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "27px"
+   },
+   "sec_sub": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "24.05px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "24.0469px"
+   },
+   "card_name": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14.5px",
+    "fontWeight": "600",
+    "lineHeight": "21.025px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "42.0312px"
+   },
+   "card_meta": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "18px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "18px"
+   },
+   "card_price": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "17px",
+    "fontWeight": "700",
+    "lineHeight": "27.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "27.1875px"
+   },
+   "card_was": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "card_add": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "600",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(255, 255, 255)",
+    "backgroundColor": "rgb(31, 95, 191)",
+    "height": "44px"
+   },
+   "badge": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "11.5px",
+    "fontWeight": "700",
+    "lineHeight": "18.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(153, 27, 27)",
+    "backgroundColor": "rgb(254, 242, 242)",
+    "height": "22px"
+   },
+   "toolbar_label": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "500",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "20.7969px"
+   },
+   "toolbar_count": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "12px",
+    "fontWeight": "400",
+    "lineHeight": "19.2px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "19.1875px"
+   },
+   "filter_input": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "height": "44px"
+   },
+   "check": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "height": "44px"
+   },
+   "pdp_title": null,
+   "pdp_price": null,
+   "pdp_fact_label": null,
+   "pdp_fact_val": null,
+   "pdp_cta": null,
+   "qty": null,
+   "panel_title": null,
+   "prose": null,
+   "state_title": null,
+   "state_text": null,
+   "state_btn": null,
+   "taxo_name": null,
+   "taxo_count": null,
+   "footer_link": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.8px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(100, 116, 139)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "40px"
+   },
+   "footer_sum": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "48px"
+   },
+   "search_input": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "25.6px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "48px"
+   },
+   "search_row_name": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "15px",
+    "fontWeight": "600",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "drawer_link": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "500",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(15, 23, 42)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "height": "auto"
+   },
+   "body": {
+    "fontFamily": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+    "fontSize": "14px",
+    "fontWeight": "400",
+    "lineHeight": "22.4px",
+    "letterSpacing": "normal",
+    "textTransform": "none",
+    "color": "rgb(51, 65, 85)",
+    "backgroundColor": "rgb(248, 250, 252)",
+    "height": "956.609px"
+   }
+  }
+ },
+ "matrix": {
+  "360": {
+   "home": {
+    "ov": 0,
+    "docH": 2767,
+    "clipped": [
+     "shop-section shop-home-sec|تسوّق حسب التصني",
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   },
+   "products": {
+    "ov": 0,
+    "docH": 957,
+    "clipped": [
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   },
+   "taxo": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": [
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1796,
+    "clipped": [
+     "shop-product|علامة تجريبية أت",
+     "shop-buy|علامة تجريبية أت",
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1796,
+    "clipped": [
+     "shop-product|علامة تجريبية بت",
+     "shop-buy|علامة تجريبية بت",
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   }
+  },
+  "390": {
+   "home": {
+    "ov": 0,
+    "docH": 2754,
+    "clipped": [
+     "shop-section shop-home-sec|تسوّق حسب التصني",
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   },
+   "products": {
+    "ov": 0,
+    "docH": 957,
+    "clipped": [
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   },
+   "taxo": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": [
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1799,
+    "clipped": [
+     "shop-product|علامة تجريبية أت",
+     "shop-buy|علامة تجريبية أت",
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1799,
+    "clipped": [
+     "shop-product|علامة تجريبية بت",
+     "shop-buy|علامة تجريبية بت",
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   }
+  },
+  "430": {
+   "home": {
+    "ov": 0,
+    "docH": 2729,
+    "clipped": [
+     "shop-section shop-home-sec|تسوّق حسب التصني",
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   },
+   "products": {
+    "ov": 0,
+    "docH": 936,
+    "clipped": [
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   },
+   "taxo": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": [
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1819,
+    "clipped": [
+     "shop-product|علامة تجريبية أت",
+     "shop-buy|علامة تجريبية أت",
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1819,
+    "clipped": [
+     "shop-product|علامة تجريبية بت",
+     "shop-buy|علامة تجريبية بت",
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   }
+  },
+  "600": {
+   "home": {
+    "ov": 0,
+    "docH": 2729,
+    "clipped": [
+     "shop-section shop-home-sec|تسوّق حسب التصني",
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   },
+   "products": {
+    "ov": 0,
+    "docH": 936,
+    "clipped": [
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   },
+   "taxo": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": [
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1966,
+    "clipped": [
+     "shop-product|علامة تجريبية أت",
+     "shop-buy|علامة تجريبية أت",
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1966,
+    "clipped": [
+     "shop-product|علامة تجريبية بت",
+     "shop-buy|علامة تجريبية بت",
+     "SUMMARY|تسوّق",
+     "SUMMARY|حسابك",
+     "SUMMARY|الدفع والتوصيل"
+    ]
+   }
+  },
+  "768": {
+   "home": {
+    "ov": 0,
+    "docH": 3220,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 948,
+    "clipped": []
+   },
+   "taxo": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1999,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1999,
+    "clipped": []
+   }
+  },
+  "769": {
+   "home": {
+    "ov": 0,
+    "docH": 3221,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1124,
+    "clipped": []
+   },
+   "taxo": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1999,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1999,
+    "clipped": []
+   }
+  },
+  "900": {
+   "home": {
+    "ov": 0,
+    "docH": 3276,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1085,
+    "clipped": []
+   },
+   "taxo": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1965,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1965,
+    "clipped": []
+   }
+  },
+  "1023": {
+   "home": {
+    "ov": 0,
+    "docH": 3369,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1085,
+    "clipped": []
+   },
+   "taxo": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1969,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1969,
+    "clipped": []
+   }
+  },
+  "1024": {
+   "home": {
+    "ov": 0,
+    "docH": 3379,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1095,
+    "clipped": []
+   },
+   "taxo": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 2010,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 2010,
+    "clipped": []
+   }
+  },
+  "1280": {
+   "home": {
+    "ov": 0,
+    "docH": 3276,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1095,
+    "clipped": []
+   },
+   "taxo": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   }
+  },
+  "1366": {
+   "home": {
+    "ov": 0,
+    "docH": 3276,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1095,
+    "clipped": []
+   },
+   "taxo": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   }
+  },
+  "1440": {
+   "home": {
+    "ov": 0,
+    "docH": 3276,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1095,
+    "clipped": []
+   },
+   "taxo": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   }
+  },
+  "1920": {
+   "home": {
+    "ov": 0,
+    "docH": 3276,
+    "clipped": []
+   },
+   "products": {
+    "ov": 0,
+    "docH": 1095,
+    "clipped": []
+   },
+   "taxo": {
+    "ov": 0,
+    "docH": 900,
+    "clipped": []
+   },
+   "pdp": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   },
+   "pdp_oos": {
+    "ov": 0,
+    "docH": 1654,
+    "clipped": []
+   }
+  }
+ },
+ "zoom": {
+  "390_before": {
+   "ov": 0,
+   "docH": 957,
+   "clipped": [
+    "SUMMARY|تسوّق",
+    "SUMMARY|حسابك",
+    "SUMMARY|الدفع والتوصيل"
+   ]
+  },
+  "390_products": {
+   "ov": 0,
+   "docH": 1445,
+   "clipped": [
+    "SUMMARY|تسوّق",
+    "SUMMARY|حسابك",
+    "SUMMARY|الدفع والتوصيل"
+   ]
+  },
+  "390_geo": {
+   "hdr": [
+    390,
+    64
+   ],
+   "search_row": [
+    0,
+    0
+   ],
+   "card": [
+    177,
+    464
+   ],
+   "home_card": null,
+   "taxo": null,
+   "stage": null,
+   "pdp_cta": null,
+   "facts": null,
+   "add": [
+    151,
+    44
+   ],
+   "toolbar": [
+    390,
+    168
+   ],
+   "filters_toggle": [
+    366,
+    66
+   ],
+   "crumbs": [
+    82,
+    42
+   ],
+   "footer_sum": [
+    366,
+    72
+   ],
+   "qty": null,
+   "ov": 0,
+   "docH": 1445
+  },
+  "390_pdp": {
+   "ov": 0,
+   "docH": 2725,
+   "clipped": [
+    "shop-product|علامة تجريبية أت",
+    "shop-buy|علامة تجريبية أت",
+    "SUMMARY|تسوّق",
+    "SUMMARY|حسابك",
+    "SUMMARY|الدفع والتوصيل"
+   ]
+  },
+  "390_home": {
+   "ov": 0,
+   "docH": 4327,
+   "clipped": [
+    "shop-section shop-home-sec|تسوّق حسب التصني",
+    "SUMMARY|تسوّق",
+    "SUMMARY|حسابك",
+    "SUMMARY|الدفع والتوصيل"
+   ]
+  },
+  "768_products": {
+   "before": {
+    "ov": 0,
+    "docH": 948,
+    "clipped": []
+   },
+   "after": {
+    "ov": 0,
+    "docH": 1743,
+    "clipped": []
+   }
+  },
+  "768_geo": {
+   "hdr": [
+    768,
+    64
+   ],
+   "search_row": null,
+   "card": [
+    237,
+    486
+   ],
+   "home_card": null,
+   "taxo": null,
+   "stage": null,
+   "pdp_cta": null,
+   "facts": null,
+   "add": [
+    211,
+    44
+   ],
+   "toolbar": [
+    768,
+    168
+   ],
+   "filters_toggle": [
+    736,
+    66
+   ],
+   "crumbs": [
+    82,
+    42
+   ],
+   "footer_sum": [
+    135,
+    22
+   ],
+   "qty": null,
+   "ov": 0,
+   "docH": 1743
+  },
+  "1366_products": {
+   "before": {
+    "ov": 0,
+    "docH": 1095,
+    "clipped": []
+   },
+   "after": {
+    "ov": 0,
+    "docH": 1562,
+    "clipped": []
+   }
+  },
+  "1366_geo": {
+   "hdr": [
+    1200,
+    73
+   ],
+   "search_row": null,
+   "card": [
+    280,
+    469
+   ],
+   "home_card": null,
+   "taxo": null,
+   "stage": null,
+   "pdp_cta": null,
+   "facts": null,
+   "add": [
+    254,
+    44
+   ],
+   "toolbar": [
+    1168,
+    219
+   ],
+   "filters_toggle": [
+    0,
+    0
+   ],
+   "crumbs": [
+    82,
+    42
+   ],
+   "footer_sum": [
+    255,
+    22
+   ],
+   "qty": null,
+   "ov": 0,
+   "docH": 1562
+  }
+ },
+ "console": [],
+ "failed": [],
+ "teal": {
+  "1366_products": [],
+  "1366_cart": [],
+  "1366_checkout": [],
+  "1366_orders": [],
+  "1366_notifs": [],
+  "1366_account": [],
+  "1366_authdlg": []
+ },
+ "fonts": {
+  "1366": {
+   "cairo_loaded": true,
+   "qomra_loaded": true,
+   "body_family": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+   "drawer_family": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+   "faces": [
+    "Cairo/400 700/loaded"
+   ],
+   "qomra_refs": ""
+  },
+  "390": {
+   "cairo_loaded": true,
+   "qomra_loaded": true,
+   "body_family": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+   "drawer_family": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+   "faces": [
+    "Cairo/400 700/loaded"
+   ],
+   "qomra_refs": ""
+  }
+ }
+}

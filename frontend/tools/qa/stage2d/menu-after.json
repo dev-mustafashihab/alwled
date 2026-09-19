@@ -1,0 +1,4490 @@
+{
+  "tag": "after",
+  "sizes": {
+    "360x780": {
+      "viewport": {
+        "w": 360,
+        "h": 780
+      },
+      "drawer": {
+        "x": 0,
+        "y": 65,
+        "w": 360,
+        "h": 715,
+        "bottom": 780
+      },
+      "drawerCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "height": "715px",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "background-color": "rgb(255, 255, 255)",
+        "z-index": "60",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "transition-duration": "0.25s, 0.25s, 0.25s",
+        "transition-property": "opacity, transform, visibility"
+      },
+      "panel": {
+        "x": 0,
+        "y": 65,
+        "w": 360,
+        "h": 715,
+        "bottom": 780
+      },
+      "panelCss": {
+        "height": "715px",
+        "overflow": "hidden",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "font-family": "\"Qomra Arabic\", Tahoma, Cairo, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+        "font-size": "16px",
+        "line-height": "24px"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 65,
+        "w": 360,
+        "h": 534,
+        "bottom": 599
+      },
+      "scrollCss": {
+        "padding-inline-start": "12px",
+        "padding-inline-end": "12px",
+        "padding-block-start": "8px",
+        "padding-block-end": "4px",
+        "overflow-y": "auto",
+        "scroll-behavior": "smooth",
+        "height": "534px"
+      },
+      "scrollContentH": 534,
+      "scrollClientH": 534,
+      "links": [
+        {
+          "text": "الرئيسية",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 107,
+            "w": 336,
+            "h": 50,
+            "bottom": 157
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "600",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(31, 95, 191)",
+            "border-radius": "10px",
+            "color": "rgb(31, 95, 191)",
+            "background-color": "rgb(234, 241, 251)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0s"
+          },
+          "inlineDelay": "0s",
+          "ariaCurrent": "page"
+        },
+        {
+          "text": "كل المنتجات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 159,
+            "w": 336,
+            "h": 50,
+            "bottom": 209
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.04s"
+          },
+          "inlineDelay": "0.04s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "التصنيفات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 211,
+            "w": 336,
+            "h": 50,
+            "bottom": 261
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.08s"
+          },
+          "inlineDelay": "0.08s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "العلامات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 263,
+            "w": 336,
+            "h": 50,
+            "bottom": 313
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.12s"
+          },
+          "inlineDelay": "0.12s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "السلة",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 315,
+            "w": 336,
+            "h": 50,
+            "bottom": 365
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.16s"
+          },
+          "inlineDelay": "0.16s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "تسجيل الدخول",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 416,
+            "w": 336,
+            "h": 50,
+            "bottom": 466
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.24s"
+          },
+          "inlineDelay": "0.24s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "إنشاء حساب",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 466,
+            "w": 336,
+            "h": 50,
+            "bottom": 516
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.28s"
+          },
+          "inlineDelay": "0.28s",
+          "ariaCurrent": null
+        }
+      ],
+      "labels": [
+        {
+          "text": "تسوّق",
+          "rect": {
+            "x": 12,
+            "y": 73,
+            "w": 336,
+            "h": 34,
+            "bottom": 107
+          },
+          "css": {
+            "font-size": "12.5px",
+            "font-weight": "600",
+            "color": "rgb(100, 116, 139)",
+            "padding": "10px 12px 4px",
+            "margin": "0px",
+            "letter-spacing": "normal",
+            "text-transform": "none"
+          },
+          "inlineDelay": ""
+        },
+        {
+          "text": "حسابك",
+          "rect": {
+            "x": 12,
+            "y": 382,
+            "w": 336,
+            "h": 34,
+            "bottom": 416
+          },
+          "css": {
+            "font-size": "12.5px",
+            "font-weight": "600",
+            "color": "rgb(100, 116, 139)",
+            "padding": "10px 12px 4px",
+            "margin": "0px",
+            "letter-spacing": "normal",
+            "text-transform": "none"
+          },
+          "inlineDelay": ""
+        }
+      ],
+      "dividers": [
+        {
+          "rect": {
+            "x": 24,
+            "y": 373,
+            "w": 312,
+            "h": 1,
+            "bottom": 374
+          },
+          "cls": "shop-menu__divider",
+          "css": {
+            "height": "1px",
+            "margin": "8px 12px",
+            "background-color": "rgb(230, 236, 243)",
+            "border-top-width": "0px"
+          },
+          "inlineDelay": "0.2s"
+        },
+        {
+          "rect": {
+            "x": 12,
+            "y": 607,
+            "w": 336,
+            "h": 1,
+            "bottom": 608
+          },
+          "cls": "shop-menu__divider",
+          "css": {
+            "height": "1px",
+            "margin": "8px 12px 0px",
+            "background-color": "rgb(230, 236, 243)",
+            "border-top-width": "0px"
+          },
+          "inlineDelay": "0.32s"
+        }
+      ],
+      "theme": {
+        "x": 12,
+        "y": 616,
+        "w": 336,
+        "h": 54,
+        "bottom": 670
+      },
+      "themeCss": {
+        "display": "grid",
+        "grid-template-columns": "108.656px 108.672px 108.656px",
+        "gap": "0px",
+        "padding": "4px",
+        "margin": "8px 12px 12px",
+        "background-color": "rgb(248, 250, 252)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "10px",
+        "transition-duration": "0s",
+        "transition-delay": "0s",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "themeBtns": [
+        {
+          "text": "فاتح",
+          "rect": {
+            "x": 234.34,
+            "y": 621,
+            "w": 108.66,
+            "h": 44,
+            "bottom": 665
+          },
+          "pressed": "false",
+          "active": false,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(100, 116, 139)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 294.67,
+            "y": 635,
+            "w": 16,
+            "h": 16,
+            "bottom": 651
+          }
+        },
+        {
+          "text": "داكن",
+          "rect": {
+            "x": 125.67,
+            "y": 621,
+            "w": 108.67,
+            "h": 44,
+            "bottom": 665
+          },
+          "pressed": "false",
+          "active": false,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(100, 116, 139)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 187.02,
+            "y": 635,
+            "w": 16,
+            "h": 16,
+            "bottom": 651
+          }
+        },
+        {
+          "text": "النظام",
+          "rect": {
+            "x": 17.02,
+            "y": 621,
+            "w": 108.66,
+            "h": 44,
+            "bottom": 665
+          },
+          "pressed": "true",
+          "active": true,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(31, 95, 191)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 81.84,
+            "y": 635,
+            "w": 16,
+            "h": 16,
+            "bottom": 651
+          }
+        }
+      ],
+      "themeThumb": {
+        "rect": {
+          "x": 17,
+          "y": 621,
+          "w": 109,
+          "h": 44,
+          "bottom": 665
+        },
+        "css": {
+          "width": "109px",
+          "height": "44px",
+          "background-color": "rgb(234, 241, 251)",
+          "transform": "matrix(1, 0, 0, 1, 4, 0)",
+          "border-radius": "8px"
+        }
+      },
+      "foot": {
+        "x": 0,
+        "y": 682,
+        "w": 360,
+        "h": 98,
+        "bottom": 780
+      },
+      "footCss": {
+        "padding": "8px 12px 16px",
+        "margin": "0px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-top-width": "0px",
+        "border-top-color": "rgb(51, 65, 85)",
+        "transition-duration": "0s",
+        "transition-delay": "0s",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "footNote": {
+        "rect": {
+          "x": 12,
+          "y": 690,
+          "w": 336,
+          "h": 20,
+          "bottom": 710
+        },
+        "css": {
+          "font-size": "12.5px",
+          "color": "rgb(100, 116, 139)",
+          "line-height": "20px"
+        }
+      },
+      "cta": {
+        "text": "تصفّح المنتجات",
+        "href": "#/products",
+        "rect": {
+          "x": 12,
+          "y": 718,
+          "w": 336,
+          "h": 46,
+          "bottom": 764
+        },
+        "css": {
+          "min-height": "46px",
+          "height": "46px",
+          "background-color": "rgb(31, 95, 191)",
+          "color": "rgb(255, 255, 255)",
+          "border-color": "rgb(31, 95, 191)",
+          "border-radius": "10px",
+          "font-size": "13px",
+          "padding-inline": "16px",
+          "box-shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px"
+        }
+      },
+      "userBlock": {
+        "hidden": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        },
+        "css": {
+          "padding": "12px",
+          "background-color": "rgb(234, 241, 251)",
+          "border-bottom-width": "0px"
+        }
+      },
+      "guestBlock": {
+        "hidden": false,
+        "rect": {
+          "x": 12,
+          "y": 373,
+          "w": 336,
+          "h": 143,
+          "bottom": 516
+        }
+      },
+      "accountBlock": {
+        "hidden": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        }
+      },
+      "counts": {
+        "links": 7,
+        "linksFullyInViewport": 7,
+        "linksInScrollArea": 7,
+        "labels": 2,
+        "dividers": 2,
+        "themeBtns": 3
+      },
+      "overflow": {
+        "docSW": 360,
+        "docCW": 360,
+        "drawerSW": 360,
+        "drawerCW": 360,
+        "themeSW": 334,
+        "themeCW": 334
+      },
+      "hdrVarTop": "65px",
+      "burgerVisible": true
+    },
+    "390x844": {
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "drawer": {
+        "x": 0,
+        "y": 65,
+        "w": 390,
+        "h": 779,
+        "bottom": 844
+      },
+      "drawerCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "height": "779px",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "background-color": "rgb(255, 255, 255)",
+        "z-index": "60",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "transition-duration": "0.25s, 0.25s, 0.25s",
+        "transition-property": "opacity, transform, visibility"
+      },
+      "panel": {
+        "x": 0,
+        "y": 65,
+        "w": 390,
+        "h": 779,
+        "bottom": 844
+      },
+      "panelCss": {
+        "height": "779px",
+        "overflow": "hidden",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "font-family": "\"Qomra Arabic\", Tahoma, Cairo, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+        "font-size": "16px",
+        "line-height": "24px"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 65,
+        "w": 390,
+        "h": 598,
+        "bottom": 663
+      },
+      "scrollCss": {
+        "padding-inline-start": "12px",
+        "padding-inline-end": "12px",
+        "padding-block-start": "8px",
+        "padding-block-end": "4px",
+        "overflow-y": "auto",
+        "scroll-behavior": "smooth",
+        "height": "598px"
+      },
+      "scrollContentH": 598,
+      "scrollClientH": 598,
+      "links": [
+        {
+          "text": "الرئيسية",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 107,
+            "w": 366,
+            "h": 50,
+            "bottom": 157
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "600",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(31, 95, 191)",
+            "border-radius": "10px",
+            "color": "rgb(31, 95, 191)",
+            "background-color": "rgb(234, 241, 251)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0s"
+          },
+          "inlineDelay": "0s",
+          "ariaCurrent": "page"
+        },
+        {
+          "text": "كل المنتجات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 159,
+            "w": 366,
+            "h": 50,
+            "bottom": 209
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.04s"
+          },
+          "inlineDelay": "0.04s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "التصنيفات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 211,
+            "w": 366,
+            "h": 50,
+            "bottom": 261
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.08s"
+          },
+          "inlineDelay": "0.08s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "العلامات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 263,
+            "w": 366,
+            "h": 50,
+            "bottom": 313
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.12s"
+          },
+          "inlineDelay": "0.12s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "السلة",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 315,
+            "w": 366,
+            "h": 50,
+            "bottom": 365
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.16s"
+          },
+          "inlineDelay": "0.16s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "تسجيل الدخول",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 416,
+            "w": 366,
+            "h": 50,
+            "bottom": 466
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.24s"
+          },
+          "inlineDelay": "0.24s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "إنشاء حساب",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 466,
+            "w": 366,
+            "h": 50,
+            "bottom": 516
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.28s"
+          },
+          "inlineDelay": "0.28s",
+          "ariaCurrent": null
+        }
+      ],
+      "labels": [
+        {
+          "text": "تسوّق",
+          "rect": {
+            "x": 12,
+            "y": 73,
+            "w": 366,
+            "h": 34,
+            "bottom": 107
+          },
+          "css": {
+            "font-size": "12.5px",
+            "font-weight": "600",
+            "color": "rgb(100, 116, 139)",
+            "padding": "10px 12px 4px",
+            "margin": "0px",
+            "letter-spacing": "normal",
+            "text-transform": "none"
+          },
+          "inlineDelay": ""
+        },
+        {
+          "text": "حسابك",
+          "rect": {
+            "x": 12,
+            "y": 382,
+            "w": 366,
+            "h": 34,
+            "bottom": 416
+          },
+          "css": {
+            "font-size": "12.5px",
+            "font-weight": "600",
+            "color": "rgb(100, 116, 139)",
+            "padding": "10px 12px 4px",
+            "margin": "0px",
+            "letter-spacing": "normal",
+            "text-transform": "none"
+          },
+          "inlineDelay": ""
+        }
+      ],
+      "dividers": [
+        {
+          "rect": {
+            "x": 24,
+            "y": 373,
+            "w": 342,
+            "h": 1,
+            "bottom": 374
+          },
+          "cls": "shop-menu__divider",
+          "css": {
+            "height": "1px",
+            "margin": "8px 12px",
+            "background-color": "rgb(230, 236, 243)",
+            "border-top-width": "0px"
+          },
+          "inlineDelay": "0.2s"
+        },
+        {
+          "rect": {
+            "x": 12,
+            "y": 671,
+            "w": 366,
+            "h": 1,
+            "bottom": 672
+          },
+          "cls": "shop-menu__divider",
+          "css": {
+            "height": "1px",
+            "margin": "8px 12px 0px",
+            "background-color": "rgb(230, 236, 243)",
+            "border-top-width": "0px"
+          },
+          "inlineDelay": "0.32s"
+        }
+      ],
+      "theme": {
+        "x": 12,
+        "y": 680,
+        "w": 366,
+        "h": 54,
+        "bottom": 734
+      },
+      "themeCss": {
+        "display": "grid",
+        "grid-template-columns": "118.656px 118.672px 118.656px",
+        "gap": "0px",
+        "padding": "4px",
+        "margin": "8px 12px 12px",
+        "background-color": "rgb(248, 250, 252)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "10px",
+        "transition-duration": "0s",
+        "transition-delay": "0s",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "themeBtns": [
+        {
+          "text": "فاتح",
+          "rect": {
+            "x": 254.34,
+            "y": 685,
+            "w": 118.66,
+            "h": 44,
+            "bottom": 729
+          },
+          "pressed": "false",
+          "active": false,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(100, 116, 139)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 319.67,
+            "y": 699,
+            "w": 16,
+            "h": 16,
+            "bottom": 715
+          }
+        },
+        {
+          "text": "داكن",
+          "rect": {
+            "x": 135.67,
+            "y": 685,
+            "w": 118.67,
+            "h": 44,
+            "bottom": 729
+          },
+          "pressed": "false",
+          "active": false,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(100, 116, 139)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 202.02,
+            "y": 699,
+            "w": 16,
+            "h": 16,
+            "bottom": 715
+          }
+        },
+        {
+          "text": "النظام",
+          "rect": {
+            "x": 17.02,
+            "y": 685,
+            "w": 118.66,
+            "h": 44,
+            "bottom": 729
+          },
+          "pressed": "true",
+          "active": true,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(31, 95, 191)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 86.84,
+            "y": 699,
+            "w": 16,
+            "h": 16,
+            "bottom": 715
+          }
+        }
+      ],
+      "themeThumb": {
+        "rect": {
+          "x": 17,
+          "y": 685,
+          "w": 119,
+          "h": 44,
+          "bottom": 729
+        },
+        "css": {
+          "width": "119px",
+          "height": "44px",
+          "background-color": "rgb(234, 241, 251)",
+          "transform": "matrix(1, 0, 0, 1, 4, 0)",
+          "border-radius": "8px"
+        }
+      },
+      "foot": {
+        "x": 0,
+        "y": 746,
+        "w": 390,
+        "h": 98,
+        "bottom": 844
+      },
+      "footCss": {
+        "padding": "8px 12px 16px",
+        "margin": "0px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-top-width": "0px",
+        "border-top-color": "rgb(51, 65, 85)",
+        "transition-duration": "0s",
+        "transition-delay": "0s",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "footNote": {
+        "rect": {
+          "x": 12,
+          "y": 754,
+          "w": 366,
+          "h": 20,
+          "bottom": 774
+        },
+        "css": {
+          "font-size": "12.5px",
+          "color": "rgb(100, 116, 139)",
+          "line-height": "20px"
+        }
+      },
+      "cta": {
+        "text": "تصفّح المنتجات",
+        "href": "#/products",
+        "rect": {
+          "x": 12,
+          "y": 782,
+          "w": 366,
+          "h": 46,
+          "bottom": 828
+        },
+        "css": {
+          "min-height": "46px",
+          "height": "46px",
+          "background-color": "rgb(31, 95, 191)",
+          "color": "rgb(255, 255, 255)",
+          "border-color": "rgb(31, 95, 191)",
+          "border-radius": "10px",
+          "font-size": "13px",
+          "padding-inline": "16px",
+          "box-shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px"
+        }
+      },
+      "userBlock": {
+        "hidden": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        },
+        "css": {
+          "padding": "12px",
+          "background-color": "rgb(234, 241, 251)",
+          "border-bottom-width": "0px"
+        }
+      },
+      "guestBlock": {
+        "hidden": false,
+        "rect": {
+          "x": 12,
+          "y": 373,
+          "w": 366,
+          "h": 143,
+          "bottom": 516
+        }
+      },
+      "accountBlock": {
+        "hidden": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        }
+      },
+      "counts": {
+        "links": 7,
+        "linksFullyInViewport": 7,
+        "linksInScrollArea": 7,
+        "labels": 2,
+        "dividers": 2,
+        "themeBtns": 3
+      },
+      "overflow": {
+        "docSW": 390,
+        "docCW": 390,
+        "drawerSW": 390,
+        "drawerCW": 390,
+        "themeSW": 364,
+        "themeCW": 364
+      },
+      "hdrVarTop": "65px",
+      "burgerVisible": true,
+      "scrolledBottom": {
+        "scrollTop": 0,
+        "maxScroll": 0,
+        "ctaVisible": true,
+        "themeVisible": true
+      }
+    },
+    "390x700": {
+      "viewport": {
+        "w": 390,
+        "h": 700
+      },
+      "drawer": {
+        "x": 0,
+        "y": 65,
+        "w": 390,
+        "h": 635,
+        "bottom": 700
+      },
+      "drawerCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "height": "635px",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "background-color": "rgb(255, 255, 255)",
+        "z-index": "60",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "transition-duration": "0.25s, 0.25s, 0.25s",
+        "transition-property": "opacity, transform, visibility"
+      },
+      "panel": {
+        "x": 0,
+        "y": 65,
+        "w": 390,
+        "h": 635,
+        "bottom": 700
+      },
+      "panelCss": {
+        "height": "635px",
+        "overflow": "hidden",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "font-family": "\"Qomra Arabic\", Tahoma, Cairo, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+        "font-size": "16px",
+        "line-height": "24px"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 65,
+        "w": 390,
+        "h": 454,
+        "bottom": 519
+      },
+      "scrollCss": {
+        "padding-inline-start": "12px",
+        "padding-inline-end": "12px",
+        "padding-block-start": "8px",
+        "padding-block-end": "4px",
+        "overflow-y": "auto",
+        "scroll-behavior": "smooth",
+        "height": "454px"
+      },
+      "scrollContentH": 455,
+      "scrollClientH": 454,
+      "links": [
+        {
+          "text": "الرئيسية",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 107,
+            "w": 366,
+            "h": 50,
+            "bottom": 157
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "600",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(31, 95, 191)",
+            "border-radius": "10px",
+            "color": "rgb(31, 95, 191)",
+            "background-color": "rgb(234, 241, 251)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0s"
+          },
+          "inlineDelay": "0s",
+          "ariaCurrent": "page"
+        },
+        {
+          "text": "كل المنتجات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 159,
+            "w": 366,
+            "h": 50,
+            "bottom": 209
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.04s"
+          },
+          "inlineDelay": "0.04s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "التصنيفات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 211,
+            "w": 366,
+            "h": 50,
+            "bottom": 261
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.08s"
+          },
+          "inlineDelay": "0.08s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "العلامات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 263,
+            "w": 366,
+            "h": 50,
+            "bottom": 313
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.12s"
+          },
+          "inlineDelay": "0.12s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "السلة",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 315,
+            "w": 366,
+            "h": 50,
+            "bottom": 365
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.16s"
+          },
+          "inlineDelay": "0.16s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "تسجيل الدخول",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 416,
+            "w": 366,
+            "h": 50,
+            "bottom": 466
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.24s"
+          },
+          "inlineDelay": "0.24s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "إنشاء حساب",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 466,
+            "w": 366,
+            "h": 50,
+            "bottom": 516
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.28s"
+          },
+          "inlineDelay": "0.28s",
+          "ariaCurrent": null
+        }
+      ],
+      "labels": [
+        {
+          "text": "تسوّق",
+          "rect": {
+            "x": 12,
+            "y": 73,
+            "w": 366,
+            "h": 34,
+            "bottom": 107
+          },
+          "css": {
+            "font-size": "12.5px",
+            "font-weight": "600",
+            "color": "rgb(100, 116, 139)",
+            "padding": "10px 12px 4px",
+            "margin": "0px",
+            "letter-spacing": "normal",
+            "text-transform": "none"
+          },
+          "inlineDelay": ""
+        },
+        {
+          "text": "حسابك",
+          "rect": {
+            "x": 12,
+            "y": 382,
+            "w": 366,
+            "h": 34,
+            "bottom": 416
+          },
+          "css": {
+            "font-size": "12.5px",
+            "font-weight": "600",
+            "color": "rgb(100, 116, 139)",
+            "padding": "10px 12px 4px",
+            "margin": "0px",
+            "letter-spacing": "normal",
+            "text-transform": "none"
+          },
+          "inlineDelay": ""
+        }
+      ],
+      "dividers": [
+        {
+          "rect": {
+            "x": 24,
+            "y": 373,
+            "w": 342,
+            "h": 1,
+            "bottom": 374
+          },
+          "cls": "shop-menu__divider",
+          "css": {
+            "height": "1px",
+            "margin": "8px 12px",
+            "background-color": "rgb(230, 236, 243)",
+            "border-top-width": "0px"
+          },
+          "inlineDelay": "0.2s"
+        },
+        {
+          "rect": {
+            "x": 12,
+            "y": 527,
+            "w": 366,
+            "h": 1,
+            "bottom": 528
+          },
+          "cls": "shop-menu__divider",
+          "css": {
+            "height": "1px",
+            "margin": "8px 12px 0px",
+            "background-color": "rgb(230, 236, 243)",
+            "border-top-width": "0px"
+          },
+          "inlineDelay": "0.32s"
+        }
+      ],
+      "theme": {
+        "x": 12,
+        "y": 536,
+        "w": 366,
+        "h": 54,
+        "bottom": 590
+      },
+      "themeCss": {
+        "display": "grid",
+        "grid-template-columns": "118.656px 118.672px 118.656px",
+        "gap": "0px",
+        "padding": "4px",
+        "margin": "8px 12px 12px",
+        "background-color": "rgb(248, 250, 252)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "10px",
+        "transition-duration": "0s",
+        "transition-delay": "0s",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "themeBtns": [
+        {
+          "text": "فاتح",
+          "rect": {
+            "x": 254.34,
+            "y": 541,
+            "w": 118.66,
+            "h": 44,
+            "bottom": 585
+          },
+          "pressed": "false",
+          "active": false,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(100, 116, 139)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 319.67,
+            "y": 555,
+            "w": 16,
+            "h": 16,
+            "bottom": 571
+          }
+        },
+        {
+          "text": "داكن",
+          "rect": {
+            "x": 135.67,
+            "y": 541,
+            "w": 118.67,
+            "h": 44,
+            "bottom": 585
+          },
+          "pressed": "false",
+          "active": false,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(100, 116, 139)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 202.02,
+            "y": 555,
+            "w": 16,
+            "h": 16,
+            "bottom": 571
+          }
+        },
+        {
+          "text": "النظام",
+          "rect": {
+            "x": 17.02,
+            "y": 541,
+            "w": 118.66,
+            "h": 44,
+            "bottom": 585
+          },
+          "pressed": "true",
+          "active": true,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(31, 95, 191)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 86.84,
+            "y": 555,
+            "w": 16,
+            "h": 16,
+            "bottom": 571
+          }
+        }
+      ],
+      "themeThumb": {
+        "rect": {
+          "x": 17,
+          "y": 541,
+          "w": 119,
+          "h": 44,
+          "bottom": 585
+        },
+        "css": {
+          "width": "119px",
+          "height": "44px",
+          "background-color": "rgb(234, 241, 251)",
+          "transform": "matrix(1, 0, 0, 1, 4, 0)",
+          "border-radius": "8px"
+        }
+      },
+      "foot": {
+        "x": 0,
+        "y": 602,
+        "w": 390,
+        "h": 98,
+        "bottom": 700
+      },
+      "footCss": {
+        "padding": "8px 12px 16px",
+        "margin": "0px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-top-width": "0px",
+        "border-top-color": "rgb(51, 65, 85)",
+        "transition-duration": "0s",
+        "transition-delay": "0s",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "footNote": {
+        "rect": {
+          "x": 12,
+          "y": 610,
+          "w": 366,
+          "h": 20,
+          "bottom": 630
+        },
+        "css": {
+          "font-size": "12.5px",
+          "color": "rgb(100, 116, 139)",
+          "line-height": "20px"
+        }
+      },
+      "cta": {
+        "text": "تصفّح المنتجات",
+        "href": "#/products",
+        "rect": {
+          "x": 12,
+          "y": 638,
+          "w": 366,
+          "h": 46,
+          "bottom": 684
+        },
+        "css": {
+          "min-height": "46px",
+          "height": "46px",
+          "background-color": "rgb(31, 95, 191)",
+          "color": "rgb(255, 255, 255)",
+          "border-color": "rgb(31, 95, 191)",
+          "border-radius": "10px",
+          "font-size": "13px",
+          "padding-inline": "16px",
+          "box-shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px"
+        }
+      },
+      "userBlock": {
+        "hidden": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        },
+        "css": {
+          "padding": "12px",
+          "background-color": "rgb(234, 241, 251)",
+          "border-bottom-width": "0px"
+        }
+      },
+      "guestBlock": {
+        "hidden": false,
+        "rect": {
+          "x": 12,
+          "y": 373,
+          "w": 366,
+          "h": 143,
+          "bottom": 516
+        }
+      },
+      "accountBlock": {
+        "hidden": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        }
+      },
+      "counts": {
+        "links": 7,
+        "linksFullyInViewport": 7,
+        "linksInScrollArea": 7,
+        "labels": 2,
+        "dividers": 2,
+        "themeBtns": 3
+      },
+      "overflow": {
+        "docSW": 390,
+        "docCW": 390,
+        "drawerSW": 390,
+        "drawerCW": 390,
+        "themeSW": 364,
+        "themeCW": 364
+      },
+      "hdrVarTop": "65px",
+      "burgerVisible": true
+    },
+    "430x900": {
+      "viewport": {
+        "w": 430,
+        "h": 900
+      },
+      "drawer": {
+        "x": 0,
+        "y": 65,
+        "w": 430,
+        "h": 835,
+        "bottom": 900
+      },
+      "drawerCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "height": "835px",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "background-color": "rgb(255, 255, 255)",
+        "z-index": "60",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "transition-duration": "0.25s, 0.25s, 0.25s",
+        "transition-property": "opacity, transform, visibility"
+      },
+      "panel": {
+        "x": 0,
+        "y": 65,
+        "w": 430,
+        "h": 835,
+        "bottom": 900
+      },
+      "panelCss": {
+        "height": "835px",
+        "overflow": "hidden",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "font-family": "\"Qomra Arabic\", Tahoma, Cairo, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+        "font-size": "16px",
+        "line-height": "24px"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 65,
+        "w": 430,
+        "h": 654,
+        "bottom": 719
+      },
+      "scrollCss": {
+        "padding-inline-start": "12px",
+        "padding-inline-end": "12px",
+        "padding-block-start": "8px",
+        "padding-block-end": "4px",
+        "overflow-y": "auto",
+        "scroll-behavior": "smooth",
+        "height": "654px"
+      },
+      "scrollContentH": 654,
+      "scrollClientH": 654,
+      "links": [
+        {
+          "text": "الرئيسية",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 107,
+            "w": 406,
+            "h": 50,
+            "bottom": 157
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "600",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(31, 95, 191)",
+            "border-radius": "10px",
+            "color": "rgb(31, 95, 191)",
+            "background-color": "rgb(234, 241, 251)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0s"
+          },
+          "inlineDelay": "0s",
+          "ariaCurrent": "page"
+        },
+        {
+          "text": "كل المنتجات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 159,
+            "w": 406,
+            "h": 50,
+            "bottom": 209
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.04s"
+          },
+          "inlineDelay": "0.04s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "التصنيفات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 211,
+            "w": 406,
+            "h": 50,
+            "bottom": 261
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.08s"
+          },
+          "inlineDelay": "0.08s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "العلامات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 263,
+            "w": 406,
+            "h": 50,
+            "bottom": 313
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.12s"
+          },
+          "inlineDelay": "0.12s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "السلة",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 315,
+            "w": 406,
+            "h": 50,
+            "bottom": 365
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.16s"
+          },
+          "inlineDelay": "0.16s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "تسجيل الدخول",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 416,
+            "w": 406,
+            "h": 50,
+            "bottom": 466
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.24s"
+          },
+          "inlineDelay": "0.24s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "إنشاء حساب",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 466,
+            "w": 406,
+            "h": 50,
+            "bottom": 516
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.28s"
+          },
+          "inlineDelay": "0.28s",
+          "ariaCurrent": null
+        }
+      ],
+      "labels": [
+        {
+          "text": "تسوّق",
+          "rect": {
+            "x": 12,
+            "y": 73,
+            "w": 406,
+            "h": 34,
+            "bottom": 107
+          },
+          "css": {
+            "font-size": "12.5px",
+            "font-weight": "600",
+            "color": "rgb(100, 116, 139)",
+            "padding": "10px 12px 4px",
+            "margin": "0px",
+            "letter-spacing": "normal",
+            "text-transform": "none"
+          },
+          "inlineDelay": ""
+        },
+        {
+          "text": "حسابك",
+          "rect": {
+            "x": 12,
+            "y": 382,
+            "w": 406,
+            "h": 34,
+            "bottom": 416
+          },
+          "css": {
+            "font-size": "12.5px",
+            "font-weight": "600",
+            "color": "rgb(100, 116, 139)",
+            "padding": "10px 12px 4px",
+            "margin": "0px",
+            "letter-spacing": "normal",
+            "text-transform": "none"
+          },
+          "inlineDelay": ""
+        }
+      ],
+      "dividers": [
+        {
+          "rect": {
+            "x": 24,
+            "y": 373,
+            "w": 382,
+            "h": 1,
+            "bottom": 374
+          },
+          "cls": "shop-menu__divider",
+          "css": {
+            "height": "1px",
+            "margin": "8px 12px",
+            "background-color": "rgb(230, 236, 243)",
+            "border-top-width": "0px"
+          },
+          "inlineDelay": "0.2s"
+        },
+        {
+          "rect": {
+            "x": 12,
+            "y": 727,
+            "w": 406,
+            "h": 1,
+            "bottom": 728
+          },
+          "cls": "shop-menu__divider",
+          "css": {
+            "height": "1px",
+            "margin": "8px 12px 0px",
+            "background-color": "rgb(230, 236, 243)",
+            "border-top-width": "0px"
+          },
+          "inlineDelay": "0.32s"
+        }
+      ],
+      "theme": {
+        "x": 12,
+        "y": 736,
+        "w": 406,
+        "h": 54,
+        "bottom": 790
+      },
+      "themeCss": {
+        "display": "grid",
+        "grid-template-columns": "132px 132px 132px",
+        "gap": "0px",
+        "padding": "4px",
+        "margin": "8px 12px 12px",
+        "background-color": "rgb(248, 250, 252)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "10px",
+        "transition-duration": "0s",
+        "transition-delay": "0s",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "themeBtns": [
+        {
+          "text": "فاتح",
+          "rect": {
+            "x": 281,
+            "y": 741,
+            "w": 132,
+            "h": 44,
+            "bottom": 785
+          },
+          "pressed": "false",
+          "active": false,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(100, 116, 139)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 353,
+            "y": 755,
+            "w": 16,
+            "h": 16,
+            "bottom": 771
+          }
+        },
+        {
+          "text": "داكن",
+          "rect": {
+            "x": 149,
+            "y": 741,
+            "w": 132,
+            "h": 44,
+            "bottom": 785
+          },
+          "pressed": "false",
+          "active": false,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(100, 116, 139)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 222,
+            "y": 755,
+            "w": 16,
+            "h": 16,
+            "bottom": 771
+          }
+        },
+        {
+          "text": "النظام",
+          "rect": {
+            "x": 17,
+            "y": 741,
+            "w": 132,
+            "h": 44,
+            "bottom": 785
+          },
+          "pressed": "true",
+          "active": true,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(31, 95, 191)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 93.5,
+            "y": 755,
+            "w": 16,
+            "h": 16,
+            "bottom": 771
+          }
+        }
+      ],
+      "themeThumb": {
+        "rect": {
+          "x": 17,
+          "y": 741,
+          "w": 132,
+          "h": 44,
+          "bottom": 785
+        },
+        "css": {
+          "width": "132px",
+          "height": "44px",
+          "background-color": "rgb(234, 241, 251)",
+          "transform": "matrix(1, 0, 0, 1, 4, 0)",
+          "border-radius": "8px"
+        }
+      },
+      "foot": {
+        "x": 0,
+        "y": 802,
+        "w": 430,
+        "h": 98,
+        "bottom": 900
+      },
+      "footCss": {
+        "padding": "8px 12px 16px",
+        "margin": "0px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-top-width": "0px",
+        "border-top-color": "rgb(51, 65, 85)",
+        "transition-duration": "0s",
+        "transition-delay": "0s",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "footNote": {
+        "rect": {
+          "x": 12,
+          "y": 810,
+          "w": 406,
+          "h": 20,
+          "bottom": 830
+        },
+        "css": {
+          "font-size": "12.5px",
+          "color": "rgb(100, 116, 139)",
+          "line-height": "20px"
+        }
+      },
+      "cta": {
+        "text": "تصفّح المنتجات",
+        "href": "#/products",
+        "rect": {
+          "x": 12,
+          "y": 838,
+          "w": 406,
+          "h": 46,
+          "bottom": 884
+        },
+        "css": {
+          "min-height": "46px",
+          "height": "46px",
+          "background-color": "rgb(31, 95, 191)",
+          "color": "rgb(255, 255, 255)",
+          "border-color": "rgb(31, 95, 191)",
+          "border-radius": "10px",
+          "font-size": "13px",
+          "padding-inline": "16px",
+          "box-shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px"
+        }
+      },
+      "userBlock": {
+        "hidden": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        },
+        "css": {
+          "padding": "12px",
+          "background-color": "rgb(234, 241, 251)",
+          "border-bottom-width": "0px"
+        }
+      },
+      "guestBlock": {
+        "hidden": false,
+        "rect": {
+          "x": 12,
+          "y": 373,
+          "w": 406,
+          "h": 143,
+          "bottom": 516
+        }
+      },
+      "accountBlock": {
+        "hidden": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        }
+      },
+      "counts": {
+        "links": 7,
+        "linksFullyInViewport": 7,
+        "linksInScrollArea": 7,
+        "labels": 2,
+        "dividers": 2,
+        "themeBtns": 3
+      },
+      "overflow": {
+        "docSW": 430,
+        "docCW": 430,
+        "drawerSW": 430,
+        "drawerCW": 430,
+        "themeSW": 404,
+        "themeCW": 404
+      },
+      "hdrVarTop": "65px",
+      "burgerVisible": true
+    },
+    "600x900": {
+      "viewport": {
+        "w": 600,
+        "h": 900
+      },
+      "drawer": {
+        "x": 0,
+        "y": 65,
+        "w": 600,
+        "h": 835,
+        "bottom": 900
+      },
+      "drawerCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "height": "835px",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "background-color": "rgb(255, 255, 255)",
+        "z-index": "60",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "transition-duration": "0.25s, 0.25s, 0.25s",
+        "transition-property": "opacity, transform, visibility"
+      },
+      "panel": {
+        "x": 0,
+        "y": 65,
+        "w": 600,
+        "h": 835,
+        "bottom": 900
+      },
+      "panelCss": {
+        "height": "835px",
+        "overflow": "hidden",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "font-family": "\"Qomra Arabic\", Tahoma, Cairo, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+        "font-size": "16px",
+        "line-height": "24px"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 65,
+        "w": 600,
+        "h": 654,
+        "bottom": 719
+      },
+      "scrollCss": {
+        "padding-inline-start": "12px",
+        "padding-inline-end": "12px",
+        "padding-block-start": "8px",
+        "padding-block-end": "4px",
+        "overflow-y": "auto",
+        "scroll-behavior": "smooth",
+        "height": "654px"
+      },
+      "scrollContentH": 654,
+      "scrollClientH": 654,
+      "links": [
+        {
+          "text": "الرئيسية",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 107,
+            "w": 576,
+            "h": 50,
+            "bottom": 157
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "600",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(31, 95, 191)",
+            "border-radius": "10px",
+            "color": "rgb(31, 95, 191)",
+            "background-color": "rgb(234, 241, 251)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0s"
+          },
+          "inlineDelay": "0s",
+          "ariaCurrent": "page"
+        },
+        {
+          "text": "كل المنتجات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 159,
+            "w": 576,
+            "h": 50,
+            "bottom": 209
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.04s"
+          },
+          "inlineDelay": "0.04s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "التصنيفات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 211,
+            "w": 576,
+            "h": 50,
+            "bottom": 261
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.08s"
+          },
+          "inlineDelay": "0.08s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "العلامات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 263,
+            "w": 576,
+            "h": 50,
+            "bottom": 313
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.12s"
+          },
+          "inlineDelay": "0.12s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "السلة",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 315,
+            "w": 576,
+            "h": 50,
+            "bottom": 365
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.16s"
+          },
+          "inlineDelay": "0.16s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "تسجيل الدخول",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 416,
+            "w": 576,
+            "h": 50,
+            "bottom": 466
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.24s"
+          },
+          "inlineDelay": "0.24s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "إنشاء حساب",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 12,
+            "y": 466,
+            "w": 576,
+            "h": 50,
+            "bottom": 516
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.28s"
+          },
+          "inlineDelay": "0.28s",
+          "ariaCurrent": null
+        }
+      ],
+      "labels": [
+        {
+          "text": "تسوّق",
+          "rect": {
+            "x": 12,
+            "y": 73,
+            "w": 576,
+            "h": 34,
+            "bottom": 107
+          },
+          "css": {
+            "font-size": "12.5px",
+            "font-weight": "600",
+            "color": "rgb(100, 116, 139)",
+            "padding": "10px 12px 4px",
+            "margin": "0px",
+            "letter-spacing": "normal",
+            "text-transform": "none"
+          },
+          "inlineDelay": ""
+        },
+        {
+          "text": "حسابك",
+          "rect": {
+            "x": 12,
+            "y": 382,
+            "w": 576,
+            "h": 34,
+            "bottom": 416
+          },
+          "css": {
+            "font-size": "12.5px",
+            "font-weight": "600",
+            "color": "rgb(100, 116, 139)",
+            "padding": "10px 12px 4px",
+            "margin": "0px",
+            "letter-spacing": "normal",
+            "text-transform": "none"
+          },
+          "inlineDelay": ""
+        }
+      ],
+      "dividers": [
+        {
+          "rect": {
+            "x": 24,
+            "y": 373,
+            "w": 552,
+            "h": 1,
+            "bottom": 374
+          },
+          "cls": "shop-menu__divider",
+          "css": {
+            "height": "1px",
+            "margin": "8px 12px",
+            "background-color": "rgb(230, 236, 243)",
+            "border-top-width": "0px"
+          },
+          "inlineDelay": "0.2s"
+        },
+        {
+          "rect": {
+            "x": 12,
+            "y": 727,
+            "w": 576,
+            "h": 1,
+            "bottom": 728
+          },
+          "cls": "shop-menu__divider",
+          "css": {
+            "height": "1px",
+            "margin": "8px 12px 0px",
+            "background-color": "rgb(230, 236, 243)",
+            "border-top-width": "0px"
+          },
+          "inlineDelay": "0.32s"
+        }
+      ],
+      "theme": {
+        "x": 12,
+        "y": 736,
+        "w": 576,
+        "h": 54,
+        "bottom": 790
+      },
+      "themeCss": {
+        "display": "grid",
+        "grid-template-columns": "188.656px 188.672px 188.672px",
+        "gap": "0px",
+        "padding": "4px",
+        "margin": "8px 12px 12px",
+        "background-color": "rgb(248, 250, 252)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "10px",
+        "transition-duration": "0s",
+        "transition-delay": "0s",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "themeBtns": [
+        {
+          "text": "فاتح",
+          "rect": {
+            "x": 394.34,
+            "y": 741,
+            "w": 188.66,
+            "h": 44,
+            "bottom": 785
+          },
+          "pressed": "false",
+          "active": false,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(100, 116, 139)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 494.67,
+            "y": 755,
+            "w": 16,
+            "h": 16,
+            "bottom": 771
+          }
+        },
+        {
+          "text": "داكن",
+          "rect": {
+            "x": 205.67,
+            "y": 741,
+            "w": 188.67,
+            "h": 44,
+            "bottom": 785
+          },
+          "pressed": "false",
+          "active": false,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(100, 116, 139)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 307.02,
+            "y": 755,
+            "w": 16,
+            "h": 16,
+            "bottom": 771
+          }
+        },
+        {
+          "text": "النظام",
+          "rect": {
+            "x": 17,
+            "y": 741,
+            "w": 188.67,
+            "h": 44,
+            "bottom": 785
+          },
+          "pressed": "true",
+          "active": true,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(31, 95, 191)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 121.84,
+            "y": 755,
+            "w": 16,
+            "h": 16,
+            "bottom": 771
+          }
+        }
+      ],
+      "themeThumb": {
+        "rect": {
+          "x": 17,
+          "y": 741,
+          "w": 189,
+          "h": 44,
+          "bottom": 785
+        },
+        "css": {
+          "width": "189px",
+          "height": "44px",
+          "background-color": "rgb(234, 241, 251)",
+          "transform": "matrix(1, 0, 0, 1, 4, 0)",
+          "border-radius": "8px"
+        }
+      },
+      "foot": {
+        "x": 0,
+        "y": 802,
+        "w": 600,
+        "h": 98,
+        "bottom": 900
+      },
+      "footCss": {
+        "padding": "8px 12px 16px",
+        "margin": "0px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-top-width": "0px",
+        "border-top-color": "rgb(51, 65, 85)",
+        "transition-duration": "0s",
+        "transition-delay": "0s",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "footNote": {
+        "rect": {
+          "x": 12,
+          "y": 810,
+          "w": 576,
+          "h": 20,
+          "bottom": 830
+        },
+        "css": {
+          "font-size": "12.5px",
+          "color": "rgb(100, 116, 139)",
+          "line-height": "20px"
+        }
+      },
+      "cta": {
+        "text": "تصفّح المنتجات",
+        "href": "#/products",
+        "rect": {
+          "x": 12,
+          "y": 838,
+          "w": 576,
+          "h": 46,
+          "bottom": 884
+        },
+        "css": {
+          "min-height": "46px",
+          "height": "46px",
+          "background-color": "rgb(31, 95, 191)",
+          "color": "rgb(255, 255, 255)",
+          "border-color": "rgb(31, 95, 191)",
+          "border-radius": "10px",
+          "font-size": "13px",
+          "padding-inline": "16px",
+          "box-shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px"
+        }
+      },
+      "userBlock": {
+        "hidden": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        },
+        "css": {
+          "padding": "12px",
+          "background-color": "rgb(234, 241, 251)",
+          "border-bottom-width": "0px"
+        }
+      },
+      "guestBlock": {
+        "hidden": false,
+        "rect": {
+          "x": 12,
+          "y": 373,
+          "w": 576,
+          "h": 143,
+          "bottom": 516
+        }
+      },
+      "accountBlock": {
+        "hidden": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        }
+      },
+      "counts": {
+        "links": 7,
+        "linksFullyInViewport": 7,
+        "linksInScrollArea": 7,
+        "labels": 2,
+        "dividers": 2,
+        "themeBtns": 3
+      },
+      "overflow": {
+        "docSW": 600,
+        "docCW": 600,
+        "drawerSW": 600,
+        "drawerCW": 600,
+        "themeSW": 574,
+        "themeCW": 574
+      },
+      "hdrVarTop": "65px",
+      "burgerVisible": true
+    },
+    "768x1000": {
+      "viewport": {
+        "w": 768,
+        "h": 1000
+      },
+      "drawer": {
+        "x": 0,
+        "y": 65,
+        "w": 768,
+        "h": 935,
+        "bottom": 1000
+      },
+      "drawerCss": {
+        "position": "fixed",
+        "top": "65px",
+        "bottom": "0px",
+        "height": "935px",
+        "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+        "background-color": "rgb(255, 255, 255)",
+        "z-index": "60",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "transition-duration": "0.25s, 0.25s, 0.25s",
+        "transition-property": "opacity, transform, visibility"
+      },
+      "panel": {
+        "x": 64,
+        "y": 65,
+        "w": 640,
+        "h": 935,
+        "bottom": 1000
+      },
+      "panelCss": {
+        "height": "935px",
+        "overflow": "hidden",
+        "padding": "0px",
+        "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+        "font-family": "\"Qomra Arabic\", Tahoma, Cairo, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+        "font-size": "16px",
+        "line-height": "24px"
+      },
+      "scroll": {
+        "x": 64,
+        "y": 65,
+        "w": 640,
+        "h": 754,
+        "bottom": 819
+      },
+      "scrollCss": {
+        "padding-inline-start": "12px",
+        "padding-inline-end": "12px",
+        "padding-block-start": "8px",
+        "padding-block-end": "4px",
+        "overflow-y": "auto",
+        "scroll-behavior": "smooth",
+        "height": "754px"
+      },
+      "scrollContentH": 754,
+      "scrollClientH": 754,
+      "links": [
+        {
+          "text": "الرئيسية",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 76,
+            "y": 107,
+            "w": 616,
+            "h": 50,
+            "bottom": 157
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "600",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(31, 95, 191)",
+            "border-radius": "10px",
+            "color": "rgb(31, 95, 191)",
+            "background-color": "rgb(234, 241, 251)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0s"
+          },
+          "inlineDelay": "0s",
+          "ariaCurrent": "page"
+        },
+        {
+          "text": "كل المنتجات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 76,
+            "y": 159,
+            "w": 616,
+            "h": 50,
+            "bottom": 209
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.04s"
+          },
+          "inlineDelay": "0.04s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "التصنيفات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 76,
+            "y": 211,
+            "w": 616,
+            "h": 50,
+            "bottom": 261
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.08s"
+          },
+          "inlineDelay": "0.08s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "العلامات",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 76,
+            "y": 263,
+            "w": 616,
+            "h": 50,
+            "bottom": 313
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.12s"
+          },
+          "inlineDelay": "0.12s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "السلة",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 76,
+            "y": 315,
+            "w": 616,
+            "h": 50,
+            "bottom": 365
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.16s"
+          },
+          "inlineDelay": "0.16s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "تسجيل الدخول",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 76,
+            "y": 416,
+            "w": 616,
+            "h": 50,
+            "bottom": 466
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.24s"
+          },
+          "inlineDelay": "0.24s",
+          "ariaCurrent": null
+        },
+        {
+          "text": "إنشاء حساب",
+          "cls": "shop-drawer__link",
+          "rect": {
+            "x": 76,
+            "y": 466,
+            "w": 616,
+            "h": 50,
+            "bottom": 516
+          },
+          "css": {
+            "font-size": "16px",
+            "font-weight": "500",
+            "line-height": "24px",
+            "padding-top": "8px",
+            "padding-bottom": "8px",
+            "padding-inline-start": "12px",
+            "padding-inline-end": "12px",
+            "min-height": "50px",
+            "border-bottom-width": "0px",
+            "border-bottom-color": "rgb(15, 23, 42)",
+            "border-radius": "10px",
+            "color": "rgb(15, 23, 42)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "gap": "12px",
+            "opacity": "1",
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "transition-duration": "0s",
+            "transition-delay": "0.28s"
+          },
+          "inlineDelay": "0.28s",
+          "ariaCurrent": null
+        }
+      ],
+      "labels": [
+        {
+          "text": "تسوّق",
+          "rect": {
+            "x": 76,
+            "y": 73,
+            "w": 616,
+            "h": 34,
+            "bottom": 107
+          },
+          "css": {
+            "font-size": "12.5px",
+            "font-weight": "600",
+            "color": "rgb(100, 116, 139)",
+            "padding": "10px 12px 4px",
+            "margin": "0px",
+            "letter-spacing": "normal",
+            "text-transform": "none"
+          },
+          "inlineDelay": ""
+        },
+        {
+          "text": "حسابك",
+          "rect": {
+            "x": 76,
+            "y": 382,
+            "w": 616,
+            "h": 34,
+            "bottom": 416
+          },
+          "css": {
+            "font-size": "12.5px",
+            "font-weight": "600",
+            "color": "rgb(100, 116, 139)",
+            "padding": "10px 12px 4px",
+            "margin": "0px",
+            "letter-spacing": "normal",
+            "text-transform": "none"
+          },
+          "inlineDelay": ""
+        }
+      ],
+      "dividers": [
+        {
+          "rect": {
+            "x": 88,
+            "y": 373,
+            "w": 592,
+            "h": 1,
+            "bottom": 374
+          },
+          "cls": "shop-menu__divider",
+          "css": {
+            "height": "1px",
+            "margin": "8px 12px",
+            "background-color": "rgb(230, 236, 243)",
+            "border-top-width": "0px"
+          },
+          "inlineDelay": "0.2s"
+        },
+        {
+          "rect": {
+            "x": 76,
+            "y": 827,
+            "w": 616,
+            "h": 1,
+            "bottom": 828
+          },
+          "cls": "shop-menu__divider",
+          "css": {
+            "height": "1px",
+            "margin": "8px 12px 0px",
+            "background-color": "rgb(230, 236, 243)",
+            "border-top-width": "0px"
+          },
+          "inlineDelay": "0.32s"
+        }
+      ],
+      "theme": {
+        "x": 76,
+        "y": 836,
+        "w": 616,
+        "h": 54,
+        "bottom": 890
+      },
+      "themeCss": {
+        "display": "grid",
+        "grid-template-columns": "202px 202px 202px",
+        "gap": "0px",
+        "padding": "4px",
+        "margin": "8px 12px 12px",
+        "background-color": "rgb(248, 250, 252)",
+        "border-top-width": "1px",
+        "border-top-color": "rgb(230, 236, 243)",
+        "border-radius": "10px",
+        "transition-duration": "0s",
+        "transition-delay": "0s",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "themeBtns": [
+        {
+          "text": "فاتح",
+          "rect": {
+            "x": 485,
+            "y": 841,
+            "w": 202,
+            "h": 44,
+            "bottom": 885
+          },
+          "pressed": "false",
+          "active": false,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(100, 116, 139)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 592,
+            "y": 855,
+            "w": 16,
+            "h": 16,
+            "bottom": 871
+          }
+        },
+        {
+          "text": "داكن",
+          "rect": {
+            "x": 283,
+            "y": 841,
+            "w": 202,
+            "h": 44,
+            "bottom": 885
+          },
+          "pressed": "false",
+          "active": false,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(100, 116, 139)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 391,
+            "y": 855,
+            "w": 16,
+            "h": 16,
+            "bottom": 871
+          }
+        },
+        {
+          "text": "النظام",
+          "rect": {
+            "x": 81,
+            "y": 841,
+            "w": 202,
+            "h": 44,
+            "bottom": 885
+          },
+          "pressed": "true",
+          "active": true,
+          "css": {
+            "font-size": "13px",
+            "min-height": "44px",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "color": "rgb(31, 95, 191)",
+            "border-radius": "8px"
+          },
+          "icon": {
+            "x": 192.5,
+            "y": 855,
+            "w": 16,
+            "h": 16,
+            "bottom": 871
+          }
+        }
+      ],
+      "themeThumb": {
+        "rect": {
+          "x": 81,
+          "y": 841,
+          "w": 202,
+          "h": 44,
+          "bottom": 885
+        },
+        "css": {
+          "width": "202px",
+          "height": "44px",
+          "background-color": "rgb(234, 241, 251)",
+          "transform": "matrix(1, 0, 0, 1, 4, 0)",
+          "border-radius": "8px"
+        }
+      },
+      "foot": {
+        "x": 64,
+        "y": 902,
+        "w": 640,
+        "h": 98,
+        "bottom": 1000
+      },
+      "footCss": {
+        "padding": "8px 12px 16px",
+        "margin": "0px",
+        "background-color": "rgb(255, 255, 255)",
+        "border-top-width": "0px",
+        "border-top-color": "rgb(51, 65, 85)",
+        "transition-duration": "0s",
+        "transition-delay": "0s",
+        "opacity": "1",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "footNote": {
+        "rect": {
+          "x": 76,
+          "y": 910,
+          "w": 616,
+          "h": 20,
+          "bottom": 930
+        },
+        "css": {
+          "font-size": "12.5px",
+          "color": "rgb(100, 116, 139)",
+          "line-height": "20px"
+        }
+      },
+      "cta": {
+        "text": "تصفّح المنتجات",
+        "href": "#/products",
+        "rect": {
+          "x": 76,
+          "y": 938,
+          "w": 616,
+          "h": 46,
+          "bottom": 984
+        },
+        "css": {
+          "min-height": "46px",
+          "height": "46px",
+          "background-color": "rgb(31, 95, 191)",
+          "color": "rgb(255, 255, 255)",
+          "border-color": "rgb(31, 95, 191)",
+          "border-radius": "10px",
+          "font-size": "13px",
+          "padding-inline": "16px",
+          "box-shadow": "rgba(15, 23, 42, 0.06) 0px 1px 2px 0px"
+        }
+      },
+      "userBlock": {
+        "hidden": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        },
+        "css": {
+          "padding": "12px",
+          "background-color": "rgb(234, 241, 251)",
+          "border-bottom-width": "0px"
+        }
+      },
+      "guestBlock": {
+        "hidden": false,
+        "rect": {
+          "x": 76,
+          "y": 373,
+          "w": 616,
+          "h": 143,
+          "bottom": 516
+        }
+      },
+      "accountBlock": {
+        "hidden": true,
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        }
+      },
+      "counts": {
+        "links": 7,
+        "linksFullyInViewport": 7,
+        "linksInScrollArea": 7,
+        "labels": 2,
+        "dividers": 2,
+        "themeBtns": 3
+      },
+      "overflow": {
+        "docSW": 768,
+        "docCW": 768,
+        "drawerSW": 768,
+        "drawerCW": 768,
+        "themeSW": 614,
+        "themeCW": 614
+      },
+      "hdrVarTop": "65px",
+      "burgerVisible": true
+    },
+    "1024x800": {
+      "burgerVisible": false
+    }
+  },
+  "functional": {
+    "before_open": {
+      "hidden": true,
+      "ariaHidden": "true",
+      "burgerExpanded": "false",
+      "burgerControls": "shop-drawer",
+      "bodyOverflow": "visible"
+    },
+    "after_open": {
+      "open": true,
+      "ariaHidden": "false",
+      "burgerExpanded": "true",
+      "activeId": "shop-drawer__link",
+      "activeInDrawer": true,
+      "bodyOverflow": "hidden",
+      "htmlOverflow": "hidden",
+      "scrollY": 0
+    },
+    "tab_cycle": [
+      {
+        "id": "",
+        "cls": "shop-drawer__link",
+        "inDrawer": true
+      },
+      {
+        "id": "",
+        "cls": "shop-drawer__link",
+        "inDrawer": true
+      },
+      {
+        "id": "",
+        "cls": "shop-drawer__link",
+        "inDrawer": true
+      },
+      {
+        "id": "",
+        "cls": "shop-drawer__link",
+        "inDrawer": true
+      },
+      {
+        "id": "",
+        "cls": "shop-drawer__link",
+        "inDrawer": true
+      },
+      {
+        "id": "",
+        "cls": "shop-drawer__link",
+        "inDrawer": true
+      },
+      {
+        "id": "",
+        "cls": "shop-menu__theme-btn",
+        "inDrawer": true
+      },
+      {
+        "id": "",
+        "cls": "shop-menu__theme-btn",
+        "inDrawer": true
+      },
+      {
+        "id": "",
+        "cls": "shop-menu__theme-btn is-active",
+        "inDrawer": true
+      },
+      {
+        "id": "",
+        "cls": "btn btn--primary btn--block",
+        "inDrawer": true
+      },
+      {
+        "id": "",
+        "cls": "shop-drawer__link",
+        "inDrawer": true
+      },
+      {
+        "id": "",
+        "cls": "shop-drawer__link",
+        "inDrawer": true
+      },
+      {
+        "id": "",
+        "cls": "shop-drawer__link",
+        "inDrawer": true
+      },
+      {
+        "id": "",
+        "cls": "shop-drawer__link",
+        "inDrawer": true
+      },
+      {
+        "id": "",
+        "cls": "shop-drawer__link",
+        "inDrawer": true
+      },
+      {
+        "id": "",
+        "cls": "shop-drawer__link",
+        "inDrawer": true
+      }
+    ],
+    "after_escape": {
+      "hidden": true,
+      "open": false,
+      "burgerExpanded": "false",
+      "activeId": "shop-burger",
+      "bodyOverflow": "visible"
+    },
+    "theme_dark": {
+      "theme": "dark",
+      "pressed": [
+        "false",
+        "true",
+        "false"
+      ],
+      "thumb": {
+        "thumbW": 119,
+        "btnW": 119,
+        "thumbX": 136,
+        "btnX": 136
+      },
+      "drawerBg": "rgb(18, 27, 43)"
+    },
+    "nav_click": {
+      "beforeHash": "#/",
+      "after": {
+        "hash": "#/products",
+        "drawerHidden": true,
+        "bodyOverflow": "visible"
+      }
+    },
+    "aria_current": [
+      {
+        "text": "كل المنتجات",
+        "cur": "page",
+        "bg": "rgb(234, 241, 251)",
+        "color": "rgb(31, 95, 191)"
+      }
+    ],
+    "focus_visible_link": {
+      "cls": "shop-drawer__link",
+      "text": "كل المنتجات",
+      "outline": "solid 2px",
+      "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0px 3px"
+    },
+    "resize_1024": {
+      "w": 1200,
+      "hidden": true,
+      "open": false,
+      "burgerDisplay": "none"
+    },
+    "search_open": {
+      "open": true,
+      "sheetTop": 65,
+      "headerBottom": 65,
+      "hidden": false
+    },
+    "search_closed": true,
+    "cart": {
+      "href": "#/cart",
+      "w": 44
+    }
+  },
+  "console_errors": [],
+  "shots": [
+    "/root/alwled/frontend/tools/qa/stage2d/after-menu-360x780.png",
+    "/root/alwled/frontend/tools/qa/stage2d/after-menu-390x844.png",
+    "/root/alwled/frontend/tools/qa/stage2d/after-menu-390x844-scrolled.png",
+    "/root/alwled/frontend/tools/qa/stage2d/after-menu-390x700.png",
+    "/root/alwled/frontend/tools/qa/stage2d/after-menu-600x900.png",
+    "/root/alwled/frontend/tools/qa/stage2d/after-menu-768x1000.png",
+    "/root/alwled/frontend/tools/qa/stage2d/after-menu-390x844-dark.png",
+    "/root/alwled/frontend/tools/qa/stage2d/after-menu-390x844-focus.png",
+    "/root/alwled/frontend/tools/qa/stage2d/after-menu-390x844-auth.png"
+  ],
+  "auth": {
+    "viewport": {
+      "w": 390,
+      "h": 844
+    },
+    "drawer": {
+      "x": 0,
+      "y": 65,
+      "w": 390,
+      "h": 779,
+      "bottom": 844
+    },
+    "drawerCss": {
+      "position": "fixed",
+      "top": "65px",
+      "bottom": "0px",
+      "height": "779px",
+      "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+      "background-color": "rgb(255, 255, 255)",
+      "z-index": "60",
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "transition-duration": "0.25s, 0.25s, 0.25s",
+      "transition-property": "opacity, transform, visibility"
+    },
+    "panel": {
+      "x": 0,
+      "y": 65,
+      "w": 390,
+      "h": 779,
+      "bottom": 844
+    },
+    "panelCss": {
+      "height": "779px",
+      "overflow": "hidden",
+      "padding": "0px",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "font-family": "\"Qomra Arabic\", Tahoma, Cairo, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+      "font-size": "16px",
+      "line-height": "24px"
+    },
+    "scroll": {
+      "x": 0,
+      "y": 65,
+      "w": 390,
+      "h": 696,
+      "bottom": 761
+    },
+    "scrollCss": {
+      "padding-inline-start": "12px",
+      "padding-inline-end": "12px",
+      "padding-block-start": "8px",
+      "padding-block-end": "4px",
+      "overflow-y": "auto",
+      "scroll-behavior": "smooth",
+      "height": "696px"
+    },
+    "scrollContentH": 696,
+    "scrollClientH": 696,
+    "links": [
+      {
+        "text": "الرئيسية",
+        "cls": "shop-drawer__link",
+        "rect": {
+          "x": 12,
+          "y": 185,
+          "w": 366,
+          "h": 50,
+          "bottom": 235
+        },
+        "css": {
+          "font-size": "16px",
+          "font-weight": "600",
+          "line-height": "24px",
+          "padding-top": "8px",
+          "padding-bottom": "8px",
+          "padding-inline-start": "12px",
+          "padding-inline-end": "12px",
+          "min-height": "50px",
+          "border-bottom-width": "0px",
+          "border-bottom-color": "rgb(31, 95, 191)",
+          "border-radius": "10px",
+          "color": "rgb(31, 95, 191)",
+          "background-color": "rgb(234, 241, 251)",
+          "gap": "12px",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "transition-duration": "0s",
+          "transition-delay": "0s"
+        },
+        "inlineDelay": "0s",
+        "ariaCurrent": "page"
+      },
+      {
+        "text": "كل المنتجات",
+        "cls": "shop-drawer__link",
+        "rect": {
+          "x": 12,
+          "y": 237,
+          "w": 366,
+          "h": 50,
+          "bottom": 287
+        },
+        "css": {
+          "font-size": "16px",
+          "font-weight": "500",
+          "line-height": "24px",
+          "padding-top": "8px",
+          "padding-bottom": "8px",
+          "padding-inline-start": "12px",
+          "padding-inline-end": "12px",
+          "min-height": "50px",
+          "border-bottom-width": "0px",
+          "border-bottom-color": "rgb(15, 23, 42)",
+          "border-radius": "10px",
+          "color": "rgb(15, 23, 42)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "gap": "12px",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "transition-duration": "0s",
+          "transition-delay": "0.04s"
+        },
+        "inlineDelay": "0.04s",
+        "ariaCurrent": null
+      },
+      {
+        "text": "التصنيفات",
+        "cls": "shop-drawer__link",
+        "rect": {
+          "x": 12,
+          "y": 289,
+          "w": 366,
+          "h": 50,
+          "bottom": 339
+        },
+        "css": {
+          "font-size": "16px",
+          "font-weight": "500",
+          "line-height": "24px",
+          "padding-top": "8px",
+          "padding-bottom": "8px",
+          "padding-inline-start": "12px",
+          "padding-inline-end": "12px",
+          "min-height": "50px",
+          "border-bottom-width": "0px",
+          "border-bottom-color": "rgb(15, 23, 42)",
+          "border-radius": "10px",
+          "color": "rgb(15, 23, 42)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "gap": "12px",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "transition-duration": "0s",
+          "transition-delay": "0.08s"
+        },
+        "inlineDelay": "0.08s",
+        "ariaCurrent": null
+      },
+      {
+        "text": "العلامات",
+        "cls": "shop-drawer__link",
+        "rect": {
+          "x": 12,
+          "y": 341,
+          "w": 366,
+          "h": 50,
+          "bottom": 391
+        },
+        "css": {
+          "font-size": "16px",
+          "font-weight": "500",
+          "line-height": "24px",
+          "padding-top": "8px",
+          "padding-bottom": "8px",
+          "padding-inline-start": "12px",
+          "padding-inline-end": "12px",
+          "min-height": "50px",
+          "border-bottom-width": "0px",
+          "border-bottom-color": "rgb(15, 23, 42)",
+          "border-radius": "10px",
+          "color": "rgb(15, 23, 42)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "gap": "12px",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "transition-duration": "0s",
+          "transition-delay": "0.12s"
+        },
+        "inlineDelay": "0.12s",
+        "ariaCurrent": null
+      },
+      {
+        "text": "السلة",
+        "cls": "shop-drawer__link",
+        "rect": {
+          "x": 12,
+          "y": 393,
+          "w": 366,
+          "h": 50,
+          "bottom": 443
+        },
+        "css": {
+          "font-size": "16px",
+          "font-weight": "500",
+          "line-height": "24px",
+          "padding-top": "8px",
+          "padding-bottom": "8px",
+          "padding-inline-start": "12px",
+          "padding-inline-end": "12px",
+          "min-height": "50px",
+          "border-bottom-width": "0px",
+          "border-bottom-color": "rgb(15, 23, 42)",
+          "border-radius": "10px",
+          "color": "rgb(15, 23, 42)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "gap": "12px",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "transition-duration": "0s",
+          "transition-delay": "0.16s"
+        },
+        "inlineDelay": "0.16s",
+        "ariaCurrent": null
+      },
+      {
+        "text": "تسجيل الدخول",
+        "cls": "shop-drawer__link",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        },
+        "css": {
+          "font-size": "16px",
+          "font-weight": "500",
+          "line-height": "24px",
+          "padding-top": "8px",
+          "padding-bottom": "8px",
+          "padding-inline-start": "12px",
+          "padding-inline-end": "12px",
+          "min-height": "50px",
+          "border-bottom-width": "0px",
+          "border-bottom-color": "rgb(15, 23, 42)",
+          "border-radius": "10px",
+          "color": "rgb(15, 23, 42)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "gap": "12px",
+          "opacity": "1",
+          "transform": "none",
+          "transition-duration": "0s",
+          "transition-delay": "0.24s"
+        },
+        "inlineDelay": "0.24s",
+        "ariaCurrent": null
+      },
+      {
+        "text": "إنشاء حساب",
+        "cls": "shop-drawer__link",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        },
+        "css": {
+          "font-size": "16px",
+          "font-weight": "500",
+          "line-height": "24px",
+          "padding-top": "8px",
+          "padding-bottom": "8px",
+          "padding-inline-start": "12px",
+          "padding-inline-end": "12px",
+          "min-height": "50px",
+          "border-bottom-width": "0px",
+          "border-bottom-color": "rgb(15, 23, 42)",
+          "border-radius": "10px",
+          "color": "rgb(15, 23, 42)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "gap": "12px",
+          "opacity": "1",
+          "transform": "none",
+          "transition-duration": "0s",
+          "transition-delay": "0.28s"
+        },
+        "inlineDelay": "0.28s",
+        "ariaCurrent": null
+      },
+      {
+        "text": "الإشعارات",
+        "cls": "shop-drawer__link",
+        "rect": {
+          "x": 12,
+          "y": 443,
+          "w": 366,
+          "h": 50,
+          "bottom": 493
+        },
+        "css": {
+          "font-size": "16px",
+          "font-weight": "500",
+          "line-height": "24px",
+          "padding-top": "8px",
+          "padding-bottom": "8px",
+          "padding-inline-start": "12px",
+          "padding-inline-end": "12px",
+          "min-height": "50px",
+          "border-bottom-width": "0px",
+          "border-bottom-color": "rgb(15, 23, 42)",
+          "border-radius": "10px",
+          "color": "rgb(15, 23, 42)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "gap": "12px",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "transition-duration": "0s",
+          "transition-delay": "0.32s"
+        },
+        "inlineDelay": "0.32s",
+        "ariaCurrent": null
+      },
+      {
+        "text": "طلباتي",
+        "cls": "shop-drawer__link",
+        "rect": {
+          "x": 12,
+          "y": 493,
+          "w": 366,
+          "h": 50,
+          "bottom": 543
+        },
+        "css": {
+          "font-size": "16px",
+          "font-weight": "500",
+          "line-height": "24px",
+          "padding-top": "8px",
+          "padding-bottom": "8px",
+          "padding-inline-start": "12px",
+          "padding-inline-end": "12px",
+          "min-height": "50px",
+          "border-bottom-width": "0px",
+          "border-bottom-color": "rgb(15, 23, 42)",
+          "border-radius": "10px",
+          "color": "rgb(15, 23, 42)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "gap": "12px",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "transition-duration": "0s",
+          "transition-delay": "0.36s"
+        },
+        "inlineDelay": "0.36s",
+        "ariaCurrent": null
+      },
+      {
+        "text": "توثيق الحساب",
+        "cls": "shop-drawer__link",
+        "rect": {
+          "x": 12,
+          "y": 543,
+          "w": 366,
+          "h": 50,
+          "bottom": 593
+        },
+        "css": {
+          "font-size": "16px",
+          "font-weight": "500",
+          "line-height": "24px",
+          "padding-top": "8px",
+          "padding-bottom": "8px",
+          "padding-inline-start": "12px",
+          "padding-inline-end": "12px",
+          "min-height": "50px",
+          "border-bottom-width": "0px",
+          "border-bottom-color": "rgb(15, 23, 42)",
+          "border-radius": "10px",
+          "color": "rgb(15, 23, 42)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "gap": "12px",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "transition-duration": "0s",
+          "transition-delay": "0.4s"
+        },
+        "inlineDelay": "0.4s",
+        "ariaCurrent": null
+      },
+      {
+        "text": "حسابي",
+        "cls": "shop-drawer__link",
+        "rect": {
+          "x": 12,
+          "y": 593,
+          "w": 366,
+          "h": 50,
+          "bottom": 643
+        },
+        "css": {
+          "font-size": "16px",
+          "font-weight": "500",
+          "line-height": "24px",
+          "padding-top": "8px",
+          "padding-bottom": "8px",
+          "padding-inline-start": "12px",
+          "padding-inline-end": "12px",
+          "min-height": "50px",
+          "border-bottom-width": "0px",
+          "border-bottom-color": "rgb(15, 23, 42)",
+          "border-radius": "10px",
+          "color": "rgb(15, 23, 42)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "gap": "12px",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "transition-duration": "0s",
+          "transition-delay": "0.44s"
+        },
+        "inlineDelay": "0.44s",
+        "ariaCurrent": null
+      },
+      {
+        "text": "تسجيل الخروج",
+        "cls": "shop-drawer__link shop-drawer__link--danger",
+        "rect": {
+          "x": 12,
+          "y": 643,
+          "w": 366,
+          "h": 50,
+          "bottom": 693
+        },
+        "css": {
+          "font-size": "16px",
+          "font-weight": "500",
+          "line-height": "24px",
+          "padding-top": "8px",
+          "padding-bottom": "8px",
+          "padding-inline-start": "12px",
+          "padding-inline-end": "12px",
+          "min-height": "50px",
+          "border-bottom-width": "0px",
+          "border-bottom-color": "rgb(153, 27, 27)",
+          "border-radius": "10px",
+          "color": "rgb(153, 27, 27)",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "gap": "12px",
+          "opacity": "1",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "transition-duration": "0s",
+          "transition-delay": "0.48s"
+        },
+        "inlineDelay": "0.48s",
+        "ariaCurrent": null
+      }
+    ],
+    "labels": [
+      {
+        "text": "تسوّق",
+        "rect": {
+          "x": 12,
+          "y": 151,
+          "w": 366,
+          "h": 34,
+          "bottom": 185
+        },
+        "css": {
+          "font-size": "12.5px",
+          "font-weight": "600",
+          "color": "rgb(100, 116, 139)",
+          "padding": "10px 12px 4px",
+          "margin": "0px",
+          "letter-spacing": "normal",
+          "text-transform": "none"
+        },
+        "inlineDelay": ""
+      },
+      {
+        "text": "حسابك",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        },
+        "css": {
+          "font-size": "12.5px",
+          "font-weight": "600",
+          "color": "rgb(100, 116, 139)",
+          "padding": "10px 12px 4px",
+          "margin": "0px",
+          "letter-spacing": "normal",
+          "text-transform": "none"
+        },
+        "inlineDelay": ""
+      }
+    ],
+    "dividers": [
+      {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "bottom": 0
+        },
+        "cls": "shop-menu__divider",
+        "css": {
+          "height": "1px",
+          "margin": "8px 12px",
+          "background-color": "rgb(230, 236, 243)",
+          "border-top-width": "0px"
+        },
+        "inlineDelay": "0.2s"
+      },
+      {
+        "rect": {
+          "x": 12,
+          "y": 769,
+          "w": 366,
+          "h": 1,
+          "bottom": 770
+        },
+        "cls": "shop-menu__divider",
+        "css": {
+          "height": "1px",
+          "margin": "8px 12px 0px",
+          "background-color": "rgb(230, 236, 243)",
+          "border-top-width": "0px"
+        },
+        "inlineDelay": "0.52s"
+      }
+    ],
+    "theme": {
+      "x": 12,
+      "y": 778,
+      "w": 366,
+      "h": 54,
+      "bottom": 832
+    },
+    "themeCss": {
+      "display": "grid",
+      "grid-template-columns": "118.656px 118.672px 118.656px",
+      "gap": "0px",
+      "padding": "4px",
+      "margin": "8px 12px 12px",
+      "background-color": "rgb(248, 250, 252)",
+      "border-top-width": "1px",
+      "border-top-color": "rgb(230, 236, 243)",
+      "border-radius": "10px",
+      "transition-duration": "0s",
+      "transition-delay": "0s",
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    "themeBtns": [
+      {
+        "text": "فاتح",
+        "rect": {
+          "x": 254.34,
+          "y": 783,
+          "w": 118.66,
+          "h": 44,
+          "bottom": 827
+        },
+        "pressed": "false",
+        "active": false,
+        "css": {
+          "font-size": "13px",
+          "min-height": "44px",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "color": "rgb(100, 116, 139)",
+          "border-radius": "8px"
+        },
+        "icon": {
+          "x": 319.67,
+          "y": 797,
+          "w": 16,
+          "h": 16,
+          "bottom": 813
+        }
+      },
+      {
+        "text": "داكن",
+        "rect": {
+          "x": 135.67,
+          "y": 783,
+          "w": 118.67,
+          "h": 44,
+          "bottom": 827
+        },
+        "pressed": "false",
+        "active": false,
+        "css": {
+          "font-size": "13px",
+          "min-height": "44px",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "color": "rgb(100, 116, 139)",
+          "border-radius": "8px"
+        },
+        "icon": {
+          "x": 202.02,
+          "y": 797,
+          "w": 16,
+          "h": 16,
+          "bottom": 813
+        }
+      },
+      {
+        "text": "النظام",
+        "rect": {
+          "x": 17.02,
+          "y": 783,
+          "w": 118.66,
+          "h": 44,
+          "bottom": 827
+        },
+        "pressed": "true",
+        "active": true,
+        "css": {
+          "font-size": "13px",
+          "min-height": "44px",
+          "background-color": "rgba(0, 0, 0, 0)",
+          "color": "rgb(31, 95, 191)",
+          "border-radius": "8px"
+        },
+        "icon": {
+          "x": 86.84,
+          "y": 797,
+          "w": 16,
+          "h": 16,
+          "bottom": 813
+        }
+      }
+    ],
+    "themeThumb": {
+      "rect": {
+        "x": 17,
+        "y": 783,
+        "w": 119,
+        "h": 44,
+        "bottom": 827
+      },
+      "css": {
+        "width": "119px",
+        "height": "44px",
+        "background-color": "rgb(234, 241, 251)",
+        "transform": "matrix(1, 0, 0, 1, 4, 0)",
+        "border-radius": "8px"
+      }
+    },
+    "foot": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "bottom": 0
+    },
+    "footCss": {
+      "padding": "8px 12px 16px",
+      "margin": "0px",
+      "background-color": "rgb(255, 255, 255)",
+      "border-top-width": "0px",
+      "border-top-color": "rgb(51, 65, 85)",
+      "transition-duration": "0s",
+      "transition-delay": "0s",
+      "opacity": "1",
+      "transform": "none"
+    },
+    "footNote": null,
+    "cta": null,
+    "userBlock": {
+      "hidden": false,
+      "rect": {
+        "x": 12,
+        "y": 73,
+        "w": 366,
+        "h": 70,
+        "bottom": 143
+      },
+      "css": {
+        "padding": "12px",
+        "background-color": "rgb(234, 241, 251)",
+        "border-bottom-width": "0px"
+      }
+    },
+    "guestBlock": {
+      "hidden": true,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
+      }
+    },
+    "accountBlock": {
+      "hidden": false,
+      "rect": {
+        "x": 12,
+        "y": 443,
+        "w": 366,
+        "h": 250,
+        "bottom": 693
+      }
+    },
+    "counts": {
+      "links": 12,
+      "linksFullyInViewport": 12,
+      "linksInScrollArea": 10,
+      "labels": 2,
+      "dividers": 2,
+      "themeBtns": 3
+    },
+    "overflow": {
+      "docSW": 390,
+      "docCW": 390,
+      "drawerSW": 390,
+      "drawerCW": 390,
+      "themeSW": 364,
+      "themeCW": 364
+    },
+    "hdrVarTop": "65px"
+  }
+}

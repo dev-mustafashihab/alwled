@@ -1,0 +1,107 @@
+{
+ "console": [
+  {
+   "t": "error",
+   "x": "Failed to load resource: net::ERR_FAILED",
+   "k": "states"
+  },
+  {
+   "t": "error",
+   "x": "Failed to load resource: net::ERR_FAILED",
+   "k": "states"
+  }
+ ],
+ "failed": [],
+ "home": {
+  "390": {
+   "card": "177x321",
+   "media": "175x133",
+   "mediaH": "132.594px",
+   "details": "none",
+   "metaSpans": 3,
+   "headerH": 65,
+   "overflow": 0
+  },
+  "768": {
+   "card": "237x491",
+   "media": "235x235",
+   "mediaH": "235.328px",
+   "details": "flex",
+   "metaSpans": 3,
+   "headerH": 65,
+   "overflow": 0
+  },
+  "1366": {
+   "card": "280x512",
+   "media": "278x278",
+   "mediaH": "278px",
+   "details": "flex",
+   "metaSpans": 3,
+   "headerH": 74,
+   "overflow": 0
+  }
+ },
+ "related": {
+  "390": {
+   "card": "177x327",
+   "media": "175x140",
+   "details": "none",
+   "desc": "none",
+   "metaSpans": 3,
+   "marker": true,
+   "add": "151x44",
+   "overflow": 0
+  },
+  "768": {
+   "card": "237x325",
+   "media": "235x156",
+   "details": "none",
+   "desc": "none",
+   "metaSpans": 3,
+   "marker": true,
+   "add": "211x44",
+   "overflow": 0
+  },
+  "1366": {
+   "card": "280x357",
+   "media": "278x188",
+   "details": "none",
+   "desc": "none",
+   "metaSpans": 3,
+   "marker": true,
+   "add": "254x44",
+   "overflow": 0
+  }
+ },
+ "listing": {
+  "390": {
+   "card": "177x327",
+   "media": "175x140",
+   "overflow": 0
+  },
+  "768": {
+   "card": "237x325",
+   "media": "235x156",
+   "overflow": 0
+  },
+  "1366": {
+   "card": "280x357",
+   "media": "278x188",
+   "overflow": 0
+  }
+ },
+ "states": {
+  "loading": {
+   "busy": null,
+   "note": null,
+   "role": null,
+   "skelHidden": true,
+   "overflow": 0
+  },
+  "error": {
+   "role": null,
+   "title": null,
+   "retry": null
+  }
+ }
+}

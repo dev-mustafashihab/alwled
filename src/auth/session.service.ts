@@ -1,3 +1,4 @@
+import { randomUUID } from 'crypto';
 import { Injectable, UnauthorizedException, Logger } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { RefreshStatus } from '@prisma/client';
@@ -51,7 +52,8 @@ export class SessionService {
     const session = await this.prisma.refreshToken.create({
       data: {
         userId,
-        tokenHash: 'pending',
+        // placeholder فريد: القيمة الثابتة السابقة تسبّبت في تصادم unique عند تجديدين متزامنين
+        tokenHash: `pending:${randomUUID()}`,
         expiresAt: new Date(Date.now() + this.refreshTtlMs),
         ip: meta.ip ?? null,
         userAgent: meta.userAgent ? meta.userAgent.slice(0, 255) : null,
@@ -125,14 +127,21 @@ export class SessionService {
     }
 
     const { session: fresh, refreshToken } = await this.mint(payload.sub, meta);
-    await this.prisma.refreshToken.update({
-      where: { id: session.id },
+    // مطالبة ذرّية بالتوكن: تحديث مشروط بالحالة ACTIVE ⇒ تجديدان متزامنان لا يتخطّيان التحقق
+    const claim = await this.prisma.refreshToken.updateMany({
+      where: { id: session.id, status: RefreshStatus.ACTIVE },
       data: {
         status: RefreshStatus.USED,
         revokedAt: new Date(),
         replacedBySessionId: fresh.sessionId,
       },
     });
+    if (claim.count === 0) {
+      // سباق عميل (طلبان بالتوكن نفسه في اللحظة نفسها): نُبطل الجلسة الجديدة ونُعيد 401 بلا نكاية بالعائلة
+      await this.prisma.refreshToken.update({ where: { id: fresh.id }, data: { status: RefreshStatus.REVOKED, revokedAt: new Date() } });
+      this.logger.warn(`concurrent refresh lost the rotation race for user ${payload.sub} — returned 401 without family revocation`);
+      throw new UnauthorizedException('جلسة غير صالحة');
+    }
 
     const expiresIn = process.env.JWT_EXPIRES_IN ?? '15m';
     const accessToken = await this.jwt.signAsync(

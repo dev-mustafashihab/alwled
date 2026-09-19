@@ -120,6 +120,32 @@ describe('Login & sessions', () => {
     expect(res.body.message).toBe('بيانات الدخول غير صحيحة');
   });
 
+  it('handles concurrent refreshes with the same token without a 5xx (one 200, one 401)', async () => {
+    // Regression: two parallel refreshes used to collide on the unique token_hash placeholder and return 500.
+    const login = await api().post('/api/v1/auth/login').send({ phone: phoneA, password: PASSWORD });
+    expect(login.status).toBe(200);
+    const parallelToken = login.body.data.refreshToken;
+
+    const [first, second] = await Promise.all([
+      api().post('/api/v1/auth/refresh').send({ refreshToken: parallelToken }),
+      api().post('/api/v1/auth/refresh').send({ refreshToken: parallelToken }),
+    ]);
+
+    const statuses = [first.status, second.status].sort();
+    expect(statuses).toEqual([200, 401]);
+    expect([first.status, second.status]).not.toContain(500);
+
+    // The losing request must not tear down the winner's session family.
+    const winner = first.status === 200 ? first : second;
+    const keepAlive = await api().post('/api/v1/auth/refresh').send({ refreshToken: winner.body.data.refreshToken });
+    expect(keepAlive.status).toBe(200);
+
+    const relogin = await api().post('/api/v1/auth/login').send({ phone: phoneA, password: PASSWORD });
+    expect(relogin.status).toBe(200);
+    refresh1 = relogin.body.data.refreshToken;
+    access1 = relogin.body.data.accessToken;
+  });
+
   it('rotates the refresh token and invalidates the old one', async () => {
     const first = await api().post('/api/v1/auth/refresh').send({ refreshToken: refresh1 });
     expect(first.status).toBe(200);

@@ -1,0 +1,74 @@
+{
+ "w1024": {
+  "search": {
+   "error": "Page.fill: Timeout 6000ms exceeded.",
+   "visible": 0
+  },
+  "category": {
+   "error": "Page.select_option: Timeout 6000ms exceeded.",
+   "visible": 0
+  },
+  "brand": {
+   "error": "Page.select_option: Timeout 6000ms exceeded.",
+   "visible": 0
+  },
+  "sort": {
+   "error": "Page.select_option: Timeout 6000ms exceeded.",
+   "visible": 0
+  },
+  "price": {
+   "error": "Page.fill: Timeout 6000ms exceeded.",
+   "visible": 0
+  },
+  "instock": {
+   "error": "Page.check: Timeout 6000ms exceeded.",
+   "visible": 0
+  },
+  "offers": {
+   "error": "Page.check: Timeout 6000ms exceeded.",
+   "visible": 0
+  },
+  "reset": {
+   "changed": false,
+   "requests": [],
+   "cards": 2,
+   "count": "2 منتج"
+  }
+ },
+ "w1366": {
+  "search": {
+   "error": "Page.fill: Timeout 6000ms exceeded.",
+   "visible": 0
+  },
+  "category": {
+   "error": "Page.select_option: Timeout 6000ms exceeded.",
+   "visible": 0
+  },
+  "brand": {
+   "error": "Page.select_option: Timeout 6000ms exceeded.",
+   "visible": 0
+  },
+  "sort": {
+   "error": "Page.select_option: Timeout 6000ms exceeded.",
+   "visible": 0
+  },
+  "price": {
+   "error": "Page.fill: Timeout 6000ms exceeded.",
+   "visible": 0
+  },
+  "instock": {
+   "error": "Page.check: Timeout 6000ms exceeded.",
+   "visible": 0
+  },
+  "offers": {
+   "error": "Page.check: Timeout 6000ms exceeded.",
+   "visible": 0
+  },
+  "reset": {
+   "changed": false,
+   "requests": [],
+   "cards": 2,
+   "count": "2 منتج"
+  }
+ }
+}

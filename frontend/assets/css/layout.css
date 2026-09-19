@@ -13,7 +13,7 @@
 .app-sidebar {
   position: fixed;
   inset-block: 0;
-  inset-inline-end: 0;
+  inset-inline-start: 0; /* RTL: the navigation sits on the right (start) edge */
   width: var(--sidebar-w);
   z-index: var(--z-sidebar);
   display: flex;
@@ -189,14 +189,14 @@
 }
 
 .app--sidebar-collapsed .app-main {
-  margin-inline-end: var(--sidebar-w-collapsed);
+  margin-inline-start: var(--sidebar-w-collapsed);
 }
 
 /* ---------------------------------- main ----------------------------------- */
 .app-main {
   flex: 1 1 auto;
   min-width: 0;
-  margin-inline-end: var(--sidebar-w);
+  margin-inline-start: var(--sidebar-w);
   display: flex;
   flex-direction: column;
   transition: margin var(--dur-slow) var(--ease-out);
@@ -286,26 +286,27 @@
 
 @media (max-width: 1024px) {
   .app-sidebar {
-    inset-inline-end: auto;
     inset-inline-start: 0;
-    transform: translateX(-100%);
+    transform: translateX(100%); /* RTL: slide out to the right */
     z-index: calc(var(--z-drawer) + 1);
     box-shadow: var(--shadow-lg);
+    visibility: hidden; /* a closed drawer must never intercept clicks */
+    transition: transform var(--dur-slow) var(--ease-out), visibility 0s linear var(--dur-slow);
   }
 
-  [dir='rtl'] .app-sidebar {
-    transform: translateX(100%);
-    inset-inline-start: auto;
-    inset-inline-end: 0;
+  html[dir='ltr'] .app-sidebar {
+    transform: translateX(-100%);
   }
 
   .app-sidebar.is-open {
     transform: translateX(0);
+    visibility: visible;
+    transition: transform var(--dur-slow) var(--ease-out), visibility 0s;
   }
 
   .app-main,
   .app--sidebar-collapsed .app-main {
-    margin-inline-end: 0;
+    margin-inline-start: 0; /* mobile: the drawer overlays the content instead of pushing it */
   }
 
   .app-content {

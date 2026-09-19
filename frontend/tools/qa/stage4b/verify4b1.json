@@ -1,0 +1,2282 @@
+{
+ "console": [],
+ "failed": [],
+ "matrix": {
+  "360": {
+   "vw": 360,
+   "cols": 1,
+   "gallery": {
+    "w": 336,
+    "h": 336,
+    "x": 12,
+    "y": 163
+   },
+   "stage": {
+    "w": 336,
+    "h": 336,
+    "x": 12,
+    "y": 163
+   },
+   "stageAspect": "1 / 1",
+   "stageMaxW": "600px",
+   "stageMargin": "0px",
+   "thumb": null,
+   "thumbActive": null,
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 152,
+     "h": 48,
+     "x": 12,
+     "y": 840
+    },
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "x": 176,
+    "y": 842
+   },
+   "qtyBtn": {
+    "w": 44,
+    "h": 44,
+    "x": 304,
+    "y": 842
+   },
+   "note": false,
+   "noteCount": 0,
+   "buyChildren": [
+    "shop-card__meta",
+    "shop-buy__title",
+    "shop-buy__price",
+    "shop-buy__facts",
+    "shop-buy__actions"
+   ],
+   "facts": [
+    "متوفر",
+    "علامة تجريبية أ",
+    "تصنيف تجريبي — ثلاجات",
+    "DEMO-REF-001"
+   ],
+   "overflow": 0,
+   "docH": 1910,
+   "body": "rgb(248, 250, 252)"
+  },
+  "390": {
+   "vw": 390,
+   "cols": 1,
+   "gallery": {
+    "w": 366,
+    "h": 366,
+    "x": 12,
+    "y": 163
+   },
+   "stage": {
+    "w": 366,
+    "h": 366,
+    "x": 12,
+    "y": 163
+   },
+   "stageAspect": "1 / 1",
+   "stageMaxW": "600px",
+   "stageMargin": "0px",
+   "thumb": null,
+   "thumbActive": null,
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 182,
+     "h": 48,
+     "x": 12,
+     "y": 840
+    },
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "x": 206,
+    "y": 842
+   },
+   "qtyBtn": {
+    "w": 44,
+    "h": 44,
+    "x": 334,
+    "y": 842
+   },
+   "note": false,
+   "noteCount": 0,
+   "buyChildren": [
+    "shop-card__meta",
+    "shop-buy__title",
+    "shop-buy__price",
+    "shop-buy__facts",
+    "shop-buy__actions"
+   ],
+   "facts": [
+    "متوفر",
+    "علامة تجريبية أ",
+    "تصنيف تجريبي — ثلاجات",
+    "DEMO-REF-001"
+   ],
+   "overflow": 0,
+   "docH": 1903,
+   "body": "rgb(248, 250, 252)"
+  },
+  "430": {
+   "vw": 430,
+   "cols": 1,
+   "gallery": {
+    "w": 406,
+    "h": 406,
+    "x": 12,
+    "y": 163
+   },
+   "stage": {
+    "w": 406,
+    "h": 406,
+    "x": 12,
+    "y": 163
+   },
+   "stageAspect": "1 / 1",
+   "stageMaxW": "600px",
+   "stageMargin": "0px",
+   "thumb": null,
+   "thumbActive": null,
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 222,
+     "h": 48,
+     "x": 12,
+     "y": 840
+    },
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "x": 246,
+    "y": 842
+   },
+   "qtyBtn": {
+    "w": 44,
+    "h": 44,
+    "x": 374,
+    "y": 842
+   },
+   "note": false,
+   "noteCount": 0,
+   "buyChildren": [
+    "shop-card__meta",
+    "shop-buy__title",
+    "shop-buy__price",
+    "shop-buy__facts",
+    "shop-buy__actions"
+   ],
+   "facts": [
+    "متوفر",
+    "علامة تجريبية أ",
+    "تصنيف تجريبي — ثلاجات",
+    "DEMO-REF-001"
+   ],
+   "overflow": 0,
+   "docH": 1943,
+   "body": "rgb(248, 250, 252)"
+  },
+  "600": {
+   "vw": 600,
+   "cols": 1,
+   "gallery": {
+    "w": 576,
+    "h": 576,
+    "x": 12,
+    "y": 134
+   },
+   "stage": {
+    "w": 576,
+    "h": 576,
+    "x": 12,
+    "y": 134
+   },
+   "stageAspect": "1 / 1",
+   "stageMaxW": "600px",
+   "stageMargin": "0px",
+   "thumb": null,
+   "thumbActive": null,
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 392,
+     "h": 48,
+     "x": 12,
+     "y": 840
+    },
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "x": 416,
+    "y": 842
+   },
+   "qtyBtn": {
+    "w": 44,
+    "h": 44,
+    "x": 544,
+    "y": 842
+   },
+   "note": false,
+   "noteCount": 0,
+   "buyChildren": [
+    "shop-card__meta",
+    "shop-buy__title",
+    "shop-buy__price",
+    "shop-buy__facts",
+    "shop-buy__actions"
+   ],
+   "facts": [
+    "متوفر",
+    "علامة تجريبية أ",
+    "تصنيف تجريبي — ثلاجات",
+    "DEMO-REF-001"
+   ],
+   "overflow": 0,
+   "docH": 2095,
+   "body": "rgb(248, 250, 252)"
+  },
+  "768": {
+   "vw": 768,
+   "cols": 1,
+   "gallery": {
+    "w": 600,
+    "h": 600,
+    "x": 84,
+    "y": 135
+   },
+   "stage": {
+    "w": 600,
+    "h": 600,
+    "x": 84,
+    "y": 135
+   },
+   "stageAspect": "1 / 1",
+   "stageMaxW": "600px",
+   "stageMargin": "0px",
+   "thumb": null,
+   "thumbActive": null,
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 433,
+     "y": 1106
+    },
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "x": 580,
+    "y": 1108
+   },
+   "qtyBtn": {
+    "w": 44,
+    "h": 44,
+    "x": 708,
+    "y": 1108
+   },
+   "note": false,
+   "noteCount": 0,
+   "buyChildren": [
+    "shop-card__meta",
+    "shop-buy__title",
+    "shop-buy__price",
+    "shop-buy__facts",
+    "shop-buy__actions"
+   ],
+   "facts": [
+    "متوفر",
+    "علامة تجريبية أ",
+    "تصنيف تجريبي — ثلاجات",
+    "DEMO-REF-001"
+   ],
+   "overflow": 0,
+   "docH": 2123,
+   "body": "rgb(248, 250, 252)"
+  },
+  "769": {
+   "vw": 769,
+   "cols": 1,
+   "gallery": {
+    "w": 600,
+    "h": 600,
+    "x": 85,
+    "y": 135
+   },
+   "stage": {
+    "w": 600,
+    "h": 600,
+    "x": 85,
+    "y": 135
+   },
+   "stageAspect": "1 / 1",
+   "stageMaxW": "600px",
+   "stageMargin": "0px",
+   "thumb": null,
+   "thumbActive": null,
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 434,
+     "y": 1106
+    },
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "x": 581,
+    "y": 1108
+   },
+   "qtyBtn": {
+    "w": 44,
+    "h": 44,
+    "x": 709,
+    "y": 1108
+   },
+   "note": false,
+   "noteCount": 0,
+   "buyChildren": [
+    "shop-card__meta",
+    "shop-buy__title",
+    "shop-buy__price",
+    "shop-buy__facts",
+    "shop-buy__actions"
+   ],
+   "facts": [
+    "متوفر",
+    "علامة تجريبية أ",
+    "تصنيف تجريبي — ثلاجات",
+    "DEMO-REF-001"
+   ],
+   "overflow": 0,
+   "docH": 2123,
+   "body": "rgb(248, 250, 252)"
+  },
+  "900": {
+   "vw": 900,
+   "cols": 1,
+   "gallery": {
+    "w": 600,
+    "h": 600,
+    "x": 150,
+    "y": 135
+   },
+   "stage": {
+    "w": 600,
+    "h": 600,
+    "x": 150,
+    "y": 135
+   },
+   "stageAspect": "1 / 1",
+   "stageMaxW": "600px",
+   "stageMargin": "0px",
+   "thumb": null,
+   "thumbActive": null,
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 565,
+     "y": 1110
+    },
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "x": 712,
+    "y": 1112
+   },
+   "qtyBtn": {
+    "w": 44,
+    "h": 44,
+    "x": 840,
+    "y": 1112
+   },
+   "note": false,
+   "noteCount": 0,
+   "buyChildren": [
+    "shop-card__meta",
+    "shop-buy__title",
+    "shop-buy__price",
+    "shop-buy__facts",
+    "shop-buy__actions"
+   ],
+   "facts": [
+    "متوفر",
+    "علامة تجريبية أ",
+    "تصنيف تجريبي — ثلاجات",
+    "DEMO-REF-001"
+   ],
+   "overflow": 0,
+   "docH": 2109,
+   "body": "rgb(248, 250, 252)"
+  },
+  "1023": {
+   "vw": 1023,
+   "cols": 1,
+   "gallery": {
+    "w": 600,
+    "h": 600,
+    "x": 212,
+    "y": 135
+   },
+   "stage": {
+    "w": 600,
+    "h": 600,
+    "x": 212,
+    "y": 135
+   },
+   "stageAspect": "1 / 1",
+   "stageMaxW": "600px",
+   "stageMargin": "0px",
+   "thumb": null,
+   "thumbActive": null,
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 688,
+     "y": 1115
+    },
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "x": 835,
+    "y": 1117
+   },
+   "qtyBtn": {
+    "w": 44,
+    "h": 44,
+    "x": 963,
+    "y": 1117
+   },
+   "note": false,
+   "noteCount": 0,
+   "buyChildren": [
+    "shop-card__meta",
+    "shop-buy__title",
+    "shop-buy__price",
+    "shop-buy__facts",
+    "shop-buy__actions"
+   ],
+   "facts": [
+    "متوفر",
+    "علامة تجريبية أ",
+    "تصنيف تجريبي — ثلاجات",
+    "DEMO-REF-001"
+   ],
+   "overflow": 0,
+   "docH": 2151,
+   "body": "rgb(248, 250, 252)"
+  },
+  "1024": {
+   "vw": 1024,
+   "cols": 1,
+   "gallery": {
+    "w": 600,
+    "h": 600,
+    "x": 212,
+    "y": 144
+   },
+   "stage": {
+    "w": 600,
+    "h": 600,
+    "x": 212,
+    "y": 144
+   },
+   "stageAspect": "1 / 1",
+   "stageMaxW": "600px",
+   "stageMargin": "0px",
+   "thumb": null,
+   "thumbActive": null,
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 689,
+     "y": 1124
+    },
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "x": 836,
+    "y": 1126
+   },
+   "qtyBtn": {
+    "w": 44,
+    "h": 44,
+    "x": 964,
+    "y": 1126
+   },
+   "note": false,
+   "noteCount": 0,
+   "buyChildren": [
+    "shop-card__meta",
+    "shop-buy__title",
+    "shop-buy__price",
+    "shop-buy__facts",
+    "shop-buy__actions"
+   ],
+   "facts": [
+    "متوفر",
+    "علامة تجريبية أ",
+    "تصنيف تجريبي — ثلاجات",
+    "DEMO-REF-001"
+   ],
+   "overflow": 0,
+   "docH": 2160,
+   "body": "rgb(248, 250, 252)"
+  },
+  "1280": {
+   "vw": 1280,
+   "cols": 2,
+   "gallery": {
+    "w": 586,
+    "h": 586,
+    "x": 638,
+    "y": 144
+   },
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "x": 638,
+    "y": 144
+   },
+   "stageAspect": "1 / 1",
+   "stageMaxW": "none",
+   "stageMargin": "0px",
+   "thumb": null,
+   "thumbActive": null,
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 295,
+     "y": 507
+    },
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "x": 442,
+    "y": 509
+   },
+   "qtyBtn": {
+    "w": 44,
+    "h": 44,
+    "x": 570,
+    "y": 509
+   },
+   "note": false,
+   "noteCount": 0,
+   "buyChildren": [
+    "shop-card__meta",
+    "shop-buy__title",
+    "shop-buy__price",
+    "shop-buy__facts",
+    "shop-buy__actions"
+   ],
+   "facts": [
+    "متوفر",
+    "علامة تجريبية أ",
+    "تصنيف تجريبي — ثلاجات",
+    "DEMO-REF-001"
+   ],
+   "overflow": 0,
+   "docH": 1678,
+   "body": "rgb(248, 250, 252)"
+  },
+  "1366": {
+   "vw": 1366,
+   "cols": 2,
+   "gallery": {
+    "w": 586,
+    "h": 586,
+    "x": 681,
+    "y": 144
+   },
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "x": 681,
+    "y": 144
+   },
+   "stageAspect": "1 / 1",
+   "stageMaxW": "none",
+   "stageMargin": "0px",
+   "thumb": null,
+   "thumbActive": null,
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 338,
+     "y": 507
+    },
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "x": 485,
+    "y": 509
+   },
+   "qtyBtn": {
+    "w": 44,
+    "h": 44,
+    "x": 613,
+    "y": 509
+   },
+   "note": false,
+   "noteCount": 0,
+   "buyChildren": [
+    "shop-card__meta",
+    "shop-buy__title",
+    "shop-buy__price",
+    "shop-buy__facts",
+    "shop-buy__actions"
+   ],
+   "facts": [
+    "متوفر",
+    "علامة تجريبية أ",
+    "تصنيف تجريبي — ثلاجات",
+    "DEMO-REF-001"
+   ],
+   "overflow": 0,
+   "docH": 1678,
+   "body": "rgb(248, 250, 252)"
+  },
+  "1440": {
+   "vw": 1440,
+   "cols": 2,
+   "gallery": {
+    "w": 586,
+    "h": 586,
+    "x": 718,
+    "y": 144
+   },
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "x": 718,
+    "y": 144
+   },
+   "stageAspect": "1 / 1",
+   "stageMaxW": "none",
+   "stageMargin": "0px",
+   "thumb": null,
+   "thumbActive": null,
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 375,
+     "y": 507
+    },
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "x": 522,
+    "y": 509
+   },
+   "qtyBtn": {
+    "w": 44,
+    "h": 44,
+    "x": 650,
+    "y": 509
+   },
+   "note": false,
+   "noteCount": 0,
+   "buyChildren": [
+    "shop-card__meta",
+    "shop-buy__title",
+    "shop-buy__price",
+    "shop-buy__facts",
+    "shop-buy__actions"
+   ],
+   "facts": [
+    "متوفر",
+    "علامة تجريبية أ",
+    "تصنيف تجريبي — ثلاجات",
+    "DEMO-REF-001"
+   ],
+   "overflow": 0,
+   "docH": 1678,
+   "body": "rgb(248, 250, 252)"
+  },
+  "1920": {
+   "vw": 1920,
+   "cols": 2,
+   "gallery": {
+    "w": 586,
+    "h": 586,
+    "x": 958,
+    "y": 144
+   },
+   "stage": {
+    "w": 586,
+    "h": 586,
+    "x": 958,
+    "y": 144
+   },
+   "stageAspect": "1 / 1",
+   "stageMaxW": "none",
+   "stageMargin": "0px",
+   "thumb": null,
+   "thumbActive": null,
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 135,
+     "h": 48,
+     "x": 615,
+     "y": 507
+    },
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "x": 762,
+    "y": 509
+   },
+   "qtyBtn": {
+    "w": 44,
+    "h": 44,
+    "x": 890,
+    "y": 509
+   },
+   "note": false,
+   "noteCount": 0,
+   "buyChildren": [
+    "shop-card__meta",
+    "shop-buy__title",
+    "shop-buy__price",
+    "shop-buy__facts",
+    "shop-buy__actions"
+   ],
+   "facts": [
+    "متوفر",
+    "علامة تجريبية أ",
+    "تصنيف تجريبي — ثلاجات",
+    "DEMO-REF-001"
+   ],
+   "overflow": 0,
+   "docH": 1678,
+   "body": "rgb(248, 250, 252)"
+  }
+ },
+ "theme": {
+  "390_light_632": {
+   "pdp": {
+    "vw": 390,
+    "cols": 1,
+    "gallery": {
+     "w": 366,
+     "h": 366,
+     "x": 12,
+     "y": 163
+    },
+    "stage": {
+     "w": 366,
+     "h": 366,
+     "x": 12,
+     "y": 163
+    },
+    "stageAspect": "1 / 1",
+    "stageMaxW": "600px",
+    "stageMargin": "0px",
+    "thumb": null,
+    "thumbActive": null,
+    "add": {
+     "text": "أضف إلى السلة",
+     "disabled": false,
+     "box": {
+      "w": 182,
+      "h": 48,
+      "x": 12,
+      "y": 840
+     },
+     "bg": "rgb(31, 95, 191)",
+     "color": "rgb(255, 255, 255)"
+    },
+    "qty": {
+     "w": 172,
+     "h": 44,
+     "x": 206,
+     "y": 842
+    },
+    "qtyBtn": {
+     "w": 44,
+     "h": 44,
+     "x": 334,
+     "y": 842
+    },
+    "note": false,
+    "noteCount": 0,
+    "buyChildren": [
+     "shop-card__meta",
+     "shop-buy__title",
+     "shop-buy__price",
+     "shop-buy__facts",
+     "shop-buy__actions"
+    ],
+    "facts": [
+     "متوفر",
+     "علامة تجريبية أ",
+     "تصنيف تجريبي — ثلاجات",
+     "DEMO-REF-001"
+    ],
+    "overflow": 0,
+    "docH": 1903,
+    "body": "rgb(248, 250, 252)"
+   },
+   "cta": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)",
+    "opacity": "1",
+    "border": "rgb(31, 95, 191)",
+    "cursor": "pointer",
+    "box": "182x48",
+    "contrast": 6.09,
+    "bgResolved": "rgb(31,95,191)"
+   }
+  },
+  "390_light_633": {
+   "pdp": {
+    "vw": 390,
+    "cols": 1,
+    "gallery": {
+     "w": 366,
+     "h": 366,
+     "x": 12,
+     "y": 163
+    },
+    "stage": {
+     "w": 366,
+     "h": 366,
+     "x": 12,
+     "y": 163
+    },
+    "stageAspect": "1 / 1",
+    "stageMaxW": "600px",
+    "stageMargin": "0px",
+    "thumb": null,
+    "thumbActive": null,
+    "add": {
+     "text": "غير متوفر حاليًا",
+     "disabled": true,
+     "box": {
+      "w": 182,
+      "h": 48,
+      "x": 12,
+      "y": 840
+     },
+     "bg": "rgb(248, 250, 252)",
+     "color": "rgb(100, 116, 139)"
+    },
+    "qty": {
+     "w": 172,
+     "h": 44,
+     "x": 206,
+     "y": 842
+    },
+    "qtyBtn": {
+     "w": 44,
+     "h": 44,
+     "x": 334,
+     "y": 842
+    },
+    "note": false,
+    "noteCount": 0,
+    "buyChildren": [
+     "shop-card__meta",
+     "shop-buy__title",
+     "shop-buy__price",
+     "shop-buy__facts",
+     "shop-buy__actions"
+    ],
+    "facts": [
+     "غير متوفر حاليًا",
+     "علامة تجريبية ب",
+     "تصنيف تجريبي — ثلاجات",
+     "DEMO-REF-002"
+    ],
+    "overflow": 0,
+    "docH": 1931,
+    "body": "rgb(248, 250, 252)"
+   },
+   "cta": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "bg": "rgb(248, 250, 252)",
+    "color": "rgb(100, 116, 139)",
+    "opacity": "1",
+    "border": "rgb(203, 213, 225)",
+    "cursor": "not-allowed",
+    "box": "182x48",
+    "contrast": 4.55,
+    "bgResolved": "rgb(248,250,252)"
+   }
+  },
+  "390_dark_632": {
+   "pdp": {
+    "vw": 390,
+    "cols": 1,
+    "gallery": {
+     "w": 366,
+     "h": 366,
+     "x": 12,
+     "y": 163
+    },
+    "stage": {
+     "w": 366,
+     "h": 366,
+     "x": 12,
+     "y": 163
+    },
+    "stageAspect": "1 / 1",
+    "stageMaxW": "600px",
+    "stageMargin": "0px",
+    "thumb": null,
+    "thumbActive": null,
+    "add": {
+     "text": "أضف إلى السلة",
+     "disabled": false,
+     "box": {
+      "w": 182,
+      "h": 48,
+      "x": 12,
+      "y": 840
+     },
+     "bg": "rgb(31, 95, 191)",
+     "color": "rgb(255, 255, 255)"
+    },
+    "qty": {
+     "w": 172,
+     "h": 44,
+     "x": 206,
+     "y": 842
+    },
+    "qtyBtn": {
+     "w": 44,
+     "h": 44,
+     "x": 334,
+     "y": 842
+    },
+    "note": false,
+    "noteCount": 0,
+    "buyChildren": [
+     "shop-card__meta",
+     "shop-buy__title",
+     "shop-buy__price",
+     "shop-buy__facts",
+     "shop-buy__actions"
+    ],
+    "facts": [
+     "متوفر",
+     "علامة تجريبية أ",
+     "تصنيف تجريبي — ثلاجات",
+     "DEMO-REF-001"
+    ],
+    "overflow": 0,
+    "docH": 1903,
+    "body": "rgb(10, 18, 32)"
+   },
+   "cta": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)",
+    "opacity": "1",
+    "border": "rgb(31, 95, 191)",
+    "cursor": "pointer",
+    "box": "182x48",
+    "contrast": 6.09,
+    "bgResolved": "rgb(31,95,191)"
+   }
+  },
+  "390_dark_633": {
+   "pdp": {
+    "vw": 390,
+    "cols": 1,
+    "gallery": {
+     "w": 366,
+     "h": 366,
+     "x": 12,
+     "y": 163
+    },
+    "stage": {
+     "w": 366,
+     "h": 366,
+     "x": 12,
+     "y": 163
+    },
+    "stageAspect": "1 / 1",
+    "stageMaxW": "600px",
+    "stageMargin": "0px",
+    "thumb": null,
+    "thumbActive": null,
+    "add": {
+     "text": "غير متوفر حاليًا",
+     "disabled": true,
+     "box": {
+      "w": 182,
+      "h": 48,
+      "x": 12,
+      "y": 840
+     },
+     "bg": "rgb(15, 24, 38)",
+     "color": "rgb(148, 163, 184)"
+    },
+    "qty": {
+     "w": 172,
+     "h": 44,
+     "x": 206,
+     "y": 842
+    },
+    "qtyBtn": {
+     "w": 44,
+     "h": 44,
+     "x": 334,
+     "y": 842
+    },
+    "note": false,
+    "noteCount": 0,
+    "buyChildren": [
+     "shop-card__meta",
+     "shop-buy__title",
+     "shop-buy__price",
+     "shop-buy__facts",
+     "shop-buy__actions"
+    ],
+    "facts": [
+     "غير متوفر حاليًا",
+     "علامة تجريبية ب",
+     "تصنيف تجريبي — ثلاجات",
+     "DEMO-REF-002"
+    ],
+    "overflow": 0,
+    "docH": 1931,
+    "body": "rgb(10, 18, 32)"
+   },
+   "cta": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "bg": "rgb(15, 24, 38)",
+    "color": "rgb(148, 163, 184)",
+    "opacity": "1",
+    "border": "rgb(44, 61, 89)",
+    "cursor": "not-allowed",
+    "box": "182x48",
+    "contrast": 6.95,
+    "bgResolved": "rgb(15,24,38)"
+   }
+  },
+  "768_light_632": {
+   "pdp": {
+    "vw": 768,
+    "cols": 1,
+    "gallery": {
+     "w": 600,
+     "h": 600,
+     "x": 84,
+     "y": 135
+    },
+    "stage": {
+     "w": 600,
+     "h": 600,
+     "x": 84,
+     "y": 135
+    },
+    "stageAspect": "1 / 1",
+    "stageMaxW": "600px",
+    "stageMargin": "0px",
+    "thumb": null,
+    "thumbActive": null,
+    "add": {
+     "text": "أضف إلى السلة",
+     "disabled": false,
+     "box": {
+      "w": 135,
+      "h": 48,
+      "x": 433,
+      "y": 1106
+     },
+     "bg": "rgb(31, 95, 191)",
+     "color": "rgb(255, 255, 255)"
+    },
+    "qty": {
+     "w": 172,
+     "h": 44,
+     "x": 580,
+     "y": 1108
+    },
+    "qtyBtn": {
+     "w": 44,
+     "h": 44,
+     "x": 708,
+     "y": 1108
+    },
+    "note": false,
+    "noteCount": 0,
+    "buyChildren": [
+     "shop-card__meta",
+     "shop-buy__title",
+     "shop-buy__price",
+     "shop-buy__facts",
+     "shop-buy__actions"
+    ],
+    "facts": [
+     "متوفر",
+     "علامة تجريبية أ",
+     "تصنيف تجريبي — ثلاجات",
+     "DEMO-REF-001"
+    ],
+    "overflow": 0,
+    "docH": 2123,
+    "body": "rgb(248, 250, 252)"
+   },
+   "cta": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)",
+    "opacity": "1",
+    "border": "rgb(31, 95, 191)",
+    "cursor": "pointer",
+    "box": "135x48",
+    "contrast": 6.09,
+    "bgResolved": "rgb(31,95,191)"
+   }
+  },
+  "768_light_633": {
+   "pdp": {
+    "vw": 768,
+    "cols": 1,
+    "gallery": {
+     "w": 600,
+     "h": 600,
+     "x": 84,
+     "y": 135
+    },
+    "stage": {
+     "w": 600,
+     "h": 600,
+     "x": 84,
+     "y": 135
+    },
+    "stageAspect": "1 / 1",
+    "stageMaxW": "600px",
+    "stageMargin": "0px",
+    "thumb": null,
+    "thumbActive": null,
+    "add": {
+     "text": "غير متوفر حاليًا",
+     "disabled": true,
+     "box": {
+      "w": 131,
+      "h": 48,
+      "x": 437,
+      "y": 1106
+     },
+     "bg": "rgb(248, 250, 252)",
+     "color": "rgb(100, 116, 139)"
+    },
+    "qty": {
+     "w": 172,
+     "h": 44,
+     "x": 580,
+     "y": 1108
+    },
+    "qtyBtn": {
+     "w": 44,
+     "h": 44,
+     "x": 708,
+     "y": 1108
+    },
+    "note": false,
+    "noteCount": 0,
+    "buyChildren": [
+     "shop-card__meta",
+     "shop-buy__title",
+     "shop-buy__price",
+     "shop-buy__facts",
+     "shop-buy__actions"
+    ],
+    "facts": [
+     "غير متوفر حاليًا",
+     "علامة تجريبية ب",
+     "تصنيف تجريبي — ثلاجات",
+     "DEMO-REF-002"
+    ],
+    "overflow": 0,
+    "docH": 2123,
+    "body": "rgb(248, 250, 252)"
+   },
+   "cta": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "bg": "rgb(248, 250, 252)",
+    "color": "rgb(100, 116, 139)",
+    "opacity": "1",
+    "border": "rgb(203, 213, 225)",
+    "cursor": "not-allowed",
+    "box": "131x48",
+    "contrast": 4.55,
+    "bgResolved": "rgb(248,250,252)"
+   }
+  },
+  "768_dark_632": {
+   "pdp": {
+    "vw": 768,
+    "cols": 1,
+    "gallery": {
+     "w": 600,
+     "h": 600,
+     "x": 84,
+     "y": 135
+    },
+    "stage": {
+     "w": 600,
+     "h": 600,
+     "x": 84,
+     "y": 135
+    },
+    "stageAspect": "1 / 1",
+    "stageMaxW": "600px",
+    "stageMargin": "0px",
+    "thumb": null,
+    "thumbActive": null,
+    "add": {
+     "text": "أضف إلى السلة",
+     "disabled": false,
+     "box": {
+      "w": 135,
+      "h": 48,
+      "x": 433,
+      "y": 1106
+     },
+     "bg": "rgb(31, 95, 191)",
+     "color": "rgb(255, 255, 255)"
+    },
+    "qty": {
+     "w": 172,
+     "h": 44,
+     "x": 580,
+     "y": 1108
+    },
+    "qtyBtn": {
+     "w": 44,
+     "h": 44,
+     "x": 708,
+     "y": 1108
+    },
+    "note": false,
+    "noteCount": 0,
+    "buyChildren": [
+     "shop-card__meta",
+     "shop-buy__title",
+     "shop-buy__price",
+     "shop-buy__facts",
+     "shop-buy__actions"
+    ],
+    "facts": [
+     "متوفر",
+     "علامة تجريبية أ",
+     "تصنيف تجريبي — ثلاجات",
+     "DEMO-REF-001"
+    ],
+    "overflow": 0,
+    "docH": 2123,
+    "body": "rgb(10, 18, 32)"
+   },
+   "cta": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)",
+    "opacity": "1",
+    "border": "rgb(31, 95, 191)",
+    "cursor": "pointer",
+    "box": "135x48",
+    "contrast": 6.09,
+    "bgResolved": "rgb(31,95,191)"
+   }
+  },
+  "768_dark_633": {
+   "pdp": {
+    "vw": 768,
+    "cols": 1,
+    "gallery": {
+     "w": 600,
+     "h": 600,
+     "x": 84,
+     "y": 135
+    },
+    "stage": {
+     "w": 600,
+     "h": 600,
+     "x": 84,
+     "y": 135
+    },
+    "stageAspect": "1 / 1",
+    "stageMaxW": "600px",
+    "stageMargin": "0px",
+    "thumb": null,
+    "thumbActive": null,
+    "add": {
+     "text": "غير متوفر حاليًا",
+     "disabled": true,
+     "box": {
+      "w": 131,
+      "h": 48,
+      "x": 437,
+      "y": 1106
+     },
+     "bg": "rgb(15, 24, 38)",
+     "color": "rgb(148, 163, 184)"
+    },
+    "qty": {
+     "w": 172,
+     "h": 44,
+     "x": 580,
+     "y": 1108
+    },
+    "qtyBtn": {
+     "w": 44,
+     "h": 44,
+     "x": 708,
+     "y": 1108
+    },
+    "note": false,
+    "noteCount": 0,
+    "buyChildren": [
+     "shop-card__meta",
+     "shop-buy__title",
+     "shop-buy__price",
+     "shop-buy__facts",
+     "shop-buy__actions"
+    ],
+    "facts": [
+     "غير متوفر حاليًا",
+     "علامة تجريبية ب",
+     "تصنيف تجريبي — ثلاجات",
+     "DEMO-REF-002"
+    ],
+    "overflow": 0,
+    "docH": 2123,
+    "body": "rgb(10, 18, 32)"
+   },
+   "cta": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "bg": "rgb(15, 24, 38)",
+    "color": "rgb(148, 163, 184)",
+    "opacity": "1",
+    "border": "rgb(44, 61, 89)",
+    "cursor": "not-allowed",
+    "box": "131x48",
+    "contrast": 6.95,
+    "bgResolved": "rgb(15,24,38)"
+   }
+  },
+  "1024_light_632": {
+   "pdp": {
+    "vw": 1024,
+    "cols": 1,
+    "gallery": {
+     "w": 600,
+     "h": 600,
+     "x": 212,
+     "y": 144
+    },
+    "stage": {
+     "w": 600,
+     "h": 600,
+     "x": 212,
+     "y": 144
+    },
+    "stageAspect": "1 / 1",
+    "stageMaxW": "600px",
+    "stageMargin": "0px",
+    "thumb": null,
+    "thumbActive": null,
+    "add": {
+     "text": "أضف إلى السلة",
+     "disabled": false,
+     "box": {
+      "w": 135,
+      "h": 48,
+      "x": 689,
+      "y": 1124
+     },
+     "bg": "rgb(31, 95, 191)",
+     "color": "rgb(255, 255, 255)"
+    },
+    "qty": {
+     "w": 172,
+     "h": 44,
+     "x": 836,
+     "y": 1126
+    },
+    "qtyBtn": {
+     "w": 44,
+     "h": 44,
+     "x": 964,
+     "y": 1126
+    },
+    "note": false,
+    "noteCount": 0,
+    "buyChildren": [
+     "shop-card__meta",
+     "shop-buy__title",
+     "shop-buy__price",
+     "shop-buy__facts",
+     "shop-buy__actions"
+    ],
+    "facts": [
+     "متوفر",
+     "علامة تجريبية أ",
+     "تصنيف تجريبي — ثلاجات",
+     "DEMO-REF-001"
+    ],
+    "overflow": 0,
+    "docH": 2160,
+    "body": "rgb(248, 250, 252)"
+   },
+   "cta": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)",
+    "opacity": "1",
+    "border": "rgb(31, 95, 191)",
+    "cursor": "pointer",
+    "box": "135x48",
+    "contrast": 6.09,
+    "bgResolved": "rgb(31,95,191)"
+   }
+  },
+  "1024_light_633": {
+   "pdp": {
+    "vw": 1024,
+    "cols": 1,
+    "gallery": {
+     "w": 600,
+     "h": 600,
+     "x": 212,
+     "y": 144
+    },
+    "stage": {
+     "w": 600,
+     "h": 600,
+     "x": 212,
+     "y": 144
+    },
+    "stageAspect": "1 / 1",
+    "stageMaxW": "600px",
+    "stageMargin": "0px",
+    "thumb": null,
+    "thumbActive": null,
+    "add": {
+     "text": "غير متوفر حاليًا",
+     "disabled": true,
+     "box": {
+      "w": 131,
+      "h": 48,
+      "x": 693,
+      "y": 1124
+     },
+     "bg": "rgb(248, 250, 252)",
+     "color": "rgb(100, 116, 139)"
+    },
+    "qty": {
+     "w": 172,
+     "h": 44,
+     "x": 836,
+     "y": 1126
+    },
+    "qtyBtn": {
+     "w": 44,
+     "h": 44,
+     "x": 964,
+     "y": 1126
+    },
+    "note": false,
+    "noteCount": 0,
+    "buyChildren": [
+     "shop-card__meta",
+     "shop-buy__title",
+     "shop-buy__price",
+     "shop-buy__facts",
+     "shop-buy__actions"
+    ],
+    "facts": [
+     "غير متوفر حاليًا",
+     "علامة تجريبية ب",
+     "تصنيف تجريبي — ثلاجات",
+     "DEMO-REF-002"
+    ],
+    "overflow": 0,
+    "docH": 2160,
+    "body": "rgb(248, 250, 252)"
+   },
+   "cta": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "bg": "rgb(248, 250, 252)",
+    "color": "rgb(100, 116, 139)",
+    "opacity": "1",
+    "border": "rgb(203, 213, 225)",
+    "cursor": "not-allowed",
+    "box": "131x48",
+    "contrast": 4.55,
+    "bgResolved": "rgb(248,250,252)"
+   }
+  },
+  "1024_dark_632": {
+   "pdp": {
+    "vw": 1024,
+    "cols": 1,
+    "gallery": {
+     "w": 600,
+     "h": 600,
+     "x": 212,
+     "y": 144
+    },
+    "stage": {
+     "w": 600,
+     "h": 600,
+     "x": 212,
+     "y": 144
+    },
+    "stageAspect": "1 / 1",
+    "stageMaxW": "600px",
+    "stageMargin": "0px",
+    "thumb": null,
+    "thumbActive": null,
+    "add": {
+     "text": "أضف إلى السلة",
+     "disabled": false,
+     "box": {
+      "w": 135,
+      "h": 48,
+      "x": 689,
+      "y": 1124
+     },
+     "bg": "rgb(31, 95, 191)",
+     "color": "rgb(255, 255, 255)"
+    },
+    "qty": {
+     "w": 172,
+     "h": 44,
+     "x": 836,
+     "y": 1126
+    },
+    "qtyBtn": {
+     "w": 44,
+     "h": 44,
+     "x": 964,
+     "y": 1126
+    },
+    "note": false,
+    "noteCount": 0,
+    "buyChildren": [
+     "shop-card__meta",
+     "shop-buy__title",
+     "shop-buy__price",
+     "shop-buy__facts",
+     "shop-buy__actions"
+    ],
+    "facts": [
+     "متوفر",
+     "علامة تجريبية أ",
+     "تصنيف تجريبي — ثلاجات",
+     "DEMO-REF-001"
+    ],
+    "overflow": 0,
+    "docH": 2160,
+    "body": "rgb(10, 18, 32)"
+   },
+   "cta": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)",
+    "opacity": "1",
+    "border": "rgb(31, 95, 191)",
+    "cursor": "pointer",
+    "box": "135x48",
+    "contrast": 6.09,
+    "bgResolved": "rgb(31,95,191)"
+   }
+  },
+  "1024_dark_633": {
+   "pdp": {
+    "vw": 1024,
+    "cols": 1,
+    "gallery": {
+     "w": 600,
+     "h": 600,
+     "x": 212,
+     "y": 144
+    },
+    "stage": {
+     "w": 600,
+     "h": 600,
+     "x": 212,
+     "y": 144
+    },
+    "stageAspect": "1 / 1",
+    "stageMaxW": "600px",
+    "stageMargin": "0px",
+    "thumb": null,
+    "thumbActive": null,
+    "add": {
+     "text": "غير متوفر حاليًا",
+     "disabled": true,
+     "box": {
+      "w": 131,
+      "h": 48,
+      "x": 693,
+      "y": 1124
+     },
+     "bg": "rgb(15, 24, 38)",
+     "color": "rgb(148, 163, 184)"
+    },
+    "qty": {
+     "w": 172,
+     "h": 44,
+     "x": 836,
+     "y": 1126
+    },
+    "qtyBtn": {
+     "w": 44,
+     "h": 44,
+     "x": 964,
+     "y": 1126
+    },
+    "note": false,
+    "noteCount": 0,
+    "buyChildren": [
+     "shop-card__meta",
+     "shop-buy__title",
+     "shop-buy__price",
+     "shop-buy__facts",
+     "shop-buy__actions"
+    ],
+    "facts": [
+     "غير متوفر حاليًا",
+     "علامة تجريبية ب",
+     "تصنيف تجريبي — ثلاجات",
+     "DEMO-REF-002"
+    ],
+    "overflow": 0,
+    "docH": 2160,
+    "body": "rgb(10, 18, 32)"
+   },
+   "cta": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "bg": "rgb(15, 24, 38)",
+    "color": "rgb(148, 163, 184)",
+    "opacity": "1",
+    "border": "rgb(44, 61, 89)",
+    "cursor": "not-allowed",
+    "box": "131x48",
+    "contrast": 6.95,
+    "bgResolved": "rgb(15,24,38)"
+   }
+  },
+  "1366_light_632": {
+   "pdp": {
+    "vw": 1366,
+    "cols": 2,
+    "gallery": {
+     "w": 586,
+     "h": 586,
+     "x": 681,
+     "y": 144
+    },
+    "stage": {
+     "w": 586,
+     "h": 586,
+     "x": 681,
+     "y": 144
+    },
+    "stageAspect": "1 / 1",
+    "stageMaxW": "none",
+    "stageMargin": "0px",
+    "thumb": null,
+    "thumbActive": null,
+    "add": {
+     "text": "أضف إلى السلة",
+     "disabled": false,
+     "box": {
+      "w": 135,
+      "h": 48,
+      "x": 338,
+      "y": 507
+     },
+     "bg": "rgb(31, 95, 191)",
+     "color": "rgb(255, 255, 255)"
+    },
+    "qty": {
+     "w": 172,
+     "h": 44,
+     "x": 485,
+     "y": 509
+    },
+    "qtyBtn": {
+     "w": 44,
+     "h": 44,
+     "x": 613,
+     "y": 509
+    },
+    "note": false,
+    "noteCount": 0,
+    "buyChildren": [
+     "shop-card__meta",
+     "shop-buy__title",
+     "shop-buy__price",
+     "shop-buy__facts",
+     "shop-buy__actions"
+    ],
+    "facts": [
+     "متوفر",
+     "علامة تجريبية أ",
+     "تصنيف تجريبي — ثلاجات",
+     "DEMO-REF-001"
+    ],
+    "overflow": 0,
+    "docH": 1678,
+    "body": "rgb(248, 250, 252)"
+   },
+   "cta": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)",
+    "opacity": "1",
+    "border": "rgb(31, 95, 191)",
+    "cursor": "pointer",
+    "box": "135x48",
+    "contrast": 6.09,
+    "bgResolved": "rgb(31,95,191)"
+   }
+  },
+  "1366_light_633": {
+   "pdp": {
+    "vw": 1366,
+    "cols": 2,
+    "gallery": {
+     "w": 586,
+     "h": 586,
+     "x": 681,
+     "y": 144
+    },
+    "stage": {
+     "w": 586,
+     "h": 586,
+     "x": 681,
+     "y": 144
+    },
+    "stageAspect": "1 / 1",
+    "stageMaxW": "none",
+    "stageMargin": "0px",
+    "thumb": null,
+    "thumbActive": null,
+    "add": {
+     "text": "غير متوفر حاليًا",
+     "disabled": true,
+     "box": {
+      "w": 131,
+      "h": 48,
+      "x": 342,
+      "y": 507
+     },
+     "bg": "rgb(248, 250, 252)",
+     "color": "rgb(100, 116, 139)"
+    },
+    "qty": {
+     "w": 172,
+     "h": 44,
+     "x": 485,
+     "y": 509
+    },
+    "qtyBtn": {
+     "w": 44,
+     "h": 44,
+     "x": 613,
+     "y": 509
+    },
+    "note": false,
+    "noteCount": 0,
+    "buyChildren": [
+     "shop-card__meta",
+     "shop-buy__title",
+     "shop-buy__price",
+     "shop-buy__facts",
+     "shop-buy__actions"
+    ],
+    "facts": [
+     "غير متوفر حاليًا",
+     "علامة تجريبية ب",
+     "تصنيف تجريبي — ثلاجات",
+     "DEMO-REF-002"
+    ],
+    "overflow": 0,
+    "docH": 1678,
+    "body": "rgb(248, 250, 252)"
+   },
+   "cta": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "bg": "rgb(248, 250, 252)",
+    "color": "rgb(100, 116, 139)",
+    "opacity": "1",
+    "border": "rgb(203, 213, 225)",
+    "cursor": "not-allowed",
+    "box": "131x48",
+    "contrast": 4.55,
+    "bgResolved": "rgb(248,250,252)"
+   }
+  },
+  "1366_dark_632": {
+   "pdp": {
+    "vw": 1366,
+    "cols": 2,
+    "gallery": {
+     "w": 586,
+     "h": 586,
+     "x": 681,
+     "y": 144
+    },
+    "stage": {
+     "w": 586,
+     "h": 586,
+     "x": 681,
+     "y": 144
+    },
+    "stageAspect": "1 / 1",
+    "stageMaxW": "none",
+    "stageMargin": "0px",
+    "thumb": null,
+    "thumbActive": null,
+    "add": {
+     "text": "أضف إلى السلة",
+     "disabled": false,
+     "box": {
+      "w": 135,
+      "h": 48,
+      "x": 338,
+      "y": 507
+     },
+     "bg": "rgb(31, 95, 191)",
+     "color": "rgb(255, 255, 255)"
+    },
+    "qty": {
+     "w": 172,
+     "h": 44,
+     "x": 485,
+     "y": 509
+    },
+    "qtyBtn": {
+     "w": 44,
+     "h": 44,
+     "x": 613,
+     "y": 509
+    },
+    "note": false,
+    "noteCount": 0,
+    "buyChildren": [
+     "shop-card__meta",
+     "shop-buy__title",
+     "shop-buy__price",
+     "shop-buy__facts",
+     "shop-buy__actions"
+    ],
+    "facts": [
+     "متوفر",
+     "علامة تجريبية أ",
+     "تصنيف تجريبي — ثلاجات",
+     "DEMO-REF-001"
+    ],
+    "overflow": 0,
+    "docH": 1678,
+    "body": "rgb(10, 18, 32)"
+   },
+   "cta": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)",
+    "opacity": "1",
+    "border": "rgb(31, 95, 191)",
+    "cursor": "pointer",
+    "box": "135x48",
+    "contrast": 6.09,
+    "bgResolved": "rgb(31,95,191)"
+   }
+  },
+  "1366_dark_633": {
+   "pdp": {
+    "vw": 1366,
+    "cols": 2,
+    "gallery": {
+     "w": 586,
+     "h": 586,
+     "x": 681,
+     "y": 144
+    },
+    "stage": {
+     "w": 586,
+     "h": 586,
+     "x": 681,
+     "y": 144
+    },
+    "stageAspect": "1 / 1",
+    "stageMaxW": "none",
+    "stageMargin": "0px",
+    "thumb": null,
+    "thumbActive": null,
+    "add": {
+     "text": "غير متوفر حاليًا",
+     "disabled": true,
+     "box": {
+      "w": 131,
+      "h": 48,
+      "x": 342,
+      "y": 507
+     },
+     "bg": "rgb(15, 24, 38)",
+     "color": "rgb(148, 163, 184)"
+    },
+    "qty": {
+     "w": 172,
+     "h": 44,
+     "x": 485,
+     "y": 509
+    },
+    "qtyBtn": {
+     "w": 44,
+     "h": 44,
+     "x": 613,
+     "y": 509
+    },
+    "note": false,
+    "noteCount": 0,
+    "buyChildren": [
+     "shop-card__meta",
+     "shop-buy__title",
+     "shop-buy__price",
+     "shop-buy__facts",
+     "shop-buy__actions"
+    ],
+    "facts": [
+     "غير متوفر حاليًا",
+     "علامة تجريبية ب",
+     "تصنيف تجريبي — ثلاجات",
+     "DEMO-REF-002"
+    ],
+    "overflow": 0,
+    "docH": 1678,
+    "body": "rgb(10, 18, 32)"
+   },
+   "cta": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "bg": "rgb(15, 24, 38)",
+    "color": "rgb(148, 163, 184)",
+    "opacity": "1",
+    "border": "rgb(44, 61, 89)",
+    "cursor": "not-allowed",
+    "box": "131x48",
+    "contrast": 6.95,
+    "bgResolved": "rgb(15,24,38)"
+   }
+  }
+ },
+ "products": {
+  "unavailable": {
+   "before": {
+    "text": "غير متوفر حاليًا",
+    "disabled": true,
+    "tabIndex": 0,
+    "ariaDisabled": null,
+    "hasDisabledAttr": true
+   },
+   "focus_attempt": "BODY",
+   "after": {
+    "modal": true,
+    "body": "visible",
+    "focus": "BODY"
+   },
+   "reqs": []
+  },
+  "unavailable_tab": [
+   "skip-link",
+   "shop-brand",
+   "shop-search-btn",
+   "shop-cart-button",
+   "shop-burger",
+   "",
+   "",
+   "",
+   "shop-qty__btn",
+   "shop-qty",
+   "shop-qty__btn",
+   "shop-section__link",
+   "shop-card__media",
+   ""
+  ],
+  "available": {
+   "before": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "hasDisabledAttr": false
+   },
+   "modal": true,
+   "body": "hidden",
+   "reqs": []
+  }
+ },
+ "gallery": {
+  "multi": {
+   "thumbs": 3,
+   "stage": {
+    "fit": "contain",
+    "alt": "منتج تجريبي — ثلاجة 500 لتر",
+    "box": "584x584"
+   },
+   "info": [
+    {
+     "pressed": "true",
+     "label": "صورة 1",
+     "box": "68x68",
+     "border": "rgb(31, 95, 191)",
+     "shadow": "rgba(31, 95, 191, 0.3) 0px 0px 0px 3px"
+    },
+    {
+     "pressed": "false",
+     "label": "صورة 2",
+     "box": "68x68",
+     "border": "rgb(221, 229, 238)",
+     "shadow": "none"
+    },
+    {
+     "pressed": "false",
+     "label": "صورة 3",
+     "box": "68x68",
+     "border": "rgb(221, 229, 238)",
+     "shadow": "none"
+    }
+   ],
+   "order": [
+    1199,
+    1123,
+    1047
+   ],
+   "galleryBox": "586x666",
+   "overflow": 0
+  },
+  "after_click": [
+   "false",
+   "false",
+   "true"
+  ],
+  "kb_focus": {
+   "outline": "2px solid rgb(31, 95, 191)",
+   "border": "rgb(221, 229, 238)"
+  },
+  "kb_after_enter": [
+   "true",
+   "false",
+   "false"
+  ],
+  "multi_390": {
+   "vw": 390,
+   "cols": 1,
+   "gallery": {
+    "w": 366,
+    "h": 438,
+    "x": 12,
+    "y": 163
+   },
+   "stage": {
+    "w": 366,
+    "h": 366,
+    "x": 12,
+    "y": 163
+   },
+   "stageAspect": "1 / 1",
+   "stageMaxW": "600px",
+   "stageMargin": "0px",
+   "thumb": {
+    "w": 60,
+    "h": 60,
+    "x": 318,
+    "y": 541
+   },
+   "thumbActive": {
+    "border": "rgb(31, 95, 191)",
+    "shadow": "rgba(31, 95, 191, 0.3) 0px 0px 0px 3px",
+    "pressed": "true"
+   },
+   "add": {
+    "text": "أضف إلى السلة",
+    "disabled": false,
+    "box": {
+     "w": 182,
+     "h": 48,
+     "x": 12,
+     "y": 840
+    },
+    "bg": "rgb(31, 95, 191)",
+    "color": "rgb(255, 255, 255)"
+   },
+   "qty": {
+    "w": 172,
+    "h": 44,
+    "x": 206,
+    "y": 842
+   },
+   "qtyBtn": {
+    "w": 44,
+    "h": 44,
+    "x": 334,
+    "y": 842
+   },
+   "note": false,
+   "noteCount": 0,
+   "buyChildren": [
+    "shop-card__meta",
+    "shop-buy__title",
+    "shop-buy__price",
+    "shop-buy__facts",
+    "shop-buy__actions"
+   ],
+   "facts": [
+    "متوفر",
+    "علامة تجريبية أ",
+    "تصنيف تجريبي — ثلاجات",
+    "DEMO-REF-001"
+   ],
+   "overflow": 0,
+   "docH": 1975,
+   "body": "rgb(248, 250, 252)"
+  }
+ },
+ "a11y": {
+  "cta_focus": {
+   "id": "shop-add-to-cart",
+   "outline": "2px solid rgb(31, 95, 191)",
+   "box": "182x48"
+  },
+  "after_enter": {
+   "modal": true,
+   "body": "hidden"
+  },
+  "general": {
+   "dupIds": [],
+   "hiddenTabbable": 6,
+   "thumbFocusable": 0,
+   "ctaInTab": 1,
+   "disabledNative": true
+  }
+ },
+ "regression": {
+  "home_390": {
+   "headerH": 65,
+   "homeCard": "177x321",
+   "overflow": 0
+  },
+  "listing_390": {
+   "card": "177x327",
+   "headerH": 65,
+   "overflow": 0
+  },
+  "taxo_390": {
+   "taxo": "366x92",
+   "overflow": 0
+  },
+  "search": {
+   "rowH": 90,
+   "rows": 2
+  },
+  "home_1366": {
+   "headerH": 74,
+   "homeCard": "280x512",
+   "overflow": 0
+  },
+  "listing_1366": {
+   "card": "280x357",
+   "headerH": 74,
+   "overflow": 0
+  },
+  "taxo_1366": {
+   "taxo": "276x96",
+   "overflow": 0
+  }
+ },
+ "misc": {}
+}

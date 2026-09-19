@@ -1,0 +1,176 @@
+{
+  "stage": "14 — Full System Integration & End-to-End Validation",
+  "generatedAt": "2026-09-16T12:30:53.375045+00:00",
+  "targets": {
+    "frontend": "https://panel.fahd-car.cloud/alwled/",
+    "api": "https://panel.fahd-car.cloud/alwled-api/api/v1"
+  },
+  "integrationHarness": {
+    "runId": "stage14-9dd2b3",
+    "total": 150,
+    "pass": 150,
+    "fail": 0,
+    "byArea": {
+      "Foundation & catalog": {
+        "total": 16,
+        "pass": 16,
+        "fail": 0
+      },
+      "Employee → Role → Permission": {
+        "total": 16,
+        "pass": 16,
+        "fail": 0
+      },
+      "Cart → Checkout → Order → Snapshot": {
+        "total": 31,
+        "pass": 31,
+        "fail": 0
+      },
+      "Inventory & concurrency": {
+        "total": 8,
+        "pass": 8,
+        "fail": 0
+      },
+      "Payment → Sham Cash manual review": {
+        "total": 36,
+        "pass": 36,
+        "fail": 0
+      },
+      "Dashboard / Analytics / Audit": {
+        "total": 11,
+        "pass": 11,
+        "fail": 0
+      },
+      "Notifications & outbox": {
+        "total": 7,
+        "pass": 7,
+        "fail": 0
+      },
+      "Customer verification": {
+        "total": 12,
+        "pass": 12,
+        "fail": 0
+      },
+      "Cross-user isolation": {
+        "total": 2,
+        "pass": 2,
+        "fail": 0
+      },
+      "Session lifecycle": {
+        "total": 11,
+        "pass": 11,
+        "fail": 0
+      }
+    }
+  },
+  "frontendJourney": {
+    "total": 36,
+    "pass": 36,
+    "fail": 0
+  },
+  "regression": {
+    "build": "PASS",
+    "tsc": "PASS",
+    "prismaValidate": "PASS",
+    "migrateStatus": "up to date (14 migrations)",
+    "unit": "184/184 (19 suites)",
+    "e2e": "349/349 (11 suites)",
+    "frontendCheck": "PASS",
+    "frontendTest": "36/36 (3 suites)",
+    "failed": 0,
+    "skipped": 0
+  },
+  "fingerprint": {
+    "before": {
+      "users": "122",
+      "roles": "14",
+      "permissions": "45",
+      "products": "2",
+      "categories": "2",
+      "brands": "2",
+      "specifications": "ERROR: ERROR:  relation \"specifications\" does not exist\nLINE 1: select count(*) from specifications\n                           ",
+      "inventory": "2",
+      "inventory_movements": "0",
+      "product_images": "0",
+      "carts": "6",
+      "cart_items": "0",
+      "orders": "0",
+      "order_items": "0",
+      "payments": "0",
+      "idempotency_keys": "0",
+      "customer_verifications": "0",
+      "notifications": "3523",
+      "notification_outbox": "1214",
+      "audit_logs": "17307",
+      "refresh_tokens": "562",
+      "user_roles": "126",
+      "role_permissions": "95"
+    },
+    "afterRun": {
+      "users": "138",
+      "roles": "22",
+      "permissions": "45",
+      "products": "32",
+      "categories": "14",
+      "brands": "14",
+      "specifications": "ERROR: ERROR:  relation \"specifications\" does not exist\nLINE 1: select count(*) from specifications\n                           ",
+      "inventory": "32",
+      "inventory_movements": "57",
+      "product_images": "12",
+      "carts": "12",
+      "cart_items": "6",
+      "orders": "33",
+      "order_items": "33",
+      "payments": "24",
+      "idempotency_keys": "72",
+      "customer_verifications": "7",
+      "notifications": "4174",
+      "notification_outbox": "1456",
+      "audit_logs": "18350",
+      "refresh_tokens": "654",
+      "user_roles": "143",
+      "role_permissions": "111"
+    },
+    "postCleanup": {
+      "users": "123",
+      "roles": "14",
+      "permissions": "45",
+      "products": "2",
+      "categories": "2",
+      "brands": "2",
+      "specifications": "ERROR: ERROR:  relation \"specifications\" does not exist\nLINE 1: select count(*) from specifications\n                           ",
+      "inventory": "2",
+      "inventory_movements": "0",
+      "product_images": "0",
+      "carts": "6",
+      "cart_items": "0",
+      "orders": "0",
+      "order_items": "0",
+      "payments": "0",
+      "idempotency_keys": "0",
+      "customer_verifications": "0",
+      "notifications": "4048",
+      "notification_outbox": "1357",
+      "audit_logs": "18350",
+      "refresh_tokens": "589",
+      "user_roles": "127",
+      "role_permissions": "95"
+    }
+  },
+  "cleanup": {
+    "method": "targeted ids in one transaction, no TRUNCATE, no TRUNCATE/DELETE without WHERE",
+    "leftoversAfter": "ERROR: ERROR:  column \"name\" does not exist\nLINE 1: ...hone like 'stage14%' or email like '%stage14%' or name like ...\n        ",
+    "script": "scripts/stage14-cleanup.sql",
+    "preview": "/tmp/stage14-cleanup-preview.txt"
+  },
+  "security": {
+    "frontendSecrets": 0,
+    "backendHardcodedSecrets": 0,
+    "externalHttpCallsInProdCode": 0,
+    "unsafeRawSql": 0,
+    "providerIntegrations": 0,
+    "verificationProviders": "none (LOG only)",
+    "paymentProviders": "none",
+    "notificationChannels": "IN_APP only"
+  }
+}

@@ -1,0 +1,33 @@
+{
+ "instock": {
+  "reqs": [
+   "products?page=1&limit=12",
+   "categories?limit=48",
+   "brands?limit=48"
+  ],
+  "hash": "#/products?inStock=1",
+  "cards": 2,
+  "count": "2 منتج"
+ },
+ "offers": {
+  "reqs": [
+   "products?page=1&limit=12",
+   "categories?limit=48",
+   "brands?limit=48"
+  ],
+  "hash": "#/products?inStock=1&offers=1",
+  "cards": 1,
+  "count": "1 منتج"
+ },
+ "sheet_scroll": {
+  "scrollH": 779,
+  "clientH": 691,
+  "scrollW": 390,
+  "clientW": 390,
+  "overflowY": "auto",
+  "overflowX": "auto"
+ },
+ "sheet_nested_overflow": [],
+ "loading_focus_stops": 0,
+ "console": []
+}

@@ -1,0 +1,148 @@
+{
+ "net": {
+  "total": 45,
+  "fonts": [
+   "https://panel.fahd-car.cloud/alwled/assets/fonts/Cairo-Regular.ttf"
+  ],
+  "hosts": [
+   "panel.fahd-car.cloud"
+  ],
+  "external": []
+ },
+ "fonts": {
+  "resolve": {
+   "cairo": 513,
+   "tahoma": 493,
+   "arial": 508,
+   "declared": 513,
+   "stack": "Cairo, Tahoma, \"Segoe UI\", \"Noto Naskh Arabic\", \"Helvetica Neue\", Arial, sans-serif",
+   "faces": [
+    "Cairo/400 700/loaded"
+   ],
+   "cairo_loaded": true,
+   "qomra_loaded": true
+  }
+ },
+ "status": {
+  "badge": {
+   "cls": "badge badge--danger badge--sm",
+   "bg": "rgb(254, 242, 242)",
+   "col": "rgb(153, 27, 27)",
+   "txt": "-16.67%"
+  },
+  "toast": {
+   "--store-danger": "#dc2626",
+   "--store-success": "#16a34a",
+   "--store-warning": "#d97706",
+   "--store-info": "#2563eb",
+   "--store-primary": "#1F5FBF"
+  },
+  "authbtn": {
+   "bg": "rgb(31, 95, 191)",
+   "col": "rgb(255, 255, 255)"
+  }
+ },
+ "inputs": {
+  "products": [
+   {
+    "s": "#shop-filter-search",
+    "fs": "15px",
+    "h": 44
+   },
+   {
+    "s": "#shop-filter-category",
+    "fs": "15px",
+    "h": 0
+   },
+   {
+    "s": "#shop-filter-brand",
+    "fs": "15px",
+    "h": 0
+   },
+   {
+    "s": "#shop-filter-sort",
+    "fs": "15px",
+    "h": 0
+   },
+   {
+    "s": ".shop-check",
+    "fs": "13px",
+    "h": 0
+   }
+  ],
+  "search": "16px",
+  "qty": "16px"
+ },
+ "extra": {
+  "#/payment": {
+   "ov": 0,
+   "url": "#/payment",
+   "txt": "الرئيسية‹صفحة غير موجودة📦الصفحة غير موجودةالرابط /payment غ"
+  },
+  "#/verification": {
+   "ov": 0,
+   "url": "#/verification",
+   "txt": "الرئيسية‹توثيق الحسابتسجيل الدخول مطلوبسجّل دخولك لعرض حالة "
+  },
+  "#/order": {
+   "ov": 0,
+   "url": "#/order",
+   "txt": "الرئيسية‹صفحة غير موجودة📦الصفحة غير موجودةالرابط /order غير"
+  },
+  "#/orders/1": {
+   "ov": 0,
+   "url": "#/orders/1",
+   "txt": "الرئيسية‹طلباتي‹تفاصيل الطلبتسجيل الدخول مطلوبسجّل دخولك لعر"
+  }
+ },
+ "cssvars": {
+  "checked": 110,
+  "bad": []
+ },
+ "zoom_extra": {
+  "filters": {
+   "ov": 0,
+   "sheet": {
+    "box": [
+     390,
+     738
+    ],
+    "sw": 390,
+    "cw": 390,
+    "wide": []
+   }
+  },
+  "search": {
+   "ov": 0,
+   "row": [
+    366,
+    178
+   ],
+   "wide": [
+    "visually-hidden",
+    "shop-search-sheet__bod",
+    "shop-search-results"
+   ]
+  },
+  "menu": {
+   "ov": 0,
+   "link": [
+    366,
+    64
+   ],
+   "wide": []
+  },
+  "authdlg": {
+   "ov": 0,
+   "wide": [
+    "modal__panel modal--sm",
+    "modal__foot"
+   ],
+   "btn": [
+    0,
+    0
+   ]
+  }
+ },
+ "console": []
+}

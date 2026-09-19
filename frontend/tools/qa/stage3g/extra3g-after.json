@@ -1,0 +1,69 @@
+{
+ "loading": {
+  "busy": "true",
+  "note": "جارٍ تحميل المنتجات…",
+  "noteRole": "status",
+  "skelHidden": true,
+  "viewLive": null
+ },
+ "done_focus": {
+  "focus": "shop-filters-toggle",
+  "body": "visible",
+  "expanded": "false"
+ },
+ "check_space_before": false,
+ "check_space_after": true,
+ "check_label_h": {
+  "w": 0,
+  "h": 0
+ },
+ "after_space_render": {
+  "hash": "#/products?inStock=1",
+  "cards": 2
+ },
+ "crumb_hit": {
+  "rect": {
+   "w": 42,
+   "h": 21
+  },
+  "hitAbove": "A.",
+  "isLink": true
+ },
+ "ring_light": {
+  "add": {
+   "outline": "2px solid rgb(31, 95, 191)",
+   "ratio": 6.09
+  },
+  "media": {
+   "outline": "2px solid rgb(31, 95, 191)",
+   "ratio": 6.09
+  },
+  "name": {
+   "outline": "2px solid rgb(31, 95, 191)",
+   "ratio": 6.09
+  },
+  "crumb": {
+   "outline": "2px solid rgb(31, 95, 191)",
+   "ratio": 5.82
+  }
+ },
+ "ring_dark": {
+  "add": {
+   "outline": "2px solid rgb(37, 99, 235)",
+   "ratio": 3.34
+  },
+  "media": {
+   "outline": "2px solid rgb(37, 99, 235)",
+   "ratio": 3.34
+  },
+  "name": {
+   "outline": "2px solid rgb(37, 99, 235)",
+   "ratio": 3.34
+  },
+  "crumb": {
+   "outline": "2px solid rgb(37, 99, 235)",
+   "ratio": 3.63
+  }
+ },
+ "console": []
+}

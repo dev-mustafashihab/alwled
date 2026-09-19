@@ -1,0 +1,20 @@
+{
+ "error": {
+  "role": "alert",
+  "title": "تعذّر تحميل البيانات",
+  "retry": {
+   "text": "إعادة المحاولة",
+   "box": "124x44"
+  },
+  "overflow": 0
+ },
+ "notfound": {
+  "role": "status",
+  "title": "المنتج غير موجود",
+  "cta": {
+   "text": "تصفّح المنتجات",
+   "href": "#/products"
+  },
+  "overflow": 0
+ }
+}

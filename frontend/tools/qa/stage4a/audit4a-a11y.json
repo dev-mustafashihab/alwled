@@ -1,0 +1,315 @@
+{
+ "console": [],
+ "failed": [],
+ "a11y": {
+  "390": {
+   "headings": [
+    {
+     "tag": "H1",
+     "text": "منتج تجريبي — ثلاجة 500 لتر",
+     "vis": true
+    },
+    {
+     "tag": "H2",
+     "text": "منتجات مشابهة",
+     "vis": true
+    },
+    {
+     "tag": "H3",
+     "text": "منتج تجريبي — ثلاجة 300 لتر",
+     "vis": true
+    }
+   ],
+   "crumbNav": {
+    "tag": "NAV",
+    "role": null,
+    "label": "مسار التنقل",
+    "ariaCurrent": 0
+   },
+   "dupIds": [],
+   "hiddenTabbable": 22,
+   "addName": "أضف إلى السلة",
+   "addBox": {
+    "w": 182,
+    "h": 48
+   },
+   "qtyNames": [
+    {
+     "tag": "BUTTON",
+     "label": "إنقاص الكمية",
+     "box": "44x44"
+    },
+    {
+     "tag": "INPUT",
+     "label": "الكمية",
+     "box": "68x44"
+    },
+    {
+     "tag": "BUTTON",
+     "label": "زيادة الكمية",
+     "box": "44x44"
+    }
+   ],
+   "smallTargets": [
+    {
+     "tag": "A",
+     "cls": "",
+     "text": "الرئيسية",
+     "box": "42x21"
+    },
+    {
+     "tag": "A",
+     "cls": "",
+     "text": "المنتجات",
+     "box": "47x21"
+    },
+    {
+     "tag": "A",
+     "cls": "",
+     "text": "تصنيف تجريبي — ثلا",
+     "box": "126x21"
+    }
+   ],
+   "imgAlts": [],
+   "stretched": "absolute",
+   "collision": {
+    "hit": null,
+    "isAdd": false
+   },
+   "overflow": 0
+  },
+  "taborder_390": [
+   {
+    "tag": "A",
+    "cls": "skip-link",
+    "id": "",
+    "y": 2,
+    "inPdp": false,
+    "outline": "2px rgb(31, 95, 191)"
+   },
+   {
+    "tag": "A",
+    "cls": "shop-brand",
+    "id": "",
+    "y": 10,
+    "inPdp": false,
+    "outline": "2px rgb(31, 95, 191)"
+   },
+   {
+    "tag": "BUTTON",
+    "cls": "shop-iconbtn shop-search",
+    "id": "shop-search-btn",
+    "y": 10,
+    "inPdp": false,
+    "outline": "2px rgb(31, 95, 191)"
+   },
+   {
+    "tag": "A",
+    "cls": "shop-cartbtn",
+    "id": "shop-cart-button",
+    "y": 10,
+    "inPdp": false,
+    "outline": "2px rgb(31, 95, 191)"
+   },
+   {
+    "tag": "BUTTON",
+    "cls": "shop-iconbtn shop-header",
+    "id": "shop-burger",
+    "y": 10,
+    "inPdp": false,
+    "outline": "2px rgb(31, 95, 191)"
+   },
+   {
+    "tag": "A",
+    "cls": "",
+    "id": "",
+    "y": 97,
+    "inPdp": false,
+    "outline": "2px rgb(31, 95, 191)"
+   },
+   {
+    "tag": "A",
+    "cls": "",
+    "id": "",
+    "y": 97,
+    "inPdp": false,
+    "outline": "2px rgb(31, 95, 191)"
+   },
+   {
+    "tag": "A",
+    "cls": "",
+    "id": "",
+    "y": 97,
+    "inPdp": false,
+    "outline": "2px rgb(31, 95, 191)"
+   },
+   {
+    "tag": "BUTTON",
+    "cls": "shop-qty__btn",
+    "id": "",
+    "y": 842,
+    "inPdp": true,
+    "outline": "2px rgb(31, 95, 191)"
+   },
+   {
+    "tag": "INPUT",
+    "cls": "input shop-qty__input",
+    "id": "shop-qty",
+    "y": 842,
+    "inPdp": true,
+    "outline": "2px rgb(31, 95, 191)"
+   },
+   {
+    "tag": "BUTTON",
+    "cls": "shop-qty__btn",
+    "id": "",
+    "y": 842,
+    "inPdp": true,
+    "outline": "2px rgb(31, 95, 191)"
+   },
+   {
+    "tag": "BUTTON",
+    "cls": "btn btn--primary btn--lg",
+    "id": "shop-add-to-cart",
+    "y": 840,
+    "inPdp": true,
+    "outline": "2px rgb(31, 95, 191)"
+   },
+   {
+    "tag": "A",
+    "cls": "shop-section__link",
+    "id": "",
+    "y": 428,
+    "inPdp": false,
+    "outline": "2px rgb(31, 95, 191)"
+   },
+   {
+    "tag": "A",
+    "cls": "shop-card__media",
+    "id": "",
+    "y": 491,
+    "inPdp": false,
+    "outline": "2px rgb(31, 95, 191)"
+   },
+   {
+    "tag": "A",
+    "cls": "",
+    "id": "",
+    "y": 757,
+    "inPdp": false,
+    "outline": "2px rgb(31, 95, 191)"
+   },
+   {
+    "tag": "BUTTON",
+    "cls": "btn btn--primary shop-ca",
+    "id": "",
+    "y": 856,
+    "inPdp": false,
+    "outline": "2px rgb(31, 95, 191)"
+   }
+  ],
+  "qty_clicks": {
+   "start": "1",
+   "after1": "2",
+   "after2": "3"
+  },
+  "guest_add": {
+   "prompt": true,
+   "text": "دخول",
+   "body": "hidden"
+  },
+  "guest_add_reqs": []
+ },
+ "states": {},
+ "perf": {},
+ "regression": {},
+ "rtl": {},
+ "gallery": {
+  "multi": {
+   "thumbs": 3,
+   "stage": {
+    "src": "data:image/svg+xml;utf8,<svg xmlns",
+    "alt": "منتج تجريبي — ثلاجة 300 لتر",
+    "fit": "contain",
+    "box": {
+     "w": 584,
+     "h": 584
+    }
+   },
+   "thumbInfo": [
+    {
+     "pressed": "true",
+     "label": "صورة 1",
+     "alt": "منتج تجريبي — ثلاجة 300 لتر — صورة 1",
+     "box": {
+      "w": 68,
+      "h": 68
+     },
+     "border": "rgb(20, 184, 166)",
+     "shadow": "rgba(13, 148, 136, 0.35) 0px 0px 0",
+     "fit": "cover"
+    },
+    {
+     "pressed": "false",
+     "label": "صورة 2",
+     "alt": "منتج تجريبي — ثلاجة 300 لتر — صورة 2",
+     "box": {
+      "w": 68,
+      "h": 68
+     },
+     "border": "rgb(221, 229, 238)",
+     "shadow": "none",
+     "fit": "cover"
+    },
+    {
+     "pressed": "false",
+     "label": "صورة 3",
+     "alt": "منتج تجريبي — ثلاجة 300 لتر — صورة 3",
+     "box": {
+      "w": 68,
+      "h": 68
+     },
+     "border": "rgb(221, 229, 238)",
+     "shadow": "none",
+     "fit": "cover"
+    }
+   ],
+   "thumbsRow": {
+    "w": 586,
+    "h": 68
+   },
+   "order": [
+    1199,
+    1123,
+    1047
+   ],
+   "overflow": 0
+  },
+  "after_click_2": {
+   "src": "data:image/svg+xml;utf8,<svg xmlns",
+   "pressed": [
+    "false",
+    "true",
+    "false"
+   ]
+  },
+  "keyboard": {
+   "focus_style": {
+    "tag": "BUTTON",
+    "cls": "shop-gallery__thumb",
+    "outline": "2px solid rgb(31, 95, 191)",
+    "border": "rgb(20, 184, 166)",
+    "shadow": "none"
+   },
+   "after_enter_src": "data:image/svg+xml;utf8,<svg xmlns"
+  },
+  "broken": {
+   "hasImg": true,
+   "naturalW": 600,
+   "alt": "منتج تجريبي — ثلاجة 300 لتر",
+   "placeholder": false,
+   "stageH": 586
+  }
+ },
+ "targets": {}
+}

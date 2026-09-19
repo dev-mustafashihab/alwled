@@ -1,0 +1,369 @@
+{
+ "console": [
+  {
+   "t": "error",
+   "x": "Failed to load resource: net::ERR_FAILED",
+   "k": "states"
+  },
+  {
+   "t": "error",
+   "x": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+   "k": "states"
+  }
+ ],
+ "failed": [],
+ "states": {
+  "loading": {
+   "busy": "true",
+   "note": "جارٍ تحميل تفاصيل المنتج…",
+   "noteRole": "status",
+   "skeletons": 5,
+   "hidden": true,
+   "overflow": 0
+  },
+  "error": {
+   "cls": "state state--error",
+   "role": "alert",
+   "title": "تعذّر تحميل البيانات",
+   "text": "تعذّر الاتصال بالخادم. تحقّق من الشبكة ثم أعد المحاولة.",
+   "retry": {
+    "text": "إعادة المحاولة",
+    "name": "إعادة المحاولة",
+    "box": "124x44"
+   },
+   "crumbs": [
+    "الرئيسية",
+    "‹",
+    "المنتجات",
+    "‹",
+    "المنتج"
+   ]
+  },
+  "notfound": {
+   "cls": "state state--empty",
+   "role": "status",
+   "title": "المنتج غير موجود",
+   "text": "قد يكون المنتج غير متاح أو تم حذفه من المتجر.",
+   "cta": {
+    "text": "تصفّح المنتجات",
+    "href": "#/products"
+   },
+   "crumbs": [
+    "الرئيسية",
+    "‹",
+    "المنتجات",
+    "‹",
+    "المنتج"
+   ]
+  },
+  "fold_390": {
+   "crumbs": {
+    "y": 97,
+    "visibleInFold": true,
+    "fullyInFold": true,
+    "h": 50
+   },
+   "stage": {
+    "y": 163,
+    "visibleInFold": true,
+    "fullyInFold": true,
+    "h": 366
+   },
+   "meta": {
+    "y": 549,
+    "visibleInFold": true,
+    "fullyInFold": true,
+    "h": 20
+   },
+   "title": {
+    "y": 585,
+    "visibleInFold": true,
+    "fullyInFold": true,
+    "h": 29
+   },
+   "price": {
+    "y": 630,
+    "visibleInFold": true,
+    "fullyInFold": true,
+    "h": 70
+   },
+   "facts": {
+    "y": 716,
+    "visibleInFold": true,
+    "fullyInFold": false,
+    "h": 152
+   },
+   "actions": {
+    "y": 771,
+    "visibleInFold": true,
+    "fullyInFold": true,
+    "h": 73
+   },
+   "note": {
+    "y": 973,
+    "visibleInFold": false,
+    "fullyInFold": false,
+    "h": 46
+   },
+   "related": {
+    "y": 1019,
+    "visibleInFold": false,
+    "fullyInFold": false,
+    "h": 543
+   },
+   "vh": 844,
+   "docH": 1965,
+   "domOrder": [
+    "shop-gallery",
+    "shop-buy"
+   ],
+   "buyOrder": [
+    "shop-card__meta",
+    "shop-buy__title",
+    "shop-buy__price",
+    "shop-buy__facts",
+    "shop-buy__actions",
+    "shop-note"
+   ]
+  },
+  "fold_1366": {
+   "crumbs": {
+    "y": 106,
+    "visibleInFold": true,
+    "fullyInFold": true,
+    "h": 22
+   },
+   "stage": {
+    "y": 144,
+    "visibleInFold": true,
+    "fullyInFold": true,
+    "h": 586
+   },
+   "meta": {
+    "y": 144,
+    "visibleInFold": true,
+    "fullyInFold": true,
+    "h": 20
+   },
+   "title": {
+    "y": 180,
+    "visibleInFold": true,
+    "fullyInFold": true,
+    "h": 40
+   },
+   "price": {
+    "y": 236,
+    "visibleInFold": true,
+    "fullyInFold": true,
+    "h": 83
+   },
+   "facts": {
+    "y": 335,
+    "visibleInFold": true,
+    "fullyInFold": true,
+    "h": 156
+   },
+   "actions": {
+    "y": 507,
+    "visibleInFold": true,
+    "fullyInFold": true,
+    "h": 48
+   },
+   "note": {
+    "y": 571,
+    "visibleInFold": true,
+    "fullyInFold": true,
+    "h": 46
+   },
+   "related": {
+    "y": 730,
+    "visibleInFold": true,
+    "fullyInFold": false,
+    "h": 583
+   },
+   "vh": 900,
+   "docH": 1678,
+   "domOrder": [
+    "shop-gallery",
+    "shop-buy"
+   ],
+   "buyOrder": [
+    "shop-card__meta",
+    "shop-buy__title",
+    "shop-buy__price",
+    "shop-buy__facts",
+    "shop-buy__actions",
+    "shop-note"
+   ]
+  }
+ },
+ "perf": {
+  "p1": {
+   "reqs": [
+    "products/632",
+    "products?page=1&limit=8&categoryId=293"
+   ],
+   "dom": {
+    "filters": 0,
+    "grids": 0,
+    "prods": 1,
+    "cards": 1,
+    "qty": "1",
+    "sections": 1
+   }
+  },
+  "list": {
+   "reqs": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ],
+   "dom": {
+    "filters": 1,
+    "grids": 1,
+    "prods": 0,
+    "cards": 2,
+    "qty": null,
+    "sections": 0
+   }
+  },
+  "p2": {
+   "reqs": [
+    "products/632",
+    "products?page=1&limit=8&categoryId=293"
+   ],
+   "dom": {
+    "filters": 0,
+    "grids": 0,
+    "prods": 1,
+    "cards": 1,
+    "qty": "1",
+    "sections": 1
+   }
+  },
+  "other": {
+   "reqs": [
+    "products/633",
+    "products?page=1&limit=8&categoryId=293"
+   ],
+   "dom": {
+    "filters": 0,
+    "grids": 0,
+    "prods": 1,
+    "cards": 1,
+    "qty": "1",
+    "sections": 1
+   }
+  },
+  "back": {
+   "reqs": [
+    "products/632",
+    "products?page=1&limit=8&categoryId=293"
+   ],
+   "dom": {
+    "filters": 0,
+    "grids": 0,
+    "prods": 1,
+    "cards": 1,
+    "qty": "1",
+    "sections": 1
+   }
+  }
+ },
+ "regression": {
+  "home_390": {
+   "headerH": 65,
+   "homeCard": "177x321",
+   "overflow": 0
+  },
+  "listing_390": {
+   "card": "177x327",
+   "headerH": 65,
+   "overflow": 0
+  },
+  "taxo_390": {
+   "taxo": "366x92",
+   "overflow": 0
+  },
+  "search": {
+   "rowH": 90,
+   "rows": 2,
+   "overflow": 0
+  },
+  "home_1366": {
+   "headerH": 74,
+   "homeCard": "280x512",
+   "overflow": 0
+  },
+  "listing_1366": {
+   "card": "280x357",
+   "headerH": 74,
+   "overflow": 0
+  },
+  "taxo_1366": {
+   "taxo": "276x96",
+   "overflow": 0
+  }
+ },
+ "rtl": {
+  "dir": "rtl",
+  "textAlign": "right",
+  "stageX": 681,
+  "buyX": 99,
+  "galleryRightOfInfo": true,
+  "crumbsOrder": [
+   "الرئيسية",
+   "‹",
+   "المنتجات",
+   "‹",
+   "تصنيف تجريبي — ثلا",
+   "‹",
+   "منتج تجريبي — ثلاج"
+  ],
+  "priceText": "500.00 $",
+  "priceDir": "rtl",
+  "skuFacts": [
+   {
+    "l": "التوفّر",
+    "v": "متوفر"
+   },
+   {
+    "l": "العلامة",
+    "v": "علامة تجريبية أ"
+   },
+   {
+    "l": "التصنيف",
+    "v": "تصنيف تجريبي — ثلاجات"
+   },
+   {
+    "l": "رمز المنتج",
+    "v": "DEMO-REF-001"
+   }
+  ],
+  "qtyOrder": [
+   "BUTTON:613",
+   "INPUT:537",
+   "BUTTON:485"
+  ],
+  "actionsOrder": [
+   "shop-qty:485",
+   "btn btn--primary b:338"
+  ],
+  "physicalRules": "CSS scan منفصل",
+  "overflow": 0
+ },
+ "a11y2": {
+  "collision": {
+   "addBox": "114x44",
+   "hitOnAdd": "BUTTON.btn btn--primary shop-ca",
+   "addReachable": true,
+   "hitOnName": "A.",
+   "nameReachable": true,
+   "afterNode": "absolute"
+  },
+  "hidden": {
+   "count": 0,
+   "sample": []
+  }
+ }
+}

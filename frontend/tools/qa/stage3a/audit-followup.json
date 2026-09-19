@@ -1,0 +1,693 @@
+{
+ "console": [],
+ "net": {},
+ "shots": [
+  "/root/alwled/frontend/tools/qa/stage3a/filters-390-open-followup.png",
+  "/root/alwled/frontend/tools/qa/stage3a/addtocart-guest-1366.png"
+ ],
+ "journey": {
+  "01_start": {
+   "hash": "#/products",
+   "count": "2 منتج",
+   "cards": 2,
+   "names": [
+    "منتج تجريبي — ثلاجة 300 لتر",
+    "منتج تجريبي — ثلاجة 500 لتر"
+   ],
+   "prices": [
+    "350.00 $",
+    "500.00 $"
+   ],
+   "first": "منتج تجريبي — ثلاجة 300 لتر",
+   "sheetOpen": false,
+   "toggleExpanded": "false",
+   "empty": false,
+   "stateTitle": null,
+   "active": "shop-body",
+   "bodyOverflow": "visible",
+   "docOverflow": 0,
+   "headClearBtn": [],
+   "scrollY": 0,
+   "net": [
+    "products?page=1&limit=24&sortBy=createdAt&sortOrder=desc",
+    "products?page=1&limit=8",
+    "categories?limit=48",
+    "brands?limit=48",
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ]
+  },
+  "02_sheet_open": {
+   "hash": "#/products",
+   "count": "2 منتج",
+   "cards": 2,
+   "names": [
+    "منتج تجريبي — ثلاجة 300 لتر",
+    "منتج تجريبي — ثلاجة 500 لتر"
+   ],
+   "prices": [
+    "350.00 $",
+    "500.00 $"
+   ],
+   "first": "منتج تجريبي — ثلاجة 300 لتر",
+   "sheetOpen": true,
+   "toggleExpanded": "true",
+   "empty": false,
+   "stateTitle": null,
+   "active": "shop-filters-toggle",
+   "bodyOverflow": "visible",
+   "docOverflow": 0,
+   "headClearBtn": [],
+   "scrollY": 0,
+   "net": [],
+   "focusAfterOpen": "shop-filters-toggle"
+  },
+  "03_category_293": {
+   "hash": "#/products?categoryId=293&page=1",
+   "count": "2 منتج",
+   "cards": 2,
+   "names": [
+    "منتج تجريبي — ثلاجة 300 لتر",
+    "منتج تجريبي — ثلاجة 500 لتر"
+   ],
+   "prices": [
+    "350.00 $",
+    "500.00 $"
+   ],
+   "first": "منتج تجريبي — ثلاجة 300 لتر",
+   "sheetOpen": false,
+   "toggleExpanded": "false",
+   "empty": false,
+   "stateTitle": null,
+   "active": "shop-body",
+   "bodyOverflow": "visible",
+   "docOverflow": 0,
+   "headClearBtn": [
+    "تفريغ الفلاتر"
+   ],
+   "scrollY": 0,
+   "net": [
+    "products?page=1&limit=12&categoryId=293",
+    "categories?limit=48",
+    "brands?limit=48"
+   ]
+  },
+  "04_plus_brand_254": {
+   "hash": "#/products?page=1&categoryId=293&brandId=254",
+   "count": "1 منتج",
+   "cards": 1,
+   "names": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "prices": [
+    "350.00 $"
+   ],
+   "first": "منتج تجريبي — ثلاجة 300 لتر",
+   "sheetOpen": false,
+   "toggleExpanded": "false",
+   "empty": false,
+   "stateTitle": null,
+   "active": "shop-body",
+   "bodyOverflow": "visible",
+   "docOverflow": 0,
+   "headClearBtn": [
+    "تفريغ الفلاتر"
+   ],
+   "scrollY": 0,
+   "net": [
+    "products?page=1&limit=12&categoryId=293&brandId=254",
+    "categories?limit=48",
+    "brands?limit=48"
+   ]
+  },
+  "05_sort_price_asc": {
+   "hash": "#/products?page=1&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+   "count": "1 منتج",
+   "cards": 1,
+   "names": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "prices": [
+    "350.00 $"
+   ],
+   "first": "منتج تجريبي — ثلاجة 300 لتر",
+   "sheetOpen": false,
+   "toggleExpanded": "false",
+   "empty": false,
+   "stateTitle": null,
+   "active": "shop-body",
+   "bodyOverflow": "visible",
+   "docOverflow": 0,
+   "headClearBtn": [
+    "تفريغ الفلاتر"
+   ],
+   "scrollY": 0,
+   "net": [
+    "products?page=1&limit=12&categoryId=293&brandId=254&sortBy=price&sortOrder=asc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ]
+  },
+  "06_sort_price_desc": {
+   "hash": "#/products?page=1&categoryId=293&brandId=254&sortBy=price&sortOrder=desc",
+   "count": "1 منتج",
+   "cards": 1,
+   "names": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "prices": [
+    "350.00 $"
+   ],
+   "first": "منتج تجريبي — ثلاجة 300 لتر",
+   "sheetOpen": false,
+   "toggleExpanded": "false",
+   "empty": false,
+   "stateTitle": null,
+   "active": "shop-body",
+   "bodyOverflow": "visible",
+   "docOverflow": 0,
+   "headClearBtn": [
+    "تفريغ الفلاتر"
+   ],
+   "scrollY": 0,
+   "net": [
+    "products?page=1&limit=12&categoryId=293&brandId=254&sortBy=price&sortOrder=desc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ]
+  },
+  "07_minprice_400": {
+   "hash": "#/products?page=1&categoryId=293&brandId=254&sortBy=price&sortOrder=desc&minPrice=400",
+   "count": "1 منتج",
+   "cards": 1,
+   "names": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "prices": [
+    "350.00 $"
+   ],
+   "first": "منتج تجريبي — ثلاجة 300 لتر",
+   "sheetOpen": false,
+   "toggleExpanded": "false",
+   "empty": false,
+   "stateTitle": null,
+   "active": "shop-body",
+   "bodyOverflow": "visible",
+   "docOverflow": 0,
+   "headClearBtn": [
+    "تفريغ الفلاتر"
+   ],
+   "scrollY": 0,
+   "net": [
+    "products?page=1&limit=12&categoryId=293&brandId=254&sortBy=price&sortOrder=desc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ]
+  },
+  "08_instock": {
+   "hash": "#/products?page=1&categoryId=293&brandId=254&sortBy=price&sortOrder=desc&minPrice=400&inStock=1",
+   "count": "1 منتج",
+   "cards": 1,
+   "names": [
+    "منتج تجريبي — ثلاجة 300 لتر"
+   ],
+   "prices": [
+    "350.00 $"
+   ],
+   "first": "منتج تجريبي — ثلاجة 300 لتر",
+   "sheetOpen": false,
+   "toggleExpanded": "false",
+   "empty": false,
+   "stateTitle": null,
+   "active": "shop-body",
+   "bodyOverflow": "visible",
+   "docOverflow": 0,
+   "headClearBtn": [
+    "تفريغ الفلاتر"
+   ],
+   "scrollY": 0,
+   "net": [
+    "products?page=1&limit=12&categoryId=293&brandId=254&sortBy=price&sortOrder=desc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ]
+  },
+  "09_offers": {
+   "hash": "#/products?page=1&categoryId=293&brandId=254&sortBy=price&sortOrder=desc&minPrice=400&inStock=1&offers=1",
+   "count": "0 منتج",
+   "cards": 0,
+   "names": [],
+   "prices": [],
+   "first": null,
+   "sheetOpen": false,
+   "toggleExpanded": "false",
+   "empty": true,
+   "stateTitle": "لا توجد منتجات مطابقة",
+   "active": "shop-body",
+   "bodyOverflow": "visible",
+   "docOverflow": 0,
+   "headClearBtn": [
+    "تفريغ الفلاتر"
+   ],
+   "scrollY": 0,
+   "net": [
+    "products?page=1&limit=12&categoryId=293&brandId=254&sortBy=price&sortOrder=desc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ]
+  },
+  "10_remove_brand": {
+   "hash": "#/products?page=1&categoryId=293&sortBy=price&sortOrder=desc&minPrice=400&inStock=1&offers=1",
+   "count": "1 منتج",
+   "cards": 1,
+   "names": [
+    "منتج تجريبي — ثلاجة 500 لتر"
+   ],
+   "prices": [
+    "500.00 $"
+   ],
+   "first": "منتج تجريبي — ثلاجة 500 لتر",
+   "sheetOpen": false,
+   "toggleExpanded": "false",
+   "empty": false,
+   "stateTitle": null,
+   "active": "shop-body",
+   "bodyOverflow": "visible",
+   "docOverflow": 0,
+   "headClearBtn": [
+    "تفريغ الفلاتر"
+   ],
+   "scrollY": 0,
+   "net": [
+    "products?page=1&limit=12&categoryId=293&sortBy=price&sortOrder=desc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ]
+  },
+  "11_after_reload": {
+   "hash": "#/products?page=1&categoryId=293&sortBy=price&sortOrder=desc&minPrice=400&inStock=1&offers=1",
+   "count": "1 منتج",
+   "cards": 1,
+   "names": [
+    "منتج تجريبي — ثلاجة 500 لتر"
+   ],
+   "prices": [
+    "500.00 $"
+   ],
+   "first": "منتج تجريبي — ثلاجة 500 لتر",
+   "sheetOpen": false,
+   "toggleExpanded": "false",
+   "empty": false,
+   "stateTitle": null,
+   "active": "shop-body",
+   "bodyOverflow": "visible",
+   "docOverflow": 0,
+   "headClearBtn": [
+    "تفريغ الفلاتر"
+   ],
+   "scrollY": 0,
+   "net": [
+    "products?page=1&limit=12&categoryId=293&sortBy=price&sortOrder=desc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ]
+  },
+  "12_after_back": {
+   "hash": "#/products?page=1&categoryId=293&brandId=254&sortBy=price&sortOrder=desc&minPrice=400&inStock=1&offers=1",
+   "count": "0 منتج",
+   "cards": 0,
+   "names": [],
+   "prices": [],
+   "first": null,
+   "sheetOpen": false,
+   "toggleExpanded": "false",
+   "empty": true,
+   "stateTitle": "لا توجد منتجات مطابقة",
+   "active": "shop-body",
+   "bodyOverflow": "visible",
+   "docOverflow": 0,
+   "headClearBtn": [
+    "تفريغ الفلاتر"
+   ],
+   "scrollY": 0,
+   "net": [
+    "products?page=1&limit=12&categoryId=293&brandId=254&sortBy=price&sortOrder=desc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ]
+  },
+  "13_after_forward": {
+   "hash": "#/products?page=1&categoryId=293&sortBy=price&sortOrder=desc&minPrice=400&inStock=1&offers=1",
+   "count": "1 منتج",
+   "cards": 1,
+   "names": [
+    "منتج تجريبي — ثلاجة 500 لتر"
+   ],
+   "prices": [
+    "500.00 $"
+   ],
+   "first": "منتج تجريبي — ثلاجة 500 لتر",
+   "sheetOpen": false,
+   "toggleExpanded": "false",
+   "empty": false,
+   "stateTitle": null,
+   "active": "shop-body",
+   "bodyOverflow": "visible",
+   "docOverflow": 0,
+   "headClearBtn": [
+    "تفريغ الفلاتر"
+   ],
+   "scrollY": 0,
+   "net": [
+    "products?page=1&limit=12&categoryId=293&sortBy=price&sortOrder=desc",
+    "categories?limit=48",
+    "brands?limit=48"
+   ]
+  },
+  "14_reset_head": {
+   "hash": "#/products",
+   "count": "2 منتج",
+   "cards": 2,
+   "names": [
+    "منتج تجريبي — ثلاجة 300 لتر",
+    "منتج تجريبي — ثلاجة 500 لتر"
+   ],
+   "prices": [
+    "350.00 $",
+    "500.00 $"
+   ],
+   "first": "منتج تجريبي — ثلاجة 300 لتر",
+   "sheetOpen": false,
+   "toggleExpanded": "false",
+   "empty": false,
+   "stateTitle": null,
+   "active": "shop-body",
+   "bodyOverflow": "visible",
+   "docOverflow": 0,
+   "headClearBtn": [],
+   "scrollY": 0,
+   "net": [
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ]
+  },
+  "15_reset_sheet": {
+   "hash": "#/products",
+   "count": "2 منتج",
+   "cards": 2,
+   "names": [
+    "منتج تجريبي — ثلاجة 300 لتر",
+    "منتج تجريبي — ثلاجة 500 لتر"
+   ],
+   "prices": [
+    "350.00 $",
+    "500.00 $"
+   ],
+   "first": "منتج تجريبي — ثلاجة 300 لتر",
+   "sheetOpen": false,
+   "toggleExpanded": "false",
+   "empty": false,
+   "stateTitle": null,
+   "active": "shop-body",
+   "bodyOverflow": "visible",
+   "docOverflow": 0,
+   "headClearBtn": [],
+   "scrollY": 0,
+   "net": [
+    "products?page=1&limit=12&categoryId=293",
+    "categories?limit=48",
+    "brands?limit=48",
+    "products?page=1&limit=12",
+    "categories?limit=48",
+    "brands?limit=48"
+   ]
+  }
+ },
+ "close_escape": {
+  "before": {
+   "open": true,
+   "focus": "shop-filters-toggle",
+   "bodyOv": "visible"
+  },
+  "after": {
+   "open": true,
+   "focus": "shop-filters-toggle",
+   "bodyOv": "visible"
+  }
+ },
+ "close_scrim_top": {
+  "before": {
+   "open": true,
+   "focus": "shop-filters-toggle",
+   "bodyOv": "visible"
+  },
+  "after": {
+   "open": false,
+   "focus": "shop-main",
+   "bodyOv": "visible"
+  }
+ },
+ "close_close_btn": {
+  "before": {
+   "open": true,
+   "focus": "shop-filters-toggle",
+   "bodyOv": "visible"
+  },
+  "after": {
+   "open": false,
+   "focus": "shop-iconbtn shop-filters__sheet-close",
+   "bodyOv": "visible"
+  }
+ },
+ "addtocart": {
+  "before": {
+   "hash": "#/products",
+   "badge": null,
+   "btnText": "أضف للسلة",
+   "btnDisabled": false
+  },
+  "after": {
+   "hash": "#/products",
+   "visibleDialogs": [
+    {
+     "cls": "shop-drawer__panel",
+     "text": "تسوّق الرئيسية كل المنتجات التصنيفات العلامات السلة حسابك تسجيل الدخول إنشاء حساب فاتح داك"
+    },
+    {
+     "cls": "modal__panel modal--sm",
+     "text": "سجّل الدخول لإضافة المنتج إلى السلة✕حتى تضيف المنتج إلى السلة، سجّل الدخول إلى حسابك أو أن"
+    }
+   ],
+   "allDialogCls": [
+    "shop-search-sheet",
+    "shop-drawer__panel",
+    "modal__panel modal--sm"
+   ],
+   "badge": null,
+   "bodyOv": "hidden",
+   "loginVisible": false,
+   "h1": "كل المنتجات"
+  },
+  "net": []
+ },
+ "visible_390": [
+  {
+   "cls": "shop-crumbs",
+   "tag": "NAV",
+   "visible": true,
+   "w": 366,
+   "h": 21,
+   "display": "flex"
+  },
+  {
+   "cls": "shop-section__head",
+   "tag": "DIV",
+   "visible": true,
+   "w": 366,
+   "h": 55,
+   "display": "flex"
+  },
+  {
+   "cls": "shop-filters",
+   "tag": "DIV",
+   "visible": true,
+   "w": 366,
+   "h": 44,
+   "display": "block"
+  },
+  {
+   "cls": "shop-filters__toggle",
+   "tag": "BUTTON",
+   "visible": true,
+   "w": 366,
+   "h": 44,
+   "display": "flex"
+  },
+  {
+   "cls": "shop-filters__sheet",
+   "tag": "DIV",
+   "visible": true,
+   "w": 390,
+   "h": 296,
+   "display": "block"
+  },
+  {
+   "cls": "shop-toolbar",
+   "tag": "DIV",
+   "visible": true,
+   "w": 390,
+   "h": 132,
+   "display": "flex"
+  },
+  {
+   "cls": "shop-toolbar__count",
+   "tag": "DIV",
+   "visible": true,
+   "w": 36,
+   "h": 22,
+   "display": "block"
+  },
+  {
+   "cls": "shop-grid",
+   "tag": "DIV",
+   "visible": true,
+   "w": 366,
+   "h": 504,
+   "display": "grid"
+  }
+ ],
+ "visible_1024": [
+  {
+   "cls": "shop-crumbs",
+   "tag": "NAV",
+   "visible": true,
+   "w": 992,
+   "h": 22,
+   "display": "flex"
+  },
+  {
+   "cls": "shop-section__head",
+   "tag": "DIV",
+   "visible": true,
+   "w": 992,
+   "h": 55,
+   "display": "flex"
+  },
+  {
+   "cls": "shop-filters",
+   "tag": "DIV",
+   "visible": false,
+   "w": 0,
+   "h": 0,
+   "display": "contents"
+  },
+  {
+   "cls": "shop-filters__toggle",
+   "tag": "BUTTON",
+   "visible": false,
+   "w": 0,
+   "h": 0,
+   "display": "none"
+  },
+  {
+   "cls": "shop-filters__sheet",
+   "tag": "DIV",
+   "visible": false,
+   "w": 0,
+   "h": 0,
+   "display": "none"
+  },
+  {
+   "cls": "shop-toolbar",
+   "tag": "DIV",
+   "visible": false,
+   "w": 0,
+   "h": 0,
+   "display": "grid"
+  },
+  {
+   "cls": "shop-toolbar__count",
+   "tag": "DIV",
+   "visible": false,
+   "w": 0,
+   "h": 0,
+   "display": "block"
+  },
+  {
+   "cls": "shop-grid",
+   "tag": "DIV",
+   "visible": true,
+   "w": 992,
+   "h": 552,
+   "display": "grid"
+  }
+ ],
+ "visible_1366": [
+  {
+   "cls": "shop-crumbs",
+   "tag": "NAV",
+   "visible": true,
+   "w": 1168,
+   "h": 22,
+   "display": "flex"
+  },
+  {
+   "cls": "shop-section__head",
+   "tag": "DIV",
+   "visible": true,
+   "w": 1168,
+   "h": 55,
+   "display": "flex"
+  },
+  {
+   "cls": "shop-filters",
+   "tag": "DIV",
+   "visible": false,
+   "w": 0,
+   "h": 0,
+   "display": "contents"
+  },
+  {
+   "cls": "shop-filters__toggle",
+   "tag": "BUTTON",
+   "visible": false,
+   "w": 0,
+   "h": 0,
+   "display": "none"
+  },
+  {
+   "cls": "shop-filters__sheet",
+   "tag": "DIV",
+   "visible": false,
+   "w": 0,
+   "h": 0,
+   "display": "none"
+  },
+  {
+   "cls": "shop-toolbar",
+   "tag": "DIV",
+   "visible": false,
+   "w": 0,
+   "h": 0,
+   "display": "grid"
+  },
+  {
+   "cls": "shop-toolbar__count",
+   "tag": "DIV",
+   "visible": false,
+   "w": 0,
+   "h": 0,
+   "display": "block"
+  },
+  {
+   "cls": "shop-grid",
+   "tag": "DIV",
+   "visible": true,
+   "w": 1168,
+   "h": 512,
+   "display": "grid"
+  }
+ ]
+}

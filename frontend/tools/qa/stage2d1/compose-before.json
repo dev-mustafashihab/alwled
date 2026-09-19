@@ -1,0 +1,1481 @@
+{
+  "tag": "before",
+  "sizes": {
+    "guest-360x780": {
+      "viewport": {
+        "w": 360,
+        "h": 780
+      },
+      "drawer": {
+        "top": 65,
+        "bottom": 780,
+        "h": 715,
+        "w": 360,
+        "x": 0
+      },
+      "panel": {
+        "top": 65,
+        "bottom": 780,
+        "h": 715,
+        "w": 360,
+        "x": 0
+      },
+      "scroller": {
+        "cls": "shop-menu__scroll",
+        "id": "shop-menu-scroll",
+        "top": 65,
+        "bottom": 599,
+        "clientH": 534,
+        "contentH": 534,
+        "maxScroll": 0,
+        "overflowY": "auto",
+        "flex": "1 1 auto",
+        "paddingTop": "8px",
+        "paddingBottom": "4px"
+      },
+      "lastRow": {
+        "top": 466,
+        "bottom": 516,
+        "h": 50,
+        "w": 336,
+        "x": 12
+      },
+      "lastRowText": "إنشاء حساب",
+      "lastLabel": {
+        "top": 382,
+        "bottom": 416,
+        "h": 34,
+        "w": 336,
+        "x": 12
+      },
+      "divider": {
+        "top": 607,
+        "bottom": 608,
+        "h": 1,
+        "w": 336,
+        "x": 12
+      },
+      "theme": {
+        "top": 616,
+        "bottom": 670,
+        "h": 54,
+        "w": 336,
+        "x": 12
+      },
+      "foot": {
+        "top": 682,
+        "bottom": 780,
+        "h": 98,
+        "w": 360,
+        "x": 0
+      },
+      "note": {
+        "top": 690,
+        "bottom": 710,
+        "h": 20,
+        "w": 336,
+        "x": 12
+      },
+      "cta": {
+        "top": 718,
+        "bottom": 764,
+        "h": 46,
+        "w": 336,
+        "x": 12
+      },
+      "gaps": {
+        "lastRow_to_divider": 91,
+        "lastRow_to_theme": 100,
+        "theme_to_note": 20,
+        "theme_to_foot": 12,
+        "note_to_cta": 8,
+        "cta_to_panelBottom": 16,
+        "lastElement_to_panelBottom": 16
+      },
+      "reachable": {
+        "lastRow": true,
+        "theme": true,
+        "cta": true,
+        "allInsidePanel": true
+      },
+      "counts": {
+        "rows": 7,
+        "labels": 2,
+        "guestBlockVisible": true,
+        "accountBlockVisible": false
+      },
+      "overflow": {
+        "doc": 0,
+        "drawer": 0
+      },
+      "pageScrollY": 0,
+      "headerBottom": 65,
+      "drawerTop": 65
+    },
+    "guest-390x844": {
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "drawer": {
+        "top": 65,
+        "bottom": 844,
+        "h": 779,
+        "w": 390,
+        "x": 0
+      },
+      "panel": {
+        "top": 65,
+        "bottom": 844,
+        "h": 779,
+        "w": 390,
+        "x": 0
+      },
+      "scroller": {
+        "cls": "shop-menu__scroll",
+        "id": "shop-menu-scroll",
+        "top": 65,
+        "bottom": 663,
+        "clientH": 598,
+        "contentH": 598,
+        "maxScroll": 0,
+        "overflowY": "auto",
+        "flex": "1 1 auto",
+        "paddingTop": "8px",
+        "paddingBottom": "4px"
+      },
+      "lastRow": {
+        "top": 466,
+        "bottom": 516,
+        "h": 50,
+        "w": 366,
+        "x": 12
+      },
+      "lastRowText": "إنشاء حساب",
+      "lastLabel": {
+        "top": 382,
+        "bottom": 416,
+        "h": 34,
+        "w": 366,
+        "x": 12
+      },
+      "divider": {
+        "top": 671,
+        "bottom": 672,
+        "h": 1,
+        "w": 366,
+        "x": 12
+      },
+      "theme": {
+        "top": 680,
+        "bottom": 734,
+        "h": 54,
+        "w": 366,
+        "x": 12
+      },
+      "foot": {
+        "top": 746,
+        "bottom": 844,
+        "h": 98,
+        "w": 390,
+        "x": 0
+      },
+      "note": {
+        "top": 754,
+        "bottom": 774,
+        "h": 20,
+        "w": 366,
+        "x": 12
+      },
+      "cta": {
+        "top": 782,
+        "bottom": 828,
+        "h": 46,
+        "w": 366,
+        "x": 12
+      },
+      "gaps": {
+        "lastRow_to_divider": 155,
+        "lastRow_to_theme": 164,
+        "theme_to_note": 20,
+        "theme_to_foot": 12,
+        "note_to_cta": 8,
+        "cta_to_panelBottom": 16,
+        "lastElement_to_panelBottom": 16
+      },
+      "reachable": {
+        "lastRow": true,
+        "theme": true,
+        "cta": true,
+        "allInsidePanel": true
+      },
+      "counts": {
+        "rows": 7,
+        "labels": 2,
+        "guestBlockVisible": true,
+        "accountBlockVisible": false
+      },
+      "overflow": {
+        "doc": 0,
+        "drawer": 0
+      },
+      "pageScrollY": 0,
+      "headerBottom": 65,
+      "drawerTop": 65
+    },
+    "guest-390x700": {
+      "viewport": {
+        "w": 390,
+        "h": 700
+      },
+      "drawer": {
+        "top": 65,
+        "bottom": 700,
+        "h": 635,
+        "w": 390,
+        "x": 0
+      },
+      "panel": {
+        "top": 65,
+        "bottom": 700,
+        "h": 635,
+        "w": 390,
+        "x": 0
+      },
+      "scroller": {
+        "cls": "shop-menu__scroll",
+        "id": "shop-menu-scroll",
+        "top": 65,
+        "bottom": 519,
+        "clientH": 454,
+        "contentH": 455,
+        "maxScroll": 1,
+        "overflowY": "auto",
+        "flex": "1 1 auto",
+        "paddingTop": "8px",
+        "paddingBottom": "4px"
+      },
+      "lastRow": {
+        "top": 466,
+        "bottom": 516,
+        "h": 50,
+        "w": 366,
+        "x": 12
+      },
+      "lastRowText": "إنشاء حساب",
+      "lastLabel": {
+        "top": 382,
+        "bottom": 416,
+        "h": 34,
+        "w": 366,
+        "x": 12
+      },
+      "divider": {
+        "top": 527,
+        "bottom": 528,
+        "h": 1,
+        "w": 366,
+        "x": 12
+      },
+      "theme": {
+        "top": 536,
+        "bottom": 590,
+        "h": 54,
+        "w": 366,
+        "x": 12
+      },
+      "foot": {
+        "top": 602,
+        "bottom": 700,
+        "h": 98,
+        "w": 390,
+        "x": 0
+      },
+      "note": {
+        "top": 610,
+        "bottom": 630,
+        "h": 20,
+        "w": 366,
+        "x": 12
+      },
+      "cta": {
+        "top": 638,
+        "bottom": 684,
+        "h": 46,
+        "w": 366,
+        "x": 12
+      },
+      "gaps": {
+        "lastRow_to_divider": 11,
+        "lastRow_to_theme": 20,
+        "theme_to_note": 20,
+        "theme_to_foot": 12,
+        "note_to_cta": 8,
+        "cta_to_panelBottom": 16,
+        "lastElement_to_panelBottom": 16
+      },
+      "reachable": {
+        "lastRow": true,
+        "theme": true,
+        "cta": true,
+        "allInsidePanel": true
+      },
+      "counts": {
+        "rows": 7,
+        "labels": 2,
+        "guestBlockVisible": true,
+        "accountBlockVisible": false
+      },
+      "overflow": {
+        "doc": 0,
+        "drawer": 0
+      },
+      "pageScrollY": 0,
+      "headerBottom": 65,
+      "drawerTop": 65
+    },
+    "guest-390x600": {
+      "viewport": {
+        "w": 390,
+        "h": 600
+      },
+      "drawer": {
+        "top": 65,
+        "bottom": 600,
+        "h": 535,
+        "w": 390,
+        "x": 0
+      },
+      "panel": {
+        "top": 65,
+        "bottom": 600,
+        "h": 535,
+        "w": 390,
+        "x": 0
+      },
+      "scroller": {
+        "cls": "shop-menu__scroll",
+        "id": "shop-menu-scroll",
+        "top": 65,
+        "bottom": 419,
+        "clientH": 354,
+        "contentH": 455,
+        "maxScroll": 101,
+        "overflowY": "auto",
+        "flex": "1 1 auto",
+        "paddingTop": "8px",
+        "paddingBottom": "4px"
+      },
+      "lastRow": {
+        "top": 466,
+        "bottom": 516,
+        "h": 50,
+        "w": 366,
+        "x": 12
+      },
+      "lastRowText": "إنشاء حساب",
+      "lastLabel": {
+        "top": 382,
+        "bottom": 416,
+        "h": 34,
+        "w": 366,
+        "x": 12
+      },
+      "divider": {
+        "top": 427,
+        "bottom": 428,
+        "h": 1,
+        "w": 366,
+        "x": 12
+      },
+      "theme": {
+        "top": 436,
+        "bottom": 490,
+        "h": 54,
+        "w": 366,
+        "x": 12
+      },
+      "foot": {
+        "top": 502,
+        "bottom": 600,
+        "h": 98,
+        "w": 390,
+        "x": 0
+      },
+      "note": {
+        "top": 510,
+        "bottom": 530,
+        "h": 20,
+        "w": 366,
+        "x": 12
+      },
+      "cta": {
+        "top": 538,
+        "bottom": 584,
+        "h": 46,
+        "w": 366,
+        "x": 12
+      },
+      "gaps": {
+        "lastRow_to_divider": -89,
+        "lastRow_to_theme": -80,
+        "theme_to_note": 20,
+        "theme_to_foot": 12,
+        "note_to_cta": 8,
+        "cta_to_panelBottom": 16,
+        "lastElement_to_panelBottom": 16
+      },
+      "reachable": {
+        "lastRow": true,
+        "theme": true,
+        "cta": true,
+        "allInsidePanel": true
+      },
+      "counts": {
+        "rows": 7,
+        "labels": 2,
+        "guestBlockVisible": true,
+        "accountBlockVisible": false
+      },
+      "overflow": {
+        "doc": 0,
+        "drawer": 0
+      },
+      "pageScrollY": 0,
+      "headerBottom": 65,
+      "drawerTop": 65
+    },
+    "guest-390x600-bottom": {
+      "viewport": {
+        "w": 390,
+        "h": 600
+      },
+      "drawer": {
+        "top": 65,
+        "bottom": 600,
+        "h": 535,
+        "w": 390,
+        "x": 0
+      },
+      "panel": {
+        "top": 65,
+        "bottom": 600,
+        "h": 535,
+        "w": 390,
+        "x": 0
+      },
+      "scroller": {
+        "cls": "shop-menu__scroll",
+        "id": "shop-menu-scroll",
+        "top": 65,
+        "bottom": 419,
+        "clientH": 354,
+        "contentH": 455,
+        "maxScroll": 101,
+        "overflowY": "auto",
+        "flex": "1 1 auto",
+        "paddingTop": "8px",
+        "paddingBottom": "4px"
+      },
+      "lastRow": {
+        "top": 365,
+        "bottom": 415,
+        "h": 50,
+        "w": 366,
+        "x": 12
+      },
+      "lastRowText": "إنشاء حساب",
+      "lastLabel": {
+        "top": 281,
+        "bottom": 315,
+        "h": 34,
+        "w": 366,
+        "x": 12
+      },
+      "divider": {
+        "top": 427,
+        "bottom": 428,
+        "h": 1,
+        "w": 366,
+        "x": 12
+      },
+      "theme": {
+        "top": 436,
+        "bottom": 490,
+        "h": 54,
+        "w": 366,
+        "x": 12
+      },
+      "foot": {
+        "top": 502,
+        "bottom": 600,
+        "h": 98,
+        "w": 390,
+        "x": 0
+      },
+      "note": {
+        "top": 510,
+        "bottom": 530,
+        "h": 20,
+        "w": 366,
+        "x": 12
+      },
+      "cta": {
+        "top": 538,
+        "bottom": 584,
+        "h": 46,
+        "w": 366,
+        "x": 12
+      },
+      "gaps": {
+        "lastRow_to_divider": 12,
+        "lastRow_to_theme": 21,
+        "theme_to_note": 20,
+        "theme_to_foot": 12,
+        "note_to_cta": 8,
+        "cta_to_panelBottom": 16,
+        "lastElement_to_panelBottom": 16
+      },
+      "reachable": {
+        "lastRow": true,
+        "theme": true,
+        "cta": true,
+        "allInsidePanel": true
+      },
+      "counts": {
+        "rows": 7,
+        "labels": 2,
+        "guestBlockVisible": true,
+        "accountBlockVisible": false
+      },
+      "overflow": {
+        "doc": 0,
+        "drawer": 0
+      },
+      "pageScrollY": 0,
+      "headerBottom": 65,
+      "drawerTop": 65
+    },
+    "guest-430x900": {
+      "viewport": {
+        "w": 430,
+        "h": 900
+      },
+      "drawer": {
+        "top": 65,
+        "bottom": 900,
+        "h": 835,
+        "w": 430,
+        "x": 0
+      },
+      "panel": {
+        "top": 65,
+        "bottom": 900,
+        "h": 835,
+        "w": 430,
+        "x": 0
+      },
+      "scroller": {
+        "cls": "shop-menu__scroll",
+        "id": "shop-menu-scroll",
+        "top": 65,
+        "bottom": 719,
+        "clientH": 654,
+        "contentH": 654,
+        "maxScroll": 0,
+        "overflowY": "auto",
+        "flex": "1 1 auto",
+        "paddingTop": "8px",
+        "paddingBottom": "4px"
+      },
+      "lastRow": {
+        "top": 466,
+        "bottom": 516,
+        "h": 50,
+        "w": 406,
+        "x": 12
+      },
+      "lastRowText": "إنشاء حساب",
+      "lastLabel": {
+        "top": 382,
+        "bottom": 416,
+        "h": 34,
+        "w": 406,
+        "x": 12
+      },
+      "divider": {
+        "top": 727,
+        "bottom": 728,
+        "h": 1,
+        "w": 406,
+        "x": 12
+      },
+      "theme": {
+        "top": 736,
+        "bottom": 790,
+        "h": 54,
+        "w": 406,
+        "x": 12
+      },
+      "foot": {
+        "top": 802,
+        "bottom": 900,
+        "h": 98,
+        "w": 430,
+        "x": 0
+      },
+      "note": {
+        "top": 810,
+        "bottom": 830,
+        "h": 20,
+        "w": 406,
+        "x": 12
+      },
+      "cta": {
+        "top": 838,
+        "bottom": 884,
+        "h": 46,
+        "w": 406,
+        "x": 12
+      },
+      "gaps": {
+        "lastRow_to_divider": 211,
+        "lastRow_to_theme": 220,
+        "theme_to_note": 20,
+        "theme_to_foot": 12,
+        "note_to_cta": 8,
+        "cta_to_panelBottom": 16,
+        "lastElement_to_panelBottom": 16
+      },
+      "reachable": {
+        "lastRow": true,
+        "theme": true,
+        "cta": true,
+        "allInsidePanel": true
+      },
+      "counts": {
+        "rows": 7,
+        "labels": 2,
+        "guestBlockVisible": true,
+        "accountBlockVisible": false
+      },
+      "overflow": {
+        "doc": 0,
+        "drawer": 0
+      },
+      "pageScrollY": 0,
+      "headerBottom": 65,
+      "drawerTop": 65
+    },
+    "guest-600x900": {
+      "viewport": {
+        "w": 600,
+        "h": 900
+      },
+      "drawer": {
+        "top": 65,
+        "bottom": 900,
+        "h": 835,
+        "w": 600,
+        "x": 0
+      },
+      "panel": {
+        "top": 65,
+        "bottom": 900,
+        "h": 835,
+        "w": 600,
+        "x": 0
+      },
+      "scroller": {
+        "cls": "shop-menu__scroll",
+        "id": "shop-menu-scroll",
+        "top": 65,
+        "bottom": 719,
+        "clientH": 654,
+        "contentH": 654,
+        "maxScroll": 0,
+        "overflowY": "auto",
+        "flex": "1 1 auto",
+        "paddingTop": "8px",
+        "paddingBottom": "4px"
+      },
+      "lastRow": {
+        "top": 466,
+        "bottom": 516,
+        "h": 50,
+        "w": 576,
+        "x": 12
+      },
+      "lastRowText": "إنشاء حساب",
+      "lastLabel": {
+        "top": 382,
+        "bottom": 416,
+        "h": 34,
+        "w": 576,
+        "x": 12
+      },
+      "divider": {
+        "top": 727,
+        "bottom": 728,
+        "h": 1,
+        "w": 576,
+        "x": 12
+      },
+      "theme": {
+        "top": 736,
+        "bottom": 790,
+        "h": 54,
+        "w": 576,
+        "x": 12
+      },
+      "foot": {
+        "top": 802,
+        "bottom": 900,
+        "h": 98,
+        "w": 600,
+        "x": 0
+      },
+      "note": {
+        "top": 810,
+        "bottom": 830,
+        "h": 20,
+        "w": 576,
+        "x": 12
+      },
+      "cta": {
+        "top": 838,
+        "bottom": 884,
+        "h": 46,
+        "w": 576,
+        "x": 12
+      },
+      "gaps": {
+        "lastRow_to_divider": 211,
+        "lastRow_to_theme": 220,
+        "theme_to_note": 20,
+        "theme_to_foot": 12,
+        "note_to_cta": 8,
+        "cta_to_panelBottom": 16,
+        "lastElement_to_panelBottom": 16
+      },
+      "reachable": {
+        "lastRow": true,
+        "theme": true,
+        "cta": true,
+        "allInsidePanel": true
+      },
+      "counts": {
+        "rows": 7,
+        "labels": 2,
+        "guestBlockVisible": true,
+        "accountBlockVisible": false
+      },
+      "overflow": {
+        "doc": 0,
+        "drawer": 0
+      },
+      "pageScrollY": 0,
+      "headerBottom": 65,
+      "drawerTop": 65
+    },
+    "guest-768x1000": {
+      "viewport": {
+        "w": 768,
+        "h": 1000
+      },
+      "drawer": {
+        "top": 65,
+        "bottom": 1000,
+        "h": 935,
+        "w": 768,
+        "x": 0
+      },
+      "panel": {
+        "top": 65,
+        "bottom": 1000,
+        "h": 935,
+        "w": 640,
+        "x": 64
+      },
+      "scroller": {
+        "cls": "shop-menu__scroll",
+        "id": "shop-menu-scroll",
+        "top": 65,
+        "bottom": 819,
+        "clientH": 754,
+        "contentH": 754,
+        "maxScroll": 0,
+        "overflowY": "auto",
+        "flex": "1 1 auto",
+        "paddingTop": "8px",
+        "paddingBottom": "4px"
+      },
+      "lastRow": {
+        "top": 466,
+        "bottom": 516,
+        "h": 50,
+        "w": 616,
+        "x": 76
+      },
+      "lastRowText": "إنشاء حساب",
+      "lastLabel": {
+        "top": 382,
+        "bottom": 416,
+        "h": 34,
+        "w": 616,
+        "x": 76
+      },
+      "divider": {
+        "top": 827,
+        "bottom": 828,
+        "h": 1,
+        "w": 616,
+        "x": 76
+      },
+      "theme": {
+        "top": 836,
+        "bottom": 890,
+        "h": 54,
+        "w": 616,
+        "x": 76
+      },
+      "foot": {
+        "top": 902,
+        "bottom": 1000,
+        "h": 98,
+        "w": 640,
+        "x": 64
+      },
+      "note": {
+        "top": 910,
+        "bottom": 930,
+        "h": 20,
+        "w": 616,
+        "x": 76
+      },
+      "cta": {
+        "top": 938,
+        "bottom": 984,
+        "h": 46,
+        "w": 616,
+        "x": 76
+      },
+      "gaps": {
+        "lastRow_to_divider": 311,
+        "lastRow_to_theme": 320,
+        "theme_to_note": 20,
+        "theme_to_foot": 12,
+        "note_to_cta": 8,
+        "cta_to_panelBottom": 16,
+        "lastElement_to_panelBottom": 16
+      },
+      "reachable": {
+        "lastRow": true,
+        "theme": true,
+        "cta": true,
+        "allInsidePanel": true
+      },
+      "counts": {
+        "rows": 7,
+        "labels": 2,
+        "guestBlockVisible": true,
+        "accountBlockVisible": false
+      },
+      "overflow": {
+        "doc": 0,
+        "drawer": 0
+      },
+      "pageScrollY": 0,
+      "headerBottom": 65,
+      "drawerTop": 65
+    },
+    "guest-768x1000-bottom": {
+      "viewport": {
+        "w": 768,
+        "h": 1000
+      },
+      "drawer": {
+        "top": 65,
+        "bottom": 1000,
+        "h": 935,
+        "w": 768,
+        "x": 0
+      },
+      "panel": {
+        "top": 65,
+        "bottom": 1000,
+        "h": 935,
+        "w": 640,
+        "x": 64
+      },
+      "scroller": {
+        "cls": "shop-menu__scroll",
+        "id": "shop-menu-scroll",
+        "top": 65,
+        "bottom": 819,
+        "clientH": 754,
+        "contentH": 754,
+        "maxScroll": 0,
+        "overflowY": "auto",
+        "flex": "1 1 auto",
+        "paddingTop": "8px",
+        "paddingBottom": "4px"
+      },
+      "lastRow": {
+        "top": 466,
+        "bottom": 516,
+        "h": 50,
+        "w": 616,
+        "x": 76
+      },
+      "lastRowText": "إنشاء حساب",
+      "lastLabel": {
+        "top": 382,
+        "bottom": 416,
+        "h": 34,
+        "w": 616,
+        "x": 76
+      },
+      "divider": {
+        "top": 827,
+        "bottom": 828,
+        "h": 1,
+        "w": 616,
+        "x": 76
+      },
+      "theme": {
+        "top": 836,
+        "bottom": 890,
+        "h": 54,
+        "w": 616,
+        "x": 76
+      },
+      "foot": {
+        "top": 902,
+        "bottom": 1000,
+        "h": 98,
+        "w": 640,
+        "x": 64
+      },
+      "note": {
+        "top": 910,
+        "bottom": 930,
+        "h": 20,
+        "w": 616,
+        "x": 76
+      },
+      "cta": {
+        "top": 938,
+        "bottom": 984,
+        "h": 46,
+        "w": 616,
+        "x": 76
+      },
+      "gaps": {
+        "lastRow_to_divider": 311,
+        "lastRow_to_theme": 320,
+        "theme_to_note": 20,
+        "theme_to_foot": 12,
+        "note_to_cta": 8,
+        "cta_to_panelBottom": 16,
+        "lastElement_to_panelBottom": 16
+      },
+      "reachable": {
+        "lastRow": true,
+        "theme": true,
+        "cta": true,
+        "allInsidePanel": true
+      },
+      "counts": {
+        "rows": 7,
+        "labels": 2,
+        "guestBlockVisible": true,
+        "accountBlockVisible": false
+      },
+      "overflow": {
+        "doc": 0,
+        "drawer": 0
+      },
+      "pageScrollY": 0,
+      "headerBottom": 65,
+      "drawerTop": 65
+    },
+    "auth-390x844": {
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "drawer": {
+        "top": 65,
+        "bottom": 844,
+        "h": 779,
+        "w": 390,
+        "x": 0
+      },
+      "panel": {
+        "top": 65,
+        "bottom": 844,
+        "h": 779,
+        "w": 390,
+        "x": 0
+      },
+      "scroller": {
+        "cls": "shop-menu__scroll",
+        "id": "shop-menu-scroll",
+        "top": 65,
+        "bottom": 761,
+        "clientH": 696,
+        "contentH": 696,
+        "maxScroll": 0,
+        "overflowY": "auto",
+        "flex": "1 1 auto",
+        "paddingTop": "8px",
+        "paddingBottom": "4px"
+      },
+      "lastRow": {
+        "top": 643,
+        "bottom": 693,
+        "h": 50,
+        "w": 366,
+        "x": 12
+      },
+      "lastRowText": "تسجيل الخروج",
+      "lastLabel": {
+        "top": 151,
+        "bottom": 185,
+        "h": 34,
+        "w": 366,
+        "x": 12
+      },
+      "divider": {
+        "top": 769,
+        "bottom": 770,
+        "h": 1,
+        "w": 366,
+        "x": 12
+      },
+      "theme": {
+        "top": 778,
+        "bottom": 832,
+        "h": 54,
+        "w": 366,
+        "x": 12
+      },
+      "foot": {
+        "top": 0,
+        "bottom": 0,
+        "h": 0,
+        "w": 0,
+        "x": 0
+      },
+      "note": null,
+      "cta": null,
+      "gaps": {
+        "lastRow_to_divider": 76,
+        "lastRow_to_theme": 85,
+        "theme_to_note": null,
+        "theme_to_foot": -832,
+        "note_to_cta": null,
+        "cta_to_panelBottom": null,
+        "lastElement_to_panelBottom": 12
+      },
+      "reachable": {
+        "lastRow": true,
+        "theme": true,
+        "cta": null,
+        "allInsidePanel": true
+      },
+      "counts": {
+        "rows": 10,
+        "labels": 1,
+        "guestBlockVisible": false,
+        "accountBlockVisible": true
+      },
+      "overflow": {
+        "doc": 0,
+        "drawer": 0
+      },
+      "pageScrollY": 0,
+      "headerBottom": 65,
+      "drawerTop": 65
+    },
+    "auth-390x700": {
+      "viewport": {
+        "w": 390,
+        "h": 700
+      },
+      "drawer": {
+        "top": 65,
+        "bottom": 700,
+        "h": 635,
+        "w": 390,
+        "x": 0
+      },
+      "panel": {
+        "top": 65,
+        "bottom": 700,
+        "h": 635,
+        "w": 390,
+        "x": 0
+      },
+      "scroller": {
+        "cls": "shop-menu__scroll",
+        "id": "shop-menu-scroll",
+        "top": 65,
+        "bottom": 617,
+        "clientH": 552,
+        "contentH": 632,
+        "maxScroll": 80,
+        "overflowY": "auto",
+        "flex": "1 1 auto",
+        "paddingTop": "8px",
+        "paddingBottom": "4px"
+      },
+      "lastRow": {
+        "top": 643,
+        "bottom": 693,
+        "h": 50,
+        "w": 366,
+        "x": 12
+      },
+      "lastRowText": "تسجيل الخروج",
+      "lastLabel": {
+        "top": 151,
+        "bottom": 185,
+        "h": 34,
+        "w": 366,
+        "x": 12
+      },
+      "divider": {
+        "top": 625,
+        "bottom": 626,
+        "h": 1,
+        "w": 366,
+        "x": 12
+      },
+      "theme": {
+        "top": 634,
+        "bottom": 688,
+        "h": 54,
+        "w": 366,
+        "x": 12
+      },
+      "foot": {
+        "top": 0,
+        "bottom": 0,
+        "h": 0,
+        "w": 0,
+        "x": 0
+      },
+      "note": null,
+      "cta": null,
+      "gaps": {
+        "lastRow_to_divider": -68,
+        "lastRow_to_theme": -59,
+        "theme_to_note": null,
+        "theme_to_foot": -688,
+        "note_to_cta": null,
+        "cta_to_panelBottom": null,
+        "lastElement_to_panelBottom": 7
+      },
+      "reachable": {
+        "lastRow": true,
+        "theme": true,
+        "cta": null,
+        "allInsidePanel": true
+      },
+      "counts": {
+        "rows": 10,
+        "labels": 1,
+        "guestBlockVisible": false,
+        "accountBlockVisible": true
+      },
+      "overflow": {
+        "doc": 0,
+        "drawer": 0
+      },
+      "pageScrollY": 0,
+      "headerBottom": 65,
+      "drawerTop": 65
+    },
+    "auth-390x600": {
+      "viewport": {
+        "w": 390,
+        "h": 600
+      },
+      "drawer": {
+        "top": 65,
+        "bottom": 600,
+        "h": 535,
+        "w": 390,
+        "x": 0
+      },
+      "panel": {
+        "top": 65,
+        "bottom": 600,
+        "h": 535,
+        "w": 390,
+        "x": 0
+      },
+      "scroller": {
+        "cls": "shop-menu__scroll",
+        "id": "shop-menu-scroll",
+        "top": 65,
+        "bottom": 517,
+        "clientH": 452,
+        "contentH": 632,
+        "maxScroll": 180,
+        "overflowY": "auto",
+        "flex": "1 1 auto",
+        "paddingTop": "8px",
+        "paddingBottom": "4px"
+      },
+      "lastRow": {
+        "top": 643,
+        "bottom": 693,
+        "h": 50,
+        "w": 366,
+        "x": 12
+      },
+      "lastRowText": "تسجيل الخروج",
+      "lastLabel": {
+        "top": 151,
+        "bottom": 185,
+        "h": 34,
+        "w": 366,
+        "x": 12
+      },
+      "divider": {
+        "top": 525,
+        "bottom": 526,
+        "h": 1,
+        "w": 366,
+        "x": 12
+      },
+      "theme": {
+        "top": 534,
+        "bottom": 588,
+        "h": 54,
+        "w": 366,
+        "x": 12
+      },
+      "foot": {
+        "top": 0,
+        "bottom": 0,
+        "h": 0,
+        "w": 0,
+        "x": 0
+      },
+      "note": null,
+      "cta": null,
+      "gaps": {
+        "lastRow_to_divider": -168,
+        "lastRow_to_theme": -159,
+        "theme_to_note": null,
+        "theme_to_foot": -588,
+        "note_to_cta": null,
+        "cta_to_panelBottom": null,
+        "lastElement_to_panelBottom": -93
+      },
+      "reachable": {
+        "lastRow": false,
+        "theme": true,
+        "cta": null,
+        "allInsidePanel": false
+      },
+      "counts": {
+        "rows": 10,
+        "labels": 1,
+        "guestBlockVisible": false,
+        "accountBlockVisible": true
+      },
+      "overflow": {
+        "doc": 0,
+        "drawer": 0
+      },
+      "pageScrollY": 0,
+      "headerBottom": 65,
+      "drawerTop": 65
+    },
+    "auth-390x600-bottom": {
+      "viewport": {
+        "w": 390,
+        "h": 600
+      },
+      "drawer": {
+        "top": 65,
+        "bottom": 600,
+        "h": 535,
+        "w": 390,
+        "x": 0
+      },
+      "panel": {
+        "top": 65,
+        "bottom": 600,
+        "h": 535,
+        "w": 390,
+        "x": 0
+      },
+      "scroller": {
+        "cls": "shop-menu__scroll",
+        "id": "shop-menu-scroll",
+        "top": 65,
+        "bottom": 517,
+        "clientH": 452,
+        "contentH": 632,
+        "maxScroll": 180,
+        "overflowY": "auto",
+        "flex": "1 1 auto",
+        "paddingTop": "8px",
+        "paddingBottom": "4px"
+      },
+      "lastRow": {
+        "top": 463,
+        "bottom": 513,
+        "h": 50,
+        "w": 366,
+        "x": 12
+      },
+      "lastRowText": "تسجيل الخروج",
+      "lastLabel": {
+        "top": -29,
+        "bottom": 5,
+        "h": 34,
+        "w": 366,
+        "x": 12
+      },
+      "divider": {
+        "top": 525,
+        "bottom": 526,
+        "h": 1,
+        "w": 366,
+        "x": 12
+      },
+      "theme": {
+        "top": 534,
+        "bottom": 588,
+        "h": 54,
+        "w": 366,
+        "x": 12
+      },
+      "foot": {
+        "top": 0,
+        "bottom": 0,
+        "h": 0,
+        "w": 0,
+        "x": 0
+      },
+      "note": null,
+      "cta": null,
+      "gaps": {
+        "lastRow_to_divider": 12,
+        "lastRow_to_theme": 21,
+        "theme_to_note": null,
+        "theme_to_foot": -588,
+        "note_to_cta": null,
+        "cta_to_panelBottom": null,
+        "lastElement_to_panelBottom": 12
+      },
+      "reachable": {
+        "lastRow": true,
+        "theme": true,
+        "cta": null,
+        "allInsidePanel": true
+      },
+      "counts": {
+        "rows": 10,
+        "labels": 1,
+        "guestBlockVisible": false,
+        "accountBlockVisible": true
+      },
+      "overflow": {
+        "doc": 0,
+        "drawer": 0
+      },
+      "pageScrollY": 0,
+      "headerBottom": 65,
+      "drawerTop": 65
+    }
+  },
+  "functional": {
+    "open": {
+      "open": true,
+      "ariaHidden": "false",
+      "expanded": "true",
+      "activeInDrawer": true,
+      "bodyOverflow": "hidden",
+      "htmlOverflow": "hidden",
+      "scrollY": 0
+    },
+    "focus_trap_all_inside": true,
+    "escape": {
+      "hidden": true,
+      "active": "shop-burger",
+      "expanded": "false",
+      "bodyOverflow": "visible"
+    },
+    "theme": {
+      "theme": "dark",
+      "pressed": [
+        "false",
+        "true",
+        "false"
+      ],
+      "thumb": {
+        "thumbW": 119,
+        "btnW": 119,
+        "thumbX": 136,
+        "btnX": 136
+      }
+    },
+    "internal_scroll": {
+      "before": 0,
+      "after": 0,
+      "max": 101,
+      "pageScrollY": 0
+    },
+    "nav_click": {
+      "before": "#/",
+      "after": {
+        "hash": "#/products",
+        "hidden": true,
+        "bodyOverflow": "visible"
+      }
+    },
+    "resize_1024": {
+      "w": 1200,
+      "hidden": true,
+      "burger": "none"
+    },
+    "search": {
+      "open": true,
+      "sheetTop": 65,
+      "headerBottom": 65
+    },
+    "search_closed": true
+  },
+  "console_errors": [],
+  "shots": [
+    "/root/alwled/frontend/tools/qa/stage2d1/before-guest-360x780.png",
+    "/root/alwled/frontend/tools/qa/stage2d1/before-guest-390x844.png",
+    "/root/alwled/frontend/tools/qa/stage2d1/before-guest-390x700.png",
+    "/root/alwled/frontend/tools/qa/stage2d1/before-guest-390x600.png",
+    "/root/alwled/frontend/tools/qa/stage2d1/before-guest-390x600-bottom.png",
+    "/root/alwled/frontend/tools/qa/stage2d1/before-guest-430x900.png",
+    "/root/alwled/frontend/tools/qa/stage2d1/before-guest-600x900.png",
+    "/root/alwled/frontend/tools/qa/stage2d1/before-guest-768x1000.png",
+    "/root/alwled/frontend/tools/qa/stage2d1/before-guest-768x1000-bottom.png",
+    "/root/alwled/frontend/tools/qa/stage2d1/before-auth-390x844.png",
+    "/root/alwled/frontend/tools/qa/stage2d1/before-auth-390x700.png",
+    "/root/alwled/frontend/tools/qa/stage2d1/before-auth-390x600.png",
+    "/root/alwled/frontend/tools/qa/stage2d1/before-auth-390x600-bottom.png",
+    "/root/alwled/frontend/tools/qa/stage2d1/before-dark-390x844.png"
+  ],
+  "desktop": {
+    "burgerDisplay": "none",
+    "drawerHidden": true,
+    "headerH": 74,
+    "drawerTop": 0,
+    "overflow": 0
+  }
+}

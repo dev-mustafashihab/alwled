@@ -1,0 +1,2 @@
+18784e5c610a725e1d4d30f325de1eed  ../../../shop/assets/js/shop.js
+a930c5d4acffdea9af1362ed2426c0e4  ../../../shop/assets/js/shop.pages.js

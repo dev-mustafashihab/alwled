@@ -1,0 +1,128 @@
+{
+ "400": {
+  "toasts": [
+   "تعذّر التنفيذ",
+   "mock"
+  ],
+  "modal_err": "mock",
+  "busy": false,
+  "save_disabled": false,
+  "open": true,
+  "calls": [
+   "POST /slider/admin"
+  ],
+  "link_editable": true,
+  "raw_json": false,
+  "obj_obj": false,
+  "stack": false,
+  "path": false
+ },
+ "401": {
+  "toasts": [
+   "تعذّر التنفيذ",
+   "mock"
+  ],
+  "modal_err": "mock",
+  "busy": false,
+  "save_disabled": false,
+  "open": true,
+  "calls": [
+   "POST /slider/admin"
+  ],
+  "link_editable": true,
+  "raw_json": false,
+  "obj_obj": false,
+  "stack": false,
+  "path": false
+ },
+ "403": {
+  "toasts": [
+   "تعذّر التنفيذ",
+   "mock"
+  ],
+  "modal_err": "mock",
+  "busy": false,
+  "save_disabled": false,
+  "open": true,
+  "calls": [
+   "POST /slider/admin"
+  ],
+  "link_editable": true,
+  "raw_json": false,
+  "obj_obj": false,
+  "stack": false,
+  "path": false
+ },
+ "404": {
+  "toasts": [
+   "تعذّر التنفيذ",
+   "mock"
+  ],
+  "modal_err": "mock",
+  "busy": false,
+  "save_disabled": false,
+  "open": true,
+  "calls": [
+   "POST /slider/admin"
+  ],
+  "link_editable": true,
+  "raw_json": false,
+  "obj_obj": false,
+  "stack": false,
+  "path": false
+ },
+ "413": {
+  "toasts": [
+   "تعذّر التنفيذ",
+   "mock"
+  ],
+  "modal_err": "mock",
+  "busy": false,
+  "save_disabled": false,
+  "open": true,
+  "calls": [
+   "POST /slider/admin"
+  ],
+  "link_editable": true,
+  "raw_json": false,
+  "obj_obj": false,
+  "stack": false,
+  "path": false
+ },
+ "500": {
+  "toasts": [
+   "تعذّر التنفيذ",
+   "mock"
+  ],
+  "modal_err": "mock",
+  "busy": false,
+  "save_disabled": false,
+  "open": true,
+  "calls": [
+   "POST /slider/admin"
+  ],
+  "link_editable": true,
+  "raw_json": false,
+  "obj_obj": false,
+  "stack": false,
+  "path": false
+ },
+ "network": {
+  "toasts": [
+   "تعذّر التنفيذ",
+   "Failed to fetch"
+  ],
+  "modal_err": "Failed to fetch",
+  "busy": false,
+  "save_disabled": false,
+  "open": true,
+  "calls": [
+   "POST /slider/admin"
+  ],
+  "link_editable": true,
+  "raw_json": false,
+  "obj_obj": false,
+  "stack": false,
+  "path": false
+ }
+}

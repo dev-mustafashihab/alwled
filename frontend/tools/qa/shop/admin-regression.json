@@ -1,0 +1,54 @@
+{
+  "results": [
+    {
+      "step": "visitor opening the panel still lands on login",
+      "status": "PASS"
+    },
+    {
+      "step": "admin login works and the API base is unchanged",
+      "status": "PASS",
+      "expected": "/alwled-api/api/v1",
+      "got": "/alwled-api/api/v1"
+    },
+    {
+      "step": "admin /dashboard renders real content",
+      "status": "PASS",
+      "detail": "لوحة التحكم  نظرة شاملة على المتجر — كل الأرقام مباشرة من قا"
+    },
+    {
+      "step": "admin /products renders real content",
+      "status": "PASS",
+      "detail": "المنتجات  كتالوج المنتجات: الأسعار والتصنيفات والعلامات والص"
+    },
+    {
+      "step": "admin /roles renders real content",
+      "status": "PASS",
+      "detail": "الأدوار والصلاحيات  الأدوار تُجمّع الصلاحيات. الأدوار النظام"
+    },
+    {
+      "step": "admin /payments renders real content",
+      "status": "PASS",
+      "detail": "الدفعات  دفعات الطلبات. الدفع عبر شام كاش يدوي: تأكيد/رفض بم"
+    },
+    {
+      "step": "admin /notifications renders real content",
+      "status": "PASS",
+      "detail": "الإشعارات  صندوق إشعاراتك: الحالة، القراءة، والتفضيلات.  تعل"
+    },
+    {
+      "step": "admin navigation is intact",
+      "status": "PASS",
+      "expected": ">=15",
+      "got": 18
+    },
+    {
+      "step": "no console errors in the admin journey",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "step": "store has no admin navigation",
+      "status": "PASS"
+    }
+  ]
+}

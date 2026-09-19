@@ -1,0 +1,22 @@
+{
+ "cssom": {
+  "objectFit": [
+   "shop.search.css",
+   ".shop-search-row__media img",
+   "object-fit: contain;"
+  ],
+  "accent": 9,
+  "placeholder": [
+   "shop.search.css",
+   ".shop-search-sheet__input::placeholder",
+   "color: var(--store-text-muted); opacity: 1;"
+  ]
+ },
+ "imgtest": {
+  "objectFit": "contain",
+  "w": 68,
+  "h": 20,
+  "mediaW": 68,
+  "mediaH": 68
+ }
+}

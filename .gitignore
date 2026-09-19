@@ -11,7 +11,7 @@ tsconfig.tsbuildinfo
 .env.*
 !.env.example
 
-# Frontend QA artifacts (screenshots/reports are local evidence, not source)
-frontend/tools/qa/
-*.png
-
+# مخرجات QA المحلية (أدلة ثقيلة — لا تُرفع)
+frontend/tools/qa/**/shots/
+frontend/tools/qa/**/*.png
+frontend/shop/assets/css/*.map

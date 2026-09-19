@@ -1,0 +1,255 @@
+{
+  "shop": "https://panel.fahd-car.cloud/alwled/shop/",
+  "api": "https://panel.fahd-car.cloud/alwled-api/api/v1",
+  "viewports": [
+    "1920x1080",
+    "1440x900",
+    "1280x800",
+    "1024x768",
+    "768x1024",
+    "430x932",
+    "390x844",
+    "375x812"
+  ],
+  "apiSnapshot": {
+    "products": {
+      "page": 1,
+      "limit": 48,
+      "total": 2,
+      "totalPages": 1
+    },
+    "categories": 2,
+    "brands": 2
+  },
+  "results": [
+    {
+      "step": "visitor: home renders the hero",
+      "status": "PASS"
+    },
+    {
+      "step": "visitor: real products from the API are shown",
+      "status": "PASS",
+      "detail": "cards=5"
+    },
+    {
+      "step": "visitor: no admin chrome inside the store",
+      "status": "PASS"
+    },
+    {
+      "step": "visitor: header offers login + register",
+      "status": "PASS",
+      "detail": "[\"تسجيل الدخول\", \"إنشاء حساب\"]"
+    },
+    {
+      "step": "visitor: no session stored on a fresh visit",
+      "status": "PASS"
+    },
+    {
+      "step": "store is RTL",
+      "status": "PASS"
+    },
+    {
+      "step": "home has no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "step": "products: cards match the API page size",
+      "status": "PASS",
+      "detail": "cards=2 apiTotal=2"
+    },
+    {
+      "step": "products: total count comes from the API",
+      "status": "PASS",
+      "detail": "2 منتج"
+    },
+    {
+      "step": "products: filters are labelled for a11y",
+      "status": "PASS",
+      "detail": "[\"بحث في المنتجات\", \"تصفية حسب التصنيف\", \"تصفية حسب العلامة\", \"ترتيب النتائج\", \"أقل سعر\", \"أعلى سعر\"]"
+    },
+    {
+      "step": "search: results match the API for the same term",
+      "status": "PASS",
+      "expected": 2,
+      "got": 2
+    },
+    {
+      "step": "category filter matches the API",
+      "status": "PASS",
+      "expected": 0,
+      "got": 0
+    },
+    {
+      "step": "brand filter matches the API",
+      "status": "PASS",
+      "expected": 1,
+      "got": 1
+    },
+    {
+      "step": "categories view renders the API categories",
+      "status": "PASS",
+      "expected": 2,
+      "got": 2
+    },
+    {
+      "step": "brands view renders the API brands",
+      "status": "PASS",
+      "expected": 2,
+      "got": 2
+    },
+    {
+      "step": "details: name matches the API",
+      "status": "PASS",
+      "expected": "منتج تجريبي — ثلاجة 300 لتر",
+      "got": "منتج تجريبي — ثلاجة 300 لتر"
+    },
+    {
+      "step": "details: price matches the API exactly",
+      "status": "PASS",
+      "expected": "350.00 $",
+      "got": "350.00 $"
+    },
+    {
+      "step": "details: sku shown from the API",
+      "status": "PASS"
+    },
+    {
+      "step": "add-to-cart (visitor) opens the auth prompt",
+      "status": "PASS",
+      "detail": "{\"open\": true, \"title\": \"سجّل الدخول لإضافة المنتج إلى السلة\", \"buttons\": [\"تسجيل الدخول\", \"إنشاء حساب\", \"متابعة التصفح\"], \"focusInside\": true, \"bodyLocked\": true}"
+    },
+    {
+      "step": "auth prompt offers login / register / continue browsing",
+      "status": "PASS",
+      "detail": "[\"تسجيل الدخول\", \"إنشاء حساب\", \"متابعة التصفح\"]"
+    },
+    {
+      "step": "auth prompt traps focus and locks the page",
+      "status": "PASS"
+    },
+    {
+      "step": "visitor add-to-cart sends no cart request",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "step": "Escape closes the auth prompt",
+      "status": "PASS"
+    },
+    {
+      "step": "body scroll restored after closing",
+      "status": "PASS"
+    },
+    {
+      "step": "unknown route shows the not-found state",
+      "status": "PASS"
+    },
+    {
+      "step": "a11y: exactly one h1 on home",
+      "status": "PASS",
+      "expected": 1,
+      "got": 1
+    },
+    {
+      "step": "a11y: skip link + lang=ar + named controls + image alts",
+      "status": "PASS",
+      "detail": "{\"h1\": 1, \"skip\": true, \"lang\": \"ar\", \"altOnImages\": true, \"buttonsNamed\": true}"
+    },
+    {
+      "step": "a11y: focused controls show a visible focus style",
+      "status": "PASS",
+      "detail": "{\"outline\": \"solid\", \"shadow\": true}"
+    },
+    {
+      "step": "a11y: prefers-reduced-motion disables transitions",
+      "status": "PASS",
+      "detail": "0s"
+    },
+    {
+      "step": "mobile: burger is visible and the desktop nav is hidden",
+      "status": "PASS"
+    },
+    {
+      "step": "mobile: drawer opens with the store links",
+      "status": "PASS",
+      "detail": "{\"open\": true, \"expanded\": \"true\", \"links\": [\"الرئيسية\", \"كل المنتجات\", \"التصنيفات\", \"العلامات\", \"السلة\", \"تسجيل الدخول\", \"إنشاء حساب\"], \"locked\": true}"
+    },
+    {
+      "step": "mobile: Escape closes the drawer",
+      "status": "PASS"
+    },
+    {
+      "step": "1920x1080: no layout problems",
+      "status": "PASS",
+      "detail": "clean"
+    },
+    {
+      "step": "1440x900: no layout problems",
+      "status": "PASS",
+      "detail": "clean"
+    },
+    {
+      "step": "1280x800: no layout problems",
+      "status": "PASS",
+      "detail": "clean"
+    },
+    {
+      "step": "1024x768: no layout problems",
+      "status": "PASS",
+      "detail": "clean"
+    },
+    {
+      "step": "768x1024: no layout problems",
+      "status": "PASS",
+      "detail": "clean"
+    },
+    {
+      "step": "430x932: no layout problems",
+      "status": "PASS",
+      "detail": "clean"
+    },
+    {
+      "step": "390x844: no layout problems",
+      "status": "PASS",
+      "detail": "clean"
+    },
+    {
+      "step": "375x812: no layout problems",
+      "status": "PASS",
+      "detail": "clean"
+    },
+    {
+      "step": "no console errors across the whole visitor sweep",
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ],
+  "pass": 41,
+  "fail": 0,
+  "screenshots": [
+    "1024x768-home.png",
+    "1024x768-product.png",
+    "1024x768-products.png",
+    "1280x800-home.png",
+    "1280x800-product.png",
+    "1280x800-products.png",
+    "1440x900-home.png",
+    "1440x900-product.png",
+    "1440x900-products.png",
+    "1920x1080-home.png",
+    "1920x1080-product.png",
+    "1920x1080-products.png",
+    "375x812-home.png",
+    "375x812-product.png",
+    "375x812-products.png",
+    "390x844-home.png",
+    "390x844-product.png",
+    "390x844-products.png",
+    "430x932-home.png",
+    "430x932-product.png",
+    "430x932-products.png",
+    "768x1024-home.png",
+    "768x1024-product.png",
+    "768x1024-products.png"
+  ]
+}

@@ -1,0 +1,194 @@
+{
+ "login": {
+  "inputsLabelled": true,
+  "unlabelledControls": [],
+  "explicitlyAssociated": 2,
+  "unnamedControls": [],
+  "hasSkipLink": true,
+  "dir": "rtl",
+  "lang": "ar"
+ },
+ "reducedMotion": "1e-06s",
+ "shell": {
+  "unnamedControls": [],
+  "unnamedCount": 0,
+  "aria": {
+   "navLabel": "القائمة الرئيسية",
+   "navElement": true,
+   "mainLandmark": true,
+   "bannerLandmark": true,
+   "bellExpanded": "false",
+   "bellHasPopup": "menu",
+   "toastLive": "polite",
+   "tableSortable": 0
+  }
+ },
+ "focus": {
+  "chain": [
+   {
+    "tag": "input",
+    "cls": "input",
+    "focusVisible": true
+   },
+   {
+    "tag": "select",
+    "cls": "select",
+    "focusVisible": true
+   },
+   {
+    "tag": "select",
+    "cls": "select",
+    "focusVisible": true
+   },
+   {
+    "tag": "select",
+    "cls": "select",
+    "focusVisible": true
+   },
+   {
+    "tag": "button",
+    "cls": "filter-reset",
+    "focusVisible": true
+   },
+   {
+    "tag": "button",
+    "cls": "btn btn--primary",
+    "focusVisible": true
+   },
+   {
+    "tag": "th",
+    "cls": "is-sortable",
+    "focusVisible": true
+   },
+   {
+    "tag": "th",
+    "cls": "is-sortable",
+    "focusVisible": true
+   },
+   {
+    "tag": "th",
+    "cls": "is-sortable",
+    "focusVisible": true
+   },
+   {
+    "tag": "th",
+    "cls": "is-sortable",
+    "focusVisible": true
+   },
+   {
+    "tag": "th",
+    "cls": "is-sortable",
+    "focusVisible": true
+   },
+   {
+    "tag": "th",
+    "cls": "is-sortable",
+    "focusVisible": true
+   }
+  ],
+  "allVisible": true,
+  "distinctTargets": 5
+ },
+ "modal": {
+  "role": "dialog",
+  "ariaModal": "true",
+  "focusInsideOnOpen": true,
+  "bodyLocked": true,
+  "focusTrapped": true,
+  "escapeClosed": true,
+  "focusRestored": true
+ },
+ "contrast": [
+  {
+   "label": "primary button",
+   "fg": [
+    255,
+    255,
+    255
+   ],
+   "bg": [
+    15,
+    118,
+    110
+   ],
+   "fontSize": "13px",
+   "ratio": 5.47
+  },
+  {
+   "label": "body text",
+   "fg": [
+    51,
+    65,
+    85
+   ],
+   "bg": [
+    0,
+    0,
+    0
+   ],
+   "fontSize": "14px"
+  },
+  {
+   "label": "table header",
+   "fg": [
+    100,
+    116,
+    139
+   ],
+   "bg": [
+    248,
+    250,
+    252
+   ],
+   "fontSize": "12px",
+   "ratio": 4.55
+  },
+  {
+   "label": "muted text",
+   "fg": [
+    100,
+    116,
+    139
+   ],
+   "bg": [
+    0,
+    0,
+    0
+   ],
+   "fontSize": "13px"
+  },
+  {
+   "label": "nav item",
+   "fg": [
+    255,
+    255,
+    255
+   ],
+   "bg": [
+    0,
+    0,
+    0
+   ],
+   "fontSize": "13px"
+  },
+  {
+   "label": "badge text",
+   "fg": [
+    22,
+    101,
+    52
+   ],
+   "bg": [
+    236,
+    253,
+    243
+   ],
+   "fontSize": "11px",
+   "ratio": 6.76
+  }
+ ],
+ "notFound": {
+  "states": 1,
+  "title": "الصفحة غير موجودة"
+ }
+}

@@ -1,0 +1,246 @@
+{
+ "pages": [
+  {
+   "page": "login",
+   "title": "الوليد — لوحة إدارة المتجر",
+   "card": true
+  },
+  {
+   "page": "login-validation",
+   "fieldErrors": 2
+  },
+  {
+   "page": "dashboard",
+   "kpis": 8,
+   "navItems": 18
+  },
+  {
+   "page": "dashboard",
+   "heading": "لوحة التحكم",
+   "cards": 6,
+   "rows": 0,
+   "empty": 3,
+   "errorState": 0
+  },
+  {
+   "page": "analytics",
+   "heading": "التحليلات",
+   "cards": 5,
+   "rows": 0,
+   "empty": 0,
+   "errorState": 0
+  },
+  {
+   "page": "products",
+   "heading": "المنتجات",
+   "cards": 1,
+   "rows": 2,
+   "empty": 0,
+   "errorState": 0
+  },
+  {
+   "page": "categories",
+   "heading": "التصنيفات",
+   "cards": 1,
+   "rows": 2,
+   "empty": 0,
+   "errorState": 0
+  },
+  {
+   "page": "brands",
+   "heading": "العلامات التجارية",
+   "cards": 1,
+   "rows": 2,
+   "empty": 0,
+   "errorState": 0
+  },
+  {
+   "page": "specifications",
+   "heading": "المواصفات",
+   "cards": 1,
+   "rows": 4,
+   "empty": 0,
+   "errorState": 0
+  },
+  {
+   "page": "inventory",
+   "heading": "المخزون",
+   "cards": 1,
+   "rows": 2,
+   "empty": 0,
+   "errorState": 0
+  },
+  {
+   "page": "orders",
+   "heading": "الطلبات",
+   "cards": 1,
+   "rows": 0,
+   "empty": 1,
+   "errorState": 0
+  },
+  {
+   "page": "payments",
+   "heading": "الدفعات",
+   "cards": 1,
+   "rows": 0,
+   "empty": 1,
+   "errorState": 0
+  },
+  {
+   "page": "payments/review",
+   "heading": "مراجعة شام كاش",
+   "cards": 1,
+   "rows": 0,
+   "empty": 1,
+   "errorState": 0
+  },
+  {
+   "page": "customers",
+   "heading": "العملاء",
+   "cards": 1,
+   "rows": 20,
+   "empty": 0,
+   "errorState": 0
+  },
+  {
+   "page": "verification",
+   "heading": "تحقق العملاء",
+   "cards": 1,
+   "rows": 0,
+   "empty": 1,
+   "errorState": 0
+  },
+  {
+   "page": "notifications",
+   "heading": "الإشعارات",
+   "cards": 1,
+   "rows": 20,
+   "empty": 0,
+   "errorState": 0
+  },
+  {
+   "page": "admin/notifications",
+   "heading": "طابور الإشعارات",
+   "cards": 1,
+   "rows": 20,
+   "empty": 0,
+   "errorState": 0
+  },
+  {
+   "page": "employees",
+   "heading": "الموظفون",
+   "cards": 1,
+   "rows": 20,
+   "empty": 0,
+   "errorState": 0
+  },
+  {
+   "page": "roles",
+   "heading": "الأدوار والصلاحيات",
+   "cards": 13,
+   "rows": 0,
+   "empty": 0,
+   "errorState": 0
+  },
+  {
+   "page": "audit",
+   "heading": "سجل التدقيق",
+   "cards": 1,
+   "rows": 20,
+   "empty": 0,
+   "errorState": 0
+  },
+  {
+   "page": "account",
+   "heading": "حسابي",
+   "cards": 5,
+   "rows": 0,
+   "empty": 0,
+   "errorState": 0
+  },
+  {
+   "page": "notifications-bell",
+   "panel": 1
+  }
+ ],
+ "errors": [
+  {
+   "recovered": "session lost mid-run, logged in again"
+  }
+ ],
+ "responsive": [
+  {
+   "viewport": "desktop-1440",
+   "scrollWidth": 1440,
+   "innerWidth": 1440,
+   "horizontalOverflow": false,
+   "sidebarVisible": false
+  },
+  {
+   "viewport": "desktop-1280",
+   "scrollWidth": 1280,
+   "innerWidth": 1280,
+   "horizontalOverflow": false,
+   "sidebarVisible": false
+  },
+  {
+   "viewport": "tablet-1024",
+   "scrollWidth": 1024,
+   "innerWidth": 1024,
+   "horizontalOverflow": false,
+   "sidebarVisible": false
+  },
+  {
+   "viewport": "tablet-768",
+   "scrollWidth": 768,
+   "innerWidth": 768,
+   "horizontalOverflow": false,
+   "sidebarVisible": false
+  },
+  {
+   "viewport": "tablet-768",
+   "drawerOpen": true
+  },
+  {
+   "viewport": "mobile-430",
+   "scrollWidth": 430,
+   "innerWidth": 430,
+   "horizontalOverflow": false,
+   "sidebarVisible": false
+  },
+  {
+   "viewport": "mobile-390",
+   "scrollWidth": 390,
+   "innerWidth": 390,
+   "horizontalOverflow": false,
+   "sidebarVisible": false
+  }
+ ],
+ "security": [
+  {
+   "created": {
+    "role": "QATEST9554766",
+    "employee": "07559554766"
+   }
+  },
+  {
+   "login_wrong_password": "بيانات الدخول غير صحيحة",
+   "status": "generic-error-shown"
+  }
+ ],
+ "screenshots": [
+  "/root/alwled/frontend/tools/qa/01-login-desktop.png",
+  "/root/alwled/frontend/tools/qa/02-login-error.png",
+  "/root/alwled/frontend/tools/qa/03-dashboard-desktop.png",
+  "/root/alwled/frontend/tools/qa/04-dashboard.png",
+  "/root/alwled/frontend/tools/qa/04-products.png",
+  "/root/alwled/frontend/tools/qa/04-specifications.png",
+  "/root/alwled/frontend/tools/qa/04-orders.png",
+  "/root/alwled/frontend/tools/qa/04-verification.png",
+  "/root/alwled/frontend/tools/qa/04-roles.png",
+  "/root/alwled/frontend/tools/qa/04-account.png",
+  "/root/alwled/frontend/tools/qa/05-notifications-panel.png",
+  "/root/alwled/frontend/tools/qa/06-products-tablet-768.png",
+  "/root/alwled/frontend/tools/qa/07-drawer-tablet-768.png"
+ ]
+}

@@ -1,0 +1,2 @@
+8d544511cc020e2366b293ac35a1f2d8  ../../../shop/assets/css/shop.css
+51a53a4021cc36d3220698036b504de6  ../../../shop/assets/css/shop.filters.css

@@ -1,0 +1,2265 @@
+{
+ "url": "https://panel.fahd-car.cloud/alwled/",
+ "results": [
+  {
+   "viewport": "1920x1080",
+   "group": "desktop",
+   "pages": [
+    {
+     "doc": 1920,
+     "win": 1920,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 6,
+     "rows": 0,
+     "emptyStates": 3,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 8,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "dashboard"
+    },
+    {
+     "doc": 1920,
+     "win": 1920,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 2,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "products"
+    },
+    {
+     "doc": 1920,
+     "win": 1920,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 0,
+     "emptyStates": 1,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "orders"
+    },
+    {
+     "doc": 1920,
+     "win": 1920,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 0,
+     "emptyStates": 1,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "payments"
+    },
+    {
+     "doc": 1920,
+     "win": 1920,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 20,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "notifications"
+    },
+    {
+     "doc": 1920,
+     "win": 1920,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 20,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "employees"
+    },
+    {
+     "doc": 1920,
+     "win": 1920,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 14,
+     "rows": 0,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "roles"
+    },
+    {
+     "doc": 1920,
+     "win": 1920,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 5,
+     "rows": 0,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "account"
+    }
+   ],
+   "modal": {
+    "open": true,
+    "fitsW": true,
+    "fitsH": true,
+    "left": 745,
+    "right": 1175,
+    "escapeClosed": true
+   },
+   "toast": {
+    "shown": true,
+    "coversHeader": false,
+    "coversActions": null
+   }
+  },
+  {
+   "viewport": "1440x900",
+   "group": "desktop",
+   "pages": [
+    {
+     "doc": 1440,
+     "win": 1440,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 6,
+     "rows": 0,
+     "emptyStates": 3,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 8,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "dashboard"
+    },
+    {
+     "doc": 1440,
+     "win": 1440,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 2,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "products"
+    },
+    {
+     "doc": 1440,
+     "win": 1440,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 0,
+     "emptyStates": 1,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "orders"
+    },
+    {
+     "doc": 1440,
+     "win": 1440,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 0,
+     "emptyStates": 1,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "payments"
+    },
+    {
+     "doc": 1440,
+     "win": 1440,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 20,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "notifications"
+    },
+    {
+     "doc": 1440,
+     "win": 1440,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 20,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "employees"
+    },
+    {
+     "doc": 1440,
+     "win": 1440,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 14,
+     "rows": 0,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "roles"
+    },
+    {
+     "doc": 1440,
+     "win": 1440,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 5,
+     "rows": 0,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "account"
+    }
+   ],
+   "modal": {
+    "open": true,
+    "fitsW": true,
+    "fitsH": true,
+    "left": 505,
+    "right": 935,
+    "escapeClosed": true
+   },
+   "toast": {
+    "shown": true,
+    "coversHeader": false,
+    "coversActions": null
+   },
+   "login": {
+    "overflow": false,
+    "cards": 1
+   }
+  },
+  {
+   "viewport": "1280x800",
+   "group": "desktop",
+   "pages": [
+    {
+     "doc": 1280,
+     "win": 1280,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 6,
+     "rows": 0,
+     "emptyStates": 3,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 8,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "dashboard"
+    },
+    {
+     "doc": 1280,
+     "win": 1280,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 2,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "products"
+    },
+    {
+     "doc": 1280,
+     "win": 1280,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 0,
+     "emptyStates": 1,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "orders"
+    },
+    {
+     "doc": 1280,
+     "win": 1280,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 0,
+     "emptyStates": 1,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "payments"
+    },
+    {
+     "doc": 1280,
+     "win": 1280,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 20,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "notifications"
+    },
+    {
+     "doc": 1280,
+     "win": 1280,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 20,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "employees"
+    },
+    {
+     "doc": 1280,
+     "win": 1280,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 14,
+     "rows": 0,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "roles"
+    },
+    {
+     "doc": 1280,
+     "win": 1280,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 5,
+     "rows": 0,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "account"
+    }
+   ],
+   "modal": {
+    "open": true,
+    "fitsW": true,
+    "fitsH": true,
+    "left": 425,
+    "right": 855,
+    "escapeClosed": true
+   },
+   "toast": {
+    "shown": true,
+    "coversHeader": false,
+    "coversActions": null
+   },
+   "login": {
+    "overflow": false,
+    "cards": 1
+   }
+  },
+  {
+   "viewport": "1024x768",
+   "group": "tablet",
+   "pages": [
+    {
+     "doc": 1024,
+     "win": 1024,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 6,
+     "rows": 0,
+     "emptyStates": 3,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 8,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "dashboard"
+    },
+    {
+     "doc": 1024,
+     "win": 1024,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 2,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "products"
+    },
+    {
+     "doc": 1024,
+     "win": 1024,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 0,
+     "emptyStates": 1,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "orders"
+    },
+    {
+     "doc": 1024,
+     "win": 1024,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 0,
+     "emptyStates": 1,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "payments"
+    },
+    {
+     "doc": 1024,
+     "win": 1024,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 20,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "notifications"
+    },
+    {
+     "doc": 1024,
+     "win": 1024,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 20,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "employees"
+    },
+    {
+     "doc": 1024,
+     "win": 1024,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 14,
+     "rows": 0,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "roles"
+    },
+    {
+     "doc": 1024,
+     "win": 1024,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 5,
+     "rows": 0,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "n/a",
+     "page": "account"
+    }
+   ],
+   "modal": {
+    "open": true,
+    "fitsW": true,
+    "fitsH": true,
+    "left": 297,
+    "right": 727,
+    "escapeClosed": true
+   },
+   "toast": {
+    "shown": true,
+    "coversHeader": false,
+    "coversActions": null
+   },
+   "login": {
+    "overflow": false,
+    "cards": 1
+   }
+  },
+  {
+   "viewport": "768x1024",
+   "group": "tablet",
+   "pages": [
+    {
+     "doc": 768,
+     "win": 768,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 6,
+     "rows": 0,
+     "emptyStates": 3,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 8,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "dashboard"
+    },
+    {
+     "doc": 768,
+     "win": 768,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 2,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "products"
+    },
+    {
+     "doc": 768,
+     "win": 768,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 0,
+     "emptyStates": 1,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "orders"
+    },
+    {
+     "doc": 768,
+     "win": 768,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 0,
+     "emptyStates": 1,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "payments"
+    },
+    {
+     "doc": 768,
+     "win": 768,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 20,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "notifications"
+    },
+    {
+     "doc": 768,
+     "win": 768,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 20,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "employees"
+    },
+    {
+     "doc": 768,
+     "win": 768,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 14,
+     "rows": 0,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "roles"
+    },
+    {
+     "doc": 768,
+     "win": 768,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 5,
+     "rows": 0,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "account"
+    }
+   ],
+   "modal": {
+    "open": true,
+    "fitsW": true,
+    "fitsH": true,
+    "left": 169,
+    "right": 599,
+    "escapeClosed": true
+   },
+   "toast": {
+    "shown": true,
+    "coversHeader": false,
+    "coversActions": null
+   },
+   "login": {
+    "overflow": false,
+    "cards": 1
+   }
+  },
+  {
+   "viewport": "430x932",
+   "group": "mobile",
+   "pages": [
+    {
+     "doc": 430,
+     "win": 430,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 6,
+     "rows": 0,
+     "emptyStates": 3,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 8,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "dashboard"
+    },
+    {
+     "doc": 430,
+     "win": 430,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 2,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "products"
+    },
+    {
+     "doc": 430,
+     "win": 430,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 0,
+     "emptyStates": 1,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "orders"
+    },
+    {
+     "doc": 430,
+     "win": 430,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 0,
+     "emptyStates": 1,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "payments"
+    },
+    {
+     "doc": 430,
+     "win": 430,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 20,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "notifications"
+    },
+    {
+     "doc": 430,
+     "win": 430,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 20,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "employees"
+    },
+    {
+     "doc": 430,
+     "win": 430,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 14,
+     "rows": 0,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "roles"
+    },
+    {
+     "doc": 430,
+     "win": 430,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 5,
+     "rows": 0,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "account"
+    }
+   ],
+   "modal": {
+    "open": true,
+    "fitsW": true,
+    "fitsH": true,
+    "left": 16,
+    "right": 414,
+    "escapeClosed": true
+   },
+   "toast": {
+    "shown": true,
+    "coversHeader": false,
+    "coversActions": null
+   },
+   "login": {
+    "overflow": false,
+    "cards": 1
+   }
+  },
+  {
+   "viewport": "390x844",
+   "group": "mobile",
+   "pages": [
+    {
+     "doc": 390,
+     "win": 390,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 6,
+     "rows": 0,
+     "emptyStates": 3,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 8,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "dashboard"
+    },
+    {
+     "doc": 390,
+     "win": 390,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 2,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "products"
+    },
+    {
+     "doc": 390,
+     "win": 390,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 0,
+     "emptyStates": 1,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "orders"
+    },
+    {
+     "doc": 390,
+     "win": 390,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 0,
+     "emptyStates": 1,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "payments"
+    },
+    {
+     "doc": 390,
+     "win": 390,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 20,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "notifications"
+    },
+    {
+     "doc": 390,
+     "win": 390,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 20,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "employees"
+    },
+    {
+     "doc": 390,
+     "win": 390,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 14,
+     "rows": 0,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "roles"
+    },
+    {
+     "doc": 390,
+     "win": 390,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 5,
+     "rows": 0,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "account"
+    }
+   ],
+   "modal": {
+    "open": true,
+    "fitsW": true,
+    "fitsH": true,
+    "left": 16,
+    "right": 374,
+    "escapeClosed": true
+   },
+   "toast": {
+    "shown": true,
+    "coversHeader": false,
+    "coversActions": null
+   },
+   "login": {
+    "overflow": false,
+    "cards": 1
+   }
+  },
+  {
+   "viewport": "375x812",
+   "group": "mobile",
+   "pages": [
+    {
+     "doc": 375,
+     "win": 375,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 6,
+     "rows": 0,
+     "emptyStates": 3,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 8,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "dashboard"
+    },
+    {
+     "doc": 375,
+     "win": 375,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 2,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "products"
+    },
+    {
+     "doc": 375,
+     "win": 375,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 0,
+     "emptyStates": 1,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "orders"
+    },
+    {
+     "doc": 375,
+     "win": 375,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 0,
+     "emptyStates": 1,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "payments"
+    },
+    {
+     "doc": 375,
+     "win": 375,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 20,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "notifications"
+    },
+    {
+     "doc": 375,
+     "win": 375,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 1,
+     "rows": 20,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "employees"
+    },
+    {
+     "doc": 375,
+     "win": 375,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 14,
+     "rows": 0,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "roles"
+    },
+    {
+     "doc": 375,
+     "win": 375,
+     "horizontalOverflow": false,
+     "overflowing": [
+      "a.skip-link",
+      "aside.app-sidebar",
+      "div.app-sidebar__brand",
+      "span.app-sidebar__logo",
+      "svg.[object",
+      "path.[object"
+     ],
+     "dir": "rtl",
+     "theme": "light",
+     "sidebar": {
+      "visible": true,
+      "open": false,
+      "width": 264
+     },
+     "headerHeight": 62,
+     "headerOverlapsContent": false,
+     "cards": 5,
+     "rows": 0,
+     "emptyStates": 0,
+     "errorStates": 0,
+     "skeletons": 0,
+     "kpis": 0,
+     "navItems": 18,
+     "clippedButtons": 0,
+     "unlabeledButtons": 0,
+     "mobileCardMode": "block",
+     "page": "account"
+    }
+   ],
+   "modal": {
+    "open": true,
+    "fitsW": true,
+    "fitsH": true,
+    "left": 16,
+    "right": 359,
+    "escapeClosed": true
+   },
+   "toast": {
+    "shown": true,
+    "coversHeader": false,
+    "coversActions": null
+   },
+   "login": {
+    "overflow": false,
+    "cards": 1
+   }
+  }
+ ],
+ "issues": [
+  {
+   "viewport": "1920x1080",
+   "page": "login",
+   "problems": [
+    "login check failed: Page.wait_for_selector: Timeout 25000ms exceeded.\nCall log:\n  - waiting for locator(\".auth-card\") to be visible\n"
+   ]
+  }
+ ],
+ "console": [],
+ "shots": [
+  "1920x1080-dashboard.png",
+  "1920x1080-products.png",
+  "1920x1080-orders.png",
+  "1920x1080-payments.png",
+  "1920x1080-notifications.png",
+  "1920x1080-employees.png",
+  "1920x1080-roles.png",
+  "1920x1080-account.png",
+  "1440x900-dashboard.png",
+  "1440x900-products.png",
+  "1440x900-orders.png",
+  "1440x900-payments.png",
+  "1440x900-notifications.png",
+  "1440x900-employees.png",
+  "1440x900-roles.png",
+  "1440x900-account.png",
+  "1440x900-login.png",
+  "1280x800-dashboard.png",
+  "1280x800-products.png",
+  "1280x800-orders.png",
+  "1280x800-payments.png",
+  "1280x800-notifications.png",
+  "1280x800-employees.png",
+  "1280x800-roles.png",
+  "1280x800-account.png",
+  "1280x800-login.png",
+  "1024x768-dashboard.png",
+  "1024x768-products.png",
+  "1024x768-orders.png",
+  "1024x768-payments.png",
+  "1024x768-notifications.png",
+  "1024x768-employees.png",
+  "1024x768-roles.png",
+  "1024x768-account.png",
+  "1024x768-drawer.png",
+  "1024x768-login.png",
+  "768x1024-dashboard.png",
+  "768x1024-products.png",
+  "768x1024-orders.png",
+  "768x1024-payments.png",
+  "768x1024-notifications.png",
+  "768x1024-employees.png",
+  "768x1024-roles.png",
+  "768x1024-account.png",
+  "768x1024-drawer.png",
+  "768x1024-login.png",
+  "430x932-dashboard.png",
+  "430x932-products.png",
+  "430x932-orders.png",
+  "430x932-payments.png",
+  "430x932-notifications.png",
+  "430x932-employees.png",
+  "430x932-roles.png",
+  "430x932-account.png",
+  "430x932-drawer.png",
+  "430x932-login.png",
+  "390x844-dashboard.png",
+  "390x844-products.png",
+  "390x844-orders.png",
+  "390x844-payments.png",
+  "390x844-notifications.png",
+  "390x844-employees.png",
+  "390x844-roles.png",
+  "390x844-account.png",
+  "390x844-drawer.png",
+  "390x844-login.png",
+  "375x812-dashboard.png",
+  "375x812-products.png",
+  "375x812-orders.png",
+  "375x812-payments.png",
+  "375x812-notifications.png",
+  "375x812-employees.png",
+  "375x812-roles.png",
+  "375x812-account.png",
+  "375x812-drawer.png",
+  "375x812-login.png"
+ ]
+}

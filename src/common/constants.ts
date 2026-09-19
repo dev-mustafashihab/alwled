@@ -14,6 +14,7 @@ export const PERMISSION_KEYS = {
   products: ['products.read', 'products.create', 'products.update', 'products.delete'],
   categories: ['categories.read', 'categories.create', 'categories.update', 'categories.delete'],
   brands: ['brands.read', 'brands.create', 'brands.update', 'brands.delete'],
+  slider: ['slider.read', 'slider.create', 'slider.update', 'slider.delete'],
   specifications: [
     'specifications.read',
     'specifications.create',
@@ -60,6 +61,7 @@ export const ROLE_PERMISSION_MATRIX: Record<string, string[]> = {
     'analytics.read',
     'notifications.admin.read',
     'audit.read',
+    'slider.read', 'slider.create', 'slider.update', 'slider.delete',
   ],
   EMPLOYEE: [
     'dashboard.read',

@@ -1,0 +1,252 @@
+/* ============================================================================
+ * alwled — Design Tokens (single source of truth)
+ * غيّر الهوية البصرية من هذا الملف فقط: ألوان، خطوط، أحجام، مسافات، ظلال، حركة.
+ * ========================================================================== */
+
+:root {
+  /* ------------------------------- brand ---------------------------------- */
+  --brand-50: #ecfdf7;
+  --brand-100: #d1faec;
+  --brand-200: #a7f3d9;
+  --brand-300: #6ee7c4;
+  --brand-400: #34d3aa;
+  --brand-500: #14b8a6;
+  --brand-600: #0d9488;
+  --brand-700: #0f766e;
+  --brand-800: #115e59;
+  --brand-900: #134e4a;
+
+  --accent-100: #fef3c7;
+  --accent-400: #fbbf24;
+  --accent-500: #f59e0b;
+  --accent-600: #d97706;
+
+  /* ------------------------------ neutrals -------------------------------- */
+  --neutral-0: #ffffff;
+  --neutral-25: #fcfdff;
+  --neutral-50: #f8fafc;
+  --neutral-100: #f1f5f9;
+  --neutral-200: #e6ecf3;
+  --neutral-300: #cbd5e1;
+  --neutral-400: #94a3b8;
+  --neutral-500: #64748b;
+  --neutral-600: #475569;
+  --neutral-700: #334155;
+  --neutral-800: #1e293b;
+  --neutral-900: #0f172a;
+  --neutral-950: #060d1a;
+
+  /* ------------------------------ semantic -------------------------------- */
+  --success-50: #ecfdf3;
+  --success-100: #d1fadf;
+  --success-500: #16a34a;
+  --success-600: #15803d;
+  --success-700: #166534;
+
+  --warning-50: #fffbeb;
+  --warning-100: #fef3c7;
+  --warning-500: #d97706;
+  --warning-600: #b45309;
+  --warning-700: #92400e;
+
+  --danger-50: #fef2f2;
+  --danger-100: #fee2e2;
+  --danger-500: #dc2626;
+  --danger-600: #b91c1c;
+  --danger-700: #991b1b;
+
+  --info-50: #eff6ff;
+  --info-100: #dbeafe;
+  --info-500: #2563eb;
+  --info-600: #1d4ed8;
+  --info-700: #1e40af;
+
+  /* --------------------------------- roles --------------------------------- */
+  --bg-app: var(--neutral-50);
+  --bg-surface: var(--neutral-0);
+  --bg-surface-2: var(--neutral-50);
+  --bg-sidebar: #0b2f38;
+  --bg-sidebar-hover: rgba(255, 255, 255, 0.08);
+  --bg-sidebar-active: rgba(20, 184, 166, 0.18);
+  --bg-overlay: rgba(6, 13, 26, 0.55);
+
+  --text-strong: var(--neutral-900);
+  --text-body: var(--neutral-700);
+  --text-muted: var(--neutral-500);
+  --text-faint: var(--neutral-400);
+  --text-on-brand: #ffffff;
+  --text-sidebar: rgba(255, 255, 255, 0.78);
+  --text-sidebar-strong: #ffffff;
+
+  --border-subtle: var(--neutral-200);
+  --border-default: #dde5ee;
+  --border-strong: var(--neutral-300);
+  --border-brand: var(--brand-500);
+
+  --primary: var(--brand-700);
+  --primary-hover: var(--brand-800);
+  --primary-active: var(--brand-900);
+  --primary-soft: var(--brand-50);
+  --primary-soft-text: var(--brand-800);
+  --ring: rgba(13, 148, 136, 0.35);
+
+  /* ------------------------------ typography ------------------------------- */
+  --font-sans: Tahoma, 'Cairo', 'Segoe UI', 'Noto Naskh Arabic', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+
+  --fs-2xs: 11px;
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-base: 14px;
+  --fs-md: 15px;
+  --fs-lg: 17px;
+  --fs-xl: 20px;
+  --fs-2xl: 24px;
+  --fs-3xl: 30px;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --lh-tight: 1.35;
+  --lh-normal: 1.6;
+  --lh-relaxed: 1.85;
+
+  /* -------------------------------- spacing -------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* --------------------------------- shape --------------------------------- */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-pill: 999px;
+
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 6px 16px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 18px 40px rgba(15, 23, 42, 0.16);
+  --shadow-focus: 0 0 0 3px var(--ring);
+
+  /* --------------------------------- motion -------------------------------- */
+  --dur-instant: 90ms;
+  --dur-fast: 140ms;
+  --dur-base: 200ms;
+  --dur-slow: 320ms;
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  --ease-spring: cubic-bezier(0.34, 1.4, 0.64, 1);
+
+  /* ------------------------------- structure ------------------------------- */
+  --sidebar-w: 264px;
+  --sidebar-w-collapsed: 76px;
+  --header-h: 62px;
+  --content-max: 1560px;
+  --control-h: 40px;
+  --control-h-sm: 32px;
+  --control-h-lg: 46px;
+
+  /* ------------------------------- z-index --------------------------------- */
+  --z-base: 1;
+  --z-sticky: 20;
+  --z-sidebar: 40;
+  --z-drawer: 60;
+  --z-dropdown: 70;
+  --z-modal: 80;
+  --z-toast: 90;
+
+  /* ========================= storefront (semantic) ==========================
+     طبقة دلالية لواجهة المتجر فقط. لا تغيّر أي توكن نظام/لوحة الإدارة.
+     المصدر: هوية المتجر الحالية — الأزرق #1F5FBF المستخدم فعلاً في shop.css.
+     ملاحظة: هذه التوكنز معرّفة فقط — لم يُستبدل أي استخدام حالي بعد (لا Migration).
+     ======================================================================== */
+  --store-primary: #1F5FBF;
+  --store-primary-hover: #1A54A8;
+  --store-primary-active: #164A93;
+  --store-primary-soft: #EAF1FB;
+
+  --store-bg: var(--neutral-50);
+  --store-surface: var(--neutral-0);
+  --store-surface-soft: var(--neutral-50);
+
+  --store-text: var(--neutral-900);
+  --store-text-body: var(--neutral-700);
+  --store-text-muted: var(--neutral-500);
+  --store-text-faint: #7A8698;          /* أغمق من --text-faint لتحقيق تباين 4.5 على الأسطح الفاتحة */
+
+  --store-border: var(--neutral-200);
+  --store-border-strong: var(--neutral-300);
+
+  --store-success: var(--success-500);
+  --store-warning: var(--warning-500);
+  --store-danger: var(--danger-500);
+  --store-info: var(--info-500);
+
+  --store-shadow-focus: 0 0 0 3px rgba(31, 95, 191, 0.30);
+
+  /* قيم حركة مستخدمة حالياً كقيم صلبة في shop.home.css (السلايدر والشريط) */
+  --store-slider-duration: 500ms;
+  --store-ticker-duration: 26s;
+
+  /* Breakpoints (documented; media queries use literals — see layout.css)
+     sm: 560px | md: 768px | lg: 1024px | xl: 1280px | 2xl: 1536px */
+}
+
+/* --------------------------------- dark ----------------------------------- */
+[data-theme='dark'] {
+  --bg-app: #0a1220;
+  --bg-surface: #121b2b;
+  --bg-surface-2: #0f1826;
+  --bg-sidebar: #0a1220;
+  --bg-overlay: rgba(2, 6, 16, 0.7);
+
+  --text-strong: #f1f5f9;
+  --text-body: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-faint: #64748b;
+
+  --border-subtle: #1e2a3d;
+  --border-default: #22304a;
+  --border-strong: #2c3d59;
+
+  --primary: var(--brand-500);
+  --primary-hover: var(--brand-400);
+  --primary-active: var(--brand-300);
+  --primary-soft: rgba(20, 184, 166, 0.14);
+  --primary-soft-text: var(--brand-200);
+
+  --success-50: rgba(22, 163, 74, 0.16);
+  --warning-50: rgba(217, 119, 6, 0.16);
+  --danger-50: rgba(220, 38, 38, 0.16);
+  --info-50: rgba(37, 99, 235, 0.16);
+
+  /* Storefront في الثيم الداكن.
+     --neutral-0/50/200/300/900… لا تتغيّر في الثيم الداكن، لذلك نربط توكنز المتجر
+     الدلالية بتوكنز الأدوار التي تتغيّر فعلاً (--bg-*, --text-*, --border-*) بدل تكرار HEX.
+     هوية المتجر الزرقاء (--store-primary*) تبقى كما هي — لا تُحوَّل إلى teal. */
+  --store-bg: var(--bg-app);
+  --store-surface: var(--bg-surface);
+  --store-surface-soft: var(--bg-surface-2);
+  --store-text: var(--text-strong);
+  --store-text-body: var(--text-body);
+  --store-text-muted: var(--text-muted);
+  --store-border: var(--border-subtle);
+  --store-border-strong: var(--border-strong);
+  --store-primary-soft: rgba(31, 95, 191, 0.18);
+  --store-text-faint: #8E9AAB;
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 22px 48px rgba(0, 0, 0, 0.6);
+}

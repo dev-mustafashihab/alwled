@@ -1,0 +1,14 @@
+{
+  "stage": "14.1",
+  "scope": "public store regression (visitor browsing, guards, a11y, 8 viewports)",
+  "total": 41,
+  "passed": 41,
+  "failed": 0,
+  "source": "frontend/tools/qa_shop.py (run during stage 14.4 with exit code 0)",
+  "results": [
+    {
+      "step": "shop QA sweep",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,7881 @@
+{
+ "mode": "after",
+ "console": [],
+ "failed": [],
+ "shots": [
+  "/root/alwled/frontend/tools/qa/stage3d/after-products-360.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-products-390.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-products-430.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-products-600.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-products-768.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-products-769.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-products-900.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-products-1024.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-products-1366.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-products-1920.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-products-390-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-products-1024-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-products-1366-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-longtitle-390.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-nometa-390.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-crop-390-normal.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-crop-390-discounted.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-crop-1366-normal.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-crop-1366-discounted.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-empty-1366-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-filters-390-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-categories-390.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-brands-390.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-categories-1366.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-brands-1366.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-home-390.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-home-1366.png",
+  "/root/alwled/frontend/tools/qa/stage3d/after-search-390.png"
+ ],
+ "w360": {
+  "vw": 360,
+  "vh": 900,
+  "hash": "#/products",
+  "theme": "light",
+  "docOverflow": 0,
+  "docH": 959,
+  "grid": {
+   "rect": {
+    "x": 12,
+    "y": 252.41,
+    "w": 336,
+    "h": 327.22,
+    "top": 252.41,
+    "bottom": 579.63
+   },
+   "cols": "162px 162px",
+   "gap": "12px"
+  },
+  "cardsCount": 2,
+  "cards": [
+   {
+    "i": 0,
+    "id": "633",
+    "card": {
+     "x": 186,
+     "y": 252.41,
+     "w": 162,
+     "h": 327.22,
+     "top": 252.41,
+     "bottom": 579.63
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 187,
+     "y": 253.41,
+     "w": 160,
+     "h": 140,
+     "top": 253.41,
+     "bottom": 393.41
+    },
+    "mediaCss": {
+     "height": "140px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 187,
+      "y": 253.41,
+      "w": 160,
+      "h": 140,
+      "top": 253.41,
+      "bottom": 393.41
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 187,
+     "y": 393.41,
+     "w": 160,
+     "h": 185.22,
+     "top": 393.41,
+     "bottom": 578.63
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 199,
+     "y": 405.41,
+     "w": 136,
+     "h": 18,
+     "top": 405.41,
+     "bottom": 423.41
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 300 لتر",
+    "nameRect": {
+     "x": 199,
+     "y": 429.41,
+     "w": 136,
+     "h": 42.03,
+     "top": 429.41,
+     "bottom": 471.44
+    },
+    "nameCss": {
+     "font-size": "14.5px",
+     "font-weight": "600",
+     "line-height": "21.025px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 2,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 199,
+     "y": 477.44,
+     "w": 136,
+     "h": 31.19,
+     "top": 477.44,
+     "bottom": 508.63
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "6px",
+     "flex-wrap": "wrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "350.00 $",
+     "rect": {
+      "x": 273,
+      "y": 481.44,
+      "w": 62,
+      "h": 27.19,
+      "top": 481.44,
+      "bottom": 508.63
+     },
+     "css": {
+      "font-size": "17px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": null,
+    "footBadge": null,
+    "flag": null,
+    "actions": {
+     "x": 199,
+     "y": 522.63,
+     "w": 136,
+     "h": 44,
+     "top": 522.63,
+     "bottom": 566.63
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "wrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 199,
+      "y": 522.63,
+      "w": 136,
+      "h": 44,
+      "top": 522.63,
+      "bottom": 566.63
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   },
+   {
+    "i": 1,
+    "id": "632",
+    "card": {
+     "x": 12,
+     "y": 252.41,
+     "w": 162,
+     "h": 327.22,
+     "top": 252.41,
+     "bottom": 579.63
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 13,
+     "y": 253.41,
+     "w": 160,
+     "h": 140,
+     "top": 253.41,
+     "bottom": 393.41
+    },
+    "mediaCss": {
+     "height": "140px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 13,
+      "y": 253.41,
+      "w": 160,
+      "h": 140,
+      "top": 253.41,
+      "bottom": 393.41
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 13,
+     "y": 393.41,
+     "w": 160,
+     "h": 185.22,
+     "top": 393.41,
+     "bottom": 578.63
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 25,
+     "y": 405.41,
+     "w": 136,
+     "h": 18,
+     "top": 405.41,
+     "bottom": 423.41
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 500 لتر",
+    "nameRect": {
+     "x": 25,
+     "y": 429.41,
+     "w": 136,
+     "h": 42.03,
+     "top": 429.41,
+     "bottom": 471.44
+    },
+    "nameCss": {
+     "font-size": "14.5px",
+     "font-weight": "600",
+     "line-height": "21.025px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 2,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 25,
+     "y": 477.44,
+     "w": 136,
+     "h": 31.19,
+     "top": 477.44,
+     "bottom": 508.63
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "6px",
+     "flex-wrap": "wrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "500.00 $",
+     "rect": {
+      "x": 99,
+      "y": 481.44,
+      "w": 62,
+      "h": 27.19,
+      "top": 481.44,
+      "bottom": 508.63
+     },
+     "css": {
+      "font-size": "17px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": {
+     "t": "600.00 $",
+     "rect": {
+      "x": 37,
+      "y": 485.44,
+      "w": 54,
+      "h": 21.59,
+      "top": 485.44,
+      "bottom": 507.03
+     },
+     "vis": true,
+     "css": {
+      "font-size": "13.5px",
+      "color": "rgb(100, 116, 139)",
+      "text-decoration-line": "line-through"
+     }
+    },
+    "footBadge": {
+     "t": "وفّر 16.67%",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "flag": {
+     "t": "-16.67%",
+     "vis": true,
+     "rect": {
+      "x": 110,
+      "y": 261.41,
+      "w": 55,
+      "h": 22,
+      "top": 261.41,
+      "bottom": 283.41
+     }
+    },
+    "actions": {
+     "x": 25,
+     "y": 522.63,
+     "w": 136,
+     "h": 44,
+     "top": 522.63,
+     "bottom": 566.63
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "wrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 25,
+      "y": 522.63,
+      "w": 136,
+      "h": 44,
+      "top": 522.63,
+      "bottom": 566.63
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   }
+  ],
+  "aboveFoldCount": 2,
+  "headerH": 65
+ },
+ "w390": {
+  "vw": 390,
+  "vh": 900,
+  "hash": "#/products",
+  "theme": "light",
+  "docOverflow": 0,
+  "docH": 959,
+  "grid": {
+   "rect": {
+    "x": 12,
+    "y": 252.41,
+    "w": 366,
+    "h": 327.22,
+    "top": 252.41,
+    "bottom": 579.63
+   },
+   "cols": "177px 177px",
+   "gap": "12px"
+  },
+  "cardsCount": 2,
+  "cards": [
+   {
+    "i": 0,
+    "id": "633",
+    "card": {
+     "x": 201,
+     "y": 252.41,
+     "w": 177,
+     "h": 327.22,
+     "top": 252.41,
+     "bottom": 579.63
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 202,
+     "y": 253.41,
+     "w": 175,
+     "h": 140,
+     "top": 253.41,
+     "bottom": 393.41
+    },
+    "mediaCss": {
+     "height": "140px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 202,
+      "y": 253.41,
+      "w": 175,
+      "h": 140,
+      "top": 253.41,
+      "bottom": 393.41
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 202,
+     "y": 393.41,
+     "w": 175,
+     "h": 185.22,
+     "top": 393.41,
+     "bottom": 578.63
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 214,
+     "y": 405.41,
+     "w": 151,
+     "h": 18,
+     "top": 405.41,
+     "bottom": 423.41
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 300 لتر",
+    "nameRect": {
+     "x": 214,
+     "y": 429.41,
+     "w": 151,
+     "h": 42.03,
+     "top": 429.41,
+     "bottom": 471.44
+    },
+    "nameCss": {
+     "font-size": "14.5px",
+     "font-weight": "600",
+     "line-height": "21.025px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 2,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 214,
+     "y": 477.44,
+     "w": 151,
+     "h": 31.19,
+     "top": 477.44,
+     "bottom": 508.63
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "6px",
+     "flex-wrap": "wrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "350.00 $",
+     "rect": {
+      "x": 303,
+      "y": 481.44,
+      "w": 62,
+      "h": 27.19,
+      "top": 481.44,
+      "bottom": 508.63
+     },
+     "css": {
+      "font-size": "17px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": null,
+    "footBadge": null,
+    "flag": null,
+    "actions": {
+     "x": 214,
+     "y": 522.63,
+     "w": 151,
+     "h": 44,
+     "top": 522.63,
+     "bottom": 566.63
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "wrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 214,
+      "y": 522.63,
+      "w": 151,
+      "h": 44,
+      "top": 522.63,
+      "bottom": 566.63
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   },
+   {
+    "i": 1,
+    "id": "632",
+    "card": {
+     "x": 12,
+     "y": 252.41,
+     "w": 177,
+     "h": 327.22,
+     "top": 252.41,
+     "bottom": 579.63
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 13,
+     "y": 253.41,
+     "w": 175,
+     "h": 140,
+     "top": 253.41,
+     "bottom": 393.41
+    },
+    "mediaCss": {
+     "height": "140px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 13,
+      "y": 253.41,
+      "w": 175,
+      "h": 140,
+      "top": 253.41,
+      "bottom": 393.41
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 13,
+     "y": 393.41,
+     "w": 175,
+     "h": 185.22,
+     "top": 393.41,
+     "bottom": 578.63
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 25,
+     "y": 405.41,
+     "w": 151,
+     "h": 18,
+     "top": 405.41,
+     "bottom": 423.41
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 500 لتر",
+    "nameRect": {
+     "x": 25,
+     "y": 429.41,
+     "w": 151,
+     "h": 42.03,
+     "top": 429.41,
+     "bottom": 471.44
+    },
+    "nameCss": {
+     "font-size": "14.5px",
+     "font-weight": "600",
+     "line-height": "21.025px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 2,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 25,
+     "y": 477.44,
+     "w": 151,
+     "h": 31.19,
+     "top": 477.44,
+     "bottom": 508.63
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "6px",
+     "flex-wrap": "wrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "500.00 $",
+     "rect": {
+      "x": 114,
+      "y": 481.44,
+      "w": 62,
+      "h": 27.19,
+      "top": 481.44,
+      "bottom": 508.63
+     },
+     "css": {
+      "font-size": "17px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": {
+     "t": "600.00 $",
+     "rect": {
+      "x": 52,
+      "y": 485.44,
+      "w": 54,
+      "h": 21.59,
+      "top": 485.44,
+      "bottom": 507.03
+     },
+     "vis": true,
+     "css": {
+      "font-size": "13.5px",
+      "color": "rgb(100, 116, 139)",
+      "text-decoration-line": "line-through"
+     }
+    },
+    "footBadge": {
+     "t": "وفّر 16.67%",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "flag": {
+     "t": "-16.67%",
+     "vis": true,
+     "rect": {
+      "x": 125,
+      "y": 261.41,
+      "w": 55,
+      "h": 22,
+      "top": 261.41,
+      "bottom": 283.41
+     }
+    },
+    "actions": {
+     "x": 25,
+     "y": 522.63,
+     "w": 151,
+     "h": 44,
+     "top": 522.63,
+     "bottom": 566.63
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "wrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 25,
+      "y": 522.63,
+      "w": 151,
+      "h": 44,
+      "top": 522.63,
+      "bottom": 566.63
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   }
+  ],
+  "aboveFoldCount": 2,
+  "headerH": 65
+ },
+ "w430": {
+  "vw": 430,
+  "vh": 900,
+  "hash": "#/products",
+  "theme": "light",
+  "docOverflow": 0,
+  "docH": 938,
+  "grid": {
+   "rect": {
+    "x": 12,
+    "y": 252.41,
+    "w": 406,
+    "h": 306.2,
+    "top": 252.41,
+    "bottom": 558.61
+   },
+   "cols": "197px 197px",
+   "gap": "12px"
+  },
+  "cardsCount": 2,
+  "cards": [
+   {
+    "i": 0,
+    "id": "633",
+    "card": {
+     "x": 221,
+     "y": 252.41,
+     "w": 197,
+     "h": 306.2,
+     "top": 252.41,
+     "bottom": 558.61
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 222,
+     "y": 253.41,
+     "w": 195,
+     "h": 140,
+     "top": 253.41,
+     "bottom": 393.41
+    },
+    "mediaCss": {
+     "height": "140px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 222,
+      "y": 253.41,
+      "w": 195,
+      "h": 140,
+      "top": 253.41,
+      "bottom": 393.41
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 222,
+     "y": 393.41,
+     "w": 195,
+     "h": 164.2,
+     "top": 393.41,
+     "bottom": 557.61
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 234,
+     "y": 405.41,
+     "w": 171,
+     "h": 18,
+     "top": 405.41,
+     "bottom": 423.41
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 300 لتر",
+    "nameRect": {
+     "x": 234,
+     "y": 429.41,
+     "w": 171,
+     "h": 21.02,
+     "top": 429.41,
+     "bottom": 450.42
+    },
+    "nameCss": {
+     "font-size": "14.5px",
+     "font-weight": "600",
+     "line-height": "21.025px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 234,
+     "y": 456.42,
+     "w": 171,
+     "h": 31.19,
+     "top": 456.42,
+     "bottom": 487.61
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "6px",
+     "flex-wrap": "wrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "350.00 $",
+     "rect": {
+      "x": 343,
+      "y": 460.42,
+      "w": 62,
+      "h": 27.19,
+      "top": 460.42,
+      "bottom": 487.61
+     },
+     "css": {
+      "font-size": "17px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": null,
+    "footBadge": null,
+    "flag": null,
+    "actions": {
+     "x": 234,
+     "y": 501.61,
+     "w": 171,
+     "h": 44,
+     "top": 501.61,
+     "bottom": 545.61
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "wrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 234,
+      "y": 501.61,
+      "w": 171,
+      "h": 44,
+      "top": 501.61,
+      "bottom": 545.61
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   },
+   {
+    "i": 1,
+    "id": "632",
+    "card": {
+     "x": 12,
+     "y": 252.41,
+     "w": 197,
+     "h": 306.2,
+     "top": 252.41,
+     "bottom": 558.61
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 13,
+     "y": 253.41,
+     "w": 195,
+     "h": 140,
+     "top": 253.41,
+     "bottom": 393.41
+    },
+    "mediaCss": {
+     "height": "140px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 13,
+      "y": 253.41,
+      "w": 195,
+      "h": 140,
+      "top": 253.41,
+      "bottom": 393.41
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 13,
+     "y": 393.41,
+     "w": 195,
+     "h": 164.2,
+     "top": 393.41,
+     "bottom": 557.61
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 25,
+     "y": 405.41,
+     "w": 171,
+     "h": 18,
+     "top": 405.41,
+     "bottom": 423.41
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 500 لتر",
+    "nameRect": {
+     "x": 25,
+     "y": 429.41,
+     "w": 171,
+     "h": 21.02,
+     "top": 429.41,
+     "bottom": 450.42
+    },
+    "nameCss": {
+     "font-size": "14.5px",
+     "font-weight": "600",
+     "line-height": "21.025px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 25,
+     "y": 456.42,
+     "w": 171,
+     "h": 31.19,
+     "top": 456.42,
+     "bottom": 487.61
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "6px",
+     "flex-wrap": "wrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "500.00 $",
+     "rect": {
+      "x": 134,
+      "y": 460.42,
+      "w": 62,
+      "h": 27.19,
+      "top": 460.42,
+      "bottom": 487.61
+     },
+     "css": {
+      "font-size": "17px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": {
+     "t": "600.00 $",
+     "rect": {
+      "x": 72,
+      "y": 464.42,
+      "w": 54,
+      "h": 21.59,
+      "top": 464.42,
+      "bottom": 486.02
+     },
+     "vis": true,
+     "css": {
+      "font-size": "13.5px",
+      "color": "rgb(100, 116, 139)",
+      "text-decoration-line": "line-through"
+     }
+    },
+    "footBadge": {
+     "t": "وفّر 16.67%",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "flag": {
+     "t": "-16.67%",
+     "vis": true,
+     "rect": {
+      "x": 145,
+      "y": 261.41,
+      "w": 55,
+      "h": 22,
+      "top": 261.41,
+      "bottom": 283.41
+     }
+    },
+    "actions": {
+     "x": 25,
+     "y": 501.61,
+     "w": 171,
+     "h": 44,
+     "top": 501.61,
+     "bottom": 545.61
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "wrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 25,
+      "y": 501.61,
+      "w": 171,
+      "h": 44,
+      "top": 501.61,
+      "bottom": 545.61
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   }
+  ],
+  "aboveFoldCount": 2,
+  "headerH": 65
+ },
+ "w600": {
+  "vw": 600,
+  "vh": 900,
+  "hash": "#/products",
+  "theme": "light",
+  "docOverflow": 0,
+  "docH": 938,
+  "grid": {
+   "rect": {
+    "x": 12,
+    "y": 252.41,
+    "w": 576,
+    "h": 306.2,
+    "top": 252.41,
+    "bottom": 558.61
+   },
+   "cols": "282px 282px",
+   "gap": "12px"
+  },
+  "cardsCount": 2,
+  "cards": [
+   {
+    "i": 0,
+    "id": "633",
+    "card": {
+     "x": 306,
+     "y": 252.41,
+     "w": 282,
+     "h": 306.2,
+     "top": 252.41,
+     "bottom": 558.61
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 307,
+     "y": 253.41,
+     "w": 280,
+     "h": 140,
+     "top": 253.41,
+     "bottom": 393.41
+    },
+    "mediaCss": {
+     "height": "140px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 307,
+      "y": 253.41,
+      "w": 280,
+      "h": 140,
+      "top": 253.41,
+      "bottom": 393.41
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 307,
+     "y": 393.41,
+     "w": 280,
+     "h": 164.2,
+     "top": 393.41,
+     "bottom": 557.61
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 319,
+     "y": 405.41,
+     "w": 256,
+     "h": 18,
+     "top": 405.41,
+     "bottom": 423.41
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 300 لتر",
+    "nameRect": {
+     "x": 319,
+     "y": 429.41,
+     "w": 256,
+     "h": 21.02,
+     "top": 429.41,
+     "bottom": 450.42
+    },
+    "nameCss": {
+     "font-size": "14.5px",
+     "font-weight": "600",
+     "line-height": "21.025px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 319,
+     "y": 456.42,
+     "w": 256,
+     "h": 31.19,
+     "top": 456.42,
+     "bottom": 487.61
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "6px",
+     "flex-wrap": "wrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "350.00 $",
+     "rect": {
+      "x": 513,
+      "y": 460.42,
+      "w": 62,
+      "h": 27.19,
+      "top": 460.42,
+      "bottom": 487.61
+     },
+     "css": {
+      "font-size": "17px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": null,
+    "footBadge": null,
+    "flag": null,
+    "actions": {
+     "x": 319,
+     "y": 501.61,
+     "w": 256,
+     "h": 44,
+     "top": 501.61,
+     "bottom": 545.61
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 319,
+      "y": 501.61,
+      "w": 256,
+      "h": 44,
+      "top": 501.61,
+      "bottom": 545.61
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   },
+   {
+    "i": 1,
+    "id": "632",
+    "card": {
+     "x": 12,
+     "y": 252.41,
+     "w": 282,
+     "h": 306.2,
+     "top": 252.41,
+     "bottom": 558.61
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 13,
+     "y": 253.41,
+     "w": 280,
+     "h": 140,
+     "top": 253.41,
+     "bottom": 393.41
+    },
+    "mediaCss": {
+     "height": "140px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 13,
+      "y": 253.41,
+      "w": 280,
+      "h": 140,
+      "top": 253.41,
+      "bottom": 393.41
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 13,
+     "y": 393.41,
+     "w": 280,
+     "h": 164.2,
+     "top": 393.41,
+     "bottom": 557.61
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 25,
+     "y": 405.41,
+     "w": 256,
+     "h": 18,
+     "top": 405.41,
+     "bottom": 423.41
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 500 لتر",
+    "nameRect": {
+     "x": 25,
+     "y": 429.41,
+     "w": 256,
+     "h": 21.02,
+     "top": 429.41,
+     "bottom": 450.42
+    },
+    "nameCss": {
+     "font-size": "14.5px",
+     "font-weight": "600",
+     "line-height": "21.025px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 25,
+     "y": 456.42,
+     "w": 256,
+     "h": 31.19,
+     "top": 456.42,
+     "bottom": 487.61
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "6px",
+     "flex-wrap": "wrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "500.00 $",
+     "rect": {
+      "x": 219,
+      "y": 460.42,
+      "w": 62,
+      "h": 27.19,
+      "top": 460.42,
+      "bottom": 487.61
+     },
+     "css": {
+      "font-size": "17px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": {
+     "t": "600.00 $",
+     "rect": {
+      "x": 157,
+      "y": 464.42,
+      "w": 54,
+      "h": 21.59,
+      "top": 464.42,
+      "bottom": 486.02
+     },
+     "vis": true,
+     "css": {
+      "font-size": "13.5px",
+      "color": "rgb(100, 116, 139)",
+      "text-decoration-line": "line-through"
+     }
+    },
+    "footBadge": {
+     "t": "وفّر 16.67%",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "flag": {
+     "t": "-16.67%",
+     "vis": true,
+     "rect": {
+      "x": 230,
+      "y": 261.41,
+      "w": 55,
+      "h": 22,
+      "top": 261.41,
+      "bottom": 283.41
+     }
+    },
+    "actions": {
+     "x": 25,
+     "y": 501.61,
+     "w": 256,
+     "h": 44,
+     "top": 501.61,
+     "bottom": 545.61
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 25,
+      "y": 501.61,
+      "w": 256,
+      "h": 44,
+      "top": 501.61,
+      "bottom": 545.61
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   }
+  ],
+  "aboveFoldCount": 2,
+  "headerH": 65
+ },
+ "w768": {
+  "vw": 768,
+  "vh": 900,
+  "hash": "#/products",
+  "theme": "light",
+  "docOverflow": 0,
+  "docH": 956,
+  "grid": {
+   "rect": {
+    "x": 16,
+    "y": 257.2,
+    "w": 736,
+    "h": 324.55,
+    "top": 257.2,
+    "bottom": 581.75
+   },
+   "cols": "237.328px 237.328px 237.328px",
+   "gap": "12px"
+  },
+  "cardsCount": 2,
+  "cards": [
+   {
+    "i": 0,
+    "id": "633",
+    "card": {
+     "x": 514.67,
+     "y": 257.2,
+     "w": 237.33,
+     "h": 324.55,
+     "top": 257.2,
+     "bottom": 581.75
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 515.67,
+     "y": 258.2,
+     "w": 235.33,
+     "h": 156,
+     "top": 258.2,
+     "bottom": 414.2
+    },
+    "mediaCss": {
+     "height": "156px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 515.67,
+      "y": 258.2,
+      "w": 235.33,
+      "h": 156,
+      "top": 258.2,
+      "bottom": 414.2
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 515.67,
+     "y": 414.2,
+     "w": 235.33,
+     "h": 166.55,
+     "top": 414.2,
+     "bottom": 580.75
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 527.67,
+     "y": 426.2,
+     "w": 211.33,
+     "h": 18,
+     "top": 426.2,
+     "bottom": 444.2
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 300 لتر",
+    "nameRect": {
+     "x": 527.67,
+     "y": 450.2,
+     "w": 211.33,
+     "h": 21.75,
+     "top": 450.2,
+     "bottom": 471.95
+    },
+    "nameCss": {
+     "font-size": "15px",
+     "font-weight": "600",
+     "line-height": "21.75px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 527.67,
+     "y": 477.95,
+     "w": 211.33,
+     "h": 32.8,
+     "top": 477.95,
+     "bottom": 510.75
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "350.00 $",
+     "rect": {
+      "x": 671,
+      "y": 481.95,
+      "w": 68,
+      "h": 28.8,
+      "top": 481.95,
+      "bottom": 510.75
+     },
+     "css": {
+      "font-size": "18px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": null,
+    "footBadge": null,
+    "flag": null,
+    "actions": {
+     "x": 527.67,
+     "y": 524.75,
+     "w": 211.33,
+     "h": 44,
+     "top": 524.75,
+     "bottom": 568.75
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 527.67,
+      "y": 524.75,
+      "w": 211.33,
+      "h": 44,
+      "top": 524.75,
+      "bottom": 568.75
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   },
+   {
+    "i": 1,
+    "id": "632",
+    "card": {
+     "x": 265.34,
+     "y": 257.2,
+     "w": 237.33,
+     "h": 324.55,
+     "top": 257.2,
+     "bottom": 581.75
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 266.34,
+     "y": 258.2,
+     "w": 235.33,
+     "h": 156,
+     "top": 258.2,
+     "bottom": 414.2
+    },
+    "mediaCss": {
+     "height": "156px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 266.34,
+      "y": 258.2,
+      "w": 235.33,
+      "h": 156,
+      "top": 258.2,
+      "bottom": 414.2
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 266.34,
+     "y": 414.2,
+     "w": 235.33,
+     "h": 166.55,
+     "top": 414.2,
+     "bottom": 580.75
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 278.34,
+     "y": 426.2,
+     "w": 211.33,
+     "h": 18,
+     "top": 426.2,
+     "bottom": 444.2
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 500 لتر",
+    "nameRect": {
+     "x": 278.34,
+     "y": 450.2,
+     "w": 211.33,
+     "h": 21.75,
+     "top": 450.2,
+     "bottom": 471.95
+    },
+    "nameCss": {
+     "font-size": "15px",
+     "font-weight": "600",
+     "line-height": "21.75px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 278.34,
+     "y": 477.95,
+     "w": 211.33,
+     "h": 32.8,
+     "top": 477.95,
+     "bottom": 510.75
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "500.00 $",
+     "rect": {
+      "x": 421.67,
+      "y": 481.95,
+      "w": 68,
+      "h": 28.8,
+      "top": 481.95,
+      "bottom": 510.75
+     },
+     "css": {
+      "font-size": "18px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": {
+     "t": "600.00 $",
+     "rect": {
+      "x": 359.67,
+      "y": 486.95,
+      "w": 54,
+      "h": 21.59,
+      "top": 486.95,
+      "bottom": 508.55
+     },
+     "vis": true,
+     "css": {
+      "font-size": "13.5px",
+      "color": "rgb(100, 116, 139)",
+      "text-decoration-line": "line-through"
+     }
+    },
+    "footBadge": {
+     "t": "وفّر 16.67%",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "flag": {
+     "t": "-16.67%",
+     "vis": true,
+     "rect": {
+      "x": 438.67,
+      "y": 266.2,
+      "w": 55,
+      "h": 22,
+      "top": 266.2,
+      "bottom": 288.2
+     }
+    },
+    "actions": {
+     "x": 278.34,
+     "y": 524.75,
+     "w": 211.33,
+     "h": 44,
+     "top": 524.75,
+     "bottom": 568.75
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 278.34,
+      "y": 524.75,
+      "w": 211.33,
+      "h": 44,
+      "top": 524.75,
+      "bottom": 568.75
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   }
+  ],
+  "aboveFoldCount": 2,
+  "headerH": 65
+ },
+ "w769": {
+  "vw": 769,
+  "vh": 900,
+  "hash": "#/products",
+  "theme": "light",
+  "docOverflow": 0,
+  "docH": 1182,
+  "grid": {
+   "rect": {
+    "x": 16,
+    "y": 483.2,
+    "w": 737,
+    "h": 324.55,
+    "top": 483.2,
+    "bottom": 807.75
+   },
+   "cols": "237.656px 237.672px 237.672px",
+   "gap": "12px"
+  },
+  "cardsCount": 2,
+  "cards": [
+   {
+    "i": 0,
+    "id": "633",
+    "card": {
+     "x": 515.34,
+     "y": 483.2,
+     "w": 237.66,
+     "h": 324.55,
+     "top": 483.2,
+     "bottom": 807.75
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 516.34,
+     "y": 484.2,
+     "w": 235.66,
+     "h": 156,
+     "top": 484.2,
+     "bottom": 640.2
+    },
+    "mediaCss": {
+     "height": "156px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 516.34,
+      "y": 484.2,
+      "w": 235.66,
+      "h": 156,
+      "top": 484.2,
+      "bottom": 640.2
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 516.34,
+     "y": 640.2,
+     "w": 235.66,
+     "h": 166.55,
+     "top": 640.2,
+     "bottom": 806.75
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 528.34,
+     "y": 652.2,
+     "w": 211.66,
+     "h": 18,
+     "top": 652.2,
+     "bottom": 670.2
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 300 لتر",
+    "nameRect": {
+     "x": 528.34,
+     "y": 676.2,
+     "w": 211.66,
+     "h": 21.75,
+     "top": 676.2,
+     "bottom": 697.95
+    },
+    "nameCss": {
+     "font-size": "15px",
+     "font-weight": "600",
+     "line-height": "21.75px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 528.34,
+     "y": 703.95,
+     "w": 211.66,
+     "h": 32.8,
+     "top": 703.95,
+     "bottom": 736.75
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "350.00 $",
+     "rect": {
+      "x": 672,
+      "y": 707.95,
+      "w": 68,
+      "h": 28.8,
+      "top": 707.95,
+      "bottom": 736.75
+     },
+     "css": {
+      "font-size": "18px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": null,
+    "footBadge": null,
+    "flag": null,
+    "actions": {
+     "x": 528.34,
+     "y": 750.75,
+     "w": 211.66,
+     "h": 44,
+     "top": 750.75,
+     "bottom": 794.75
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 528.34,
+      "y": 750.75,
+      "w": 211.66,
+      "h": 44,
+      "top": 750.75,
+      "bottom": 794.75
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   },
+   {
+    "i": 1,
+    "id": "632",
+    "card": {
+     "x": 265.67,
+     "y": 483.2,
+     "w": 237.67,
+     "h": 324.55,
+     "top": 483.2,
+     "bottom": 807.75
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 266.67,
+     "y": 484.2,
+     "w": 235.67,
+     "h": 156,
+     "top": 484.2,
+     "bottom": 640.2
+    },
+    "mediaCss": {
+     "height": "156px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 266.67,
+      "y": 484.2,
+      "w": 235.67,
+      "h": 156,
+      "top": 484.2,
+      "bottom": 640.2
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 266.67,
+     "y": 640.2,
+     "w": 235.67,
+     "h": 166.55,
+     "top": 640.2,
+     "bottom": 806.75
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 278.67,
+     "y": 652.2,
+     "w": 211.67,
+     "h": 18,
+     "top": 652.2,
+     "bottom": 670.2
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 500 لتر",
+    "nameRect": {
+     "x": 278.67,
+     "y": 676.2,
+     "w": 211.67,
+     "h": 21.75,
+     "top": 676.2,
+     "bottom": 697.95
+    },
+    "nameCss": {
+     "font-size": "15px",
+     "font-weight": "600",
+     "line-height": "21.75px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 278.67,
+     "y": 703.95,
+     "w": 211.67,
+     "h": 32.8,
+     "top": 703.95,
+     "bottom": 736.75
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "500.00 $",
+     "rect": {
+      "x": 422.34,
+      "y": 707.95,
+      "w": 68,
+      "h": 28.8,
+      "top": 707.95,
+      "bottom": 736.75
+     },
+     "css": {
+      "font-size": "18px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": {
+     "t": "600.00 $",
+     "rect": {
+      "x": 360.34,
+      "y": 712.95,
+      "w": 54,
+      "h": 21.59,
+      "top": 712.95,
+      "bottom": 734.55
+     },
+     "vis": true,
+     "css": {
+      "font-size": "13.5px",
+      "color": "rgb(100, 116, 139)",
+      "text-decoration-line": "line-through"
+     }
+    },
+    "footBadge": {
+     "t": "وفّر 16.67%",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "flag": {
+     "t": "-16.67%",
+     "vis": true,
+     "rect": {
+      "x": 439.34,
+      "y": 492.2,
+      "w": 55,
+      "h": 22,
+      "top": 492.2,
+      "bottom": 514.2
+     }
+    },
+    "actions": {
+     "x": 278.67,
+     "y": 750.75,
+     "w": 211.67,
+     "h": 44,
+     "top": 750.75,
+     "bottom": 794.75
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 278.67,
+      "y": 750.75,
+      "w": 211.67,
+      "h": 44,
+      "top": 750.75,
+      "bottom": 794.75
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   }
+  ],
+  "aboveFoldCount": 2,
+  "headerH": 65
+ },
+ "w900": {
+  "vw": 900,
+  "vh": 900,
+  "hash": "#/products",
+  "theme": "light",
+  "docOverflow": 0,
+  "docH": 1142,
+  "grid": {
+   "rect": {
+    "x": 16,
+    "y": 483.2,
+    "w": 868,
+    "h": 324.55,
+    "top": 483.2,
+    "bottom": 807.75
+   },
+   "cols": "281.328px 281.328px 281.344px",
+   "gap": "12px"
+  },
+  "cardsCount": 2,
+  "cards": [
+   {
+    "i": 0,
+    "id": "633",
+    "card": {
+     "x": 602.67,
+     "y": 483.2,
+     "w": 281.33,
+     "h": 324.55,
+     "top": 483.2,
+     "bottom": 807.75
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 603.67,
+     "y": 484.2,
+     "w": 279.33,
+     "h": 156,
+     "top": 484.2,
+     "bottom": 640.2
+    },
+    "mediaCss": {
+     "height": "156px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 603.67,
+      "y": 484.2,
+      "w": 279.33,
+      "h": 156,
+      "top": 484.2,
+      "bottom": 640.2
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 603.67,
+     "y": 640.2,
+     "w": 279.33,
+     "h": 166.55,
+     "top": 640.2,
+     "bottom": 806.75
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 615.67,
+     "y": 652.2,
+     "w": 255.33,
+     "h": 18,
+     "top": 652.2,
+     "bottom": 670.2
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 300 لتر",
+    "nameRect": {
+     "x": 615.67,
+     "y": 676.2,
+     "w": 255.33,
+     "h": 21.75,
+     "top": 676.2,
+     "bottom": 697.95
+    },
+    "nameCss": {
+     "font-size": "15px",
+     "font-weight": "600",
+     "line-height": "21.75px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 615.67,
+     "y": 703.95,
+     "w": 255.33,
+     "h": 32.8,
+     "top": 703.95,
+     "bottom": 736.75
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "350.00 $",
+     "rect": {
+      "x": 803,
+      "y": 707.95,
+      "w": 68,
+      "h": 28.8,
+      "top": 707.95,
+      "bottom": 736.75
+     },
+     "css": {
+      "font-size": "18px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": null,
+    "footBadge": null,
+    "flag": null,
+    "actions": {
+     "x": 615.67,
+     "y": 750.75,
+     "w": 255.33,
+     "h": 44,
+     "top": 750.75,
+     "bottom": 794.75
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 615.67,
+      "y": 750.75,
+      "w": 255.33,
+      "h": 44,
+      "top": 750.75,
+      "bottom": 794.75
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   },
+   {
+    "i": 1,
+    "id": "632",
+    "card": {
+     "x": 309.34,
+     "y": 483.2,
+     "w": 281.33,
+     "h": 324.55,
+     "top": 483.2,
+     "bottom": 807.75
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 310.34,
+     "y": 484.2,
+     "w": 279.33,
+     "h": 156,
+     "top": 484.2,
+     "bottom": 640.2
+    },
+    "mediaCss": {
+     "height": "156px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 310.34,
+      "y": 484.2,
+      "w": 279.33,
+      "h": 156,
+      "top": 484.2,
+      "bottom": 640.2
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 310.34,
+     "y": 640.2,
+     "w": 279.33,
+     "h": 166.55,
+     "top": 640.2,
+     "bottom": 806.75
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 322.34,
+     "y": 652.2,
+     "w": 255.33,
+     "h": 18,
+     "top": 652.2,
+     "bottom": 670.2
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 500 لتر",
+    "nameRect": {
+     "x": 322.34,
+     "y": 676.2,
+     "w": 255.33,
+     "h": 21.75,
+     "top": 676.2,
+     "bottom": 697.95
+    },
+    "nameCss": {
+     "font-size": "15px",
+     "font-weight": "600",
+     "line-height": "21.75px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 322.34,
+     "y": 703.95,
+     "w": 255.33,
+     "h": 32.8,
+     "top": 703.95,
+     "bottom": 736.75
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "500.00 $",
+     "rect": {
+      "x": 509.67,
+      "y": 707.95,
+      "w": 68,
+      "h": 28.8,
+      "top": 707.95,
+      "bottom": 736.75
+     },
+     "css": {
+      "font-size": "18px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": {
+     "t": "600.00 $",
+     "rect": {
+      "x": 447.67,
+      "y": 712.95,
+      "w": 54,
+      "h": 21.59,
+      "top": 712.95,
+      "bottom": 734.55
+     },
+     "vis": true,
+     "css": {
+      "font-size": "13.5px",
+      "color": "rgb(100, 116, 139)",
+      "text-decoration-line": "line-through"
+     }
+    },
+    "footBadge": {
+     "t": "وفّر 16.67%",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "flag": {
+     "t": "-16.67%",
+     "vis": true,
+     "rect": {
+      "x": 526.67,
+      "y": 492.2,
+      "w": 55,
+      "h": 22,
+      "top": 492.2,
+      "bottom": 514.2
+     }
+    },
+    "actions": {
+     "x": 322.34,
+     "y": 750.75,
+     "w": 255.33,
+     "h": 44,
+     "top": 750.75,
+     "bottom": 794.75
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 322.34,
+      "y": 750.75,
+      "w": 255.33,
+      "h": 44,
+      "top": 750.75,
+      "bottom": 794.75
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   }
+  ],
+  "aboveFoldCount": 2,
+  "headerH": 65
+ },
+ "w1024": {
+  "vw": 1024,
+  "vh": 900,
+  "hash": "#/products",
+  "theme": "light",
+  "docOverflow": 0,
+  "docH": 1103,
+  "grid": {
+   "rect": {
+    "x": 16,
+    "y": 412.2,
+    "w": 992,
+    "h": 356.55,
+    "top": 412.2,
+    "bottom": 768.75
+   },
+   "cols": "320px 320px 320px",
+   "gap": "16px"
+  },
+  "cardsCount": 2,
+  "cards": [
+   {
+    "i": 0,
+    "id": "633",
+    "card": {
+     "x": 688,
+     "y": 412.2,
+     "w": 320,
+     "h": 356.55,
+     "top": 412.2,
+     "bottom": 768.75
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 689,
+     "y": 413.2,
+     "w": 318,
+     "h": 188,
+     "top": 413.2,
+     "bottom": 601.2
+    },
+    "mediaCss": {
+     "height": "188px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 689,
+      "y": 413.2,
+      "w": 318,
+      "h": 188,
+      "top": 413.2,
+      "bottom": 601.2
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 689,
+     "y": 601.2,
+     "w": 318,
+     "h": 166.55,
+     "top": 601.2,
+     "bottom": 767.75
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 701,
+     "y": 613.2,
+     "w": 294,
+     "h": 18,
+     "top": 613.2,
+     "bottom": 631.2
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 300 لتر",
+    "nameRect": {
+     "x": 701,
+     "y": 637.2,
+     "w": 294,
+     "h": 21.75,
+     "top": 637.2,
+     "bottom": 658.95
+    },
+    "nameCss": {
+     "font-size": "15px",
+     "font-weight": "600",
+     "line-height": "21.75px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 701,
+     "y": 664.95,
+     "w": 294,
+     "h": 32.8,
+     "top": 664.95,
+     "bottom": 697.75
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "350.00 $",
+     "rect": {
+      "x": 927,
+      "y": 668.95,
+      "w": 68,
+      "h": 28.8,
+      "top": 668.95,
+      "bottom": 697.75
+     },
+     "css": {
+      "font-size": "18px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": null,
+    "footBadge": null,
+    "flag": null,
+    "actions": {
+     "x": 701,
+     "y": 711.75,
+     "w": 294,
+     "h": 44,
+     "top": 711.75,
+     "bottom": 755.75
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 701,
+      "y": 711.75,
+      "w": 294,
+      "h": 44,
+      "top": 711.75,
+      "bottom": 755.75
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   },
+   {
+    "i": 1,
+    "id": "632",
+    "card": {
+     "x": 352,
+     "y": 412.2,
+     "w": 320,
+     "h": 356.55,
+     "top": 412.2,
+     "bottom": 768.75
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 353,
+     "y": 413.2,
+     "w": 318,
+     "h": 188,
+     "top": 413.2,
+     "bottom": 601.2
+    },
+    "mediaCss": {
+     "height": "188px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 353,
+      "y": 413.2,
+      "w": 318,
+      "h": 188,
+      "top": 413.2,
+      "bottom": 601.2
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 353,
+     "y": 601.2,
+     "w": 318,
+     "h": 166.55,
+     "top": 601.2,
+     "bottom": 767.75
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 365,
+     "y": 613.2,
+     "w": 294,
+     "h": 18,
+     "top": 613.2,
+     "bottom": 631.2
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 500 لتر",
+    "nameRect": {
+     "x": 365,
+     "y": 637.2,
+     "w": 294,
+     "h": 21.75,
+     "top": 637.2,
+     "bottom": 658.95
+    },
+    "nameCss": {
+     "font-size": "15px",
+     "font-weight": "600",
+     "line-height": "21.75px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 365,
+     "y": 664.95,
+     "w": 294,
+     "h": 32.8,
+     "top": 664.95,
+     "bottom": 697.75
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "500.00 $",
+     "rect": {
+      "x": 591,
+      "y": 668.95,
+      "w": 68,
+      "h": 28.8,
+      "top": 668.95,
+      "bottom": 697.75
+     },
+     "css": {
+      "font-size": "18px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": {
+     "t": "600.00 $",
+     "rect": {
+      "x": 529,
+      "y": 673.95,
+      "w": 54,
+      "h": 21.59,
+      "top": 673.95,
+      "bottom": 695.55
+     },
+     "vis": true,
+     "css": {
+      "font-size": "13.5px",
+      "color": "rgb(100, 116, 139)",
+      "text-decoration-line": "line-through"
+     }
+    },
+    "footBadge": {
+     "t": "وفّر 16.67%",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "flag": {
+     "t": "-16.67%",
+     "vis": true,
+     "rect": {
+      "x": 608,
+      "y": 421.2,
+      "w": 55,
+      "h": 22,
+      "top": 421.2,
+      "bottom": 443.2
+     }
+    },
+    "actions": {
+     "x": 365,
+     "y": 711.75,
+     "w": 294,
+     "h": 44,
+     "top": 711.75,
+     "bottom": 755.75
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 365,
+      "y": 711.75,
+      "w": 294,
+      "h": 44,
+      "top": 711.75,
+      "bottom": 755.75
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   }
+  ],
+  "aboveFoldCount": 2,
+  "headerH": 74
+ },
+ "w1366": {
+  "vw": 1366,
+  "vh": 900,
+  "hash": "#/products",
+  "theme": "light",
+  "docOverflow": 0,
+  "docH": 1103,
+  "grid": {
+   "rect": {
+    "x": 99,
+    "y": 412.2,
+    "w": 1168,
+    "h": 356.55,
+    "top": 412.2,
+    "bottom": 768.75
+   },
+   "cols": "280px 280px 280px 280px",
+   "gap": "16px"
+  },
+  "cardsCount": 2,
+  "cards": [
+   {
+    "i": 0,
+    "id": "633",
+    "card": {
+     "x": 987,
+     "y": 412.2,
+     "w": 280,
+     "h": 356.55,
+     "top": 412.2,
+     "bottom": 768.75
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 988,
+     "y": 413.2,
+     "w": 278,
+     "h": 188,
+     "top": 413.2,
+     "bottom": 601.2
+    },
+    "mediaCss": {
+     "height": "188px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 988,
+      "y": 413.2,
+      "w": 278,
+      "h": 188,
+      "top": 413.2,
+      "bottom": 601.2
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 988,
+     "y": 601.2,
+     "w": 278,
+     "h": 166.55,
+     "top": 601.2,
+     "bottom": 767.75
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 1000,
+     "y": 613.2,
+     "w": 254,
+     "h": 18,
+     "top": 613.2,
+     "bottom": 631.2
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 300 لتر",
+    "nameRect": {
+     "x": 1000,
+     "y": 637.2,
+     "w": 254,
+     "h": 21.75,
+     "top": 637.2,
+     "bottom": 658.95
+    },
+    "nameCss": {
+     "font-size": "15px",
+     "font-weight": "600",
+     "line-height": "21.75px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 1000,
+     "y": 664.95,
+     "w": 254,
+     "h": 32.8,
+     "top": 664.95,
+     "bottom": 697.75
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "350.00 $",
+     "rect": {
+      "x": 1186,
+      "y": 668.95,
+      "w": 68,
+      "h": 28.8,
+      "top": 668.95,
+      "bottom": 697.75
+     },
+     "css": {
+      "font-size": "18px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": null,
+    "footBadge": null,
+    "flag": null,
+    "actions": {
+     "x": 1000,
+     "y": 711.75,
+     "w": 254,
+     "h": 44,
+     "top": 711.75,
+     "bottom": 755.75
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 1000,
+      "y": 711.75,
+      "w": 254,
+      "h": 44,
+      "top": 711.75,
+      "bottom": 755.75
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   },
+   {
+    "i": 1,
+    "id": "632",
+    "card": {
+     "x": 691,
+     "y": 412.2,
+     "w": 280,
+     "h": 356.55,
+     "top": 412.2,
+     "bottom": 768.75
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 692,
+     "y": 413.2,
+     "w": 278,
+     "h": 188,
+     "top": 413.2,
+     "bottom": 601.2
+    },
+    "mediaCss": {
+     "height": "188px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 692,
+      "y": 413.2,
+      "w": 278,
+      "h": 188,
+      "top": 413.2,
+      "bottom": 601.2
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 692,
+     "y": 601.2,
+     "w": 278,
+     "h": 166.55,
+     "top": 601.2,
+     "bottom": 767.75
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 704,
+     "y": 613.2,
+     "w": 254,
+     "h": 18,
+     "top": 613.2,
+     "bottom": 631.2
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 500 لتر",
+    "nameRect": {
+     "x": 704,
+     "y": 637.2,
+     "w": 254,
+     "h": 21.75,
+     "top": 637.2,
+     "bottom": 658.95
+    },
+    "nameCss": {
+     "font-size": "15px",
+     "font-weight": "600",
+     "line-height": "21.75px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 704,
+     "y": 664.95,
+     "w": 254,
+     "h": 32.8,
+     "top": 664.95,
+     "bottom": 697.75
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "500.00 $",
+     "rect": {
+      "x": 890,
+      "y": 668.95,
+      "w": 68,
+      "h": 28.8,
+      "top": 668.95,
+      "bottom": 697.75
+     },
+     "css": {
+      "font-size": "18px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": {
+     "t": "600.00 $",
+     "rect": {
+      "x": 828,
+      "y": 673.95,
+      "w": 54,
+      "h": 21.59,
+      "top": 673.95,
+      "bottom": 695.55
+     },
+     "vis": true,
+     "css": {
+      "font-size": "13.5px",
+      "color": "rgb(100, 116, 139)",
+      "text-decoration-line": "line-through"
+     }
+    },
+    "footBadge": {
+     "t": "وفّر 16.67%",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "flag": {
+     "t": "-16.67%",
+     "vis": true,
+     "rect": {
+      "x": 907,
+      "y": 421.2,
+      "w": 55,
+      "h": 22,
+      "top": 421.2,
+      "bottom": 443.2
+     }
+    },
+    "actions": {
+     "x": 704,
+     "y": 711.75,
+     "w": 254,
+     "h": 44,
+     "top": 711.75,
+     "bottom": 755.75
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 704,
+      "y": 711.75,
+      "w": 254,
+      "h": 44,
+      "top": 711.75,
+      "bottom": 755.75
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   }
+  ],
+  "aboveFoldCount": 2,
+  "headerH": 74
+ },
+ "w1920": {
+  "vw": 1920,
+  "vh": 900,
+  "hash": "#/products",
+  "theme": "light",
+  "docOverflow": 0,
+  "docH": 1103,
+  "grid": {
+   "rect": {
+    "x": 376,
+    "y": 412.2,
+    "w": 1168,
+    "h": 356.55,
+    "top": 412.2,
+    "bottom": 768.75
+   },
+   "cols": "280px 280px 280px 280px",
+   "gap": "16px"
+  },
+  "cardsCount": 2,
+  "cards": [
+   {
+    "i": 0,
+    "id": "633",
+    "card": {
+     "x": 1264,
+     "y": 412.2,
+     "w": 280,
+     "h": 356.55,
+     "top": 412.2,
+     "bottom": 768.75
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 1265,
+     "y": 413.2,
+     "w": 278,
+     "h": 188,
+     "top": 413.2,
+     "bottom": 601.2
+    },
+    "mediaCss": {
+     "height": "188px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 1265,
+      "y": 413.2,
+      "w": 278,
+      "h": 188,
+      "top": 413.2,
+      "bottom": 601.2
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 1265,
+     "y": 601.2,
+     "w": 278,
+     "h": 166.55,
+     "top": 601.2,
+     "bottom": 767.75
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 1277,
+     "y": 613.2,
+     "w": 254,
+     "h": 18,
+     "top": 613.2,
+     "bottom": 631.2
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 300 لتر",
+    "nameRect": {
+     "x": 1277,
+     "y": 637.2,
+     "w": 254,
+     "h": 21.75,
+     "top": 637.2,
+     "bottom": 658.95
+    },
+    "nameCss": {
+     "font-size": "15px",
+     "font-weight": "600",
+     "line-height": "21.75px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 1277,
+     "y": 664.95,
+     "w": 254,
+     "h": 32.8,
+     "top": 664.95,
+     "bottom": 697.75
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "350.00 $",
+     "rect": {
+      "x": 1463,
+      "y": 668.95,
+      "w": 68,
+      "h": 28.8,
+      "top": 668.95,
+      "bottom": 697.75
+     },
+     "css": {
+      "font-size": "18px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": null,
+    "footBadge": null,
+    "flag": null,
+    "actions": {
+     "x": 1277,
+     "y": 711.75,
+     "w": 254,
+     "h": 44,
+     "top": 711.75,
+     "bottom": 755.75
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 1277,
+      "y": 711.75,
+      "w": 254,
+      "h": 44,
+      "top": 711.75,
+      "bottom": 755.75
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   },
+   {
+    "i": 1,
+    "id": "632",
+    "card": {
+     "x": 968,
+     "y": 412.2,
+     "w": 280,
+     "h": 356.55,
+     "top": 412.2,
+     "bottom": 768.75
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 969,
+     "y": 413.2,
+     "w": 278,
+     "h": 188,
+     "top": 413.2,
+     "bottom": 601.2
+    },
+    "mediaCss": {
+     "height": "188px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 969,
+      "y": 413.2,
+      "w": 278,
+      "h": 188,
+      "top": 413.2,
+      "bottom": 601.2
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 969,
+     "y": 601.2,
+     "w": 278,
+     "h": 166.55,
+     "top": 601.2,
+     "bottom": 767.75
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 981,
+     "y": 613.2,
+     "w": 254,
+     "h": 18,
+     "top": 613.2,
+     "bottom": 631.2
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 500 لتر",
+    "nameRect": {
+     "x": 981,
+     "y": 637.2,
+     "w": 254,
+     "h": 21.75,
+     "top": 637.2,
+     "bottom": 658.95
+    },
+    "nameCss": {
+     "font-size": "15px",
+     "font-weight": "600",
+     "line-height": "21.75px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 981,
+     "y": 664.95,
+     "w": 254,
+     "h": 32.8,
+     "top": 664.95,
+     "bottom": 697.75
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "500.00 $",
+     "rect": {
+      "x": 1167,
+      "y": 668.95,
+      "w": 68,
+      "h": 28.8,
+      "top": 668.95,
+      "bottom": 697.75
+     },
+     "css": {
+      "font-size": "18px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": {
+     "t": "600.00 $",
+     "rect": {
+      "x": 1105,
+      "y": 673.95,
+      "w": 54,
+      "h": 21.59,
+      "top": 673.95,
+      "bottom": 695.55
+     },
+     "vis": true,
+     "css": {
+      "font-size": "13.5px",
+      "color": "rgb(100, 116, 139)",
+      "text-decoration-line": "line-through"
+     }
+    },
+    "footBadge": {
+     "t": "وفّر 16.67%",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "flag": {
+     "t": "-16.67%",
+     "vis": true,
+     "rect": {
+      "x": 1184,
+      "y": 421.2,
+      "w": 55,
+      "h": 22,
+      "top": 421.2,
+      "bottom": 443.2
+     }
+    },
+    "actions": {
+     "x": 981,
+     "y": 711.75,
+     "w": 254,
+     "h": 44,
+     "top": 711.75,
+     "bottom": 755.75
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 981,
+      "y": 711.75,
+      "w": 254,
+      "h": 44,
+      "top": 711.75,
+      "bottom": 755.75
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   }
+  ],
+  "aboveFoldCount": 2,
+  "headerH": 74
+ },
+ "dark_390": {
+  "vw": 390,
+  "vh": 900,
+  "hash": "#/products",
+  "theme": "dark",
+  "docOverflow": 0,
+  "docH": 959,
+  "grid": {
+   "rect": {
+    "x": 12,
+    "y": 252.41,
+    "w": 366,
+    "h": 327.22,
+    "top": 252.41,
+    "bottom": 579.63
+   },
+   "cols": "177px 177px",
+   "gap": "12px"
+  },
+  "cardsCount": 2,
+  "cards": [
+   {
+    "i": 0,
+    "id": "633",
+    "card": {
+     "x": 201,
+     "y": 252.41,
+     "w": 177,
+     "h": 327.22,
+     "top": 252.41,
+     "bottom": 579.63
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(18, 27, 43)",
+     "border-top-color": "rgb(30, 42, 61)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 202,
+     "y": 253.41,
+     "w": 175,
+     "h": 140,
+     "top": 253.41,
+     "bottom": 393.41
+    },
+    "mediaCss": {
+     "height": "140px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(15, 24, 38)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 202,
+      "y": 253.41,
+      "w": 175,
+      "h": 140,
+      "top": 253.41,
+      "bottom": 393.41
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 202,
+     "y": 393.41,
+     "w": 175,
+     "h": 185.22,
+     "top": 393.41,
+     "bottom": 578.63
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 214,
+     "y": 405.41,
+     "w": 151,
+     "h": 18,
+     "top": 405.41,
+     "bottom": 423.41
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(148, 163, 184)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 300 لتر",
+    "nameRect": {
+     "x": 214,
+     "y": 429.41,
+     "w": 151,
+     "h": 42.03,
+     "top": 429.41,
+     "bottom": 471.44
+    },
+    "nameCss": {
+     "font-size": "14.5px",
+     "font-weight": "600",
+     "line-height": "21.025px",
+     "color": "rgb(241, 245, 249)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 2,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 214,
+     "y": 477.44,
+     "w": 151,
+     "h": 31.19,
+     "top": 477.44,
+     "bottom": 508.63
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "6px",
+     "flex-wrap": "wrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "350.00 $",
+     "rect": {
+      "x": 303,
+      "y": 481.44,
+      "w": 62,
+      "h": 27.19,
+      "top": 481.44,
+      "bottom": 508.63
+     },
+     "css": {
+      "font-size": "17px",
+      "font-weight": "700",
+      "color": "rgb(241, 245, 249)"
+     }
+    },
+    "priceWas": null,
+    "footBadge": null,
+    "flag": null,
+    "actions": {
+     "x": 214,
+     "y": 522.63,
+     "w": 151,
+     "h": 44,
+     "top": 522.63,
+     "bottom": 566.63
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "wrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 214,
+      "y": 522.63,
+      "w": 151,
+      "h": 44,
+      "top": 522.63,
+      "bottom": 566.63
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   },
+   {
+    "i": 1,
+    "id": "632",
+    "card": {
+     "x": 12,
+     "y": 252.41,
+     "w": 177,
+     "h": 327.22,
+     "top": 252.41,
+     "bottom": 579.63
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(18, 27, 43)",
+     "border-top-color": "rgb(30, 42, 61)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 13,
+     "y": 253.41,
+     "w": 175,
+     "h": 140,
+     "top": 253.41,
+     "bottom": 393.41
+    },
+    "mediaCss": {
+     "height": "140px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(15, 24, 38)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 13,
+      "y": 253.41,
+      "w": 175,
+      "h": 140,
+      "top": 253.41,
+      "bottom": 393.41
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 13,
+     "y": 393.41,
+     "w": 175,
+     "h": 185.22,
+     "top": 393.41,
+     "bottom": 578.63
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 25,
+     "y": 405.41,
+     "w": 151,
+     "h": 18,
+     "top": 405.41,
+     "bottom": 423.41
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(148, 163, 184)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 500 لتر",
+    "nameRect": {
+     "x": 25,
+     "y": 429.41,
+     "w": 151,
+     "h": 42.03,
+     "top": 429.41,
+     "bottom": 471.44
+    },
+    "nameCss": {
+     "font-size": "14.5px",
+     "font-weight": "600",
+     "line-height": "21.025px",
+     "color": "rgb(241, 245, 249)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 2,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 25,
+     "y": 477.44,
+     "w": 151,
+     "h": 31.19,
+     "top": 477.44,
+     "bottom": 508.63
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "6px",
+     "flex-wrap": "wrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "500.00 $",
+     "rect": {
+      "x": 114,
+      "y": 481.44,
+      "w": 62,
+      "h": 27.19,
+      "top": 481.44,
+      "bottom": 508.63
+     },
+     "css": {
+      "font-size": "17px",
+      "font-weight": "700",
+      "color": "rgb(241, 245, 249)"
+     }
+    },
+    "priceWas": {
+     "t": "600.00 $",
+     "rect": {
+      "x": 52,
+      "y": 485.44,
+      "w": 54,
+      "h": 21.59,
+      "top": 485.44,
+      "bottom": 507.03
+     },
+     "vis": true,
+     "css": {
+      "font-size": "13.5px",
+      "color": "rgb(148, 163, 184)",
+      "text-decoration-line": "line-through"
+     }
+    },
+    "footBadge": {
+     "t": "وفّر 16.67%",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "flag": {
+     "t": "-16.67%",
+     "vis": true,
+     "rect": {
+      "x": 125,
+      "y": 261.41,
+      "w": 55,
+      "h": 22,
+      "top": 261.41,
+      "bottom": 283.41
+     }
+    },
+    "actions": {
+     "x": 25,
+     "y": 522.63,
+     "w": 151,
+     "h": 44,
+     "top": 522.63,
+     "bottom": 566.63
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "wrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 25,
+      "y": 522.63,
+      "w": 151,
+      "h": 44,
+      "top": 522.63,
+      "bottom": 566.63
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   }
+  ],
+  "aboveFoldCount": 2,
+  "headerH": 65
+ },
+ "dark_1024": {
+  "vw": 1024,
+  "vh": 900,
+  "hash": "#/products",
+  "theme": "dark",
+  "docOverflow": 0,
+  "docH": 1103,
+  "grid": {
+   "rect": {
+    "x": 16,
+    "y": 412.2,
+    "w": 992,
+    "h": 356.55,
+    "top": 412.2,
+    "bottom": 768.75
+   },
+   "cols": "320px 320px 320px",
+   "gap": "16px"
+  },
+  "cardsCount": 2,
+  "cards": [
+   {
+    "i": 0,
+    "id": "633",
+    "card": {
+     "x": 688,
+     "y": 412.2,
+     "w": 320,
+     "h": 356.55,
+     "top": 412.2,
+     "bottom": 768.75
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(18, 27, 43)",
+     "border-top-color": "rgb(30, 42, 61)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 689,
+     "y": 413.2,
+     "w": 318,
+     "h": 188,
+     "top": 413.2,
+     "bottom": 601.2
+    },
+    "mediaCss": {
+     "height": "188px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(15, 24, 38)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 689,
+      "y": 413.2,
+      "w": 318,
+      "h": 188,
+      "top": 413.2,
+      "bottom": 601.2
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 689,
+     "y": 601.2,
+     "w": 318,
+     "h": 166.55,
+     "top": 601.2,
+     "bottom": 767.75
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 701,
+     "y": 613.2,
+     "w": 294,
+     "h": 18,
+     "top": 613.2,
+     "bottom": 631.2
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(148, 163, 184)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 300 لتر",
+    "nameRect": {
+     "x": 701,
+     "y": 637.2,
+     "w": 294,
+     "h": 21.75,
+     "top": 637.2,
+     "bottom": 658.95
+    },
+    "nameCss": {
+     "font-size": "15px",
+     "font-weight": "600",
+     "line-height": "21.75px",
+     "color": "rgb(241, 245, 249)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 701,
+     "y": 664.95,
+     "w": 294,
+     "h": 32.8,
+     "top": 664.95,
+     "bottom": 697.75
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "350.00 $",
+     "rect": {
+      "x": 927,
+      "y": 668.95,
+      "w": 68,
+      "h": 28.8,
+      "top": 668.95,
+      "bottom": 697.75
+     },
+     "css": {
+      "font-size": "18px",
+      "font-weight": "700",
+      "color": "rgb(241, 245, 249)"
+     }
+    },
+    "priceWas": null,
+    "footBadge": null,
+    "flag": null,
+    "actions": {
+     "x": 701,
+     "y": 711.75,
+     "w": 294,
+     "h": 44,
+     "top": 711.75,
+     "bottom": 755.75
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 701,
+      "y": 711.75,
+      "w": 294,
+      "h": 44,
+      "top": 711.75,
+      "bottom": 755.75
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   },
+   {
+    "i": 1,
+    "id": "632",
+    "card": {
+     "x": 352,
+     "y": 412.2,
+     "w": 320,
+     "h": 356.55,
+     "top": 412.2,
+     "bottom": 768.75
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(18, 27, 43)",
+     "border-top-color": "rgb(30, 42, 61)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 353,
+     "y": 413.2,
+     "w": 318,
+     "h": 188,
+     "top": 413.2,
+     "bottom": 601.2
+    },
+    "mediaCss": {
+     "height": "188px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(15, 24, 38)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 353,
+      "y": 413.2,
+      "w": 318,
+      "h": 188,
+      "top": 413.2,
+      "bottom": 601.2
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 353,
+     "y": 601.2,
+     "w": 318,
+     "h": 166.55,
+     "top": 601.2,
+     "bottom": 767.75
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 365,
+     "y": 613.2,
+     "w": 294,
+     "h": 18,
+     "top": 613.2,
+     "bottom": 631.2
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(148, 163, 184)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 500 لتر",
+    "nameRect": {
+     "x": 365,
+     "y": 637.2,
+     "w": 294,
+     "h": 21.75,
+     "top": 637.2,
+     "bottom": 658.95
+    },
+    "nameCss": {
+     "font-size": "15px",
+     "font-weight": "600",
+     "line-height": "21.75px",
+     "color": "rgb(241, 245, 249)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 365,
+     "y": 664.95,
+     "w": 294,
+     "h": 32.8,
+     "top": 664.95,
+     "bottom": 697.75
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "500.00 $",
+     "rect": {
+      "x": 591,
+      "y": 668.95,
+      "w": 68,
+      "h": 28.8,
+      "top": 668.95,
+      "bottom": 697.75
+     },
+     "css": {
+      "font-size": "18px",
+      "font-weight": "700",
+      "color": "rgb(241, 245, 249)"
+     }
+    },
+    "priceWas": {
+     "t": "600.00 $",
+     "rect": {
+      "x": 529,
+      "y": 673.95,
+      "w": 54,
+      "h": 21.59,
+      "top": 673.95,
+      "bottom": 695.55
+     },
+     "vis": true,
+     "css": {
+      "font-size": "13.5px",
+      "color": "rgb(148, 163, 184)",
+      "text-decoration-line": "line-through"
+     }
+    },
+    "footBadge": {
+     "t": "وفّر 16.67%",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "flag": {
+     "t": "-16.67%",
+     "vis": true,
+     "rect": {
+      "x": 608,
+      "y": 421.2,
+      "w": 55,
+      "h": 22,
+      "top": 421.2,
+      "bottom": 443.2
+     }
+    },
+    "actions": {
+     "x": 365,
+     "y": 711.75,
+     "w": 294,
+     "h": 44,
+     "top": 711.75,
+     "bottom": 755.75
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 365,
+      "y": 711.75,
+      "w": 294,
+      "h": 44,
+      "top": 711.75,
+      "bottom": 755.75
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   }
+  ],
+  "aboveFoldCount": 2,
+  "headerH": 74
+ },
+ "dark_1366": {
+  "vw": 1366,
+  "vh": 900,
+  "hash": "#/products",
+  "theme": "dark",
+  "docOverflow": 0,
+  "docH": 1103,
+  "grid": {
+   "rect": {
+    "x": 99,
+    "y": 412.2,
+    "w": 1168,
+    "h": 356.55,
+    "top": 412.2,
+    "bottom": 768.75
+   },
+   "cols": "280px 280px 280px 280px",
+   "gap": "16px"
+  },
+  "cardsCount": 2,
+  "cards": [
+   {
+    "i": 0,
+    "id": "633",
+    "card": {
+     "x": 987,
+     "y": 412.2,
+     "w": 280,
+     "h": 356.55,
+     "top": 412.2,
+     "bottom": 768.75
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(18, 27, 43)",
+     "border-top-color": "rgb(30, 42, 61)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 988,
+     "y": 413.2,
+     "w": 278,
+     "h": 188,
+     "top": 413.2,
+     "bottom": 601.2
+    },
+    "mediaCss": {
+     "height": "188px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(15, 24, 38)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 988,
+      "y": 413.2,
+      "w": 278,
+      "h": 188,
+      "top": 413.2,
+      "bottom": 601.2
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 988,
+     "y": 601.2,
+     "w": 278,
+     "h": 166.55,
+     "top": 601.2,
+     "bottom": 767.75
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 1000,
+     "y": 613.2,
+     "w": 254,
+     "h": 18,
+     "top": 613.2,
+     "bottom": 631.2
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(148, 163, 184)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 300 لتر",
+    "nameRect": {
+     "x": 1000,
+     "y": 637.2,
+     "w": 254,
+     "h": 21.75,
+     "top": 637.2,
+     "bottom": 658.95
+    },
+    "nameCss": {
+     "font-size": "15px",
+     "font-weight": "600",
+     "line-height": "21.75px",
+     "color": "rgb(241, 245, 249)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 1000,
+     "y": 664.95,
+     "w": 254,
+     "h": 32.8,
+     "top": 664.95,
+     "bottom": 697.75
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "350.00 $",
+     "rect": {
+      "x": 1186,
+      "y": 668.95,
+      "w": 68,
+      "h": 28.8,
+      "top": 668.95,
+      "bottom": 697.75
+     },
+     "css": {
+      "font-size": "18px",
+      "font-weight": "700",
+      "color": "rgb(241, 245, 249)"
+     }
+    },
+    "priceWas": null,
+    "footBadge": null,
+    "flag": null,
+    "actions": {
+     "x": 1000,
+     "y": 711.75,
+     "w": 254,
+     "h": 44,
+     "top": 711.75,
+     "bottom": 755.75
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 1000,
+      "y": 711.75,
+      "w": 254,
+      "h": 44,
+      "top": 711.75,
+      "bottom": 755.75
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   },
+   {
+    "i": 1,
+    "id": "632",
+    "card": {
+     "x": 691,
+     "y": 412.2,
+     "w": 280,
+     "h": 356.55,
+     "top": 412.2,
+     "bottom": 768.75
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(18, 27, 43)",
+     "border-top-color": "rgb(30, 42, 61)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 692,
+     "y": 413.2,
+     "w": 278,
+     "h": 188,
+     "top": 413.2,
+     "bottom": 601.2
+    },
+    "mediaCss": {
+     "height": "188px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(15, 24, 38)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 692,
+      "y": 413.2,
+      "w": 278,
+      "h": 188,
+      "top": 413.2,
+      "bottom": 601.2
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 692,
+     "y": 601.2,
+     "w": 278,
+     "h": 166.55,
+     "top": 601.2,
+     "bottom": 767.75
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 704,
+     "y": 613.2,
+     "w": 254,
+     "h": 18,
+     "top": 613.2,
+     "bottom": 631.2
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(148, 163, 184)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 500 لتر",
+    "nameRect": {
+     "x": 704,
+     "y": 637.2,
+     "w": 254,
+     "h": 21.75,
+     "top": 637.2,
+     "bottom": 658.95
+    },
+    "nameCss": {
+     "font-size": "15px",
+     "font-weight": "600",
+     "line-height": "21.75px",
+     "color": "rgb(241, 245, 249)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 1,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 704,
+     "y": 664.95,
+     "w": 254,
+     "h": 32.8,
+     "top": 664.95,
+     "bottom": 697.75
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "500.00 $",
+     "rect": {
+      "x": 890,
+      "y": 668.95,
+      "w": 68,
+      "h": 28.8,
+      "top": 668.95,
+      "bottom": 697.75
+     },
+     "css": {
+      "font-size": "18px",
+      "font-weight": "700",
+      "color": "rgb(241, 245, 249)"
+     }
+    },
+    "priceWas": {
+     "t": "600.00 $",
+     "rect": {
+      "x": 828,
+      "y": 673.95,
+      "w": 54,
+      "h": 21.59,
+      "top": 673.95,
+      "bottom": 695.55
+     },
+     "vis": true,
+     "css": {
+      "font-size": "13.5px",
+      "color": "rgb(148, 163, 184)",
+      "text-decoration-line": "line-through"
+     }
+    },
+    "footBadge": {
+     "t": "وفّر 16.67%",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "flag": {
+     "t": "-16.67%",
+     "vis": true,
+     "rect": {
+      "x": 907,
+      "y": 421.2,
+      "w": 55,
+      "h": 22,
+      "top": 421.2,
+      "bottom": 443.2
+     }
+    },
+    "actions": {
+     "x": 704,
+     "y": 711.75,
+     "w": 254,
+     "h": 44,
+     "top": 711.75,
+     "bottom": 755.75
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "nowrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 704,
+      "y": 711.75,
+      "w": 254,
+      "h": 44,
+      "top": 711.75,
+      "bottom": 755.75
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   }
+  ],
+  "aboveFoldCount": 2,
+  "headerH": 74
+ },
+ "variants_390": {
+  "vw": 390,
+  "vh": 900,
+  "hash": "#/products",
+  "theme": "light",
+  "docOverflow": 0,
+  "docH": 959,
+  "grid": {
+   "rect": {
+    "x": 12,
+    "y": 252.41,
+    "w": 366,
+    "h": 327.22,
+    "top": 252.41,
+    "bottom": 579.63
+   },
+   "cols": "177px 177px",
+   "gap": "12px"
+  },
+  "cardsCount": 2,
+  "cards": [
+   {
+    "i": 0,
+    "id": "633",
+    "card": {
+     "x": 201,
+     "y": 252.41,
+     "w": 177,
+     "h": 327.22,
+     "top": 252.41,
+     "bottom": 579.63
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 202,
+     "y": 253.41,
+     "w": 175,
+     "h": 140,
+     "top": 253.41,
+     "bottom": 393.41
+    },
+    "mediaCss": {
+     "height": "140px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 202,
+      "y": 253.41,
+      "w": 175,
+      "h": 140,
+      "top": 253.41,
+      "bottom": 393.41
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 202,
+     "y": 393.41,
+     "w": 175,
+     "h": 185.22,
+     "top": 393.41,
+     "bottom": 578.63
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 214,
+     "y": 405.41,
+     "w": 151,
+     "h": 18,
+     "top": 405.41,
+     "bottom": 423.41
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 300 لتر",
+    "nameRect": {
+     "x": 214,
+     "y": 429.41,
+     "w": 151,
+     "h": 42.03,
+     "top": 429.41,
+     "bottom": 471.44
+    },
+    "nameCss": {
+     "font-size": "14.5px",
+     "font-weight": "600",
+     "line-height": "21.025px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 2,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 214,
+     "y": 477.44,
+     "w": 151,
+     "h": 31.19,
+     "top": 477.44,
+     "bottom": 508.63
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "6px",
+     "flex-wrap": "wrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "350.00 $",
+     "rect": {
+      "x": 303,
+      "y": 481.44,
+      "w": 62,
+      "h": 27.19,
+      "top": 481.44,
+      "bottom": 508.63
+     },
+     "css": {
+      "font-size": "17px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": null,
+    "footBadge": null,
+    "flag": null,
+    "actions": {
+     "x": 214,
+     "y": 522.63,
+     "w": 151,
+     "h": 44,
+     "top": 522.63,
+     "bottom": 566.63
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "wrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 214,
+      "y": 522.63,
+      "w": 151,
+      "h": 44,
+      "top": 522.63,
+      "bottom": 566.63
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   },
+   {
+    "i": 1,
+    "id": "632",
+    "card": {
+     "x": 12,
+     "y": 252.41,
+     "w": 177,
+     "h": 327.22,
+     "top": 252.41,
+     "bottom": 579.63
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 13,
+     "y": 253.41,
+     "w": 175,
+     "h": 140,
+     "top": 253.41,
+     "bottom": 393.41
+    },
+    "mediaCss": {
+     "height": "140px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 13,
+      "y": 253.41,
+      "w": 175,
+      "h": 140,
+      "top": 253.41,
+      "bottom": 393.41
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 13,
+     "y": 393.41,
+     "w": 175,
+     "h": 185.22,
+     "top": 393.41,
+     "bottom": 578.63
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 25,
+     "y": 405.41,
+     "w": 151,
+     "h": 18,
+     "top": 405.41,
+     "bottom": 423.41
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 500 لتر",
+    "nameRect": {
+     "x": 25,
+     "y": 429.41,
+     "w": 151,
+     "h": 42.03,
+     "top": 429.41,
+     "bottom": 471.44
+    },
+    "nameCss": {
+     "font-size": "14.5px",
+     "font-weight": "600",
+     "line-height": "21.025px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 2,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 25,
+     "y": 477.44,
+     "w": 151,
+     "h": 31.19,
+     "top": 477.44,
+     "bottom": 508.63
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "6px",
+     "flex-wrap": "wrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "500.00 $",
+     "rect": {
+      "x": 114,
+      "y": 481.44,
+      "w": 62,
+      "h": 27.19,
+      "top": 481.44,
+      "bottom": 508.63
+     },
+     "css": {
+      "font-size": "17px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": {
+     "t": "600.00 $",
+     "rect": {
+      "x": 52,
+      "y": 485.44,
+      "w": 54,
+      "h": 21.59,
+      "top": 485.44,
+      "bottom": 507.03
+     },
+     "vis": true,
+     "css": {
+      "font-size": "13.5px",
+      "color": "rgb(100, 116, 139)",
+      "text-decoration-line": "line-through"
+     }
+    },
+    "footBadge": {
+     "t": "وفّر 16.67%",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "flag": {
+     "t": "-16.67%",
+     "vis": true,
+     "rect": {
+      "x": 125,
+      "y": 261.41,
+      "w": 55,
+      "h": 22,
+      "top": 261.41,
+      "bottom": 283.41
+     }
+    },
+    "actions": {
+     "x": 25,
+     "y": 522.63,
+     "w": 151,
+     "h": 44,
+     "top": 522.63,
+     "bottom": 566.63
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "wrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 25,
+      "y": 522.63,
+      "w": 151,
+      "h": 44,
+      "top": 522.63,
+      "bottom": 566.63
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   }
+  ],
+  "aboveFoldCount": 2,
+  "headerH": 65
+ },
+ "longtitle_390": {
+  "vw": 390,
+  "vh": 900,
+  "hash": "#/products",
+  "theme": "light",
+  "docOverflow": 0,
+  "docH": 959,
+  "grid": {
+   "rect": {
+    "x": 12,
+    "y": 252.41,
+    "w": 366,
+    "h": 327.22,
+    "top": 252.41,
+    "bottom": 579.63
+   },
+   "cols": "177px 177px",
+   "gap": "12px"
+  },
+  "cardsCount": 2,
+  "cards": [
+   {
+    "i": 0,
+    "id": "633",
+    "card": {
+     "x": 201,
+     "y": 252.41,
+     "w": 177,
+     "h": 327.22,
+     "top": 252.41,
+     "bottom": 579.63
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 202,
+     "y": 253.41,
+     "w": 175,
+     "h": 140,
+     "top": 253.41,
+     "bottom": 393.41
+    },
+    "mediaCss": {
+     "height": "140px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 202,
+      "y": 253.41,
+      "w": 175,
+      "h": 140,
+      "top": 253.41,
+      "bottom": 393.41
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 202,
+     "y": 393.41,
+     "w": 175,
+     "h": 185.22,
+     "top": 393.41,
+     "bottom": 578.63
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 214,
+     "y": 405.41,
+     "w": 151,
+     "h": 18,
+     "top": 405.41,
+     "bottom": 423.41
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي بعنوان عربي طويل جدًا لاختبا",
+    "nameRect": {
+     "x": 214,
+     "y": 429.41,
+     "w": 151,
+     "h": 42.03,
+     "top": 429.41,
+     "bottom": 471.44
+    },
+    "nameCss": {
+     "font-size": "14.5px",
+     "font-weight": "600",
+     "line-height": "21.025px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 2,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 214,
+     "y": 477.44,
+     "w": 151,
+     "h": 31.19,
+     "top": 477.44,
+     "bottom": 508.63
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "6px",
+     "flex-wrap": "wrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "350.00 $",
+     "rect": {
+      "x": 303,
+      "y": 481.44,
+      "w": 62,
+      "h": 27.19,
+      "top": 481.44,
+      "bottom": 508.63
+     },
+     "css": {
+      "font-size": "17px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": null,
+    "footBadge": null,
+    "flag": null,
+    "actions": {
+     "x": 214,
+     "y": 522.63,
+     "w": 151,
+     "h": 44,
+     "top": 522.63,
+     "bottom": 566.63
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "wrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 214,
+      "y": 522.63,
+      "w": 151,
+      "h": 44,
+      "top": 522.63,
+      "bottom": 566.63
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   },
+   {
+    "i": 1,
+    "id": "632",
+    "card": {
+     "x": 12,
+     "y": 252.41,
+     "w": 177,
+     "h": 327.22,
+     "top": 252.41,
+     "bottom": 579.63
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 13,
+     "y": 253.41,
+     "w": 175,
+     "h": 140,
+     "top": 253.41,
+     "bottom": 393.41
+    },
+    "mediaCss": {
+     "height": "140px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 13,
+      "y": 253.41,
+      "w": 175,
+      "h": 140,
+      "top": 253.41,
+      "bottom": 393.41
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 13,
+     "y": 393.41,
+     "w": 175,
+     "h": 185.22,
+     "top": 393.41,
+     "bottom": 578.63
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 25,
+     "y": 405.41,
+     "w": 151,
+     "h": 18,
+     "top": 405.41,
+     "bottom": 423.41
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية ب",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-002",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 500 لتر",
+    "nameRect": {
+     "x": 25,
+     "y": 429.41,
+     "w": 151,
+     "h": 42.03,
+     "top": 429.41,
+     "bottom": 471.44
+    },
+    "nameCss": {
+     "font-size": "14.5px",
+     "font-weight": "600",
+     "line-height": "21.025px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 2,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 25,
+     "y": 477.44,
+     "w": 151,
+     "h": 31.19,
+     "top": 477.44,
+     "bottom": 508.63
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "6px",
+     "flex-wrap": "wrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "500.00 $",
+     "rect": {
+      "x": 114,
+      "y": 481.44,
+      "w": 62,
+      "h": 27.19,
+      "top": 481.44,
+      "bottom": 508.63
+     },
+     "css": {
+      "font-size": "17px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": {
+     "t": "600.00 $",
+     "rect": {
+      "x": 52,
+      "y": 485.44,
+      "w": 54,
+      "h": 21.59,
+      "top": 485.44,
+      "bottom": 507.03
+     },
+     "vis": true,
+     "css": {
+      "font-size": "13.5px",
+      "color": "rgb(100, 116, 139)",
+      "text-decoration-line": "line-through"
+     }
+    },
+    "footBadge": {
+     "t": "وفّر 16.67%",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "flag": {
+     "t": "-16.67%",
+     "vis": true,
+     "rect": {
+      "x": 125,
+      "y": 261.41,
+      "w": 55,
+      "h": 22,
+      "top": 261.41,
+      "bottom": 283.41
+     }
+    },
+    "actions": {
+     "x": 25,
+     "y": 522.63,
+     "w": 151,
+     "h": 44,
+     "top": 522.63,
+     "bottom": 566.63
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "wrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 25,
+      "y": 522.63,
+      "w": 151,
+      "h": 44,
+      "top": 522.63,
+      "bottom": 566.63
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   }
+  ],
+  "aboveFoldCount": 2,
+  "headerH": 65
+ },
+ "nometa_390": {
+  "vw": 390,
+  "vh": 900,
+  "hash": "#/products",
+  "theme": "light",
+  "docOverflow": 0,
+  "docH": 959,
+  "grid": {
+   "rect": {
+    "x": 12,
+    "y": 252.41,
+    "w": 366,
+    "h": 327.22,
+    "top": 252.41,
+    "bottom": 579.63
+   },
+   "cols": "177px 177px",
+   "gap": "12px"
+  },
+  "cardsCount": 2,
+  "cards": [
+   {
+    "i": 0,
+    "id": "633",
+    "card": {
+     "x": 201,
+     "y": 252.41,
+     "w": 177,
+     "h": 327.22,
+     "top": 252.41,
+     "bottom": 579.63
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 202,
+     "y": 253.41,
+     "w": 175,
+     "h": 140,
+     "top": 253.41,
+     "bottom": 393.41
+    },
+    "mediaCss": {
+     "height": "140px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 202,
+      "y": 253.41,
+      "w": 175,
+      "h": 140,
+      "top": 253.41,
+      "bottom": 393.41
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 202,
+     "y": 393.41,
+     "w": 175,
+     "h": 185.22,
+     "top": 393.41,
+     "bottom": 578.63
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 214,
+     "y": 405.41,
+     "w": 151,
+     "h": 0,
+     "top": 405.41,
+     "bottom": 405.41
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي بعنوان عربي طويل جدًا لاختبا",
+    "nameRect": {
+     "x": 214,
+     "y": 411.41,
+     "w": 151,
+     "h": 42.03,
+     "top": 411.41,
+     "bottom": 453.44
+    },
+    "nameCss": {
+     "font-size": "14.5px",
+     "font-weight": "600",
+     "line-height": "21.025px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 2,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 214,
+     "y": 477.44,
+     "w": 151,
+     "h": 31.19,
+     "top": 477.44,
+     "bottom": 508.63
+    },
+    "footCss": {
+     "margin-top": "18px",
+     "padding-top": "4px",
+     "gap": "6px",
+     "flex-wrap": "wrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "350.00 $",
+     "rect": {
+      "x": 303,
+      "y": 481.44,
+      "w": 62,
+      "h": 27.19,
+      "top": 481.44,
+      "bottom": 508.63
+     },
+     "css": {
+      "font-size": "17px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": null,
+    "footBadge": null,
+    "flag": null,
+    "actions": {
+     "x": 214,
+     "y": 522.63,
+     "w": 151,
+     "h": 44,
+     "top": 522.63,
+     "bottom": 566.63
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "wrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 214,
+      "y": 522.63,
+      "w": 151,
+      "h": 44,
+      "top": 522.63,
+      "bottom": 566.63
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   },
+   {
+    "i": 1,
+    "id": "632",
+    "card": {
+     "x": 12,
+     "y": 252.41,
+     "w": 177,
+     "h": 327.22,
+     "top": 252.41,
+     "bottom": 579.63
+    },
+    "cardCss": {
+     "display": "flex",
+     "flex-direction": "column",
+     "background-color": "rgb(255, 255, 255)",
+     "border-top-color": "rgb(230, 236, 243)",
+     "border-radius": "14px",
+     "overflow": "hidden"
+    },
+    "media": {
+     "x": 13,
+     "y": 253.41,
+     "w": 175,
+     "h": 140,
+     "top": 253.41,
+     "bottom": 393.41
+    },
+    "mediaCss": {
+     "height": "140px",
+     "aspect-ratio": "auto",
+     "background-color": "rgb(248, 250, 252)",
+     "object-fit": "fill"
+    },
+    "img": null,
+    "placeholder": {
+     "rect": {
+      "x": 13,
+      "y": 253.41,
+      "w": 175,
+      "h": 140,
+      "top": 253.41,
+      "bottom": 393.41
+     },
+     "vis": true
+    },
+    "body": {
+     "x": 13,
+     "y": 393.41,
+     "w": 175,
+     "h": 185.22,
+     "top": 393.41,
+     "bottom": 578.63
+    },
+    "bodyCss": {
+     "padding": "12px",
+     "gap": "6px",
+     "display": "flex",
+     "flex-direction": "column"
+    },
+    "meta": {
+     "x": 25,
+     "y": 405.41,
+     "w": 151,
+     "h": 18,
+     "top": 405.41,
+     "bottom": 423.41
+    },
+    "metaCss": {
+     "font-size": "12px",
+     "color": "rgb(100, 116, 139)",
+     "gap": "8px",
+     "display": "block",
+     "flex-wrap": "wrap"
+    },
+    "metaSpans": [
+     {
+      "t": "علامة تجريبية أ",
+      "vis": true,
+      "h": 18
+     },
+     {
+      "t": "تصنيف تجريبي — ثلاجات",
+      "vis": false,
+      "h": 0
+     },
+     {
+      "t": "رمز: DEMO-REF-001",
+      "vis": false,
+      "h": 0
+     }
+    ],
+    "name": "منتج تجريبي — ثلاجة 500 لتر",
+    "nameRect": {
+     "x": 25,
+     "y": 429.41,
+     "w": 151,
+     "h": 42.03,
+     "top": 429.41,
+     "bottom": 471.44
+    },
+    "nameCss": {
+     "font-size": "14.5px",
+     "font-weight": "600",
+     "line-height": "21.025px",
+     "color": "rgb(15, 23, 42)",
+     "-webkit-line-clamp": "2",
+     "display": "flow-root"
+    },
+    "nameLines": 2,
+    "desc": {
+     "text": "بيانات اختبارية للتحقق من العل",
+     "vis": false,
+     "h": 0
+    },
+    "foot": {
+     "x": 25,
+     "y": 477.44,
+     "w": 151,
+     "h": 31.19,
+     "top": 477.44,
+     "bottom": 508.63
+    },
+    "footCss": {
+     "margin-top": "0px",
+     "padding-top": "4px",
+     "gap": "6px",
+     "flex-wrap": "wrap",
+     "display": "flex"
+    },
+    "priceNow": {
+     "t": "500.00 $",
+     "rect": {
+      "x": 114,
+      "y": 481.44,
+      "w": 62,
+      "h": 27.19,
+      "top": 481.44,
+      "bottom": 508.63
+     },
+     "css": {
+      "font-size": "17px",
+      "font-weight": "700",
+      "color": "rgb(15, 23, 42)"
+     }
+    },
+    "priceWas": {
+     "t": "600.00 $",
+     "rect": {
+      "x": 52,
+      "y": 485.44,
+      "w": 54,
+      "h": 21.59,
+      "top": 485.44,
+      "bottom": 507.03
+     },
+     "vis": true,
+     "css": {
+      "font-size": "13.5px",
+      "color": "rgb(100, 116, 139)",
+      "text-decoration-line": "line-through"
+     }
+    },
+    "footBadge": {
+     "t": "وفّر 16.67%",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "flag": {
+     "t": "-16.67%",
+     "vis": true,
+     "rect": {
+      "x": 125,
+      "y": 261.41,
+      "w": 55,
+      "h": 22,
+      "top": 261.41,
+      "bottom": 283.41
+     }
+    },
+    "actions": {
+     "x": 25,
+     "y": 522.63,
+     "w": 151,
+     "h": 44,
+     "top": 522.63,
+     "bottom": 566.63
+    },
+    "actionsCss": {
+     "display": "flex",
+     "gap": "8px",
+     "flex-wrap": "wrap",
+     "margin-top": "8px"
+    },
+    "add": {
+     "t": "أضف للسلة",
+     "vis": true,
+     "rect": {
+      "x": 25,
+      "y": 522.63,
+      "w": 151,
+      "h": 44,
+      "top": 522.63,
+      "bottom": 566.63
+     },
+     "css": {
+      "min-height": "44px",
+      "height": "44px",
+      "font-size": "14px",
+      "background-color": "rgb(31, 95, 191)",
+      "color": "rgb(255, 255, 255)"
+     }
+    },
+    "details": {
+     "t": "عرض التفاصيل",
+     "vis": false,
+     "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "top": 0,
+      "bottom": 0
+     }
+    },
+    "aboveFold": true
+   }
+  ],
+  "aboveFoldCount": 2,
+  "headerH": 65
+ },
+ "cart": {
+  "before": {
+   "badge": null,
+   "addText": "أضف للسلة",
+   "disabled": false
+  },
+  "after": {
+   "badge": null,
+   "modal": [
+    "سجّل الدخول لإضافة المنتج إلى السلة✕حتى تضيف المنتج إلى السل"
+   ],
+   "bodyOv": "hidden"
+  },
+  "net": []
+ },
+ "reg_filters": {
+  "none": {
+   "hash": "#/products",
+   "cards": 2,
+   "count": "2 منتج"
+  },
+  "minPrice400": {
+   "hash": "#/products?minPrice=400",
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "min99999": {
+   "hash": "#/products?minPrice=99999",
+   "cards": 0,
+   "count": "0 منتج"
+  },
+  "category": {
+   "hash": "#/products?categoryId=293",
+   "cards": 2,
+   "count": "2 منتج"
+  },
+  "brand": {
+   "hash": "#/products?brandId=254",
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "sort": {
+   "hash": "#/products?sortBy=price&sortOrder=asc",
+   "cards": 2,
+   "count": "2 منتج"
+  },
+  "offers": {
+   "hash": "#/products?offers=1",
+   "cards": 1,
+   "count": "1 منتج"
+  },
+  "page2": {
+   "hash": "#/products",
+   "cards": 2,
+   "count": "2 منتج"
+  }
+ },
+ "empty_dark_1366": {
+  "title": "لا توجد منتجات مطابقة",
+  "rect": {
+   "w": 560,
+   "h": 198
+  }
+ },
+ "dark_sheet": {
+  "sheetBg": "rgb(18, 27, 43)",
+  "checkBg": "rgb(18, 27, 43)",
+  "open": true
+ },
+ "taxo_390": {
+  "cols": "366px",
+  "card": {
+   "w": 366,
+   "h": 92
+  },
+  "ov": 0
+ },
+ "taxo_brands_390": {
+  "cols": "366px",
+  "card": {
+   "w": 366,
+   "h": 92
+  }
+ },
+ "taxo_1366": {
+  "cols": "276px 276px 276px 276px",
+  "card": {
+   "w": 276,
+   "h": 96
+  },
+  "ov": 0
+ },
+ "taxo_brands_1366": {
+  "cols": "276px 276px 276px 276px",
+  "card": {
+   "w": 276,
+   "h": 96
+  }
+ },
+ "home_390": {
+  "homeCards": 5,
+  "card": {
+   "w": 177,
+   "h": 321
+  },
+  "media": 133,
+  "nameH": 36,
+  "descVis": true,
+  "footBadgeVis": false,
+  "addVis": true,
+  "hero": true,
+  "homeTaxoItem": {
+   "w": 138,
+   "h": 109
+  },
+  "headerH": 65,
+  "overflow": 0
+ },
+ "home_1366": {
+  "homeCards": 5,
+  "card": {
+   "w": 280,
+   "h": 512
+  },
+  "media": 278,
+  "nameH": 22,
+  "descVis": true,
+  "footBadgeVis": true,
+  "addVis": true,
+  "hero": true,
+  "homeTaxoItem": {
+   "w": 185,
+   "h": 109
+  },
+  "headerH": 74,
+  "overflow": 0
+ },
+ "search_390": {
+  "rows": 2,
+  "rowH": 90,
+  "img": null,
+  "sheetTop": 65,
+  "cardLeak": 0
+ },
+ "menu_390": {
+  "rowH": 50,
+  "drawerTop": 65
+ }
+}

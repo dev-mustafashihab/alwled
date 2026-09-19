@@ -1,0 +1,258 @@
+{
+ "resources": [],
+ "timing": {
+  "dcl_ms": 978,
+  "load_ms": 980,
+  "ttfb_ms": 81,
+  "fcp_ms": 792,
+  "resources": 38
+ },
+ "requests": 39,
+ "transferred": 599548,
+ "by_type": {
+  "text/html": {
+   "n": 1,
+   "bytes": 0,
+   "gz": 0
+  },
+  "text/css": {
+   "n": 8,
+   "bytes": 0,
+   "gz": 0
+  },
+  "image/svg+xml": {
+   "n": 1,
+   "bytes": 0,
+   "gz": 0
+  },
+  "text/javascript": {
+   "n": 21,
+   "bytes": 0,
+   "gz": 0
+  },
+  "font/ttf": {
+   "n": 1,
+   "bytes": 599548,
+   "gz": 0
+  },
+  "application/json": {
+   "n": 7,
+   "bytes": 0,
+   "gz": 0
+  }
+ },
+ "css_js": [
+  {
+   "url": "https://panel.fahd-car.cloud/alwled/assets/css/tokens.css",
+   "type": "text/css; charset=utf-8",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "https://panel.fahd-car.cloud/alwled/assets/css/base.css",
+   "type": "text/css; charset=utf-8",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "ps://panel.fahd-car.cloud/alwled/assets/css/components.css",
+   "type": "text/css; charset=utf-8",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "tps://panel.fahd-car.cloud/alwled/shop/assets/css/shop.css",
+   "type": "text/css; charset=utf-8",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "anel.fahd-car.cloud/alwled/shop/assets/css/shop.header.css",
+   "type": "text/css; charset=utf-8",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "anel.fahd-car.cloud/alwled/shop/assets/css/shop.search.css",
+   "type": "text/css; charset=utf-8",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "nel.fahd-car.cloud/alwled/shop/assets/css/shop.filters.css",
+   "type": "text/css; charset=utf-8",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "/panel.fahd-car.cloud/alwled/shop/assets/css/shop.home.css",
+   "type": "text/css; charset=utf-8",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "tps://panel.fahd-car.cloud/alwled/assets/js/core/config.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "ps://panel.fahd-car.cloud/alwled/assets/js/core/session.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "el.fahd-car.cloud/alwled/shop/assets/js/shop.order-flow.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "https://panel.fahd-car.cloud/alwled/assets/js/core/api.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "tps://panel.fahd-car.cloud/alwled/assets/js/core/format.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "https://panel.fahd-car.cloud/alwled/shop/assets/js/shop.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "://panel.fahd-car.cloud/alwled/shop/assets/js/shop.cart.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "panel.fahd-car.cloud/alwled/shop/assets/js/shop.cart-ui.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "nel.fahd-car.cloud/alwled/shop/assets/js/shop.cart-page.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "//panel.fahd-car.cloud/alwled/shop/assets/js/shop.pages.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "fahd-car.cloud/alwled/shop/assets/js/shop.checkout-page.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "l.fahd-car.cloud/alwled/shop/assets/js/shop.orders-page.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "el.fahd-car.cloud/alwled/shop/assets/js/shop.order-page.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "car.cloud/alwled/shop/assets/js/shop.notifications-page.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": ".fahd-car.cloud/alwled/shop/assets/js/shop.account-page.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "-car.cloud/alwled/shop/assets/js/shop.verification-page.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "//panel.fahd-car.cloud/alwled/shop/assets/js/shop.icons.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": ".fahd-car.cloud/alwled/shop/assets/js/shop.payment-page.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "/panel.fahd-car.cloud/alwled/shop/assets/js/shop.search.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "/panel.fahd-car.cloud/alwled/shop/assets/js/shop.header.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  },
+  {
+   "url": "s://panel.fahd-car.cloud/alwled/shop/assets/js/shop.app.js",
+   "type": "text/javascript; charset=utf",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  }
+ ],
+ "html": [
+  {
+   "url": "https://panel.fahd-car.cloud/alwled/shop/",
+   "type": "text/html",
+   "len": 0,
+   "enc": "gzip",
+   "cc": "no-store"
+  }
+ ]
+}

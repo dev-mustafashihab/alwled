@@ -1,0 +1,248 @@
+{
+ "names": [
+  {
+   "tag": "A",
+   "cls": "skip-link",
+   "id": "",
+   "name": "تخطي إلى المحتوى",
+   "text": "تخطي إلى المحتوى"
+  },
+  {
+   "tag": "A",
+   "cls": "shop-brand",
+   "id": "",
+   "name": "الوليد للأجهزة الكهربائية — الصفحة الرئيسية",
+   "text": "الوليد\n          ل"
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "shop-iconbtn shop-searchbtn",
+   "id": "shop-search-btn",
+   "name": "البحث في المنتجات",
+   "text": ""
+  },
+  {
+   "tag": "A",
+   "cls": "shop-cartbtn",
+   "id": "shop-cart-button",
+   "name": "السلة",
+   "text": "السلة"
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "shop-iconbtn shop-header__burger",
+   "id": "shop-burger",
+   "name": "فتح القائمة",
+   "text": ""
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "name": "الرئيسية",
+   "text": "الرئيسية"
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "shop-filters__toggle",
+   "id": "shop-filters-toggle",
+   "name": "الفلاتر والترتيب",
+   "text": "الفلاتر والترتيب"
+  },
+  {
+   "tag": "A",
+   "cls": "shop-card__media",
+   "id": "",
+   "name": "منتج تجريبي — ثلاجة 300 لتر",
+   "text": ""
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "name": "منتج تجريبي — ثلاجة 300 لتر",
+   "text": "منتج تجريبي — ثلاج"
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "btn btn--primary shop-card__add",
+   "id": "",
+   "name": "أضف منتج تجريبي — ثلاجة 300 لتر إلى السلة",
+   "text": "أضف للسلة"
+  },
+  {
+   "tag": "A",
+   "cls": "shop-card__media",
+   "id": "",
+   "name": "منتج تجريبي — ثلاجة 500 لتر",
+   "text": "-16.67%"
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "name": "منتج تجريبي — ثلاجة 500 لتر",
+   "text": "منتج تجريبي — ثلاج"
+  },
+  {
+   "tag": "BUTTON",
+   "cls": "btn btn--primary shop-card__add",
+   "id": "",
+   "name": "أضف منتج تجريبي — ثلاجة 500 لتر إلى السلة",
+   "text": "أضف للسلة"
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "name": "الرئيسية",
+   "text": "الرئيسية"
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "name": "كل المنتجات",
+   "text": "كل المنتجات"
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "name": "التصنيفات",
+   "text": "التصنيفات"
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "name": "العلامات",
+   "text": "العلامات"
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "name": "العروض والخصومات",
+   "text": "العروض والخصومات"
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "name": "سلة المشتريات",
+   "text": "سلة المشتريات"
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "name": "حسابي",
+   "text": "حسابي"
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "name": "طلباتي",
+   "text": "طلباتي"
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "name": "الإشعارات",
+   "text": "الإشعارات"
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "name": "توثيق الحساب",
+   "text": "توثيق الحساب"
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "name": "تسجيل الدخول",
+   "text": "تسجيل الدخول"
+  },
+  {
+   "tag": "A",
+   "cls": "",
+   "id": "",
+   "name": "إنشاء حساب",
+   "text": "إنشاء حساب"
+  }
+ ],
+ "collisions": {
+  "filters_then_menu_open": {
+   "menu": true,
+   "search": false,
+   "filters": false,
+   "body": "hidden",
+   "expanded": "false",
+   "focus": "shop-drawer__link"
+  },
+  "filters_then_menu_closed": {
+   "menu": false,
+   "search": false,
+   "filters": false,
+   "body": "visible",
+   "expanded": "false",
+   "focus": "shop-burger"
+  },
+  "filters_then_search_open": {
+   "menu": false,
+   "search": true,
+   "filters": false,
+   "body": "hidden",
+   "expanded": "false",
+   "focus": "shop-search-sheet-input"
+  },
+  "filters_then_search_closed": {
+   "menu": false,
+   "search": false,
+   "filters": false,
+   "body": "visible",
+   "expanded": "false",
+   "focus": "shop-search-btn"
+  }
+ },
+ "shots": [
+  "/root/alwled/frontend/tools/qa/stage3g/shots/products-360-light.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/products-390-light.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/products-390-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/products-768-light.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/products-769-light.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/products-1024-light.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/products-1024-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/products-1366-light.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/products-1366-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/products-1920-light.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/filters-360-light.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/filters-390-light.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/filters-390-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/filters-768-light.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/focus-390-opener.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/focus-390-close.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/focus-390-checkbox.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/focus-390-add.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/focus-390-cardlink.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/focus-390-taxonomy.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/focus-1366-cardlink.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/focus-1366-taxonomy.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/focus-1366-retry.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/reg-home-390.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/reg-home-1366.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/reg-categories-390.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/reg-categories-1366.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/reg-brands-390.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/reg-brands-1366.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/reg-empty-dark.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/reg-menu-390.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/reg-search-390.png",
+  "/root/alwled/frontend/tools/qa/stage3g/shots/reg-error-dark.png"
+ ]
+}

@@ -7,15 +7,22 @@
 
   var STORAGE_KEY = 'alwled.settings';
 
+  // أسماء المجلدات الفرعية التي تتشارك نفس الـAPI مع جذر التطبيق (مثل /alwled/shop/).
+  var APP_SUBDIRS = ['shop', 'store', 'app', 'panel'];
+
   function defaultApiBase() {
-    // same-origin by default; when the panel is served from a sub-path (e.g. /alwled/)
-    // the API defaults to the sibling "<dir>-api/api/v1" (matching the deployment convention).
+    // same-origin by default; when an app is served from a sub-path (e.g. /alwled/)
+    // the API defaults to the sibling "<root>-api/api/v1" (matching the deployment convention).
+    // مثال: /alwled/ و/alwled/shop/ كلاهما يستخدم /alwled-api/api/v1.
     if (!global.location) return '/api/v1';
     var path = String(global.location.pathname || '/');
-    var match = path.match(/^(.*\/)(?:index\.html)?$/);
-    var dir = match ? match[1] : '/';
-    if (!dir || dir === '/') return '/api/v1';
-    return dir.replace(/\/+$/, '') + '-api/api/v1';
+    var segments = path.split('/').filter(Boolean);
+    if (segments.length && APP_SUBDIRS.indexOf(String(segments[segments.length - 1]).toLowerCase()) !== -1) {
+      segments.pop();
+    }
+    var root = segments[0] || '';
+    if (!root || root.indexOf('.') !== -1) return '/api/v1';
+    return '/' + root + '-api/api/v1';
   }
 
   var DEFAULTS = {
