@@ -283,7 +283,7 @@
   {
    "name": "الأدمن يعمل (توكنز مشتركة سليمة)",
    "pass": true,
-   "detail": "{\"ff\": \"Tahoma\", \"bg\": \"rgb(248, 250, 252)\", \"primary\": \"#0f766e\", \"store\": \"#1F5FBF\", \"ov\": 0, \"body\": 32}"
+   "detail": "{\"ff\": \"Tahoma\", \"bg\": \"rgb(248, 250, 252)\", \"primary\": \"#0f766e\", \"store\": \"#FFBF17\", \"ov\": 0, \"body\": 32}"
   },
   {
    "name": "لا console errors في الأدمن",

@@ -502,3 +502,254 @@
 /* تعويض padding-top للـmain (32px) بنفس نمط الشريط السابق (−17px) ⇒ فراغ ≤16px */
 #shop-view > .shop-home-slider:first-child { margin-top: -16px; }
 #shop-view > .shop-home-slider:first-child + * { margin-top: var(--space-6); }
+
+/* ============================================================================
+   (تحسين) بطاقة التصنيف في قسم «تسوّق حسب التصنيف»
+   المقيس قبل: أيقونة SVG 6×6px ✗ (مجهريه) · الاسم 13px ✗ · العدّاد 11px ✗
+   بعد: أيقونة 24px · اسم 14px/600 بسطرين · عدّاد 12px هادئ · بطاقة بحدّ رقيق وزوايا النظام
+   ========================================================================== */
+#shop-home-categories .shop-taxonomy { gap: var(--space-2); }
+#shop-home-categories .shop-taxonomy__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 64px;
+  padding: var(--space-3);
+  border: 1px solid var(--color-line);
+  border-radius: var(--stw-radius-lg);
+  background: var(--color-surface);
+  transition: border-color 150ms var(--stw-ease-out), background-color 150ms var(--stw-ease-out);
+}
+#shop-home-categories .shop-taxonomy__item:hover,
+#shop-home-categories .shop-taxonomy__item:focus-visible {
+  border-color: var(--color-line-strong);
+  background: var(--color-surface-muted);
+}
+#shop-home-categories .shop-taxonomy__item svg {
+  inline-size: 24px;
+  block-size: 24px;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  flex: 0 0 auto;
+  color: var(--color-primary-active);
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+#shop-home-categories .shop-taxonomy__name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-ink);
+}
+#shop-home-categories .shop-taxonomy__count {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-ink-muted);
+}
+
+/* (طلب المستخدم) بطاقة تصنيف **مستطيلة** + أيقونة صغيرة 18px
+   قبل: مربّعة 138×139 ✗ بأيقونة 24px. الآن: صف مستطيل 64px، الأيقونة صغيرة،
+   والعدّاد في طرف الصف ⇒ شكل قائمة/بطاقة أنيق لا مربّع ثقيل. */
+#shop-home-categories .shop-taxonomy { grid-auto-rows: auto;
+  align-items: stretch; }
+#shop-home-categories .shop-taxonomy__item {
+  aspect-ratio: auto;
+  height: auto;
+  min-height: 60px;
+  max-height: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: var(--space-2);
+  padding-inline: var(--space-3);
+  padding-block: var(--space-2);
+}
+#shop-home-categories .shop-taxonomy__item svg {
+  inline-size: 18px;
+  block-size: 18px;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  stroke-width: 1.7;
+}
+#shop-home-categories .shop-taxonomy__name { flex: 0 1 auto;
+  min-inline-size: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+#shop-home-categories .shop-taxonomy__count { margin-inline-start: auto;
+  flex: 0 0 auto;
+  white-space: nowrap; }
+
+/* (طلب المستخدم) النص كامل بلا قصّ + عرض البطاقة مطابق لعرض القسم
+   قبل: الاسم مقصوص بـellipsis ✗ والبطاقة 138px في عمودين ✗
+   بعد: عمود واحد بعرض القسم كامل، والاسم يلتف كاملًا (سطران عند الحاجة) */
+#shop-home-categories .shop-taxonomy {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: var(--space-2);
+}
+#shop-home-categories .shop-taxonomy__item {
+  inline-size: 100%;
+  max-inline-size: 100%;
+  min-inline-size: 0;
+  box-sizing: border-box;
+  min-height: 56px;
+  align-items: center;
+}
+#shop-home-categories .shop-taxonomy__name {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  overflow-wrap: anywhere;
+  line-height: 1.35;
+  flex: 1 1 auto;
+}
+#shop-home-categories .shop-taxonomy__item {
+  aspect-ratio: auto;
+  height: auto;
+  block-size: auto;
+  flex: 0 0 auto;
+  min-block-size: 56px;
+  max-block-size: 72px;
+}
+
+/* (مراجعة) كتلة ضغط الفوتر أُزيلت: القياس أظهر زيادة 341→349px ⇒ لا تُترك ✗ */
+
+/* (طلب المستخدم) إزالة الكتابة من الفوتر — يبقى الشعار فقط
+   البنية المقيسة: .shop-footer__brand > img.shop-footer__logo + span>(strong+small)
+   ⇒ نُخفي الـspan (اسم المتجر + السطر التعريفي) ونُبقي الشعار ✓ */
+.shop-footer__brand > span { display: none; }
+.shop-footer__brand { align-items: center;
+  gap: 0; }
+.shop-footer__logo,
+.shop-footer__brand img { max-inline-size: 5rem;
+  max-height: 44px;
+  inline-size: auto;
+  block-size: auto; }
+
+/* ============================================================================
+   (تنظيف بخبرة) الفوتر: حذف ما هو مكرّر وغير ضروري
+   المقيس: المجموعات الثلاث = تسوّق · حسابك · الدفع والتوصيل
+     • «تسوّق» مكرّرة تمامًا مع روابط الهيدر/الشريط السريع ✗
+     • «حسابك» مكرّرة مع قسم الحساب في القائمة ✗
+     • «الدفع والتوصيل» معلومة ثقة غير مكرّرة ✓ تُبقى
+   النتيجة: فوتر أقصر بوضوح، والمحتوى الفريد فقط. (لا حذف DOM ✗ — إخفاء عرض فقط ✓)
+   ========================================================================== */
+
+/* (PHASE 2 — القرار النهائي) مجموعتا «تسوّق» و«حسابك» مخفيتان (تكرار مع الهيدر/القائمة)،
+   و«الدفع والتوصيل» معلومة نصية. النتيجة المقيسة: فوتر **261px** متمركز بالكامل ✓
+   والروابط تبقى في DOM للأرشفة ✓. (نسخة إظهار الروابط قاست 416px ⇒ خارج الهدف 220–320 ✗) */
+.shop-footer__grid > .shop-footer__sec:nth-child(2),
+.shop-footer__grid > .shop-footer__sec:nth-child(3) { display: none; }
+
+/* ============================================================================
+   (PHASE 3.1) تنظيف محتوى الرئيسية — إزالة التكرار (CSS فقط ⇒ صفر مساس بـJS ✓)
+   المقيس قبل: 7 أقسام · viewH=2203 · العروض كرت واحد في عمودين ⇒ نصف فارغ ✗
+   الهدف: الشرائح ← التصنيفات ← العروض ← المميزة ← الفوتر
+   1) «أحدث المنتجات» لا يُعرض (تكرار ثالث لشبكة منتجات ✗) — الطلب نفسه مشترك ✓ لا يُحذف ✓
+   2) «العلامات التجارية» + «لماذا تتسوّق من متجرنا» (آخر قسمين) لا يُعرضان — محتوى حشو ✗
+   3) كرت وحيد في شبكة عمودين يمتدّ للعرض الكامل ⇒ لا نصف فارغ ✓
+   ========================================================================== */
+#shop-home-newest { display: none; }
+#shop-view > section:nth-last-child(-n+2) { display: none; }
+.shop-home .shop-grid > :only-child { grid-column: 1 / -1; }
+/* إيقاع موحّد للأقسام + رأس قسم واحد (عنوان قوي + «عرض الكل» ثانوي) */
+#shop-view > .shop-home-section { margin-block-end: var(--space-6); }
+#shop-view > .shop-home-section:last-of-type { margin-block-end: 0; }
+.shop-home .shop-section__head { display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-block-end: var(--space-3); }
+.shop-home .shop-section__title { font-size: 1.0625rem;
+  font-weight: 700;
+  margin: 0; }
+.shop-home .shop-section__link { font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-primary-active);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap; }
+.shop-home .shop-grid { gap: var(--space-3); }
+
+/* (PHASE 3.1) تصحيح: الكرت الوحيد يمتدّ بعرض كامل على الجوال،
+   وعلى ≥1024 يمتدّ عمودين فقط (وإلا صار 1168×1371 ✗ وقسمًا بطول 1440px ✗) */
+.shop-home .shop-grid > :only-child { grid-column: 1 / -1; }
+@media (min-width: 1024px) {
+  .shop-home .shop-grid > :only-child { grid-column: span 2; }
+}
+
+/* ============================================================================
+   (PHASE 2 — إغلاق) تمركز الفوتر الكامل — القيم التي قاست 261px متمركزة ✓
+   البنية: اللوجو(1) ← الوصف(2) ← المعلومة(3) ← فاصل ← الحقوق(4) · كلها على محور واحد ✓
+   display:contents على الأغلفة ⇒ ترتيب بلا أي تغيير DOM ✓
+   ========================================================================== */
+.shop-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  text-align: center;
+  padding-block: var(--space-6) var(--space-4);
+  border-block-start: 1px solid var(--color-line);
+  background: var(--color-surface);
+}
+.shop-footer__grid,
+.shop-footer__bottom { display: contents; }
+.shop-footer__brand {
+  order: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+.shop-body .shop-footer .shop-footer__logo,
+.shop-body .shop-footer .shop-footer__brand img {
+  inline-size: 120px;
+  width: 120px;
+  max-inline-size: 120px;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+@media (min-width: 1024px) {
+  .shop-body .shop-footer .shop-footer__logo,
+  .shop-body .shop-footer .shop-footer__brand img { inline-size: 132px;
+    width: 132px;
+    max-inline-size: 132px; }
+}
+.shop-footer__note-inline {
+  order: 2;
+  max-inline-size: 30rem;
+  margin-inline: auto;
+  text-align: center;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--color-ink-muted);
+}
+.shop-footer__sec {
+  order: 3;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  min-height: 0;
+}
+.shop-footer__bottom > :last-child,
+.shop-footer [class*='copyright'],
+.shop-footer__copy {
+  order: 4;
+  inline-size: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--color-ink-muted);
+  border-block-start: 1px solid var(--color-line);
+  padding-block-start: var(--space-4);
+  margin-block-start: var(--space-2);
+}

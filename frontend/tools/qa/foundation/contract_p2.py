@@ -83,16 +83,34 @@ with sync_playwright() as pw:
         backdrop: getComputedStyle(document.querySelector('.shop-drawer__scrim')).display === 'none' ? 'none' : getComputedStyle(document.querySelector('.shop-drawer__scrim')).backgroundColor,
         delays: Array.from(document.querySelectorAll('.shop-drawer__nav > *')).map(e => getComputedStyle(e).animationDelay),
         allVisible: Array.from(document.querySelectorAll('.shop-drawer__link')).every(e => parseFloat(getComputedStyle(e).opacity) > 0.99),
-        order: Array.from(document.querySelectorAll('.shop-drawer__link')).map(e => e.textContent.trim().replace(/\s+/g, ' ')),
-        ov: document.documentElement.scrollWidth - document.documentElement.clientWidth }; })()""")
-    # الدُرج: تصميم المرجع — جانبي جزئي من اليمين + تعتيم + انزلاق أفقي
-    chk('[دُرج] القائمة السابقة محفوظة: لوحة كاملة + صف 50px + بلا تعتيم',
-        d['rowH'] == 50 and d['panelW'] >= 340 and d['maxW'] == '640px' and d['backdrop'] == 'none' and d['ov'] == 0,
+        order: Array.from(document.querySelectorAll('.shop-drawer__link')).map(e => e.textContent.trim().replace(/\\s+/g, ' ')),
+        ov: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+        hdrBottom: Math.round(document.querySelector('.shop-header').getBoundingClientRect().bottom),
+        drTop: Math.round(document.querySelector('#shop-drawer').getBoundingClientRect().top),
+        qnDisplay: getComputedStyle(document.querySelector('#shop-quicknav')).display,
+        rowN: Array.from(document.querySelectorAll('#shop-drawer .shop-drawer__link')).filter(e => e.offsetParent !== null).length,
+        sepN: Array.from(document.querySelectorAll('#shop-drawer .shop-drawer__link')).filter(e => e.offsetParent !== null && getComputedStyle(e).borderBottomWidth !== '0px').length }; })()""")
+    # (PHASE 2.2) العرض الحالي: قائمة منسدلة تحت الهيدر الأساسي.
+    # حُدِّث هذا العقد لأنه كان يفرض عرض الدُرج الجانبي القديم حرفيًا
+    # (لوحة بسقف 640px · صف 50px · «بلا تعتيم»). الحمايات لم تُخفَّف: الفائض الأفقي
+    # والترتيب والظهور ظلّت كما هي، وأُضيفت حمايات هندسية جديدة.
+    chk('[دُرج] PHASE 2.2: صف ≥44px + لوحة كاملة تتبع الهيدر + خلفية معتّمة فعّالة',
+        d['rowH'] >= 44 and d['panelW'] >= 340 and d['backdrop'] != 'none' and d['ov'] == 0,
         json.dumps(d, ensure_ascii=False)[:150])
+    chk('[دُرج] PHASE 2.2: القائمة تبدأ من أسفل الهيدر الأساسي (≤1px)',
+        abs(d['drTop'] - d['hdrBottom']) <= 1, 'drTop=%s hdrBottom=%s' % (d['drTop'], d['hdrBottom']))
+    chk('[دُرج] PHASE 2.2: الشريط السريع مخفي تمامًا أثناء الفتح (بلا مساحة)',
+        d['qnDisplay'] == 'none', 'qnDisplay=%s' % d['qnDisplay'])
+    chk('[دُرج] PHASE 2.2: فاصل خاص لكل صف ظاهر', d['rowN'] > 0 and d['sepN'] == d['rowN'],
+        'rows=%s sep=%s' % (d['rowN'], d['sepN']))
     chk('[دُرج] ترتيب القائمة مطابق للسابق (7 روابط بالترتيب)',
         d['order'] == ['الرئيسية', 'كل المنتجات', 'التصنيفات', 'العلامات', 'السلة', 'تسجيل الدخول', 'إنشاء حساب'],
         str(d['order']))
-    chk('[دُرج] الحالة النشطة بالنمط السابق', d['activeBg'] == 'rgb(234, 241, 251)' and d['activeCol'] == 'rgb(31, 95, 191)', '%s / %s' % (d['activeBg'], d['activeCol']))
+    # (PHASE 2.2) البند الحالي: لمسة ذهبية هادئة (--color-primary-soft) + نص داكن.
+    # كان العقد يفرض الأزرق القديم rgb(31,95,191) وهو من الديون المؤجّلة (Design System).
+    chk('[دُرج] الحالة النشطة: لمسة ذهبية هادئة + نص داكن قابل للقراءة',
+        d['activeBg'] is not None and d['activeBg'] != 'rgba(0, 0, 0, 0)' and d['activeCol'] == 'rgb(23, 23, 23)',
+        '%s / %s' % (d['activeBg'], d['activeCol']))
     chk('[دُرج] حركة اكتمال الظهور: تلاشٍ متدرّج لكل عنصر',
         bool(d.get('delays')) and len(set(d['delays'])) >= 3 and d['allVisible'],
         'delays=%s visible=%s' % (str(d.get('delays'))[:60], d.get('allVisible')))

@@ -38,18 +38,25 @@
     if (!header) return;
     var h = Math.round(header.getBoundingClientRect().height);
     if (h > 0) doc.body.style.setProperty('--hdrmenu-top', h + 'px');
+    // (PHASE 2.2) ارتفاع صف التحكم الأساسي فقط — تُبدأ منه القائمة المنسدلة
+    var row = doc.querySelector('.shop-header__inner');
+    if (row) {
+      var rh = Math.round(row.getBoundingClientRect().height);
+      if (rh > 0) doc.body.style.setProperty('--hdrrow-top', rh + 'px');
+    }
   }
 
   function staggerItems(node) {
-    var items = node.querySelectorAll('.shop-drawer__link, .shop-menu__link, .shop-menu__stagger, .shop-drawer__group-title, .shop-menu__divider');
+    var items = node.querySelectorAll('.shop-drawer__link, .shop-menu__link, .shop-menu__stagger, .shop-drawer__group-title, .shop-menu__label, .shop-menu__divider, .shop-menu__theme, .shop-drawer__foot > *');
     Array.prototype.forEach.call(items, function (el, i) {
-      el.style.transitionDelay = (i * 0.04) + 's';   // نمط المرجع: تتابع 40ms
+      // (PHASE 2.2) تتابع 28ms مع سقف 200ms — الإحساس الكلي سريع (≤350ms)
+      el.style.transitionDelay = Math.min(i * 0.028, 0.2) + 's';
     });
   }
 
   function clearDelays(node) {
     Array.prototype.forEach.call(
-      node.querySelectorAll('.shop-drawer__link, .shop-menu__link, .shop-menu__stagger, .shop-drawer__group-title, .shop-menu__divider'),
+      node.querySelectorAll('.shop-drawer__link, .shop-menu__link, .shop-menu__stagger, .shop-drawer__group-title, .shop-menu__label, .shop-menu__divider, .shop-menu__theme, .shop-drawer__foot > *'),
       function (el) { el.style.transitionDelay = '0s'; }
     );
   }

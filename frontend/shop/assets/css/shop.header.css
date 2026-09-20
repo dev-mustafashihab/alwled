@@ -219,7 +219,7 @@
 .shop-drawer[hidden] { display: flex; }        /* القائمة تعمل بـ is-open لا بـ hidden */
 
 /* بلا طبقة تعتيم منفصلة: اللوحة تغطي الشاشة (كما في المرجع) */
-.shop-drawer__scrim { display: none !important; }
+.shop-drawer__scrim { display: none; }   /* (PHASE 2.2) صار الخلفية المعتمة فعّالة في القائمة المنسدلة ≤1023px */
 
 .shop-drawer__panel {
   position: static;
@@ -228,7 +228,7 @@
   max-width: 640px;
   margin-inline: auto;
   min-height: 100%;
-  background: transparent !important;
+  background: transparent;
   box-shadow: none;
   display: flex;
   flex-direction: column;
@@ -293,9 +293,10 @@
 
 .shop-drawer.is-open .shop-drawer__link,
 .shop-drawer.is-open .shop-menu__link,
-.shop-drawer.is-open .shop-menu__stagger { opacity: 1; transform: translateX(0); }
+/* (PHASE 2.2) أُبطلت: وحدة الحركة الواحدة في القسم 19.6 هي المسؤولة عن دخول الصفوف */
+.shop-body .shop-drawer .shop-menu__stagger { opacity: 1; transform: none; }
 
-.shop-menu__stagger { opacity: 0; transform: translateX(20px); transition: opacity 300ms ease, transform 300ms ease; }
+/* (PHASE 2.2) أُبطلت حركة stagger القديمة (translateX(20px) · 300ms) — لا تكرار للمسؤولية */
 
 .shop-drawer__link:hover,
 .shop-drawer__link:focus-visible,
@@ -1416,5 +1417,474 @@ html.stw-scroll-down .shop-header .shop-header__inner {
     outline: 2px solid var(--shop-desktop-accent);
     outline-offset: 2px;
     box-shadow: none;
+  }
+}
+/* ============================================================================
+   19) PHASE 2.2 — قائمة الجوال: قائمة منسدلة تحت الهيدر الأساسي (≤1023px)
+   العرض السابق: Overlay بعرض كامل يبدأ من أسفل الهيدر كله (بما فيه الشريط السريع)
+   بخلفية متدرّجة وبلا خلفية معتمة فعّالة (كانت display:none !important).
+   الآن: PRIMARY HEADER ← PANEL ← BACKDROP.
+   • القائمة تبدأ من أسفل صف التحكم الفعلي عبر --hdrrow-top (قياس فعلي في JS،
+     لا رقم مكتوب يدويًا) — والشريط السريع يختفي كليًا (بلا مساحة محجوزة).
+   • بلا بطاقة عائمة/زوايا/ظل ثقيل/تدرّج/تعتيم ثقيل — سطح تابع للهيدر.
+   • فاصل لكل صف (توكن الحدود) · هدف اللمس كامل الصف · RTL صحيح.
+   • الحركة: السطح opacity + translateY(-6px→0) 190ms · العناصر بتتابع 28ms مقيّد بـ200ms.
+   نطاق: ≤1023px فقط — سطح المكتب لا يمسّه شيء.
+   ========================================================================== */
+@media (max-width: 1023px) {
+  /* 19.1 الحاوية تبدأ من أسفل الصف الأساسي */
+  .shop-body .shop-drawer {
+    top: var(--hdrrow-top, var(--hdrmenu-top));
+    bottom: 0;
+    background: transparent;
+    padding: 0;
+    transform: translateY(-6px);
+    transition: opacity 190ms var(--stw-ease-out),
+                transform 190ms var(--stw-ease-out),
+                visibility 190ms linear;
+  }
+  .shop-body .shop-drawer.is-open { transform: translateY(0); }
+  .shop-body .shop-drawer.is-closing { transform: translateY(-4px); transition-duration: 170ms; }
+
+  /* 19.2 الخلفية المعتمة: تبدأ تحت الهيدر الأساسي · بلا ضبابية ثقيلة · تُغلق بالنقر
+     (data-drawer-close موصول بالمُنفّذ الحالي في shop.header.js) */
+  .shop-body .shop-drawer__scrim {
+    position: absolute;
+    inset: 0;
+    display: block;
+    z-index: 1;
+    background: color-mix(in srgb, var(--bg-overlay, #0f172a) 55%, transparent);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    opacity: 0;
+    transition: opacity 190ms var(--stw-ease-out);
+  }
+  .shop-body .shop-drawer.is-open .shop-drawer__scrim { opacity: 1; }
+  .shop-body .shop-drawer.is-opening .shop-drawer__scrim,
+  .shop-body .shop-drawer.is-closing .shop-drawer__scrim { opacity: 0; }
+
+  /* 19.3 السطح: لوحة تتبع الهيدر — سطح المتجر + حدّ سفلي رقيق، بلا زوايا/ظل/تدرّج */
+  .shop-body .shop-drawer__panel {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    flex: 0 0 auto;          /* ارتفاعها = محتواها (لا تملأ الشاشة) ليبقى الـBackdrop مرئيًا */
+    height: auto;
+    min-height: 0;
+    max-height: 100%;
+    background: var(--store-surface, var(--color-surface));
+    border-block-end: 1px solid var(--color-line);
+    box-shadow: none;
+    transform: none;
+    overflow: hidden;
+  }
+
+  /* 19.4 أثناء الفتح: الشريط السريع غير معروض ولا يحجز أي مساحة */
+  .shop-body.menu-open #shop-quicknav { display: none; }
+
+  /* 19.5 منطقة التمرير: تنمو حسب المحتوى وتُمرَّر داخل اللوحة فقط */
+  .shop-body .shop-menu__scroll {
+    flex: 0 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* 19.6 وحدة الحركة الدلالية الواحدة (Motion Row Unit) — تغطية كل صف فعلي مرئي:
+      روابط التنقّل + بناء JS للحساب (#shop-menu-account/#shop-menu-guest) + عناوين المجموعات
+      + مبدّل المظهر + التذييل. الاتجاه الفيزيائي: يبدأ يمينًا (+14px) وينتهي يسارًا (0).
+      الفاصل هو border الصف نفسه ⇒ الصف وفاصله وحدة واحدة. */
+  .shop-body .shop-drawer .shop-drawer__link,
+  .shop-body .shop-drawer .shop-menu__link,
+  .shop-body .shop-drawer .shop-menu__stagger,
+  .shop-body .shop-drawer .shop-drawer__group-title,
+  .shop-body .shop-drawer .shop-menu__label,
+  .shop-body .shop-drawer #shop-menu-account > *,
+  .shop-body .shop-drawer #shop-menu-guest > *,
+  .shop-body .shop-drawer #shop-menu-user > *,
+  .shop-body .shop-drawer .shop-menu__theme,
+  .shop-body .shop-drawer .shop-drawer__foot > * {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    min-height: 52px;
+    padding: var(--space-2) var(--space-4);
+    border: 0;
+    border-block-end: 1px solid var(--color-line);
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    color: var(--store-text, var(--color-ink));
+    background: transparent;
+    opacity: 0;
+    transform: translateX(14px);               /* (2/3) يبدأ يمينًا ⇒ يتحرك يسارًا إلى مكانه */
+    transition: opacity 190ms var(--stw-ease-out),
+                transform 190ms var(--stw-ease-out),
+                background-color 150ms var(--stw-ease-out),
+                color 150ms var(--stw-ease-out);
+  }
+  /* (22) الصف + الفاصل = وحدة حركة واحدة: الفاصل هو border-block-end للصف نفسه */
+  .shop-body .shop-drawer.is-open .shop-drawer__link,
+  .shop-body .shop-drawer.is-open .shop-menu__link,
+  .shop-body .shop-drawer.is-open .shop-menu__stagger,
+  .shop-body .shop-drawer.is-open .shop-drawer__group-title,
+  .shop-body .shop-drawer.is-open .shop-menu__label,
+  .shop-body .shop-drawer.is-open #shop-menu-account > *,
+  .shop-body .shop-drawer.is-open #shop-menu-guest > *,
+  .shop-body .shop-drawer.is-open #shop-menu-user > *,
+  .shop-body .shop-drawer.is-open .shop-menu__theme,
+  .shop-body .shop-drawer.is-open .shop-drawer__foot > * { opacity: 1; transform: none; }
+
+  .shop-body .shop-menu__scroll .shop-drawer__link:hover,
+  .shop-body .shop-menu__scroll .shop-drawer__link:focus-visible { background: var(--store-primary-soft, var(--color-primary-soft)); }
+
+  /* البند الحالي: لمسة ذهبية هادئة (شريط جانبي + خلفية ناعمة) — ليس كتلة صفراء */
+  .shop-body .shop-menu__scroll .shop-drawer__link[aria-current='page'] {
+    color: var(--color-ink);
+    background: var(--color-primary-soft);
+    box-shadow: inset 3px 0 0 0 var(--color-primary);
+    font-weight: 600;
+  }
+  .shop-body .shop-menu__scroll .shop-drawer__link[aria-current='page'] .shop-drawer__link__icon { color: var(--color-primary-active); }
+
+  /* الفواصل المستقلة القديمة تُلغى — الصفوف تحمل فواصلها (بلا حدود مزدوجة) */
+  .shop-body .shop-menu__divider { display: none; }
+
+  /* عناوين المجموعات: هادئة (لا عناوين ضخمة) */
+  .shop-body .shop-menu__label {
+    padding: var(--space-3) var(--space-4) var(--space-1);
+    font-size: 0.78125rem;
+    font-weight: 600;
+    color: var(--store-text-muted, var(--color-ink-muted));
+  }
+
+  /* مبدّل المظهر في نهاية اللوحة: فاصل علوي رقيق + هدف لمس مريح */
+  .shop-body .shop-menu__theme {
+    border-block-start: 1px solid var(--color-line);
+    margin: 0;
+    padding: var(--space-3) var(--space-4);
+  }
+  .shop-body .shop-drawer__foot { padding: var(--space-3) var(--space-4); }
+}
+
+/* 19.7 تقليل الحركة: بلا تتابع وبلا إزاحة — الحالة تتغيّر فورًا */
+@media (prefers-reduced-motion: reduce) {
+  .shop-body .shop-drawer,
+  .shop-body .shop-drawer__scrim,
+  .shop-body .shop-menu__scroll .shop-drawer__link,
+  .shop-body .shop-menu__scroll .shop-menu__link {
+    transition: none;
+    transform: none;
+  }
+  .shop-body .shop-menu__scroll .shop-drawer__link,
+  .shop-body .shop-menu__scroll .shop-menu__link { opacity: 1; }
+}
+
+/* ============================================================================
+   20) PHASE 2.2 — عائلة ضوابط الهيدر (Search · Cart · Menu) على ≤1023px
+   هدف: نظام واحد بنفس الحجم/الحدود/الزوايا/الأيقونة/التوقيت/حالة التركيز،
+   بلا بطاقات ثقيلة وبلا pill/دائري غير مبرَّر. الأهداف لا تتقلّص في الحالة المضغوطة.
+   الأبعاد: 46×46 (توكن محلي) — أعلى من الحد الأدنى 44×44.
+   لا تغيير في أي وظيفة (بحث · سلة · قائمة) — عرض فقط.
+   ========================================================================== */
+@media (max-width: 1023px) {
+  .shop-body { --shop-ctl: 46px; }
+
+  .shop-body .shop-header .shop-iconbtn,
+  .shop-body .shop-header .shop-searchbtn,
+  .shop-body .shop-header .shop-cartbtn,
+  .shop-body .shop-header .shop-cart__btn,
+  .shop-body .shop-header #shop-search-btn,
+  .shop-body .shop-header #shop-cart-btn,
+  .shop-body .shop-header #shop-burger {
+    inline-size: var(--shop-ctl);
+    block-size: var(--shop-ctl);
+    min-inline-size: var(--shop-ctl);
+    min-block-size: var(--shop-ctl);
+    padding: 0;
+    border: 1px solid var(--color-line);
+    border-radius: var(--stw-radius-md);
+    background: var(--color-surface-muted);
+    color: var(--color-ink);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    transition: background-color 140ms var(--stw-ease-out),
+                border-color 140ms var(--stw-ease-out),
+                color 140ms var(--stw-ease-out),
+                transform 100ms var(--stw-ease-out);
+  }
+
+  /* (4) أيقونات متسقة بصريًا: 21px */
+  .shop-body .shop-header .shop-iconbtn svg,
+  .shop-body .shop-header .shop-searchbtn svg,
+  .shop-body .shop-header .shop-cartbtn svg,
+  .shop-body .shop-header .shop-cart__btn svg,
+  .shop-body .shop-header #shop-cart-btn svg,
+  .shop-body .shop-header #shop-burger svg {
+    inline-size: 21px;
+    block-size: 21px;
+    display: block;
+  }
+
+  /* (5/9) hover — أجهزة تدعم hover فقط */
+  @media (hover: hover) {
+    .shop-body .shop-header .shop-iconbtn:hover,
+    .shop-body .shop-header .shop-searchbtn:hover,
+    .shop-body .shop-header .shop-cartbtn:hover,
+    .shop-body .shop-header .shop-cart__btn:hover,
+    .shop-body .shop-header #shop-search-btn:hover,
+    .shop-body .shop-header #shop-cart-btn:hover,
+    .shop-body .shop-header #shop-burger:hover {
+      background: var(--color-surface);
+      border-color: var(--color-line-strong, var(--color-line));
+      color: var(--color-ink);
+    }
+  }
+
+  /* (9) pressed — استجابة لمسية هادئة */
+  .shop-body .shop-header .shop-iconbtn:active,
+  .shop-body .shop-header .shop-searchbtn:active,
+  .shop-body .shop-header .shop-cartbtn:active,
+  .shop-body .shop-header .shop-cart__btn:active,
+  .shop-body .shop-header #shop-search-btn:active,
+  .shop-body .shop-header #shop-cart-btn:active,
+  .shop-body .shop-header #shop-burger:active { transform: scale(0.97); }
+
+  /* (5/8) ACTIVE: البحث مفتوح · القائمة مفتوحة — لمسة ذهبية هادئة لاكتفاء دلالي */
+  .shop-body:has(.shop-search-sheet.is-open) .shop-header #shop-search-btn,
+  .shop-body .shop-header #shop-burger[aria-expanded='true'] {
+    background: var(--color-primary-soft);
+    border-color: var(--color-primary);
+    color: var(--color-ink);
+  }
+  .shop-body .shop-header #shop-burger[aria-expanded='true'] .shop-burger span { background: var(--color-primary-active); }
+
+  /* (10) focus-visible: توكن التركيز الصحيح للنظام (بلا مساس بدين الأزرق القديم) */
+  .shop-body .shop-header .shop-iconbtn:focus-visible,
+  .shop-body .shop-header .shop-searchbtn:focus-visible,
+  .shop-body .shop-header .shop-cartbtn:focus-visible,
+  .shop-body .shop-header .shop-cart__btn:focus-visible,
+  .shop-body .shop-header #shop-search-btn:focus-visible,
+  .shop-body .shop-header #shop-cart-btn:focus-visible,
+  .shop-body .shop-header #shop-burger:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+  }
+
+  /* (8) ☰ → × : تحوّل بسيط مبني على هندسة الأشرطة الفعلية
+     (شريط 2px + هامش 3px ⇒ خطوة 8px) — بلا إعادة بناء للزر وبلا تغيير hooks */
+  .shop-body .shop-header #shop-burger .shop-burger span {
+    transition: transform 180ms var(--stw-ease-out), opacity 140ms var(--stw-ease-out);
+  }
+  .shop-body .shop-header #shop-burger[aria-expanded='true'] .shop-burger span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .shop-body .shop-header #shop-burger[aria-expanded='true'] .shop-burger span:nth-child(2) { opacity: 0; }
+  .shop-body .shop-header #shop-burger[aria-expanded='true'] .shop-burger span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  /* (6) شارة السلة: البناء الحالي (أصفر + نص داكن) مقروء ومتوافق — نحفظ الموضع/الحجم
+     وتمنع أي إزاحة تخطيط. لا تُعرض شارة عند العدد 0 (سلوك موجود — لا نخترع قاعدة) */
+  .shop-body .shop-header .shop-cartbtn__badge,
+  .shop-body .shop-header .shop-cart__badge { pointer-events: none; }
+}
+
+/* (32) تقليل الحركة: بلا إزاحة أفقية ولا تحوّل زخرفي — تغيير حالة فوري */
+@media (prefers-reduced-motion: reduce) {
+  .shop-body .shop-menu__scroll .shop-drawer__link,
+  .shop-body .shop-menu__scroll .shop-menu__link { transform: none; }
+  .shop-body .shop-header #shop-burger .shop-burger span { transition: none; }
+  .shop-body .shop-header .shop-iconbtn,
+  .shop-body .shop-header .shop-searchbtn,
+  .shop-body .shop-header .shop-cartbtn,
+  .shop-body .shop-header .shop-cart__btn,
+  .shop-body .shop-header #shop-burger { transition: none; }
+  .shop-body .shop-header .shop-iconbtn:active,
+  .shop-body .shop-header #shop-burger:active,
+  .shop-body .shop-header .shop-cartbtn:active { transform: none; }
+}
+
+/* (20/22) إبطال حركة tw القديمة للصفوف (stw-menu-in: translateY من الأسفل ✗)
+   سببها: shop.tw.css .shop-drawer.is-open .shop-menu__scroll>* {animation: stw-menu-in}
+   وهي تتفوّق على transitions ⇒ صارت الصفوف تدخل رأسيًا. الآن الحركة الوحيدة =
+   transition الأفقي (translateX من اليسار) المُعرّف في 19.6 — الصف وفاصله وحدة واحدة.
+   النوعية: (0,4,0) أعلى من قاعدة tw (0,3,0) ⇒ بلا !important. */
+@media (max-width: 1023px) {
+  .shop-body .shop-drawer.is-open .shop-menu__scroll > *,
+  .shop-body .shop-drawer.is-open .shop-drawer__nav > *,
+  .shop-body .shop-drawer.is-open .shop-menu__theme,
+  .shop-body .shop-drawer.is-open .shop-drawer__foot,
+  /* (جذر السبب) tw تعرّف نفس العناصر بنوعية (1,3,0) وملفها محمّل بعدنا ⇒ تعادل ⇒ تفوز.
+     نرفع النوعية درجة (1,4,0) لإبطال animation الرأسي stw-menu-in عن هذين الصفّين تحديدًا،
+     بلا !important، وبنفس عقد الحركة (translateX(+14px) → 0). */
+  .shop-body .shop-drawer.is-open #shop-menu-guest > .shop-drawer__link,
+  .shop-body .shop-drawer.is-open #shop-menu-account > .shop-drawer__link,
+  .shop-body .shop-drawer.is-open #shop-menu-user > .shop-drawer__link,
+  .shop-body .shop-drawer.is-open #shop-menu-guest > *,
+  .shop-body .shop-drawer.is-open #shop-menu-account > *,
+  .shop-body .shop-drawer.is-open #shop-menu-user > * { animation: none; }
+}
+
+/* (4/15) تغطية كاملة لصفوف مجموعات الحساب (بناء JS: تسجيل الدخول/إنشاء حساب/حسابي/الطلبات/
+   الإشعارات/التوثيق/الخروج) — كانت تُظهر تلاشيًا بلا إزاحة أفقية.
+   زوج صريح (base + is-open) بنوعية ID لضمان تغطية كل صف فعلي مرئي بلا استثناء.
+   الاتجاه الفيزيائي: يبدأ يمينًا (+14px) ⇒ يتحرك يسارًا إلى 0. */
+@media (max-width: 1023px) {
+  .shop-body .shop-drawer #shop-menu-guest > .shop-drawer__link,
+  .shop-body .shop-drawer #shop-menu-account > .shop-drawer__link,
+  .shop-body .shop-drawer #shop-menu-user > .shop-drawer__link {
+    opacity: 0;
+    transform: translateX(14px);
+    transition: opacity 190ms var(--stw-ease-out),
+                transform 190ms var(--stw-ease-out),
+                background-color 150ms var(--stw-ease-out),
+                color 150ms var(--stw-ease-out);
+  }
+  .shop-body .shop-drawer.is-open #shop-menu-guest > .shop-drawer__link,
+  .shop-body .shop-drawer.is-open #shop-menu-account > .shop-drawer__link,
+  .shop-body .shop-drawer.is-open #shop-menu-user > .shop-drawer__link { opacity: 1; transform: none; }
+}
+
+/* (AUDIT) استُعيد المحتوى المرئي: لم تُعد كتلة إخفاء «تسوّق»/الملف الشخصي */
+
+/* ============================================================================
+   (طلب المستخدم) تناسق الهيدر مع القائمة المنسدلة — إيقاع بصري واحد
+   الهيدر على ≤1023px يستخدم padding-inline: 0.875rem (tw) وأيقونات 21px.
+   القائمة كانت تستخدم 16px وأيقونات 22px ⇒ اختلاف إيقاع بين الصف والهيدر.
+   الآن: نفس الإيقاع الأفقي ونفس حجم الأيقونة ⇒ القائمة تبدو امتدادًا للهيدر.
+   ========================================================================== */
+@media (max-width: 1023px) {
+  .shop-body .shop-drawer .shop-menu__scroll .shop-drawer__link,
+  .shop-body .shop-drawer .shop-menu__scroll .shop-menu__link,
+  .shop-body .shop-drawer .shop-menu__label,
+  .shop-body .shop-drawer .shop-menu__theme,
+  .shop-body .shop-drawer .shop-drawer__foot { padding-inline: 0.875rem; }
+  .shop-body .shop-drawer .shop-menu__scroll .shop-drawer__link,
+  .shop-body .shop-drawer .shop-menu__scroll .shop-menu__link { gap: var(--space-3); }
+  .shop-body .shop-drawer .shop-drawer__link__icon svg { inline-size: 21px; block-size: 21px; }
+  .shop-body .shop-drawer .shop-drawer__link__icon { inline-size: 21px; block-size: 21px; }
+  /* منطقة التمرير بلا حشوة أفقية: تصبح حشوة الصف (0.875rem) هي الإزاحة الوحيدة
+     فيتطابق محتوى القائمة مع محتوى الهيدر بالضبط (logo/controls) */
+  .shop-body .shop-drawer .shop-menu__scroll { padding-inline: 0; }
+}
+
+/* ============================================================================
+   (طلب المستخدم) تنسيق كتلة الملف الشخصي في القائمة — كانت كبيرة وغير منسجمة
+   المحتوى يُبنى بـJS للمسجَّل، لذلك نُقيّد الحجم والطباعة والأفاتار بغضّ النظر عن
+   البنية الداخلية، بنفس إيقاع القائمة (0.875rem) وفواصلها (color-line).
+   ========================================================================== */
+@media (max-width: 1023px) {
+  .shop-body .shop-drawer #shop-menu-user {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin: 0;
+    padding: var(--space-3) 0.875rem;
+    min-height: 0;
+    border-block-end: 1px solid var(--color-line);
+  }
+  .shop-body .shop-drawer #shop-menu-user > *,
+  .shop-body .shop-drawer #shop-menu-user * {
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    letter-spacing: normal;
+  }
+  .shop-body .shop-drawer #shop-menu-user strong,
+  .shop-body .shop-drawer #shop-menu-user h2,
+  .shop-body .shop-drawer #shop-menu-user h3,
+  .shop-body .shop-drawer #shop-menu-user h4 { font-size: 0.9375rem;
+    font-weight: 600; }
+  .shop-body .shop-drawer #shop-menu-user small,
+  .shop-body .shop-drawer #shop-menu-user .shop-menu__user-sub,
+  .shop-body .shop-drawer #shop-menu-user span + span { font-size: 0.75rem;
+    color: var(--store-text-muted, var(--color-ink-muted)); }
+  /* الأفاتار/الصورة: قيد حجم مضغوط */
+  .shop-body .shop-drawer #shop-menu-user img,
+  .shop-body .shop-drawer #shop-menu-user svg,
+  .shop-body .shop-drawer #shop-menu-user [class*='avatar'],
+  .shop-body .shop-drawer #shop-menu-user [class*='photo'] {
+    inline-size: 36px;
+    block-size: 36px;
+    width: 36px;
+    height: 36px;
+    min-height: 36px;
+    max-height: 36px;
+    min-inline-size: 36px;
+    flex: 0 0 auto;
+    border-radius: 999px;
+    object-fit: cover;
+  }
+  /* سطر واحد مضغوط (بلا التفاف) + قصّ الاسم الطويل بأناقة */
+  .shop-body .shop-drawer #shop-menu-user { flex-wrap: nowrap;
+    overflow: hidden; }
+  .shop-body .shop-drawer #shop-menu-user > div { min-inline-size: 0;
+    flex: 1 1 auto; }
+  .shop-body .shop-drawer #shop-menu-user > div > * { display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .shop-body .shop-drawer #shop-menu-user > a,
+  .shop-body .shop-drawer #shop-menu-user > button { flex: 0 0 auto; }
+  /* إلغاء هوامش الأطفال القديمة (سبب الارتفاع المتبقّي) */
+  .shop-body .shop-drawer #shop-menu-user * { margin-block: 0;
+    margin: 0; }
+}
+
+  /* أي زر/رابط داخل الكتلة: مضغوط ومتناسق */
+  .shop-body .shop-drawer #shop-menu-user a,
+  .shop-body .shop-drawer #shop-menu-user button {
+    min-height: 40px;
+    padding: 0 var(--space-3);
+    font-size: 0.875rem;
+    border-radius: var(--stw-radius-md);
+  }
+
+
+/* ---- تنسيق دقيق لكتلة المستخدم (بنية shop.app.js:198-202) ---- */
+@media (max-width: 1023px) {
+  .shop-body .shop-drawer #shop-menu-user { padding-block: var(--space-2);
+    min-height: 0; }
+  .shop-body .shop-drawer #shop-menu-user .shop-menu__user-avatar {
+    inline-size: 36px;
+    block-size: 36px;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    max-height: 36px;
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    border-radius: 999px;
+    background: var(--color-primary-soft);
+    color: var(--color-ink);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    object-fit: cover;
+  }
+  .shop-body .shop-drawer #shop-menu-user .shop-menu__user-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-inline-size: 0;
+    flex: 1 1 auto;
+  }
+  .shop-body .shop-drawer #shop-menu-user .shop-menu__user-main strong {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--color-ink); }
+  .shop-body .shop-drawer #shop-menu-user .shop-menu__user-main small {
+    font-size: 0.75rem;
+    line-height: 1.3;
+    color: var(--store-text-muted, var(--color-ink-muted)); }
+  .shop-body .shop-drawer #shop-menu-user .shop-menu__user-main > * {
+    padding: 0;
+    margin: 0;
+    line-height: 1.3;
+    display: block;
   }
 }

@@ -32,7 +32,7 @@
 .shop-taxonomy__icon {
   display: inline-flex; align-items: center; justify-content: center;
   width: 40px; height: 40px; border-radius: var(--radius-2, 10px);
-  background: rgba(31, 95, 191, .08); color: var(--color-primary, #1f5fbf); flex: 0 0 auto;
+  background: color-mix(in srgb, var(--store-primary, #FFBF17) 8%, transparent); color: var(--store-primary, #FFBF17); flex: 0 0 auto;
 }
 
 /* ---------- لوحة الفلاتر السفلية (جوال) ---------- */

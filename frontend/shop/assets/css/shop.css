@@ -23,7 +23,7 @@ html .shop-body {
   --primary-hover: var(--store-primary-hover);
   --primary-active: var(--store-primary-active);
   --primary-soft: var(--store-primary-soft);
-  --ring: rgba(31, 95, 191, 0.35);
+  --ring: rgba(255, 191, 23, 0.35);   /* (توحيد الألوان) حلقة التركيز = اللون الرئيسي */
   --border-brand: var(--store-primary);
 }
 
@@ -2830,3 +2830,22 @@ html .shop-body {
 #shop-view .shop-gallery__stage .shop-card__placeholder { background: none; }
 /* 5) حالة خطأ المشابهة: بلا فراغ إضافي */
 #shop-view .shop-section--related-error .shop-note { margin: 0; }
+
+/* ============================================================================
+   (توحيد الألوان) قاعدة النظام: على الخلفية الذهبية #FFBF17 يكون النص داكنًا #171717
+   (تباين 10.9:1) — لا نص أبيض على الأصفر (كان 1.35:1 ✗ بعد توحيد اللون الرئيسي).
+   ========================================================================== */
+.shop-body .btn--primary,
+.shop-body .btn--primary *,
+.shop-body .shop-card__add,
+.shop-body .shop-card__add *,
+.shop-body .shop-card__add svg,
+.shop-body .btn--primary svg { color: var(--color-on-primary, #171717); }
+.shop-body .btn--primary svg,
+.shop-body .shop-card__add svg { stroke: currentColor; fill: none; }
+.shop-body .shop-home-slide { color: var(--color-on-primary, #171717); }
+
+/* (توحيد الألوان) رفع النوعية: الزر الأصفر بنص داكن إلزاميًا (كان الأبيض يفوز) */
+.shop-body .shop-card .shop-card__add.btn.btn--primary,
+.shop-body .shop-card .shop-card__add.btn.btn--primary *,
+.shop-body .shop-card .shop-card__add.btn.btn--primary svg { color: var(--color-on-primary, #171717); }

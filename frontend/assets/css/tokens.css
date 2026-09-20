@@ -193,13 +193,13 @@
 
   /* ========================= storefront (semantic) ==========================
      طبقة دلالية لواجهة المتجر فقط. لا تغيّر أي توكن نظام/لوحة الإدارة.
-     المصدر: هوية المتجر الحالية — الأزرق #1F5FBF المستخدم فعلاً في shop.css.
+     المصدر: هوية المتجر — الذهبي #FFBF17 (توحيد الألوان على اللون الرئيسي).
      ملاحظة: هذه التوكنز معرّفة فقط — لم يُستبدل أي استخدام حالي بعد (لا Migration).
      ======================================================================== */
-  --store-primary: #1F5FBF;
-  --store-primary-hover: #1A54A8;
-  --store-primary-active: #164A93;
-  --store-primary-soft: #EAF1FB;
+  --store-primary: #FFBF17;
+  --store-primary-hover: #E9AA00;
+  --store-primary-active: #D39900;
+  --store-primary-soft: #FFF6D8;
 
   --store-bg: var(--neutral-50);
   --store-surface: var(--neutral-0);
