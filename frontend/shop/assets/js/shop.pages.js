@@ -49,8 +49,78 @@
     return el('a', { class: 'shop-section__link', href: hash, text: label || 'عرض الكل ‹' });
   }
 
-  function grid(products) {
-    return el('div', { class: 'shop-grid' }, products.map(function (product) {
+  /* ============================================================================
+     HOME VIEW TOGGLE + END-OF-SECTION CTA (طلب المستخدم 1+2+3)
+     - زر تبديل عرض البطاقات: مفرد/ثنائي — يُحفظ في localStorage ويعود تلقائيًا
+     - زر نهاية قسم بعرض كامل بدل الرابط النصي الصغير — مع عدّاد حقيقي من البيانات
+     ========================================================================== */
+  var HOME_VIEW_KEY = 'alw-shop-home-view';
+  function homeViewPref() {
+    try { return global.localStorage.getItem(HOME_VIEW_KEY) === 'single' ? 'single' : 'double'; }
+    catch (error) { return 'double'; }
+  }
+  function setHomeViewPref(value) {
+    try { global.localStorage.setItem(HOME_VIEW_KEY, value); } catch (error) { /* محجوب */ }
+  }
+
+  /* زرّا التبديل: أيقونتان ▦ (ثنائي) / ☰ (مفرد) — حالة مضغوطة على الزر النشط.
+     التبديل يطبَّق على كل أقسام البطاقات في الصفحة (حدث مخصص) — تفضيل واحد موحّد */
+  function viewToggle(sectionGrid, sectionNode) {
+    function applyWithin(node, value) {
+      node.querySelectorAll('.shop-grid').forEach(function (g) {
+        g.classList.toggle('shop-grid--single', value === 'single');
+      });
+      node.querySelectorAll('.shop-viewtoggle__btn').forEach(function (btn) {
+        btn.setAttribute('aria-pressed', btn.getAttribute('data-view') === value ? 'true' : 'false');
+      });
+    }
+    applyWithin(sectionNode, homeViewPref());
+
+    var wrap = el('div', { class: 'shop-viewtoggle', attrs: { role: 'group', 'aria-label': 'طريقة عرض المنتجات' } }, [
+      el('button', {
+        class: 'shop-viewtoggle__btn', type: 'button', attrs: { 'data-view': 'double', 'aria-pressed': 'false', 'aria-label': 'عرض ثنائي' },
+        onclick: function () { setHomeViewPref('double'); applyWithin(document, 'double'); },
+      }, ALW.icons && ALW.icons.node ? [ALW.icons.node('layout-grid', 16)] : [el('span', { text: '▦' })]),
+      el('button', {
+        class: 'shop-viewtoggle__btn', type: 'button', attrs: { 'data-view': 'single', 'aria-pressed': 'false', 'aria-label': 'عرض مفرد' },
+        onclick: function () { setHomeViewPref('single'); applyWithin(document, 'single'); },
+      }, ALW.icons && ALW.icons.node ? [ALW.icons.node('menu', 16)] : [el('span', { text: '☰' })]),
+    ]);
+    return wrap;
+  }
+
+  /* زر نهاية القسم: بعرض كامل · عدّاد حقيقي (بلا بيانات مختلقة) */
+  function endCta(hash, label, count) {
+    var text = label + (typeof count === 'number' && count > 0 ? ' (' + count + ')' : '');
+    return el('a', { class: 'shop-section__endcta', href: hash }, [
+      el('span', { text: text }),
+      el('span', { class: 'shop-section__endcta-arrow', text: '‹', attrs: { 'aria-hidden': 'true' } }),
+    ]);
+  }
+
+  /* أيقونة مرادفة للتصنيف — بالـslug أولًا ثم بالكلمات المفتاحية بالاسم */
+  function catIcon(category) {
+    var slug = String(category.slug || '');
+    var known = {
+      'washing': 'washing-machine', 'washer': 'washing-machine', 'غسال': 'washing-machine',
+      'tv': 'tv', 'television': 'tv', 'شاش': 'tv',
+      'fridge': 'fridge', 'refriger': 'fridge', 'ثلاج': 'fridge', 'براد': 'fridge',
+      'oven': 'oven', 'فرن': 'oven', 'أفران': 'oven',
+      'blender': 'blender', 'مطبخ': 'blender', 'خلاط': 'blender',
+      'audio': 'speaker', 'speaker': 'speaker', 'صوت': 'speaker',
+      'vacuum': 'vacuum', 'مكنس': 'vacuum',
+      'home-appliances': 'vacuum', 'أجهزة منزلية': 'vacuum',
+    };
+    if (known[slug]) return known[slug];
+    var haystack = (slug + ' ' + String(category.name || '')).toLowerCase();
+    for (var key in known) {
+      if (haystack.indexOf(key) !== -1) return known[key];
+    }
+    return 'vacuum';
+  }
+
+  function grid(products, extraClass) {
+    return el('div', { class: 'shop-grid' + (extraClass ? ' ' + extraClass : '') }, products.map(function (product) {
       return shop.productCard(product);
     }));
   }
@@ -96,18 +166,28 @@
 
       if (categories.length) {
         view.appendChild(el('section', { class: 'shop-section shop-home-section', id: 'shop-home-categories' }, [
-          sectionHead('تسوّق حسب التصنيف', 'اختر التصنيف للوصول مباشرة إلى منتجاته', viewAllLink('#/products?view=categories')),
-          el('div', { class: 'shop-taxonomy' }, categories.slice(0, 8).map(function (category) {
+          sectionHead('تسوّق حسب التصنيف', 'اختر التصنيف للوصول مباشرة إلى منتجاته',
+            el('a', { class: 'shop-section__link', href: '#/products?view=categories', text: 'عرض الكل ←' })),
+          /* (التصميم الجديد) Carousel دوائر 72px: صورة مفرغة للمنتج الممثّل للتصنيف.
+             مصدر الصورة: primaryImage لأول منتج في التصنيف (صورة النظام الحقيقية)
+             وإن غابت نستخدم أيقونة محلية مرادفة (fallback) — الإدراج آلي من نفس الحقل */
+          el('div', { class: 'shop-cats' }, categories.slice(0, 8).map(function (category) {
+            var rep = (items || []).find(function (p) { return p.category && p.category.id === category.id; });
+            var img = rep && (rep.primaryImage || (rep.images && rep.images[0] &&
+              (typeof rep.images[0] === 'string' ? rep.images[0] : rep.images[0].url)));
             return el('a', {
-              class: 'shop-taxonomy__item',
+              class: 'shop-cats__item',
               href: shop.buildHash({ path: '/products', query: { categoryId: category.id } }),
             }, [
-              el('span', { class: 'shop-taxonomy__icon', attrs: { 'aria-hidden': 'true' } },
-                ALW.icons && ALW.icons.node ? [ALW.icons.node('layout-grid', 22)] : []),
-              el('span', { class: 'shop-taxonomy__name', text: category.name }),
-              typeof category.productsCount === 'number'
-                ? el('span', { class: 'shop-taxonomy__count', text: category.productsCount + ' منتج' })
-                : null,
+              el('span', { class: 'shop-cats__circle' }, [
+                img
+                  ? el('img', { src: img, alt: category.name, attrs: { loading: 'lazy' } })
+                  : el('img', {
+                      src: '../assets/icons/categories/' + catIcon(category) + '.png',
+                      alt: category.name, attrs: { loading: 'lazy' },
+                    }),
+              ]),
+              el('span', { class: 'shop-cats__name', text: category.name }),
             ]);
           })),
         ]));
@@ -115,19 +195,27 @@
 
       /* 3 — العروض والخصومات (تظهر فقط إن وُجدت خصومات فعلية) */
       if (offers.length) {
-        view.appendChild(el('section', { class: 'shop-section shop-section--offers shop-home-section', id: 'shop-home-offers' }, [
-          sectionHead('العروض والخصومات', 'منتجات بأسعار مخفّضة كما هي مسجّلة في المتجر',
-            viewAllLink('#/products?offers=1', 'كل العروض ‹')),
+        var offersSection = el('section', { class: 'shop-section shop-section--offers shop-home-section', id: 'shop-home-offers' }, [
+          sectionHead('العروض والخصومات', 'منتجات بأسعار مخفّضة كما هي مسجّلة في المتجر'),
           grid(offers),
-        ]));
+          endCta('#/products?offers=1', 'شوف كل العروض', offers.length),
+        ]);
+        /* زر تبديل العرض داخل رأس القسم (بدل رابط النص الصغير) */
+        var offersHead = offersSection.querySelector('.shop-section__head');
+        offersHead.appendChild(viewToggle(offersSection.querySelector('.shop-grid'), offersSection));
+        view.appendChild(offersSection);
       }
 
       /* 4 — منتجات مميزة (isFeatured من الـBackend) */
       if (featured.length) {
-        view.appendChild(el('section', { class: 'shop-section shop-home-section', id: 'shop-home-featured' }, [
-          sectionHead('منتجات مميزة', 'اختيار المتجر من الأجهزة', viewAllLink('#/products')),
+        var featuredSection = el('section', { class: 'shop-section shop-home-section', id: 'shop-home-featured' }, [
+          sectionHead('منتجات مميزة', 'اختيار المتجر من الأجهزة'),
           grid(featured.slice(0, 4)),
-        ]));
+          endCta('#/products', 'شوف كل المنتجات', total),
+        ]);
+        var featuredHead = featuredSection.querySelector('.shop-section__head');
+        featuredHead.appendChild(viewToggle(featuredSection.querySelector('.shop-grid'), featuredSection));
+        view.appendChild(featuredSection);
       }
 
       /* 5 — أحدث المنتجات */
@@ -776,7 +864,7 @@
       return;
     }
 
-    view.appendChild(grid(items));
+    view.appendChild(grid(items, 'shop-grid--home'));
 
     if (totalPages > 1) {
       var prev = el('button', {

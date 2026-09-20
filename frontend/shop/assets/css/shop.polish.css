@@ -1,0 +1,57 @@
+/* ============================================================================
+   POLISH LAYER — تحسين إحساس الجودة فقط · صفر تغيير عرض/تخطيط/أبعاد
+   قواعد الطبقة: لا خطوط جديدة · لا paddings/margins جديدة · لا أبعاد ·
+   فقط: انتقالات ناعمة · ظلال hover محسوبة من التوكنز · فوكس واضح ·
+   تحديد نص بلهجة العلامة · smooth scroll · تموضع smooth للـfocus.
+   كل شيء هنا يُلغى تلقائيًا مع prefers-reduced-motion ✓
+   ========================================================================== */
+
+/* 1) سكرول ناعم (يتأثر بـreduced-motion من base.css تلقائيًا) */
+.shop-body { scroll-behavior: smooth; }
+
+/* 2) تحديد النص بلهجة العلامة — لا يغيّر أي مقاس */
+.shop-body ::selection { background: var(--store-primary-soft); color: var(--store-text); }
+
+/* 3) كرت المنتج: إحساس «حيّ» عند اللمس/التحويم — نفس المقاس بالضبط */
+.shop-card { will-change: transform; }
+.shop-card:hover .shop-card__media img,
+.shop-card:focus-within .shop-card__media img { transform: scale(1.03); }
+.shop-card__media img { transition: transform var(--dur-slow) var(--ease-out); }
+.shop-card:hover { box-shadow: var(--shadow-md); border-color: var(--store-border-strong); }
+.shop-card__name a { transition: color var(--dur-fast) var(--ease-out); }
+.shop-card__name a:hover { color: var(--store-primary); }
+
+/* 4) أزرار: نفَس لطيف بدل القفز — نفس الأبعاد */
+.shop-body .shop-btn,
+.shop-body button { transition: background var(--dur-fast) var(--ease-out),
+  color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out),
+  box-shadow var(--dur-fast) var(--ease-out), transform var(--dur-instant) var(--ease-out); }
+.shop-body .shop-btn:active,
+.shop-body button:active { transform: scale(0.985); }
+
+/* 5) روابط القوائم/الفوتر: تلوين ناعم فقط */
+.shop-footer__list a,
+.shop-crumbs a { transition: color var(--dur-fast) var(--ease-out); }
+
+/* 6) حقول الإدخال: إطار تركيز محسوب من التوكنز */
+.shop-body input:focus-visible,
+.shop-body select:focus-visible,
+.shop-body textarea:focus-visible { box-shadow: var(--store-shadow-focus); }
+
+/* 7) الصور: منع الوميض عند التحميل */
+.shop-card__media img { background: var(--store-surface-soft); }
+
+/* 8) احترام تقليل الحركة (طبقة أمان مضاعفة) */
+@media (prefers-reduced-motion: reduce) {
+  .shop-body { scroll-behavior: auto; }
+  .shop-card__media img,
+  .shop-card__name a,
+  .shop-footer__list a,
+  .shop-crumbs a,
+  .shop-body .shop-btn,
+  .shop-body button { transition: none; }
+  .shop-card:hover .shop-card__media img,
+  .shop-card:focus-within .shop-card__media img { transform: none; }
+  .shop-body .shop-btn:active,
+  .shop-body button:active { transform: none; }
+}

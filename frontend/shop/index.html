@@ -26,6 +26,16 @@
 <!-- PHASE 1 — طبقة Tailwind v4 الجديدة (مُولَّدة: tailwind/input.css ⇒ shop.tw.css).
      لا preflight + كل القواعد في @layer أو داخل نطاق .stw ⇒ لا تتغلّب على الواجهة الحالية. -->
 <link rel="stylesheet" href="assets/css/shop.tw.css">
+<!-- POLISH LAYER — تحسين إحساس فقط (انتقالات/ظلال/فوكس/تحديد) · صفر تغيير عرض -->
+<link rel="stylesheet" href="assets/css/shop.polish.css">
+<!-- FOOTER MARK — فوتر الشعار المتحرك 3D -->
+<link rel="stylesheet" href="assets/css/shop.footer-mark.css">
+<!-- HEADER ACTIONS — توازن وتصغير أزرار الزائر -->
+<link rel="stylesheet" href="assets/css/shop.header-actions.css">
+<!-- بطاقات صفحة المنتجات بنفس شكل بطاقات الرئيسية -->
+<link rel="stylesheet" href="assets/css/shop.products-cards.css">
+<!-- تحسينات تجربة الرئيسية: تبديل العرض + زر نهاية القسم -->
+<link rel="stylesheet" href="assets/css/shop.home-ux.css">
 <script defer src="assets/js/shop.reveal.js"></script>
 </head>
 <body class="shop-body">
@@ -167,52 +177,11 @@
     <div class="shop-container" id="shop-view"></div>
   </main>
 
-  <footer class="shop-footer">
-    <div class="shop-container shop-footer__grid">
-      <div>
-        <div class="shop-footer__brand">
-          <img class="shop-footer__logo" src="../assets/icons/logo-alwaleed.png" alt="" width="40" height="33" loading="lazy">
-          <span><strong>الوليد للأجهزة الكهربائية</strong><br><small>متجر الأجهزة المنزلية</small></span>
-        </div>
-        <p class="shop-footer__note" id="shop-footnote">
-          الأسعار والمنتجات معروضة مباشرة من نظام المتجر.
-        </p>
-      </div>
-      <details class="shop-footer__sec" open>
-        <summary>تسوّق</summary>
-        <ul class="shop-footer__list">
-          <li><a href="#/">الرئيسية</a></li>
-          <li><a href="#/products">كل المنتجات</a></li>
-          <li><a href="#/products?view=categories">التصنيفات</a></li>
-          <li><a href="#/products?view=brands">العلامات</a></li>
-          <li><a href="#/products?offers=1">العروض والخصومات</a></li>
-          <li><a href="#/cart">سلة المشتريات</a></li>
-        </ul>
-      </details>
-      <details class="shop-footer__sec" open>
-        <summary>حسابك</summary>
-        <ul class="shop-footer__list">
-          <li><a href="#/account">حسابي</a></li>
-          <li><a href="#/orders">طلباتي</a></li>
-          <li><a href="#/notifications">الإشعارات</a></li>
-          <li><a href="#/verification">توثيق الحساب</a></li>
-          <li><a href="#/login">تسجيل الدخول</a></li>
-          <li><a href="#/register">إنشاء حساب</a></li>
-        </ul>
-      </details>
-      <details class="shop-footer__sec" open>
-        <summary>الدفع والتوصيل</summary>
-        <ul class="shop-footer__list">
-          <li>الدفع عبر شام كاش — تحويل يدوي مع رفع الإيصال</li>
-          <li>تُراجع الدفعة من فريق المتجر قبل التثبيت (بانتظار مراجعة الدفع)</li>
-          <li>حالة الطلب والدفعة تظهران في «طلباتي» والإشعارات</li>
-        </ul>
-      </details>
-    </div>
-    <div class="shop-container shop-footer__bottom">
-      <span>© <span id="shop-year">2026</span> الوليد للأجهزة الكهربائية</span>
-      <span class="shop-footer__note-inline">الأسعار والمنتجات من نظام المتجر مباشرة</span>
-    </div>
+  <footer class="shop-footer shop-footer--mark">
+    <img class="shop-footer__logo3d" src="../assets/icons/logo-alwaleed-mark.png"
+         alt="شعار الوليد للأجهزة الكهربائية" width="359" height="352" loading="lazy">
+    <strong class="shop-footer__name">الوليد للأجهزة الكهربائية</strong>
+    <span class="shop-footer__year">© <span id="shop-year">2026</span> — جميع الحقوق محفوظة</span>
   </footer>
 
   <div class="toast-stack" id="shop-toasts" aria-live="polite" aria-atomic="false"></div>

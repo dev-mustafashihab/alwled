@@ -146,7 +146,7 @@
               options: [{ value: '', label: '— تصنيف رئيسي —' }].concat(options.categoryOptions),
             },
             { name: 'sortOrder', label: 'ترتيب العرض', type: 'number', min: 0 },
-            { name: 'image', label: 'رابط الصورة (اختياري)' },
+            { name: 'image', label: 'صورة التصنيف', type: 'image', hint: 'ارفع صورة — يُضبط المقاس تلقائيًا (WebP)' },
             { name: 'description', label: 'الوصف', type: 'textarea', full: true },
             { name: 'isActive', label: 'تصنيف نشط', type: 'switch', value: true },
           ],
@@ -230,7 +230,7 @@
           { name: 'name', label: 'اسم العلامة', required: true, maxLength: 120 },
           { name: 'slug', label: 'المُعرِّف (اختياري)' },
           { name: 'sortOrder', label: 'ترتيب العرض', type: 'number', min: 0 },
-          { name: 'logo', label: 'رابط الشعار (اختياري)' },
+          { name: 'logo', label: 'شعار العلامة', type: 'image', hint: 'ارفع صورة — يُضبط المقاس تلقائيًا (WebP)' },
           { name: 'description', label: 'الوصف', type: 'textarea', full: true },
           { name: 'isActive', label: 'علامة نشطة', type: 'switch', value: true },
         ],
@@ -553,7 +553,7 @@
         var formApi = global.ALW.forms.form({
           grid: true,
           fields: [
-            { name: 'url', label: 'رابط الصورة', required: true, placeholder: 'https://…', full: true },
+            { name: 'url', label: 'صورة المنتج', type: 'image', required: true, full: true, hint: 'ارفع صورة — يُضبط المقاس تلقائيًا (WebP)' },
             { name: 'altText', label: 'وصف بديل (alt)' },
             { name: 'sortOrder', label: 'الترتيب', type: 'number', min: 0 },
             { name: 'isPrimary', label: 'صورة رئيسية', type: 'switch' },

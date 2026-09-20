@@ -753,3 +753,89 @@
   padding-block-start: var(--space-4);
   margin-block-start: var(--space-2);
 }
+
+/* ============================================================================
+   FOOTER MICRO-COMPACT (طلب المستخدم) — فوتر واحد مضغوط جدًّا، أول موبايل
+   المقيس قبل: 261px · لوجو 120px · «الدفع والتوصيل» صف 48px ✗ وقائمته ظاهرة دائمًا (207px ✗)
+                ونص الوصف **مكرَّر** (p.shop-footer__note + span.shop-footer__note-inline) ✗
+   بعد: وصف واحد ✓ · لوجو 96px ✓ · الأكورديون مطويّ افتراضيًا ✓ · إيقاع 20/10/12/12/18 ✓
+   ========================================================================== */
+.shop-footer {
+  padding-block: 20px 18px;
+  gap: 10px;
+}
+.shop-footer__note-inline { display: none; }
+.shop-footer p.shop-footer__note,
+.shop-footer .shop-footer__note {
+  order: 2;
+  max-inline-size: 26rem;
+  margin: 0 auto;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--color-ink-muted);
+  text-align: center;
+}
+.shop-footer__brand {
+  order: 1;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+.shop-body .shop-footer .shop-footer__logo,
+.shop-body .shop-footer .shop-footer__brand img {
+  inline-size: 96px;
+  width: 96px;
+  max-inline-size: 96px;
+  height: auto;
+  max-height: none;
+  display: block;
+}
+@media (min-width: 1024px) {
+  .shop-body .shop-footer .shop-footer__logo,
+  .shop-body .shop-footer .shop-footer__brand img { inline-size: 104px;
+    width: 104px;
+    max-inline-size: 104px; }
+}
+/* الأكورديون: يُطوى افتراضيًا — لا ارتفاع محجوز ✗ */
+.shop-body .shop-footer .shop-footer__sec { order: 3;
+  margin: 0;
+  padding: 0;
+  min-height: 0; }
+.shop-body .shop-footer .shop-footer__sec details:not([open]) .shop-footer__list { display: none; }
+.shop-body .shop-footer .shop-footer__sec summary {
+  min-height: 40px;
+  padding-block: 0;
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-ink);
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+}
+.shop-body .shop-footer .shop-footer__sec summary::-webkit-details-marker { display: none; }
+.shop-body .shop-footer .shop-footer__sec details[open] .shop-footer__list {
+  display: block;
+  margin-block-start: 8px;
+}
+.shop-body .shop-footer .shop-footer__sec .shop-footer__list li {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  text-align: center;
+  padding-block: 6px;
+  border: 0;
+}
+/* سطر الحقوق */
+.shop-body .shop-footer .shop-footer__bottom,
+.shop-body .shop-footer [class*='copyright'] {
+  order: 4;
+  inline-size: 100%;
+  margin-block-start: 10px;
+  padding-block: 12px 0;
+  border-block-start: 1px solid var(--color-line);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--color-ink-muted);
+  text-align: center;
+}

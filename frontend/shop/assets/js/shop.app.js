@@ -369,22 +369,13 @@
     }
   }
 
-  /* أقسام الفوتر: accordion على الجوال، مفتوحة على الشاشات الكبيرة (نفس المحتوى) */
+  /* أقسام الفوتر: accordion مطويّ افتراضيًا على كل العروض (MICRO-COMPACT) —
+     كان يُفرض open على >640px ⇒ ديسكتوب 283px خارج هدف 140–190 ✗ */
   function setupFooterSections() {
     var sections = global.document.querySelectorAll('.shop-footer__sec');
     if (!sections.length) return;
-    var timer = null;
-    function apply() {
-      var small = global.innerWidth <= 640;
-      Array.prototype.forEach.call(sections, function (node) {
-        if (small) node.removeAttribute('open');
-        else node.setAttribute('open', 'open');
-      });
-    }
-    apply();
-    global.addEventListener('resize', function () {
-      global.clearTimeout(timer);
-      timer = global.setTimeout(apply, 150);
+    Array.prototype.forEach.call(sections, function (node) {
+      node.removeAttribute('open');
     });
   }
 

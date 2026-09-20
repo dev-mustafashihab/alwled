@@ -25,6 +25,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { NotificationsModule } from './notifications/notifications.module';
 import { CommonServicesModule } from './common/services/common-services.module';
 import { StorageModule } from './common/storage/storage.module';
+import { UploadsModule } from './common/storage/uploads.module';
 import { HttpExceptionFilter } from './common/filters/http-exception.filter';
 import { TransformInterceptor } from './common/interceptors/transform.interceptor';
 import { JwtAuthGuard, OptionalAuthGuard, RolesGuard, PermissionsGuard } from './common/guards';
@@ -51,6 +52,8 @@ import { JwtAuthGuard, OptionalAuthGuard, RolesGuard, PermissionsGuard } from '.
     ProductsModule,
     SpecificationsModule,
     InventoryModule,
+    // رفع الصور العام للوحة (تصنيفات · علامات · منتجات · ...)
+    UploadsModule,
     // Stage 5 — cart & checkout preview
     CartModule,
     CheckoutModule,

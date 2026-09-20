@@ -1,0 +1,122 @@
+/* ============================================================================
+   FOOTER MARK — فوتر شريط مصغّر: لوجو 3D متحرك بارتفاع 35px بالضبط
+   (تحديث المستخدم): تصغير الفوتر إلى 35px — لوجو صغير يطفو ويستدير داخل السطر.
+   ========================================================================== */
+
+.shop-footer--mark {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  block-size: 45px;
+  padding-block: 0;
+  padding-inline: 12px;
+  perspective: 600px;
+  perspective-origin: 50% 50%;
+  overflow: hidden;
+}
+
+/* ===== اللوجو المتحرك 3D (يطفو داخل الـ35px) ===== */
+.shop-footer__logo3d {
+  display: block;
+  inline-size: 36px;
+  block-size: 36px;
+  object-fit: contain;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 3px 5px rgba(15, 23, 42, 0.25));
+  animation: footer-logo-spin 7s var(--ease-in-out, ease-in-out) infinite;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+@keyframes footer-logo-spin {
+  0%   { transform: rotateY(-14deg) translateY(0)     scale(1); }
+  25%  { transform: rotateY(0deg)    translateY(-2px) scale(1.06); }
+  50%  { transform: rotateY(14deg)   translateY(0)     scale(1); }
+  75%  { transform: rotateY(0deg)    translateY(-2px) scale(1.06); }
+  100% { transform: rotateY(-14deg)  translateY(0)     scale(1); }
+}
+
+/* ===== الاسم والسنة (سطر واحد) ===== */
+.shop-footer__name {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-ink, var(--store-text));
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+.shop-footer__year {
+  font-size: 0.6875rem;
+  color: var(--color-ink-muted, var(--store-text-muted));
+  white-space: nowrap;
+}
+
+/* ===== تفاعل: اللوجو يتوقف عند التحويم ===== */
+.shop-footer--mark:hover .shop-footer__logo3d { animation-play-state: paused; }
+
+/* ===== reduced-motion: اللوجو ثابت بدون دوران ===== */
+@media (prefers-reduced-motion: reduce) {
+  .shop-footer__logo3d { animation: none; transform: none; }
+}
+
+/* ============================================================================
+   الوضع الليلي: الهيدر والفوتر يبقيان بألوان الوضع النهاري حصرًا (طلب المستخدم)
+   ملاحظة: القيم مكتوبة ثابتة (المقيسة من الوضع النهاري) لأن توكنات --color-*
+   نفسها تتغير قيمتها في الوضع الداكن فلا تصلح هنا.
+   ========================================================================== */
+[data-theme='dark'] .shop-header,
+[data-theme='dark'] .shop-footer {
+  background: #ffffff;
+  border-color: #e5e5e2;
+}
+
+[data-theme='dark'] .shop-footer { border-block-start-color: #e5e5e2; }
+
+[data-theme='dark'] .shop-header .shop-brand__text strong,
+[data-theme='dark'] .shop-header .shop-nav__link,
+[data-theme='dark'] .shop-header .shop-quicknav__link,
+[data-theme='dark'] .shop-header .shop-iconbtn,
+[data-theme='dark'] .shop-header .shop-searchbtn,
+[data-theme='dark'] .shop-header .shop-cartbtn,
+[data-theme='dark'] .shop-header #shop-burger,
+[data-theme='dark'] .shop-header .shop-search__input,
+[data-theme='dark'] .shop-footer .shop-footer__name {
+  color: #171717;
+}
+
+[data-theme='dark'] .shop-header .shop-brand__text small,
+[data-theme='dark'] .shop-header .shop-search__input::placeholder,
+[data-theme='dark'] .shop-footer .shop-footer__year {
+  color: #626262;
+}
+
+/* أسطح الأزرار وحقل البحث: سطح فاتح كالنهاري */
+[data-theme='dark'] .shop-header .shop-iconbtn,
+[data-theme='dark'] .shop-header .shop-searchbtn,
+[data-theme='dark'] .shop-header .shop-cartbtn,
+[data-theme='dark'] .shop-header #shop-burger {
+  background: #f2f2ef;
+  border-color: #e5e5e2;
+}
+
+[data-theme='dark'] .shop-header .shop-search__input {
+  background: #f2f2ef;
+  border-color: #e5e5e2;
+}
+
+/* شريط التنقل السريع (تحت الهيدر بالجوال) يتبع الهيدر الفاتح */
+[data-theme='dark'] .shop-quicknav {
+  background: #ffffff;
+  border-color: #e5e5e2;
+}
+
+/* لوجو الفوتر الداكن على أبيض: يُفتّح قليلًا كما في الهيدر (توكن موجود) */
+[data-theme='dark'] .shop-footer .shop-footer__logo3d { filter: brightness(1.06) drop-shadow(0 3px 5px rgba(15, 23, 42, 0.25)); }
+
+/* شارات السلة/الجرس: حدّها الأبيض يطابق سطح الهيدر الفاتح */
+[data-theme='dark'] .shop-header .shop-cartbtn__badge,
+[data-theme='dark'] .shop-header .shop-bell__badge {
+  border-color: #ffffff;
+}

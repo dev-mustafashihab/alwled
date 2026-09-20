@@ -1,0 +1,118 @@
+/* ============================================================================
+   PRODUCTS GRID = HOME CARD LOOK — بطاقات صفحة المنتجات بنفس شكل بطاقات الرئيسية
+   (طلب المستخدم) نفس مواصفات بطاقة الهوم (shop.home.css STEP 2C ≤600px)
+   مطبّقة على كل العروض عبر نطاق .shop-grid--home (يضيفه grid() لصفحة المنتجات فقط).
+   المطابقة حسب المقاس مثل الهوم تمامًا:
+     ≤600px  = الشكل المضغوط (clamp للصورة · زر 40px · بلا details)
+     ≥601px  = الشكل العام (156/188px للصورة · بنية الهوم القياسية)
+   لا مساس بشبكة .shop-grid العامة ولا ببقية الصفحات.
+   ========================================================================== */
+
+/* ===== الجوال ≤600 — نفس مواصفات بطاقة الهوم المضغوطة ===== */
+@media (max-width: 600px) {
+  .shop-grid--home {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+  }
+
+  .shop-grid--home .shop-card {
+    display: flex; flex-direction: column;
+    background: var(--store-surface);
+    border: 1px solid var(--store-border);
+    border-radius: var(--radius-lg);
+    box-shadow: none;
+  }
+  .shop-grid--home .shop-card:active { background: var(--store-surface-soft); }
+
+  /* الصورة: تلغي الثابت 140px من shop.css:2688 بمحدّد مماثل القوة + ترتيب لاحق */
+  .shop-grid--home .shop-card__media,
+  #shop-view > .shop-grid.shop-grid--home .shop-card__media {
+    aspect-ratio: auto;
+    height: clamp(126px, 34vw, 142px);
+    padding: var(--st-space-6);
+    background: var(--store-surface);
+  }
+  .shop-grid--home .shop-card__media img { max-height: 100%; object-fit: contain; }
+  .shop-grid--home .shop-card__placeholder {
+    height: 100%; display: flex; align-items: center; justify-content: center;
+    background: none;
+    color: var(--store-text-faint);
+  }
+  .shop-grid--home .shop-card__placeholder svg { width: 30px; height: 30px; }
+
+  .shop-grid--home .shop-card__flags { inset-block-start: var(--space-2); inset-inline-start: var(--space-2); }
+  .shop-grid--home .shop-card__flags .badge { font-size: 0.6875rem; padding: var(--st-space-2) 8px; }
+
+  .shop-grid--home .shop-card__body {
+    padding: var(--space-3);
+    gap: 3px;
+    flex: 1 1 auto;
+    display: flex; flex-direction: column;
+  }
+
+  .shop-grid--home .shop-card__meta { font-size: var(--st-caption); line-height: 1.35; color: var(--store-text-muted); }
+  .shop-grid--home .shop-card__meta > span { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .shop-grid--home .shop-card__meta > span:nth-child(n+2) { display: none; }
+
+  .shop-grid--home .shop-card__name {
+    font-size: 0.84375rem; font-weight: var(--fw-semibold);
+    line-height: 1.32; margin: 0; color: var(--store-text);
+  }
+  .shop-grid--home .shop-card__name a,
+  .shop-grid--home .shop-card__name span {
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    color: inherit;
+  }
+
+  .shop-grid--home .shop-card__desc {
+    font-size: var(--st-meta); line-height: 1.4; color: var(--store-text-muted);
+    display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;
+  }
+
+  .shop-grid--home .shop-card__foot {
+    margin-top: auto;
+    padding-top: var(--space-2);
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--st-space-2) var(--space-2);
+  }
+  .shop-grid--home .shop-price { gap: var(--space-2); align-items: baseline; min-width: 0; flex-wrap: wrap; }
+  .shop-grid--home .shop-price__now {
+    font-size: clamp(0.9375rem, 4.6vw, 1.0625rem);
+    font-weight: var(--fw-bold);
+    color: var(--store-text);
+    white-space: nowrap;
+  }
+  .shop-grid--home .shop-price__was {
+    font-size: var(--st-caption);
+    white-space: nowrap;
+    text-decoration: line-through;
+    color: var(--store-text-faint);
+    color: color-mix(in srgb, var(--store-text-faint) 78%, var(--store-text));
+  }
+  .shop-grid--home .shop-card__foot .badge { display: none; }
+
+  .shop-grid--home .shop-card__actions { margin-top: 0; padding-top: var(--space-2); gap: 0; }
+  /* مصدر min-height:44px هو shop.css:2714 (#shop-view > .shop-grid ...) —
+     نطابق قوته (#shop-view + الشبكة) بترتيب لاحق ⇒ الزر 40px مثل الهوم */
+  .shop-grid--home .shop-card__actions .shop-card__add,
+  #shop-view > .shop-grid.shop-grid--home .shop-card__actions .shop-card__add {
+    width: 100%;
+    height: var(--control-h);
+    min-height: var(--control-h);
+    padding: 0 var(--space-2);
+    font-size: var(--st-body-sm);
+    font-weight: var(--fw-semibold);
+    white-space: nowrap;
+    border-radius: var(--radius-md);
+    background: var(--store-primary);
+    border-color: var(--store-primary);
+    color: var(--store-surface);
+  }
+  .shop-grid--home .shop-card__add:hover { background: var(--store-primary-hover); border-color: var(--store-primary-hover); }
+  .shop-grid--home .shop-card__add:active { background: var(--store-primary-active); border-color: var(--store-primary-active); }
+
+  .shop-grid--home .shop-card__details { display: none; }
+}
+
+/* ===== ≥601px: البطاقة تعود لمواصفات الشبكة العامة — لكن دون شكل «المربع»:
+     نحافظ على صورة مضغوطة واحدة متناسقة (156px) كما كانت صفحة المنتجات قبل الشبكة 641-1023،
+     و188px فوقها — أي بلا تغيير مطلوب هنا: قواعد shop.css:2688 تصريحها سليم على الكبيرة ===== */

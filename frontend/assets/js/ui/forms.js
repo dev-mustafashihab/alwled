@@ -131,6 +131,135 @@
     return { wrap: wrap, input: input, name: opts.name, getValue: function () { return input.value; }, setValue: function (v) { input.value = v || ''; }, focus: function () { input.focus(); } };
   }
 
+  /* ============================================================================
+     حقل صورة (رفع + معاينة + رابط) — لكل لوحات الإدارة
+     - زر «اختيار صورة» يرفع فورًا إلى POST /uploads/image (multipart)
+     - الخادم يضبط المقاس تلقائيًا (حد أقصى 2048px بالضلع الأطول) ويحوّل WebP
+     - معاينة مصغّرة فورية + حقل الرابط يُملأ تلقائيًا (يبقى قابلًا للتحرير يدويًا)
+     - يعمل أيضًا بلصق رابط خارجي مباشرة
+     ========================================================================== */
+  function imageField(config) {
+    var opts = withId(config);
+    var wrap = fieldWrapper(opts);
+    var state = { url: opts.value || '' };
+
+    var row = document.createElement('div');
+    row.className = 'imagefield';
+    row.style.cssText = 'display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap;';
+
+    var preview = document.createElement('div');
+    preview.className = 'imagefield__preview';
+    preview.style.cssText = 'inline-size:88px;block-size:88px;border-radius:10px;background:var(--color-surface-muted,#f2f2ef);' +
+      'border:1px solid var(--color-line,#e5e5e2);display:flex;align-items:center;justify-content:center;overflow:hidden;flex:0 0 auto;';
+    function renderPreview(url) {
+      preview.innerHTML = '';
+      if (url) {
+        var img = document.createElement('img');
+        img.src = url;
+        img.alt = '';
+        img.style.cssText = 'max-inline-size:100%;max-block-size:100%;object-fit:contain;';
+        img.onerror = function () { preview.textContent = '⚠️'; };
+        preview.appendChild(img);
+      } else {
+        preview.textContent = '🖼️';
+        preview.style.opacity = '0.5';
+      }
+    }
+    renderPreview(state.url);
+    row.appendChild(preview);
+
+    var col = document.createElement('div');
+    col.style.cssText = 'flex:1 1 200px;display:flex;flex-direction:column;gap:8px;min-width:0;';
+
+    var fileInput = document.createElement('input');
+    fileInput.type = 'file';
+    fileInput.accept = 'image/jpeg,image/png,image/webp';
+    fileInput.style.display = 'none';
+
+    var pickBtn = document.createElement('button');
+    pickBtn.type = 'button';
+    pickBtn.className = 'btn btn--secondary btn--sm';
+    pickBtn.textContent = '📤 اختيار صورة ورفعها';
+    pickBtn.addEventListener('click', function () { fileInput.click(); });
+
+    var status = document.createElement('span');
+    status.className = 'imagefield__status';
+    status.style.cssText = 'font-size:0.75rem;color:var(--color-ink-muted,#626262);';
+
+    var input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'input';
+    input.id = opts.id || 'f-' + opts.name;
+    input.name = opts.name || '';
+    input.placeholder = 'https://… (يُملأ تلقائيًا بعد الرفع)';
+    if (state.url) input.value = state.url;
+    input.addEventListener('input', function () {
+      state.url = input.value.trim();
+      renderPreview(state.url);
+    });
+
+    fileInput.addEventListener('change', function () {
+      var file = fileInput.files && fileInput.files[0];
+      if (!file) return;
+      if (['image/jpeg', 'image/png', 'image/webp'].indexOf(file.type) === -1) {
+        status.textContent = 'الصيغ المدعومة: JPEG · PNG · WebP';
+        status.style.color = 'var(--color-danger,#dc2626)';
+        return;
+      }
+      if (file.size > 8 * 1024 * 1024) {
+        status.textContent = 'حجم الملف يتجاوز 8MB';
+        status.style.color = 'var(--color-danger,#dc2626)';
+        return;
+      }
+      status.textContent = 'جارٍ الرفع…';
+      status.style.color = 'var(--color-ink-muted,#626262)';
+      pickBtn.disabled = true;
+
+      var fd = new FormData();
+      fd.append('file', file);
+      // نفس مسار المصادقة المركزي (ALW.api.post) — FormData يمر بلا Content-Type يدوي
+      var api = (global.ALW && global.ALW.api) || null;
+      if (!api || !api.post) {
+        status.textContent = 'واجهة الرفع غير جاهزة';
+        status.style.color = 'var(--color-danger,#dc2626)';
+        pickBtn.disabled = false;
+        return;
+      }
+      api
+        .post('/uploads/image', fd)
+        .then(function (data) {
+          pickBtn.disabled = false;
+          var payload = data && data.url ? data : (data && data.data ? data.data : null);
+          if (!payload || !payload.url) {
+            status.textContent = 'فشل الرفع';
+            status.style.color = 'var(--color-danger,#dc2626)';
+            return;
+          }
+          state.url = payload.url;
+          input.value = payload.url;
+          renderPreview(payload.url);
+          status.textContent = '✓ ' + payload.width + '×' + payload.height + ' · ' + Math.round(payload.bytes / 1024) + 'KB (WebP)';
+          status.style.color = 'var(--color-success,#16a34a)';
+        })
+        .catch(function (error) {
+          pickBtn.disabled = false;
+          var msg = (error && error.message) || 'فشل الرفع';
+          status.textContent = msg;
+          status.style.color = 'var(--color-danger,#dc2626)';
+        });
+    });
+
+    col.appendChild(pickBtn);
+    col.appendChild(input);
+    col.appendChild(status);
+    col.appendChild(fileInput);
+    row.appendChild(col);
+    wrap.appendChild(row);
+    if (opts.hint) wrap.appendChild(hintNode(opts.hint));
+
+    return { wrap: wrap, input: input, name: opts.name, getValue: function () { return input.value; }, setValue: function (v) { input.value = v || ''; state.url = v || ''; renderPreview(state.url); }, focus: function () { input.focus(); } };
+  }
+
   function select(config) {
     var opts = withId(config);
     var wrap = fieldWrapper(opts);
@@ -231,6 +360,7 @@
       else if (type === 'select') control = select(definition);
       else if (type === 'checkbox') control = checkbox(definition);
       else if (type === 'switch') control = switchField(definition);
+      else if (type === 'image') control = imageField(definition);
       else control = text(definition);
       add(control);
     });

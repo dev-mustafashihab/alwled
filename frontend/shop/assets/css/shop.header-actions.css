@@ -1,0 +1,70 @@
+/* ============================================================================
+   HEADER VISITOR BUTTONS — توازن + تصغير أزرار الزائر (ديسكتوب ≥1024)
+   + هيدر الجوال: أزرار الأدوات الثلاثة متلاصقة بمسافات متساوية · برغر يتحوّل ×
+     (المقيس: فجوة 7px ثم 27px ✗ غير متساوية — السبب spacer order:2 يسحب البحث)
+     (المقيس: عند فتح الدُرج الأسطر تدور 45° لكن بقايا scaleX(0.4) تُظهر الذيل ‹)
+   ========================================================================== */
+
+/* --- الجوال ≤1023: الثلاثة جنب بعض بمسافات متساوية وأصغر قليلًا --- */
+@media (max-width: 1023px) {
+  /* الأزرار: 40px بدل 46 — أصغر شكلًا مع بقاء هدف لمس مريح */
+  .shop-header .shop-iconbtn,
+  .shop-header .shop-searchbtn,
+  .shop-header .shop-cartbtn,
+  .shop-header #shop-burger {
+    inline-size: 40px;
+    block-size: 40px;
+    min-inline-size: 40px;
+    min-block-size: 40px;
+  }
+
+  /* عصابة واحدة: البرغر ثم السلة ثم البحث — فجوة موحّدة 6px بلا spacer يفصلها */
+  .shop-header .shop-header__inner { column-gap: 6px; }
+  .shop-header .shop-header__spacer { display: none; }
+  .shop-header .shop-searchbtn { margin-inline-start: auto; }
+  .shop-header #shop-actions { margin-inline-start: 0; }
+
+  /* توكن التحكم نفسه يُصغّر (المصدر: shop.header.css:1595 --shop-ctl: 46px) */
+  .shop-body { --shop-ctl: 40px; }
+
+  /* البرغر → × نظيف: إخفاء كامل للسطر الوسطي وإلغاء بقايا scaleX */
+  .shop-header #shop-burger[aria-expanded='true'] .shop-burger span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+    width: 0;
+  }
+  .shop-header #shop-burger[aria-expanded='true'] .shop-burger {
+    overflow: visible;
+  }
+  /* البرغر → × مركزي: السطران يرتكان إلى المنتصف (top:7px) بدون translateY يزيحهما،
+     ثم دوران متعاكَس ±45° ⇒ تقاطع حقيقي بالمنتصف. المصدر shop.header.css:1685 كان
+     يضيف translateY(±8px) فوق top:7px فيزيح المركزين 2px فيظهر شكل ‹/› بدل × */
+  .shop-body .shop-header #shop-burger[aria-expanded='true'] .shop-burger span:nth-child(1) {
+    top: 7px;
+    transform: rotate(-45deg);
+  }
+  .shop-body .shop-header #shop-burger[aria-expanded='true'] .shop-burger span:nth-child(3) {
+    top: 7px;
+    transform: rotate(45deg);
+  }
+}
+
+/* --- ديسكتوب ≥1024: توازن وتصغير أزرار الزائر --- */
+@media (min-width: 1024px) {
+  /* تصغير متوازن: نفس الارتفاع والنمط للزرين معًا */
+  .shop-header .shop-actions > a[href='#/login'],
+  .shop-header .shop-actions > a[href='#/register'] {
+    min-height: 36px;
+    height: 36px;
+    padding-inline: 12px;
+    font-size: 0.8125rem;
+    border-radius: var(--radius-sm);
+  }
+
+  /* توازن بصري: الزران بنفس الوزن — نصّي خفيف + أساسي ملوّن، ارتفاع موحّد */
+  .shop-header .shop-actions { gap: 6px; }
+
+  /* السلة تتبع نفس السطر الرقيق لتبقى العصابة واحدة متناسقة */
+  .shop-header .shop-cartbtn { height: 36px; }
+}
+
