@@ -182,8 +182,24 @@
     } else {
       actions.appendChild(el('a', { class: 'btn btn--ghost btn--sm', href: '#/login', text: 'تسجيل الدخول' }));
       actions.appendChild(el('a', { class: 'btn btn--primary btn--sm', href: '#/register', text: 'إنشاء حساب' }));
-      drawerAccount.appendChild(el('p', { class: 'shop-note', text: 'تصفّح بدون حساب — سجّل الدخول لمتابعة طلبك.' }));
-      drawerAccount.appendChild(el('a', { class: 'btn btn--primary btn--block', href: '#/products', text: 'تصفّح المنتجات', attrs: { style: 'margin-top:8px' } }));
+      var guestFooterCard = el('section', {
+        class: 'shop-drawer-guest__card',
+        attrs: { role: 'group', 'aria-label': 'حساب الضيف' },
+      }, [
+        el('div', { class: 'shop-drawer-guest__head' }, [
+          el('strong', { class: 'shop-drawer-guest__title', text: 'تتصفح كضيف' }),
+          el('a', {
+            class: 'btn btn--primary shop-drawer-guest__browse', href: '#/products', text: 'تصفّح المنتجات',
+            attrs: { 'aria-label': 'تصفّح المنتجات كضيف' },
+          }),
+        ]),
+        el('p', { class: 'shop-drawer-guest__copy', text: 'سجل دخولك لمتابعة طلباتك وحفظ بياناتك' }),
+        el('div', { class: 'shop-drawer-guest__actions' }, [
+          el('a', { class: 'btn btn--primary shop-drawer-guest__action shop-drawer-guest__action--login', href: '#/login', text: 'تسجيل الدخول' }),
+          el('a', { class: 'btn btn--secondary shop-drawer-guest__action shop-drawer-guest__action--register', href: '#/register', text: 'إنشاء حساب' }),
+        ]),
+      ]);
+      drawerAccount.appendChild(guestFooterCard);
     }
 
     // معلومات المستخدم المختصرة في أعلى القائمة (للمسجّل فقط)

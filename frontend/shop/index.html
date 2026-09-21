@@ -38,6 +38,8 @@
 <link rel="stylesheet" href="assets/css/shop.home-ux.css">
 <!-- PHASE 2.3 — Search Morph + Opaque Drop Curtain -->
 <link rel="stylesheet" href="assets/css/shop.search-morph.css">
+<!-- DRAWER POLISH — دلالة الأقسام / RTL active / focus فقط -->
+<link rel="stylesheet" href="assets/css/shop.drawer.css">
 <script defer src="assets/js/shop.reveal.js"></script>
 </head>
 <body class="shop-body">
@@ -139,14 +141,6 @@
         <a class="shop-drawer__link" href="#/products?view=brands"><span class="shop-drawer__link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-tag"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg></span><span>العلامات</span></a>
         <a class="shop-drawer__link" href="#/cart"><span class="shop-drawer__link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></span><span>السلة</span></a>
       </nav>
-
-      <!-- 3) الزائر: تسجيل الدخول / إنشاء حساب -->
-      <div class="shop-menu__guest" id="shop-menu-guest">
-        <span class="shop-menu__divider" aria-hidden="true"></span>
-        <p class="shop-menu__label">حسابك</p>
-        <a class="shop-drawer__link" href="#/login"><span class="shop-drawer__link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-log-in"><path d="m10 17 5-5-5-5"/><path d="M15 12H3"/><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/></svg></span><span>تسجيل الدخول</span></a>
-        <a class="shop-drawer__link" href="#/register"><span class="shop-drawer__link__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-user-plus"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/></svg></span><span>إنشاء حساب</span></a>
-      </div>
 
       <!-- 4) المسجّل: الحساب · الطلبات · الإشعارات · التوثيق · الخروج (تُبنى من JS) -->
       <div class="shop-menu__account" id="shop-menu-account" hidden>

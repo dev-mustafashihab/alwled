@@ -1,0 +1,148 @@
+/* ============================================================================
+   DRAWER POLISH — دلالة الأقسام / RTL active / Light focus فقط
+   النطاق: ≤1023px · لا تغيير ارتفاع أو padding أو حركة أو routes.
+   ========================================================================== */
+@media (max-width: 1023px) {
+  /* عناوين الأقسام تبقى في موضعها ومساحتها، لكن تُقرأ كعناوين لا كروابط. */
+  .shop-body .shop-menu__scroll .shop-menu__label {
+    color: var(--shop-menu-accent);
+    font-weight: 700;
+  }
+
+  /* حلقة keyboard في الثيم الفاتح: --store-info يحقق تباينًا كافيًا على السطح الأبيض. */
+  [data-theme='light'] .shop-body .shop-menu__scroll .shop-drawer__link:focus-visible,
+  [data-theme='light'] .shop-body .shop-menu__scroll .shop-menu__link:focus-visible {
+    outline: 2px solid var(--store-info);
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+
+  /* active logic يبقى aria-current؛ الدلالة فقط تنتقل إلى بداية القراءة RTL. */
+  .shop-body .shop-menu__scroll .shop-drawer__link[aria-current='page'] {
+    position: relative;
+    box-shadow: none;
+  }
+
+  .shop-body .shop-menu__scroll .shop-drawer__link[aria-current='page']::before {
+    content: '';
+    position: absolute;
+    inset-inline-start: 0;
+    top: 8px;
+    bottom: 8px;
+    width: 3px;
+    border-radius: var(--radius-full);
+    background: var(--shop-menu-accent);
+    pointer-events: none;
+  }
+
+  /* Guest account footer: يستغل الارتفاع الحالي فقط، بلا تغيير منطقة التمرير أو الحركة. */
+  .shop-body .shop-drawer__foot {
+    min-block-size: 136px;
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .shop-body .shop-drawer__foot .shop-drawer-guest__card {
+    display: grid;
+    min-block-size: 120px;
+    gap: var(--space-1);
+    padding: var(--space-2);
+    border: 1px solid var(--store-border);
+    border-radius: var(--radius-md);
+    background: color-mix(in srgb, var(--store-primary-soft) 34%, var(--store-surface));
+    box-shadow: var(--shadow-xs);
+  }
+
+  [data-theme='dark'] .shop-body .shop-drawer__foot .shop-drawer-guest__card {
+    background: var(--store-surface-soft);
+  }
+
+  .shop-body .shop-drawer-guest__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+    min-block-size: 24px;
+  }
+
+  .shop-body .shop-drawer-guest__title {
+    color: var(--store-text);
+    font-size: var(--st-body-sm);
+    font-weight: 700;
+  }
+
+  .shop-body .shop-drawer-guest__copy {
+    margin: 0;
+    color: var(--store-text-muted);
+    font-size: var(--st-meta);
+    line-height: 1.45;
+  }
+
+  .shop-body .shop-drawer__foot .shop-drawer-guest__browse {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-block-size: 24px;
+    inline-size: auto;
+    margin: 0;
+    padding: 0 var(--space-1);
+    border-color: transparent;
+    background: transparent;
+    color: var(--shop-menu-accent);
+    font-size: var(--st-meta);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .shop-body .shop-drawer-guest__actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-2);
+  }
+
+  .shop-body .shop-drawer__foot .shop-drawer-guest__action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-block-size: 44px;
+    margin: 0;
+    padding: var(--space-2);
+    border-radius: var(--radius-md);
+    font-size: var(--st-body-sm);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .shop-body .shop-drawer__foot .shop-drawer-guest__action--login {
+    border-color: var(--store-primary);
+    background: var(--store-primary);
+    color: var(--neutral-900);
+  }
+
+  .shop-body .shop-drawer__foot .shop-drawer-guest__action--register {
+    border-color: var(--store-border);
+    background: transparent;
+    color: var(--store-text);
+  }
+
+  .shop-body .shop-drawer__foot .shop-drawer-guest__browse:focus-visible,
+  .shop-body .shop-drawer__foot .shop-drawer-guest__action:focus-visible {
+    outline: 2px solid var(--store-info);
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+
+  /* مبدّل المظهر: تصغير بسيط فقط (61px → 57px) — نفس الأزرار 44px ونفس الحركة. */
+  .shop-body .shop-drawer .shop-menu__theme {
+    padding-block: var(--st-space-6);
+  }
+
+  /* اللوحة تمتد لآخر الشاشة (ما يبين محتوى الصفحة تحتها) والفوتر يثبت بالأسفل.
+     منطقة التمرير تمتص الفراغ — عند المحتوى الطويل تبقى قابلة للتمرير كما هي. */
+  .shop-body .shop-drawer__panel {
+    flex: 1 1 auto;
+  }
+
+  .shop-body .shop-menu__scroll {
+    flex: 1 1 auto;
+  }
+}
