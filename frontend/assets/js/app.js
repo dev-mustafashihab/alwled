@@ -105,7 +105,13 @@
     brand.className = 'app-sidebar__brand';
     var logo = document.createElement('span');
     logo.className = 'app-sidebar__logo';
-    logo.appendChild(dom.icon('zap', 'icon icon--lg'));
+    var logoImage = document.createElement('img');
+    logoImage.src = 'assets/icons/logo-alwaleed-mark.png';
+    logoImage.alt = '';
+    logoImage.width = 30;
+    logoImage.height = 30;
+    logoImage.setAttribute('aria-hidden', 'true');
+    logo.appendChild(logoImage);
     brand.appendChild(logo);
     var brandText = document.createElement('div');
     brandText.className = 'app-sidebar__brand-text';
@@ -352,6 +358,30 @@
     return header;
   }
 
+  function drawerIsMobile() {
+    return !!(global.matchMedia && global.matchMedia('(max-width: 1024px)').matches);
+  }
+
+  function onDrawerKeydown(event) {
+    if (event.key === 'Escape' || event.keyCode === 27) {
+      event.preventDefault();
+      closeDrawer();
+    }
+  }
+
+  /** قفل تمرير الصفحة خلف الدرج على الجوال (يُرفع عند الإغلاق). */
+  function lockDrawerScroll(lock) {
+    if (lock) {
+      document.addEventListener('keydown', onDrawerKeydown, true);
+      document.body.classList.add('drawer-open');
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.removeEventListener('keydown', onDrawerKeydown, true);
+      document.body.classList.remove('drawer-open');
+      document.body.style.overflow = '';
+    }
+  }
+
   function toggleDrawer() {
     var sidebar = dom.qs('.app-sidebar');
     if (!sidebar) return;
@@ -368,15 +398,20 @@
     } else if (!willOpen && scrim) {
       scrim.remove();
     }
+    lockDrawerScroll(willOpen && drawerIsMobile());
   }
 
   function closeDrawer() {
     var sidebar = dom.qs('.app-sidebar');
+    var wasOpen = !!(sidebar && sidebar.classList.contains('is-open'));
     if (sidebar) sidebar.classList.remove('is-open');
     var scrim = dom.qs('.sidebar-scrim');
     if (scrim) scrim.remove();
     var menuButton = dom.qs('.sidebar-toggle-mobile');
     if (menuButton) menuButton.setAttribute('aria-expanded', 'false');
+    lockDrawerScroll(false);
+    // إرجاع التركيز إلى زر الفتح (مسار كيبورد كامل)
+    if (wasOpen && menuButton && drawerIsMobile()) menuButton.focus({ preventScroll: true });
   }
 
   function renderBreadcrumb(route) {

@@ -1,0 +1,651 @@
+/* ============================================================================
+ * ADMIN — طبقة تحسين لوحة الإدارة بهوية متجر «الوليد» (UI/UX فقط)
+ * النطاق: body.admin فقط (frontend/index.html). لا يلمس أي ملف أو صنف في المتجر.
+ * المصدر: توكنات المشروع — --store-* (ذهبي #FFBF17) + الأدوار (--bg-*, --text-*, --border-*).
+ * ملاحظات التنفيذ:
+ *   - تُحمّل هذه الطبقة بعد كل الطبقات ⇒ نفس الخصوصية تكفي (بلا !important).
+ *   - لا ألوان جديدة: كل لون من --store-* أو color-mix من نفس الهوية.
+ *   - الحركة بسيطة؛ قاعدة prefers-reduced-motion في base.css تغطي الكل.
+ * ========================================================================== */
+
+/* ---------------------------------------------------------------------------
+   1) هوية اللوحة: الإجراء الأساسي = ذهبي المتجر، والنص فوقه حِبري (تباين كامل)
+   --------------------------------------------------------------------------- */
+body.admin {
+  --primary: var(--store-primary);
+  --primary-hover: var(--store-primary-hover);
+  --primary-active: var(--store-primary-active);
+  --primary-soft: var(--store-primary-soft);
+  --primary-soft-text: var(--neutral-900);
+  --ring: color-mix(in srgb, var(--store-primary) 34%, transparent);
+
+  /* ألوان الرسوم البيانية (chart.js يقرأها مباشرة) — بدل teal/accent القديمة */
+  --brand-500: var(--store-primary);
+  --accent-500: var(--store-info);
+
+  /* توكنات محلية للوحة فقط */
+  --admin-accent: var(--store-primary);
+  --admin-accent-strong: var(--store-primary-active);
+  --admin-accent-soft: var(--store-primary-soft);
+  --admin-accent-ink: var(--neutral-900);
+  --admin-hover: color-mix(in srgb, var(--store-text) 6%, transparent);
+  --admin-hover-strong: color-mix(in srgb, var(--store-text) 10%, transparent);
+}
+
+[data-theme='dark'] body.admin {
+  /* في الداكن: التمييز الذهبي يبقى، لكن الحشوة الناعمة تُبنى مزجًا (لا HEX جديد) */
+  --admin-accent-soft: color-mix(in srgb, var(--store-primary) 14%, transparent);
+  --admin-hover: color-mix(in srgb, var(--store-text) 10%, transparent);
+  --admin-hover-strong: color-mix(in srgb, var(--store-text) 16%, transparent);
+}
+
+/* ---------------------------------------------------------------------------
+   2) القائمة الجانبية — سطح المتجر بدل الشريط الداكن، ودلالة RTL أصلية
+   --------------------------------------------------------------------------- */
+body.admin .app-sidebar {
+  background: var(--store-surface);
+  color: var(--store-text);
+  border-inline-end: 1px solid var(--store-border);
+  box-shadow: none;
+}
+
+body.admin .app-sidebar__brand {
+  height: var(--header-h);
+  gap: var(--space-3);
+  border-bottom: 1px solid var(--store-border);
+  padding-inline: var(--space-4);
+}
+
+body.admin .app-sidebar__logo {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  border-radius: var(--radius-md);
+  background: var(--admin-accent-soft);
+  border: 1px solid var(--store-border);
+  box-shadow: none;
+}
+
+body.admin .app-sidebar__logo img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+
+body.admin .app-sidebar__brand-name {
+  color: var(--store-text);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+}
+
+body.admin .app-sidebar__brand-sub {
+  color: var(--store-text-muted);
+  font-size: var(--fs-2xs);
+}
+
+body.admin .app-sidebar__nav {
+  padding: var(--space-3) var(--space-2) var(--space-5);
+  scrollbar-width: thin;
+  scrollbar-color: var(--store-border-strong) transparent;
+}
+
+body.admin .nav-group {
+  margin-bottom: var(--space-3);
+}
+
+/* عناوين المجموعات: عنوان قسم لا صف تنقّل (كما قسم «تسوّق» في قائمة المتجر) */
+body.admin .nav-group__label {
+  padding: var(--space-3) var(--space-3) var(--space-1);
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-bold);
+  color: var(--admin-accent-strong);
+  letter-spacing: 0.2px;
+}
+
+body.admin .nav-item {
+  position: relative;
+  gap: var(--space-3);
+  min-height: 42px;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  color: var(--store-text-body);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+
+body.admin .nav-item:hover,
+body.admin .nav-item:focus-visible {
+  background: var(--admin-hover);
+  color: var(--store-text);
+}
+
+body.admin .nav-item--active {
+  background: var(--admin-accent-soft);
+  color: var(--store-text);
+  font-weight: var(--fw-bold);
+  box-shadow: none;
+}
+
+/* مؤشر البند النشط عند بداية القراءة (RTL) بدل الظل الفيزيائي القديم */
+body.admin .nav-item--active::before {
+  content: '';
+  position: absolute;
+  inset-inline-start: 0;
+  top: 7px;
+  bottom: 7px;
+  width: 3px;
+  border-radius: var(--radius-pill);
+  background: var(--admin-accent);
+}
+
+body.admin .nav-item--active .nav-item__icon {
+  color: var(--admin-accent-strong);
+  opacity: 1;
+}
+
+body.admin .nav-item__icon {
+  flex: 0 0 20px;
+  color: var(--store-text-muted);
+  opacity: 1;
+}
+
+body.admin .nav-item__count {
+  background: var(--admin-accent);
+  color: var(--admin-accent-ink);
+  font-weight: var(--fw-bold);
+}
+
+body.admin .app-sidebar__foot {
+  border-top: 1px solid var(--store-border);
+  padding: var(--space-3);
+}
+
+body.admin .sidebar-user {
+  border-radius: var(--radius-md);
+  gap: var(--space-3);
+  transition: background var(--dur-fast) var(--ease-out);
+}
+
+body.admin .sidebar-user:hover,
+body.admin .sidebar-user:focus-visible {
+  background: var(--admin-hover);
+}
+
+body.admin .sidebar-user .avatar {
+  background: var(--admin-accent-soft);
+  color: var(--store-text);
+  border: 1px solid var(--store-border);
+}
+
+body.admin .sidebar-user__name {
+  color: var(--store-text);
+  font-weight: var(--fw-semibold);
+}
+
+body.admin .sidebar-user__role {
+  color: var(--store-text-muted);
+}
+
+body.admin .sidebar-scrim {
+  background: color-mix(in srgb, var(--store-text) 42%, transparent);
+  backdrop-filter: none;
+}
+
+/* ---------------------------------------------------------------------------
+   3) الهيدر — شريط خفيف مرتّب بنفس سطح المتجر
+   --------------------------------------------------------------------------- */
+body.admin .app-header {
+  height: var(--header-h);
+  gap: var(--space-2);
+  padding: 0 var(--space-4);
+  background: var(--store-surface);
+  border-bottom: 1px solid var(--store-border);
+  backdrop-filter: none;
+}
+
+@supports not (backdrop-filter: blur(8px)) {
+  body.admin .app-header { background: var(--store-surface); }
+}
+
+body.admin .app-header__title {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+  color: var(--store-text);
+}
+
+body.admin .breadcrumb {
+  color: var(--store-text-muted);
+  font-size: var(--fs-2xs);
+}
+
+body.admin .breadcrumb__sep { color: var(--store-border-strong); }
+body.admin .breadcrumb__current { color: var(--store-text-body); }
+
+body.admin .app-header__actions { gap: var(--space-1); }
+
+body.admin .icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  color: var(--store-text-body);
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+
+body.admin .icon-btn:hover {
+  background: var(--admin-hover);
+  color: var(--store-text);
+}
+
+body.admin .icon-btn[aria-expanded='true'] {
+  background: var(--admin-accent-soft);
+  color: var(--store-text);
+}
+
+/* ---------------------------------------------------------------------------
+   4) المحتوى: رأس الصفحة + البطاقات + مؤشرات KPI
+   --------------------------------------------------------------------------- */
+body.admin .app-content {
+  padding: var(--space-5) var(--space-6) var(--space-10);
+}
+
+body.admin .app-footer {
+  color: var(--store-text-faint);
+  border-top: 1px solid var(--store-border);
+}
+
+body.admin .page-head__title {
+  color: var(--store-text);
+  font-weight: var(--fw-bold);
+}
+
+body.admin .page-head__desc { color: var(--store-text-muted); }
+
+body.admin .section-title { color: var(--store-text); }
+
+body.admin .card {
+  background: var(--store-surface);
+  border: 1px solid var(--store-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xs);
+}
+
+body.admin .card--hoverable:hover {
+  border-color: var(--store-border-strong);
+  box-shadow: var(--shadow-sm);
+}
+
+body.admin .card__title {
+  color: var(--store-text);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+}
+
+body.admin .card__subtitle { color: var(--store-text-muted); }
+
+body.admin .card__head { border-bottom: 1px solid var(--store-border); }
+body.admin .card__foot { border-top: 1px solid var(--store-border); }
+
+/* KPI: رقم أساسي واضح + أيقونة بهوية المتجر + دلالة حالة من توكنات النظام */
+body.admin .kpi-grid {
+  grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
+  gap: var(--space-3);
+}
+
+body.admin .kpi {
+  padding: var(--space-4);
+  background: var(--store-surface);
+  border: 1px solid var(--store-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xs);
+  transition: box-shadow var(--dur-base) var(--ease-out), border-color var(--dur-base) var(--ease-out),
+              transform var(--dur-base) var(--ease-out);
+}
+
+body.admin .kpi:hover {
+  border-color: var(--store-border-strong);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+
+body.admin .kpi__label {
+  color: var(--store-text-muted);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+}
+
+body.admin .kpi__value {
+  color: var(--store-text);
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+}
+
+body.admin .kpi__unit { color: var(--store-text-muted); }
+body.admin .kpi__hint { color: var(--store-text-muted); font-size: var(--fs-2xs); }
+
+body.admin .kpi__icon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  border-radius: var(--radius-md);
+  background: var(--admin-accent-soft);
+  color: var(--admin-accent-strong);
+}
+
+body.admin .kpi--success .kpi__icon { background: var(--success-50); color: var(--success-600); }
+body.admin .kpi--warning .kpi__icon { background: var(--warning-50); color: var(--warning-600); }
+body.admin .kpi--danger .kpi__icon { background: var(--danger-50); color: var(--danger-600); }
+body.admin .kpi--info .kpi__icon { background: var(--info-50); color: var(--info-600); }
+
+body.admin .stat-row { border-bottom: 1px solid var(--store-border); }
+body.admin .stat-row__label { color: var(--store-text-muted); }
+body.admin .stat-row__value { color: var(--store-text); font-weight: var(--fw-semibold); }
+
+body.admin .divider { background: var(--store-border); }
+
+/* ---------------------------------------------------------------------------
+   5) الجداول — حاوية بطاقة · رأس واضح · تمرير أفقي على الجوال
+   --------------------------------------------------------------------------- */
+body.admin .table-wrap {
+  border: 1px solid var(--store-border);
+  border-radius: var(--radius-lg);
+  background: var(--store-surface);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+body.admin .table { color: var(--store-text-body); }
+
+body.admin .table thead th {
+  background: var(--store-surface-soft);
+  color: var(--store-text-muted);
+  font-size: var(--fs-2xs);
+  font-weight: var(--fw-bold);
+  border-bottom: 1px solid var(--store-border);
+}
+
+body.admin .table tbody td { border-bottom: 1px solid var(--store-border); }
+body.admin .table tbody tr:hover { background: var(--admin-hover); }
+body.admin .table__primary { color: var(--store-text); font-weight: var(--fw-semibold); }
+body.admin .table__sub { color: var(--store-text-muted); }
+
+body.admin .pagination { border-top: 1px solid var(--store-border); }
+body.admin .pagination__info { color: var(--store-text-muted); }
+
+body.admin .pagination__btn {
+  min-width: 38px;
+  height: 38px;
+  background: var(--store-surface);
+  border: 1px solid var(--store-border);
+  border-radius: var(--radius-sm);
+  color: var(--store-text-body);
+}
+
+body.admin .pagination__btn:hover:not(:disabled) {
+  border-color: var(--admin-accent);
+  color: var(--store-text);
+  background: var(--admin-accent-soft);
+}
+
+/* الزر النشط: ذهبي المتجر + حِبري (كان أبيض على ذهبي = تباين ضعيف) */
+body.admin .pagination__btn--active {
+  background: var(--admin-accent);
+  border-color: var(--admin-accent);
+  color: var(--admin-accent-ink);
+  font-weight: var(--fw-bold);
+}
+
+/* ---------------------------------------------------------------------------
+   6) الرسوم البيانية — الحاوية والقراءة RTL (التنفيذ كما هو بلا مكتبات)
+   --------------------------------------------------------------------------- */
+body.admin .chart {
+  width: 100%;
+  padding: var(--space-2) 0 0;
+}
+
+body.admin .chart svg { display: block; width: 100%; height: auto; }
+
+body.admin .chart .row {
+  gap: var(--space-4);
+  color: var(--store-text-muted);
+}
+
+/* ---------------------------------------------------------------------------
+   7) عناصر مساعدة: أزرار · شارات · شرائح · أدوات · تنبيهات
+   --------------------------------------------------------------------------- */
+/* نص الحِبري فوق الذهبي (الهوية) — يشمل primary في كل الحالات */
+body.admin .btn--primary,
+body.admin .skip-link {
+  color: var(--admin-accent-ink);
+}
+
+body.admin .btn--primary {
+  background: var(--store-primary);
+  border-color: var(--store-primary);
+}
+
+body.admin .btn--primary:hover:not(:disabled) {
+  background: var(--store-primary-hover);
+  border-color: var(--store-primary-hover);
+}
+
+body.admin .btn--secondary {
+  background: var(--store-surface);
+  border-color: var(--store-border);
+  color: var(--store-text-body);
+}
+
+body.admin .btn--secondary:hover:not(:disabled) {
+  border-color: var(--store-border-strong);
+  color: var(--store-text);
+  background: var(--admin-hover);
+}
+
+body.admin .btn--ghost { color: var(--store-text-body); }
+body.admin .btn--ghost:hover:not(:disabled) { background: var(--admin-hover); color: var(--store-text); }
+
+body.admin .badge { border-radius: var(--radius-pill); font-weight: var(--fw-semibold); }
+body.admin .badge--brand { background: var(--admin-accent-soft); color: var(--store-text); border-color: var(--store-border); }
+body.admin .badge--neutral { background: var(--store-surface-soft); color: var(--store-text-body); border-color: var(--store-border); }
+
+body.admin .chip { border-radius: var(--radius-pill); }
+body.admin .chip--on { background: var(--admin-accent-soft); border-color: var(--admin-accent); color: var(--store-text); }
+
+body.admin .tab { border-radius: var(--radius-sm); color: var(--store-text-muted); }
+body.admin .tab:hover { color: var(--store-text); background: var(--admin-hover); }
+body.admin .tab--active { color: var(--store-text); border-color: var(--admin-accent); }
+
+body.admin .toolbar {
+  background: var(--store-surface);
+  border: 1px solid var(--store-border);
+  border-radius: var(--radius-lg);
+}
+
+body.admin .input,
+body.admin .select,
+body.admin .textarea {
+  background: var(--store-surface);
+  border-color: var(--store-border);
+  color: var(--store-text);
+}
+
+body.admin .input:hover,
+body.admin .select:hover,
+body.admin .textarea:hover { border-color: var(--store-border-strong); }
+
+body.admin .input:focus,
+body.admin .select:focus,
+body.admin .textarea:focus {
+  border-color: var(--admin-accent);
+  box-shadow: var(--shadow-focus);
+}
+
+body.admin .alert { border-radius: var(--radius-md); }
+body.admin .state__title { color: var(--store-text); }
+body.admin .state__text { color: var(--store-text-muted); }
+
+body.admin .dropdown__menu {
+  background: var(--store-surface);
+  border: 1px solid var(--store-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+body.admin .dropdown__item { color: var(--store-text-body); border-radius: var(--radius-sm); }
+body.admin .dropdown__item:hover { background: var(--admin-hover); color: var(--store-text); }
+body.admin .dropdown__header { color: var(--store-text-muted); border-bottom: 1px solid var(--store-border); }
+body.admin .dropdown__divider { background: var(--store-border); }
+
+body.admin .modal__panel {
+  background: var(--store-surface);
+  border: 1px solid var(--store-border);
+  border-radius: var(--radius-lg);
+}
+
+body.admin .modal__title { color: var(--store-text); }
+body.admin .toast { border-radius: var(--radius-md); box-shadow: var(--shadow-md); }
+body.admin .notif-item--unread { background: var(--admin-accent-soft); }
+
+/* ---------------------------------------------------------------------------
+   8) شاشة الدخول — امتداد طبيعي لهوية المتجر (بدل تدرّج teal القديم)
+   --------------------------------------------------------------------------- */
+body.admin .auth-shell { background: var(--store-surface); }
+
+body.admin .auth-hero {
+  background: color-mix(in srgb, var(--store-primary) 10%, var(--store-surface));
+  color: var(--store-text);
+}
+
+body.admin .auth-hero::before,
+body.admin .auth-hero::after {
+  background: color-mix(in srgb, var(--store-primary) 16%, transparent);
+}
+
+body.admin .auth-hero::after { background: color-mix(in srgb, var(--store-primary) 12%, transparent); }
+
+body.admin .auth-hero__logo-mark {
+  background: var(--admin-accent-soft);
+  border: 1px solid var(--store-border);
+}
+
+body.admin .auth-hero__logo-mark img,
+body.admin .auth-card__brand img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
+}
+
+body.admin .auth-hero__title { color: var(--store-text); }
+body.admin .auth-hero__text { color: var(--store-text-body); }
+body.admin .auth-hero__point { color: var(--store-text-body); }
+body.admin .auth-hero__point-icon { background: var(--admin-accent-soft); color: var(--store-text); }
+
+body.admin .auth-panel { background: var(--store-bg); }
+
+body.admin .auth-card {
+  background: var(--store-surface);
+  border: 1px solid var(--store-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+body.admin .auth-card__title { color: var(--store-text); }
+body.admin .auth-card__sub,
+body.admin .auth-card__foot { color: var(--store-text-muted); }
+body.admin .auth-card__foot { border-top: 1px solid var(--store-border); }
+body.admin .auth-divider::before,
+body.admin .auth-divider::after { background: var(--store-border); }
+
+/* ---------------------------------------------------------------------------
+   9) الإتاحة: حلقة تركيز عالية التباين (فاتح: أزرق النظام · داكن: ذهبي غامق)
+   --------------------------------------------------------------------------- */
+body.admin :focus-visible {
+  outline: 2px solid var(--store-info);
+  outline-offset: 2px;
+}
+
+[data-theme='dark'] body.admin :focus-visible {
+  outline-color: var(--admin-accent-strong);
+}
+
+body.admin .app-sidebar :focus-visible,
+body.admin .nav-item:focus-visible {
+  outline-offset: -2px;
+}
+
+/* ---------------------------------------------------------------------------
+   11) النوافذ العائمة على الهاتف — لوحة إشعارات بلا قطع + ارتفاع آمن
+   السبب المقيس: .notif-panel مثبّتة على الجرس (inset-inline-end: 0) بعرض
+   min(420px, 100vw-24px) ⇒ على 360px تخرج 84px خارج الحافة اليمنى، والفائض في
+   RTL غير قابل للتمرير ⇒ جزء من الإشعارات غير مرئي. الحل: تُثبَّت بإطار الشاشة.
+   --------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  body.admin .notif-panel {
+    position: fixed;
+    top: calc(var(--header-h) + var(--space-1));
+    inset-inline: var(--space-3);
+    width: auto;
+    max-width: none;
+    max-height: min(70vh, 560px);
+  }
+}
+
+/* ارتفاع النافذة على الجوال: dvh يتكيّف مع شريط المتصفح (vh قد يتجاوز الشاشة) */
+body.admin .modal__panel {
+  max-height: min(88vh, 900px);
+  max-height: min(88dvh, 900px);
+}
+
+/* منطقة آمنة أسفل الجوال (شريط النظام/Home indicator) */
+body.admin .modal__foot {
+  padding-bottom: calc(var(--space-4) + env(safe-area-inset-bottom, 0px));
+}
+
+/* صف أزرار الفوتر: لا ينقص عرض الأزرار على الشاشات الضيقة */
+body.admin .modal__foot { flex-wrap: wrap; }
+body.admin .modal__foot .btn { flex: 0 1 auto; }
+
+/* ---------------------------------------------------------------------------
+   10) الجوال: درج جانبي احترافي · شبكات متكيفة · أهداف لمس ≥44px
+   --------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  body.admin .app-sidebar {
+    width: min(320px, 86vw);
+    border-inline-end: 1px solid var(--store-border);
+    box-shadow: var(--shadow-lg);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  body.admin .app-sidebar__brand { padding-inline: var(--space-3); }
+  body.admin .app-header { padding: 0 var(--space-3); }
+  body.admin .app-content { padding: var(--space-4) var(--space-3) var(--space-8); }
+  body.admin .app-footer { padding: var(--space-3); }
+
+  body.admin .nav-item { min-height: 46px; }
+  body.admin .icon-btn { width: 44px; height: 44px; }
+  body.admin .btn { min-height: 44px; }
+
+  body.admin .kpi-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: var(--space-2);
+  }
+
+  body.admin .kpi { padding: var(--space-3); }
+  body.admin .kpi__value { font-size: var(--fs-xl); }
+  body.admin .kpi__icon { width: 36px; height: 36px; flex: 0 0 36px; }
+  body.admin .kpi__top { margin-bottom: var(--space-2); }
+
+  body.admin .page-head { flex-wrap: wrap; }
+  body.admin .page-head__actions { width: 100%; }
+  body.admin .pagination { gap: var(--space-2); }
+}
+
+@media (max-width: 560px) {
+  body.admin .kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  body.admin .kpi__value { font-size: var(--fs-lg); }
+  body.admin .kpi__hint { font-size: 10.5px; }
+  body.admin .card__body { padding: var(--space-3); }
+  body.admin .auth-card { padding: var(--space-5); border-radius: var(--radius-md); }
+}

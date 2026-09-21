@@ -9,6 +9,17 @@
 
   var dom = global.ALW.dom;
 
+  /** شعار المتجر نفسه (نفس هوية الهيدر والقائمة) بدل أيقونة عامة. */
+  function brandMarkImage(size) {
+    var img = document.createElement('img');
+    img.src = 'assets/icons/logo-alwaleed-mark.png';
+    img.alt = '';
+    img.width = size;
+    img.height = size;
+    img.setAttribute('aria-hidden', 'true');
+    return img;
+  }
+
   function render(container, context) {
     var config = global.ALW.config;
     dom.mount(container, []);
@@ -25,7 +36,7 @@
     logo.className = 'auth-hero__logo';
     var mark = document.createElement('span');
     mark.className = 'auth-hero__logo-mark';
-    mark.appendChild(dom.icon('zap', 'icon icon--lg'));
+    mark.appendChild(brandMarkImage(28));
     logo.appendChild(mark);
     var brandText = document.createElement('div');
     var brandName = document.createElement('div');
@@ -93,9 +104,7 @@
     mobileBrand.className = 'auth-card__brand';
     var mobileMark = document.createElement('span');
     mobileMark.className = 'auth-hero__logo-mark';
-    mobileMark.style.background = 'var(--primary)';
-    mobileMark.style.border = 'none';
-    mobileMark.appendChild(dom.icon('zap', 'icon icon--lg'));
+    mobileMark.appendChild(brandMarkImage(28));
     mobileBrand.appendChild(mobileMark);
     var mobileName = document.createElement('strong');
     mobileName.textContent = config.appNameFull;
