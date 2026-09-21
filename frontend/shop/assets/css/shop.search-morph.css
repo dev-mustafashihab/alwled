@@ -1,0 +1,302 @@
+/* ============================================================================
+   PHASE 2.3 — Search Morph + Opaque Drop Curtain
+   نطاق جوال فقط. لا يغير تدفق flex للهيدر أو ملفات header الأساسية.
+   ============================================================================ */
+
+/* يحمي hidden من قواعد المكونات الأقدم التي تعرّف display:flex/block. */
+#shop-search-curt[hidden],
+#shop-search-morph[hidden],
+#shop-search-sheet[hidden] { display: none; }
+
+@media (max-width: 1023px) {
+  .shop-body {
+    --search-field-left: 0px;
+    --search-field-top: 0px;
+    --search-field-width: 0px;
+    --search-field-height: 0px;
+    --search-row-bottom: 0px;
+  }
+
+  /* الهيدر يبقى في تدفقه؛ إخافة بصرية فقط للعناصر الطبيعية عند البحث. */
+  #shop-header[data-search-active='true'] .shop-brand,
+  #shop-header[data-search-active='true'] .shop-header__divider,
+  #shop-header[data-search-active='true'] #shop-actions,
+  #shop-header[data-search-active='true'] #shop-burger {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 160ms ease;
+  }
+
+  #shop-search-btn[aria-hidden='true'] {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* QuickNav ليس جزءًا من صف الهيدر الأساسي؛ ينهار دون reflow للصف. */
+  #shop-quicknav[aria-hidden='true'] { display: none; }
+
+  /* ------------------------------------------------------------------------
+     Curtain: opaque=1، كشف عمودي من أعلى إلى أسفل بـclip-path.
+     top يأتي من getBoundingClientRect() الحقيقي لصف الهيدر الأساسي.
+     ------------------------------------------------------------------------ */
+  #shop-search-curt {
+    position: fixed;
+    inset-inline: 0;
+    inset-block-start: var(--search-row-bottom);
+    inset-block-end: 0;
+    z-index: 98;
+    display: block;
+    background: #FFFFFF;
+    opacity: 1;
+    clip-path: inset(0 0 100% 0);
+    pointer-events: none;
+    transition: clip-path 250ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  [data-theme='dark'] #shop-search-curt { background: #18191B; }
+
+  #shop-search-curt.is-open {
+    clip-path: inset(0 0 0 0);
+    pointer-events: auto;
+  }
+
+  #shop-search-curt.is-closing {
+    clip-path: inset(0 0 100% 0);
+    pointer-events: none;
+    transition-duration: 220ms;
+  }
+
+  /* ------------------------------------------------------------------------
+     Results surface: فوق الستارة وتحت حقل الـMorph. لا يستعمل is-open حتى لا
+     يشغّل قاعدة header المحمية المبنية على :has(.shop-search-sheet.is-open).
+     ------------------------------------------------------------------------ */
+  #shop-search-sheet {
+    position: fixed;
+    inset-inline: 0;
+    inset-block-start: var(--search-row-bottom);
+    inset-block-end: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: none;
+    transition: opacity 160ms ease, visibility 160ms linear;
+  }
+
+  #shop-search-sheet.is-results-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  #shop-search-sheet.is-results-closing {
+    opacity: 0;
+    visibility: visible;
+    pointer-events: none;
+    transition-duration: 150ms;
+  }
+
+  #shop-search-sheet__body {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: var(--space-4) var(--shop-gutter, var(--space-4)) calc(var(--space-6) + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* empty query: real categories/brands in one native horizontal row */
+  #shop-search-suggest-list .shop-search-chips {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    padding-block-end: var(--space-1);
+  }
+
+  #shop-search-suggest-list .shop-search-chip { flex: 0 0 auto; }
+
+  /* ------------------------------------------------------------------------
+     Morph: حاوية خارج flex للهيدر. الحقل يبدأ من trigger rect ثم يتمدد إلى
+     row rect عبر CSS variables التي يكتبها JS في وقت الفتح.
+     ------------------------------------------------------------------------ */
+  #shop-search-morph {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: block;
+    pointer-events: none;
+  }
+
+  #shop-search-morph-field {
+    position: fixed;
+    left: var(--search-field-left);
+    top: var(--search-field-top);
+    width: var(--search-field-width);
+    height: var(--search-field-height);
+    z-index: 101;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    overflow: hidden;
+    padding: 0 var(--space-2);
+    background: var(--color-surface, #FFFFFF);
+    border: 1px solid var(--color-line);
+    border-radius: var(--stw-radius-md, 12px);
+    box-shadow: var(--shadow-sm);
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      left 250ms cubic-bezier(0.22, 0.61, 0.36, 1),
+      top 250ms cubic-bezier(0.22, 0.61, 0.36, 1),
+      width 250ms cubic-bezier(0.22, 0.61, 0.36, 1),
+      height 250ms cubic-bezier(0.22, 0.61, 0.36, 1),
+      opacity 160ms ease;
+  }
+
+  #shop-search-morph-field.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  #shop-search-morph-field.is-closing {
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 220ms;
+  }
+
+  .shop-search-morph__icon {
+    flex: 0 0 auto;
+    display: inline-grid;
+    place-items: center;
+    color: var(--color-ink-muted, var(--text-muted));
+  }
+
+  .shop-search-morph__icon svg { inline-size: 20px; block-size: 20px; }
+
+  #shop-search-morph-input {
+    flex: 1 1 auto;
+    min-inline-size: 0;
+    block-size: 100%;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--color-ink, var(--text-strong));
+    font: inherit;
+    font-size: 1rem;
+  }
+
+  #shop-search-morph-input::placeholder { color: var(--color-ink-muted, var(--text-muted)); opacity: 1; }
+  #shop-search-morph-input::-webkit-search-cancel-button { display: none; }
+
+  /* حلقة تركيز محايدة واحدة: واضحة لكن لا تزاحم محتوى البحث. */
+  #shop-search-morph-input:focus { outline: 0; box-shadow: none; }
+  #shop-search-morph-field:focus-within {
+    border-color: var(--store-border-strong);
+    box-shadow: none;
+    outline: 2px solid color-mix(in srgb, var(--store-text-muted) 68%, transparent);
+    outline-offset: -2px;
+  }
+
+  /* نتائج مريحة للعين: هرمية حدود أولًا، بلا ظل أو تغيير في كثافة الصف. */
+  #shop-search-sheet .shop-search-sheet__label {
+    margin-block-end: var(--space-3);
+    color: var(--store-text-body);
+    font-size: var(--st-body-sm, 0.875rem);
+    font-weight: var(--fw-semibold);
+  }
+
+  #shop-search-sheet .shop-search-row {
+    border-color: var(--store-border);
+    background: var(--store-surface);
+    box-shadow: none;
+  }
+
+  #shop-search-sheet .shop-search-row:hover,
+  #shop-search-sheet .shop-search-row:focus-visible {
+    border-color: var(--store-primary);
+    background: var(--store-surface-soft);
+  }
+
+  #shop-search-sheet .shop-search-row__meta { color: var(--store-text-muted); }
+  #shop-search-sheet .shop-search-row__price { color: var(--store-text); }
+
+  #shop-search-clear,
+  #shop-search-morph-close {
+    flex: 0 0 44px;
+    inline-size: 44px;
+    block-size: 44px;
+    display: inline-grid;
+    place-items: center;
+    padding: 0;
+    border: 0;
+    border-radius: var(--stw-radius-md, 12px);
+    background: transparent;
+    color: var(--color-ink-muted, var(--text-muted));
+    cursor: pointer;
+    font: inherit;
+    transition: background-color 140ms ease, color 140ms ease;
+  }
+
+  #shop-search-morph-close {
+    position: fixed;
+    left: var(--search-close-left);
+    top: var(--search-close-top);
+    width: var(--search-close-width);
+    height: var(--search-close-height);
+    z-index: 102;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 160ms ease, background-color 140ms ease, color 140ms ease;
+  }
+
+  #shop-search-morph-close.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  #shop-search-morph-close.is-closing {
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 150ms;
+  }
+
+  #shop-search-clear {
+    font-size: 0.75rem;
+    font-weight: var(--fw-semibold, 600);
+    background: transparent;
+    color: var(--store-text-muted);
+  }
+
+  #shop-search-morph-close {
+    background: var(--store-surface-soft);
+    color: var(--store-text);
+  }
+
+  #shop-search-clear:hover,
+  #shop-search-clear:focus-visible,
+  #shop-search-morph-close:hover,
+  #shop-search-morph-close:focus-visible {
+    background: var(--color-surface-muted, var(--bg-surface-2));
+    color: var(--color-ink, var(--text-strong));
+  }
+
+  #shop-search-clear:focus-visible,
+  #shop-search-morph-close:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+  #shop-search-clear svg,
+  #shop-search-morph-close svg { inline-size: 20px; block-size: 20px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    #shop-search-curt,
+    #shop-search-sheet,
+    #shop-search-morph-field,
+    #shop-header[data-search-active='true'] .shop-brand,
+    #shop-header[data-search-active='true'] .shop-header__divider,
+    #shop-header[data-search-active='true'] #shop-actions,
+    #shop-header[data-search-active='true'] #shop-burger { transition: none; }
+  }
+}

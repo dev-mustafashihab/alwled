@@ -36,6 +36,8 @@
 <link rel="stylesheet" href="assets/css/shop.products-cards.css">
 <!-- تحسينات تجربة الرئيسية: تبديل العرض + زر نهاية القسم -->
 <link rel="stylesheet" href="assets/css/shop.home-ux.css">
+<!-- PHASE 2.3 — Search Morph + Opaque Drop Curtain -->
+<link rel="stylesheet" href="assets/css/shop.search-morph.css">
 <script defer src="assets/js/shop.reveal.js"></script>
 </head>
 <body class="shop-body">
@@ -90,21 +92,28 @@
     </nav>
   </header>
 
-  <div class="shop-search-sheet" id="shop-search-sheet" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="البحث في المنتجات">
-    <div class="shop-search-sheet__head">
-      <label class="visually-hidden" for="shop-search-sheet-input">ابحث في المنتجات</label>
-      <div class="shop-search-sheet__field">
-        <span class="shop-search-sheet__field-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></span>
-        <input class="input shop-search-sheet__input" id="shop-search-sheet-input" type="search"
-               placeholder="ابحث عن منتج…" autocomplete="off" enterkeyhint="search" aria-label="ابحث في المنتجات">
-        <button type="button" class="shop-search-sheet__clear" id="shop-search-clear" hidden aria-label="مسح نص البحث">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-        </button>
-      </div>
-      <button type="button" class="shop-search-sheet__close" id="shop-search-close" aria-label="إغلاق البحث">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-      </button>
+  <!-- PHASE 2.3 — ستارة معتمة مستقلة تبدأ تحت صف الهيدر الأساسي -->
+  <div class="shop-search-curt" id="shop-search-curt" aria-hidden="true" hidden></div>
+
+  <!-- PHASE 2.3 — سطح الـMorph: input واحد + magnifier واحد + × واحد -->
+  <div class="shop-search-morph" id="shop-search-morph" aria-hidden="true" hidden>
+    <div class="shop-search-morph__field" id="shop-search-morph-field">
+      <span class="shop-search-morph__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+      </span>
+      <label class="visually-hidden" for="shop-search-morph-input">ابحث في المنتجات</label>
+      <input class="shop-search-morph__input" id="shop-search-morph-input" type="search"
+             placeholder="ابحث عن منتج…" autocomplete="off" enterkeyhint="search" aria-label="ابحث في المنتجات"
+             aria-controls="shop-search-sheet">
+      <button type="button" class="shop-search-morph__clear" id="shop-search-clear" hidden aria-label="مسح نص البحث">مسح</button>
     </div>
+    <button type="button" class="shop-search-morph__close" id="shop-search-morph-close" aria-label="إغلاق البحث">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+  </div>
+
+  <!-- نتائج API الحقيقية فوق الستارة وتحت سطح الحقل -->
+  <div class="shop-search-sheet" id="shop-search-sheet" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="نتائج البحث">
     <div class="shop-search-sheet__body" id="shop-search-body">
       <div class="shop-search-sheet__section" id="shop-search-suggest">
         <p class="shop-search-sheet__label">اقتراحات من المتجر</p>
@@ -116,7 +125,7 @@
 
   <div class="shop-drawer" id="shop-drawer" hidden aria-hidden="true">
     <div class="shop-drawer__panel" role="dialog" aria-modal="true" aria-label="قائمة التنقل">
-      
+
       <div class="shop-menu__scroll" id="shop-menu-scroll">
       <!-- 1) معلومات المستخدم المختصرة (للمسجّل) -->
       <div class="shop-menu__user" id="shop-menu-user" hidden></div>
